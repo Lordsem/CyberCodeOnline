@@ -21,6 +21,16 @@ If you would like to help to maintain CyberCode Online, please feel free to subm
 Step by step [Guide](https://cybercode-online.fandom.com/wiki/GitHub_PR_Tutorial) how to submit a PR on our GitHub
 
 ## Updates 
+### **2021/09/05 v0.687**
+ * UI - Added filter in dungeon list to show only dungeons you can join
+ * UI - Added fixed tip on AFK screen explaining closing game will not interupt AFK process 
+
+### **2021/09/04 v0.687**
+ * BUFF - Now `SL Data fortress breach` task will no longer reset everyday
+ * BUFF - Now `SL Data fortress breach` task will have chance to give `Calibration Precision (Common)` effect
+ * BUFF - Now `Collect protection fee` task will have high chance of dropping `Locked containers`
+ * BUFF - Now `Collect protection fee` allows to repeat maximun 2 times instead of 1 previously
+
 ### **2021/09/02 v0.687**
  * OPTIMIZATION - Server optimization and code clean up
  * UPDATE - if you have more then one donation active, the higher tier one will take priority (for example, from paypal + playstore)
