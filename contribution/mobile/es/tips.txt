@@ -1,0 +1,125 @@
+// Contains list of short tips used to be displayed in Mobile version
+// one line one tip :)
+
+Destruye tus objetos para obtener chatarra tecnológica; haz ingeniería inversa para ganar experiencia de impresión.
+Puedes vender tus objetos en el [MERCADO DE JUGADORES].
+Tus rangos de fabricación no pueden exceder tu NIVEL general; no pierdas el tiempo farmeando cuando estás capado.
+La HP se regenera al 100% después de cada batalla, a menos que estés en una mazmorra.
+Siempre atacas primero; ¡utilízalo a tu favor!
+Puedes reparar tu equipo dañado en el [ARMERO].
+Tu inventario tiene un límite de almacenamiento; vigílalo o perderás botín.
+Los escudos se regeneran después de derrotar a un enemigo en una mazmorra.
+Puedes hacer ingeniería inversa en el [JOB HUB].
+El equipo de calidad "basura" sigue siendo útil para conseguir chatarra tecnológica y ganar experiencia de impresión.
+¿No tienes amigos en línea que te ayuden en la búsqueda de la mazmorra? Intenta compartir tu mazmorra en el chat.
+Crea Pain Away para recuperar la salud entre combates en las mazmorras.
+En la ventana de chat, escribe @ para mencionar a otro jugador.
+Las mazmorras son una gran fuente de núcleos de IA y procesadores de Hash.
+RECOLECTA para encontrar componentes para fabricar munición y medicina.
+Imprimir siempre da como resultado objetos del mismo nivel que tu RANGO DE IMPRESIÓN.
+Ten cuidado con los enemigos descritos como Duro, Enfadado, Loco, Escudo, Tirador o Berserker.
+Se necesitan llaves secretas para acceder a estaciones de nivel superior; ¡busca sus fragmentos en las mazmorras!
+Hay un tutorial en la pestaña "Perfil". Utilízalo a menudo.
+Desequipa los módulos de mejora cuando cambies de equipo para que estén disponibles para el nuevo equipo.
+¡El equipo y las mejoras "de expansión" aumentan el tamaño de tu inventario!
+Los objetos de curación, como el Spray Antidolor, también curan a tus compañeros de equipo.
+El BTC (bitcoin) en este juego no se puede canjear; es sólo moneda del juego. :'(
+No olvides enviar un agradecimiento a @DexterHuang en el chat por hacer este juego.
+Puedes almacenar el exceso de módulos de mejora en el equipo de alta calidad para ahorrar espacio en el inventario.
+¿Mueres mucho? Sube tu RANGO DE IMPRESIÓN a tu nivel de jugador, ¡y luego imprime nuevo equipo!
+¿Cansado? Tómate un descanso y come algo.
+¡No olvides hidratarte!
+¿Confundido con el caché que acaba de caer en tu mano? Ve a la [IMPRESORA 3D MOLECULAR] y fabrica algo de equipo.
+El caché de equipo viene en 6 rarezas: Basura, Común, Alta Calidad, Raro, Legendario y Épico.
+¿Sabías que puedes acceder a la versión móvil del juego desde tu ordenador? Ve a cybercodeonline.com y reduce la ventana del navegador.
+¡También tenemos una versión de escritorio de este juego en cybercodeonline.com!
+Recuerda el mantra de CCO: Golpear, Curar, Golpear.
+Sube de nivel una habilidad en el [ÁREA COMERCIAL] cuando tengas tiempo libre.
+¿Te gusta el juego? Asegúrate de dejar una reseña en la tienda de aplicaciones de iOS o en la tienda de Google Play.
+Los estudios demuestran que los enemigos con la etiqueta "Ágil" dan más EXP.
+¿No subes de nivel tan rápido como te gustaría? Prueba a lanzarte a las mazmorras. (Obtendrás 2 veces más exp)
+Lleva siempre contigo piezas médicas y de munición mientras estés en una mazmorra.
+Adelante. Pásale esa patata a nuestro impresionante desarrollador Dexter Huang.
+Mira esta barra de consejos. Tenemos algunos consejos increíbles para ti.
+Es habitual ir en el sentido de las agujas del reloj en las mazmorras públicas.
+Los cachés épicos son extremadamente raros. Considérate afortunado si consigues uno.
+¿Tienes poco BTC? Consigue un poco criptominando con Procesadores Hash en el [JOB HUB], o vende Procesadores Hash en el [MERCADO].
+Las mazmorras de desafío siempre tienen un jefe difícil, así que no olvides llevar a tus amigos cuando te aventures en una de ellas.
+Apoyar el juego suscribiendote a un paquete de donaciones te permite tener una imagen de perfil personalizada en el juego y/o un borde de nombre de color en el chat.
+Puedes intercambiar las Unidades que compres por buffs globales raros como aceleradores de tiempo AFK, EXP y bonos BTC.
+Una habilidad de RECOLECCIÓN más alta te permite hurgar en zonas de mayor nivel y conseguir más botín.
+El equipo que obtienes de la [IMPRESORA MOLECULAR 3D] siempre se basa en tu RANGO DE IMPRESIÓN y no en tu NIVEL general, así que mantén siempre tu RANGO DE IMPRESIÓN actualizado.
+Para mantener la frescura del juego, es imposible obtener EXP y botín de los enemigos de bajo nivel o de las mazmorras a partir de cierto nivel.
+Los enemigos con descripciones (por ejemplo, Berserker / Loco / Enfadado) son más duros, ¡pero dan mejores recompensas!
+Las donaciones y la afiliación no otorgan ninguna ventaja en el juego.
+Siempre recuperarás tu salud completa mientras no estés en una mazmorra.
+¿Has mirado ya tu inventario o has pensado en craftear algo? Porque deberías hacerlo.
+Cuando mueras, perderás parte de tu EXP y el 10% de tu BTC, ¡así que ten cuidado!
+Usa las armas principales para derrotar a los enemigos de la calle y ahorra munición.
+¡No olvides alimentar a tus mascotas!
+Los fragmentos de llaves secretas aparecen tanto en las mazmorras normales como en las de desafío, mientras que las cápsulas de experiencia solo aparecen en las mazmorras de desafío.
+Si estás leyendo esto mientras conduces, ¡DEJA EL TELÉFONO!
+Por favor, no conduzcas y juegues; el juego puede esperar.
+¡No chatees y conduzcas!
+Aunque las cargas de antimateria no son precisamente raras, tampoco son fáciles de conseguir. No hay que usarlas en todos los encuentros.
+No puedes entrar en una mazmorra que esté más de 10 niveles por encima de tu nivel. Es por tu propio bien.
+No leer el tutorial hará que uno se sienta perdido y confundido y hará que Baronfolgado se ponga triste.
+Lucha por encima de tu nivel para conseguir jugosa EXP.
+¿El juego no funciona? Actualiza o reinicia la aplicación.
+¿El AFK no se acaba nunca? Actualiza o reinicia la aplicación.
+¿Has intentado actualizar o reiniciar la aplicación?
+Comprueba siempre los precios del mercado antes de poner algo en venta.
+Necesitas mucha chatarra tecnológica para abrir un contenedor cerrado.
+Destruye tus objetos sin usar para conseguir chatarra tecnológica; la necesitarás para abrir contenedores cerrados.
+Pregunta por el chat los precios de los objetos.
+Se recomienda canjear las recompensas de las misiones de las mazmorras y las experiencias de los recuerdos con el potenciador de xp del 180%. ¡Ganarás casi el doble de EXP!
+Después del principio del juego, los Pain Aways se vuelven prácticamente inútiles, así que no dudes en reciclarlos para obtener un ~50% de posibilidades de obtener una Medical Tech Part por Pain Away.
+¿Estás a las puertas de la muerte en medio de la sala del tesoro? Pide ayuda en el chat y dirígelos a tu mazmorra.
+Un explorador de mazmorras no preparado es un explorador de mazmorras muerto.
+Si no puedes permitirte imprimir un caché de objetos raros, prueba a mirar primero en el [MERCADO DE JUGADORES] y busca alternativas más baratas. Puede que encuentres objetos asequibles para tu nivel.
+La gestión del inventario es crucial.
+Si puedes sobrevivir a un golpe en una mazmorra quedándote con una barra de salud considerable, puedes ganar si te mantienes curado.
+Puedes cambiar de equipo durante una mazmorra.
+Puedes fabricar objetos curativos a mitad de la mazmorra para reponerlos.
+Puedes añadir amigos en este juego. Sólo tienes que hacer clic en su nombre de usuario y desplazarte hacia abajo hasta "añadir amigo".
+Cada modificador puede añadir hasta un 5% de bonificación de oportunidad crítica.
+Puedes obtener una fuente constante de núcleos IA y procesadores Hash al derrotar al jefe en una mazmorra de dificultad de desafío.
+¿Los enemigos tardan demasiado en morir? Intenta aumentar tu probabilidad de crítico y tu modificador de daño crítico.
+¿Necesitas más espacio en tu inventario? Equipa el equipo o los módulos con el modificador "bolsillo".
+Pedir saltos de tiempo globales está generalmente mal visto por la comunidad, así que por favor no lo hagas.
+Hacer mazmorras de desafío con otros jugadores es la forma más rápida de ganar niveles mientras te diviertes.
+Si tu juego se congela o no puedes moverte en una mazmorra intenta cerrar y volver a abrir el juego.
+Puedes entrar en las mazmorras que ya están en marcha para conseguir misiones y botín.
+Completa las misiones para conseguir una buena cantidad de BTC, EXP e incluso objetos.
+Considérate afortunado si consigues un caché épico.
+¡El daño de crítico en las mejoras puede superar el 10%!
+Recuerda maximizar tu RANGO DE IMPRESIÓN antes de imprimir tu equipo.
+¿Has encontrado un contenedor cerrado? Puedes abrirlo en [TERMINAL], pero necesitarás chatarra tecnológica y BTC.
+Para poder fabricar una llave que desbloquee la siguiente zona, tienes que viajar a las 3 subzonas y conseguir la llave en cada sala de jefe de mazmorra.
+¿Tienes el inventario lleno? Vende tus objetos no esenciales en el mercado de jugadores o a tu comerciante local en el chat.
+Si crees que tu inventario está constantemente lleno, puede ser una buena idea considerar la mejora de la mochila.
+Estar en una banda tiene la ventaja de acceder a algunas nuevas tareas AFK, así como a la mazmorra de la banda. Además, jugar con otros hace que el juego sea mucho mejor.
+Recuerda que debes disfrutar del juego y dejar que los demás hagan lo mismo.
+¿Quieres formar parte de una banda? Tendrás que ser invitado por alguien. No hay ningún botón de solicitud.
+¿Tus objetos de curación curan la mitad de tus PS máximos o menos? Considera la posibilidad de pasar al siguiente nivel de objetos curativos.
+Los enemigos difíciles infligen más daño que los enemigos normales, así que ten preparados tus objetos de curación.
+Hay un máximo de 4 enemigos en una sala de mazmorra que no sea de jefe.
+Aunque las mazmorras de desafío duran más que las normales y son más difíciles, el jefe de las mazmorras de desafío da una cantidad ridícula de experiencia y botín.  
+Los cachés épicos cuestan un ojo de la cara. Si estás en un nivel bajo, intenta venderlos a través de la subasta en el chat para aumentar tu saldo en una cantidad significativa.
+Como no puedes enviar BTC a los jugadores directamente, los núcleos de la IA u otros objetos pueden sustituir a los BTC en los intercambios directos con la función de regalo. Abastécete cuando compres objetos a un comerciante directamente.
+¿Quieres asegurarte de que todo el mundo consigue un botín en una mazmorra pública? Asegúrate de que todos infligen al menos un 20% de los PS máximos del enemigo como daño.
+En las mazmorras públicas, todo el botín está disponible para los jugadores que están dentro. No hay que preocuparse por robar el botín.
+¿Hay una zona bloqueada aunque la hayas abierto con una llave? Puede que tengas un nivel bajo.
+Busca eventos especiales como saltos de tiempo globales AFK o aumentos de nivel en el chat de vez en cuando. No querrás perdértelos.
+Comprueba a menudo el mercado de jugadores para hacerte una idea del valor de tu inventario y saber si debes comprar o vender tus objetos.
+Si te gusta CyberCodeOnline, considera la posibilidad de sugerir nuevas ideas, salas de mazmorras, consejos, traducciones y mucho más en el github del juego. Puedes encontrarlo en Perfil> Actualizaciones.
+En CyberCodeOnline no es P2W. Los artículos comprados a través del Intercambio de Unidades de Arasaka benefician a todos, y los artículos Cybercosméticos de CyberCodeOnline son puramente cosméticos.
+El equipo que tiene un 100% o más de posibilidades de romperse en la calibración necesita que el porcentaje se reduzca usando un buff en el Intercambio de Unidades Arasaka. Esto no sólo te beneficia a ti, sino a todos los que juegan.
+¿Quieres dejar de cometer los mismos errores que un noob? Juega más.
+¿Quieres ser más eficiente en las mazmorras después de hacerlas durante mucho tiempo? Tómate un descanso.
+Puedes fabricar a máquina más chatarras tecnológicas en la [BANDA] a través del Reciclador Automático.
+Si necesitas BTC, intenta vender los objetos que no quieras al Armero.  La estadística "Negociación" ayuda a ello.
+¿El inventario se está llenando?  ¿Perdiste BTC cuando te desplomaste?  Guarda objetos o BTC en el [BANCO DE ARASAKA].
+En el terminal de chat, puedes pulsar la tecla [Flecha arriba] para acceder al último mensaje que hayas enviado.
+¿Buscas el tutorial?  Está en Perfil -> Tutorial.
+¿Buscas el tutorial?  Está en Icono del teléfono -> Tutorial.

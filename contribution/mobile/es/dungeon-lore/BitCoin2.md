@@ -1,0 +1,4 @@
+# BitCoin como la nueva moneda
+ > (Parte 2 de 4: Serie ButCoin)
+
+ Los BitCoins se crearon como recompensa por un proceso conocido como minería.  Se pueden cambiar por otras monedas, productos y servicios, pero el valor real de la moneda antes de su adopción oficial en 2071 era extremadamente volátil.  Los usuarios optaron por participar en la moneda digital volátil por varias razones: ideologías como el compromiso con el anarquismo, la descentralización y el libertarismo, la conveniencia, el uso de la moneda como inversión y el seudónimo de las transacciones.  El aumento del uso llevó a los gobiernos a desear una regulación para gravar impuestos, facilitar el uso legal en el comercio y por otras razones hasta que la Organización Mundial del Gobierno finalmente la adoptó como moneda mundial oficial.

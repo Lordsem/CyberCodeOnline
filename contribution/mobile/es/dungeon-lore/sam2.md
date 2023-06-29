@@ -1,0 +1,9 @@
+﻿`[Parte 2 de 4]`
+
+ Se puede ver a Sam asomándose por la ventana de su apartamento, visiblemente sudando.  Su mano libre tiembla ligeramente, mientras usa la otra mano para cubrirse los ojos de la luz cegadora del sol.  "Mierda", suelta.  "Realmente espero que Dan pueda salir adelante. No puedo pasar el resto de mi vida así".  Rápidamente se aleja de la ventana y camina de un lado a otro de la habitación, murmurando para sí mismo.  "¿Y si no puede hacer nada? ¿Y si ya es demasiado tarde y los Blitzers están en camino? ¿Y si..."
+
+ Se detiene por un momento.  Vuelve a mirar hacia la ventana, observándola.  Se acerca lentamente a la ventana, mirando por ella.  Inclina su cabeza hacia adelante, notando una camioneta extraña estacionada afuera de su apartamento.  "Nunca he visto esa furgoneta. Yo... nunca he visto esa furgoneta. *N-nunca la he visto antes.* Oh Dios. Están aquí. Estoy tan jodido. Yo  Voy a morir. Voy a ser la próxima víctima. *** Oh, Dios, no. *** "Empieza a gatear por su apartamento, tropezando con su mesa de café y chocando contra la pared.  Grita de dolor, sujetándose el hombro con el brazo derecho.  Se acerca lentamente a la puerta principal, con la esperanza de que los Blitzers no estén ya del otro lado.
+
+ Se acerca a la puerta, manteniendo la cabeza fuera de la mirilla.  Su respiración comienza a acelerarse.  Se sostiene el pecho y puede sentir que su corazón se acelera.  Cierra los ojos y respira larga y profundamente.  "Bueno... si voy a morir, también podría enfrentarlo".  Se toma un momento y luego mete el ojo por la mirilla.  Esperando una respuesta armada, Sam se sorprende ante la nada habitual del otro lado.  Se derrumba en el suelo, su respiración se acelera una vez más.  Estaba a salvo, por el momento.
+
+ **Eso fue, hasta que la puerta se abrió de repente.**

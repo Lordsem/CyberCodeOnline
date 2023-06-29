@@ -1,0 +1,35 @@
+{
+   "VARIABLES": [
+     "enemyName", "enemyLevel"
+   ],
+   "lines": [
+     "Después de buscar en el cadáver de ${enemyName}, encontraste algunos elementos.",
+     "${enemyName} finalmente perece a causa de tus ataques; recorres el área con cuidado y, para tu sorpresa, aquí está el botín.",
+     "Después de una dura victoria contra ${enemyName}, rebuscas en sus bolsillos y encuentras algunos premios.",
+     "¡Excelente! Parece que ${enemyName} te dejó algunos recuerdos para recordar tu batalla.",
+     "En la pelea, parece que ${enemyName} dejó caer algunas cosas. No tiene sentido dejar que se desperdicien.",
+     "¿Qué es esto? Parece que ${enemyName} te dejó algunos regalos de despedida.",
+     "No es fácil derrotar a un enemigo de nivel ${enemyLevel}, pero lo has conquistado. Te acercas y reclamas tus recompensas.",
+     "Le das a ${enemyName} una última patada para asegurarte de que están muertos. ¡Tu patada desaloja un objeto!",
+     "Le agradeces a ${enemyName} por una buena pelea y procedes a saquear su cadáver.",
+     "Nivel ${enemyLevel}, ¿y eso es todo lo que tenían para mostrar? Te mereces su botín.",
+     "Con su último aliento, ${enemyName} te dice que no mires en sus bolsillos. Naturalmente, ahí es donde está el botín.",
+     "Escuchaste un sonido de victoria después de vencer a ${enemyName}, sigue con un botín aleatorio que aparece en tus pies",
+     "Al arrebatar su botín, se podría decir que el ${enemyName} no hace honor a su nombre",
+     "${enemyName} golpea el suelo con un *golpe* y encuentras algo de botín esparcido alrededor de su cadáver.",
+     "${enemyName} ha perecido y buscas algo de botín. ¡Oh! ¡Aquí hay algo!"
+   ],
+   "linesWithNoVariables": [
+     "Has encontrado algunos objetos del cadáver del enemigo.",
+     "Habiendo vencido a tu enemigo, recoges algunas baratijas del suelo como recuerdos.",
+     "Mientras tu enemigo yace muerto en el suelo, revisas sus pertenencias y guardas algunas cosas.",
+     "Parece que se les ha caído algo. Bueno, ¡ahora es tuyo!",
+     "¡Ooh! Cosas gratis, cortesía de ese cadáver sobre el que estás agachado.",
+     "¡Parece que las vacaciones han llegado temprano este año! Encontraste algunos 'regalos' claramente destinados a ti.",
+     "Rebuscando en el bolsillo de tu enemigo, encontraste un artículo que te beneficia más adelante.",
+     "A medida que su cuerpo cae al suelo, rápidamente recoges su preciado objeto en el aire.",
+     "Te das cuenta de un objeto que brilla dentro del bolsillo de tu enemigo. Lo recoges rápidamente antes de que nadie se dé cuenta.",
+     "Mientras su cuerpo se vaporiza por tu disparo anterior, rápidamente arrebatas su botín en el aire.",
+     "Mientras lanzas una bolsita de té sobre el cadáver derrotado, pierdes el equilibrio y caes sobre su espalda, y de su mochila se derrama lo que parece ser todo su equipo"
+   ]
+ }

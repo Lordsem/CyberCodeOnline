@@ -1,0 +1,70 @@
+{
+	"variables": ["itemName", "tierName", "itemType"],
+	"REMINDER": [
+		"${itemName} contiene già la qualità dell'oggetto, ovvero contiene già ${tierName} come parte del nome (esempio: 'Pistola Spazzatura'"
+	],
+	"lores": {
+		"TRASH": [
+			"Un ${itemName} rotto e malconcio tenuto intero da colla e nastro adesivo. Fedele alla sua qualità ${tierName}, funziona a malapena come un ${itemType}.",
+			"Picco tecnologico del suo tempo, la fabbricazione di massa di ${itemName} sono costati la loro reputazione e qualità, destinati a diventare ${tierName}.",
+			"Niente meno che un artefatto abbandonato — anche se, 'artefatto' sembra già dargli qualche grado d'importanza. Magari meno artefatto se non solo detriti. D'altronde, questi ${itemType} erano solo abbastanza 'funzionali' da essere considerati tali.",
+			"È un miracolo che questo ${itemType} abbia ancora tutti i suoi pezzi.",
+			"Da qualunque pattumiera provenga questo ${itemType} conteneva certamente cibo avariato che valeva piu del ${itemName}",
+			"Qualcuno potrebbe esaminare ${itemName}, sperando di trovare qualcosa di valore. Ahimè, avrebbero sprecato del tempo prezioso.",
+			"Questo ${itemType} è stato ritirato dal produttore per difetti noti. Potrebbe essere utile come materiale di scarto.",
+			"I bordi grezzi fanno perdere esponanzialmente di valore il ${itemType}, al punto che i mercanti ne ignorano l'esistenza.",
+			"Avere un marchio notevole non permette ad attrezzatura come ${itemType} di esserne all'altezza del suo nome. E per nome parliamo di ${tierName}.",
+			"Se il tempo è denaro, i pochi secondi che impieghi a leggere questa frase sono ben più di valore del ${itemName} che ti trovi davanti.",
+			"Nella maggior parte dei casi, l'equipaggiamento fatto a mano porterà alla rovina del proprietario cercando di essere il più funzionale possibile. Spera che questo ${itemType} non venga delle penali.",
+			"Lorogato e malmesso, questo ${itemName} ha visto giorni migliori. Sfortunatamente, i giorni migliori sono relativi; era scadente sin dall'inizio."
+		],
+		"COMMON": [
+			"Fra uno dei tanti milioni di pezzi uguali prodotti dalle Militech annualmente, questo ${itemName} non ha niente di speciale, però non ti esplode in faccia.",
+			"Facile da rinvenire, comuniemente usato dalle reclute dell'SLPD. Forse dovresti raffinare questo ${itemName} prima di usarlo.",
+			"Il ${itemName} è un ${itemType} standard. È così ${tierName} che quasi tutti ce l'hanno già, è probabilmente non sarebbero interessati a prenderne un altro.",
+			"La gente potrebbe dare un ${itemName} come bomboniera al loro matrimonio. A nessuno ne serve davvero un altro, però potrebbe essere utile.",
+			"Comunemente riferito coome un 'kit di partenza', questo ${itemType} ben fatto svolgerà il suo compito di soddisfare l'umana necessità di 'essere ben equipaggiati'.",
+			"Un utile ${itemType} con il marchio 'Armeria di Judy' a lato. Saranno i produttori.",
+			"Comunemente trovato nel Mercato di Shangri-La come equipaggiamento per principianti. Spesso dato via come un 'regalo di benvenuto' data la quantità abbondante disponibile.",
+			"Un equipaggiamento in dotazione standard. La stampa su questo ${itemName} indica che è stato prodotto in un impianto Arakasa nel sud dell'Alabama, dove la manodopera è a basso costo, e spedito in massa."
+		],
+		"HIGH_QUALITY": [
+			"Sorprendentemente ben fatto, questo ${itemName} mostra segni di eccellente manifattura e compie il suo lavoro con precisione.",
+			"Una maestria notevole di un buon ${itemName}, come mostrato dal suo magnifico design. Tienilo intatto e potrebbe salvarti un arto uno di questi giorni.",
+			"Nemmeno un graffio. Voci dicono che poche persone possono creare quest'equipaggiamento. Un buon ${itemType}, come dovrebbe esserlo.",
+			"Questo potrebbe essere utile. I segni su questo ${itemType} indicano che era parte di un lotto di produzione senza difetti. Forse può essere venduto per un buon profitto?",
+			"Il ${itemName} ti porta indietro ai bei tempi. Se solo più cose fossero fatte così, questa galassia sarebbe meglio di com'è oggi.",
+			"Un ${itemName} ben fatto e raffinato. C'è un testo dietro con su scritto 'Rottamarla quando avviene un malfunzionamento critico'.",
+			"I mercanti si riferiscono a questo determinato equipaggiamento come 'soldi in tasca'. Forse è correlato a come questo ${itemName} viene venduto a prezzi alti agli stranieri.",
+			"In particolare regalato come 'riconoscimento di dedizione' trascorsi un certo numero di anni all'SLPD. Quello oppure una maniera più nobile di dire '******* la tua esistenza'.",
+			"Senza graffi, questo ${itemName} sembra quasi fatto a mano. Ha persino una copertura resistente alle intemperie!"
+		],
+		"RARE": [
+			"Una preziona aggiunta a qualsiasi set d'equipaggiamento, questo ${itemName} è eccezionale in qualità e durabilità. Il suo produttore non è noto, ma sicuramente sapevano cosa stavano facendo.",
+			"Un design elaborato senza errori, percepibile fin da subito. Tienilo immacolato e qualsiasi mercante venderebbe le sue cose per avere un pezzo così ${tierName}.",
+			"Una volta Lee disse che certi equipaggiamenti sono di categoria ${tierName} per una buona ragione. L'azienda produttrice, Arakasa, sa bene come produrre un equipaggiamento così pregiato e seducente che l'umanità possa mai chiedere, come lo dimostra questo ${itemName}.",
+			"Nessuna versione prefabbricata assomiglia a questo ${itemName}. È fortemente personalizzato e sembra sia stato fatto a mano. Chiunque l'abbia prodotto ha trascorso molto tempo nel farlo.",
+			"Questo è un pezzo di ${itemType} eccellente molto bello da guardare. È realizzato con una nano lega a peso piuma che durerà per eoni.",
+			"A lato di questo ${itemType} è incisa la scritta 'Tienilo come un portafortuna'. Forse è meglio rottamarlo subito.",
+			"Lee dice che il personale SLPD d'alto grado li equipaggiava, ma un'alto tasso di mortalità ha causato questo ${itemType} a scomparire dalla circolazione.",
+			"C'è incisa la scritta 'In caso di emergenza, equipaggiarla ad ogni costo' a lato di questo ${itemType}. Dall'altro, c'è la scritta 'Proprietà dell'SLPD'."
+		],
+		"LEGENDARY": [
+			"Questo ${itemName} era parte di un'edizione estremamente limitata prodotta da Arakasa. Apparentemente ne sono stati prodotti solo una dozzina, e questo equipaggiamento è parte del lotto. Un oggetto venerato da tutti i collezionisti.",
+			"Quelli che hanno equipaggiato questo ${itemName} erano agenti dell'SLPD, aristocratici, o sciocchi che mostravano le loro facce ovunque.",
+			"La marchiatura dietro quest'equipaggiamento racconta la storia di un giovane che ha sopperito crudelmente alla molta manodopera, tanto da diventare parte dell'equipaggiamento costoso che gli aristocratici ottengono come necessità.",
+			"Mentre la luce rimbalza da questo ${itemName}, il colore cambia in diverse sfumature piacevoli da vedere. Questo ${itemType} ha svariati aggiornamenti utili alla sopravvivenza, come un'IA avanzata, un'interfaccia neurale, e connettività VR ai social media.",
+			"Il ${itemName} apparteneva ad un famoso leader di una gang che ha condotto la prima battaglia contro la prima ribellione delle IA. Fu perso dopo la loro morte, ma in qualche modo è ritornato alla luce.",
+			"Un relitto di un passato che ha ritrovato la sua strada nel cyberspazio. Un simbolo runico irriconoscibile fu inciso a lato di questo ${itemType} che risale all'era pre-cyberpunk.",
+			"Inciso a mano. Disegnato per il comfort. Imbottito correttamente e propriamente lavorato. Il logo Arakasa è prominentemente stampato su questo ${itemType}. Un pezzo di qualità."
+		],
+		"EPIC": [
+			"Un meraviglia ingegneristica unica. Questo ${itemName} è altamente ricercato dagli ultraricchi e dai leader delle gang elite. Estremamemnte prezioso e potente.",
+			"Quelli che cercano questo equipaggiamento unico nel suo genere conosce la storia e le dicerie sulla sua perfezione, come il ${itemName} dovrebbe essere.",
+			"Un artefatto precedentemente perso rinvenuto in un'era futuristica, rivoluzionando l'artigianato. Solo quelli ritenuti degni potranno risvegliare la sua vera potenza.",
+			"I netrunner hanno fatto circolare vocie su ${itemName} per molti anni. Questo ${itemType} vale metà del PIL locale! Magari i runner lo stanno ancora cercando? Delle ombre ti stanno approcciando. Chi va là?",
+			"Nenche con una grossa vincita al pachinko potresti permetterti questo ${itemName}. È marchiato con un costoso ologramma dinamico di un codice a barre, trovato solo in prototipi limitati di ${itemType}.",
+			"Lo splendore di questo ${itemType} è secondo a nessuno. Questo è il famoso ${itemName}. Questa bellezza è più unica che rara. Il proprietario può fare gomito a gomito con i ricchi sfondati. Questo tesoro favoloso è irreperibile a qualsiasi prezzo, essenso il più raro della galassia."
+		]
+	}
+}

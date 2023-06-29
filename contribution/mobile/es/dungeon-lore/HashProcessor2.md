@@ -1,0 +1,4 @@
+# Una nueva era dorada de la minería de BitCoin
+ > (Parte 2 de 8 Serie de Procesadores hash)
+
+ El principal atractivo de la minería es la posibilidad de ser recompensado con Bitcoin a cambio de procesamiento y energía eléctrica.  Dicho esto, ciertamente no es necesario ser minero para poseer tokens de criptomonedas ahora.  Históricamente, la única forma de ganar criptomonedas como BitCoin es extraerlas o comprarlas utilizando la moneda fiduciaria ahora desaparecida.  Desde la adopción global de BitCoin como moneda mundial oficial en 2071 por parte de la WGO, la minería de BitCoin se ha encontrado con un crecimiento exponencial entre los empresarios.  El día que BitCoin fue coronada como la "moneda mundial", cada una de las 21 millones de BitCoins existentes se valoró en 9,300 millones de dólares estadounidenses, que se dividen en 10,000 millones de piezas, y cada moneda tiene un valor fijo de 1 dólar.  ¿Quién no querría la capacidad de imprimir dinero básicamente?

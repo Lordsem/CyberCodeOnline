@@ -1,491 +1,473 @@
 # Update Notes
 
-**CyberCode Online** is currently under an early and heavy development stage, which means many changes and new features are being added every day! That also means many stats are being adjusted all the time. So, if you have anything to suggest, feel free to [create an issue](https://github.com/DexterHuang/CyberCodeOnline/issues) or join our [Discord server](https://discord.link/cco).
+If you found a bug please post a bug report in our [Discord server](https://discord.gg/JREx8xz) Bug report channel.
 
-Fancy helping out with running costs? [Buy me a potato](https://www.buymeacoffee.com/cybercodeonline) or [subscibe to my Patreon](https://www.patreon.com/cybercodeonline/).
+Did you like the game and fancy helping the game? you can:
+- Leave a 5-star review on the store, this will help others see the game more
+- Report bugs or suggestions for improvement to our Discord, the developer checks Discord frequently (due to time limitations I can't really check Reddit or other places)
+- Deploy some global buff or skips for the community
+- Contribute to our WIKI, Lores and other configs on our [GitHub](https://github.com/DexterHuang/CyberCodeOnline)
 
-### Help Needed:
- * contribution/words.json - Random Words
- * contribution/dungeon/layout/structure-mask.json - Dungeon Layouts
- * contribution/notes/* - In Dungeon Lore
- * contribution/mobile/tips.md - Tips for Mobile
- * contribution/lang/* - Localisations
- * tips.txt - Tips for desktop
- * mobile-tutorial/* - Mobile Tutorial
- * tutorial/* - Desktop Tutorial
+### Contributable files:
+
+-   contribution/words.json - Random Words
+-   contribution/dungeon/layout/structure-mask.json - Dungeon Layouts 
+-   contribution/mobile/{lang}/tips.md - Tips for Mobile
+-   contribution/mobile/{lang}/tutorial/\*.md - Tutorial
+-   contribution/mobile/{lang}/procedural-names - equipment names
+-   contribution/mobile/{lang}/item/lore - item lore
+-   contribution/mobile/{lang}/scenario/\*\* - drop lore
+-   contribution/mobile/{lang}/dungeon-lore/** - dungeon lore
+-   tips.txt - Tips for desktop
+-   tutorial/\* - Desktop Tutorial
+-   contribution/lang/ - Localizations
 
 **Remember to add your name to the ['Credits.md'](https://github.com/DexterHuang/CyberCodeOnline/blob/master/Credits.md) doc when you create a PR**
 
 If you would like to help to maintain CyberCode Online, please feel free to submit a PR at [our GitHub repo](https://github.com/DexterHuang/CyberCodeOnline).
 
-Step by step [Guide](https://cybercode-online.fandom.com/wiki/GitHub_PR_Tutorial) how to submit a PR on our GitHub
+Step-by-step [Guide](https://cybercode-online.fandom.com/wiki/GitHub_PR_Tutorial) on how to submit a PR on our GitHub.
 
-## Updates 
-### **2021/09/05 v0.687**
- * UI - Added filter in dungeon list to show only dungeons you can join
- * UI - Added fixed tip on AFK screen explaining closing game will not interupt AFK process 
 
-### **2021/09/04 v0.687**
- * BUFF - Now `SL Data fortress breach` task will no longer reset everyday
- * BUFF - Now `SL Data fortress breach` task will have chance to give `Calibration Precision (Common)` effect
- * BUFF - Now `Collect protection fee` task will have high chance of dropping `Locked containers`
- * BUFF - Now `Collect protection fee` allows to repeat maximun 2 times instead of 1 previously
 
-### **2021/09/02 v0.687**
- * OPTIMIZATION - Server optimization and code clean up
- * UPDATE - if you have more then one donation active, the higher tier one will take priority (for example, from paypal + playstore)
-### **2021/08/30 v0.687**
- * FIX - Fixed after crafting any backpack if equppting the same backpack, the new backpack will not show up untill you unequip your current backpack
- * BUFF - Now common container will drop ‵Gang Supply Crate‵
- * FIX - Fixed attack sound effect cannot be disabled via setting
- * UI - Added simple enemy graphic on battle UI
+## Updates
+### 2023/06/20
+- Improved bot detection 
 
-### **2021/08/28 v0.687**
- * UI - Makes travel button loading background darker, so it's easier to read the text.
- * OPTIMIZATION - Background music should now load faster, especially on slower internet.
- * UPDATE - Added sound for attack and being attacked. Each weapon type has a different sound.
- * UPDATE - Added sound for button click interaction.
- * UPDATE - Added new setting `endable sound effect`
- * UPDATE - Changed the old setting `disable background music` to `enable background music` to avoid confusion. (Background music will play until you disable this setting. This is expected)
- * FIX - Sometimes after assigning a quickslot it becomes unclickable for a short time.
+### 2023/06/16
+- Backend optimization and bug fixes
+
+### 2023/06/06
+- Updated npc's image to show less skin so its more acceptable in all cultures
+- Updated backend and client for more stable chat (hopefully, still trying to find the cause for the unstable issue)
+- Fixed issue with skip queue
+
+### 2023/06/01
+- Fixed issue with skip queue getting stuck in very rare condition
  
-### **2021/08/27 v0.687**
- * FIX - Fix some server-side bugs
- * OPTIMIZATION - Improved chat message rendering
+### 2023/05/22
+- Updated dungeon quest with new UI, it will not show which gang member to defeat before accepting the quest
 
-### **2021/08/24 v0.687**
- * NEW - Added @Moderators tag, only use it when moderator is needed urgently, (misuse of mentions and tags can get your banned/muted, please refer to rules)
-### **2021/08/18 v0.687**
- * FIX - Fixed time skip estimated time and cost is incorrect (just display issue, deduction was correct)
+### 2023/05/20
+- Increased chance of Techno Theif appearing when opening crates
 
-### **2021/08/17 v0.687**
- * OPTIMIZATION - General optimization for faster loading
- * OPTIMIZATION - Improved mail list rendering 
+### 2023/05/15
+- Anniversary Update
+- Techno Thief will spawn rarely in dungeon when you open crates, they drop better loots, including higher chance of epic items
+- Gang dungeon will have chance to spawn a gang quest, involving killing enemies of specific npc gangs
+- Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests
+- Two new donator frames added
 
-### **2021/08/15 v0.687**
- * OPTIMIZATION - Reduced memory useage overal 
- * OPTIMIZATION - Reduced chat message rendering time 
- * FIX - Fixed incorrect inv slot count display
+### 2023/05/04
+- In market now the maximun selectable amount will be capped at how much space left in your inventory. thanks for player who made this suggestion on discord
+- Adjuested npc `SLANC`'s personality base on community suggestion, the npc will now act more friendly. this npc is still experiemental please let me know how u think.
+btw, this npc is not a tutorial bot and was not designed to be one, a AI-powered tutorial npc or helper would be cool but the tech is still not possible yet, it is still experimental. 
+
+### 2023/04/22
+- Fixed chat list with non-English UI would not show correct color base on player's title
+
+### 2023/04/21
+- Updated Friend list UI, now it shows your friends level and their names will be colored base on title
+- Fixed issue with friend list, if some of your friend is missing in the list please add them back again.
+
+### 2023/04/19
+- Update core navigation framework, this should improve the tab switching performance by alot, should be more noticable on older mobile device, please let me know if you face any issue casued by this update
+- Updated player list UI and fix some related bug
+- Changed background music back to normal and free bundle removed after Retro Wave even is ended
+- `Alley Way` is now hidden, `Bellial` will be back in November
+
+### 2023/04/09
+- Adjustment to `SLANC`, it should be more inclined to respond in the localized languge in channels (and from my testing performing better in non-english languages) and should be able to respond with longer sentences in non-english languages now
+
+### 2023/04/08
+- `SLANC Connector` is now available oon Arasaka Unit Exchange
+- Multiple bug fixes for the new AI system
+- Added new opensource tutorial markdown at /contribution/mobile/{lang}/tutorial/ai.md for detail steps and guilde to add custom community knowledge to AI system
+
+### 2023/04/07
+- Added `SLANC` AI, he is still under-development, this is part experiment with integrating the newest AI technology into the game and at same time to provide some entertainment value
+- `SLANC` will occationally make remarks on player's chat message
+- You can `Summon` SLANC for 10 minutes by using `SLANC Connector` item, this the bot is summon based and not available all the time because otherwise it will be too chaotic if its always chatting all the time,
+functions similar to Chat Exploits, however it can be used at same time with Chat Exploit, the AI will also be affected by the Chat Exploit with different level of effectiveness,
+from my testing Pirate, UwU and Love works well, with the AI trying to talk in that manner, so the effect is different from how it affacts players.
+- SLANC will also have access to game knowlege in contribution/mobile/{lang}/tutorial/FAQ.md, and contribution/mobile/{lang}/ai/knowledge.md, you guys are welcome to add more stuff into the files, SLANC will automatically learn the knowledge once its been merged to github (with a few hours delay)
+- SLANC is only available in Global, Mandarin, Korean and Japanese channel currently
  
-### **2021/08/12 v0.687**
- * OPTIMIZATION - Major improvement on inventory rendering speed
-
-### **2021/08/11 v0.687**
- * OPTIMIZATION - Chat message optimization
- * FIX - fixed enter dungeon screen not scrollable on smaller screens
-
-### **2021/08/10 v0.687**
- * BALANACE - With many player request, gang dungeon boss will now drop `Locked Container` and a guaranteed rare+ item, but overal exp is reduced from +30% of challange dungeon to +20%
- * FIX - Fixed `!` and `?` in dungeon
- * UI - Fix fullscreen popup on device doesnt support backdrop-blur css property
- * UI - Fix fullscreen popup looks weird on big screen
- * UI - Updated tutorial popover logic
- * FIX - fixed issue with dungeon spam
-
-### **2021/08/09 v0.680**
- * UI - Updated dungeon list display
- * REWORK - After listening alot of player feedbacks and long discussions with both players and mod team, many have suggested making gnag dungeon to be harder but gives more exp then challange dungeon so it can be a better candiate for level grinding. So, in this update, there are several changes for gang dungeon to address that:
-   * Reduced number of rooms - one of the concern was that there were too many rooms making it less viable then challange dungeon causing it to have less exp gang overal, so number of rooms is reduced to exactly same as challenge dungeon
-   * Increased EXP - now all exp from gang dungeon has been increased to 130% of challange dungeon, with all other factors equal (same amount of rooms & enemies) this increase of EXP should directly reflect the amount of exp gained compare to challange dungeon
-   * Increased in difficultiy - With many feedback regarding to gang dungeon was way too easiy and wanted more challange, also with the increase in EXP, the difficulty is increased, effectively gang dungeon is now "Challange++", you should have good (rare+) with full upgrade module attached and decent calibration on your equipments to run this dungeon fast
-   * Reduced drops - now that we want to transform gang dungeon into a grind dungeon, drops must be reduced to ensure we dont have too much overflow of loots, it will still drop gang specific items such as `Gang Resource Crate` but the amount has been reduced
-   * Gang specific drops will now also drop in AI Farm and Scavange - with gang dungeon becoming a ✌Challange ++✌ dungeon, the gang specific items will now drop in AFK tasks to ensure that players with no amazing gears can still aquire those items
-   * Increases `Gang Invasion Order Transmitter` drop rate - now gang dungeon becomes a grind dungeon the drop rate can be increased:
-     * Callange dungeom boss has 20% chance of droping 1
-     * `AI Core` farming has 0.2% chance of dropping 1
-     * Scavange has small amount of chance of dropping 1 at location above level 50
-
-### **2021/08/07 v0.680**
- * FIX - The weird 'Enemy is dead' screen should not show up anymore
- * FIX - fixed sometimes street fight becomes not responsive after first attck
- * FIX - fixed the small delay on attck timing bar
- * UI - Now you can long press on back button (at map tab, top left) to go back to city with once click
- * OPTIMIZATION - Combat UI now renders faster and should be less likly to crash on low end devices
- * OPTIMIZATION - Many general optimization 
- 
-### **2021/08/05 v0.680**
- * BALANCE -  `AI Core` afk farming will also drop `Gang Invasion Order Transmitter` and `Locked Container`
- * BALANCE -  `AI Core` exp increased
- * BALANCE - Gang dungeon boss exp and drop rate of `AI Core` is increased, normal enemy in gang dungeon exp is reduced in gang dungeon, but still higher then normal enemy 
-
-### **2021/08/05 v0.680**
- * UI - Updated review popup UI and added translation for text
- * FIX - fix  `CyberTunnel VPN` not working
-
-### **2021/08/04 v0.680**
- * FIX - fixed `CyberTunnel VPN` applying to everyone, it should only apply to the person who used it only
-
-### **2021/08/03 v0.680**
- * NEW - Added `CyberTunnel VPN` When used allows you to ignore exploit for 1 hour, this will drop from rare+ `Locked Container` and can be brought from unit shop
- * UI - Updated lore note interface in dungeon
- * UI - now time display on AFK screen and action button will display more accurate time
-
-### **2021/08/02 v0.674**
- * BALANACE - Increased drop rate of `AI Core` from common container abit after the last nerf
- * UPDATE - `Hacking SL Data Fortress` points will not carry over to the next one if there is overflow
- * UI - Minor adjustment on AFK screen
-
-### **2021/07/31 v0.674**
- * NEW - Hacking SL Data Fortress - using `AI Core` in `Gang Headquarter` to hack SL Data Fortress (Global Task) once SL Data Fortress is hacked, random global buff will be deployed, you may see the progress in quest page (the progress is reset daily)
- * UI - Updated how the AFK screen looks like
- 
-### **2021/07/30 v0.674**
- * UPDATE - Added language option in login page
- * UPDATE - Translated all untranslated in ontributable lang config with Google Translate, there are still alot of mistakes. Please feel free to submit edits to fixes those mistakes :D [Language config here]https://github.com/DexterHuang/CyberCodeOnline/tree/master/contribution/lang
-
-### **2021/07/28 v0.674**
- * UPDATE - Mods will no longer be affected by chat exploits
- * UPDATE - Hides most of the stations that is out of range of player's level
- * UPDATE - Updated message for new players when their level isnt enough to unlock areas and NPCs
- * OPTIMIZATION - Switch dungeon combat to use Google server to have more stability 
-
-### **2021/07/27 v0.674**
- * NEW - Added auto scrap button to mobile, open inventory and expand the filter dropdown (system will automatically scrap item it thinks you dont need, use at your own risk)
- * UPDATE - Slightly increase drop of  `AI Core` and `Hash Processor` on `rare locked containers‵
- * Added confirmation when quiting dunegone by clicking back arrow
-
-### **2021/07/26 v0.674**
- * UPDATE - `AI Core` and `Hash Processor` drop rate in common container is slightly lowered in favor of other drops, since it is observed people are having too much of it now
- * UI - Required time on recipes now will hide if the recipe is instant craft instead of showing `less then 5 seconds` (such as cache printing)
- * FIX - Fixed Npc talk bubble sometimes changes during page transision 
- * OPTIMIZATION - Optimized svg loading, takes up less resources to render svgs
- * OPTIMIZATION - Cache printing npc page now should render faster
- * OPTIMIZATION - Bank UI should render more smoothly now
-
-### **2021/07/25 v0.674**
- * UI - Minor adjustment for icon buttons 
- * UI - Added description to bank menus
- * UPDATE - Decreassed max price of `AI Core` and `Hash Processor` in market to prevent people using it as storage
-
-### **2021/07/23 v0.674**
- * UI - Added Icons for bank actions and market actions
- * OPTIMIZATION - optimized how images are cached
- * FIX - rare crash in items page
- * FIX - fix crash on desktop gang details page 
- * FIX - fix crash on opening notification tab on desktop in rare cases
- * UPDATE - increases max price you can sell for all `Locked Containers`
- * FIX - fixed typo on pachinko prcing 10k -> 5k
- * FIX - fix rare crash on mobile player market stall page
-
-### **2021/07/21 v0.674**
- * Reduced `Energy Cell` drop in scavange, since there are way too many now
- * Changed chat character limit to 256
- * Now you cannot type more then the character limit into chat input box
- * Merged new names from github
- * Added many more translatable content 
-
-### **2021/07/17 v0.666**
- * UPDATE - Reduced max length of chat message to 128
-
-### **2021/07/15 v0.666**
- * FIX - multiple security patch and bug fixes
- * FIX - updated how enemy tile is rendered, it should show up correctly without issue on all devices
- * UPDATE- removed display of dungeon id on web version
- * OPTIMIZATION - changed how email is sent in the backend
-
-### **2021/07/14 v0.666**
- * UPDATE - removed some layouts from dungeon and added some new ones
- * FIX - fixed chat tag broken during chat exploit 
-
-### **2021/07/13 v0.666**
- * OPTIMIZATION - Fix chat becomes slower when kept for long
-
-### **2021/07/12 v0.666**
- * FEATURE - Added locked safe box (Captcha Reward), the system will give the player a safe box, upon unlock you will receive a small reward, the appearance of this safe box is depending on your behaviour, this is introduced because there is still player using bots. this is unfortunate that the inconsiderate individuals are forcing the implementation of captcha, but I will always try to balance the detection algorithm to reduce interruptions to the normal players to the minimal 
- * NEW - Merged new dungeon layout from github to game
-
-### **2021/07/10 v0.666**
- * FEATURE - You can now long press on gang player list to kick player (if you have the permission that is)
-
-### **2021/07/09 v0.666**
- * FIX - Now mentioning non-exiting player in chat will not work
- * OPTIMIZATION - Dungeon should be smoother now 
- * FIX - Fix chat keeps disconnecting
- * BALANCE - reduced Marksman enemy crit damage from 50% to 40% 
- * OPTIMIZATION - opening player profile should now be much smoother
-
-### **2021/07/08 v0.639**
- * NEW - Added reconnecting message for global chat (this might not work, let me know if it works @@)
- * OPTIMIZATION - optimized page transistion
- * FIX - Fixed Inventory wonky behaviour and it should be very smooth when scroll now
- * FIX - Fixed market not removing old items
- * FIX - Hopfully fixed some chat sometimes stuck at bottom or display wrongly
-
-### **2021/07/07 v0.639**
- * UPDATE - global status timer will now update more frequently (each 60 sec => 10 sec)
- * UI - Updated how inventory is rendered to reduce load (this will be big improvement specially when there is alot of item in inventory)
- * UI - Now bank vault item deposit and withdraw will have their own page, to reduce load on device when list is big
- * UI - Now sell to merchant npc will have its own page as well
-
-### **2021/07/06 v0.639**
- * NEW - (Marksman) trait enemies will now crit : 10% crit chance 50% crit damage
- * NEW - Combat now has a bar that determine the extra damage you deal based on timing (5%+ damage), you can disable this and hide the bar to disable this feature in the settings menu if you dont want time based combat :)
- * NEW - Enemies will now deal variable damage 5%+-
- * NEW - Updated combat log text, hopefully it's easier to read
- * FIX - Updated realtime liberary, this should fix sometimes chat doesnt show up correctly
- * OPTIMIZATION - Item selection popup should be much more performan now
- * OPTIMIZATION - @Mention search should be much faster now as it shows less possible result (you cant see them anyway)
-
-### **2021/07/05 v0.639**
- * Removed player tag loading animation (it is taxing on old devices, will change to a better one in future)
- * Added member contribution history for gang
-
-### **2021/07/03 v0.639**
- * FIX - fixed rare crashes happens when starting new afk tasks
-
-### **2021/07/02 v0.639**
- * UPDATE - New graphic for Bank of Arasaka 
- * OPTIMIZATION - making rendering item list faster
- * OPTIMIZATION - now market rendering is much faster
- * OPTIMIZATION - press back from market list and player profile is much faster
-
-### **2021/07/01 v0.592**
- * OPTIMIZATION - Big chungus optimization ~ Multiselect in item lists are now much faster
- * OPTIMIZATION - Player profiles will now load faster and more efficiently
-
-### **2021/06/31 v0.592** 
- * The word censor list is now contributable via github
-
-### **2021/06/30 v0.592** 
- * Added daily rewards, can be access in the `All Apps` Menu
- * Changed pachinko to be NOT instant (cuz it was op) and cannot used while AFK (technical limitation) 
-
-### **2021/06/29 v0.592** 
- * `Collect Protection Fees` now has significant chances of getting Rare+ items
- * Changed icon for the floating menu, and added a new subcategory `Apps`
- * Added Pachinko in the `Apps` submenu, spend some btc to win random rewards (instant and can be used while AFKing)
-
-### **2021/06/28 v0.592**
- * Improved stability
- * Fixed blank dungeons
- * General bug fixes
-
-### **2021/06/27 v0.592**
- * Improved automatic error reporting 
- * Age of UwU Rawr xD has arrived, old man
-
-### **2021/06/26 v0.592** 
- * Fixed the Donation and Unit NPC showing incorrectly on Cyberpunk mode 
-
-### **2021/06/25 v0.592**
- * Muted players can no longer delete their account
- * UI - AFK button will now show a more detailed reward list, incalculable chances will be shown as `(??%)`
- * BUFF - Occupation exclusive AFK task now allows the top 2 gangs in the occupation control leaders to use it, instead of the top 1 previously
- * BUFF - Increased the loot drops for `Collect Protection Fees`, along with the required cost, now it requires `Gang Resource Crate`. This is to increase the chance of other gangs catching up since the top gangs will need to use up some of their resource if they want to collect protection fees
- * NEW - Added l33t Spe4k exploit, can be purchased in the Unit shop, it changes all chat in global to leet speak for 10 minutes
-
-### **2021/06/24 v0.592**
- * NEW - Added exclusive AFK task for members of the TOP GANG (the gang that currently occupies shangri-la)
- * Updated the alternate account detection algorithm 
- * Improved overall app performance
-
-### **2021/06/22 v0.592**
- * BUFF - Drop rates for `Supply Crate [Gang]` from enemies has been tripled, and scavenging now yields a big chance of dropping it
- * NEW - Added gang occupation control to leaderboard
- * NEW - Gang image and motto is now visible in the gang details page
- * NEW - Elite donator tier and above can now set gang image and motto (You will be banned if you put inappropriate images or text, this is a very serious offence)
- * NEW - `Supply Crate [Gang]` usage will result in less resources, but you can now use it in the gang headquater to gain more resources
- * BUFF -  `Supply Crate [Gang]` drop rate has been increased, and now it will also drop when scavenging
- * NEW - Gangs now can "Occupy" the Shangri-la city by performing occupation AFK tasks in the headquarter, the gang with the highest power will be shown in the city to all players (with image and motto if available), occupation status will be refreshed weekly, so everyone will always have a chance
- * NEW - Added a leaderboard for gang levels
-
-### **2021/06/21 v0.592**
- * Fixed a bug where mails don't update when the app is closed
- * Fixed rare chances of freezing when applying skips
- * NEW - Added gang leaderboard
-
-### **2021/06/20 v0.592**
- * Added two new healing items for higher level players
- * Fix an issue where some players cannot purchase items from the market
-
-### **2021/06/19 v0.592**
- * Fix desktop cyberpunk mode UI issues
- * Fixed collapsible inventory not clickable
-
-### **2021/06/18 v0.592**
- * Fixed the problem where progress isn't visible after starting recycle on desktop cyberpunk mode
- * Added chracter graphics for Lee
- * Player details page now shows only stats that the player have, those the player doesn't have will be hidden
- * Inventory and equipment is now split into different tabs, reduces the constant scrolling and improving performance
- * Secret key list is now collapsed by default to improve performance
- * Player inventory is now collapsed by default in player details to improve performance
- * Improved performance for inventory list
-
-### **2021/06/17 v0.592**
- * Updated iOS app, now notification should work as expected on iOS devices
- * Updated mobile mode on tablet screen, now when you have lagrer screen, chat and inventory will show on the sides to take advantage of larger space :)
- * You can now switch to mobile mode when you are on desktop by clicking on "Enable Cyberpunk Mode", you can switch back in the mobile setting page
- * Notification dots on the bottom tab is now fixed
-
-### **2021/06/15 v0.592**
- * Added automatic alt detection, it has been brought to my attention that there is some kind of mass alt farming operation happenning. In order to protect the market and fairness of the game, it is clear that its necessary to limit amount of alts, specially large scale ones for mass farming. 
-I will be perma-banning malicious alt accounts. 
-With the backpack update, btc bank, there is no legit reason for having alts anymore, therefore we will be gradually prohibiting the use of alts. If you have less then 4 alts you will still be able to send and move your stuff to main, BUT if you have 4 or more alts, you wont be banned unless you are doing serious exploits, but you will certainly not be able to send items to your alts anymore. 
- * Now muted players cannot sell you items in the market
-
-### **2021/06/13 v0.592**
- * IP bans and auto chat spamming mutes are implemented 
-
-### **2021/06/11 v0.592**
- * Major UI rewrite
- * Fixed gang invites not showing properly 
-
-### **2021/06/10 v0.592**
- * Fix rare chances of double skips, this should be just a display bug, I dont think the person actually paid doubled units. Let me know if I am wrong on this
- * Fix rare chances of losing items while retrieving it from the item inbox
-
-### **2021/06/09 v0.592**
- * NEW - You can now `Factory Reset` your calibrated equipments by going to the item details page and clicking Factory Reset, this requires a `Factory Reset Shard`
- * NEW - Added `Factory Reset Shard` this drops rarely when scavange runs
- * Fixed graphical glitch where it says enemy is defeated in dungeons while its not
- * Added warning box for items that is broken
-
-### **2021/06/08 v0.592**
- * NEW - You can now deposit and withdraw from `Bank of Arasaka`
- * NEW - `Chat exploit transmitter [PIRATE]` Activate to enable pirate chat mode globaly 
- * ***IMPORTANT*** Items in `Item Inbox` will now expire automatically in 7 days, please make the necessary arrangement, or your items WILL get deleted in 7 days. you can see the expiry date at item inbox
-
-### **2021/06/07 v0.566**
- * Increased max stack of items to 5000
- * you can now recycle `Ammunition tech parts` and `Military ammunition tech parts` to `Tech Scrap`
- * Now when you are using `Pirate Speak` language, whatever you say in chat will be automatically translated to pirate speak :)
- * Server stability optimization
-
-### **2021/06/06 v0.566**
- * Make player mention on offline players work better 
- * Added two new language, Thai and Pirate Speak!
-
-### **2021/06/05 v0.566**
- * Updated floaty menu
-
-### **2021/06/04 v0.566**
- * NEW - `Automatic Recycler` 
-       You may use this to recycle `Medical Tech Part` and any other kind of equipment `Cache` to `Tech Scrap`, the recycler takes time to process the items, but produces more then simply scrapping, there is also chance of getting extra `Tech Scrap`. The Recycler is located at `Gang Headquarter`, only player in a gang can access it
-       
-### **2021/06/03 v0.566**
- * Added mutiple `Backpacks`, you can craft them from `Lee's Trading Post`
- * Fix some dungeon stability issue
- * Expired market item now will correctly go to new item inbox
-
-### **2021/06/01 v0.566**
- * Fixed issue with calibration item stat display
- * Rewrite inbox items, now items should not disappear when gifting to other players, Because of this rewritem, the items in your old item inbox will disappear, but not gone, it will still return to your inventory when there is space
- * Fix issue with sometimes money not recieved by seller when item is sold on market
-
-### **2021/05/31 v0.566**
- * Added forgot password page, you can now reset your password by entering your email
-
-### **2021/05/30- v0.566**
- * fixed calibrated item not becoming untradable issue
- * Increase max price you can sell cali core at market
- * Fixed clear dungeon quest not registering issue
- * Now only normal dungeon will have healing thingy
-
-### **2021/05/28- v0.566**
- * Major dungeon enemy system code rewrite, should be faster and comsumes less battery and data in dungeons
- * Added healing thingy in dungeons
-
-### **2021/05/28- v0.531**
- * Travel button is now THICC
-
-### **2021/05/27- v0.531**
- * Updated Unit Exchange character image
- * Fixed system log issue
- * Updated Travel button UI
- * Global chat optimization
- * Small global chat UI change
- * Fixed common containers not showing in the terminal when you dont have enough tech scrap
-
-### **2021/05/26- v0.531**
- * CHAT IS SPEED 🚀
- * Gang can now invite more than 32 people based on the clan level
- * Resources and funding needed for gang upkeep is decreased for gangs with lesser players, and increased for gangs with more members
- * Notification settings! You can now choose which kind of notifications you want to receive
- * Small calibration curve adjustment, +4 fail chance is lowered, +5 fail chance increased but also increase the power, also, +5 above is buffed 🍔
- * Peformance update, should run smoother on older devices
-
-### **2021/05/24- v0.531**
- * You can now inspect other player's item
-
-### **2021/05/23- v0.531**
- * Gang and player name tags loading optimization (reduces calls to server)
-
-### **2021/05/22- v0.531**
- * NEW - `Item Calibration`, you may now access `Equipment Workbench` from your `Gang Headquarter`, insert a `Equipment Calibration Core` to activate the workbench, once activated, you may use it to `Calibrate` one of item of your choice, each item has differen `Calibration Capacity` varies base on thier Tier, 
- * *IMPORTANT* if calibration fails, your item will be destoryed, irreversable 
- * Added `Calibration AI Shard`, after activating this you will get a stackable buff that increases the success rate of calibration
- * Added `Equipment Calibration Core`, drops from enemies, used for item calibration
- * Updated item detail UI, now shows clearly where each attribution is coming from:
-    - white - total
-    - grey - attachment
-    - yellow - calibration
- * Item list now shows attachment icon dots
-
-
-### **2021/05/20- v0.487**
- * Fixed typo on dungeon description (2.5x exp -> 2.0x exp) NOTE: its not a nerf, it has been wrong since a long time ago (exp is unchanged, only increased by 10% from previous patch)
- * Gang dungeon's level requirement has been removed
- * Removed EXP Memory Shards from gang dungeons 
- * Decreased the EXP required to level up for all skills
- * Increased AI Core bitcoin drop by 30%
-
-### **2021/05/19- v0.487**
- * Increased EXP gained from killing enemies by 10%
- * Decreased Bitcoin gain from AI Cores
-
-### **2021/05/18- v0.487**
- * Decreased gang related item's droprate in crates, but drastically increased in boss drops
- * Fixed `Gang Memory Shard` not spawning correctly
- * Upgraded the email server (All your mail history will be lost, it's expected)
- * Boss XP gain has been doubled in dungeons
-
-### **2021/05/17- v0.487**
- * Now clicking on player's gang tag in chat message title will navigate you to the respective gang's details page
- * Entering gang dungeons will now consume a `Gang Invasion Order Transmitter`
- * Entering gang dungeons created by a gang member will no longer require you to have `Gang Invasion Order Transmitter`
- * More optimization
- * Fixed an issue regarding loading a name which is either changed or the player is already banned in the gang member page
-
-### **2021/05/16- v0.487**
- * Added `Gang Headquarter`.
- * Gangs now require an upkeep fee and resource, the fee and resources required depends on the member count
- * Added `Gather Resouce` action in `Gang Headquarter`. This action gives resource to your gang
- * Added `Gang Dungeon`, a high difficulty dungeon, that is bigger and deeper with a stronger boss. The boss is guaranteed for rare+ drops and requires `Gang Invasion Transmitter`, and only accessible to gang members.
- * Added `Gang Invasion Transmitter`, it only drops in the loot room of challenge dungeons, use this to enter the gang dungeon
- * Added gang levels, now gangs can be leveled up based on players actions
- * Player tag now shows gang level
-
-### **2021/05/13- v0.487**
- * Removed unit amount from player profiles on the web version
-
-### **2021/05/12- v0.487**
- * Nametags now have distinct colors if the tagged player is a donator
- * Potential fix to dungeon crash issue
- * Updated level exp bar UI on the profile page
-
-
-### **2021/05/11- v0.487**
- * Added icons for travelling
- * Added a prompt to change language when your system language isn't english
- * Fix the bug where you can click edit bio on other player's profile
- * Made the circuit background more noticeable
- * Changed the color of the AFK loading bar to improve readability
- * Change the brightness of red to increase readability
-
-### **2021/05/10- v0.487**
- * New Death Screen design
- * Updated AFK progress bar design
- * Updated level stats display
- * Added Icons for NPCs
- * Minor `AI Core` nerf
- * Added Bio to profile (available only to donation tier `Elite` and above)
- * Added barcode decoraction (available only to donation tier `Elite` and above)
- * Added Level up screen
- * Fixed bugged enemies, causing the player to crash until the dungeon expires
- * Fixed bugged dungeons stuck in the map
-
-### **2021/05/07- v0.487**
- * Added an animation for attacking and receiving damage
- * Added an indication when health is low during combat
- * Bitcoins are now required to unlock all Locked Containers
- * Added a limit to the number of Locked Containers that can be unlocked in one go
+### 2023/04/06
+- Updated mod internal tooling to ensure better transparency, fair and friendly chat enviroment
+- some wip framework for future updates 
+
+### 2023/04/03
+- Daily reward reworked, with many player's suggestion, now it will reset accroding to UTC date (UTC 00:00 instead of your local time-zone), instead of +24 hours of your last claim. should provide more predictiable schedule
+- Daily reward page UI slight adjustment
+
+### 2023/03/30
+- Free legendary container given by B3llial is changed to random equpments because people were abusing it with alt accounts.
+
+### 2023/03/29
+- Added Tiago's chracter B3llial as an NPC, you can receive free items everyday from him, visit him at Alleyway in Market area,
+B3llial will be available during March and September every year
+
+### 2023/03/21
+- You can now hide NPC images by toggling "hide npc" option in setting menu
+
+### 2023/03/12
+- Attempt to ease the issue with occupation points not registering correctly when there is a massive amount of people doing occupation tasks and finishing at the same time.
+Please let me know if this issue has been reduced.
+This issue is very tricky to mitigate with the current server architecture for technical reasons.
+
+### 2023/03/08
+- `Medical tech cluster` crafting price is now lowered from 50,000 to 5,000, this may be changed in the future.
+- Now amount selection input will show the number keypad on iOS
+- Security bug fixes
+- stability improvement
+- misc bug fixes
+
+### 2023/03/05
+- Fixed issue with BGM not playing on iOS
+
+### 2023/03/02
+#### Sythwave Update
+- Added Medical Tech Cluster, which can be crafted with 1000 medical tech parts. this can be used to efficiently store a large amount of medical tech parts
+- Added special item "Cassette Tape", when used you will receive buffs that give you +20% damage and +20% defence, the only way to get this item is a daily free bundle in Arasaka Unit Exchange
+- Item details UI redesigned, now it highlights the primary button and secondary buttons have been changed to a smaller size
+- Red envelopes will not drop anymore. Yen's shop will close on 16/03/2023, please use up your gold coins, otherwise, you won't be able to use them.
+
+### 2023/02/21
+- Fixed combat log not showing correctly on the desktop version
+- Reduced difficulty on 500+ level enemies, both health and damage
+- Minor UI fixes
+
+### 2023/02/20
+- You can now optionally hide lower level are in translations, this option will show up when you are level 30+
+- Area now open to level 800
+- Fixed issue with epic upgrade module shows that as if it can install a module but it can't
+- Fixed bug where DexterHuang is showing on the leaderboard, I am not supposed to be in the leaderboard 
+
+### 2023/02/17
+- Reduced printing price for Epic items on higher levels
+- Now top gang banner will again show in stations
+
+### 2023/02/15
+- Quick select will now not select bag items when selecting equipment, eventho its a equipment, considering people wont try to sell it, I have made it not to select it.
+- Added ability to select upgrade modules in quick select module
+
+### 2023/02/13
+- Added quick select feature, now enabled only at sell to NPC shop interface, you can now configure what equipment or cache to be auto selected so you can sell them more quickly
+
+### 2023/02/08
+- You can now open chat tab on the left panel of web version, allowing you to see both gang and global chat at same time.
+- Server optimization
+- minor bug fixes
+
+### 2023/02/03
+- Added many new enemy images (thanks to `ZeFat` for creating the images)
+- Added new BGM for gang headquarters (thanks to `D3C1M4L` for composing the track)
+- Increased `Factory reset shard` max price at market
+- Enabled equipment translation for Italian language 
+- Changed skip heart image back to heart
+- Fixed issue with login page cropped on some device
+- Fixed issue with loading splash screen jumpy on some device
+- Increased minigame reward, now has chance to drop `Rare Locked Container`
+
+### 2023/01/28
+- Bug fixes and optmization
+- SL-Data fortress breach will be disabled for a day due to prevent overriding 1-day buff by `Raira`
+
+### 2023/01/26
+- Updated molecular print npc image
+- Updated lee's image
+- Show better login failed message
+
+### 2023/01/25
+- Updated clibration stiation npc image
+
+### 2023/01/21
+- Added trading system (still disabled & under testing)
+
+![image](https://user-images.githubusercontent.com/18545294/213868294-9829d201-0f44-4a4e-b7c7-8065fcf2e9a2.png)
+- Updated tranlation code, now there is way to make more text to be translated, will add more to translation config soon
+- Fixed a bug where expired notifications does not get deleted, causing player data getting too big with expired notification and related security issue with expired notification still usable to join gangs from long time ago
+
+### 2023/01/16
+- Fixed issue with in rare situation where when navigating through pages back and forth too fast will result in app page get stucked in a invalid state.
+- Reduced sensitivity of swipe on inventory tab
+- Updated Judy's graphic
+- Backend optimization and bug fixes
+
+### 2023/01/12
+- Fixed crash bug when openining gang permission popup
+
+### 2023/01/12
+- Updated rendering core liberary and with it added many optimizations, game should render faster both on start up and while running
+- Updated graphic for Violet, Jen and Liam 
+
+### 2023/01/09
+- Added bot detection algorithm, server will detect base on client's behaviour and other factors to choose to show minigames when attempt to start AFK task ONLY IF the system think is necessary, meaning most people will not encounter this (*I am still tuning the system, the goal is majority(imagine something like 99%) of the player will not even encounter this mechanism, and the rare situation where the algorithm determine the client might be possible bot, the minigame/captcha will show up sometimes, not too often.*) this algorithm is also partly integrated Google's service to detect bots, which is base on Machine Learning and other Google magic, so it will become more accurate the longer we use it. hopefully this will reduce the number of bot abusers/cheaters and maintain the fairness of the game :)
+
+### 2023/01/06
+- Attempt in preventing two skips being used at exactly same time at very rare situation, let me know if it can still happen. 
+- Serverside optimization, some part of system should run faster now and has less strain on the system overall
+
+### 2023/01/04
+- Fixed issue with some phone scales the UI way too big, now will force rescale the UI to more resonable scale. you can now also manually change your UI scale in setting
+- Various backend bug fixes
+
+### 2023/01/02
+- Correction of typo on the previous update note, red envelop will drop 1 to 200 coins (*In game drop rate was not changed, just the update note has a typo*) 
+- Improved the way Red Envelops are opened
+- Fixed some issue with display scaling on some devices
+
+### 2023/01/01
+- Lunar New Year Event Update
+  - Added new NPC Luna, you can find her in Yen's corner store in Market district, she sell 3 new items, `Rice Cake`, `Sushi` and `Dumplings`, additionaly she also sells `Legendary Locked Container`, all of which is changable with `Gold Coins`
+  - Added new item `Red Envelop`, you can open it from your inventory to receive randome amount of `Gold Coins` range from 1 to 200 coins
+  - Added bundle system, and 4 bundles, one of which can be claimed for free once a day
+  - Added two new chat frames
+  - Fixed several security issues
+  - fixed market slot upgrade issue
+
+### 2022/12/19
+- Combat UI update
+- Added global buff display in dungeon, and updated the UI
+- security update
+
+### 2022/12/16
+- Fixed recycler not returning to main screen after starting task in pc mode
+
+### 2022/12/15
+- Added warning on AFK screen if device time is incorrect, as incorrect device time can often cause many display issue
+- Added popup for incorrect time
+- some bug fixes
+- Added new bot prevention mesure 
+
+### 2022/12/14
+- Potential fix for in very rare case global buff item used will not deploy buff, only shows announcement 
+
+### 2022/12/13
+- fixed long suggested issue where people can gain advantage by opening multiple windows for same account at same time. now if a new client is connected to the same account, old client one will be disconnected to ensure fairness.
+- fixed on certain sitiation pc version afk start does not work properly
+- fixed pc version afk start does not return to main screen automatiocally
+- fixed rare cases for pin not render properly 
+
+### 2022/12/12
+- Security bug fixes
+
+### 2022/12/11
+- Fixed crash issue when clicking send email button while email input is empty in password reset page.
+- Multiple minor bug fixes
+
+### 2022/12/8
+- Increased `Locked Legendary Container`'s max selling price on market by 10x
+- Added prompt for when device time is incorrect (if your device time is incorrect the buffs will not display correctly, there AFK task will not automatically finish correctly)
+
+### 2022/12/6
+- Fixed display issue on Russian fonts
+- Fixed some issue with suspended account
+
+### 2022/11/30 
+- Winter update
+  - During the event enemies and AI Core afk will drop `Mystery Contaienr` (not tradable), you can open it directly or combine 10 of them to craft a `Locked Legendary Container`
+  - Updated crafting and other AFK task UI to use the new full page style
+  - You can now view and activate EXP buff when afk task grands EXP as reward
+
+![image](https://user-images.githubusercontent.com/18545294/204484585-6eda5a51-6d52-4413-8799-6dd3d294f7ee.png)
+
+  - Shangri-la background image and skip like has been changed to winter theme
+
+![image](https://user-images.githubusercontent.com/18545294/204484661-c9a7b6c0-a61a-4079-81e9-73d0afaa889b.png)
+
+  - updated many background images in the game, including Commercial area, market, black market, weapons smith, calibration, and train satation
+  - Updated amount selection UI you can now easily change the selected amount by increment of 10, and also select the max and minimun with one click
+
+![image](https://user-images.githubusercontent.com/18545294/204483723-39b1a60a-8b10-4bcd-9c09-1e3927c617fd.png)
+
+  - With the festive sprit, you can now send cosmetic (none-prestige donation tier and emblems) gift to your friends. *(Please do not use this feature for trading, it is for gifting with no return from your friends expected)*
+  - Added two new limited edition chat frame and emblems, will not be purchasable after end of event (you will be able to keep using it of course)
+  - Fixed rare cases where global buff does not show properly on client
+  - other bug fixes
+  
+### 2022/11/26
+- Optimization on skip speed, hopefully it will speed it up abit
+- Server-side optimization
+
+### 2022/11/20
+- improved bot detection algorithm
+- Security update
+
+### 2022/11/18
+- Added buff status display to recycle and black market
+- Now when selecting a single item for black market and recycle, the game will prompt for confirmation before starting the task, avoiding mis-clicks
+- Security update 
+
+### 2022/11/16
+- Fixed issue with using VPN not updating the client with status effect (a visual bug)
+- Added Arial as a default fallback font for non-english langauges
+
+### 2022/11/14 v0.780
+- Added romania chat
+- improved bot detection on backend
+- sevrer optimization
+
+### 2022/11/03 v0.780
+- Fixed Halloween emblem not showing on cosmetic page after halloween even ended, now you can see it still if you own the emblem
+- Fixed slder input not easy to click
+- Added polish chat channel
+
+### 2022/11/01 v0.780
+- Added `Reward Booster Shard` buff for `AI Auto Farm` and `Scavange`, when buff is activated and opted in when starting the task, the rewards will double while the cost/duration will increase 4x. should be useful to do when going away for long time. this item will drop rarely in `Rare Locked container` and purchasable from NPC
+
+*There might be balance change to this item if it is too OP, please use it immediatly after purchase*
+- Updated AFK task start UI
+- Level 500 ~ 600 is now enabled
+- Added two new enemy images (thanks to Vali for the art ❤️)
+- Added new CyberKitty chat frame (thanks to Volts for suggestion and idea)
+- Added banner when chat exploit is active, so that newbies will understand whats going on
+- love exploit words are now translatable :)
+
+### 2022/10/28 v0.780
+- Updated donation cosmetic UI to make it less confussing
+- Updated alt detection algorithm
+
+### 2022/10/26 v0.780
+- Now people you blocked will not be able to send you gang invite
+- Fixed some UI issue on craft page
+- Fixed discord chat log search problem 
+
+### 2022/10/24 v0.780
+- Security update
+- server-side bug fixes
+
+### 2022/10/19 v0.780
+- backend optimization
+
+### 2022/10/16 v0.780
+- Fix iOS overscroll weird behaviour on multiple page
+- Fixed iOS mention popup placement issue
+- Adjusted chat header UI
+
+### 2022/10/15 v0.780
+- Fixed iOS where is app is in background for long time and when resumed, dungeon and buff status will not sync up
+- Changed dungeon keycode to use numebr keyboard by default
+
+### 2022/10/11 v0.780
+- Halloween Event:
+  - Now enemies and AI Core auto farm drops `Jack o' Lanttern`, you can use these to craft `Locked Legendary Container`
+  
+  ![image](https://user-images.githubusercontent.com/18545294/195058830-f460e4c8-69b4-4543-916f-0c0aac79d00c.png)
+
+  ![image](https://user-images.githubusercontent.com/18545294/195058984-6b79f9d0-295a-4f17-8ff9-50feb3279eec.png)
+
+  - Updated pormotional popup screen to support multiple pannel and translation
+  - Added time Halloween time limited cyber-bat donation tier and a Spooky smile enmblem (unobtainable when event is over)
+
+### 2022/10/07 v0.780
+- Removed auto default selection for unlock container page, to reduce confusions on how to select container to unlock
+
+### 2022/10/02 v0.780
+- Updated Item selection menu UI when there is no available item to choose from
+- Added dedicated unlock `locked container` UI
+
+![image](https://user-images.githubusercontent.com/18545294/193444573-24ae96c4-6c74-45b2-a13b-6f0f7031d6e6.png)
+
+- You may now click `Unlock` in locked container detail screen to go to unlock container UI
+![image](https://user-images.githubusercontent.com/18545294/193444654-3123ec82-6388-4f84-8432-692c59751fc6.png)
+
+### 2022/09/30 v0.780
+- Added seperated chat log for spanish channel
+- Added more translatable text to translation files
+- Fixed translation issue
+
+### 2022/09/26 v0.780
+- You can now browse your stall while afk, however you cannot add or remove the item while AFKing. (player suggestion)
+
+![image](https://user-images.githubusercontent.com/18545294/192716779-aafe7489-0651-4018-84d6-66346536fb6e.png)
+
+- Added player submitted emblemed I missed from last patch
+- Added foundation code for event needed function for future use
+
+### 2022/09/26 v0.780
+- Server optimization
+- Chat related bug fixes
+- Added some player submmited emblems 
+- Typo fix
+
+### 2022/09/19 v0.780
+- Market security related fix
+- Now only tradable item will show up in the selection list for market stall
+- Desktop version can now have switch the chat pannel bewteen mail/global/mail
+- Fixed broken item texture when the game starts in deskop
+- Adjusted chat channel settings
+- Minor UI improvement for desktop
+
+### 2022/09/16 v0.780
+- (from player suggestion) Starting new AI core farm task will default at max amount of repeat you can perform
+- Updated Tutorial menu page, now with cleaner button and icons
+- Updated Tutorial markdown page, and fixed some display issue.
+- Updated printing npc UI
+- Added more newbie friendly tip box on molecular printing page, uppon clicked will link to tutorial page
+- Added tip box in clibation page before core was inserted, uppon clicked will link to tutorial page
+- Reduced section title size a little
+- Added graffiti and bunny prestige donation tier (Thanks to Krolik for design suggestion and happy birthday :) )
+
+![image](https://user-images.githubusercontent.com/18545294/190539431-7112e0d7-4741-4c42-931a-37424d4f312f.png)
+![image](https://user-images.githubusercontent.com/18545294/190539403-86d8a35b-c9f7-44e1-abf9-d4e1e9288dd4.png)
+
+
+### 2022/09/13 v0.780
+- You can now click `Print Cache` in cache item details own by you. it will bring you directly to NPC and highlight the coresponding cache to print.
+- Added translation for gang creation page 
+
+### 2022/09/03 v0.780
+- Updated City center, train station and bank's background image to better ones
+- Updated location background display UI
+
+### 2022/08/29 v0.780
+- Added report menue, you may report rule breaking player by clicking on the message or report button at the player's profile 
+
+**Only use if necessary and only once per player. If you play/spam/missuse with the system, you will be muted for spam**
+
+### 2022/08/26 v0.780
+- Added some preventive mesure to reduce the chance of unwanted deploying of global buff when another player has alraedy deployed one:
+  - When deploying a buff with an active buff and the buff is has more than 19 minutes remaining, the deployment will fail forcefully, you may deploy again after 1 minute if thats what you wish (might still have extremly rare chance of two person clicked at the exact same millisecond result in server unable to prevent it)
+  - When deploying a buff with an active buff and the buff has more than half of the time remaining, a popup confirmation will popup show up. (this only applies to buff that has duration of 20 minutes and for `Frontal Cortex Optimization Transmitter` and `Rare Synaptic Acceleration Transmitter` only when buff is fully stacked, and will not work if you are desync from server due to network connection issue)
+
+### 2022/08/24 v0.780
+- Fixed Thai chat channel typo in the name
+
+### 2022/08/23 v0.780
+- Added Thai chat channel
+
+### 2022/08/18 v0.780
+- Merged latest english procedural-name.json list from githhub into the game
+- Updated black market art, sorry @mikazakhaev if its not 100% true to your original design haha  
+- Server-side bug fixes
+
+### 2022/08/17 v0.780
+- Prevent the annoying suggestion/auto complete from showing up on PC browser when typing on chat
+
+### 2022/08/10 v0.780
+- Fixed prestigue nano medic drone translation not showing in translation
+- Showing numeric keyboard when doing captcha
+
+### 2022/08/09 v0.780
+- Updated tran station and market background image to something original
+- Optimizations and bug fixes
+
+### 2022/08/06 v0.780
+- Fixed issue with mail chat
+- Fixed issue with reverse ai core cluster crafting could result in item exceeding max stack (system will in some condition reset items with amount more than stack to it is stack cap, meaning if you somehow find a exploit to allow exceeding max stack, please do not risk system resetting your item amount, report the bug to me <3)
+
+### 2022/08/05 v0.780
+- Fixed bug where when viewing other player's item will result in app freeze 
+- Fixed issue with item details page where when item is scrapped the page stays as empty, now it automatically exits the page
+
+### 2022/08/04 v0.780
+- Chat server internal update, should help with stability
+
+### 2022/08/03 v0.780
+- Updated server and client side dependency liberaries, might improve client side performance, please let me know if new bug is introduced due to this update
+- Improved range select input user friendliness
+
+### 2022/08/02 v0.780
+- Improved range select input user friendliness (delayed due to deployment issue)

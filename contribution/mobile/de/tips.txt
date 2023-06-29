@@ -1,0 +1,249 @@
+// Contains list of short tips used to be displayed in Mobile version
+// one line one tip :)
+
+Du kannst `Technikschrott` im `Shangri-La Gewerbegebiet` untersuchen, und damit deine 3D-Druck Fähigkeit verbessern.
+Du kannst Gegenstände auf dem Spielermarkt verkaufen.
+Deine Fähigkeiten können deinen allgemeinen Level nicht übersteigen. Verschwende keine Zeit, wenn du die Obergrenze erreicht hast.
+Du erholst dich immer vollständig, wenn du nicht in einem Dungeon bist.
+Du attackierst immer zuerst, nutze diesen Vorteil weise!
+Kaputte Ausrüstung kannst du beim `WAFFENSCHMIED` reparieren lassen.
+Dein Inventarplatz ist begrenzt, behalte diesen im Auge, sonst geht dir Beute verloren.
+Dein Schild regeneriert sich nach dem Sieg über einen Gegner automatisch.
+Ausrüstung mit der Qualität "Schrott" ist nützlich, um daraus `Technikschrott` zu machen, oder um deine 3D-Druck Fähigkeit zu verbessern.
+Niemand online, der dir im Dungeon hilft? Poste deinen Dungeon im Chat!
+Stelle `Pain Away` her - damit kannst du dich im Dungeon heilen.
+Du kannst @ im Chat Terminal tippen, um andere Spieler zu erwähnen.
+In Dungeons bekommst du `KI-Kerne` und `Hash-Prozessoren`.
+Plündere, um Teile für die Herstellung von Munition oder Heilungsgegenständen zu finden.
+Dein 3D-Druck Level, bestimmt das Level deiner gedruckten Gegenstände.
+Achtung vor Feinden mit besonderen Zusätzen – hart, wütend, wahnsinnig, abgeschirmt, Scharfschütze oder Berserker.
+Geheime Schlüssel brauchst du zum Betreten von höheren Gebieten. Suche in Dungeons nach Schlüsselfragmenten.
+Es gibt ein gutes Tutorial unter `Profil`. Du solltest öfter mal hineinschauen.
+Entferne die Upgrade Module aus alter Ausrüstung, damit du sie in Neue einfügen kannst.
+Ausrüstung und Module mit dem Attribut `Tasche` vergrößern dein Inventar!
+Manche Heilgegenstände heilen auch deine Mitspieler, zum Beispiel: `Pain Away Spray`.
+Die BTC (Bitcoin) in diesem Spiel sind leider nicht echt, es ist nur die Währung in diesem Spiel. :'(
+Sende ein kleines Dankeschön an @DexterHuang für die Entwicklung dieses tollen Spiels.
+Du kannst Upgrade Module in Gegenständen unterbringen, dann sparst du Platz im Inventar.
+Du stirbst dauernd? Verbessere deine 3D-Druck Fähigkeit, dann kannst du bessere Ausrüstung drucken.
+Du fühlst dich schwach? Mach eine Pause und iss was.
+Vergiss nicht, genug zu trinken!
+Du weißt nichts mit einem Cache anzufangen? Gehe zum `MOLEKULAREN 3D DRUCKER` und stelle damit Ausrüstung her.
+Ausrüstungscaches gibt es in 6 Stufen: Schrott, Gewöhnlich, Hochwertig, Rar, Legendär und Episch.
+Du kannst die mobile Version des Spiels verwenden, wenn du auf deinem Computer auf cybercodeonline.com gehst und das Browserfenster schmal ziehst!
+Es gibt auch eine Desktop Version des Spiels auf cybercodeonline.com!
+Denk an das CCO Mantra: Treffer, Heilen, Treffer.
+Verbessere Fähigkeiten im `Shangri-La Gewerbegebiet`, wenn du Zeit übrig hast.
+Du magst das Spiel? Hinterlasse eine Bewertung im Apple oder Google Play Store!
+Studien zeigen, dass Feinde mit dem "agil" Zusatz mehr Erfahrung bringen.
+Das Leveln geht nicht schnell genug? Versuche Dungeons zu spielen! Du bekommst 2x mehr Erfahrung und sogar 2,3x mehr für Gang-Dungeons.
+Halte immer Heilgegenstände und Munition in einem Dungeon bereit.
+Na los. Schreib ein Danke an unseren großartigen Entwickler Dexter Huang.
+Schau dir diese Tipps an. Wir haben ein paar exzellente Hinweise für dich.
+Du kannst dich sehr glücklich schätzen, wenn du einen epischen Cache findest.
+Zu wenig BTC? Betreibe `Crypto-Mining` im `Shangri-La Gewerbegebiet`, oder verkaufe Dinge auf dem Spielermarkt.
+Herausfordernde Dungeons haben immer einen starken Boss - bring Freunde mit, um ihn zu besiegen.
+Wenn du das Spiel mit einer Spende unterstützt, kannst du ein eigenes Profilbild einstellen, sowie eine eigene Farbe im Chat.
+Mit `Units` kannst du seltene globale Vorteile kaufen, zum Beispiel AFK Beschleuniger, oder Zeit-/ Erfahrung-/ Bitcoin-Boni.
+Mit einer höheren `Plündern` Fähigkeit wirst du in späteren Leveln mehr Beute machen.
+Ausrüstung aus dem `Molekularen 3D Drucker` bekommt immer deinen 3D-Druck Level, nicht deinen allgemeinen Level. Du solltest also immer deine 3D-Druck Fähigkeit im Auge behalten.
+Du wirst keine Erfahrung oder Belohnungen von Feinden bekommen, die 3 Ausrüstungslevel unter dir sind, bzw. von Dungeons 10 Level unter deinem.
+Feinde mit einem Zusatz (z.B. Berserker, wahnsinnig, wütend) sind schwerer, geben aber mehr Erfahrung!
+Spenden oder eine Mitgliedschaft beinhalten keine Vorteile im Spielverlauf.
+Wenn du außerhalb eines Dungeon kämpfst, wird deine Gesundheit stets voll wiederhergestellt.
+Hast du schon dein Inventar angeschaut und etwas hergestellt? Du solltest!
+Wenn du stirbst, verlierst du 10% deiner Erfahrung zum nächsten Level und 10% deiner Bitcoins, pass also auf! 
+Verwende nur deine Primärwaffe gegen Straßenmonster, so sparst du Munition.
+Vergiss nicht, deine Haustiere zu füttern!
+Geheime Schlüsselfragmente gibt es in normalen und herausfordernden Dungeons.
+Wenn du das beim Fahren liest, leg BITTE das Handy zur Seite!
+Bitte spiele nicht beim Fahren, das Spiel kann warten.
+Bitte chatte nicht beim Fahren!
+`Antimaterie Ladung` ist nicht gerade super selten, aber auch nicht einfach zu bekommen. Du solltest sie nicht verschwenden.
+Du kannst keine Dungeons betreten, die mehr als 13 Level über deinem sind. Dies ist nur zu deinem Besten.
+Wenn du das Tutorial nicht gelesen hast, wirst du dich verwirrt und verloren fühlen.
+Kämpfe über deinem Level für mehr kostbare Erfahrung.
+Spiel kaputt? Aus- und Einschalten hilft.
+AFK hängt fest? Neuladen des Spiels hilft.
+Hast du probiert, das Spiel aus- und wieder einzuschalten?
+Schau dir die Marktpreise an, bevor du etwas zum Verkaufen einstellst.
+Zum Öffnen von verschlossenen Behältern brauchst du eine Menge `Technikschrott`.
+Verschrotte unnütze Gegenstände zu `Technikschrott`. Du kannst damit verschlossene Behälter öffnen.
+Frage deinen freundlichen Nachbarn nach Preisen und ausgewählten Gegenständen.
+Es empfiehlt sich, Quests mit einem 180% Erfahrungsverstärker einzulösen. Du bekommst fast doppelt so viel Erfahrung!
+Nach der Frühphase des Spiels wird `Pain Away` recht unnütz. Du kannst es verschrotten und bekommst mit einer ~50% Chance ein `medizinisches Technologieteil` pro `Pain Away`.
+Du bist an der Grenze zum Tod im Boss-Raum? Bitte um Hilfe im Chat und weise den Weg zu dir!
+Ein unvorbereiteter Dungeon Entdecker ist ein toter Entdecker.
+Wenn dir der 3D-Druck eines Gegenstandes zu teuer ist, schaue in den Spielermarkt. Vielleicht findest du einen günstigen Gegenstand für deinen Level.
+Gutes Inventarmanagement ist essentiell.
+Wenn du einen Treffer mit mindestens 11% deiner HP überlebst, kannst du gewinnen, wenn du dich die ganze Zeit heilst!
+Du kannst deine Ausrüstung in einem Dungeon wechseln.
+Du kannst in einem Dungeon Heilgegenstände herstellen, wenn du deinen Vorrat auffüllen musst.
+Du kannst andere Spieler als Freunde speichern. Klicke auf den Spielernamen, zeige das Profil an und scrolle nach unten zu "Als Freund hinzufügen".
+Jedes Modul kann bis zu 5% kritische Trefferchance Bonus bringen.
+Eine ergiebige Quelle für `KI Kerne` und `Hash Prozessoren` sind Bosse in herausfordernden Dungeons.
+Du brauchst zu lange, um einen Gegner zu besiegen? Erhöhe deine kritische Trefferchance und deinen kritischen Schaden.
+Du brauchst mehr Platz im Inventar? Rüste dich mit Gegenständen oder Modulen mit dem Attribut `Tasche` aus.
+Betteln um globale Zeitvorteile wird in der Community nicht gern gesehen.
+Herausfordernde Dungeons mit Freunden abschließen, ist der schnellste Weg zu leveln und bringt den meisten Spaß!
+Dein Spiel hängt fest, oder du kannst dich nicht mehr im Dungeon bewegen? Versuche, das Spiel zu schließen und neu zu starten.
+Du kannst dich angefangenen Dungeons anschließen, die Quests lösen und Belohnungen einsammeln!
+Schließe Quests ab, für Bitcoin, Erfahrung und manchmal sogar Gegenstände.
+Du kannst dich sehr glücklich schätzen, wenn du einen epischen Cache findest.
+Vergiss nicht, deine 3D-Druck Fähigkeit zu maximieren, bevor du Ausrüstung druckst.
+Hast du einen `verschlossenen Behälter` gefunden? Du kannst ihn im `TERMINAL` öffnen. Das kostet dich allerdings etwas `Technikschrott` und BTC.
+Um einen Schlüssel für das nächste Gebiet herzustellen, musst du alle drei Dungeons des Gebiets spielen und das Schlüsselfragment aus dem Boss-Raum bekommen.
+Inventar voll? Verkaufe Dinge, die du nicht brauchst, auf dem Spielermarkt oder im Chat.
+Wenn dein Inventar ständig voll ist, solltest du deine Trageausrüstung verbessern.
+Schließe dich einer Gang an. Du kannst einige neue AFK Funktionen nutzen, sowie Gang Dungeons. Außerdem macht mit anderen zusammen spielen einfach viel mehr Spaß!
+Denk dran, beim Spielen Spaß zu haben, und lass auch alle anderen Spaß haben!
+Du willst in einer Gang sein? Jemand muss dich einladen, es gibt keine Funktion zum Bewerben. 
+Deine Gegenstände zum Heilen stellen weniger als die Hälfte deiner Gesundheit wieder her? Gehe zur nächsten Stufe von Heilgegenständen über.
+Starke Gegner verursachen mehr Schaden als normale, besser du hältst Heilgegenstände bereit.
+Es gibt maximal 4 Gegner in einem Nicht-Boss-Raum im Dungeon.
+Herausfordernde Dungeons sind schwerer als normal, dafür gibt es fantastische Belohnungen und jede Menge Erfahrung.
+Epische Caches kosten ein Vermögen. Wenn du soviel Glück hast, in einem niedrigen Level einen zu bekommen, versuche ihn zu verkaufen. Das kann helfen, deine Bitcoins erheblich zu vemehren.
+Du kannst keine Bitcoin direkt an andere Spieler schicken. Versende stattdessen `KI Kerne` oder andere Gegenstände über die `Verschenken` Funktion.
+Du willst sichergehen, dass jeder Belohnungen in einem öffentlichen Dungeon bekommt? Pass auf, dass jeder Kämpfer mind. 20% Schaden am Gegner verursacht.
+In öffentlichen Dungeons kann jeder Belohnungen einsammeln. Du wirst niemandem etwas wegnehmen!
+Ein Gebiet bleibt verschlossen, obwohl du den Schlüssel hast? Dann ist dein Level zu niedrig.
+Halte Ausschau nach speziellen Vorteilen und Ereignissen im Chat, wie Kalibrierungsbeschleuniger. Die solltest du nicht verpassen und nutzen!
+Schaue regelmäßig in den Spielermarkt. Du bekommst eine Idee, was die Dinge in deinem Inventar wert sind. Kaufe und verkaufe Dinge zum besten Zeitpunkt!
+Wenn du CyberCodeOnline gut findest, kannst du neue Ideen, Dungeon Räume, Tipps, Übersetzungen und mehr auf github vorschlagen! Du findest den Link unter `Profil`.
+Es gibt kein pay-to-win in CyberCodeOnline. Gegenstände, die du in der Arasaka Unit Exchange kaufst, helfen allen, und die kosmetische Cyberwear ist nur Dekoration.
+Ausrüstung mit 100% Chance Zerstörung beim Kalibrieren braucht einen globalen Verstärker aus der Unit Exchange. Dieser kommt außerdem allen Spieler zugute.
+Du willst nicht dauernd die gleichen Anfängerfehler machen? Spiele mehr.
+Du willst Dungeons effektiver spielen, nachdem du schon einige gespielt hast? Wie wäre es mit einer Pause?
+Du bekommst mehr `Technikschrott`, wenn du den automatischen Recycler deiner Gang benutzt.
+Wenn du BTC brauchst, kannst du unnütze Dinge beim `WAFFENSCHMIED` verkaufen. Das Attribut `Feilschen` hilft dir zusätzlich.
+Deine Taschen sind voll? Deine Bitcoin gehen verloren, wenn du stirbst? Bring dein Geld und deine Gegenstände zur `BANK VON ARASAKA`.
+Das Attribut `Taschen` wird immer sinnvoller, je länger du spielst. Du wirst eine Menge Dinge mit dir herumtragen. Entweder sortierst du Dinge aus, oder investierst in bessere Trageausrüstung.
+Die Attribute `kritischer Schaden` und `kritische Trefferchance` helfen dir, Dungeons schneller zu spielen, da sie deinen Schaden pro Zeit (DPS) erhöhen.
+Das Attribut `Feilschen` ist sinnvoll, um bei NPCs zu kleineren Preisen zu kaufen und zu höheren Preisen zu verkaufen. Das gilt natürlich nicht auf dem Spielermarkt.
+Die Attribute `Betäuben` und `Ausweichen` können multiplikativ gestapelt werden, bis zu einer Chance von 52%, nicht getroffen zu werden. (50.4% Chance bei `agilen` Feinden)
+
+// Experience, Leveling
+Verschrotte deine alte Ausrüstung zu `Technikschrott`. Diesen kannst du anschließend für das Leveln der 3D-Druck Fähigkeit verwenden.
+Deine Fähigkeiten können deinen allgemeinen Level nicht übersteigen. Verschwende keine Zeit, wenn du die Obergrenze erreicht hast.
+Du kannst `Technikschrott` im `Shangri-La Gewerbegebiet` untersuchen, und damit deine 3D-Druck Fähigkeit verbessern.
+Ausrüstung mit der Qualität "Schrott" ist nützlich, um daraus `Technikschrott` zu machen, oder um die 3D-Druck Fähigkeit zu verbessern.
+Verbessere Fähigkeiten im `Shangri-La Gewerbegebiet`, wenn du Zeit übrig hast.
+Studien zeigen, dass Feinde mit dem "agil" Zusatz mehr Erfahrung bringen.
+Das Leveln geht nicht schnell genug? Versuche Dungeons zu spielen! Du bekommst 2x mehr Erfahrung und sogar 2,3x mehr für Gang Dungeons.
+Ausrüstung aus dem `Molekularen 3D Drucker` bekommt immer deinen 3D-Druck Level, nicht deinen allgemeinen Level. Du solltest also immer deine 3D-Druck Fähigkeit im Auge behalten.
+Damit das Spiel spannend bleibt, kannst du keine Feinde oder Dungeons mehr als 10 Level unter deinem spielen.
+Wähle Feine und Dungeons über deinem Level für noch mehr Erfahrung.
+Warte, bis jemand den 180% Erfahrungs-Booster aktiviert, bevor du deine Quests abschließt. So bekommst du mehr Erfahrung für das gelöste Quest.
+Challenge Dungeons mit Freunden abschließen, ist der schnellste Weg zu leveln und bringt den meisten Spaß!
+Schließe Quests ab, um eine gute Belohnung aus Bitcoins und Erfahrung zu kassieren.
+Wie kannst du schneller leveln? Halte dich vom Chat fern.
+Um den Schlüssel für ein neues Gebiet zu bekommen, musst du alle drei Dungeons des Gebiets betreten und das Schlüsselfragment aus jedem Boss-Raum bekommen.
+Du kannst ein Gebiet nicht betreten, obwohl du einen Schlüssel dafür hast? Dann ist dein Level zu niedrig.
+Nur die Anfangsgebiete (Bereich Level 1-4) können ohne Voraussetzungen betreten werden. Als Anfänger musst du hier zunächst einige Level erreichen.
+Crypto-Mining zu leveln, ist schwierig - es kostet eine Menge Geld und viel AFK Zeit. Vielleicht wartest du damit, bis du genug BTC und `Mining-Prozessor` übrig hast.
+Wenn du das Crypto-Mining unterhalb Level 200 verbessern willst, wartest du am besten auf einen 100% `Belohnung Booster`, 80% `synaptische Beschleunigung` und eine `frontale Cortex Optimierung`. Du minimierst so die BTC Kosten und maximierst den Gewinn an Erfahrung.
+Ab Level 140 gibt es keine neuen Gegenstände für medizinisches Wissen mehr. Du kannst dich auf die anderen Fähigkeiten konzentrieren, diese Fähigkeit lohnt sich nicht weiter zu leveln.
+Zu Beginn ist die Munitionsherstellung nicht so sinnvoll, aber später im Spiel kannst du mächtige Munition herstellen. Insbesondere `Antimaterie Ladung`, damit verwendest du deine schwere Waffe optimal.
+Manchmal solltest du mit dem 3D-Druck leveln warten, damit du Erweiterungsmodule für deine niedrigste Ausrüstung herstellen kannst.
+Wenn du `KI Kerne` verwendest, gewinnst du Erfahrung und BTC basierend auf dem Level deiner Ausrüstung. Du solltest deine Ausrüstung nahe bei deinem Level halten, damit du so viel Gewinn wie möglich erzielst.
+Hat jemand eine `frontale Cortex-Optimierung` ausgelöst? Verwende die zusätzliche Erfahrung, um Dungeons zu spielen. Oder eine `synaptische Beschleunigung`? Dann sind AFK Aufgaben deutlich schneller.
+Willst du schnell zu Geld kommen? Aktiviere einen `synaptischen Beschleuniger`, recycle deine `medizinischen Technologieteile` im Bereich deiner Gang und verkaufe den entstehenden `Technikschrott`.
+Was ist der beste Weg, schnell zu leveln? Nicht sterben. Sei besser vorsichtig, als zu schnell. Lass dir Zeit und vermeide es, zu sterben. Finde deinen Rhythmus, dann kannst du versuchen, schneller zu werden.
+Am Anfang sind Dungeons und automatisches Farmen gleichwertig. Farmen geht von allein, kostet aber eine Menge Geld, denn du brauchst `KI Kerne` dafür. Du entscheidest, ob du das Geld ausgeben möchtest.
+Du kannst den Level deiner Ausrüstung nicht erhöhen, nachdem sie einmal gedruckt ist. Der Level steht fest, bist du den Gegenstand verschrottest. Verwende deine Caches also weise.
+
+// Social, Chat, UI, Systems
+Im Chat Terminal kannst du mit der [Pfeil hoch] Taste die letzte gesendete Nachricht ansehen.
+Niemand online, der dir im Dungeon hilft? Poste deine Dungeon ID im Chat!
+Du kannst @ im Chat Terminal tippen, um andere Spieler zu erwähnen.
+Sende ein kleines Dankeschön an @DexterHuang für die Entwicklung dieses tollen Spiels.
+Es gibt ein Tutorial unter 'Profil'.
+Du kannst die mobile Version des Spiels verwenden, wenn du auf deinem Computer auf cybercodeonline.com gehst und das Browserfenster schmal ziehst!
+Es gibt auch eine Desktop Version des Spiels auf cybercodeonline.com!
+Du kannst andere Spieler als Freunde speichern. Klicke auf den Spielernamen, zeige das Profil an und scrolle nach unten zu "Als Freund hinzufügen".
+Betteln um globale Zeitvorteile wird in der Community nicht gern gesehen.
+Dein Spiel hängt fest, oder du kannst dich nicht mehr im Dungeon bewegen? Versuche, das Spiel zu schließen und neu zu starten.
+Spiel kaputt? Aus- und Einschalten hilft.
+AFK hängt fest? Neuladen des Spiels hilft.
+Hast Du probiert, das Spiel neu zu starten?
+Du hast alte Ausrüstung? Verschenke sie an Spieler, die sie gut gebrauchen können.
+Sie nett zu anderen Spielern. :)
+Inventar voll? Verkaufe Dinge, die du nicht brauchst, auf dem Spielermarkt oder im Chat.
+Schließe dich einer Gang an. Du kannst einige neue AFK Funktionen nutzen, sowie Gang Dungeons. Außerdem macht mit anderen zusammen spielen einfach viel mehr Spaß!
+Du willst in einer Gang sein? Jemand muss dich einladen, es gibt keine Funktion zum Bewerben. 
+Wenn du einen Dungeon geschafft hast, ist es nett, im Chat andere Spieler einzuladen. Sie können dann Belohnungen einsammeln.
+Epische Caches kosten ein Vermögen. Wenn du soviel Glück hast, in einem niedrigen Level einen solchen zu bekommen, versuche ihn zu verkaufen. Das kann helfen, deine Bitcoins wunderbar zu vermehren!
+Du kannst keine Bitcoins an andere Spieler versenden. AI Kerne und andere Gegenstände kannst du dagegen handeln und verschenken. Kaufe und verwende einfach passende Gegenstände zum Handeln.
+Halte Ausschau nach speziellen Vorteilen und Ereignissen im Chat, wie Kalibrierungsbeschleuniger. Die solltest du nicht verpassen und nutzen!
+Schaue regelmäßig in den Spielermarkt. Du bekommst eine Idee, was die Dinge in deinem Inventar wert sind. Kaufe und verkaufe Dinge zum besten Zeitpunkt!
+Ausrüstung mit 100% Chance Zerstörung beim Kalibrieren braucht einen globalen Verstärker aus der Unit Exchange. Alternativ beinhalten seltene verschlossene Behälter passende Gegenstände.
+Kalibrieren macht Ausrüstung stärker, sie kann dann aber nicht mehr verkauft oder verschenkt werden. Du musst sie auf Werkseinstellung zurücksetzen - dann ist die Kalibrierung verloren, aber sie kann wieder gehandelt und verschenkt werden.
+Jede Stufe Kalibrierung macht den Gegenstand besser, allerdings steigt auch die Chance, den Gegenstand kaputt zu machen.
+Amadon ist wie Schaufenster anschauen! Du kannst in Ruhe den Spielermarkt studieren, während du auf AFK Aufgaben wartest. Nur kaufen/verkaufen geht nicht.
+Es ist verpönt, den Chat vollzumüllen, um die Chat Quest zu lösen. Du wirst allenfalls gemutet, und dann kannst du nicht mehr handeln. 
+Pass auf - manche Spieler versuchen, billig an deine Gegenstände zu kommen. Versuche immer, andere Angebote einzuholen und entscheide weise.
+Es ist in Ordnung, über RL Dinge im Chat zu sprechen. Respektiere aber bitte andere Meinungen und mäßige deine Sprache - CyberCodeOnline hat keine Altersbegrenzung.
+
+// Combat, Enemies, Allies
+HP erholen sich vollständig nach jedem Kampf, außer im Dungeon!
+Du erholst dich immer vollständig, wenn du nicht in einem Dungeon bist.
+Du attackierst immer zuerst, nutze diesen Vorteil weise!
+Dein Schild regeneriert sich, wenn du einen Gegner im Dungeon besiegt hast.
+Stelle "Pain Away" her oder kaufe es, damit du deine Gesundheit im Dungeon erholen kannst.
+Beachte die Attribute der Gegner - zäh, wütend, wahnsinnig, agil, abgeschirmt, Scharfschütze oder Berserker. Sie sind stärker, geben aber mehr Belohnung!
+Du brauchst geheime Schlüssel, um Stationen höherer Level zu betreten. Suche in Dungeons nach Schlüsselfragmenten!
+Denk an das CCO Mantra: Treffer, Heilen, Treffer.
+Herausfordernde Dungeons haben immer einen starken Boss - bring Freunde mit, um ihn zu besiegen.
+Wenn du stirbst, verlierst du 10% deiner Erfahrung zum nächsten Level und 10% deiner Bitcoins, pass also auf! 
+Wenn du unter 10% Fortschritt deiner Erfahrung zum nächsten Level stirbst, wirst du ein Level verlieren. Pass auf, nicht zu sterben!
+Verwende nur deine Primärwaffe gegen Straßenmonster, so sparst du Munition.
+Du kannst keine Dungeons betreten, die mehr als 13 Level über deinem sind. Das ist nur zu deinem Besten.
+Wenn du einen Treffer mit mindestens 11% deiner HP überlebst, kannst du gewinnen, wenn du dich die ganze Zeit heilst!
+Du bist an der Grenze zum Tod im Boss-Raum? Bitte um Hilfe im Chat und weise den Weg zu dir!
+Du brauchst zu lange, um einen Gegner zu besiegen? Erhöhe deine kritische Trefferchance und deinen kritischen Schaden.
+Du kannst angefangene Dungeons betreten, um die Quests zu lösen und die Belohnungen einzusammeln.
+Du solltest die nächste Klasse von Gegenständen zum Heilen verwenden, wenn deine aktuellen weniger als 50% deiner Gesundheit wiederherstellen.
+Vergiss nicht, Gegenstände zum Heilen herzustellen, bevor du dich in einen einen Dungen stürzt!
+Vergiss nicht, das CCO Mantra ist nicht "Treffer, Treffer, Tot".
+Deine Gegenstände zum Heilen stellen weniger als die Hälfte deiner Gesundheit wieder her? Gehe zur nächsten Stufe von Heilgegenständen über.
+Starke Gegner verursachen mehr Schaden als normale, besser du hältst Heilgegenstände bereit.
+Es gibt maximal 4 Gegner in einem Nicht-Boss-Raum im Dungeon.
+Boss Räume in herausfordernden oder Gang Dungeons beinhalten garantiert einen verschlossenen Behälter, sowie 6 Gegner. Der Boss droppt erstklassige Belohnungen.
+Herausfordernde Dungeons sind schwerer als normal, dafür gibt es fantastische Belohnungen und jede Menge Erfahrung.
+Du willst sichergehen, dass jeder Belohnungen in einem öffentlichen Dungeon bekommt? Pass auf, dass jeder Kämpfer mind. 20% Schaden am Gegner verursacht.
+In öffentlichen Dungeons kann jeder Belohnungen einsammeln. Du wirst niemandem etwas wegnehmen!
+Berserker Gegner haben keine Anzeige ihrer Verstärker. Du wirst nur sehr hohe HP und Schildwerte sehen.
+Du wirst keine Erfahrung oder Belohnungen von Feinden bekommen, die 3 Ausrüstungslevel unter dir sind, bzw. von Dungeons 10 Level unter deinem. Sorry, du kannst nicht herumrennen und alle Gegner mit einem Schuss besiegen.
+Betäuben und Ausweichen werden multiplikativ gestapelt für eine 52% Chance nicht getroffen zu werden. (50.4% Chance gegen einen agilen Feind)
+Der Typ deiner Ausrüstung legt deinen gesamten Typ fest. Damit bestimmst du extra Schaden, den bestimmte Fraktionen von Gegnern verursachen. Versuche deine Ausrüstung zu wechseln, um einen anderen Typ zu bekommen und weniger Schaden zu erleiden!
+Du willst eine Reihe Dungeons am Stück spielen? Hebe dir Quests auf, die dir Verstärker verschaffen. Du kannst diese Quests alle vorab verwenden, dann schaffst du die Dungeons schneller und brauchst weniger Heilung.
+Die Obergrenze von 200% kritischer Schaden gilt für den zusätzlichen Schaden, nicht für den gesamten kritischen Schaden. Damit ergeben sich 220% maximaler kritischer Schaden.
+
+// Misc, Fun, Purchases
+Du fühlst dich schwach? Mach eine Pause und iss was.
+Vergiss nicht, genug zu trinken!
+Verwirrt dich das ganze Cybercoding? Probiere die mobile Version von CCO.
+Na los. Schreib ein Danke an unseren großartigen Entwickler Dexter Huang.
+Schau dir diese Tipps an. Wir haben ein paar exzellente Hinweise für dich.
+Wenn du das Spiel mit einer Spende unterstützt, kannst du ein eigenes Profilbild einstellen, sowie eine eigene Farbe im Chat.
+Spenden oder eine Mitgliedschaft beinhalten keine Vorteile im Spielverlauf.
+Vergiss nicht, deine Haustiere zu füttern!
+Bitte spiele nicht beim Fahren - das Spiel kann warten.
+Wenn du das Tutorial nicht gelesen hast, wirst du dich verwirrt und verloren fühlen.
+Du magst das Spiel? Hinterlasse eine Bewertung im Apple oder Google Play Store!
+Du kannst Units verwenden, um seltene globale Verstärker zu aktivieren, wie AFK Zeitverkürzung, Erfahrungs- oder Bitcoin-Boni.
+Ein unvorbereiteter Dungeon Entdecker ist ein toter Entdecker.
+Vergiss nicht zu atmen beim Spielen.
+Wenn du dich schlaff fühlst, geh schlafen!
+Sterben ist schlecht für die Gesundheit. (Quelle unbekannt)
+Der Feind schlägt hart zu. Sieh zu, dass deine Waffe noch härter zuschlägt.
+Du kannst nur Ausrüstung mit deinem Level oder niedriger verwenden.
+Vergiss nicht, das CCO Mantra ist nicht "Treffer, Treffer, Tot".
+Bitte hab Spaß mit dem Spiel und lass alle anderen auch Spaß haben!
+Wenn du CyberCodeOnline magst, kannst du neue Ideen, Dungeon Räume, Tipps, Übersetzungen und mehr auf github beitragen!
+Es gibt kein pay-to-win in CyberCodeOnline. Gegenstände, die du in der Arasaka Unit Exchange kaufst, helfen allen, und die kosmetische Cyberwear ist nur Dekoration.
+Kosmetische Cyberwear erwirbst du fortlaufend, nur Prestige Käufe bleiben dauerhaft in deinem Account erhalten.
+Du machst immer die gleichen Anfängerfehler? Spiel öfter.
+Du hängst ewig in einem Dungeon fest? Hör auf und mach eine Pause.
+Du suchst das Tutorial?  Es ist unter Profil -> Tutorial.
+Wie kannst du Units bekommen, ohne sie zu kaufen? Gar nicht. Units sind die Währung die stets echtes Geld kosten. Dafür kommen sie allen zugute, oder sind rein kosmetisch.

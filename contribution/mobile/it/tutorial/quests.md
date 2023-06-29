@@ -1,0 +1,6 @@
+## Missioni
+Le missioni possono essere visualizzate premendo Missioni nella barra inferiore. Qui verranno mostrate le missioni che ti sono state assegnate per guadagnare EXP e BTC (puoi ottenere EXP aggiuntivi se riscatti le ricompense quando un potenziamento EXP è attivo). Ci sono una varietà di missioni disponibili che variano dall'uccidere i nemici a stampare. Le missioni si dividono in due categorie:
+1. Missioni normali: consistono in compiti singoli riguardanti svolgere certe attività o entrare nei dungeon. Una volta completata una missione normale, ai giocatori ne viene assegnata un'altra.
+![QuestTab1](/resources/mobile-tutorial/QuestTab1.png)
+2. Missioni dungeon: possono essere assegnate interagendo con il simbolo '?' nel Dungeon, riferti come **Datore di missioni**. La missione consiste in un formato del tipo "Portami [X] e otterrai [Y]". Le ricompense variano da oggetti a modificatori, usabili contro i nemici per un certo periodo di tempo.
+![QuestTab2](/resources/mobile-tutorial/QuestTab2.png)

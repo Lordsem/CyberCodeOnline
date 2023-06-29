@@ -1,0 +1,35 @@
+{
+  "VARIABLES": [
+    "enemyName", "enemyLevel"
+  ],
+  "lines": [
+    "Ispezionando il cadavere di ${enemyName}, trovi degli oggetti.",
+    "${enemyName} perisce ai tuoi attacchi; perlustri la zona e, di tua sorpresa, trovi il bottino.",
+    "Dopo una vittoria meritata contro ${enemyName}, frughi nelle sue tasche e trovi qualche ricompensa.",
+    "Eccellente! Sembra che ${enemyName} ti abbia lasciato dei souvenir per ricordarti della battaglia.",
+    "Nella zuffa, ${enemyName} ha fatto cadere qualcosa. Non ha senso lasciarle allo spreco.",
+    "Cos'è questo? Sembra che ${enemyName} ti abbia dato dei doni d'addio.",
+    "Non è facile sconfiggere un ${enemyName} di livello ${enemyLevel}, ma ce l'hai fatta. Ti prendi le meritate ricompense.",
+    "Calci ${enemyName} per assicurarti che sia davvero morto - il tuo calcio fa cadere un oggetto!",
+    "Ringrazi ${enemyName} per una buona lotta e procedi a saccheggiare il suo cadavere.",
+    "Livello ${enemyLevel}, e questo è tutto quel che ha avuto da dare? Ti meriti il loro bottino.",
+    "Con il respiro morente, ${enemyName} ti dice di non frugare nelle sue tasche. Naturalmente, ci trovi il bottino.",
+    "Senti un suono di vittoria dopo aver battuto ${enemyName}, seguito dal bottino che spawna ai tuoi piedi.",
+    "Mentre gli saccheggi il bottino, pensi a come ${enemyName} non è all'altezza del suo nome.",
+    "${enemyName} cade a terra con un tonfo, e trovi del bottino sparso intorno al suo cadavere",
+    "${enemyName} è perito, e cerchi del bottino. Oh, eccone un po'!"
+  ],
+  "linesWithNoVariables": [
+    "Hai trovato degli oggetti saccheggiando il nemico.",
+    "Dopo aver vinto sul tuo nemico, prendi un po' di gingilli da terra come souvenir.",
+    "Con il nemico a steso morto a terra, frughi tra le sue cose e te le intaschi.",
+    "Sembra abbiano fatto cadere qualcosa. Oh beh, ora è tuo!",
+    "Uuh, roba gratis! Cortesia del corpo del nemico rannicchiato a terra.",
+    "Sembra che le feste siano arrivate prima quest'anno! Trovi dei 'regali' ovviamente destinati a te.", 
+    "Rovistando nelle tasche del nemico, trovi degli oggetti che ti serviranno più in là.",
+    "Mentre il loro corpo cade a terra, afferri l'oggetto prezioso a mezz'aria.",
+    "Noti un oggetto che brilla all'interno della tasca del nemico. Lo prendi prima che qualcuno se ne accorga.",
+    "Mentre il loro corpo si vaporizza dall'ultimo colpo, afferri il bottino a mezz'aria.",
+    "Mentre ti accovacci sul nemico sconfitto, ti sbilanci e cadi su di esso. Dal loro zaino fuoriesce quel che sembra il loro equipaggiamento."
+  ]
+}

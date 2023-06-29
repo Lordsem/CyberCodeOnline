@@ -1,0 +1,4 @@
+# Exca: La Nueva Era de las Fuentes de Energía Portátiles
+ > (Página 1 de 2 Serie de celdas de energía)
+
+ Las microcélulas de energía de fisión autocontenidas termonucleares, que la gente ahora llama coloquialmente células de energía, son pequeñas unidades generadoras de energía autónomas que vienen en varios tamaños.  Las celdas de energía ahora alimentan todos los dispositivos electrónicos, desde HoloPhones hasta vehículos.  Cada celda es un reactor de fisión autónomo, completo con electrónica inteligente integrada que puede igualar automáticamente el voltaje y la corriente requeridos por el dispositivo en el que está instalado.  Atrás quedaron los días en que las personas necesitaban cargar sus baterías diariamente para mantener sus dispositivos en funcionamiento.  Una celda de energía puede suministrar energía continua a un dispositivo electrónico durante 12 años antes de necesitar reemplazo.

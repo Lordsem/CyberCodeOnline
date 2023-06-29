@@ -1,0 +1,6 @@
+# La Nueva Raza de Superhumanos Entre Nosotros
+ > (parte 5 de 12:Serie Mercenarios de CyberCode)
+
+ Después de numerosos experimentos fallidos que causaron la pérdida de múltiples vidas humanas, el primer súper soldado finalmente se creó el 29 de octubre de 2062. Equipado con un endoesqueleto de aleación de titanio completo, miembros modulares totalmente reconfigurables, sensores ópticos y acústicos reemplazables, Acelerador cerebral de grado militar y un  respaldo neuronal siempre en línea con múltiples cuerpos de respaldo repartidos entre múltiples bases militares, el resultado del Cyber ​​Code Project es casi un súper soldado inmortal.  La única forma de matarlos de forma permanente es destruir las 262 plantas de copia de seguridad de Cyber ​​Code en los 10 segundos necesarios para una copia de seguridad cerebral completa.  Esto marca la primera creación del primer supersoldado de la historia.
+
+ Después de que la Organización del Gobierno Mundial recogiera el éxito del Cyber ​​Code Project, se asignó una gran cantidad de fondos para comenzar a aumentar los soldados con los resultados de la investigación del Cyber ​​Code Project.  El grupo de soldados de élite que recibió una fuerza sobrehumana con una toma de decisiones y tiempos de reacción súper rápidos se llamó The Cyber ​​​​Code Mercenaries.

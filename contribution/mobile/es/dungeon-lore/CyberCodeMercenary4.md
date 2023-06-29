@@ -1,0 +1,6 @@
+# Overclocking del cerebro humano al límite
+ > (parte 4 de 12:Serie Mercenarios de CyberCode)
+
+ Los experimentos fallidos con respecto a la aceleración del cerebro tuvieron muy malos resultados.  Los sujetos fallidos quedaron con un daño cerebral irreparable, y algunos incluso entraron en comas profundos de los que nunca se recuperaron.
+
+ La primera aceleración cerebral exitosa se logró con la ayuda de un prototipo de implante neural basado en el código de la aplicación ilegal Neuralink BB2039.nrl, más conocida como BrainBurst 2039. Una versión modificada de esta aplicación permitió que el cerebro procesara información hasta 1024  veces más rápido, lo que subjetivamente hace que el mundo se congele.  Sin embargo, tener 1024 veces la velocidad de procesamiento del cerebro no significa que el sujeto pueda mover su cuerpo más rápido de lo humanamente posible;  esto les dio a los sujetos la ilusión de que su cuerpo y el mundo se movían en cámara lenta.  Para permitir que el sujeto aún se mueva a una velocidad normal mientras el mundo permanece subjetivamente inmóvil en su punto de vista, necesitan mejoras biónicas que puedan multiplicar su fuerza y ​​velocidad de reacción para igualar su velocidad de procesamiento cerebral acelerado.

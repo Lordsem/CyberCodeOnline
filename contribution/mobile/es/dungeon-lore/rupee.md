@@ -1,0 +1,5 @@
+>Al cerrar la puerta detrás de ti al entrar en esta nueva habitación, un charco de luz prismática atrae tu sentido de asombro.  Caminas hacia el charco de luz, tratando de atraparlo.
+  
+ >Lo que encuentras es una pila de cristales de formas extrañas.  Echa un vistazo a tu alrededor.  Te preguntas si alguien los dejó aquí a propósito.  Coges uno y lo sostienes a la poca luz que hay.  Nada espectacular en la primera impresión.  De hecho, no es una gran impresión en absoluto.  Lo único notable de estos cristales es el hecho de que venían en una multitud de colores.  Además, descolorido por el tiempo, se pueden distinguir algunos colores distintivos: rojo, blanco, verde, morado, incluso uno azul.  Todavía son brillantes a pesar de haber sido dejados al elemento durante mucho tiempo.  Dejando de lado el hecho de que están un poco agrietados y un poco apagados, se mantuvieron bastante bien en su estado, comentas.
+  
+ > Dejas la pila de cristal donde está, dejándolos para que la siguiente persona aprecie su belleza gastada, pero eterna.
