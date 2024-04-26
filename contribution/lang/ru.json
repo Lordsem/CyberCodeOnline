@@ -1,4 +1,56 @@
 {
+ 	"apartment": {
+ 	 	"title": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "Квартира ${playerName}",
+ 	 	 	"eng": "${playerName}'s Apartment"
+ 	 	},
+ 	 	"terminateLease": {
+ 	 	 	"trans": "Расторгнуть договор аренды",
+ 	 	 	"eng": "Terminate Lease"
+ 	 	},
+ 	 	"viewPets": {
+ 	 	 	"trans": "Просмотреть питомцев",
+ 	 	 	"eng": "View Pets"
+ 	 	},
+ 	 	"address": {
+ 	 	 	"cityName": {
+ 	 	 	 	"trans": "Шангри-ла",
+ 	 	 	 	"eng": "Shangri-la"
+ 	 	 	}
+ 	 	},
+ 	 	"rent": {
+ 	 	 	"paidMail": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ты оплатил аренду квартиры в размере {0} рублей",
+ 	 	 	 	"eng": "You have paid your apartment rent of ${amount}"
+ 	 	 	},
+ 	 	 	"unpaidMail": {
+ 	 	 	 	"trans": "Ты забыл заплатить за квартиру, и тебя выселили",
+ 	 	 	 	"eng": "You have failed to pay your apartment rent, your apartment has been terminated"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"purchaseApartmentUI": {
+ 	 	"confirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Снять квартиру",
+ 	 	 	 	"eng": "Rent Apartment"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Ты уверен, что хочешь снять эту квартиру?",
+ 	 	 	 	"eng": "Are you sure you want to rent this apartment?"
+ 	 	 	}
+ 	 	},
+ 	 	"rentButton": {
+ 	 	 	"trans": "Арендовать сейчас",
+ 	 	 	"eng": "Rent Now"
+ 	 	}
+ 	},
  	"tabs": {
  	 	"map": {
  	 	 	"trans": "Карта",
@@ -22,10 +74,41 @@
  	 	}
  	},
  	"ui": {
- 	 	"blackMarket": {
- 	 	 	"selectItemButton": {
- 	 	 	 	"trans": "Распечатать и продать",
- 	 	 	 	"eng": "Print And Sell"
+ 	 	"bulkCraft": {
+ 	 	 	"amountSelect": {
+ 	 	 	 	"title": {
+ 	 	 	 	 	"trans": "Выберите сумму",
+ 	 	 	 	 	"eng": "Select Amount"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"duration": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"duration"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Эта задача займет ${duration}",
+ 	 	 	 	"eng": "This task will take ${duration}"
+ 	 	 	},
+ 	 	 	"durationTooLong": {
+ 	 	 	 	"trans": "Слишком много выбранных предметов",
+ 	 	 	 	"eng": "Too many items selected"
+ 	 	 	}
+ 	 	},
+ 	 	"generalCaptcha": {
+ 	 	 	"inputLabel": {
+ 	 	 	 	"trans": "Пин-код",
+ 	 	 	 	"eng": "Pin Code"
+ 	 	 	},
+ 	 	 	"inputPlaceholder": {
+ 	 	 	 	"trans": "Введите пин-код",
+ 	 	 	 	"eng": "Enter pin code"
+ 	 	 	},
+ 	 	 	"story": {
+ 	 	 	 	"trans": "Вы нашли старый запертый сейф, там, кажется, есть наклейка с каким-то текстом, написанным на ней.",
+ 	 	 	 	"eng": "You found an old locked safe box, there seems like a post-it with some text written on it."
+ 	 	 	},
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Пин-код, необходимый для разблокировки",
+ 	 	 	 	"eng": "Pin code required to unlock"
  	 	 	}
  	 	},
  	 	"clan": {
@@ -47,15 +130,15 @@
  	 	 	 	"eng": "Deposit Bitcoin"
  	 	 	},
  	 	 	"editMotto": {
+ 	 	 	 	"button": {
+ 	 	 	 	 	"trans": "Редактировать девиз банды",
+ 	 	 	 	 	"eng": "Edit Gang Motto"
+ 	 	 	 	},
  	 	 	 	"modal": {
  	 	 	 	 	"title": {
  	 	 	 	 	 	"trans": "Пожалуйста, введите девиз банды",
  	 	 	 	 	 	"eng": "Please enter your gang motto"
  	 	 	 	 	}
- 	 	 	 	},
- 	 	 	 	"button": {
- 	 	 	 	 	"trans": "Редактировать девиз банды",
- 	 	 	 	 	"eng": "Edit Gang Motto"
  	 	 	 	}
  	 	 	},
  	 	 	"updateImage": {
@@ -172,12 +255,6 @@
  	 	 	 	}
  	 	 	}
  	 	},
- 	 	"supportUkraine": {
- 	 	 	"description": {
- 	 	 	 	"trans": "Люди Украины, России и всего мира страдают из-за амбиций одного человека. \r\n Занимайтесь любовью, а не войной.",
- 	 	 	 	"eng": "People of Ukraine, Russia and the whole world are suffering because one man's ambition.\\n Make love exploit, not war."
- 	 	 	}
- 	 	},
  	 	"bank": {
  	 	 	"balance": {
  	 	 	 	"trans": "баланс",
@@ -288,24 +365,6 @@
  	 	 	 	}
  	 	 	}
  	 	},
- 	 	"generalCaptcha": {
- 	 	 	"story": {
- 	 	 	 	"trans": "Вы нашли старый запертый сейф, там, кажется, есть наклейка с каким-то текстом, написанным на ней.",
- 	 	 	 	"eng": "You found an old locked safe box, there seems like a post-it with some text written on it."
- 	 	 	},
- 	 	 	"title": {
- 	 	 	 	"trans": "Пин-код, необходимый для разблокировки",
- 	 	 	 	"eng": "Pin code required to unlock"
- 	 	 	},
- 	 	 	"inputLabel": {
- 	 	 	 	"trans": "Пин-код",
- 	 	 	 	"eng": "Pin Code"
- 	 	 	},
- 	 	 	"inputPlaceholder": {
- 	 	 	 	"trans": "Введите пин-код",
- 	 	 	 	"eng": "Enter pin code"
- 	 	 	}
- 	 	},
  	 	"chat": {
  	 	 	"reconnecting": {
  	 	 	 	"trans": "Восстановление связи",
@@ -397,6 +456,16 @@
  	 	 	}
  	 	},
  	 	"clanPage": {
+ 	 	 	"notice": {
+ 	 	 	 	"time": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"playerName",
+ 	 	 	 	 	 	"time"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "Автор: ${playerName} ${time} назад",
+ 	 	 	 	 	"eng": "Posted by ${playerName} ${time} ago"
+ 	 	 	 	}
+ 	 	 	},
  	 	 	"createClan": {
  	 	 	 	"title": {
  	 	 	 	 	"trans": "Вы не являетесь членом какой-либо банды",
@@ -525,17 +594,27 @@
  	 	},
  	 	"timeSkip": {
  	 	 	"unitTimeSkipButton": {
- 	 	 	 	"title": {
+ 	 	 	 	"unit": {
  	 	 	 	 	"vars": [
- 	 	 	 	 	 	"timeSkipMinutes",
- 	 	 	 	 	 	"timeSkipCost"
+ 	 	 	 	 	 	"units"
  	 	 	 	 	],
- 	 	 	 	 	"trans": "Глобальный пропуск\r\n${timeSkipMinutes} мин, за ${timeSkipCost} Units",
- 	 	 	 	 	"eng": "Global Skip (${timeSkipMinutes} Min, Cost ${timeSkipCost} Units)"
+ 	 	 	 	 	"trans": "${units} единицы",
+ 	 	 	 	 	"eng": "${units} units"
+ 	 	 	 	},
+ 	 	 	 	"minute": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"minutes"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "Пропустить ${minutes} минуты",
+ 	 	 	 	 	"eng": "Skip ${minutes} minutes"
+ 	 	 	 	},
+ 	 	 	 	"title2": {
+ 	 	 	 	 	"trans": "Закончить сейчас",
+ 	 	 	 	 	"eng": "Finish Now"
  	 	 	 	},
  	 	 	 	"description": {
  	 	 	 	 	"trans": "Глобальный пропуск позволяет уменьшить время ожидания AFK и мгновенно завершить его.\r\nЭтот эффект будет применен ко всем игрокам, в порядке очереди, выполняющим AFK задачу",
- 	 	 	 	 	"eng": "Global Skip allow you to skip the AFK waiting time, and finish it instantly.\r\n    this effect will be applied to all player performing AFK task"
+ 	 	 	 	 	"eng": "Finish the task instantly for all players in the game and earn skip points to show your support to other players!"
  	 	 	 	}
  	 	 	},
  	 	 	"itemTimeSkipButton": {
@@ -680,12 +759,16 @@
  	 	 	 	"trans": "Разблокирован",
  	 	 	 	"eng": "Unlocked"
  	 	 	},
+ 	 	 	"upgradeModuleTitleHeader": {
+ 	 	 	 	"trans": "Модернизируют слоты",
+ 	 	 	 	"eng": "Upgrades Slots"
+ 	 	 	},
  	 	 	"upgradeModuleTitle": {
- 	 	 	 	"trans": "модуль улучшения ${index}",
- 	 	 	 	"eng": "upgrade slot ${index}",
  	 	 	 	"vars": [
  	 	 	 	 	"index"
- 	 	 	 	]
+ 	 	 	 	],
+ 	 	 	 	"trans": "модуль улучшения ${index}",
+ 	 	 	 	"eng": "upgrade slot ${index}"
  	 	 	},
  	 	 	"equip": {
  	 	 	 	"trans": "Надеть",
@@ -997,14 +1080,6 @@
  	 	 	 	 	"trans": "Блок игрок",
  	 	 	 	 	"eng": "Block Player"
  	 	 	 	}
- 	 	 	},
- 	 	 	"equipped": {
- 	 	 	 	"trans": "Экипировано",
- 	 	 	 	"eng": "Equipped"
- 	 	 	},
- 	 	 	"inventory": {
- 	 	 	 	"trans": "Инвентарь",
- 	 	 	 	"eng": "Inventory"
  	 	 	}
  	 	},
  	 	"modal": {
@@ -1094,13 +1169,13 @@
  	 	 	 	"trans": "В настоящее время нет предметов в продаже для этой категории",
  	 	 	 	"eng": "there is currently no items on sale for this category"
  	 	 	},
- 	 	 	"buy": {
- 	 	 	 	"trans": "Купить",
- 	 	 	 	"eng": "Purchase"
+ 	 	 	"pricePerPiece": {
+ 	 	 	 	"trans": "за единицу",
+ 	 	 	 	"eng": "per item"
  	 	 	},
- 	 	 	"remove": {
- 	 	 	 	"trans": "Удалить",
- 	 	 	 	"eng": "Remove"
+ 	 	 	"purchase": {
+ 	 	 	 	"trans": "Покупка",
+ 	 	 	 	"eng": "Purchase"
  	 	 	},
  	 	 	"stall": {
  	 	 	 	"sellItemButton": {
@@ -1322,69 +1397,10 @@
  	 	 	 	"eng": "If you have any questions please feel free to contact Dexter directly via official Discord (Link can be found in Floating Menu -> Links) or email to ching.huang.dexter@gmail.com"
  	 	 	}
  	 	},
- 	 	"tipsBox": {
- 	 	 	"title": {
- 	 	 	 	"trans": "Советы",
- 	 	 	 	"eng": "Pro Tips"
- 	 	 	},
- 	 	 	"description": {
- 	 	 	 	"trans": "Нажми, чтобы обновить совет",
- 	 	 	 	"eng": "Click to get new tips"
- 	 	 	}
- 	 	},
  	 	"travel": {
  	 	 	"notUnlocked": {
  	 	 	 	"trans": "Вы еще не разблокировали эту локацию",
  	 	 	 	"eng": "You have not unlocked this area yet"
- 	 	 	}
- 	 	},
- 	 	"machineCrafting": {
- 	 	 	"titleBox": {
- 	 	 	 	"tile": {
- 	 	 	 	 	"trans": "система в режиме ожидания",
- 	 	 	 	 	"eng": "system idle"
- 	 	 	 	},
- 	 	 	 	"subtitle": {
- 	 	 	 	 	"trans": "Пожалуйста, вставь предмет",
- 	 	 	 	 	"eng": "Please insert an item"
- 	 	 	 	}
- 	 	 	},
- 	 	 	"selectItemButton": {
- 	 	 	 	"trans": "Переработать вещь",
- 	 	 	 	"eng": "Recycle Item"
- 	 	 	},
- 	 	 	"selectAmount": {
- 	 	 	 	"title": {
- 	 	 	 	 	"trans": "Выбери количество",
- 	 	 	 	 	"eng": "Please select amount"
- 	 	 	 	},
- 	 	 	 	"subtitle": {
- 	 	 	 	 	"vars": [
- 	 	 	 	 	 	"timeStr"
- 	 	 	 	 	],
- 	 	 	 	 	"trans": "Это займет ${timeStr}",
- 	 	 	 	 	"eng": "This will take ${timeStr}"
- 	 	 	 	}
- 	 	 	},
- 	 	 	"confirmModal": {
- 	 	 	 	"title": {
- 	 	 	 	 	"vars": [
- 	 	 	 	 	 	"itemName"
- 	 	 	 	 	],
- 	 	 	 	 	"trans": "Выберите ${itemName}?",
- 	 	 	 	 	"eng": "Select ${itemName}?"
- 	 	 	 	},
- 	 	 	 	"subtitle": {
- 	 	 	 	 	"vars": [
- 	 	 	 	 	 	"itemName"
- 	 	 	 	 	],
- 	 	 	 	 	"trans": "Вы уверены, что хотите выбрать ${itemName}?",
- 	 	 	 	 	"eng": "Are you sure you want to select ${itemName}?"
- 	 	 	 	},
- 	 	 	 	"confirmText": {
- 	 	 	 	 	"trans": "я уверен",
- 	 	 	 	 	"eng": "I am sure"
- 	 	 	 	}
  	 	 	}
  	 	},
  	 	"setting": {
@@ -1497,6 +1513,12 @@
  	 	 	 	"eng": "save"
  	 	 	}
  	 	},
+ 	 	"petShop": {
+ 	 	 	"adapt": {
+ 	 	 	 	"trans": "Новый питомец в семью",
+ 	 	 	 	"eng": "Adopt a new pet"
+ 	 	 	}
+ 	 	},
  	 	"rangeSelector": {
  	 	 	"selectMaxValue": {
  	 	 	 	"title": {
@@ -1571,6 +1593,41 @@
  	 	 	"itemLocked": {
  	 	 	 	"trans": "Этот предмет заблокирован",
  	 	 	 	"eng": "This item is locked"
+ 	 	 	}
+ 	 	},
+ 	 	"machineCrafting": {
+ 	 	 	"selectAmount": {
+ 	 	 	 	"title": {
+ 	 	 	 	 	"trans": "Выбери количество",
+ 	 	 	 	 	"eng": "Please select amount"
+ 	 	 	 	},
+ 	 	 	 	"subtitle": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"timeStr"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "Это займет ${timeStr}",
+ 	 	 	 	 	"eng": "This will take ${timeStr}"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"confirmModal": {
+ 	 	 	 	"title": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"itemName"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "Выберите ${itemName}?",
+ 	 	 	 	 	"eng": "Select ${itemName}?"
+ 	 	 	 	},
+ 	 	 	 	"subtitle": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"itemName"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "Вы уверены, что хотите выбрать ${itemName}?",
+ 	 	 	 	 	"eng": "Are you sure you want to select ${itemName}?"
+ 	 	 	 	},
+ 	 	 	 	"confirmText": {
+ 	 	 	 	 	"trans": "я уверен",
+ 	 	 	 	 	"eng": "I am sure"
+ 	 	 	 	}
  	 	 	}
  	 	},
  	 	"calibration": {
@@ -1680,6 +1737,39 @@
  	 	 	"title": {
  	 	 	 	"trans": "Введи системный код для продолжения",
  	 	 	 	"eng": "Enter system passcode to proceed"
+ 	 	 	}
+ 	 	},
+ 	 	"marketItemPurchaseModal": {
+ 	 	 	"amount": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"price",
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${price} btc за штуку для ${amount} произведений",
+ 	 	 	 	"eng": "${price} btc per piece for ${amount} pieces"
+ 	 	 	}
+ 	 	},
+ 	 	"marketItemSellModal": {
+ 	 	 	"amountTitle": {
+ 	 	 	 	"trans": "Количество для выставки рынка",
+ 	 	 	 	"eng": "Quantity to put on market"
+ 	 	 	},
+ 	 	 	"priceTitle": {
+ 	 	 	 	"trans": "Цена за штуку",
+ 	 	 	 	"eng": "Price per piece"
+ 	 	 	},
+ 	 	 	"footer": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"price",
+ 	 	 	 	 	"quantity",
+ 	 	 	 	 	"totalPrice"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Этот предмет будет продан за ${price} за штуку за ${quantity}, если все произведения будут проданы, вы получите ${totalPrice}",
+ 	 	 	 	"eng": "This item will be sold for ${price} per piece for ${quantity} pieces, if all pieces are sold you will receive ${totalPrice}"
+ 	 	 	},
+ 	 	 	"sell": {
+ 	 	 	 	"trans": "Поместите товар на рынок",
+ 	 	 	 	"eng": "Place Item on Market"
  	 	 	}
  	 	},
  	 	"dungeon": {
@@ -1955,6 +2045,10 @@
  	 	 	 	],
  	 	 	 	"trans": "${playerCount} игрок(а) присоединился",
  	 	 	 	"eng": "${playerCount} player(s) connected"
+ 	 	 	},
+ 	 	 	"passwordProtected": {
+ 	 	 	 	"trans": "Пароль защищен",
+ 	 	 	 	"eng": "Password protected"
  	 	 	}
  	 	},
  	 	"equipmentUpgrade": {
@@ -2394,6 +2488,12 @@
  	 	 	"unlock": {
  	 	 	 	"trans": "Разблокировать",
  	 	 	 	"eng": "Unlock"
+ 	 	 	},
+ 	 	 	"error": {
+ 	 	 	 	"notEnabled": {
+ 	 	 	 	 	"trans": "Этот контейнер не может быть разблокирован в это время",
+ 	 	 	 	 	"eng": "This container cannot be unlocked at this time"
+ 	 	 	 	}
  	 	 	}
  	 	}
  	},
@@ -2443,6 +2543,18 @@
  	 	 	"name": {
  	 	 	 	"trans": "кассета",
  	 	 	 	"eng": "cassette tape"
+ 	 	 	}
+ 	 	},
+ 	 	"rareEquipmentCrate": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Редкое оборудование ящик",
+ 	 	 	 	"eng": "Rare Equipment Crate"
+ 	 	 	}
+ 	 	},
+ 	 	"freeSkip": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Бесплатный личный пропуск",
+ 	 	 	 	"eng": "Free Personal Skip"
  	 	 	}
  	 	},
  	 	"cycle": {
@@ -2584,10 +2696,6 @@
  	 	 	"trans": "Будет получено",
  	 	 	"eng": "Receives"
  	 	},
- 	 	"inputPlaceholder": {
- 	 	 	"trans": "Введи сообщение",
- 	 	 	"eng": "Enter message to start chatting"
- 	 	},
  	 	"moderators": {
  	 	 	"trans": "модераторы",
  	 	 	"eng": "moderators"
@@ -2694,6 +2802,23 @@
  	 	"thief": {
  	 	 	"trans": "Техно-Теф",
  	 	 	"eng": "Techno-Thief"
+ 	 	}
+ 	},
+ 	"globalPartyBanner": {
+ 	 	"title": {
+ 	 	 	"trans": "🎉 Глобальная вечеринка 🎉",
+ 	 	 	"eng": "🎉 Global Party 🎉"
+ 	 	},
+ 	 	"subtitle": {
+ 	 	 	"trans": "Размещено:",
+ 	 	 	"eng": "Hosted by:"
+ 	 	},
+ 	 	"button,": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "Выразить уважение",
+ 	 	 	"eng": "Give street cred"
  	 	}
  	},
  	"cost": {
@@ -3055,6 +3180,16 @@
  	 	 	 	"trans": "Банда \"Вудуисты\" наносит тебе повышенный урон",
  	 	 	 	"eng": "Enemies of Voodoo Boys gang deals increased damage to you"
  	 	 	}
+ 	 	},
+ 	 	"afkExpMultiplier": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Afk exp Multiplier",
+ 	 	 	 	"eng": "AFK EXP multiplier"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Увеличьте exp, которые вы получаете от AFK -задач",
+ 	 	 	 	"eng": "Increase EXP you receive from AFK tasks"
+ 	 	 	}
  	 	}
  	},
  	"modal": {
@@ -3090,13 +3225,13 @@
  	 	 	 	"trans": "Доступ запрещен. Обнаружен нечеловеческий профиль.",
  	 	 	 	"eng": "Access denied. non-human profile detected."
  	 	 	},
+ 	 	 	"report1": {
+ 	 	 	 	"trans": "Пожаловаться и заблокировать",
+ 	 	 	 	"eng": "Report & Block"
+ 	 	 	},
  	 	 	"block": {
  	 	 	 	"trans": "Заблокировать",
  	 	 	 	"eng": "Block"
- 	 	 	},
- 	 	 	"report": {
- 	 	 	 	"trans": "Пожаловаться и заблокировать",
- 	 	 	 	"eng": "Report and Block"
  	 	 	},
  	 	 	"openPlayerGang": {
  	 	 	 	"trans": "Просмотр банды",
@@ -3249,14 +3384,14 @@
  	 	"resultScreen": {
  	 	 	"title": {
  	 	 	 	"trans": "Победа",
- 	 	 	 	"eng": "Victory"
+ 	 	 	 	"eng": "Level up"
  	 	 	},
  	 	 	"subTitle": {
  	 	 	 	"vars": [
  	 	 	 	 	"levelName"
  	 	 	 	],
  	 	 	 	"trans": "Поздравляю, вы повысили свой уровень ${levelName}!",
- 	 	 	 	"eng": "Congratulation, you have leveled up your ${levelName}!"
+ 	 	 	 	"eng": "Congratulations, you have leveled up your ${levelName}!"
  	 	 	},
  	 	 	"fromTo": {
  	 	 	 	"vars": [
@@ -3265,6 +3400,10 @@
  	 	 	 	],
  	 	 	 	"trans": "${from} => ${to}",
  	 	 	 	"eng": "${from} => ${to}"
+ 	 	 	},
+ 	 	 	"title2": {
+ 	 	 	 	"trans": "Полученный",
+ 	 	 	 	"eng": "Received"
  	 	 	}
  	 	},
  	 	"review": {
@@ -3338,6 +3477,30 @@
  	 	 	 	 	"eng": "Reload"
  	 	 	 	}
  	 	 	}
+ 	 	}
+ 	},
+ 	"playerDetailsAssetsTab": {
+ 	 	"noAssets": {
+ 	 	 	"trans": "У этого игрока нет никаких активов",
+ 	 	 	"eng": "this player does not own any assets"
+ 	 	},
+ 	 	"apartment": {
+ 	 	 	"title": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"playerName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Квартира ${playerName}",
+ 	 	 	 	"eng": "${playerName}'s Apartment"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"playerStatusDisplay": {
+ 	 	"title": {
+ 	 	 	"vars": [
+ 	 	 	 	"action"
+ 	 	 	],
+ 	 	 	"trans": "${action} в процессе",
+ 	 	 	"eng": "${action} in progress"
  	 	}
  	},
  	"time": {
@@ -3613,16 +3776,16 @@
  	 	 	 	 	"eng": "dungeon warrior"
  	 	 	 	}
  	 	 	},
- 	 	 	"clearDungeonCoOp": {
- 	 	 	 	"name": {
- 	 	 	 	 	"trans": "друзья в подземелье",
- 	 	 	 	 	"eng": "dungeon friends"
- 	 	 	 	}
- 	 	 	},
  	 	 	"clearDungeon": {
  	 	 	 	"name": {
  	 	 	 	 	"trans": "крушитель подземелий",
  	 	 	 	 	"eng": "dungeon crawler"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"clearDungeonCoOp": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "друзья в подземелье",
+ 	 	 	 	 	"eng": "dungeon friends"
  	 	 	 	}
  	 	 	},
  	 	 	"dealDamage": {
@@ -3689,10 +3852,148 @@
  	 	 	"eng": "Appeal Form"
  	 	}
  	},
+ 	"pet": {
+ 	 	"noName": {
+ 	 	 	"trans": "неизвестный",
+ 	 	 	"eng": "unnamed"
+ 	 	},
+ 	 	"nameTooShort": {
+ 	 	 	"vars": [
+ 	 	 	 	"length"
+ 	 	 	],
+ 	 	 	"trans": "Имя питомца должно быть длиной не менее ${length} символов",
+ 	 	 	"eng": "Pet name must be at least ${length} characters long"
+ 	 	},
+ 	 	"nameTooLong": {
+ 	 	 	"vars": [
+ 	 	 	 	"length"
+ 	 	 	],
+ 	 	 	"trans": "Прозвище должно быть не длиннее ${length} символов",
+ 	 	 	"eng": "Pet name must be at most ${length} characters long"
+ 	 	},
+ 	 	"nameCantContainSpaces": {
+ 	 	 	"trans": "Имя питомца не может содержать пробелы",
+ 	 	 	"eng": "Pet name can not contain spaces"
+ 	 	},
+ 	 	"rerollImage": {
+ 	 	 	"success": {
+ 	 	 	 	"trans": "Изображение питомца успешно изменено",
+ 	 	 	 	"eng": "Pet image changed successfully"
+ 	 	 	}
+ 	 	},
+ 	 	"adoption": {
+ 	 	 	"alreadyActivated": {
+ 	 	 	 	"trans": "Бафф \"Усыновление питомца\" уже активирован",
+ 	 	 	 	"eng": "Pet Adoption buff is already activated"
+ 	 	 	},
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player",
+ 	 	 	 	 	"npc"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${player} активировал(а) бафф \"Усыновление\", ты можешь усыновить питомца у ${npc} в течение действия баффа!",
+ 	 	 	 	"eng": "${player} has activated Adoption Buff, you can adopt a pet from ${npc} within the buff duration!"
+ 	 	 	},
+ 	 	 	"activated": {
+ 	 	 	 	"trans": "Бафф на усыновление питомца активирован",
+ 	 	 	 	"eng": "Pet adoption buff activated"
+ 	 	 	}
+ 	 	},
+ 	 	"error": {
+ 	 	 	"interactedRecently": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"hours"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ты можешь взаимодействовать с питомцем игрока только раз в ${hours} часов",
+ 	 	 	 	"eng": "You can only interact with a player's pet once every ${hours} hours"
+ 	 	 	}
+ 	 	},
+ 	 	"played": {
+ 	 	 	"vars": [
+ 	 	 	 	"player",
+ 	 	 	 	"pet"
+ 	 	 	],
+ 	 	 	"trans": "${player} поиграл с твоим питомцем ${pet}",
+ 	 	 	"eng": "${player} has played with your pet ${pet}",
+ 	 	 	"success": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"playerName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ты поиграл с питомцем ${playerName}",
+ 	 	 	 	"eng": "You have played with ${playerName}'s pet"
+ 	 	 	}
+ 	 	},
+ 	 	"rename": {
+ 	 	 	"badWord": {
+ 	 	 	 	"trans": "Имя содержит запрещенные слова",
+ 	 	 	 	"eng": "Name contains not allowed words"
+ 	 	 	},
+ 	 	 	"notEnoughIAP": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"price"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Тебе нужно ${price} единиц, чтобы переименовать своего питомца",
+ 	 	 	 	"eng": "You need ${price} Units to rename your pet"
+ 	 	 	}
+ 	 	},
+ 	 	"adopted": {
+ 	 	 	"vars": [
+ 	 	 	 	"player",
+ 	 	 	 	"pet"
+ 	 	 	],
+ 	 	 	"trans": "${player} принял ${pet}",
+ 	 	 	"eng": "${player} has adopted ${pet}",
+ 	 	 	"mail": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"pet"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ты принял ${pet}",
+ 	 	 	 	"eng": "You have adopted ${pet}"
+ 	 	 	}
+ 	 	},
+ 	 	"reviveActivate": {
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${player} активировал(а) бафф возрождения питомца, теперь ты можешь возродить одного из своих питомцев в течение действия баффа.",
+ 	 	 	 	"eng": "${player} has used pet revival buff, you can now revive one of your pet within the buff duration."
+ 	 	 	}
+ 	 	},
+ 	 	"revive": {
+ 	 	 	"activated": {
+ 	 	 	 	"trans": "Активирован бафф воскрешения питомца",
+ 	 	 	 	"eng": "Pet revive buff activated"
+ 	 	 	},
+ 	 	 	"success": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"petName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ты воскресил ${petName}",
+ 	 	 	 	"eng": "You have revived ${petName}"
+ 	 	 	}
+ 	 	},
+ 	 	"reviveSuccess": {
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player",
+ 	 	 	 	 	"pet"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${player} возродил(а) ${pet}",
+ 	 	 	 	"eng": "${player} has revived ${pet}"
+ 	 	 	}
+ 	 	}
+ 	},
  	"priceTag": {
  	 	"free": {
  	 	 	"trans": "БЕСПЛАТНО",
  	 	 	"eng": "FREE"
+ 	 	}
+ 	},
+ 	"chatInput": {
+ 	 	"placeholder": {
+ 	 	 	"trans": "Введите сообщение...",
+ 	 	 	"eng": "Enter Message..."
  	 	}
  	},
  	"itemList": {
@@ -3730,6 +4031,12 @@
  	 	"max": {
  	 	 	"trans": "Максимум",
  	 	 	"eng": "max"
+ 	 	}
+ 	},
+ 	"giveCredButton": {
+ 	 	"giveCred": {
+ 	 	 	"trans": "Выразить уважение",
+ 	 	 	"eng": "Give Street Cred"
  	 	}
  	},
  	"actionStartModal": {
@@ -3852,7 +4159,7 @@
  	 	 	 	"eng": "You can not start a trade now"
  	 	 	},
  	 	 	"targetPlayerBlockedYou": {
- 	 	 	 	"trans": "Вы не можете отправить торговый приглашение этому игроку",
+ 	 	 	 	"trans": "Вы не можете отправить торговое приглашение этому игроку",
  	 	 	 	"eng": "You cannot send trade invite to this player"
  	 	 	},
  	 	 	"targetPlayerBlockedGifts": {
@@ -3989,6 +4296,34 @@
  	 	"dungeonQuest": {
  	 	 	"trans": "Нажми \"Принять задание\", чтобы взять задание. Ты можешь выполнить квест или отказаться от него в любое время",
  	 	 	"eng": "Click 'ACCEPT QUEST' to accept the quest, you may complete or abandon the quest at any time"
+ 	 	}
+ 	},
+ 	"enum": {
+ 	 	"apartmentType": {
+ 	 	 	"T1": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "трущобная квартира",
+ 	 	 	 	 	"eng": "slum apartment"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"T2": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "квартира",
+ 	 	 	 	 	"eng": "apartment"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"T3": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Роскошная квартира",
+ 	 	 	 	 	"eng": "luxury apartment"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"T4": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Пентхаус",
+ 	 	 	 	 	"eng": "penthouse"
+ 	 	 	 	}
+ 	 	 	}
  	 	}
  	},
  	"iapCurrency": {
@@ -4163,6 +4498,13 @@
  	 	 	"trans": "Получить",
  	 	 	"eng": "Receive"
  	 	},
+ 	 	"bonusReward": {
+ 	 	 	"vars": [
+ 	 	 	 	"eventName"
+ 	 	 	],
+ 	 	 	"trans": "${eventName} бонус:",
+ 	 	 	"eng": "${eventName} bonus:"
+ 	 	},
  	 	"purchasing": {
  	 	 	"trans": "Покупка",
  	 	 	"eng": "Purchasing"
@@ -4170,6 +4512,28 @@
  	 	"total": {
  	 	 	"trans": "итого",
  	 	 	"eng": "total"
+ 	 	}
+ 	},
+ 	"bulkCraftingSubtype": {
+ 	 	"recycle": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Перерабатывать",
+ 	 	 	 	"eng": "Recycle"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Добавьте предметы, чтобы утилизировать их более эффективно",
+ 	 	 	 	"eng": "Add items to recycle them more efficiently"
+ 	 	 	}
+ 	 	},
+ 	 	"printSell": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Печать и продавать",
+ 	 	 	 	"eng": "Print & Sell"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Печатайте товары и продайте их за деньги",
+ 	 	 	 	"eng": "Print items and sell them for money"
+ 	 	 	}
  	 	}
  	},
  	"donationType": {
@@ -4248,6 +4612,46 @@
  	 	"donation18": {
  	 	 	"trans": "Престиж",
  	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation20": {
+ 	 	 	"trans": "Престиж",
+ 	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation21": {
+ 	 	 	"trans": "Престиж",
+ 	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation22": {
+ 	 	 	"trans": "Престиж",
+ 	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation23": {
+ 	 	 	"trans": "Хэллоуин",
+ 	 	 	"eng": "Halloween"
+ 	 	},
+ 	 	"donation24": {
+ 	 	 	"trans": "Перевозки",
+ 	 	 	"eng": "SkipSage"
+ 	 	},
+ 	 	"donation25": {
+ 	 	 	"trans": "Рождественское время",
+ 	 	 	"eng": "Christmastime"
+ 	 	},
+ 	 	"donation26": {
+ 	 	 	"trans": "Кибергугон",
+ 	 	 	"eng": "CyberDragon"
+ 	 	},
+ 	 	"donation27": {
+ 	 	 	"trans": "Пропустить лорда",
+ 	 	 	"eng": "Skip Lord"
+ 	 	},
+ 	 	"donation28": {
+ 	 	 	"trans": "Сакура",
+ 	 	 	"eng": "Sakura"
+ 	 	},
+ 	 	"donation29": {
+ 	 	 	"trans": "Сетевик",
+ 	 	 	"eng": "Netrunner"
  	 	},
  	 	"moderator": {
  	 	 	"trans": "Модератор",
@@ -4990,6 +5394,406 @@
  	 	 	 	 	"eng": "More coming in future update"
  	 	 	 	}
  	 	 	}
+ 	 	},
+ 	 	"donation20": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Название пожертвования \"Prestige\"",
+ 	 	 	 	 	"eng": "\"Prestige\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Разблокировать настройку изображения профиля",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Белая рама (с анимацией)",
+ 	 	 	 	 	"eng": "White frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Белый профиль (с анимацией)",
+ 	 	 	 	 	"eng": "White Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Разблокировать пользовательскую биографию",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Украшение штрих -кода в профиле",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Настройте девиз банда",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Настройте изображение банды",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Больше в будущем обновлении",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation21": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Название пожертвования \"Prestige\"",
+ 	 	 	 	 	"eng": "\"Prestige\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Разблокировать настройку изображения профиля",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Красный кадр (с анимацией)",
+ 	 	 	 	 	"eng": "Red frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Красный профиль (с анимацией)",
+ 	 	 	 	 	"eng": "Red Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Разблокировать пользовательскую биографию",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Украшение штрих -кода в профиле",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Настройте девиз банда",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Настройте изображение банды",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Больше в будущем обновлении",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation22": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Название пожертвования \"Prestige\"",
+ 	 	 	 	 	"eng": "\"Prestige\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Разблокировать настройку изображения профиля",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Неоновая кадр (с анимацией)",
+ 	 	 	 	 	"eng": "Neon Sign frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Фиолетовый профиль (с анимацией)",
+ 	 	 	 	 	"eng": "Purple Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Разблокировать пользовательскую биографию",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Украшение штрих -кода в профиле",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Настройте девиз банда",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Настройте изображение банды",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Больше в будущем обновлении",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation23": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Название пожертвования \"Хэллоуин\"",
+ 	 	 	 	 	"eng": "\"Halloween\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Разблокировать настройку изображения профиля",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Кадр на Хэллоуин (с анимацией)",
+ 	 	 	 	 	"eng": "Halloween frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Профиль Хэллоуина (с анимацией)",
+ 	 	 	 	 	"eng": "Halloween Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Разблокировать пользовательскую биографию",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Украшение штрих -кода в профиле",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Настройте девиз банда",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Настройте изображение банды",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Больше в будущем обновлении",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation24": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Название пожертвования \"Skipgod\"",
+ 	 	 	 	 	"eng": "\"SkipSage\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Разблокировать настройку изображения профиля",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Skipgod Frame (с анимацией)",
+ 	 	 	 	 	"eng": "SkipSage frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Профиль Skipgod (с анимацией)",
+ 	 	 	 	 	"eng": "SkipSage Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Разблокировать пользовательскую биографию",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Украшение штрих -кода в профиле",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Настройте девиз банда",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Настройте изображение банды",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Больше в будущем обновлении",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation25": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Название пожертвования \"Рождество\"",
+ 	 	 	 	 	"eng": "\"Christmastime\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Разблокировать настройку изображения профиля",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Рождественский кадр (с анимацией)",
+ 	 	 	 	 	"eng": "Christmastime frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Профиль Рождества (с анимацией)",
+ 	 	 	 	 	"eng": "Christmastime Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Разблокировать пользовательскую биографию",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Украшение штрих -кода в профиле",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Настройте девиз банда",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Настройте изображение банды",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Больше в будущем обновлении",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation26": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Название пожертвования \"Cyberdragon\"",
+ 	 	 	 	 	"eng": "\"CyberDragon\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Разблокировать настройку изображения профиля",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Рамка киберграгона (с анимацией)",
+ 	 	 	 	 	"eng": "CyberDragon frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Профиль кибердрагона (с анимацией)",
+ 	 	 	 	 	"eng": "CyberDragon Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Разблокировать персональную биографию",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Украшение штрих -кода в профиле",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Настройте девиз банда",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Настройте изображение банды",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Больше в будущем обновлении",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation27": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Название о пожертвовании \"Skip Lord\"",
+ 	 	 	 	 	"eng": "\"Skip Lord\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Разблокировать настройку изображения профиля",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Пропустить лорд кадр (с анимацией)",
+ 	 	 	 	 	"eng": "Skip Lord frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Пропустить профиль лорда (с анимацией)",
+ 	 	 	 	 	"eng": "Skip Lord Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Разблокировать персональную биографию",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Разблокировать пользовательскую биографию",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Настройте девиз банда",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Настройте изображение банды",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Больше в будущем обновлении",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation28": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"Донейт «Сакура»\"",
+ 	 	 	 	 	"eng": "\"Sakura\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Разблокировать настройку аватара",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Рамка \"Сакура\" (с анимацией)",
+ 	 	 	 	 	"eng": "Sakura frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Профиль Сакуры (c анимацией)",
+ 	 	 	 	 	"eng": "Sakura Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Разблокировать персональную биографию",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Разблокировать персональную биографию",
+ 	 	 	 	 	"eng": "Sakura profile decoration"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Настройте девиз банды",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Настроить облик банды",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Больше будет в следующем обновлении",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation29": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"Благодарность Нетраннеру\"",
+ 	 	 	 	 	"eng": "\"Netrunner\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Разблокировать настройку аватара",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Рамка нетраннера (c анимацией)",
+ 	 	 	 	 	"eng": "Netrunner frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Профиль нетраннера (с анимацией)",
+ 	 	 	 	 	"eng": "Netrunner Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Разблокировать персональную биографию",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Разблокировать персональную биографию",
+ 	 	 	 	 	"eng": "Netrunner profile decoration"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Настройте девиз банды",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Настроить облик банды",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Больше будет в следующем обновлении",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
  	 	}
  	},
  	"equipmentMarks": {
@@ -5058,6 +5862,33 @@
  	 	 	"eng": "backpack"
  	 	}
  	},
+ 	"gameEvent": {
+ 	 	"lunarNewYear": {
+ 	 	 	"trans": "Лунный Новый год",
+ 	 	 	"eng": "Lunar New Year"
+ 	 	},
+ 	 	"halloween": {
+ 	 	 	"trans": "Хэллоуин",
+ 	 	 	"eng": "Halloween"
+ 	 	},
+ 	 	"thanksgiving": {
+ 	 	 	"trans": "День Благодарения",
+ 	 	 	"eng": "Thanksgiving"
+ 	 	},
+ 	 	"christmas": {
+ 	 	 	"trans": "Рождество",
+ 	 	 	"eng": "Christmas"
+ 	 	},
+ 	 	"sakura": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "${percent}% скидка во время мероприятия",
+ 	 	 	 	"eng": "${percent}% off during event",
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	]
+ 	 	 	}
+ 	 	}
+ 	},
  	"itemFilterType": {
  	 	"shopSell": {
  	 	 	"description": {
@@ -5071,6 +5902,12 @@
  	 	 	"name": {
  	 	 	 	"trans": "Неизвестное оборудование",
  	 	 	 	"eng": "Unknown Equipment"
+ 	 	 	}
+ 	 	},
+ 	 	"unknownCache": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Неизвестный кеш",
+ 	 	 	 	"eng": "Unknown Cache"
  	 	 	}
  	 	},
  	 	"aiCore": {
@@ -5738,6 +6575,16 @@
  	 	 	 	"eng": "You get some love, and you get some love! everyone gets some love!.\r\n        When used everyone loves each other\r\n        This effects all players fow 10 minutes"
  	 	 	}
  	 	},
+ 	 	"chatExploitPosh": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Передатчик эксплойта чата [Шик]",
+ 	 	 	 	"eng": "Chat exploit transmitter [Posh]"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "После активации вся переписка, предоставленная обитателями нашего чата, претерпит восхитительное преображение, украшая себя изысканным нарядом джентльменского английского на протяжении ровно 10 минут. Этот эксплойт будет работать только с английским",
+ 	 	 	 	"eng": "Upon activation, all correspondence proffered by the denizens of our chat realm shall undergo a delightful metamorphosis, adorning itself in the distinguished garb of gentlemanly English for a duration of precisely 10 minutes. this exploit will only work well with English"
+ 	 	 	}
+ 	 	},
  	 	"upgradeResetShard": {
  	 	 	"name": {
  	 	 	 	"trans": "Фрагмент сброса к заводским настройкам",
@@ -5786,6 +6633,16 @@
  	 	 	"description": {
  	 	 	 	"trans": "Зашифрованный контейнер с красным, зеленым оформлением и логотипом 'КиберСанта™' на боку.",
  	 	 	 	"eng": "An encrypted container with red, green decoration and a 'CyberSanta™' logo on the side of it."
+ 	 	 	}
+ 	 	},
+ 	 	"christmasGift2": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Морозный контейнер",
+ 	 	 	 	"eng": "Frosty Container"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Загадочный подарок, завернутый в блестящую упаковку снежинки. Вы можете разблокировать его только на [терминале] в декабре.",
+ 	 	 	 	"eng": "A mystery gift wrapped in sparkling, snowflake-themed packaging. You can only unlock it at the [Terminal] during December."
  	 	 	}
  	 	},
  	 	"rngInterferer": {
@@ -5875,6 +6732,19 @@
  	 	 	 	"eng": "These dumplings are unlike any other. Made with love and care by Yen, these delicious pockets of goodness are filled with the finest ingredients and cooked to perfection.\\n recover ${percent}% health upon consumption"
  	 	 	}
  	 	},
+ 	 	"pumpkinPie": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Тыквенный пирог",
+ 	 	 	 	"eng": "Pumpkin Pie"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Вкусный тыквенный пирог. Этот пирог имеет большой груз толстых ванильных кремов, вкусный! \\ nrecover ${percent}% здоровья при потреблении",
+ 	 	 	 	"eng": "A delicious pumpkin pie. this pie has big load of thick vanilla cream over it, delicious!\\nrecover ${percent}% health upon consumption"
+ 	 	 	}
+ 	 	},
  	 	"riceCake": {
  	 	 	"name": {
  	 	 	 	"trans": "Рисовый пирог",
@@ -5926,6 +6796,153 @@
  	 	 	"description": {
  	 	 	 	"trans": "Токен, который можно использовать для обмена предметами",
  	 	 	 	"eng": "A token that can be used to exchange items"
+ 	 	 	}
+ 	 	},
+ 	 	"techScrapCluster": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Технологический кластер",
+ 	 	 	 	"eng": "Tech Scrap Cluster"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Технологический кластер содержит 1000 технических отходов, можно использовать для легкости и торговли",
+ 	 	 	 	"eng": "A Tech Scrap Cluster contains 1000 Tech Scraps, can be used to easily store and trade"
+ 	 	 	}
+ 	 	},
+ 	 	"rareEquipmentCrate": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Редкое оборудование ящик",
+ 	 	 	 	"eng": "Rare Equipment Crate"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Ящик, который содержит случайное оборудование или другую грабитель",
+ 	 	 	 	"eng": "A crate that contains a random equipments or other loots"
+ 	 	 	}
+ 	 	},
+ 	 	"globalPartyBuff": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Глобальный партийный развертыватель",
+ 	 	 	 	"eng": "Global Party Deployer"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"afkPercent",
+ 	 	 	 	 	"btcPercent",
+ 	 	 	 	 	"expPercent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "При развертывании сократите время AFK на ${afkPercent}%, увеличение BTC, полученное на ${btcPercent}%, увеличивает exp, полученный на ${expPercent}%\\ nand, на экране чата будет показан баннер с указанием имени, указывающего на то, что вы развернули Бафф",
+ 	 	 	 	"eng": "When deployed, reduce AFK time by ${afkPercent}%, increased BTC gained by ${btcPercent}%, increase EXP gained by ${expPercent}%\\nAnd a banner will be shown in chat screen with your name indicating that you have deployed the buff"
+ 	 	 	},
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"afkPercent",
+ 	 	 	 	 	"btcPercent",
+ 	 	 	 	 	"expPercent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "🎉 Время вечеринки! 🥳, сократить время AFK на ${afkPercent}%, увеличение BTC, полученное на ${btcPercent}%, увеличить exp, полученный ${expPercent}%",
+ 	 	 	 	"eng": "🎉Its Party Time!🥳, reduce AFK time by ${afkPercent}%, increased BTC gained by ${btcPercent}%, increase EXP gained by ${expPercent}%"
+ 	 	 	}
+ 	 	},
+ 	 	"turkey": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Жареная индейка",
+ 	 	 	 	"eng": "Roasted Turkey"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Вкусная жареная индейка, когда потребляется, увеличивает exp, полученный в AFK -задачах за ${percent}%",
+ 	 	 	 	"eng": "A delicious roasted turkey, when consumed increases EXP received in AFK tasks by ${percent}%"
+ 	 	 	}
+ 	 	},
+ 	 	"pudding": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Рождественский пудинг",
+ 	 	 	 	"eng": "Christmas Pudding"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Плотный, приготовленный на пару пудинг с высушенными фруктами, орехами и часто пролаженным алкоголем, когда потребляется, увеличивает exp, полученные в AFK -задачах на ${percent}%. \\ NThis Предмет может использоваться только в декабре",
+ 	 	 	 	"eng": "A dense, steamed pudding with dried fruits, nuts, and often laced with alcohol, when consumed increases EXP received in AFK tasks by ${percent}%.\\nThis item can only be used during December"
+ 	 	 	},
+ 	 	 	"error": {
+ 	 	 	 	"trans": "Этот предмет доступен только во время рождественского мероприятия",
+ 	 	 	 	"eng": "This item is only available during Christmas Event"
+ 	 	 	}
+ 	 	},
+ 	 	"pawCredit": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Кошачий кредит",
+ 	 	 	 	"eng": "Paw Credit"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Кредит, который можно использовать для обмена предметов для питомцев в приюте Neon Paw Sanctuary",
+ 	 	 	 	"eng": "A credit that can be used to exchange pet items at Neon Paw Sanctuary"
+ 	 	 	}
+ 	 	},
+ 	 	"petTokenShard": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Медаль \"За добровольческую службу\"",
+ 	 	 	 	"eng": "Volunteer Service Medallion"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Совмести ${amount} из этого, чтобы получить пропуск на усыновление в приюте, который можно использовать для усыновления нового питомца",
+ 	 	 	 	"eng": "Combine ${amount} of this to get a Sanctuary Adoption Pass, and it can be used to adopt a new pet"
+ 	 	 	}
+ 	 	},
+ 	 	"petToken": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Медаль \"За добровольческую службу\"",
+ 	 	 	 	"eng": "Sanctuary Adoption Pass"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Совмести ${amount} из этого, чтобы получить пропуск на усыновление в приюте, который можно использовать для усыновления нового питомца",
+ 	 	 	 	"eng": "A pass that can be used to adopt a pet from Neon Paw Sanctuary"
+ 	 	 	}
+ 	 	},
+ 	 	"petFood": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Электрофиброзные укусы",
+ 	 	 	 	"eng": "ElectroFiber Bites"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "\"ЭлектроВолоконные Кусочки™ содержат сложное сочетание волокон, которые проводят и хранят энергию, повышая выносливость и силу вашего питомца для длительных экспедиций в кибер-дикой природе.\"",
+ 	 	 	 	"eng": "\"ElectroFiber Bites™ contain a complex blend of fibers that conduct and store energy, boosting your pet's stamina and power for longer expeditions in the cyber wilderness.\""
+ 	 	 	}
+ 	 	},
+ 	 	"petToy": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "НаноКусачий Шар",
+ 	 	 	 	"eng": "NanoNibble Ball"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "\"Представляем вам шар NanoNibble - чудо игровых технологий, созданное для истинного удовольствия. Каждый шар светится завораживающими узорами при малейком касании, обеспечивая вашего питомца непрерывным развлечением. После сессии невиданного веселья шар умно дезинтегрируется на безвредные, экологически чистые частицы, не оставляя никакого беспорядка. Идеально подходит для одного незабываемого приключения в цифровой компаньонстве, это идеальный опыт игрового времени, который аккуратно исчезает, освобождая вас от уборки.\"",
+ 	 	 	 	"eng": "\"Introducing the NanoNibble Ball – a marvel of playtime technology designed for sheer joy. Each ball lights up with mesmerizing patterns at the slightest touch, ensuring your pet is thoroughly entertained. After a session of unprecedented fun, the ball smartly deconstructs into harmless, eco-friendly particles, leaving no mess behind. Perfect for a single, unforgettable adventure in digital companionship, it’s the ultimate playtime experience that neatly disappears, sparing you the cleanup.\""
+ 	 	 	}
+ 	 	},
+ 	 	"petCleaner": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Спрей \"FurFlush\"",
+ 	 	 	 	"eng": "FurFlush Spray"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Спрей FurFlush: На стильном баллоне написано \"Мгновенная Чистота, Мгновенное Исчезновение\". Быстрый распылитель превращает вашего грязного питомца в блестящего — никакого смывания, никакого беспорядка, просто пуф! Идеально подходит для тех \"ой\" моментов перед кибер-встречей. Осторожно: Может вызвать неожиданный стиль у питомца. Одноразовая магия для спутника городского исследователя. Исчезает после использования, не оставляя следов, кроме ослепительного питомца.",
+ 	 	 	 	"eng": "FurFlush Spray: The sleek canister reads 'Instant Clean, Instant Gone.' A quick spritz turns your grimy pet gleaming—no rinse, no mess, just poof! Perfect for those 'oops' moments before a cyber meet-up. Caution: May lead to unexpected pet swagger. Single-use magic for the urban explorer's companion. Disappears after use, leaving no evidence except a dazzling pet."
+ 	 	 	}
+ 	 	},
+ 	 	"petMedicine": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Идеальное лапколечение",
+ 	 	 	 	"eng": "PawfectCure"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Когда твой питомец чувствует себя не по себе или просто не в духе, вот что нужно использовать. Он справляется со всем, начиная от насморка и заканчивая \"что-то странное я съел\" блюзом. Осторожно с побочными эффектами: может вызвать внезапное уважение к твоему кулинарному искусству и увеличение нападений на обнимашки. Потому что иногда лучшее лекарство - это немного смеха... и PawfectCure.",
+ 	 	 	 	"eng": "When your pet's feeling under the weather, or just plain off, this is the go-to. It tackles everything from the sniffles to the 'I ate something weird' blues. Beware of side effects: may cause a sudden appreciation for your cooking and an increase in snuggle attacks. Because sometimes, the best remedy is a little laughter... and PawfectCure."
  	 	 	}
  	 	},
  	 	"experienceShard": {
@@ -6066,6 +7083,12 @@
  	 	 	 	 	"trans": "Отправиться в Штаб-квартиру Банды",
  	 	 	 	 	"eng": "Go to gang headquarters"
  	 	 	 	}
+ 	 	 	},
+ 	 	 	"toApartment": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Иди в свою квартиру",
+ 	 	 	 	 	"eng": "Go to your apartment"
+ 	 	 	 	}
  	 	 	}
  	 	},
  	 	"job": {
@@ -6122,6 +7145,29 @@
  	 	 	"cantEnterError": {
  	 	 	 	"trans": "Ты должен присоединиться к банде, чтобы войти в эту локацию",
  	 	 	 	"eng": "You need to join a gang to enter this area"
+ 	 	 	}
+ 	 	},
+ 	 	"apartment": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Моя квартира",
+ 	 	 	 	"eng": "My Apartment"
+ 	 	 	},
+ 	 	 	"toMainHub": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Вернуться в центр города Шангри-Ла",
+ 	 	 	 	 	"eng": "Return to Shangri-La City Center"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "[Квартира]\r\n        Твоя уютная квартира в городе. Твои питомцы ждут, когда ты вернешься домой.",
+ 	 	 	 	"eng": "[Apartment]\r\n        Your cozy apartment in the city. your pets are waiting for you to come home."
+ 	 	 	},
+ 	 	 	"cantEnterError": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"level"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Для того чтобы снять квартиру, тебе нужно быть хотя бы ${level} уровня",
+ 	 	 	 	"eng": "You need to be at least level ${level} to rent an apartment"
  	 	 	}
  	 	},
  	 	"zone": {
@@ -6412,7 +7458,7 @@
  	 	"lunar": {
  	 	 	"defaultLines": {
  	 	 	 	"trans": [
- 	 	 	 	 	"Welcome, our family is always excited to help you find the perfect tech gear."
+ 	 	 	 	 	"Добро пожаловать, наша семья поможет тебе найти идеальное снаряжение."
  	 	 	 	],
  	 	 	 	"eng": [
  	 	 	 	 	"Welcome, our family is always excited to help you find the perfect tech gear."
@@ -6455,6 +7501,56 @@
  	 	 	 	"eng": "B3llial"
  	 	 	}
  	 	},
+ 	 	"halloween": {
+ 	 	 	"defaultLines": {
+ 	 	 	 	"trans": [
+ 	 	 	 	 	"Pumpkin is my source of power!",
+ 	 	 	 	 	"Check out my pumpkin costume!",
+ 	 	 	 	 	"Hmmmm, I wonder what's inside this pumpkin...",
+ 	 	 	 	 	"Give me your pumpkin, and I'll give you a treat!"
+ 	 	 	 	],
+ 	 	 	 	"eng": [
+ 	 	 	 	 	"Pumpkin is my source of power!",
+ 	 	 	 	 	"Check out my pumpkin costume!",
+ 	 	 	 	 	"Hmmmm, I wonder what's inside this pumpkin...",
+ 	 	 	 	 	"Give me your pumpkin, and I'll give you a treat!"
+ 	 	 	 	]
+ 	 	 	},
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Переулок",
+ 	 	 	 	"eng": "Alleyway"
+ 	 	 	},
+ 	 	 	"npcName": {
+ 	 	 	 	"trans": "тыква чудак",
+ 	 	 	 	"eng": "pumpkin weirdo"
+ 	 	 	}
+ 	 	},
+ 	 	"petShop": {
+ 	 	 	"defaultLines": {
+ 	 	 	 	"trans": [
+ 	 	 	 	 	"Hey, choom! Neon Paws is for the brave. These sprites need your daily grind. Ready to dive in?",
+ 	 	 	 	 	"Lookin' sharp, netrunner! Here, pets are more than code, they need your daily hack to thrive.",
+ 	 	 	 	 	"What's up, street samurai? Partner with a survivor. Without your daily deeds, they're zeroed.",
+ 	 	 	 	 	"Edge runner, eh? This is where tech meets heart. Ignore them, and they vanish into the net. Daily care, got it?",
+ 	 	 	 	 	"Cyberdeck in hand, heart on sleeve? Our critters need that daily touch or they'll fade into the static."
+ 	 	 	 	],
+ 	 	 	 	"eng": [
+ 	 	 	 	 	"Hey, choom! Neon Paws is for the brave. These sprites need your daily grind. Ready to dive in?",
+ 	 	 	 	 	"Lookin' sharp, netrunner! Here, pets are more than code, they need your daily hack to thrive.",
+ 	 	 	 	 	"What's up, street samurai? Partner with a survivor. Without your daily deeds, they're zeroed.",
+ 	 	 	 	 	"Edge runner, eh? This is where tech meets heart. Ignore them, and they vanish into the net. Daily care, got it?",
+ 	 	 	 	 	"Cyberdeck in hand, heart on sleeve? Our critters need that daily touch or they'll fade into the static."
+ 	 	 	 	]
+ 	 	 	},
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Святилище Neon Paws",
+ 	 	 	 	"eng": "Neon Paws Sanctuary"
+ 	 	 	},
+ 	 	 	"npcName": {
+ 	 	 	 	"trans": "Джин",
+ 	 	 	 	"eng": "Jin"
+ 	 	 	}
+ 	 	},
  	 	"recycleMachine": {
  	 	 	"name": {
  	 	 	 	"trans": "Автоматический переработчик",
@@ -6484,6 +7580,58 @@
  	 	 	 	"trans": "Падальщики",
  	 	 	 	"eng": "Scavengers"
  	 	 	}
+ 	 	}
+ 	},
+ 	"petType": {
+ 	 	"dog": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Собака",
+ 	 	 	 	"eng": "Dog"
+ 	 	 	}
+ 	 	},
+ 	 	"cat": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Кот",
+ 	 	 	 	"eng": "Cat"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"petStatus": {
+ 	 	"sick": {
+ 	 	 	"trans": "Бомба",
+ 	 	 	"eng": "Sick"
+ 	 	},
+ 	 	"hungry": {
+ 	 	 	"trans": "Голоден",
+ 	 	 	"eng": "Hungry"
+ 	 	},
+ 	 	"starving": {
+ 	 	 	"trans": "Голодный",
+ 	 	 	"eng": "Starving"
+ 	 	},
+ 	 	"wellFed": {
+ 	 	 	"trans": "Сытый",
+ 	 	 	"eng": "Well Fed"
+ 	 	},
+ 	 	"dirty": {
+ 	 	 	"trans": "Грязный",
+ 	 	 	"eng": "Dirty"
+ 	 	},
+ 	 	"filthy": {
+ 	 	 	"trans": "Грязный",
+ 	 	 	"eng": "Filthy"
+ 	 	},
+ 	 	"dead": {
+ 	 	 	"trans": "Погибший",
+ 	 	 	"eng": "Deceased"
+ 	 	},
+ 	 	"unhappy": {
+ 	 	 	"trans": "Неудовлетворенный",
+ 	 	 	"eng": "Unhappy"
+ 	 	},
+ 	 	"depressed": {
+ 	 	 	"trans": "Подавленный",
+ 	 	 	"eng": "Depressed"
  	 	}
  	},
  	"action": {
@@ -6613,6 +7761,22 @@
  	 	 	 	"eng": "Trade"
  	 	 	}
  	 	},
+ 	 	"bulkCrafting": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Объемное крафт",
+ 	 	 	 	"eng": "Bulk Crafting"
+ 	 	 	}
+ 	 	},
+ 	 	"petAFK": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Смена волонтёра в приюте для животных",
+ 	 	 	 	"eng": "Pet Shelter Volunteer Shift"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Стань волонтером в местном приюте для животных, помогай ухаживать за питомцами.",
+ 	 	 	 	"eng": "Volunteer at the local pet shelter to help take care of the animals."
+ 	 	 	}
+ 	 	},
  	 	"autoFarm": {
  	 	 	"name": {
  	 	 	 	"trans": "Авто-прохождение ИИ",
@@ -6642,6 +7806,59 @@
  	 	 	 	"trans": "[Авто-сбор ресурсов]\r\n                    Осмотритесь в ${zoneName} и поищите полезные предметы в мусоре.\r\nКто знает, вдруг вам повезет!",
  	 	 	 	"eng": "[AFK Resource Gather]\r\n                    Search around in ${zoneName} and scavenge for useful items.\r\n                    Who knows, maybe you'll get lucky!"
  	 	 	}
+ 	 	}
+ 	},
+ 	"leaderboard": {
+ 	 	"skip": {
+ 	 	 	"trans": "Пропустить очки",
+ 	 	 	"eng": "Skip Points"
+ 	 	},
+ 	 	"level": {
+ 	 	 	"trans": "Уровень",
+ 	 	 	"eng": "Level"
+ 	 	},
+ 	 	"epicPrint": {
+ 	 	 	"trans": "Эпическое оборудование напечатано",
+ 	 	 	"eng": "Epic Equipment Printed"
+ 	 	},
+ 	 	"epicBagPrint": {
+ 	 	 	"trans": "Эпическая сумка изготовлена",
+ 	 	 	"eng": "Epic Bag Crafted"
+ 	 	},
+ 	 	"mining": {
+ 	 	 	"trans": "Уровень добычи",
+ 	 	 	"eng": "Mining Level"
+ 	 	},
+ 	 	"ammo": {
+ 	 	 	"trans": "Уровень боеприпасов",
+ 	 	 	"eng": "Ammo Level"
+ 	 	},
+ 	 	"medical": {
+ 	 	 	"trans": "Уровень медецины",
+ 	 	 	"eng": "Medical Level"
+ 	 	},
+ 	 	"scavenge": {
+ 	 	 	"trans": "Уровень мастера",
+ 	 	 	"eng": "Scavenge Level"
+ 	 	},
+ 	 	"molecular": {
+ 	 	 	"trans": "Уровень молекулярной печати",
+ 	 	 	"eng": "Molecular Print Level"
+ 	 	},
+ 	 	"streetcred": {
+ 	 	 	"trans": "Репутация",
+ 	 	 	"eng": "Street Cred"
+ 	 	},
+ 	 	"description": {
+ 	 	 	"vars": [
+ 	 	 	 	"minutes"
+ 	 	 	],
+ 	 	 	"trans": "Обновления списка лидеров каждые ${minutes} минуты",
+ 	 	 	"eng": "Leaderboard listing updates every ${minutes} minutes"
+ 	 	},
+ 	 	"noPlayers": {
+ 	 	 	"trans": "В настоящее время нет игроков в этом таблице лидеров",
+ 	 	 	"eng": "Currently No Players in this Leaderboard"
  	 	}
  	},
  	"Quest": {
@@ -6837,6 +8054,12 @@
  	 	 	 	"eng": "Unlock Mysterious Container"
  	 	 	}
  	 	},
+ 	 	"christmasGift2": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Разблокируйте морозный контейнер",
+ 	 	 	 	"eng": "Unlock Frosty Container"
+ 	 	 	}
+ 	 	},
  	 	"backpack1": {
  	 	 	"name": {
  	 	 	 	"trans": "Старая Сумка",
@@ -6877,12 +8100,6 @@
  	 	 	 	"eng": "AI Core Cluster"
  	 	 	}
  	 	},
- 	 	"halloween": {
- 	 	 	"name": {
- 	 	 	 	"trans": "Фонарик Джека",
- 	 	 	 	"eng": "Jack O Lantern"
- 	 	 	}
- 	 	},
  	 	"christmasToBox": {
  	 	 	"name": {
  	 	 	 	"trans": "Запертый легендарный контейнер",
@@ -6900,6 +8117,40 @@
  	 	 	 	"trans": "Медицинский технологический кластер",
  	 	 	 	"eng": "Medical Tech Cluster"
  	 	 	}
+ 	 	},
+ 	 	"medicalTechClusterRevers": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Медицинский технический металлолом",
+ 	 	 	 	"eng": "Medical Tech Scrap"
+ 	 	 	}
+ 	 	},
+ 	 	"techScrapCluster": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Технологический кластер",
+ 	 	 	 	"eng": "Tech Scrap Cluster"
+ 	 	 	}
+ 	 	},
+ 	 	"techScrapClusterReverse": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Технологический металлолом",
+ 	 	 	 	"eng": "Tech Scrap"
+ 	 	 	}
+ 	 	},
+ 	 	"unlockRareEquipmentCrate": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Разблокировать ящик для редкого оборудования",
+ 	 	 	 	"eng": "Unlock Rare Equipment Crate"
+ 	 	 	}
+ 	 	},
+ 	 	"craftPetToken": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Производство пропуска для приюта Святилище",
+ 	 	 	 	"eng": "Craft Sanctuary Adoption Pass"
+ 	 	 	}
+ 	 	},
+ 	 	"craft": {
+ 	 	 	"trans": "Создать",
+ 	 	 	"eng": "Craft"
  	 	},
  	 	"ammo1": {
  	 	 	"vars": [
@@ -6991,6 +8242,10 @@
  	 	 	"trans": "Эксплойт для чата [Любовь]",
  	 	 	"eng": "Chat Exploit [LOVE]"
  	 	},
+ 	 	"posh": {
+ 	 	 	"trans": "Чат Эксплойт [КРУТ]",
+ 	 	 	"eng": "Chat Exploit [POSH]"
+ 	 	},
  	 	"chatExploitProtect": {
  	 	 	"trans": "Шифрование чата",
  	 	 	"eng": "Chat Encryption"
@@ -7006,6 +8261,30 @@
  	 	"aiConnect": {
  	 	 	"trans": "Cyberspace Connection",
  	 	 	"eng": "Cyberspace Connection"
+ 	 	},
+ 	 	"globalParty": {
+ 	 	 	"trans": "Глобальная вечеринка",
+ 	 	 	"eng": "Global Party"
+ 	 	},
+ 	 	"afkExp": {
+ 	 	 	"trans": "AFK Exp Boost",
+ 	 	 	"eng": "AFK EXP Boost"
+ 	 	},
+ 	 	"petRevive": {
+ 	 	 	"trans": "Воскрешение питомца",
+ 	 	 	"eng": "Pet Revive"
+ 	 	},
+ 	 	"petReviveDesc": {
+ 	 	 	"trans": "Воскрешение питомца доступно во время действия этого баффа.",
+ 	 	 	"eng": "Pet revival is now available during this buff duration."
+ 	 	},
+ 	 	"petDraw": {
+ 	 	 	"trans": "Активирована возможность усыновления питомца",
+ 	 	 	"eng": "Pet Adoption Activated"
+ 	 	},
+ 	 	"petDrawDesc": {
+ 	 	 	"trans": "Прием питомцев теперь доступен во время этого баффа.",
+ 	 	 	"eng": "Pet adoption is now available during this buff duration."
  	 	}
  	},
  	"combat": {
@@ -7068,6 +8347,52 @@
  	 	 	"eng": "You received ${amount} ${itemName}"
  	 	}
  	},
+ 	"chatExploit": {
+ 	 	"loveWords": {
+ 	 	 	"trans": [
+ 	 	 	 	"Люблю тебя",
+ 	 	 	 	"Вы отличные ребята",
+ 	 	 	 	"Вы, ребята, лучшие",
+ 	 	 	 	"Люблю вас",
+ 	 	 	 	"Вы потрясающие",
+ 	 	 	 	"Мы лучшие друзья",
+ 	 	 	 	"Люблю вас всех",
+ 	 	 	 	"Вы замечательные",
+ 	 	 	 	"Вы лучшие",
+ 	 	 	 	"Мы классные",
+ 	 	 	 	"Вы классные",
+ 	 	 	 	"Хорошего дня",
+ 	 	 	 	"Скучаю по вам",
+ 	 	 	 	"Скучаю по вам, ребята",
+ 	 	 	 	"КЯАААААААААА",
+ 	 	 	 	"Желаю тебе хорошего дня",
+ 	 	 	 	"Я люблю тебя",
+ 	 	 	 	"Можем мы обняться?",
+ 	 	 	 	"Как сильно ты меня любишь?"
+ 	 	 	],
+ 	 	 	"eng": [
+ 	 	 	 	"Love you",
+ 	 	 	 	"You guys are great",
+ 	 	 	 	"You guys are the best",
+ 	 	 	 	"love yall",
+ 	 	 	 	"You are amazing",
+ 	 	 	 	"we are best friend",
+ 	 	 	 	"Love you all",
+ 	 	 	 	"you are great",
+ 	 	 	 	"you the best",
+ 	 	 	 	"we are awesome",
+ 	 	 	 	"you are awesome",
+ 	 	 	 	"have a nice day",
+ 	 	 	 	"miss you",
+ 	 	 	 	"miss you guys",
+ 	 	 	 	"KYAAAAAAAAA",
+ 	 	 	 	"wish you have nice day",
+ 	 	 	 	"I love you",
+ 	 	 	 	"can we hug?",
+ 	 	 	 	"how much you love me?"
+ 	 	 	]
+ 	 	}
+ 	},
  	"chatServer": {
  	 	"restarting": {
  	 	 	"trans": "Сервер чата перезагружается для обновления ...",
@@ -7113,7 +8438,7 @@
  	 	 	 	"level",
  	 	 	 	"dungeonInvite"
  	 	 	],
- 	 	 	"trans": "Привет, ребята! Присоединяйтесь к My Dungeon [${type}] (lv ${level}) ==> ${dungeonInvite}",
+ 	 	 	"trans": "Привет, ребята! Присоединяйтесь к моему подземелью [${type}] (lv ${level}) ==> ${dungeonInvite}",
  	 	 	"eng": "Hey guys! join my dungeon [${type}](lv${level}) ==> ${dungeonInvite}"
  	 	},
  	 	"shareDungeonCooldown": {
@@ -7138,7 +8463,7 @@
  	 	 	 	"eng": "Explore ${zoneName}"
  	 	 	},
  	 	 	"tut": {
- 	 	 	 	"trans": "Ты готов? Тогда проверь свои силы в обычном данже!\r\n                        Не забудь купить аптечки! Ты не будешь исцеляться после каждого боя в данже!",
+ 	 	 	 	"trans": "Ты готов? Тогда проверь свои силы в обычном подземелье!\r\n                        Не забудь купить аптечки! Ты не будешь исцеляться после каждого боя в данже!",
  	 	 	 	"eng": "Are you ready? you can test your strength out with normal dungeon, the easiest one.\r\n                        Remember to bring healing item! you won't heal after fights in dungeon"
  	 	 	}
  	 	},
@@ -7355,55 +8680,13 @@
  	 	"upgradePocketed": {
  	 	 	"trans": "Вместимость",
  	 	 	"eng": "of Expansion"
+ 	 	},
+ 	 	"upgradeHealing": {
+ 	 	 	"trans": "исцеления",
+ 	 	 	"eng": "of Healing"
  	 	}
  	},
  	"market": {
- 	 	"amountSelectModal": {
- 	 	 	"title": {
- 	 	 	 	"trans": "Сколько бы вы хотели купить?",
- 	 	 	 	"eng": "How many would you like to purchase?"
- 	 	 	},
- 	 	 	"totalPrice": {
- 	 	 	 	"vars": [
- 	 	 	 	 	"total"
- 	 	 	 	],
- 	 	 	 	"trans": "Это будет стоить ${total} BTC",
- 	 	 	 	"eng": "it will cost ${total} Bitcoin total"
- 	 	 	}
- 	 	},
- 	 	"notEnoughMoney": {
- 	 	 	"trans": "Недостаточно BTC",
- 	 	 	"eng": "Insufficient bitcoin"
- 	 	},
- 	 	"priceSelectModal": {
- 	 	 	"title2": {
- 	 	 	 	"vars": [
- 	 	 	 	 	"itemName"
- 	 	 	 	],
- 	 	 	 	"trans": "Цена за ${itemName}",
- 	 	 	 	"eng": "Price for ${itemName}"
- 	 	 	}
- 	 	},
- 	 	"priceConfirm": {
- 	 	 	"vars": [
- 	 	 	 	"amountStr",
- 	 	 	 	"priceStr",
- 	 	 	 	"itemName"
- 	 	 	],
- 	 	 	"trans": "Продать ${amountStr} ${itemName} по цене ${priceStr} за штуку",
- 	 	 	"eng": "You are selling ${amountStr} ${itemName}(s), at the price of ${priceStr} Per Item"
- 	 	},
- 	 	"totalConfirm": {
- 	 	 	"vars": [
- 	 	 	 	"total"
- 	 	 	],
- 	 	 	"trans": "Если все товары будут проданы, вы заработаете ${total} BTC",
- 	 	 	"eng": "If all items are sold, you will earn ${total} BitCoins"
- 	 	},
- 	 	"sellAmountModalTitle": {
- 	 	 	"trans": "Сколько бы вы хотели продать?",
- 	 	 	"eng": "How many would you like to sell?"
- 	 	},
  	 	"upgradeSlot": {
  	 	 	"trans": "Обновление",
  	 	 	"eng": "Upgrade"
@@ -7412,7 +8695,7 @@
  	 	 	"vars": [
  	 	 	 	"slot"
  	 	 	],
- 	 	 	"trans": "Обновление рынка рынка до ${slot}",
+ 	 	 	"trans": "Обновление рынкочного слота до ${slot}",
  	 	 	"eng": "Upgrade Market Slot to ${slot}"
  	 	},
  	 	"upgradeSlotDesc": {
@@ -7422,12 +8705,161 @@
  	 	 	],
  	 	 	"trans": "Вы можете увеличить свой рыночный слот до ${slot}, заплатив ${price} биткойны",
  	 	 	"eng": "You can increase your market slot to ${slot} by paying ${price} BitCoins"
+ 	 	},
+ 	 	"purchaseModal": {
+ 	 	 	"purchase": {
+ 	 	 	 	"trans": "Покупка",
+ 	 	 	 	"eng": "Purchase"
+ 	 	 	}
  	 	}
  	},
  	"mobile": {
  	 	"returnToAppMessage": {
- 	 	 	"trans": "Синхронизировать с сервером ..",
+ 	 	 	"trans": "Синхронизация с сервером ..",
  	 	 	"eng": "Syncing with server.."
+ 	 	}
+ 	},
+ 	"petDetailsPage": {
+ 	 	"dispose": {
+ 	 	 	"trans": "Утилизировать",
+ 	 	 	"eng": "dispose"
+ 	 	},
+ 	 	"disposeConfirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Утилизировать",
+ 	 	 	 	"eng": "dispose"
+ 	 	 	},
+ 	 	 	"message": {
+ 	 	 	 	"trans": "Ты уверен, что хочешь избавиться от этого питомца? Это действие нельзя отменить",
+ 	 	 	 	"eng": "Are you sure you want to dispose of this pet? this cannot be undone"
+ 	 	 	}
+ 	 	},
+ 	 	"rerollImage": {
+ 	 	 	"trans": "Перемешать изображение",
+ 	 	 	"eng": "re-roll Image"
+ 	 	},
+ 	 	"rerollImageConfirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Перемешать изображение",
+ 	 	 	 	"eng": "re-roll Image"
+ 	 	 	},
+ 	 	 	"message": {
+ 	 	 	 	"trans": "Ты уверен, что хочешь перекинуть картинку этого пета?",
+ 	 	 	 	"eng": "Are you sure you want to re-roll this pets image?"
+ 	 	 	}
+ 	 	},
+ 	 	"petNotFound": {
+ 	 	 	"trans": "Питомец не найден",
+ 	 	 	"eng": "Pet not found"
+ 	 	},
+ 	 	"name": {
+ 	 	 	"trans": "имя",
+ 	 	 	"eng": "name"
+ 	 	},
+ 	 	"age": {
+ 	 	 	"trans": "возраст",
+ 	 	 	"eng": "age"
+ 	 	},
+ 	 	"status": {
+ 	 	 	"trans": "статус",
+ 	 	 	"eng": "status"
+ 	 	},
+ 	 	"noStatus": {
+ 	 	 	"trans": "Здоровье",
+ 	 	 	"eng": "healthy"
+ 	 	},
+ 	 	"deadRemoveMessage": {
+ 	 	 	"vars": [
+ 	 	 	 	"date"
+ 	 	 	],
+ 	 	 	"trans": "Будет удалено в ${date}",
+ 	 	 	"eng": "will be removed at ${date}"
+ 	 	},
+ 	 	"hunger": {
+ 	 	 	"trans": "Голод",
+ 	 	 	"eng": "Hunger"
+ 	 	},
+ 	 	"feed": {
+ 	 	 	"trans": "Питание",
+ 	 	 	"eng": "Feed"
+ 	 	},
+ 	 	"noFood": {
+ 	 	 	"vars": [
+ 	 	 	 	"item"
+ 	 	 	],
+ 	 	 	"trans": "У тебя нет ${item} чтобы покормить своего питомца",
+ 	 	 	"eng": "You don't have ${item} to feed your pet"
+ 	 	},
+ 	 	"happiness": {
+ 	 	 	"trans": "Счастье",
+ 	 	 	"eng": "Happiness"
+ 	 	},
+ 	 	"play": {
+ 	 	 	"trans": "Играть",
+ 	 	 	"eng": "Play"
+ 	 	},
+ 	 	"noToy": {
+ 	 	 	"vars": [
+ 	 	 	 	"item"
+ 	 	 	],
+ 	 	 	"trans": "У тебя нет ${item} для игры со своим питомцем",
+ 	 	 	"eng": "You don't have ${item} to play with your pet"
+ 	 	},
+ 	 	"cleanliness": {
+ 	 	 	"trans": "Чистота",
+ 	 	 	"eng": "Cleanliness"
+ 	 	},
+ 	 	"clean": {
+ 	 	 	"trans": "Очистить",
+ 	 	 	"eng": "Clean"
+ 	 	},
+ 	 	"noCleaner": {
+ 	 	 	"vars": [
+ 	 	 	 	"item"
+ 	 	 	],
+ 	 	 	"trans": "У тебя нет ${item} чтобы почистить своего питомца",
+ 	 	 	"eng": "You don't have ${item} to clean your pet"
+ 	 	},
+ 	 	"giveMedicine": {
+ 	 	 	"trans": "Дай лекарство",
+ 	 	 	"eng": "Give Medicine"
+ 	 	},
+ 	 	"reviveButton": {
+ 	 	 	"trans": "Воскрешение",
+ 	 	 	"eng": "Revive"
+ 	 	}
+ 	},
+ 	"sendStreetCred": {
+ 	 	"error": {
+ 	 	 	"giveSelf": {
+ 	 	 	 	"trans": "Вы не можете отправить уличный кредит себе",
+ 	 	 	 	"eng": "you can't send street cred to yourself"
+ 	 	 	}
+ 	 	},
+ 	 	"title": {
+ 	 	 	"trans": "Отправить репутацию",
+ 	 	 	"eng": "Send street cred"
+ 	 	},
+ 	 	"description": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "Вы уверены, что хотите отправить репутацию ${playerName}? Вы можете отправлять одну репутацию всем каждый день.",
+ 	 	 	"eng": "Are you sure you want to send street cred to ${playerName}? you can send one street cred to anyone everyday."
+ 	 	}
+ 	},
+ 	"sendStreetCredError": {
+ 	 	"title": {
+ 	 	 	"trans": "Не могу отправить репутацию сейчас",
+ 	 	 	"eng": "Can't send street cred now"
+ 	 	},
+ 	 	"description2": {
+ 	 	 	"trans": "Вы можете отправлять только одну репутацию в день. и вы должны быть 10 -го уровня или выше.",
+ 	 	 	"eng": "You can only send one street cred per day. and you must be level 10 or above."
+ 	 	},
+ 	 	"confirmText": {
+ 	 	 	"trans": "ХОРОШО",
+ 	 	 	"eng": "OK"
  	 	}
  	},
  	"secretKey": {
@@ -7542,52 +8974,27 @@
  	 	 	 	"trans": "Всего: ${amount} ${itemName}",
  	 	 	 	"eng": "Total: ${amount} ${itemName}"
  	 	 	}
- 	 	}
- 	},
- 	"chatExploit": {
- 	 	"loveWords": {
- 	 	 	"trans": [
- 	 	 	 	"Люблю тебя",
- 	 	 	 	"Вы отличные ребята",
- 	 	 	 	"Вы, ребята, лучшие",
- 	 	 	 	"Люблю вас",
- 	 	 	 	"Вы потрясающие",
- 	 	 	 	"Мы лучшие друзья",
- 	 	 	 	"Люблю вас всех",
- 	 	 	 	"Вы замечательные",
- 	 	 	 	"Вы лучшие",
- 	 	 	 	"Мы классные",
- 	 	 	 	"Вы классные",
- 	 	 	 	"Хорошего дня",
- 	 	 	 	"Скучаю по вам",
- 	 	 	 	"Скучаю по вам, ребята",
- 	 	 	 	"КЯАААААААААА",
- 	 	 	 	"Желаю тебе хорошего дня",
- 	 	 	 	"Я люблю тебя",
- 	 	 	 	"Можем мы обняться?",
- 	 	 	 	"Как сильно ты меня любишь?"
+ 	 	},
+ 	 	"npcNotAvailable": {
+ 	 	 	"trans": "Этот магазин сейчас недоступен",
+ 	 	 	"eng": "This shop is not available at the moment"
+ 	 	},
+ 	 	"purchasedMessage": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"item"
  	 	 	],
- 	 	 	"eng": [
- 	 	 	 	"Love you",
- 	 	 	 	"You guys are great",
- 	 	 	 	"You guys are the best",
- 	 	 	 	"love yall",
- 	 	 	 	"You are amazing",
- 	 	 	 	"we are best friend",
- 	 	 	 	"Love you all",
- 	 	 	 	"you are great",
- 	 	 	 	"you the best",
- 	 	 	 	"we are awesome",
- 	 	 	 	"you are awesome",
- 	 	 	 	"have a nice day",
- 	 	 	 	"miss you",
- 	 	 	 	"miss you guys",
- 	 	 	 	"KYAAAAAAAAA",
- 	 	 	 	"wish you have nice day",
- 	 	 	 	"I love you",
- 	 	 	 	"can we hug?",
- 	 	 	 	"how much you love me?"
- 	 	 	]
+ 	 	 	"trans": "Вы купили ${amount} ${item}",
+ 	 	 	"eng": "You have purchased ${amount} ${item}"
+ 	 	},
+ 	 	"exchangedMessage": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"item",
+ 	 	 	 	"item2"
+ 	 	 	],
+ 	 	 	"trans": "Вы обменяли ${amount} ${item} на ${item2}",
+ 	 	 	"eng": "You have exchanged ${amount} ${item} for ${item2}"
  	 	}
  	},
  	"bundleDetailsModal": {
@@ -7617,6 +9024,16 @@
  	 	 	 	"trans": "Покупка",
  	 	 	 	"eng": "Purchase"
  	 	 	}
+ 	 	}
+ 	},
+ 	"clanNoticeModal": {
+ 	 	"title": {
+ 	 	 	"trans": "Введите новое уведомление",
+ 	 	 	"eng": "enter new notice"
+ 	 	},
+ 	 	"submit": {
+ 	 	 	"trans": "отправлять",
+ 	 	 	"eng": "send"
  	 	}
  	},
  	"createClanModal": {
@@ -7685,26 +9102,57 @@
  	 	 	"eng": "Accept"
  	 	}
  	},
- 	"christmasPromo": {
+ 	"petReviveModal": {
+ 	 	"reviveButton": {
+ 	 	 	"error": {
+ 	 	 	 	"trans": "Ты недавно воскресил питомца",
+ 	 	 	 	"eng": "You have revived a pet recently"
+ 	 	 	},
+ 	 	 	"trans": "Воскрешение",
+ 	 	 	"eng": "Revive"
+ 	 	},
+ 	 	"activateButton": {
+ 	 	 	"error": {
+ 	 	 	 	"trans": "Сначала нужно активировать возрождение питомца",
+ 	 	 	 	"eng": "You need to activate pet revive first"
+ 	 	 	},
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Активировать возрождение питомца",
+ 	 	 	 	"eng": "Activate"
+ 	 	 	},
+ 	 	 	"desc": {
+ 	 	 	 	"trans": "Активировать воскрешение питомца",
+ 	 	 	 	"eng": "Activate pet revive"
+ 	 	 	},
+ 	 	 	"loading": {
+ 	 	 	 	"trans": "Активация...",
+ 	 	 	 	"eng": "Activating..."
+ 	 	 	}
+ 	 	},
  	 	"title": {
- 	 	 	"trans": "Счастливых зимних праздников!!",
- 	 	 	"eng": "Happy Winter Holiday!"
+ 	 	 	"trans": "Воскресить питомца",
+ 	 	 	"eng": "Revive pet"
+ 	 	},
+ 	 	"reviveDescription": {
+ 	 	 	"vars": [
+ 	 	 	 	"buffName"
+ 	 	 	],
+ 	 	 	"trans": "Ты можешь оживить своего питомца, когда активен бафф ${buffName}",
+ 	 	 	"eng": "You may revive your pet when ${buffName} buff is active"
+ 	 	}
+ 	},
+ 	"artPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Spooky Permance Art Competition!",
+ 	 	 	"eng": "Spooky Character Art Competition!"
  	 	},
  	 	"desc1": {
- 	 	 	"trans": "Это самое замечательное время года! В Шанг-ри-Ла мы отмечаем зимние праздники специальным мероприятием!",
- 	 	 	"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!"
+ 	 	 	"trans": "Мы раздаем эпические кэши, рюкзак для исследователей, чемодан сотрудника и эмблемы лучшим 5 победителям!",
+ 	 	 	"eng": "We are giving out Epic Caches, Explorer Backpack, Employee Suitcase and Emblems to the top 5 winners!"
  	 	},
  	 	"desc2": {
- 	 	 	"vars": [
- 	 	 	 	"itemName",
- 	 	 	 	"craftItem"
- 	 	 	],
- 	 	 	"trans": "Враги и прохождение ИИ будут иметь шанс выпадения ${itemName}, вы можете использовать его для создания ${craftItem} или открыть его напрямую!",
- 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop ${itemName}, you can use this to craft ${craftItem} or open it directly!"
- 	 	},
- 	 	"desc3": {
- 	 	 	"trans": "В течение праздничного сезона будут доступны две ограниченные по времени подписки и эмблемы!",
- 	 	 	"eng": "During the holiday season, two time limited chat frame and emblem will be available!"
+ 	 	 	"trans": "Проверьте канал #EVENT на Discord для получения более подробной информации!",
+ 	 	 	"eng": "Check out the #event channel on Discord for more details!"
  	 	}
  	},
  	"halloweenPromo": {
@@ -7716,13 +9164,56 @@
  	 	 	"trans": "Вновь пришло время Хэллоуина, самого жуткого времени года! В честь этого в Шанг-ри-Ла проходит особое событие!",
  	 	 	"eng": "Its the spooky time of the year again! Shang-ri-la is celebrating Halloween with a special event!"
  	 	},
- 	 	"desc2": {
- 	 	 	"trans": "Враги и прохождение ИИ будут иметь шанс выпадения Фонариков Джека! Ты можешь использовать их для создания заблокированных легендарных контейнеров!",
- 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop Jack-o-lanterns! you can use these to craft Locked Legendary Containers!"
+ 	 	"desc2v2": {
+ 	 	 	"trans": "У врагов и AI Core Auto Farm будет шанс сбросить Jack-O-фонари!",
+ 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop Jack-o-lanterns!"
  	 	},
- 	 	"desc3": {
- 	 	 	"trans": "Во время Хэллоуина будет доступна ограниченная по времени подписка!",
- 	 	 	"eng": "During Halloween, a time limited cyber-bat chat donation tier will be available!"
+ 	 	"desc3v2": {
+ 	 	 	"vars": [
+ 	 	 	 	"npc",
+ 	 	 	 	"location"
+ 	 	 	],
+ 	 	 	"trans": "Вы можете найти ${npc} в ${location} Во время Хэллоуина он обменяет ваши фонарики Jack-O на вознаграждения!",
+ 	 	 	"eng": "You can find ${npc} at ${location} during Halloween, he will exchange your Jack-o-lanterns for rewards!"
+ 	 	},
+ 	 	"desc4v2": {
+ 	 	 	"trans": "Во время Хэллоуина будут доступны ограниченные времена Хэллоуин, уровень пожертвований в чате кибербата и тематические эмблемы!",
+ 	 	 	"eng": "During Halloween, a time limited halloween, cyber-bat chat donation tier and themed emblems will be available!"
+ 	 	}
+ 	},
+ 	"christmasPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Счастливых зимних праздников!!",
+ 	 	 	"eng": "Happy Winter Holiday!"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"trans": "Это самое замечательное время года! В Шанг-ри-Ла мы отмечаем зимние праздники специальным мероприятием!",
+ 	 	 	"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!"
+ 	 	},
+ 	 	"v2": {
+ 	 	 	"desc2": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Враги и AI Core Auto Farm будут иметь возможность отбросить ${itemName}, вы можете разблокировать его, чтобы получить призы!",
+ 	 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop ${itemName}, you can unlock it to receive prizes!"
+ 	 	 	}
+ 	 	},
+ 	 	"v3": {
+ 	 	 	"desc3": {
+ 	 	 	 	"trans": "Во время праздничного сезона будут доступны рождественская рама чата и эмблема!",
+ 	 	 	 	"eng": "During the holiday season, Christmas chat frame and emblem will be available!"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"christmasPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Рождество!",
+ 	 	 	"eng": "Christmas Event!"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"trans": "Время ограничена добыча и рама чата!",
+ 	 	 	"eng": "Time limited loot and chat frame!"
  	 	}
  	},
  	"lunarPromo": {
@@ -7734,15 +9225,14 @@
  	 	 	"trans": "Лунный Новый год здесь, и мы празднуем в Шан-Ри-Ла с особым событием. Присоединяйтесь к нам, когда мы принимаем начало нового года, наполненного традициями, радостью и единством.",
  	 	 	"eng": "The lunar new year is here, and we're celebrating in Shang-ri-la with a special event. Join us as we embrace the start of a new year, filled with traditions, joy, and togetherness."
  	 	},
- 	 	"desc2": {
+ 	 	"desc2-v2": {
  	 	 	"vars": [
  	 	 	 	"npcShopName",
  	 	 	 	"coinItem",
- 	 	 	 	"llcName",
  	 	 	 	"npcName"
  	 	 	],
- 	 	 	"trans": "${npcShopName} теперь открыт для бизнеса! Вы можете использовать ${coinItem}, чтобы приобрести различные специальные кухни и ${llcName} из ${npcName}!",
- 	 	 	"eng": "${npcShopName} is now open for business! You can use ${coinItem} to purchase various special cuisines and ${llcName} from ${npcName}!"
+ 	 	 	"trans": "${npcShopName} теперь открыт для бизнеса! Вы можете использовать ${coinItem}, чтобы приобрести различные специальные кухни у ${npcName}!",
+ 	 	 	"eng": "${npcShopName} is now open for business! You can use ${coinItem} to purchase various special cuisines from ${npcName}!"
  	 	},
  	 	"desc3": {
  	 	 	"vars": [
@@ -7751,18 +9241,39 @@
  	 	 	],
  	 	 	"trans": "Это не Новый год, если ${envelopItem} не задействована! Враги и AI Core Auto Farm упадут ${envelopItem}, откройте их, чтобы получить случайную сумму ${coinItem}!",
  	 	 	"eng": "It's not new year if ${envelopItem} is not involved! Enemies and AI Core auto farm will drop ${envelopItem}, open them to receive random amount of ${coinItem}!"
- 	 	},
+ 	 	}
+ 	},
+ 	"lunarPromo1": {
  	 	"desc4": {
  	 	 	"vars": [
- 	 	 	 	"envelopItem",
- 	 	 	 	"npcShop"
+ 	 	 	 	"itemName"
  	 	 	],
- 	 	 	"trans": "Теперь вы можете получать 3 бесплатных ${envelopItem} в ${npcShop} каждый день!",
- 	 	 	"eng": "You can now receive 3 free ${envelopItem} in ${npcShop} every day!"
+ 	 	 	"trans": "Получите бесплатную ${itemName} базу на пополнениях!",
+ 	 	 	"eng": "Get free ${itemName} base on top up package!"
  	 	},
  	 	"desc5": {
- 	 	 	"trans": "Добавлены два нового времени ограниченного чата и эмблемы, которые покупаются только в течение периода событий.",
- 	 	 	"eng": "Added two new time limited chat frame and emblems, only purchasable during event period."
+ 	 	 	"trans": "Добавлено новое время ограниченного чата и эмблемы, покупаемые только в течение периода событий.",
+ 	 	 	"eng": "Added new time limited chat frame and emblems, only purchasable during event period."
+ 	 	}
+ 	},
+ 	"lunarNewYearPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Счастливого лунного Нового года!",
+ 	 	 	"eng": "Happy Lunar New Year!"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"item1",
+ 	 	 	 	"item2"
+ 	 	 	],
+ 	 	 	"trans": "Получите бесплатно ${item1} и ${item2} во время Лунного Нового года 🥳",
+ 	 	 	"eng": "Receive free ${item1} and ${item2} during the lunar new year 🥳"
+ 	 	}
+ 	},
+ 	"promotionModal": {
+ 	 	"title": {
+ 	 	 	"trans": "Особые преимущества",
+ 	 	 	"eng": "Special Benefits"
  	 	}
  	},
  	"referralPromo": {
@@ -7805,6 +9316,195 @@
  	 	 	"eng": "*You will receive the items in your item inbox when your friend reaches level 20"
  	 	}
  	},
+ 	"referralPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Награды рефералов",
+ 	 	 	"eng": "Referral rewards"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"trans": "Бесплатный блок*, редкий заблокированный контейнер, пакет Fanny",
+ 	 	 	"eng": "Free Unit*, Rare Locked Container, Fanny Pack"
+ 	 	},
+ 	 	"details": {
+ 	 	 	"trans": "подробности",
+ 	 	 	"eng": "details"
+ 	 	}
+ 	},
+ 	"sakuraPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Фестиваль Сакуры",
+ 	 	 	"eng": "Sakura Festival"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"trans": "Весенний фестиваль уже здесь! Лепестки сакуры падают, а воздух наполнен ароматом цветов",
+ 	 	 	"eng": "The Spring Festival is here! Sakura petals are falling, and the air is filled with the fragrance of flowers. "
+ 	 	},
+ 	 	"desc2": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "Все пропуски во время мероприятия получают скидку ${percent}% на необходимую единицу",
+ 	 	 	"eng": "All skips during the event period gets ${percent}% off discount on unit required"
+ 	 	},
+ 	 	"desc3": {
+ 	 	 	"trans": "Эксклюзивная рамка для чата и эмблема Sakura доступны во время события",
+ 	 	 	"eng": "Exclusive Sakura chat frame and emblem is available during event period"
+ 	 	},
+ 	 	"chatMessage1": {
+ 	 	 	"trans": "Весна наступила",
+ 	 	 	"eng": "Spring is here"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "Все пропуски во время мероприятия получают скидку ${percent}% на необходимую единицу 🥳",
+ 	 	 	"eng": "All skips during the event period gets ${percent}% off discount on unit required 🥳"
+ 	 	}
+ 	},
+ 	"skipDiscountPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Пропустить скидку",
+ 	 	 	"eng": "Skip Discount"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "${percent}% скидка на 105 минут и более высокие пропуски!",
+ 	 	 	"eng": "${percent}% discount on 105 minutes and higher skips!"
+ 	 	}
+ 	},
+ 	"skipPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Заработать бесплатную эксклюзивную косметику, пропуская",
+ 	 	 	"eng": "Earn free exclusive cosmetics by skipping"
+ 	 	},
+ 	 	"subtitle": {
+ 	 	 	"trans": "Покажите, сколько вы помогли сообществу, пропустив! ❤",
+ 	 	 	"eng": "Show off how much you have helped the community by skipping!❤️"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"emblem"
+ 	 	 	],
+ 	 	 	"trans": "выполнить ${amount} Skip, чтобы получить \"${emblem}\" Эмблема",
+ 	 	 	"eng": "Collect ${amount} skip points to get \"${emblem}\" emblem"
+ 	 	},
+ 	 	"desc2": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"emblem"
+ 	 	 	],
+ 	 	 	"trans": "выполнить ${amount} Skip, чтобы получить \"${emblem}\" Эмблема",
+ 	 	 	"eng": "Collect ${amount} skip points to get \"${emblem}\" emblem"
+ 	 	},
+ 	 	"desc3": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"emblem"
+ 	 	 	],
+ 	 	 	"trans": "выполнить ${amount} Skip, чтобы получить \"${frameName}\" Эмблема",
+ 	 	 	"eng": "Collect ${amount} skip points to get \"${emblem}\" emblem"
+ 	 	},
+ 	 	"desc4": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"frameName"
+ 	 	 	],
+ 	 	 	"trans": "Выполнить ${amount} Skip, чтобы получить постоянный \"${frameName}\"",
+ 	 	 	"eng": "Collect ${amount} skip points to receive permanent \"${frameName}\" donation chat frame"
+ 	 	},
+ 	 	"chatMessage1": {
+ 	 	 	"vars": [
+ 	 	 	 	"points"
+ 	 	 	],
+ 	 	 	"trans": "Получите за ${points} пропуск баллов",
+ 	 	 	"eng": "Receive at ${points} skip points"
+ 	 	},
+ 	 	"desc5": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"frameName"
+ 	 	 	],
+ 	 	 	"trans": "Соберите ${amount} точки пропуска, чтобы получить постоянный \"${frameName}\"",
+ 	 	 	"eng": "Collect ${amount} skip points to receive permanent \"${frameName}\" donation chat frame"
+ 	 	},
+ 	 	"instructions1": {
+ 	 	 	"trans": "Пропустить точку, которую вы зарабатываете, основан на продолжительности пропуска:",
+ 	 	 	"eng": "Skip point you earn is base on skip duration:"
+ 	 	},
+ 	 	"instructions2": {
+ 	 	 	"trans": "- от 15 до 150 минут = 1 балл за 15 минут",
+ 	 	 	"eng": "- 15 to 150 minutes = 1 point per 15 minutes"
+ 	 	},
+ 	 	"instructions3": {
+ 	 	 	"trans": "- 150 минут и выше = 10 баллов",
+ 	 	 	"eng": "- 150 minutes and above = 10 points"
+ 	 	},
+ 	 	"footnote2": {
+ 	 	 	"trans": "Более 150 минут зафиксировано до 10 очков, чтобы поощрять несколько пропусков, а не один огромный пропуск, чтобы максимизировать выгоду для большинства игроков",
+ 	 	 	"eng": "Above 150 minutes is fixed to 10 points is to encourage multiple skips rather than one huge skip to maximize benefit for most players"
+ 	 	},
+ 	 	"footnote1": {
+ 	 	 	"trans": "Статистика Skip начнет считать с самого начала этой функции для всех.",
+ 	 	 	"eng": "The skip point statistic will start counting from the start of this feature for everyone."
+ 	 	}
+ 	},
+ 	"skipPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Пропустить эксклюзивную косметику",
+ 	 	 	"eng": "Skip for exclusive cosmetics"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"trans": "Получите различные эксклюзивные косметики, пропуская",
+ 	 	 	"eng": "Receive various exclusive cosmetics by skipping"
+ 	 	},
+ 	 	"chatMessage1": {
+ 	 	 	"vars": [
+ 	 	 	 	"skinName",
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "Быть ${skinName}, ${playerName}",
+ 	 	 	"eng": "Be a ${skinName}, ${playerName}"
+ 	 	}
+ 	},
+ 	"thanksgivingPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Счастливого дня благодарения!",
+ 	 	 	"eng": "Happy Thanksgiving!"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"trans": "В течение периода мероприятия жареная индейка редко будет падать из -за массовой информации и бота AKF на всех уровнях",
+ 	 	 	"eng": "During event period, Roasted Turkey will drop rarely from scavenging and AKF Bot on all levels"
+ 	 	},
+ 	 	"desc2": {
+ 	 	 	"trans": "Когда обжаренная индейка потребляется, вы получите +20% Exp на AFK -задачи на 20 минут",
+ 	 	 	"eng": "When a Roasted Turkey is consumed, you will get +20% EXP on AFK tasks for 20 minutes"
+ 	 	},
+ 	 	"footnote1": {
+ 	 	 	"trans": "Обратите внимание, что проверка бонуса EXP находится во время завершения AFK, поэтому у вас должен быть жареный бафф индейки на момент завершения, чтобы получить бонус.",
+ 	 	 	"eng": "Please note that the EXP bonus check is at AFK completion time, so you must have the Roasted Turkey buff active at the time of completion to receive the bonus."
+ 	 	},
+ 	 	"footnote2": {
+ 	 	 	"trans": "Этот эффект будет складываться с другими бонусами EXP и будет влиять только на задачи AFK; Задачи, которые не имеют таймеров AFK, не будут затронуты.",
+ 	 	 	"eng": "This effect will stack with other EXP bonus, and will only affect AFK tasks; tasks that does not have AFK timers will not be affected."
+ 	 	}
+ 	},
+ 	"thanksgivingPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "День благодарения",
+ 	 	 	"eng": "Thanksgiving event"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "Потребляйте вкусную индейку, чтобы получить +${percent}% exp в AFK -задачах",
+ 	 	 	"eng": "Consume delicious turkey to get +${percent}% EXP on AFK tasks"
+ 	 	}
+ 	},
  	"retroPromo": {
  	 	"title": {
  	 	 	"trans": "Обновление синтезированной волны",
@@ -7845,6 +9545,24 @@
  	 	"desc2": {
  	 	 	"trans": "Два новых кадрах -дончика добавлены",
  	 	 	"eng": "Two new donator frames added"
+ 	 	}
+ 	},
+ 	"renamePetModal": {
+ 	 	"title": {
+ 	 	 	"trans": "Переименовать питомца",
+ 	 	 	"eng": "Rename Pet"
+ 	 	},
+ 	 	"newName": {
+ 	 	 	"trans": "Новое имя",
+ 	 	 	"eng": "New Name"
+ 	 	},
+ 	 	"description": {
+ 	 	 	"trans": "Введите новое имя для вашего питомца",
+ 	 	 	"eng": "Enter new name for your pet"
+ 	 	},
+ 	 	"rename": {
+ 	 	 	"trans": "Переименовать",
+ 	 	 	"eng": "Rename"
  	 	}
  	},
  	"reportPlayerModal": {
@@ -7920,9 +9638,24 @@
  	 	 	 	 	"trans": "Позволить этому игроку изменять разрешения других игроков",
  	 	 	 	 	"eng": "Allow this player to manage permission of other players"
  	 	 	 	}
+ 	 	 	},
+ 	 	 	"send_notice": {
+ 	 	 	 	"trans": "Отправить уведомление",
+ 	 	 	 	"eng": "Send Notice",
+ 	 	 	 	"description": {
+ 	 	 	 	 	"trans": "Позвольте этому игроку отправлять уведомление всем членам банды",
+ 	 	 	 	 	"eng": "Allow this player to send notice to all gang members"
+ 	 	 	 	}
  	 	 	}
  	 	},
  	 	"error": {
+ 	 	 	"insufficientBitcoin": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "У вас недостаточно биткойн, необходимо: ${amount}",
+ 	 	 	 	"eng": "You have insufficient Bitcoin, required: ${amount}"
+ 	 	 	},
  	 	 	"inviteCooldown": {
  	 	 	 	"trans": "Вы уже недавно пригласили этого игрока",
  	 	 	 	"eng": "You have already invited this player recently"
@@ -8061,6 +9794,17 @@
  	 	 	],
  	 	 	"trans": "${price} в месяц",
  	 	 	"eng": "${price} USD Per Month"
+ 	 	},
+ 	 	"inAppPurchaseDescription": {
+ 	 	 	"trans": "Подписка на пожертвования, отменить ее можно в любое время в магазине.",
+ 	 	 	"eng": "Subscription based donation, you can cancel it at anytime from your store."
+ 	 	},
+ 	 	"monthlyPrice": {
+ 	 	 	"vars": [
+ 	 	 	 	"price"
+ 	 	 	],
+ 	 	 	"trans": "${price} в месяц",
+ 	 	 	"eng": "${price} per Month"
  	 	}
  	},
  	"cosmetic": {
@@ -8095,6 +9839,150 @@
  	 	"checkEmail": {
  	 	 	"trans": "Пожалуйста, проверьте свою электронную почту и следуйте инструкциям, чтобы сбросить пароль",
  	 	 	"eng": "Please check your email and follow the instructions to reset the password"
+ 	 	}
+ 	},
+ 	"leaderboardTypePage": {
+ 	 	"gameplay": {
+ 	 	 	"trans": "Таблицы лидеров игрового процесса",
+ 	 	 	"eng": "Gameplay Leaderboards"
+ 	 	},
+ 	 	"gameplayDesc": {
+ 	 	 	"trans": "Эти таблицы лидеров показывают статистику игрового процесса",
+ 	 	 	"eng": "These leaderboards shows player's gameplay statistics.💪"
+ 	 	},
+ 	 	"gang": {
+ 	 	 	"trans": "Лучшие банды",
+ 	 	 	"eng": "Top Gangs"
+ 	 	},
+ 	 	"control": {
+ 	 	 	"trans": "Контроль занятия",
+ 	 	 	"eng": "Occupation Control"
+ 	 	},
+ 	 	"contribution": {
+ 	 	 	"trans": "Вклад сообщества",
+ 	 	 	"eng": "Community Contribution"
+ 	 	},
+ 	 	"contributionDesc": {
+ 	 	 	"trans": "Эти доски демонстрируют уважение и кредиты для легенд, которые внесли свой вклад в сообщество",
+ 	 	 	"eng": "These boards shows respect and credits to the legends who have contributed to the community.❤️"
+ 	 	}
+ 	},
+ 	"playerDetailsPage": {
+ 	 	"tabs": {
+ 	 	 	"stats": {
+ 	 	 	 	"trans": "Характеристики",
+ 	 	 	 	"eng": "stats"
+ 	 	 	},
+ 	 	 	"equipment": {
+ 	 	 	 	"trans": "Инвентарь",
+ 	 	 	 	"eng": "inventory"
+ 	 	 	},
+ 	 	 	"assets": {
+ 	 	 	 	"trans": "активы",
+ 	 	 	 	"eng": "assets"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"petListPage": {
+ 	 	"exceedSlot": {
+ 	 	 	"vars": [
+ 	 	 	 	"petName"
+ 	 	 	],
+ 	 	 	"trans": "${petName} в данный момент живет на улице из-за нехватки места в вашей квартире",
+ 	 	 	"eng": "${petName} is currently living on the street due to lack of space in your apartment"
+ 	 	},
+ 	 	"noPet": {
+ 	 	 	"trans": "У тебя пока нет питомца",
+ 	 	 	"eng": "You have no pet yet"
+ 	 	},
+ 	 	"acquirePets": {
+ 	 	 	"trans": "Приручить питомца",
+ 	 	 	"eng": "Acquire Pets"
+ 	 	}
+ 	},
+ 	"petAdoption": {
+ 	 	"error": {
+ 	 	 	"noBuff": {
+ 	 	 	 	"trans": "Бафф не активирован",
+ 	 	 	 	"eng": "Buff is not activated"
+ 	 	 	},
+ 	 	 	"cooldown": {
+ 	 	 	 	"trans": "Процесс усыновления питомца на паузе",
+ 	 	 	 	"eng": "Pet adoption is on cooldown"
+ 	 	 	},
+ 	 	 	"noSlot": {
+ 	 	 	 	"trans": "Для усыновления питомца требуется квартира",
+ 	 	 	 	"eng": "You need to rent a bigger apartment to accommodate more pets"
+ 	 	 	},
+ 	 	 	"noItem": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Для того чтобы завести питомца, тебе понадобится ${itemName}",
+ 	 	 	 	"eng": "You need a ${itemName} to adopt a pet"
+ 	 	 	}
+ 	 	},
+ 	 	"petSlot": {
+ 	 	 	"trans": "Вместимость домашних животных в квартире",
+ 	 	 	"eng": "Apartment pet capacity"
+ 	 	},
+ 	 	"cooldownTitle": {
+ 	 	 	"trans": "Перерыв перед усыновлением",
+ 	 	 	"eng": "Adoption Available"
+ 	 	},
+ 	 	"buffActivationButton": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Активировать бафф усыновления",
+ 	 	 	 	"eng": "Activate Adoption Buff"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Активируйте, чтобы все игроки могли завести питомца, пока бафф активен",
+ 	 	 	 	"eng": "Activate to allow all players to adopt a pet while buff is active"
+ 	 	 	},
+ 	 	 	"buttonText": {
+ 	 	 	 	"activated": {
+ 	 	 	 	 	"trans": "Активировано",
+ 	 	 	 	 	"eng": "Activated"
+ 	 	 	 	},
+ 	 	 	 	"notActivated": {
+ 	 	 	 	 	"trans": "Активировать баф",
+ 	 	 	 	 	"eng": "Activate Buff"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"confirmTitle": {
+ 	 	 	 	"trans": "Активировать бафф усыновления",
+ 	 	 	 	"eng": "Activate Adoption Buff"
+ 	 	 	},
+ 	 	 	"confirmDescription": {
+ 	 	 	 	"trans": "Ты уверен, что хочешь активировать бафф Усыновления?",
+ 	 	 	 	"eng": "Are you sure you want to activate the Adoption Buff?"
+ 	 	 	}
+ 	 	},
+ 	 	"noItemConfirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "В инвентаре нет ${itemName}",
+ 	 	 	 	"eng": "No ${itemName} in inventory"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "У тебя нет ${itemName} в инвентаре, но ты всё равно можешь активировать бафф для других игроков, однако без ${itemName} ты не сможешь завести питомцев",
+ 	 	 	 	"eng": "You do not have an ${itemName} in your inventory, you still can activate the buff for other players to benefit, however without ${itemName} you will not be able to adopt pets"
+ 	 	 	},
+ 	 	 	"confirmText": {
+ 	 	 	 	"trans": "Активировать бафф",
+ 	 	 	 	"eng": "Activate Buff"
+ 	 	 	}
+ 	 	},
+ 	 	"adoptButton": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Новый питомец в семью",
+ 	 	 	 	"eng": "Adopt a new pet"
+ 	 	 	}
  	 	}
  	},
  	"sendCosmeticPage": {
@@ -8204,16 +10092,63 @@
  	 	 	"eng": "You have successfully sent an emblem to player \"${playerName}\""
  	 	}
  	},
+ 	"bulkCrafting": {
+ 	 	"cannotCraft": {
+ 	 	 	"trans": "Вы не можете создать, пока не простаиваете",
+ 	 	 	"eng": "You cannot craft while not idle"
+ 	 	}
+ 	},
+ 	"captcha": {
+ 	 	"success": {
+ 	 	 	"trans": "PIN -код принят",
+ 	 	 	"eng": "Pin code accepted"
+ 	 	},
+ 	 	"invalid": {
+ 	 	 	"trans": "Неверный PIN -код",
+ 	 	 	"eng": "Invalid Pin Code"
+ 	 	}
+ 	},
  	"chatModuleHelper": {
  	 	"aiConnectNotAvailable": {
  	 	 	"trans": "Доступ запрещен. Slanc не подключен к чату",
  	 	 	"eng": "Permission Denied. SLANC not connected to chat"
  	 	}
  	},
+ 	"server": {
+ 	 	"announcement": {
+ 	 	 	"receiveItem": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player",
+ 	 	 	 	 	"item"
+ 	 	 	 	],
+ 	 	 	 	"trans": "🎉congratulation! ${player} получил ${item}!",
+ 	 	 	 	"eng": "🎉Congratulation! ${player} received ${item}!"
+ 	 	 	}
+ 	 	}
+ 	},
  	"gifting": {
  	 	"cannotSend": {
  	 	 	"trans": "Этот игрок не может получить подарок сейчас",
  	 	 	"eng": "This player cannot receive gift now"
+ 	 	}
+ 	},
+ 	"topUpReward": {
+ 	 	"mail": {
+ 	 	 	"vars": [
+ 	 	 	 	"event",
+ 	 	 	 	"items"
+ 	 	 	],
+ 	 	 	"trans": "${event} наполнение ${items} была отправлена в ваш почтовый ящик",
+ 	 	 	"eng": " ${event} top up reward ${items} has been sent to your inbox"
+ 	 	}
+ 	},
+ 	"error": {
+ 	 	"cannotUseItemInStatus": {
+ 	 	 	"vars": [
+ 	 	 	 	"minutes"
+ 	 	 	],
+ 	 	 	"trans": "Вы не можете использовать этот элемент, потому что существует эффект статуса, который противоречит ему",
+ 	 	 	"eng": "You cannot use this item because there is a status effect that conflicts with it"
  	 	}
  	},
  	"player": {
@@ -8241,6 +10176,10 @@
  	 	 	"invalidTravelLink": {
  	 	 	 	"trans": "Неверная ссылка на поездки, если упорно перезагрузите, перезагрузите",
  	 	 	 	"eng": "Invalid Travel Link, if persist please reload"
+ 	 	 	},
+ 	 	 	"recipeDisabled": {
+ 	 	 	 	"trans": "Этот рецепт в настоящее время недоступен",
+ 	 	 	 	"eng": "This recipe is currently not available"
  	 	 	}
  	 	},
  	 	"escape": {
@@ -8268,16 +10207,23 @@
  	 	 	"eng": "Your level is too high to perform this action here, try to do it in the next zone."
  	 	},
  	 	"giveCred": {
+ 	 	 	"mail": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"playerName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Вы получили репутацию от ${playerName}",
+ 	 	 	 	"eng": "You have received a street cred from ${playerName}"
+ 	 	 	},
  	 	 	"success": {
- 	 	 	 	"trans": "Вы дали Daily Street Cred.",
+ 	 	 	 	"trans": "Вы дали ежедневную репутацию.",
  	 	 	 	"eng": "You have given daily street cred."
  	 	 	},
  	 	 	"notEnoughLevelError": {
- 	 	 	 	"trans": "Вы должны быть 10 -го уровня или выше, чтобы дать Player Street Cred",
+ 	 	 	 	"trans": "Вы должны быть 10 -го уровня или выше, чтобы дать игроку репутацию",
  	 	 	 	"eng": "You must be level 10 or above to give player street cred"
  	 	 	},
  	 	 	"cooldownError": {
- 	 	 	 	"trans": "Вы еще не можете отдать должное (один раз в день)",
+ 	 	 	 	"trans": "Вы не можете дать репутацию (один раз в день)",
  	 	 	 	"eng": "You cannot give street cred yet (once every day)"
  	 	 	}
  	 	}
@@ -8287,9 +10233,9 @@
  	 	 	"trans": "Это имя используется другим игроком, используйте другое имя",
  	 	 	"eng": "this name is used by other player, please use other name"
  	 	},
- 	 	"nameIllegal": {
- 	 	 	"trans": "Незаконное имя, используйте другое имя",
- 	 	 	"eng": "Illegal name, please use other name"
+ 	 	"reservedKeyword": {
+ 	 	 	"trans": "Это имя содержит зарезервированные слова, используйте другое имя",
+ 	 	 	"eng": "This name contains reserved wordings, please use other name"
  	 	},
  	 	"nameProfane": {
  	 	 	"trans": "Это имя содержит сформулирование, пожалуйста, используйте другое имя",
@@ -8298,6 +10244,49 @@
  	 	"nameInvalid": {
  	 	 	"trans": "Длина имени должна быть больше, чем 4, меньше или равна 16 и содержит только английские символы, числа или \\ '_ \\'",
  	 	 	"eng": "name length must be greater then 4, less then or equal to 16 and only contains English characters, numbers or \\'_\\'"
+ 	 	}
+ 	},
+ 	"skip": {
+ 	 	"skipRewardMail": {
+ 	 	 	"1": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Вы получили «Skip Emblem 1» за то, что он ${amount} Skip Points",
+ 	 	 	 	"eng": "You have received \"Skip Emblem 1\" for having ${amount} skip points"
+ 	 	 	},
+ 	 	 	"2": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Вы получили \"Skip Emblem 2\" за то, что он имел ${amount} Skip Points",
+ 	 	 	 	"eng": "You have received \"Skip Emblem 2\" for having ${amount} skip points"
+ 	 	 	},
+ 	 	 	"3": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Вы получили \"Skip Emblem 3\" за то, что он имел ${amount} Skip Points",
+ 	 	 	 	"eng": "You have received \"Skip Emblem 3\" for having ${amount} skip points"
+ 	 	 	},
+ 	 	 	"4": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"frameName",
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Вы получили кадр чата с пожертвователем \"${frameName}\" за то, что он ${amount} пропустить баллы",
+ 	 	 	 	"eng": "You have received \"${frameName}\" donator chat frame for having ${amount} skip points"
+ 	 	 	}
+ 	 	},
+ 	 	"announcement": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName",
+ 	 	 	 	"playerCount",
+ 	 	 	 	"skipTime",
+ 	 	 	 	"credButton"
+ 	 	 	],
+ 	 	 	"trans": "${playerName} использовал Global Time Skip, все онлайн -игроки, которые в настоящее время выполняют задачу AFK (${playerCount} игроки) автоматически пропустить время ${skipTime} минут. Дайте легенде несколько кредитов? ${credButton}",
+ 	 	 	"eng": "${playerName} has used Global Time Skip, all online players currently performing AFK task (${playerCount} players) will automatically time skip by ${skipTime} minutes. Give the legend some creds? ${credButton}"
  	 	}
  	}
 }

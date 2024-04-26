@@ -1,4 +1,56 @@
 {
+ 	"apartment": {
+ 	 	"title": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "Apartment ni ${playerName}",
+ 	 	 	"eng": "${playerName}'s Apartment"
+ 	 	},
+ 	 	"terminateLease": {
+ 	 	 	"trans": "I-rescind ang Kontrata",
+ 	 	 	"eng": "Terminate Lease"
+ 	 	},
+ 	 	"viewPets": {
+ 	 	 	"trans": "Tingnan ang Mga Alaga",
+ 	 	 	"eng": "View Pets"
+ 	 	},
+ 	 	"address": {
+ 	 	 	"cityName": {
+ 	 	 	 	"trans": "Shangri-la",
+ 	 	 	 	"eng": "Shangri-la"
+ 	 	 	}
+ 	 	},
+ 	 	"rent": {
+ 	 	 	"paidMail": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Bayad na ang renta ng iyong apartment na ${amount}",
+ 	 	 	 	"eng": "You have paid your apartment rent of ${amount}"
+ 	 	 	},
+ 	 	 	"unpaidMail": {
+ 	 	 	 	"trans": "Nabigo kang magbayad ng renta sa apartment mo, kinansela na ang iyong apartment",
+ 	 	 	 	"eng": "You have failed to pay your apartment rent, your apartment has been terminated"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"purchaseApartmentUI": {
+ 	 	"confirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Uupahan ang Apartment",
+ 	 	 	 	"eng": "Rent Apartment"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Sigurado ka bang gusto mong umupa sa apartment na ito?",
+ 	 	 	 	"eng": "Are you sure you want to rent this apartment?"
+ 	 	 	}
+ 	 	},
+ 	 	"rentButton": {
+ 	 	 	"trans": "Uupahan Na",
+ 	 	 	"eng": "Rent Now"
+ 	 	}
+ 	},
  	"tabs": {
  	 	"map": {
  	 	 	"trans": "Mapa",
@@ -22,10 +74,41 @@
  	 	}
  	},
  	"ui": {
- 	 	"blackMarket": {
- 	 	 	"selectItemButton": {
- 	 	 	 	"trans": "I-printa at ibenta",
- 	 	 	 	"eng": "Print And Sell"
+ 	 	"bulkCraft": {
+ 	 	 	"amountSelect": {
+ 	 	 	 	"title": {
+ 	 	 	 	 	"trans": "Piliin ang Halaga",
+ 	 	 	 	 	"eng": "Select Amount"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"duration": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"duration"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ang gawaing ito ay kukuha ng ${duration}",
+ 	 	 	 	"eng": "This task will take ${duration}"
+ 	 	 	},
+ 	 	 	"durationTooLong": {
+ 	 	 	 	"trans": "Masyadong maraming mga item na napili",
+ 	 	 	 	"eng": "Too many items selected"
+ 	 	 	}
+ 	 	},
+ 	 	"generalCaptcha": {
+ 	 	 	"inputLabel": {
+ 	 	 	 	"trans": "Pin code",
+ 	 	 	 	"eng": "Pin Code"
+ 	 	 	},
+ 	 	 	"inputPlaceholder": {
+ 	 	 	 	"trans": "Ilagay ang PIN code",
+ 	 	 	 	"eng": "Enter pin code"
+ 	 	 	},
+ 	 	 	"story": {
+ 	 	 	 	"trans": "Nakakita ka ng lumang kahon na nakakandado, May post-it na may nakasulat na ilang teksto.",
+ 	 	 	 	"eng": "You found an old locked safe box, there seems like a post-it with some text written on it."
+ 	 	 	},
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Kinakailangan ang pin code upang mabuksan",
+ 	 	 	 	"eng": "Pin code required to unlock"
  	 	 	}
  	 	},
  	 	"clan": {
@@ -47,15 +130,15 @@
  	 	 	 	"eng": "Deposit Bitcoin"
  	 	 	},
  	 	 	"editMotto": {
+ 	 	 	 	"button": {
+ 	 	 	 	 	"trans": "Ibahin ang salawikain ng gang",
+ 	 	 	 	 	"eng": "Edit Gang Motto"
+ 	 	 	 	},
  	 	 	 	"modal": {
  	 	 	 	 	"title": {
  	 	 	 	 	 	"trans": "Mangyaring ilagay ang salawikain o kasabihan ng iyong gang",
  	 	 	 	 	 	"eng": "Please enter your gang motto"
  	 	 	 	 	}
- 	 	 	 	},
- 	 	 	 	"button": {
- 	 	 	 	 	"trans": "Ibahin ang salawikain ng gang",
- 	 	 	 	 	"eng": "Edit Gang Motto"
  	 	 	 	}
  	 	 	},
  	 	 	"updateImage": {
@@ -172,12 +255,6 @@
  	 	 	 	}
  	 	 	}
  	 	},
- 	 	"supportUkraine": {
- 	 	 	"description": {
- 	 	 	 	"trans": "Ang mga tao sa Ukraine, Russia at sa buong mundo ay nagdurusa dahil sa ambisyon ng isang tao.",
- 	 	 	 	"eng": "People of Ukraine, Russia and the whole world are suffering because one man's ambition.\\n Make love exploit, not war."
- 	 	 	}
- 	 	},
  	 	"bank": {
  	 	 	"balance": {
  	 	 	 	"trans": "Natitira",
@@ -288,24 +365,6 @@
  	 	 	 	}
  	 	 	}
  	 	},
- 	 	"generalCaptcha": {
- 	 	 	"story": {
- 	 	 	 	"trans": "Nakakita ka ng lumang kahon na nakakandado, May post-it na may nakasulat na ilang teksto.",
- 	 	 	 	"eng": "You found an old locked safe box, there seems like a post-it with some text written on it."
- 	 	 	},
- 	 	 	"title": {
- 	 	 	 	"trans": "Kinakailangan ang pin code upang mabuksan",
- 	 	 	 	"eng": "Pin code required to unlock"
- 	 	 	},
- 	 	 	"inputLabel": {
- 	 	 	 	"trans": "Pin code",
- 	 	 	 	"eng": "Pin Code"
- 	 	 	},
- 	 	 	"inputPlaceholder": {
- 	 	 	 	"trans": "Ilagay ang PIN code",
- 	 	 	 	"eng": "Enter pin code"
- 	 	 	}
- 	 	},
  	 	"chat": {
  	 	 	"reconnecting": {
  	 	 	 	"trans": "Muling pagtatatag ng koneksyon",
@@ -397,6 +456,16 @@
  	 	 	}
  	 	},
  	 	"clanPage": {
+ 	 	 	"notice": {
+ 	 	 	 	"time": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"playerName",
+ 	 	 	 	 	 	"time"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "Nai -post ng ${playerName} ${time} ang nakaraan",
+ 	 	 	 	 	"eng": "Posted by ${playerName} ${time} ago"
+ 	 	 	 	}
+ 	 	 	},
  	 	 	"createClan": {
  	 	 	 	"title": {
  	 	 	 	 	"trans": "Hindi ka miyembro ng anumang gang",
@@ -525,17 +594,27 @@
  	 	},
  	 	"timeSkip": {
  	 	 	"unitTimeSkipButton": {
- 	 	 	 	"title": {
+ 	 	 	 	"unit": {
  	 	 	 	 	"vars": [
- 	 	 	 	 	 	"timeSkipMinutes",
- 	 	 	 	 	 	"timeSkipCost"
+ 	 	 	 	 	 	"units"
  	 	 	 	 	],
- 	 	 	 	 	"trans": "Global Skip (${timeSkipMinutes} min, nagkakahalaga ng ${timeSkipCost} unit)",
- 	 	 	 	 	"eng": "Global Skip (${timeSkipMinutes} Min, Cost ${timeSkipCost} Units)"
+ 	 	 	 	 	"trans": "${units} unit",
+ 	 	 	 	 	"eng": "${units} units"
+ 	 	 	 	},
+ 	 	 	 	"minute": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"minutes"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "${minutes} unit",
+ 	 	 	 	 	"eng": "Skip ${minutes} minutes"
+ 	 	 	 	},
+ 	 	 	 	"title2": {
+ 	 	 	 	 	"trans": "Tapusin mo na ngayon",
+ 	 	 	 	 	"eng": "Finish Now"
  	 	 	 	},
  	 	 	 	"description": {
  	 	 	 	 	"trans": "Sa pamamagitan ng Global Skip ay maaari mong laktawan ang oras ng paghihintay, at tapusin ito kaagad.\n    Ang epektong ito ay ilalapat sa lahat ng manlalaro na nagsasagawa ng AFK na gawain",
- 	 	 	 	 	"eng": "Global Skip allow you to skip the AFK waiting time, and finish it instantly.\r\n    this effect will be applied to all player performing AFK task"
+ 	 	 	 	 	"eng": "Finish the task instantly for all players in the game and earn skip points to show your support to other players!"
  	 	 	 	}
  	 	 	},
  	 	 	"itemTimeSkipButton": {
@@ -680,12 +759,16 @@
  	 	 	 	"trans": "Naka -lock",
  	 	 	 	"eng": "Unlocked"
  	 	 	},
+ 	 	 	"upgradeModuleTitleHeader": {
+ 	 	 	 	"trans": "Pag -upgrade ng mga puwang",
+ 	 	 	 	"eng": "Upgrades Slots"
+ 	 	 	},
  	 	 	"upgradeModuleTitle": {
- 	 	 	 	"trans": "Upgrades",
- 	 	 	 	"eng": "upgrade slot ${index}",
  	 	 	 	"vars": [
  	 	 	 	 	"index"
- 	 	 	 	]
+ 	 	 	 	],
+ 	 	 	 	"trans": "Upgrades",
+ 	 	 	 	"eng": "upgrade slot ${index}"
  	 	 	},
  	 	 	"equip": {
  	 	 	 	"trans": "Magbigay ng kasangkapan",
@@ -997,14 +1080,6 @@
  	 	 	 	 	"trans": "I -block ang manlalaro",
  	 	 	 	 	"eng": "Block Player"
  	 	 	 	}
- 	 	 	},
- 	 	 	"equipped": {
- 	 	 	 	"trans": "Nilagyan",
- 	 	 	 	"eng": "Equipped"
- 	 	 	},
- 	 	 	"inventory": {
- 	 	 	 	"trans": "Imbentaryo",
- 	 	 	 	"eng": "Inventory"
  	 	 	}
  	 	},
  	 	"modal": {
@@ -1094,13 +1169,13 @@
  	 	 	 	"trans": "sa ngayon ay walang mga aytem na ibinebenta para sa kategoryang ito",
  	 	 	 	"eng": "there is currently no items on sale for this category"
  	 	 	},
- 	 	 	"buy": {
+ 	 	 	"pricePerPiece": {
+ 	 	 	 	"trans": "bawat item",
+ 	 	 	 	"eng": "per item"
+ 	 	 	},
+ 	 	 	"purchase": {
  	 	 	 	"trans": "Bumili",
  	 	 	 	"eng": "Purchase"
- 	 	 	},
- 	 	 	"remove": {
- 	 	 	 	"trans": "Alisin",
- 	 	 	 	"eng": "Remove"
  	 	 	},
  	 	 	"stall": {
  	 	 	 	"sellItemButton": {
@@ -1322,69 +1397,10 @@
  	 	 	 	"eng": "If you have any questions please feel free to contact Dexter directly via official Discord (Link can be found in Floating Menu -> Links) or email to ching.huang.dexter@gmail.com"
  	 	 	}
  	 	},
- 	 	"tipsBox": {
- 	 	 	"title": {
- 	 	 	 	"trans": "Mga Tip sa Pro",
- 	 	 	 	"eng": "Pro Tips"
- 	 	 	},
- 	 	 	"description": {
- 	 	 	 	"trans": "Mag -click upang makakuha ng mga bagong tip",
- 	 	 	 	"eng": "Click to get new tips"
- 	 	 	}
- 	 	},
  	 	"travel": {
  	 	 	"notUnlocked": {
  	 	 	 	"trans": "Hindi mo pa nai -lock ang lugar na ito",
  	 	 	 	"eng": "You have not unlocked this area yet"
- 	 	 	}
- 	 	},
- 	 	"machineCrafting": {
- 	 	 	"titleBox": {
- 	 	 	 	"tile": {
- 	 	 	 	 	"trans": "Idle System",
- 	 	 	 	 	"eng": "system idle"
- 	 	 	 	},
- 	 	 	 	"subtitle": {
- 	 	 	 	 	"trans": "Mangyaring ipasok ang isang item",
- 	 	 	 	 	"eng": "Please insert an item"
- 	 	 	 	}
- 	 	 	},
- 	 	 	"selectItemButton": {
- 	 	 	 	"trans": "RECYCLE ITEM",
- 	 	 	 	"eng": "Recycle Item"
- 	 	 	},
- 	 	 	"selectAmount": {
- 	 	 	 	"title": {
- 	 	 	 	 	"trans": "Mangyaring piliin ang Halaga",
- 	 	 	 	 	"eng": "Please select amount"
- 	 	 	 	},
- 	 	 	 	"subtitle": {
- 	 	 	 	 	"vars": [
- 	 	 	 	 	 	"timeStr"
- 	 	 	 	 	],
- 	 	 	 	 	"trans": "Aabutin ito ng ${timeStr}",
- 	 	 	 	 	"eng": "This will take ${timeStr}"
- 	 	 	 	}
- 	 	 	},
- 	 	 	"confirmModal": {
- 	 	 	 	"title": {
- 	 	 	 	 	"vars": [
- 	 	 	 	 	 	"itemName"
- 	 	 	 	 	],
- 	 	 	 	 	"trans": "Piliin ang ${itemName}?",
- 	 	 	 	 	"eng": "Select ${itemName}?"
- 	 	 	 	},
- 	 	 	 	"subtitle": {
- 	 	 	 	 	"vars": [
- 	 	 	 	 	 	"itemName"
- 	 	 	 	 	],
- 	 	 	 	 	"trans": "Sigurado ka bang nais mong pumili ng ${itemName}?",
- 	 	 	 	 	"eng": "Are you sure you want to select ${itemName}?"
- 	 	 	 	},
- 	 	 	 	"confirmText": {
- 	 	 	 	 	"trans": "Sigurado ako",
- 	 	 	 	 	"eng": "I am sure"
- 	 	 	 	}
  	 	 	}
  	 	},
  	 	"setting": {
@@ -1497,6 +1513,12 @@
  	 	 	 	"eng": "save"
  	 	 	}
  	 	},
+ 	 	"petShop": {
+ 	 	 	"adapt": {
+ 	 	 	 	"trans": "Mag-ampon ng bagong alagang hayop",
+ 	 	 	 	"eng": "Adopt a new pet"
+ 	 	 	}
+ 	 	},
  	 	"rangeSelector": {
  	 	 	"selectMaxValue": {
  	 	 	 	"title": {
@@ -1571,6 +1593,41 @@
  	 	 	"itemLocked": {
  	 	 	 	"trans": "Ang item na ito ay naka -lock",
  	 	 	 	"eng": "This item is locked"
+ 	 	 	}
+ 	 	},
+ 	 	"machineCrafting": {
+ 	 	 	"selectAmount": {
+ 	 	 	 	"title": {
+ 	 	 	 	 	"trans": "Mangyaring piliin ang Halaga",
+ 	 	 	 	 	"eng": "Please select amount"
+ 	 	 	 	},
+ 	 	 	 	"subtitle": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"timeStr"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "Aabutin ito ng ${timeStr}",
+ 	 	 	 	 	"eng": "This will take ${timeStr}"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"confirmModal": {
+ 	 	 	 	"title": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"itemName"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "Piliin ang ${itemName}?",
+ 	 	 	 	 	"eng": "Select ${itemName}?"
+ 	 	 	 	},
+ 	 	 	 	"subtitle": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"itemName"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "Sigurado ka bang nais mong pumili ng ${itemName}?",
+ 	 	 	 	 	"eng": "Are you sure you want to select ${itemName}?"
+ 	 	 	 	},
+ 	 	 	 	"confirmText": {
+ 	 	 	 	 	"trans": "Sigurado ako",
+ 	 	 	 	 	"eng": "I am sure"
+ 	 	 	 	}
  	 	 	}
  	 	},
  	 	"calibration": {
@@ -1680,6 +1737,39 @@
  	 	 	"title": {
  	 	 	 	"trans": "Enter the system passcode to proceed",
  	 	 	 	"eng": "Enter system passcode to proceed"
+ 	 	 	}
+ 	 	},
+ 	 	"marketItemPurchaseModal": {
+ 	 	 	"amount": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"price",
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${price} BTC bawat piraso para sa ${amount} piraso",
+ 	 	 	 	"eng": "${price} btc per piece for ${amount} pieces"
+ 	 	 	}
+ 	 	},
+ 	 	"marketItemSellModal": {
+ 	 	 	"amountTitle": {
+ 	 	 	 	"trans": "Dami upang ilagay sa merkado",
+ 	 	 	 	"eng": "Quantity to put on market"
+ 	 	 	},
+ 	 	 	"priceTitle": {
+ 	 	 	 	"trans": "Presyo bawat piraso",
+ 	 	 	 	"eng": "Price per piece"
+ 	 	 	},
+ 	 	 	"footer": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"price",
+ 	 	 	 	 	"quantity",
+ 	 	 	 	 	"totalPrice"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ang item na ito ay ibebenta para sa ${price} bawat piraso para sa ${quantity} na piraso, kung ang lahat ng mga piraso ay nabili makakatanggap ka ng ${totalPrice}",
+ 	 	 	 	"eng": "This item will be sold for ${price} per piece for ${quantity} pieces, if all pieces are sold you will receive ${totalPrice}"
+ 	 	 	},
+ 	 	 	"sell": {
+ 	 	 	 	"trans": "Ilagay ang item sa merkado",
+ 	 	 	 	"eng": "Place Item on Market"
  	 	 	}
  	 	},
  	 	"dungeon": {
@@ -1955,6 +2045,10 @@
  	 	 	 	],
  	 	 	 	"trans": "${playerCount} player (s) konektado",
  	 	 	 	"eng": "${playerCount} player(s) connected"
+ 	 	 	},
+ 	 	 	"passwordProtected": {
+ 	 	 	 	"trans": "Protektado ng password",
+ 	 	 	 	"eng": "Password protected"
  	 	 	}
  	 	},
  	 	"equipmentUpgrade": {
@@ -2394,6 +2488,12 @@
  	 	 	"unlock": {
  	 	 	 	"trans": "I -unlock",
  	 	 	 	"eng": "Unlock"
+ 	 	 	},
+ 	 	 	"error": {
+ 	 	 	 	"notEnabled": {
+ 	 	 	 	 	"trans": "Ang lalagyan na ito ay hindi mai -lock sa oras na ito",
+ 	 	 	 	 	"eng": "This container cannot be unlocked at this time"
+ 	 	 	 	}
  	 	 	}
  	 	}
  	},
@@ -2443,6 +2543,18 @@
  	 	 	"name": {
  	 	 	 	"trans": "cassette tape",
  	 	 	 	"eng": "cassette tape"
+ 	 	 	}
+ 	 	},
+ 	 	"rareEquipmentCrate": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Bihirang kagamitan crate",
+ 	 	 	 	"eng": "Rare Equipment Crate"
+ 	 	 	}
+ 	 	},
+ 	 	"freeSkip": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Libreng personal na laktawan",
+ 	 	 	 	"eng": "Free Personal Skip"
  	 	 	}
  	 	},
  	 	"cycle": {
@@ -2584,10 +2696,6 @@
  	 	 	"trans": "Tumatanggap",
  	 	 	"eng": "Receives"
  	 	},
- 	 	"inputPlaceholder": {
- 	 	 	"trans": "Ipasok ang mensahe upang simulan ang pakikipag -chat",
- 	 	 	"eng": "Enter message to start chatting"
- 	 	},
  	 	"moderators": {
  	 	 	"trans": "Mga moderator",
  	 	 	"eng": "moderators"
@@ -2694,6 +2802,23 @@
  	 	"thief": {
  	 	 	"trans": "Techno-Thief",
  	 	 	"eng": "Techno-Thief"
+ 	 	}
+ 	},
+ 	"globalPartyBanner": {
+ 	 	"title": {
+ 	 	 	"trans": "🎉 Global Party 🎉",
+ 	 	 	"eng": "🎉 Global Party 🎉"
+ 	 	},
+ 	 	"subtitle": {
+ 	 	 	"trans": "Naka -host sa pamamagitan ng:",
+ 	 	 	"eng": "Hosted by:"
+ 	 	},
+ 	 	"button,": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "Bigyan ang kredito sa kalye",
+ 	 	 	"eng": "Give street cred"
  	 	}
  	},
  	"cost": {
@@ -3055,6 +3180,16 @@
  	 	 	 	"trans": "Enemies from the Voodoo Boys gang deal increased damage to you",
  	 	 	 	"eng": "Enemies of Voodoo Boys gang deals increased damage to you"
  	 	 	}
+ 	 	},
+ 	 	"afkExpMultiplier": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "AFK exp multiplier",
+ 	 	 	 	"eng": "AFK EXP multiplier"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Dagdagan ang exp na natanggap mo mula sa mga gawain sa AFK",
+ 	 	 	 	"eng": "Increase EXP you receive from AFK tasks"
+ 	 	 	}
  	 	}
  	},
  	"modal": {
@@ -3090,13 +3225,13 @@
  	 	 	 	"trans": "Walang pahintulot. Nakita ang profile na hindi tao.",
  	 	 	 	"eng": "Access denied. non-human profile detected."
  	 	 	},
+ 	 	 	"report1": {
+ 	 	 	 	"trans": "I-ulat at i-block",
+ 	 	 	 	"eng": "Report & Block"
+ 	 	 	},
  	 	 	"block": {
  	 	 	 	"trans": "I -block",
  	 	 	 	"eng": "Block"
- 	 	 	},
- 	 	 	"report": {
- 	 	 	 	"trans": "Iulat at I -block",
- 	 	 	 	"eng": "Report and Block"
  	 	 	},
  	 	 	"openPlayerGang": {
  	 	 	 	"trans": "Tingnan ang Gang",
@@ -3249,14 +3384,14 @@
  	 	"resultScreen": {
  	 	 	"title": {
  	 	 	 	"trans": "Antas up",
- 	 	 	 	"eng": "Victory"
+ 	 	 	 	"eng": "Level up"
  	 	 	},
  	 	 	"subTitle": {
  	 	 	 	"vars": [
  	 	 	 	 	"levelName"
  	 	 	 	],
  	 	 	 	"trans": "Congratulations! You have leveled up your ${levelName}!",
- 	 	 	 	"eng": "Congratulation, you have leveled up your ${levelName}!"
+ 	 	 	 	"eng": "Congratulations, you have leveled up your ${levelName}!"
  	 	 	},
  	 	 	"fromTo": {
  	 	 	 	"vars": [
@@ -3265,6 +3400,10 @@
  	 	 	 	],
  	 	 	 	"trans": "${from} => ${to}",
  	 	 	 	"eng": "${from} => ${to}"
+ 	 	 	},
+ 	 	 	"title2": {
+ 	 	 	 	"trans": "Natanggap",
+ 	 	 	 	"eng": "Received"
  	 	 	}
  	 	},
  	 	"review": {
@@ -3338,6 +3477,30 @@
  	 	 	 	 	"eng": "Reload"
  	 	 	 	}
  	 	 	}
+ 	 	}
+ 	},
+ 	"playerDetailsAssetsTab": {
+ 	 	"noAssets": {
+ 	 	 	"trans": "Wala pong ari-arian ang player na ito",
+ 	 	 	"eng": "this player does not own any assets"
+ 	 	},
+ 	 	"apartment": {
+ 	 	 	"title": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"playerName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Apartment ni ${playerName}",
+ 	 	 	 	"eng": "${playerName}'s Apartment"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"playerStatusDisplay": {
+ 	 	"title": {
+ 	 	 	"vars": [
+ 	 	 	 	"action"
+ 	 	 	],
+ 	 	 	"trans": "${action} sa pag -unlad",
+ 	 	 	"eng": "${action} in progress"
  	 	}
  	},
  	"time": {
@@ -3613,16 +3776,16 @@
  	 	 	 	 	"eng": "dungeon warrior"
  	 	 	 	}
  	 	 	},
- 	 	 	"clearDungeonCoOp": {
- 	 	 	 	"name": {
- 	 	 	 	 	"trans": "Mga Kaibigan ng Dungeon",
- 	 	 	 	 	"eng": "dungeon friends"
- 	 	 	 	}
- 	 	 	},
  	 	 	"clearDungeon": {
  	 	 	 	"name": {
  	 	 	 	 	"trans": "Dungeon Crawler",
  	 	 	 	 	"eng": "dungeon crawler"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"clearDungeonCoOp": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Mga Kaibigan ng Dungeon",
+ 	 	 	 	 	"eng": "dungeon friends"
  	 	 	 	}
  	 	 	},
  	 	 	"dealDamage": {
@@ -3689,10 +3852,148 @@
  	 	 	"eng": "Appeal Form"
  	 	}
  	},
+ 	"pet": {
+ 	 	"noName": {
+ 	 	 	"trans": "Walang pangalan",
+ 	 	 	"eng": "unnamed"
+ 	 	},
+ 	 	"nameTooShort": {
+ 	 	 	"vars": [
+ 	 	 	 	"length"
+ 	 	 	],
+ 	 	 	"trans": "Dapat ay mayroong hindi bababa sa ${length} na karakter ang pangalan ng alagang hayop",
+ 	 	 	"eng": "Pet name must be at least ${length} characters long"
+ 	 	},
+ 	 	"nameTooLong": {
+ 	 	 	"vars": [
+ 	 	 	 	"length"
+ 	 	 	],
+ 	 	 	"trans": "Ang pangalan ng alagang hayop ay dapat na hindi hihigit sa ${length} na mga karakter ang haba",
+ 	 	 	"eng": "Pet name must be at most ${length} characters long"
+ 	 	},
+ 	 	"nameCantContainSpaces": {
+ 	 	 	"trans": "Hindi puwedeng magkaroon ng espasyo sa pangalan ng alagang hayop",
+ 	 	 	"eng": "Pet name can not contain spaces"
+ 	 	},
+ 	 	"rerollImage": {
+ 	 	 	"success": {
+ 	 	 	 	"trans": "Nabago nang matagumpay ang larawan ng alagang hayop",
+ 	 	 	 	"eng": "Pet image changed successfully"
+ 	 	 	}
+ 	 	},
+ 	 	"adoption": {
+ 	 	 	"alreadyActivated": {
+ 	 	 	 	"trans": "Ang Pet Adoption buff ay activated na",
+ 	 	 	 	"eng": "Pet Adoption buff is already activated"
+ 	 	 	},
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player",
+ 	 	 	 	 	"npc"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Na-activate ni ${player} ang Adoption Buff, maaari kang mag-ampon ng alagang hayop mula kay ${npc} sa loob ng tagal ng buff!",
+ 	 	 	 	"eng": "${player} has activated Adoption Buff, you can adopt a pet from ${npc} within the buff duration!"
+ 	 	 	},
+ 	 	 	"activated": {
+ 	 	 	 	"trans": "Napindot ang pampalakas ng pag-aampon ng alagang hayop",
+ 	 	 	 	"eng": "Pet adoption buff activated"
+ 	 	 	}
+ 	 	},
+ 	 	"error": {
+ 	 	 	"interactedRecently": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"hours"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Maaari ka lamang makipag-interact sa alagang player isang beses bawat ${hours} oras",
+ 	 	 	 	"eng": "You can only interact with a player's pet once every ${hours} hours"
+ 	 	 	}
+ 	 	},
+ 	 	"played": {
+ 	 	 	"vars": [
+ 	 	 	 	"player",
+ 	 	 	 	"pet"
+ 	 	 	],
+ 	 	 	"trans": "Nakipaglaro si ${player} sa alagang ${pet} mo",
+ 	 	 	"eng": "${player} has played with your pet ${pet}",
+ 	 	 	"success": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"playerName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Nakipaglaro ka sa alagang ${playerName}",
+ 	 	 	 	"eng": "You have played with ${playerName}'s pet"
+ 	 	 	}
+ 	 	},
+ 	 	"rename": {
+ 	 	 	"badWord": {
+ 	 	 	 	"trans": "Bawal ang mga salitang ginamit sa pangalan",
+ 	 	 	 	"eng": "Name contains not allowed words"
+ 	 	 	},
+ 	 	 	"notEnoughIAP": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"price"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Kailangan mo ng ${price} Units para palitan ang pangalan ng iyong alagang hayop",
+ 	 	 	 	"eng": "You need ${price} Units to rename your pet"
+ 	 	 	}
+ 	 	},
+ 	 	"adopted": {
+ 	 	 	"vars": [
+ 	 	 	 	"player",
+ 	 	 	 	"pet"
+ 	 	 	],
+ 	 	 	"trans": "Si ${player} ay sumapi kay ${pet}",
+ 	 	 	"eng": "${player} has adopted ${pet}",
+ 	 	 	"mail": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"pet"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ikaw ay nag-ampon ng ${pet}",
+ 	 	 	 	"eng": "You have adopted ${pet}"
+ 	 	 	}
+ 	 	},
+ 	 	"reviveActivate": {
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ginamit ni ${player} ang pet revival buff, pwede mo nang buhayin ulit ang isa sa iyong mga alagang hayop habang may buff.",
+ 	 	 	 	"eng": "${player} has used pet revival buff, you can now revive one of your pet within the buff duration."
+ 	 	 	}
+ 	 	},
+ 	 	"revive": {
+ 	 	 	"activated": {
+ 	 	 	 	"trans": "Nabuhay ang pet mo! Buff activated!",
+ 	 	 	 	"eng": "Pet revive buff activated"
+ 	 	 	},
+ 	 	 	"success": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"petName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Naibalik mo ang ${petName}",
+ 	 	 	 	"eng": "You have revived ${petName}"
+ 	 	 	}
+ 	 	},
+ 	 	"reviveSuccess": {
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player",
+ 	 	 	 	 	"pet"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Naibalik na ni ${player} si ${pet}",
+ 	 	 	 	"eng": "${player} has revived ${pet}"
+ 	 	 	}
+ 	 	}
+ 	},
  	"priceTag": {
  	 	"free": {
  	 	 	"trans": "LIBRE",
  	 	 	"eng": "FREE"
+ 	 	}
+ 	},
+ 	"chatInput": {
+ 	 	"placeholder": {
+ 	 	 	"trans": "Ilagay ang Mensahe...",
+ 	 	 	"eng": "Enter Message..."
  	 	}
  	},
  	"itemList": {
@@ -3730,6 +4031,12 @@
  	 	"max": {
  	 	 	"trans": "Max",
  	 	 	"eng": "max"
+ 	 	}
+ 	},
+ 	"giveCredButton": {
+ 	 	"giveCred": {
+ 	 	 	"trans": "Bigyan ang kredito sa kalye",
+ 	 	 	"eng": "Give Street Cred"
  	 	}
  	},
  	"actionStartModal": {
@@ -3991,6 +4298,34 @@
  	 	 	"eng": "Click 'ACCEPT QUEST' to accept the quest, you may complete or abandon the quest at any time"
  	 	}
  	},
+ 	"enum": {
+ 	 	"apartmentType": {
+ 	 	 	"T1": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "apartamento sa maruruming lugar",
+ 	 	 	 	 	"eng": "slum apartment"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"T2": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "apartamento",
+ 	 	 	 	 	"eng": "apartment"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"T3": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Marangyang apartment",
+ 	 	 	 	 	"eng": "luxury apartment"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"T4": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Penthouse",
+ 	 	 	 	 	"eng": "penthouse"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	}
+ 	},
  	"iapCurrency": {
  	 	"currency1": {
  	 	 	"name": {
@@ -4163,6 +4498,13 @@
  	 	 	"trans": "Tumanggap",
  	 	 	"eng": "Receive"
  	 	},
+ 	 	"bonusReward": {
+ 	 	 	"vars": [
+ 	 	 	 	"eventName"
+ 	 	 	],
+ 	 	 	"trans": "${eventName} Bonus:",
+ 	 	 	"eng": "${eventName} bonus:"
+ 	 	},
  	 	"purchasing": {
  	 	 	"trans": "Pagbili",
  	 	 	"eng": "Purchasing"
@@ -4170,6 +4512,28 @@
  	 	"total": {
  	 	 	"trans": "Kabuuan",
  	 	 	"eng": "total"
+ 	 	}
+ 	},
+ 	"bulkCraftingSubtype": {
+ 	 	"recycle": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "RECYCLE",
+ 	 	 	 	"eng": "Recycle"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Magdagdag ng mga item upang mai -recycle ang mga ito nang mas mahusay",
+ 	 	 	 	"eng": "Add items to recycle them more efficiently"
+ 	 	 	}
+ 	 	},
+ 	 	"printSell": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "I -print at ibenta",
+ 	 	 	 	"eng": "Print & Sell"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "I -print ang mga item at ibenta ang mga ito para sa pera",
+ 	 	 	 	"eng": "Print items and sell them for money"
+ 	 	 	}
  	 	}
  	},
  	"donationType": {
@@ -4248,6 +4612,46 @@
  	 	"donation18": {
  	 	 	"trans": "Prestihiyo",
  	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation20": {
+ 	 	 	"trans": "Prestihiyo",
+ 	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation21": {
+ 	 	 	"trans": "Prestihiyo",
+ 	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation22": {
+ 	 	 	"trans": "Prestihiyo",
+ 	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation23": {
+ 	 	 	"trans": "Halloween",
+ 	 	 	"eng": "Halloween"
+ 	 	},
+ 	 	"donation24": {
+ 	 	 	"trans": "Pagpapadala",
+ 	 	 	"eng": "SkipSage"
+ 	 	},
+ 	 	"donation25": {
+ 	 	 	"trans": "Christmastime",
+ 	 	 	"eng": "Christmastime"
+ 	 	},
+ 	 	"donation26": {
+ 	 	 	"trans": "Cyberdagon",
+ 	 	 	"eng": "CyberDragon"
+ 	 	},
+ 	 	"donation27": {
+ 	 	 	"trans": "Laktawan ang panginoon",
+ 	 	 	"eng": "Skip Lord"
+ 	 	},
+ 	 	"donation28": {
+ 	 	 	"trans": "Walang katumbas na salita sa Tagalog",
+ 	 	 	"eng": "Sakura"
+ 	 	},
+ 	 	"donation29": {
+ 	 	 	"trans": "Tagasalakay ng Sistema",
+ 	 	 	"eng": "Netrunner"
  	 	},
  	 	"moderator": {
  	 	 	"trans": "Tagapamagitan",
@@ -4990,6 +5394,406 @@
  	 	 	 	 	"eng": "More coming in future update"
  	 	 	 	}
  	 	 	}
+ 	 	},
+ 	 	"donation20": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"Prestige\" pamagat ng donasyon",
+ 	 	 	 	 	"eng": "\"Prestige\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "I -unlock ang pagpapasadya ng larawan ng profile",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Puting frame (na may animation)",
+ 	 	 	 	 	"eng": "White frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Puting profile (na may animation)",
+ 	 	 	 	 	"eng": "White Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "I -unlock ang pasadyang bio",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Dekorasyon ng Barcode sa profile",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "I -customize ang gang motto",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Ipasadya ang imahe ng gang",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Marami pang darating sa pag -update sa hinaharap",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation21": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"Prestige\" pamagat ng donasyon",
+ 	 	 	 	 	"eng": "\"Prestige\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "I -unlock ang pagpapasadya ng larawan ng profile",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Pulang frame (na may animation)",
+ 	 	 	 	 	"eng": "Red frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Red Profile (na may animation)",
+ 	 	 	 	 	"eng": "Red Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "I -unlock ang pasadyang bio",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Dekorasyon ng Barcode sa profile",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "I -customize ang gang motto",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Ipasadya ang imahe ng gang",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Marami pang darating sa pag -update sa hinaharap",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation22": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"Prestige\" pamagat ng donasyon",
+ 	 	 	 	 	"eng": "\"Prestige\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "I -unlock ang pagpapasadya ng larawan ng profile",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Neon sign frame (na may animation)",
+ 	 	 	 	 	"eng": "Neon Sign frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Purple Profile (na may animation)",
+ 	 	 	 	 	"eng": "Purple Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "I -unlock ang pasadyang bio",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Dekorasyon ng Barcode sa profile",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "I -customize ang gang motto",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Ipasadya ang imahe ng gang",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Marami pang darating sa pag -update sa hinaharap",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation23": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"Halloween\" pamagat ng donasyon",
+ 	 	 	 	 	"eng": "\"Halloween\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "I -unlock ang pagpapasadya ng larawan ng profile",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Frame ng Halloween (na may animation)",
+ 	 	 	 	 	"eng": "Halloween frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Profile ng Halloween (na may animation)",
+ 	 	 	 	 	"eng": "Halloween Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "I -unlock ang pasadyang bio",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Dekorasyon ng Barcode sa profile",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "I -customize ang gang motto",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Ipasadya ang imahe ng gang",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Marami pang darating sa pag -update sa hinaharap",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation24": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"Skipgod\" pamagat ng donasyon",
+ 	 	 	 	 	"eng": "\"SkipSage\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "I -unlock ang pagpapasadya ng larawan ng profile",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "SkipGod Frame (na may animation)",
+ 	 	 	 	 	"eng": "SkipSage frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Profile ng SkipGod (na may animation)",
+ 	 	 	 	 	"eng": "SkipSage Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "I -unlock ang pasadyang bio",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Dekorasyon ng Barcode sa profile",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "I -customize ang gang motto",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Ipasadya ang imahe ng gang",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Marami pang darating sa pag -update sa hinaharap",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation25": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"Christmastime\" pamagat ng donasyon",
+ 	 	 	 	 	"eng": "\"Christmastime\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "I -unlock ang pagpapasadya ng larawan ng profile",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Christmastime Frame (na may animation)",
+ 	 	 	 	 	"eng": "Christmastime frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Christmastime Profile (na may animation)",
+ 	 	 	 	 	"eng": "Christmastime Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "I -unlock ang pasadyang bio",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Dekorasyon ng Barcode sa profile",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "I -customize ang gang motto",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Ipasadya ang imahe ng gang",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Marami pang darating sa pag -update sa hinaharap",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation26": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"Cyberdagon\" pamagat ng donasyon",
+ 	 	 	 	 	"eng": "\"CyberDragon\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "I -unlock ang pagpapasadya ng larawan ng profile",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Cyberdagon Frame (na may animation)",
+ 	 	 	 	 	"eng": "CyberDragon frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Profile ng cyberdagon (na may animation)",
+ 	 	 	 	 	"eng": "CyberDragon Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Buksan ang pasadyang bio",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "I -unlock ang pasadyang bio",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "I -customize ang gang motto",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Ipasadya ang imahe ng gang",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Marami pang darating sa pag -update sa hinaharap",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation27": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"Laktawan Lord\" pamagat ng donasyon",
+ 	 	 	 	 	"eng": "\"Skip Lord\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "I -unlock ang pagpapasadya ng larawan ng profile",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Laktawan ang Lord Frame (na may animation)",
+ 	 	 	 	 	"eng": "Skip Lord frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Laktawan ang Profile ng Lord (na may animation)",
+ 	 	 	 	 	"eng": "Skip Lord Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Buksan ang pasadyang bio",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Dekorasyon ng Barcode sa profile",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "I -customize ang gang motto",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Ipasadya ang imahe ng gang",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Marami pang darating sa pag -update sa hinaharap",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation28": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"Pamagat ng Donasyon: Sakura\"",
+ 	 	 	 	 	"eng": "\"Sakura\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Buksan ang pagpapalit ng larawan ng profile",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Frame ng Sakura (may animation)",
+ 	 	 	 	 	"eng": "Sakura frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Profile ni Sakura (may animation)",
+ 	 	 	 	 	"eng": "Sakura Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Buksan ang pasadyang bio",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Buksan ang pasadyang bio",
+ 	 	 	 	 	"eng": "Sakura profile decoration"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "I-customize ang motto ng gang",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "I-customize ang imahe ng gang",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Mayroon pang darating sa susunod na update",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation29": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"Netrunner\" Pamagat ng Donation",
+ 	 	 	 	 	"eng": "\"Netrunner\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Buksan ang pagpapalit ng larawan ng profile",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Frame ng Netrunner (may animation)",
+ 	 	 	 	 	"eng": "Netrunner frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Properong Netrunner Profile (may animation)",
+ 	 	 	 	 	"eng": "Netrunner Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Buksan ang pasadyang bio",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Pamamaraan ng pagpapahayag ng profile ng Netrunner",
+ 	 	 	 	 	"eng": "Netrunner profile decoration"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "I-customize ang motto ng gang",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "I-customize ang imahe ng gang",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Mayroon pang darating sa susunod na update",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
  	 	}
  	},
  	"equipmentMarks": {
@@ -5058,6 +5862,33 @@
  	 	 	"eng": "backpack"
  	 	}
  	},
+ 	"gameEvent": {
+ 	 	"lunarNewYear": {
+ 	 	 	"trans": "Bagong Taon ng mga Tsino",
+ 	 	 	"eng": "Lunar New Year"
+ 	 	},
+ 	 	"halloween": {
+ 	 	 	"trans": "Halloween",
+ 	 	 	"eng": "Halloween"
+ 	 	},
+ 	 	"thanksgiving": {
+ 	 	 	"trans": "Thanksgiving",
+ 	 	 	"eng": "Thanksgiving"
+ 	 	},
+ 	 	"christmas": {
+ 	 	 	"trans": "Pasko",
+ 	 	 	"eng": "Christmas"
+ 	 	},
+ 	 	"sakura": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Marso",
+ 	 	 	 	"eng": "${percent}% off during event",
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	]
+ 	 	 	}
+ 	 	}
+ 	},
  	"itemFilterType": {
  	 	"shopSell": {
  	 	 	"description": {
@@ -5071,6 +5902,12 @@
  	 	 	"name": {
  	 	 	 	"trans": "Hindi kilalang kagamitan",
  	 	 	 	"eng": "Unknown Equipment"
+ 	 	 	}
+ 	 	},
+ 	 	"unknownCache": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Hindi kilalang cache",
+ 	 	 	 	"eng": "Unknown Cache"
  	 	 	}
  	 	},
  	 	"aiCore": {
@@ -5738,6 +6575,16 @@
  	 	 	 	"eng": "You get some love, and you get some love! everyone gets some love!.\r\n        When used everyone loves each other\r\n        This effects all players fow 10 minutes"
  	 	 	}
  	 	},
+ 	 	"chatExploitPosh": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Chat exploit transmitter [Astig]",
+ 	 	 	 	"eng": "Chat exploit transmitter [Posh]"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Sa pag-activate, lahat ng pakikipag-usap na ibinigay ng mga naninirahan sa ating chat realm ay magdadaan sa isang nakakatuwang metamorphosis, magbibihis ng marilag na kasuotan ng maginoo at Ingles para sa isang takdang panahon na 10 minuto. Ang eksena na ito ay magiging epektibo lamang sa wikang Ingles",
+ 	 	 	 	"eng": "Upon activation, all correspondence proffered by the denizens of our chat realm shall undergo a delightful metamorphosis, adorning itself in the distinguished garb of gentlemanly English for a duration of precisely 10 minutes. this exploit will only work well with English"
+ 	 	 	}
+ 	 	},
  	 	"upgradeResetShard": {
  	 	 	"name": {
  	 	 	 	"trans": "Pabrika I -reset si Shard",
@@ -5786,6 +6633,16 @@
  	 	 	"description": {
  	 	 	 	"trans": "Isang naka -encrypt na lalagyan na may pula, berdeng dekorasyon at isang logo ng 'Cybersanta ™' sa gilid nito.",
  	 	 	 	"eng": "An encrypted container with red, green decoration and a 'CyberSanta™' logo on the side of it."
+ 	 	 	}
+ 	 	},
+ 	 	"christmasGift2": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Frosty Container",
+ 	 	 	 	"eng": "Frosty Container"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Isang misteryo na regalo na nakabalot sa sparkling, snowflake na may temang packaging. Maaari mo lamang i -unlock ito sa [terminal] sa Disyembre.",
+ 	 	 	 	"eng": "A mystery gift wrapped in sparkling, snowflake-themed packaging. You can only unlock it at the [Terminal] during December."
  	 	 	}
  	 	},
  	 	"rngInterferer": {
@@ -5875,6 +6732,19 @@
  	 	 	 	"eng": "These dumplings are unlike any other. Made with love and care by Yen, these delicious pockets of goodness are filled with the finest ingredients and cooked to perfection.\\n recover ${percent}% health upon consumption"
  	 	 	}
  	 	},
+ 	 	"pumpkinPie": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Kalabasa pie",
+ 	 	 	 	"eng": "Pumpkin Pie"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Isang masarap na pie ng kalabasa. Ang pie na ito ay may malaking pag -load ng makapal na vanilla cream sa ibabaw nito, masarap! \\ nrecover ${percent}% kalusugan sa pagkonsumo",
+ 	 	 	 	"eng": "A delicious pumpkin pie. this pie has big load of thick vanilla cream over it, delicious!\\nrecover ${percent}% health upon consumption"
+ 	 	 	}
+ 	 	},
  	 	"riceCake": {
  	 	 	"name": {
  	 	 	 	"trans": "Rice cake",
@@ -5926,6 +6796,153 @@
  	 	 	"description": {
  	 	 	 	"trans": "Isang token na maaaring magamit upang makipagpalitan ng mga item",
  	 	 	 	"eng": "A token that can be used to exchange items"
+ 	 	 	}
+ 	 	},
+ 	 	"techScrapCluster": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Tech scrap cluster",
+ 	 	 	 	"eng": "Tech Scrap Cluster"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Ang isang cluster ng tech scrap ay naglalaman ng 1000 tech scrap, maaaring magamit upang madaling mag -imbak at mangalakal",
+ 	 	 	 	"eng": "A Tech Scrap Cluster contains 1000 Tech Scraps, can be used to easily store and trade"
+ 	 	 	}
+ 	 	},
+ 	 	"rareEquipmentCrate": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Bihirang kagamitan crate",
+ 	 	 	 	"eng": "Rare Equipment Crate"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Isang crate na naglalaman ng isang random na kagamitan o iba pang mga loot",
+ 	 	 	 	"eng": "A crate that contains a random equipments or other loots"
+ 	 	 	}
+ 	 	},
+ 	 	"globalPartyBuff": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Global Party Deployer",
+ 	 	 	 	"eng": "Global Party Deployer"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"afkPercent",
+ 	 	 	 	 	"btcPercent",
+ 	 	 	 	 	"expPercent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Kapag na -deploy, bawasan ang oras ng AFK sa pamamagitan ng ${afkPercent}%, nadagdagan ang BTC na nakuha ng ${btcPercent}%, dagdagan ang exp na nakuha ng ${expPercent}%\\ nand isang banner ay ipapakita sa chat screen sa iyong pangalan na nagpapahiwatig na na -deploy mo ang buff",
+ 	 	 	 	"eng": "When deployed, reduce AFK time by ${afkPercent}%, increased BTC gained by ${btcPercent}%, increase EXP gained by ${expPercent}%\\nAnd a banner will be shown in chat screen with your name indicating that you have deployed the buff"
+ 	 	 	},
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"afkPercent",
+ 	 	 	 	 	"btcPercent",
+ 	 	 	 	 	"expPercent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Oras ng Partido!",
+ 	 	 	 	"eng": "🎉Its Party Time!🥳, reduce AFK time by ${afkPercent}%, increased BTC gained by ${btcPercent}%, increase EXP gained by ${expPercent}%"
+ 	 	 	}
+ 	 	},
+ 	 	"turkey": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Inihaw na pabo",
+ 	 	 	 	"eng": "Roasted Turkey"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Isang masarap na inihaw na pabo, kapag natupok ang pagtaas ng exp na natanggap sa mga gawain ng AFK sa pamamagitan ng ${percent}%",
+ 	 	 	 	"eng": "A delicious roasted turkey, when consumed increases EXP received in AFK tasks by ${percent}%"
+ 	 	 	}
+ 	 	},
+ 	 	"pudding": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Christmas puding",
+ 	 	 	 	"eng": "Christmas Pudding"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ang isang siksik, steamed puding na may mga pinatuyong prutas, nuts, at madalas na naka -laced sa alkohol, kapag natupok ang pagtaas ng exp na natanggap sa mga gawain ng AFK sa pamamagitan ng ${percent}%",
+ 	 	 	 	"eng": "A dense, steamed pudding with dried fruits, nuts, and often laced with alcohol, when consumed increases EXP received in AFK tasks by ${percent}%.\\nThis item can only be used during December"
+ 	 	 	},
+ 	 	 	"error": {
+ 	 	 	 	"trans": "Magagamit lamang ang item na ito sa panahon ng kaganapan sa Pasko",
+ 	 	 	 	"eng": "This item is only available during Christmas Event"
+ 	 	 	}
+ 	 	},
+ 	 	"pawCredit": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Pawang Kredito",
+ 	 	 	 	"eng": "Paw Credit"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Isang kredito na maaaring gamitin upang makipagpalitan ng mga item ng alagang hayop sa Neon Paw Sanctuary",
+ 	 	 	 	"eng": "A credit that can be used to exchange pet items at Neon Paw Sanctuary"
+ 	 	 	}
+ 	 	},
+ 	 	"petTokenShard": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Medalya ng Paglilingkod ng Boluntaryo",
+ 	 	 	 	"eng": "Volunteer Service Medallion"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ipagdugtong ang ${amount} nito upang makakuha ng isang Sanctuary Adoption Pass, at magagamit ito upang mag-ampon ng bagong alagang hayop",
+ 	 	 	 	"eng": "Combine ${amount} of this to get a Sanctuary Adoption Pass, and it can be used to adopt a new pet"
+ 	 	 	}
+ 	 	},
+ 	 	"petToken": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Medalya ng Serbisyong Volunteer",
+ 	 	 	 	"eng": "Sanctuary Adoption Pass"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Ipagdugtong ang ${amount} nito upang makakuha ng isang Sanctuary Adoption Pass, at magagamit ito upang mag-ampon ng bagong alagang hayop",
+ 	 	 	 	"eng": "A pass that can be used to adopt a pet from Neon Paw Sanctuary"
+ 	 	 	}
+ 	 	},
+ 	 	"petFood": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "ElectroFiber Kurot",
+ 	 	 	 	"eng": "ElectroFiber Bites"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "\"Ang ElectroFiber Bites™ ay naglalaman ng isang komplikadong halo ng mga fiber na nagco-conduct at nag-iimbak ng enerhiya, nagpapalakas ng lakas at tibay ng iyong alagang hayop para mas mahabang paglalakbay sa cyber wilderness.\"",
+ 	 	 	 	"eng": "\"ElectroFiber Bites™ contain a complex blend of fibers that conduct and store energy, boosting your pet's stamina and power for longer expeditions in the cyber wilderness.\""
+ 	 	 	}
+ 	 	},
+ 	 	"petToy": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "NanoNibble Bola",
+ 	 	 	 	"eng": "NanoNibble Ball"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "\"Ipinakilala ang NanoNibble Ball - isang kahanga-hangang teknolohiya para sa oras ng laro na nilikha para sa wagas na kasiyahan. Ang bawat bola ay nag-iilaw ng kahanga-hangang mga disenyo sa pinakamaliit na galaw, tiyak na mapapasaya ang iyong alagang hayop. Matapos ang isang sesyon ng hindi malilimutang saya, ang bola ay matalinong nagbabalat sa hindi nakakasamang, eco-friendly na mga partikulo, na walang iniwang kalat. Perpekto para sa isang solong, hindi malilimutang pakikipagsapalaran sa digital na pakikipagkaibigan, ito ang pinakamahusay na karanasan sa oras ng laro na maayos na nawawala, nag-iwas sa iyo sa paglilinis.\"",
+ 	 	 	 	"eng": "\"Introducing the NanoNibble Ball – a marvel of playtime technology designed for sheer joy. Each ball lights up with mesmerizing patterns at the slightest touch, ensuring your pet is thoroughly entertained. After a session of unprecedented fun, the ball smartly deconstructs into harmless, eco-friendly particles, leaving no mess behind. Perfect for a single, unforgettable adventure in digital companionship, it’s the ultimate playtime experience that neatly disappears, sparing you the cleanup.\""
+ 	 	 	}
+ 	 	},
+ 	 	"petCleaner": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "FurFlush Spray",
+ 	 	 	 	"eng": "FurFlush Spray"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "FurFlush Spray: Ang astig na lata ay may nakasulat na 'Instant Linis, Instant Wala.' Isang mabilis na pssst ang magpapapakinis sa iyong maruruming alagang hayop—walang banlaw, walang kalat, just poof! Perfect para sa mga 'oops' moments bago ang cyber meet-up. Ingat: Maaaring magdulot ng di-inaasahang asta ang iyong alagang hayop. Single-use magic para sa kasama ng urban explorer. Nawawala pagkatapos gamitin, walang ebidensya maliban sa isang kintab na alagang hayop.",
+ 	 	 	 	"eng": "FurFlush Spray: The sleek canister reads 'Instant Clean, Instant Gone.' A quick spritz turns your grimy pet gleaming—no rinse, no mess, just poof! Perfect for those 'oops' moments before a cyber meet-up. Caution: May lead to unexpected pet swagger. Single-use magic for the urban explorer's companion. Disappears after use, leaving no evidence except a dazzling pet."
+ 	 	 	}
+ 	 	},
+ 	 	"petMedicine": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "PurrfectCure",
+ 	 	 	 	"eng": "PawfectCure"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Kapag ang iyong alagang hayop ay hindi gaanong okay, o kaya naman ay medyo hindi maganda ang pakiramdam, ito ang dapat mong gamitin. Ito ay nakakatulong sa lahat mula sa sipon hanggang sa 'kumain ng kakaibang bagay' na pakiramdam. Mag-ingat sa mga epekto: maaaring magdulot ito ng biglang pagpapahalaga sa iyong pagluluto at pagtaas ng mga yakapang atake. Dahil minsan, ang pinakamahusay na lunas ay kaunting tawanan... at PawfectCure.",
+ 	 	 	 	"eng": "When your pet's feeling under the weather, or just plain off, this is the go-to. It tackles everything from the sniffles to the 'I ate something weird' blues. Beware of side effects: may cause a sudden appreciation for your cooking and an increase in snuggle attacks. Because sometimes, the best remedy is a little laughter... and PawfectCure."
  	 	 	}
  	 	},
  	 	"experienceShard": {
@@ -6066,6 +7083,12 @@
  	 	 	 	 	"trans": "Go to gang headquartesr",
  	 	 	 	 	"eng": "Go to gang headquarters"
  	 	 	 	}
+ 	 	 	},
+ 	 	 	"toApartment": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Pumunta ka sa iyong apartment",
+ 	 	 	 	 	"eng": "Go to your apartment"
+ 	 	 	 	}
  	 	 	}
  	 	},
  	 	"job": {
@@ -6122,6 +7145,29 @@
  	 	 	"cantEnterError": {
  	 	 	 	"trans": "Kailangan mong sumali sa isang gang upang makapasok sa lugar na ito",
  	 	 	 	"eng": "You need to join a gang to enter this area"
+ 	 	 	}
+ 	 	},
+ 	 	"apartment": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Aking Apartment",
+ 	 	 	 	"eng": "My Apartment"
+ 	 	 	},
+ 	 	 	"toMainHub": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Bumalik sa Sentro ng Shangri-La City",
+ 	 	 	 	 	"eng": "Return to Shangri-La City Center"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "[Apartment]\r\n        Ang iyong maaliwalas na apartment sa siyudad. Naghihintay ang iyong mga alagang hayop na bumalik ka sa bahay.",
+ 	 	 	 	"eng": "[Apartment]\r\n        Your cozy apartment in the city. your pets are waiting for you to come home."
+ 	 	 	},
+ 	 	 	"cantEnterError": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"level"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Kailangan mong maging at least level ${level} para makarenta ng apartment",
+ 	 	 	 	"eng": "You need to be at least level ${level} to rent an apartment"
  	 	 	}
  	 	},
  	 	"zone": {
@@ -6668,6 +7714,56 @@
  	 	 	 	"eng": "B3llial"
  	 	 	}
  	 	},
+ 	 	"halloween": {
+ 	 	 	"defaultLines": {
+ 	 	 	 	"trans": [
+ 	 	 	 	 	"Pumpkin is my source of power!",
+ 	 	 	 	 	"Check out my pumpkin costume!",
+ 	 	 	 	 	"Hmmmm, I wonder what's inside this pumpkin...",
+ 	 	 	 	 	"Give me your pumpkin, and I'll give you a treat!"
+ 	 	 	 	],
+ 	 	 	 	"eng": [
+ 	 	 	 	 	"Pumpkin is my source of power!",
+ 	 	 	 	 	"Check out my pumpkin costume!",
+ 	 	 	 	 	"Hmmmm, I wonder what's inside this pumpkin...",
+ 	 	 	 	 	"Give me your pumpkin, and I'll give you a treat!"
+ 	 	 	 	]
+ 	 	 	},
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Alleyway",
+ 	 	 	 	"eng": "Alleyway"
+ 	 	 	},
+ 	 	 	"npcName": {
+ 	 	 	 	"trans": "Pumpkin weirdo",
+ 	 	 	 	"eng": "pumpkin weirdo"
+ 	 	 	}
+ 	 	},
+ 	 	"petShop": {
+ 	 	 	"defaultLines": {
+ 	 	 	 	"trans": [
+ 	 	 	 	 	"Hey, choom! Neon Paws is for the brave. These sprites need your daily grind. Ready to dive in?",
+ 	 	 	 	 	"Lookin' sharp, netrunner! Here, pets are more than code, they need your daily hack to thrive.",
+ 	 	 	 	 	"What's up, street samurai? Partner with a survivor. Without your daily deeds, they're zeroed.",
+ 	 	 	 	 	"Edge runner, eh? This is where tech meets heart. Ignore them, and they vanish into the net. Daily care, got it?",
+ 	 	 	 	 	"Cyberdeck in hand, heart on sleeve? Our critters need that daily touch or they'll fade into the static."
+ 	 	 	 	],
+ 	 	 	 	"eng": [
+ 	 	 	 	 	"Hey, choom! Neon Paws is for the brave. These sprites need your daily grind. Ready to dive in?",
+ 	 	 	 	 	"Lookin' sharp, netrunner! Here, pets are more than code, they need your daily hack to thrive.",
+ 	 	 	 	 	"What's up, street samurai? Partner with a survivor. Without your daily deeds, they're zeroed.",
+ 	 	 	 	 	"Edge runner, eh? This is where tech meets heart. Ignore them, and they vanish into the net. Daily care, got it?",
+ 	 	 	 	 	"Cyberdeck in hand, heart on sleeve? Our critters need that daily touch or they'll fade into the static."
+ 	 	 	 	]
+ 	 	 	},
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Neon Paws Santuwaryo",
+ 	 	 	 	"eng": "Neon Paws Sanctuary"
+ 	 	 	},
+ 	 	 	"npcName": {
+ 	 	 	 	"trans": "Jin",
+ 	 	 	 	"eng": "Jin"
+ 	 	 	}
+ 	 	},
  	 	"recycleMachine": {
  	 	 	"name": {
  	 	 	 	"trans": "Awtomatikong Recycler",
@@ -6697,6 +7793,58 @@
  	 	 	 	"trans": "Mga scavenger",
  	 	 	 	"eng": "Scavengers"
  	 	 	}
+ 	 	}
+ 	},
+ 	"petType": {
+ 	 	"dog": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Aso",
+ 	 	 	 	"eng": "Dog"
+ 	 	 	}
+ 	 	},
+ 	 	"cat": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Pusa",
+ 	 	 	 	"eng": "Cat"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"petStatus": {
+ 	 	"sick": {
+ 	 	 	"trans": "Astig",
+ 	 	 	"eng": "Sick"
+ 	 	},
+ 	 	"hungry": {
+ 	 	 	"trans": "Gutom",
+ 	 	 	"eng": "Hungry"
+ 	 	},
+ 	 	"starving": {
+ 	 	 	"trans": "Nagugutom",
+ 	 	 	"eng": "Starving"
+ 	 	},
+ 	 	"wellFed": {
+ 	 	 	"trans": "Busog",
+ 	 	 	"eng": "Well Fed"
+ 	 	},
+ 	 	"dirty": {
+ 	 	 	"trans": "Marumi",
+ 	 	 	"eng": "Dirty"
+ 	 	},
+ 	 	"filthy": {
+ 	 	 	"trans": "Maruming",
+ 	 	 	"eng": "Filthy"
+ 	 	},
+ 	 	"dead": {
+ 	 	 	"trans": "Patay",
+ 	 	 	"eng": "Deceased"
+ 	 	},
+ 	 	"unhappy": {
+ 	 	 	"trans": "Di masaya",
+ 	 	 	"eng": "Unhappy"
+ 	 	},
+ 	 	"depressed": {
+ 	 	 	"trans": "Lungkot",
+ 	 	 	"eng": "Depressed"
  	 	}
  	},
  	"action": {
@@ -6826,6 +7974,22 @@
  	 	 	 	"eng": "Trade"
  	 	 	}
  	 	},
+ 	 	"bulkCrafting": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Bulk crafting",
+ 	 	 	 	"eng": "Bulk Crafting"
+ 	 	 	}
+ 	 	},
+ 	 	"petAFK": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Oras ng Pagiging Volunteer sa Shelter ng mga Alagang Hayop",
+ 	 	 	 	"eng": "Pet Shelter Volunteer Shift"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Maging volunteer sa lokal na tahanan ng mga alagang hayop upang tumulong sa pag-aalaga ng mga alagang hayop.",
+ 	 	 	 	"eng": "Volunteer at the local pet shelter to help take care of the animals."
+ 	 	 	}
+ 	 	},
  	 	"autoFarm": {
  	 	 	"name": {
  	 	 	 	"trans": "Deploy Farm Bot",
@@ -6855,6 +8019,59 @@
  	 	 	 	"trans": "[AFK Resource Gather] \r\n                     Maghanap sa paligid ng ${zoneName} at scavenge para sa mga kapaki -pakinabang na item. \r\n                     Sino ang nakakaalam, baka mapalad ka!",
  	 	 	 	"eng": "[AFK Resource Gather]\r\n                    Search around in ${zoneName} and scavenge for useful items.\r\n                    Who knows, maybe you'll get lucky!"
  	 	 	}
+ 	 	}
+ 	},
+ 	"leaderboard": {
+ 	 	"skip": {
+ 	 	 	"trans": "Mga puntos ng laktawan",
+ 	 	 	"eng": "Skip Points"
+ 	 	},
+ 	 	"level": {
+ 	 	 	"trans": "Antas",
+ 	 	 	"eng": "Level"
+ 	 	},
+ 	 	"epicPrint": {
+ 	 	 	"trans": "Ang mga epikong kagamitan na nakalimbag",
+ 	 	 	"eng": "Epic Equipment Printed"
+ 	 	},
+ 	 	"epicBagPrint": {
+ 	 	 	"trans": "Epic bag na ginawa",
+ 	 	 	"eng": "Epic Bag Crafted"
+ 	 	},
+ 	 	"mining": {
+ 	 	 	"trans": "Antas ng pagmimina",
+ 	 	 	"eng": "Mining Level"
+ 	 	},
+ 	 	"ammo": {
+ 	 	 	"trans": "At ang levelvel",
+ 	 	 	"eng": "Ammo Level"
+ 	 	},
+ 	 	"medical": {
+ 	 	 	"trans": "Antas ng medikal",
+ 	 	 	"eng": "Medical Level"
+ 	 	},
+ 	 	"scavenge": {
+ 	 	 	"trans": "Antas ng scavenge",
+ 	 	 	"eng": "Scavenge Level"
+ 	 	},
+ 	 	"molecular": {
+ 	 	 	"trans": "Antas ng pag -print ng molekular",
+ 	 	 	"eng": "Molecular Print Level"
+ 	 	},
+ 	 	"streetcred": {
+ 	 	 	"trans": "Kilala kahit saan",
+ 	 	 	"eng": "Street Cred"
+ 	 	},
+ 	 	"description": {
+ 	 	 	"vars": [
+ 	 	 	 	"minutes"
+ 	 	 	],
+ 	 	 	"trans": "Ang mga pag -update ng listahan ng Leaderboard bawat ${minutes} minuto",
+ 	 	 	"eng": "Leaderboard listing updates every ${minutes} minutes"
+ 	 	},
+ 	 	"noPlayers": {
+ 	 	 	"trans": "Sa kasalukuyan walang mga manlalaro sa leaderboard na ito",
+ 	 	 	"eng": "Currently No Players in this Leaderboard"
  	 	}
  	},
  	"Quest": {
@@ -7050,6 +8267,12 @@
  	 	 	 	"eng": "Unlock Mysterious Container"
  	 	 	}
  	 	},
+ 	 	"christmasGift2": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "I -unlock ang Frosty Container",
+ 	 	 	 	"eng": "Unlock Frosty Container"
+ 	 	 	}
+ 	 	},
  	 	"backpack1": {
  	 	 	"name": {
  	 	 	 	"trans": "Matandang supot",
@@ -7090,12 +8313,6 @@
  	 	 	 	"eng": "AI Core Cluster"
  	 	 	}
  	 	},
- 	 	"halloween": {
- 	 	 	"name": {
- 	 	 	 	"trans": "Jack O Lantern",
- 	 	 	 	"eng": "Jack O Lantern"
- 	 	 	}
- 	 	},
  	 	"christmasToBox": {
  	 	 	"name": {
  	 	 	 	"trans": "Naka -lock ang maalamat na lalagyan",
@@ -7113,6 +8330,40 @@
  	 	 	 	"trans": "Medical Tech Cluster",
  	 	 	 	"eng": "Medical Tech Cluster"
  	 	 	}
+ 	 	},
+ 	 	"medicalTechClusterRevers": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Medikal na tech scrap",
+ 	 	 	 	"eng": "Medical Tech Scrap"
+ 	 	 	}
+ 	 	},
+ 	 	"techScrapCluster": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Tech scrap cluster",
+ 	 	 	 	"eng": "Tech Scrap Cluster"
+ 	 	 	}
+ 	 	},
+ 	 	"techScrapClusterReverse": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Tech scrap",
+ 	 	 	 	"eng": "Tech Scrap"
+ 	 	 	}
+ 	 	},
+ 	 	"unlockRareEquipmentCrate": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "I -unlock ang mga bihirang kagamitan sa crate",
+ 	 	 	 	"eng": "Unlock Rare Equipment Crate"
+ 	 	 	}
+ 	 	},
+ 	 	"craftPetToken": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Gumawa ng Adoption Pass sa Craft Sanctuary",
+ 	 	 	 	"eng": "Craft Sanctuary Adoption Pass"
+ 	 	 	}
+ 	 	},
+ 	 	"craft": {
+ 	 	 	"trans": "Gawa",
+ 	 	 	"eng": "Craft"
  	 	},
  	 	"ammo1": {
  	 	 	"vars": [
@@ -7204,6 +8455,10 @@
  	 	 	"trans": "Chat Exploit [pag -ibig]",
  	 	 	"eng": "Chat Exploit [LOVE]"
  	 	},
+ 	 	"posh": {
+ 	 	 	"trans": "Chat Exploit [POSH]",
+ 	 	 	"eng": "Chat Exploit [POSH]"
+ 	 	},
  	 	"chatExploitProtect": {
  	 	 	"trans": "Pag -encrypt ng chat",
  	 	 	"eng": "Chat Encryption"
@@ -7219,6 +8474,30 @@
  	 	"aiConnect": {
  	 	 	"trans": "Koneksyon ng Cyberspace",
  	 	 	"eng": "Cyberspace Connection"
+ 	 	},
+ 	 	"globalParty": {
+ 	 	 	"trans": "Global Party",
+ 	 	 	"eng": "Global Party"
+ 	 	},
+ 	 	"afkExp": {
+ 	 	 	"trans": "Afk exp boost",
+ 	 	 	"eng": "AFK EXP Boost"
+ 	 	},
+ 	 	"petRevive": {
+ 	 	 	"trans": "Ibangon ang Alagang Robot",
+ 	 	 	"eng": "Pet Revive"
+ 	 	},
+ 	 	"petReviveDesc": {
+ 	 	 	"trans": "Ang pagbuhay sa alagang hayop ay maaari nang gawin sa panahon ng buff na ito.",
+ 	 	 	"eng": "Pet revival is now available during this buff duration."
+ 	 	},
+ 	 	"petDraw": {
+ 	 	 	"trans": "Nasa aktibasyon na ang Pag-aampon ng Alagang Hayop",
+ 	 	 	"eng": "Pet Adoption Activated"
+ 	 	},
+ 	 	"petDrawDesc": {
+ 	 	 	"trans": "Ang pag-aampon ng alagang hayop ay maaari na ngayong panahon ng pag-boost.",
+ 	 	 	"eng": "Pet adoption is now available during this buff duration."
  	 	}
  	},
  	"combat": {
@@ -7279,6 +8558,52 @@
  	 	 	],
  	 	 	"trans": "Nakatanggap ka ng ${amount} ${itemName}",
  	 	 	"eng": "You received ${amount} ${itemName}"
+ 	 	}
+ 	},
+ 	"chatExploit": {
+ 	 	"loveWords": {
+ 	 	 	"trans": [
+ 	 	 	 	"Love you",
+ 	 	 	 	"You guys are great",
+ 	 	 	 	"You guys are the best",
+ 	 	 	 	"love yall",
+ 	 	 	 	"You are amazing",
+ 	 	 	 	"we are best friend",
+ 	 	 	 	"Love you all",
+ 	 	 	 	"you are great",
+ 	 	 	 	"you the best",
+ 	 	 	 	"we are awesome",
+ 	 	 	 	"you are awesome",
+ 	 	 	 	"have a nice day",
+ 	 	 	 	"miss you",
+ 	 	 	 	"miss you guys",
+ 	 	 	 	"KYAAAAAAAAA",
+ 	 	 	 	"wish you have nice day",
+ 	 	 	 	"I love you",
+ 	 	 	 	"can we hug?",
+ 	 	 	 	"how much you love me?"
+ 	 	 	],
+ 	 	 	"eng": [
+ 	 	 	 	"Love you",
+ 	 	 	 	"You guys are great",
+ 	 	 	 	"You guys are the best",
+ 	 	 	 	"love yall",
+ 	 	 	 	"You are amazing",
+ 	 	 	 	"we are best friend",
+ 	 	 	 	"Love you all",
+ 	 	 	 	"you are great",
+ 	 	 	 	"you the best",
+ 	 	 	 	"we are awesome",
+ 	 	 	 	"you are awesome",
+ 	 	 	 	"have a nice day",
+ 	 	 	 	"miss you",
+ 	 	 	 	"miss you guys",
+ 	 	 	 	"KYAAAAAAAAA",
+ 	 	 	 	"wish you have nice day",
+ 	 	 	 	"I love you",
+ 	 	 	 	"can we hug?",
+ 	 	 	 	"how much you love me?"
+ 	 	 	]
  	 	}
  	},
  	"chatServer": {
@@ -7568,55 +8893,13 @@
  	 	"upgradePocketed": {
  	 	 	"trans": "ng pagpapalawak",
  	 	 	"eng": "of Expansion"
+ 	 	},
+ 	 	"upgradeHealing": {
+ 	 	 	"trans": "ng pagpapagaling",
+ 	 	 	"eng": "of Healing"
  	 	}
  	},
  	"market": {
- 	 	"amountSelectModal": {
- 	 	 	"title": {
- 	 	 	 	"trans": "Ilan ang nais mong bilhin?",
- 	 	 	 	"eng": "How many would you like to purchase?"
- 	 	 	},
- 	 	 	"totalPrice": {
- 	 	 	 	"vars": [
- 	 	 	 	 	"total"
- 	 	 	 	],
- 	 	 	 	"trans": "It will cost ${total} Bitcoin total",
- 	 	 	 	"eng": "it will cost ${total} Bitcoin total"
- 	 	 	}
- 	 	},
- 	 	"notEnoughMoney": {
- 	 	 	"trans": "Hindi sapat na bitcoin",
- 	 	 	"eng": "Insufficient bitcoin"
- 	 	},
- 	 	"priceSelectModal": {
- 	 	 	"title2": {
- 	 	 	 	"vars": [
- 	 	 	 	 	"itemName"
- 	 	 	 	],
- 	 	 	 	"trans": "Presyo para sa ${itemName}",
- 	 	 	 	"eng": "Price for ${itemName}"
- 	 	 	}
- 	 	},
- 	 	"priceConfirm": {
- 	 	 	"vars": [
- 	 	 	 	"amountStr",
- 	 	 	 	"priceStr",
- 	 	 	 	"itemName"
- 	 	 	],
- 	 	 	"trans": "You are selling ${amountStr} ${itemName}(s) at the price of ${priceStr} Per Item",
- 	 	 	"eng": "You are selling ${amountStr} ${itemName}(s), at the price of ${priceStr} Per Item"
- 	 	},
- 	 	"totalConfirm": {
- 	 	 	"vars": [
- 	 	 	 	"total"
- 	 	 	],
- 	 	 	"trans": "If all items are sold, you will earn ${total} Bitcoins",
- 	 	 	"eng": "If all items are sold, you will earn ${total} BitCoins"
- 	 	},
- 	 	"sellAmountModalTitle": {
- 	 	 	"trans": "Ilan ang nais mong ibenta?",
- 	 	 	"eng": "How many would you like to sell?"
- 	 	},
  	 	"upgradeSlot": {
  	 	 	"trans": "Mag -upgrade",
  	 	 	"eng": "Upgrade"
@@ -7635,12 +8918,161 @@
  	 	 	],
  	 	 	"trans": "Maaari mong dagdagan ang iyong puwang sa merkado sa ${slot} sa pamamagitan ng pagbabayad ng ${price} Bitcoins",
  	 	 	"eng": "You can increase your market slot to ${slot} by paying ${price} BitCoins"
+ 	 	},
+ 	 	"purchaseModal": {
+ 	 	 	"purchase": {
+ 	 	 	 	"trans": "Bumili",
+ 	 	 	 	"eng": "Purchase"
+ 	 	 	}
  	 	}
  	},
  	"mobile": {
  	 	"returnToAppMessage": {
  	 	 	"trans": "Pag -sync sa server ..",
  	 	 	"eng": "Syncing with server.."
+ 	 	}
+ 	},
+ 	"petDetailsPage": {
+ 	 	"dispose": {
+ 	 	 	"trans": "I-discard",
+ 	 	 	"eng": "dispose"
+ 	 	},
+ 	 	"disposeConfirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "I-discard",
+ 	 	 	 	"eng": "dispose"
+ 	 	 	},
+ 	 	 	"message": {
+ 	 	 	 	"trans": "Sigurado ka bang gusto mong itapon ang alagang ito? hindi na ito maaaring bawiin",
+ 	 	 	 	"eng": "Are you sure you want to dispose of this pet? this cannot be undone"
+ 	 	 	}
+ 	 	},
+ 	 	"rerollImage": {
+ 	 	 	"trans": "I-roll ulit ang Larawan",
+ 	 	 	"eng": "re-roll Image"
+ 	 	},
+ 	 	"rerollImageConfirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "I-roll ulit ang Larawan",
+ 	 	 	 	"eng": "re-roll Image"
+ 	 	 	},
+ 	 	 	"message": {
+ 	 	 	 	"trans": "Sigurado ka bang gusto mong i-re-roll ang larawan ng alagang ito?",
+ 	 	 	 	"eng": "Are you sure you want to re-roll this pets image?"
+ 	 	 	}
+ 	 	},
+ 	 	"petNotFound": {
+ 	 	 	"trans": "Ay, wala yung alagang hayop",
+ 	 	 	"eng": "Pet not found"
+ 	 	},
+ 	 	"name": {
+ 	 	 	"trans": "Pangalan",
+ 	 	 	"eng": "name"
+ 	 	},
+ 	 	"age": {
+ 	 	 	"trans": "Gulang",
+ 	 	 	"eng": "age"
+ 	 	},
+ 	 	"status": {
+ 	 	 	"trans": "kalagayan",
+ 	 	 	"eng": "status"
+ 	 	},
+ 	 	"noStatus": {
+ 	 	 	"trans": "Malusog",
+ 	 	 	"eng": "healthy"
+ 	 	},
+ 	 	"deadRemoveMessage": {
+ 	 	 	"vars": [
+ 	 	 	 	"date"
+ 	 	 	],
+ 	 	 	"trans": "Matatanggal sa ${date}",
+ 	 	 	"eng": "will be removed at ${date}"
+ 	 	},
+ 	 	"hunger": {
+ 	 	 	"trans": "Gutom",
+ 	 	 	"eng": "Hunger"
+ 	 	},
+ 	 	"feed": {
+ 	 	 	"trans": "Pakain",
+ 	 	 	"eng": "Feed"
+ 	 	},
+ 	 	"noFood": {
+ 	 	 	"vars": [
+ 	 	 	 	"item"
+ 	 	 	],
+ 	 	 	"trans": "Wala kang ${item} para pakainin ang iyong alaga",
+ 	 	 	"eng": "You don't have ${item} to feed your pet"
+ 	 	},
+ 	 	"happiness": {
+ 	 	 	"trans": "Kasiyahan",
+ 	 	 	"eng": "Happiness"
+ 	 	},
+ 	 	"play": {
+ 	 	 	"trans": "Maglaro",
+ 	 	 	"eng": "Play"
+ 	 	},
+ 	 	"noToy": {
+ 	 	 	"vars": [
+ 	 	 	 	"item"
+ 	 	 	],
+ 	 	 	"trans": "Wala kang ${item} para makipaglaro sa iyong alaga",
+ 	 	 	"eng": "You don't have ${item} to play with your pet"
+ 	 	},
+ 	 	"cleanliness": {
+ 	 	 	"trans": "Kalinisan",
+ 	 	 	"eng": "Cleanliness"
+ 	 	},
+ 	 	"clean": {
+ 	 	 	"trans": "Linis",
+ 	 	 	"eng": "Clean"
+ 	 	},
+ 	 	"noCleaner": {
+ 	 	 	"vars": [
+ 	 	 	 	"item"
+ 	 	 	],
+ 	 	 	"trans": "\"Wala kang ${item} para linisin ang alagang hayop mo.\"",
+ 	 	 	"eng": "You don't have ${item} to clean your pet"
+ 	 	},
+ 	 	"giveMedicine": {
+ 	 	 	"trans": "Magbigay ng gamot",
+ 	 	 	"eng": "Give Medicine"
+ 	 	},
+ 	 	"reviveButton": {
+ 	 	 	"trans": "Buhayin",
+ 	 	 	"eng": "Revive"
+ 	 	}
+ 	},
+ 	"sendStreetCred": {
+ 	 	"error": {
+ 	 	 	"giveSelf": {
+ 	 	 	 	"trans": "Hindi ka maaaring magpadala ng kredito sa kalye sa iyong sarili",
+ 	 	 	 	"eng": "you can't send street cred to yourself"
+ 	 	 	}
+ 	 	},
+ 	 	"title": {
+ 	 	 	"trans": "Magpadala ng kredito sa kalye",
+ 	 	 	"eng": "Send street cred"
+ 	 	},
+ 	 	"description": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "Sigurado ka bang nais mong magpadala ng kredito sa kalye sa ${playerName}? Maaari kang magpadala ng isang kredito sa kalye sa sinuman araw -araw.",
+ 	 	 	"eng": "Are you sure you want to send street cred to ${playerName}? you can send one street cred to anyone everyday."
+ 	 	}
+ 	},
+ 	"sendStreetCredError": {
+ 	 	"title": {
+ 	 	 	"trans": "Hindi makapagpadala ng kredito sa kalye ngayon",
+ 	 	 	"eng": "Can't send street cred now"
+ 	 	},
+ 	 	"description2": {
+ 	 	 	"trans": "Maaari ka lamang magpadala ng isang kredito sa kalye bawat araw. At dapat kang antas ng 10 o pataas.",
+ 	 	 	"eng": "You can only send one street cred per day. and you must be level 10 or above."
+ 	 	},
+ 	 	"confirmText": {
+ 	 	 	"trans": "Ok",
+ 	 	 	"eng": "OK"
  	 	}
  	},
  	"secretKey": {
@@ -7755,52 +9187,27 @@
  	 	 	 	"trans": "Kabuuan: ${amount} ${itemName}",
  	 	 	 	"eng": "Total: ${amount} ${itemName}"
  	 	 	}
- 	 	}
- 	},
- 	"chatExploit": {
- 	 	"loveWords": {
- 	 	 	"trans": [
- 	 	 	 	"Love you",
- 	 	 	 	"You guys are great",
- 	 	 	 	"You guys are the best",
- 	 	 	 	"love yall",
- 	 	 	 	"You are amazing",
- 	 	 	 	"we are best friend",
- 	 	 	 	"Love you all",
- 	 	 	 	"you are great",
- 	 	 	 	"you the best",
- 	 	 	 	"we are awesome",
- 	 	 	 	"you are awesome",
- 	 	 	 	"have a nice day",
- 	 	 	 	"miss you",
- 	 	 	 	"miss you guys",
- 	 	 	 	"KYAAAAAAAAA",
- 	 	 	 	"wish you have nice day",
- 	 	 	 	"I love you",
- 	 	 	 	"can we hug?",
- 	 	 	 	"how much you love me?"
+ 	 	},
+ 	 	"npcNotAvailable": {
+ 	 	 	"trans": "Ang shop na ito ay hindi magagamit sa ngayon",
+ 	 	 	"eng": "This shop is not available at the moment"
+ 	 	},
+ 	 	"purchasedMessage": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"item"
  	 	 	],
- 	 	 	"eng": [
- 	 	 	 	"Love you",
- 	 	 	 	"You guys are great",
- 	 	 	 	"You guys are the best",
- 	 	 	 	"love yall",
- 	 	 	 	"You are amazing",
- 	 	 	 	"we are best friend",
- 	 	 	 	"Love you all",
- 	 	 	 	"you are great",
- 	 	 	 	"you the best",
- 	 	 	 	"we are awesome",
- 	 	 	 	"you are awesome",
- 	 	 	 	"have a nice day",
- 	 	 	 	"miss you",
- 	 	 	 	"miss you guys",
- 	 	 	 	"KYAAAAAAAAA",
- 	 	 	 	"wish you have nice day",
- 	 	 	 	"I love you",
- 	 	 	 	"can we hug?",
- 	 	 	 	"how much you love me?"
- 	 	 	]
+ 	 	 	"trans": "Bumili ka ng ${amount} ${item}",
+ 	 	 	"eng": "You have purchased ${amount} ${item}"
+ 	 	},
+ 	 	"exchangedMessage": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"item",
+ 	 	 	 	"item2"
+ 	 	 	],
+ 	 	 	"trans": "Nagpalitan ka ng ${amount} ${item} para sa ${item2}",
+ 	 	 	"eng": "You have exchanged ${amount} ${item} for ${item2}"
  	 	}
  	},
  	"bundleDetailsModal": {
@@ -7830,6 +9237,16 @@
  	 	 	 	"trans": "Bumili",
  	 	 	 	"eng": "Purchase"
  	 	 	}
+ 	 	}
+ 	},
+ 	"clanNoticeModal": {
+ 	 	"title": {
+ 	 	 	"trans": "Magpasok ng bagong paunawa",
+ 	 	 	"eng": "enter new notice"
+ 	 	},
+ 	 	"submit": {
+ 	 	 	"trans": "ipadala",
+ 	 	 	"eng": "send"
  	 	}
  	},
  	"createClanModal": {
@@ -7898,26 +9315,57 @@
  	 	 	"eng": "Accept"
  	 	}
  	},
- 	"christmasPromo": {
+ 	"petReviveModal": {
+ 	 	"reviveButton": {
+ 	 	 	"error": {
+ 	 	 	 	"trans": "Kamakailan mo lang binuhay ang isang alagang hayop",
+ 	 	 	 	"eng": "You have revived a pet recently"
+ 	 	 	},
+ 	 	 	"trans": "Buhayin",
+ 	 	 	"eng": "Revive"
+ 	 	},
+ 	 	"activateButton": {
+ 	 	 	"error": {
+ 	 	 	 	"trans": "Kailangan mo munang i-activate ang pet revive",
+ 	 	 	 	"eng": "You need to activate pet revive first"
+ 	 	 	},
+ 	 	 	"title": {
+ 	 	 	 	"trans": "I-activate ang pagbuhay ng alagang hayop",
+ 	 	 	 	"eng": "Activate"
+ 	 	 	},
+ 	 	 	"desc": {
+ 	 	 	 	"trans": "Buksan ang pagbuhay ng alagang hayop",
+ 	 	 	 	"eng": "Activate pet revive"
+ 	 	 	},
+ 	 	 	"loading": {
+ 	 	 	 	"trans": "Nag-a-activate...",
+ 	 	 	 	"eng": "Activating..."
+ 	 	 	}
+ 	 	},
  	 	"title": {
- 	 	 	"trans": "Maligayang Holiday ng Taglamig!",
- 	 	 	"eng": "Happy Winter Holiday!"
+ 	 	 	"trans": "Ipagbuhay ang alagang hayop",
+ 	 	 	"eng": "Revive pet"
+ 	 	},
+ 	 	"reviveDescription": {
+ 	 	 	"vars": [
+ 	 	 	 	"buffName"
+ 	 	 	],
+ 	 	 	"trans": "Maaari mong buhayin ang iyong alagang hayop kapag aktibo ang ${buffName} buff",
+ 	 	 	"eng": "You may revive your pet when ${buffName} buff is active"
+ 	 	}
+ 	},
+ 	"artPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Spooky Character Art Competition!",
+ 	 	 	"eng": "Spooky Character Art Competition!"
  	 	},
  	 	"desc1": {
- 	 	 	"trans": "Ito ang pinaka -kahanga -hangang oras ng taon muli! Sa Shangri-La ipinagdiriwang namin ang holiday ng taglamig na may isang espesyal na kaganapan!",
- 	 	 	"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!"
+ 	 	 	"trans": "Nagbibigay kami ng mga epikong cache, explorer backpack, maleta ng empleyado at mga sagisag sa nangungunang 5 nagwagi!",
+ 	 	 	"eng": "We are giving out Epic Caches, Explorer Backpack, Employee Suitcase and Emblems to the top 5 winners!"
  	 	},
  	 	"desc2": {
- 	 	 	"vars": [
- 	 	 	 	"itemName",
- 	 	 	 	"craftItem"
- 	 	 	],
- 	 	 	"trans": "Ang mga Kaaway at AI Core Auto Farm ay magkakaroon ng pagkakataon na ihulog ang ${itemName}, maaari mong gamitin ito upang likhain ang ${craftItem} o buksan ito nang direkta!",
- 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop ${itemName}, you can use this to craft ${craftItem} or open it directly!"
- 	 	},
- 	 	"desc3": {
- 	 	 	"trans": "Sa panahon ng kapaskuhan, dalawang oras na limitadong chat frame at emblema ay magagamit!",
- 	 	 	"eng": "During the holiday season, two time limited chat frame and emblem will be available!"
+ 	 	 	"trans": "Suriin ang #event channel sa Discord para sa higit pang mga detalye!",
+ 	 	 	"eng": "Check out the #event channel on Discord for more details!"
  	 	}
  	},
  	"halloweenPromo": {
@@ -7929,13 +9377,56 @@
  	 	 	"trans": "Ito ang nakakatakot na oras ng taon muli! Ipinagdiriwang ng Shang-Ri-La ang Halloween na may isang espesyal na kaganapan!",
  	 	 	"eng": "Its the spooky time of the year again! Shang-ri-la is celebrating Halloween with a special event!"
  	 	},
- 	 	"desc2": {
- 	 	 	"trans": "Ang mga kaaway at AI Core Auto Farm ay magkakaroon ng pagkakataon na ibagsak ang Jack-O-Lanterns! Maaari mong gamitin ang mga ito sa Craft Locked Legendary Container!",
- 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop Jack-o-lanterns! you can use these to craft Locked Legendary Containers!"
+ 	 	"desc2v2": {
+ 	 	 	"trans": "Ang mga Kaaway at AI Core Auto Farm ay magkakaroon ng pagkakataon na ibagsak ang Jack-O-Lanterns!",
+ 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop Jack-o-lanterns!"
  	 	},
- 	 	"desc3": {
- 	 	 	"trans": "Sa panahon ng Halloween, magagamit ang isang oras na limitadong cyber-bat chat donation tier!",
- 	 	 	"eng": "During Halloween, a time limited cyber-bat chat donation tier will be available!"
+ 	 	"desc3v2": {
+ 	 	 	"vars": [
+ 	 	 	 	"npc",
+ 	 	 	 	"location"
+ 	 	 	],
+ 	 	 	"trans": "Maaari kang makahanap ng ${npc} sa ${location} sa panahon ng Halloween, ipagpalit niya ang iyong mga jack-o-lantern para sa mga gantimpala!",
+ 	 	 	"eng": "You can find ${npc} at ${location} during Halloween, he will exchange your Jack-o-lanterns for rewards!"
+ 	 	},
+ 	 	"desc4v2": {
+ 	 	 	"trans": "Sa panahon ng Halloween, isang oras na limitado ang Halloween, ang cyber-bat chat donation tier at may temang mga emblema ay magagamit!",
+ 	 	 	"eng": "During Halloween, a time limited halloween, cyber-bat chat donation tier and themed emblems will be available!"
+ 	 	}
+ 	},
+ 	"christmasPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Maligayang Holiday ng Taglamig!",
+ 	 	 	"eng": "Happy Winter Holiday!"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"trans": "Ito ang pinaka -kahanga -hangang oras ng taon muli! Sa Shangri-La ipinagdiriwang namin ang holiday ng taglamig na may isang espesyal na kaganapan!",
+ 	 	 	"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!"
+ 	 	},
+ 	 	"v2": {
+ 	 	 	"desc2": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ang mga Kaaway at AI Core Auto Farm ay magkakaroon ng pagkakataon na ihulog ang ${itemName}, maaari mong i -unlock ito upang makatanggap ng mga premyo!",
+ 	 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop ${itemName}, you can unlock it to receive prizes!"
+ 	 	 	}
+ 	 	},
+ 	 	"v3": {
+ 	 	 	"desc3": {
+ 	 	 	 	"trans": "Sa panahon ng kapaskuhan, magagamit ang Christmas chat frame at emblema!",
+ 	 	 	 	"eng": "During the holiday season, Christmas chat frame and emblem will be available!"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"christmasPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Kaganapan sa Pasko!",
+ 	 	 	"eng": "Christmas Event!"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"trans": "Oras na limitado ang pagnakawan at chat frame!",
+ 	 	 	"eng": "Time limited loot and chat frame!"
  	 	}
  	},
  	"lunarPromo": {
@@ -7947,15 +9438,14 @@
  	 	 	"trans": "Narito ang Lunar New Year, at ipinagdiriwang namin sa Shang-ri-la na may isang espesyal na kaganapan. Sumali sa amin habang yakapin namin ang pagsisimula ng isang bagong taon, napuno ng mga tradisyon, kagalakan, at sama -sama.",
  	 	 	"eng": "The lunar new year is here, and we're celebrating in Shang-ri-la with a special event. Join us as we embrace the start of a new year, filled with traditions, joy, and togetherness."
  	 	},
- 	 	"desc2": {
+ 	 	"desc2-v2": {
  	 	 	"vars": [
  	 	 	 	"npcShopName",
  	 	 	 	"coinItem",
- 	 	 	 	"llcName",
  	 	 	 	"npcName"
  	 	 	],
- 	 	 	"trans": "Bukas na ngayon ang ${npcShopName} para sa negosyo! Maaari kang gumamit ng ${coinItem} upang bumili ng iba't ibang mga espesyal na lutuin at ${llcName} mula sa ${npcName}!",
- 	 	 	"eng": "${npcShopName} is now open for business! You can use ${coinItem} to purchase various special cuisines and ${llcName} from ${npcName}!"
+ 	 	 	"trans": "Bukas na ngayon ang ${npcShopName} para sa negosyo! Maaari kang gumamit ng ${coinItem} upang bumili ng iba't ibang mga espesyal na lutuin mula sa ${npcName}!",
+ 	 	 	"eng": "${npcShopName} is now open for business! You can use ${coinItem} to purchase various special cuisines from ${npcName}!"
  	 	},
  	 	"desc3": {
  	 	 	"vars": [
@@ -7964,18 +9454,39 @@
  	 	 	],
  	 	 	"trans": "Hindi ito bagong taon kung ang ${envelopItem} ay hindi kasangkot! Ang mga Kaaway at AI Core Auto Farm ay ibababa ang ${envelopItem}, buksan ang mga ito upang makatanggap ng random na halaga ng ${coinItem}!",
  	 	 	"eng": "It's not new year if ${envelopItem} is not involved! Enemies and AI Core auto farm will drop ${envelopItem}, open them to receive random amount of ${coinItem}!"
- 	 	},
+ 	 	}
+ 	},
+ 	"lunarPromo1": {
  	 	"desc4": {
  	 	 	"vars": [
- 	 	 	 	"envelopItem",
- 	 	 	 	"npcShop"
+ 	 	 	 	"itemName"
  	 	 	],
- 	 	 	"trans": "Maaari ka na ngayong makatanggap ng 3 libreng ${envelopItem} sa ${npcShop} araw -araw!",
- 	 	 	"eng": "You can now receive 3 free ${envelopItem} in ${npcShop} every day!"
+ 	 	 	"trans": "Kumuha ng Libreng ${itemName} Base sa Top Up Package!",
+ 	 	 	"eng": "Get free ${itemName} base on top up package!"
  	 	},
  	 	"desc5": {
- 	 	 	"trans": "Nagdagdag ng dalawang bagong oras na limitadong chat frame at mga emblema, mabibili lamang sa panahon ng kaganapan.",
- 	 	 	"eng": "Added two new time limited chat frame and emblems, only purchasable during event period."
+ 	 	 	"trans": "Nagdagdag ng bagong oras na limitadong chat frame at mga emblema, mabibili lamang sa panahon ng kaganapan.",
+ 	 	 	"eng": "Added new time limited chat frame and emblems, only purchasable during event period."
+ 	 	}
+ 	},
+ 	"lunarNewYearPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Maligayang Lunar Bagong Taon!",
+ 	 	 	"eng": "Happy Lunar New Year!"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"item1",
+ 	 	 	 	"item2"
+ 	 	 	],
+ 	 	 	"trans": "Makatanggap ng libreng ${item1} at ${item2} sa panahon ng Lunar New Year 🥳",
+ 	 	 	"eng": "Receive free ${item1} and ${item2} during the lunar new year 🥳"
+ 	 	}
+ 	},
+ 	"promotionModal": {
+ 	 	"title": {
+ 	 	 	"trans": "Mga espesyal na benepisyo",
+ 	 	 	"eng": "Special Benefits"
  	 	}
  	},
  	"referralPromo": {
@@ -8018,6 +9529,195 @@
  	 	 	"eng": "*You will receive the items in your item inbox when your friend reaches level 20"
  	 	}
  	},
+ 	"referralPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Mga Gantimpala sa Referral",
+ 	 	 	"eng": "Referral rewards"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"trans": "Libreng yunit*, bihirang naka -lock na lalagyan, fanny pack",
+ 	 	 	"eng": "Free Unit*, Rare Locked Container, Fanny Pack"
+ 	 	},
+ 	 	"details": {
+ 	 	 	"trans": "mga detalye",
+ 	 	 	"eng": "details"
+ 	 	}
+ 	},
+ 	"sakuraPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Pista ng Sakura",
+ 	 	 	"eng": "Sakura Festival"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"trans": "Nandito na ang Spring Festival! Ang mga petals ng Sakura ay bumabagsak, at ang hangin ay pumupuno ng amoy ng mga bulaklak",
+ 	 	 	"eng": "The Spring Festival is here! Sakura petals are falling, and the air is filled with the fragrance of flowers. "
+ 	 	},
+ 	 	"desc2": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "Lahat ng pag-skip sa panahon ng event ay may ${percent}% diskwento sa kinakailangang yunit",
+ 	 	 	"eng": "All skips during the event period gets ${percent}% off discount on unit required"
+ 	 	},
+ 	 	"desc3": {
+ 	 	 	"trans": "May eksklusibong Sakura chat frame at emblem na magiging available sa panahon ng event",
+ 	 	 	"eng": "Exclusive Sakura chat frame and emblem is available during event period"
+ 	 	},
+ 	 	"chatMessage1": {
+ 	 	 	"trans": "Nandito na ang tagsibol",
+ 	 	 	"eng": "Spring is here"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "Lahat ng skips sa panahon ng event ay may ${percent}% discount sa kinakailangang unit 🥳",
+ 	 	 	"eng": "All skips during the event period gets ${percent}% off discount on unit required 🥳"
+ 	 	}
+ 	},
+ 	"skipDiscountPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Laktawan ang diskwento",
+ 	 	 	"eng": "Skip Discount"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "${percent}% diskwento sa 105 minuto at mas mataas na mga skip!",
+ 	 	 	"eng": "${percent}% discount on 105 minutes and higher skips!"
+ 	 	}
+ 	},
+ 	"skipPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Kumita ng libreng eksklusibong mga pampaganda sa pamamagitan ng paglaktaw",
+ 	 	 	"eng": "Earn free exclusive cosmetics by skipping"
+ 	 	},
+ 	 	"subtitle": {
+ 	 	 	"trans": "Ipakita kung gaano mo nakatulong ang komunidad sa pamamagitan ng paglaktaw! ❤️",
+ 	 	 	"eng": "Show off how much you have helped the community by skipping!❤️"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"emblem"
+ 	 	 	],
+ 	 	 	"trans": "Magsagawa ng ${amount} laktawan upang makakuha ng \"${emblem}\" na sagisag",
+ 	 	 	"eng": "Collect ${amount} skip points to get \"${emblem}\" emblem"
+ 	 	},
+ 	 	"desc2": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"emblem"
+ 	 	 	],
+ 	 	 	"trans": "Magsagawa ng ${amount} laktawan upang makakuha ng \"${emblem}\" na sagisag",
+ 	 	 	"eng": "Collect ${amount} skip points to get \"${emblem}\" emblem"
+ 	 	},
+ 	 	"desc3": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"emblem"
+ 	 	 	],
+ 	 	 	"trans": "Magsagawa ng ${amount} laktawan upang makatanggap ng permanenteng \"${frameName}\" na frame ng chat ng donasyon",
+ 	 	 	"eng": "Collect ${amount} skip points to get \"${emblem}\" emblem"
+ 	 	},
+ 	 	"desc4": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"frameName"
+ 	 	 	],
+ 	 	 	"trans": "Magsagawa ng ${amount} laktawan upang makatanggap ng permanenteng \"${frameName}\" na frame ng chat ng donasyon",
+ 	 	 	"eng": "Collect ${amount} skip points to receive permanent \"${frameName}\" donation chat frame"
+ 	 	},
+ 	 	"chatMessage1": {
+ 	 	 	"vars": [
+ 	 	 	 	"points"
+ 	 	 	],
+ 	 	 	"trans": "Makatanggap sa ${points} Mga puntos ng laktawan",
+ 	 	 	"eng": "Receive at ${points} skip points"
+ 	 	},
+ 	 	"desc5": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"frameName"
+ 	 	 	],
+ 	 	 	"trans": "Kolektahin ang ${amount} Mga puntos ng Laktawan upang makatanggap ng permanenteng \"${frameName}\" na frame ng chat ng donasyon",
+ 	 	 	"eng": "Collect ${amount} skip points to receive permanent \"${frameName}\" donation chat frame"
+ 	 	},
+ 	 	"instructions1": {
+ 	 	 	"trans": "Laktawan ang point na kikitain mo ay base sa tagal ng laktawan:",
+ 	 	 	"eng": "Skip point you earn is base on skip duration:"
+ 	 	},
+ 	 	"instructions2": {
+ 	 	 	"trans": "- 15 hanggang 150 minuto = 1 point bawat 15 minuto",
+ 	 	 	"eng": "- 15 to 150 minutes = 1 point per 15 minutes"
+ 	 	},
+ 	 	"instructions3": {
+ 	 	 	"trans": "- 150 minuto at sa itaas = 10 puntos",
+ 	 	 	"eng": "- 150 minutes and above = 10 points"
+ 	 	},
+ 	 	"footnote2": {
+ 	 	 	"trans": "Sa itaas ng 150 minuto ay naayos sa 10 puntos ay upang hikayatin ang maraming mga skip kaysa sa isang malaking laktawan upang ma -maximize ang benepisyo para sa karamihan ng mga manlalaro",
+ 	 	 	"eng": "Above 150 minutes is fixed to 10 points is to encourage multiple skips rather than one huge skip to maximize benefit for most players"
+ 	 	},
+ 	 	"footnote1": {
+ 	 	 	"trans": "Ang istatistika ng laktawan ay magsisimulang magbilang mula sa pagsisimula ng tampok na ito para sa lahat.",
+ 	 	 	"eng": "The skip point statistic will start counting from the start of this feature for everyone."
+ 	 	}
+ 	},
+ 	"skipPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Laktawan para sa eksklusibong mga pampaganda",
+ 	 	 	"eng": "Skip for exclusive cosmetics"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"trans": "Tumanggap ng iba't ibang mga eksklusibong pampaganda sa pamamagitan ng paglaktaw",
+ 	 	 	"eng": "Receive various exclusive cosmetics by skipping"
+ 	 	},
+ 	 	"chatMessage1": {
+ 	 	 	"vars": [
+ 	 	 	 	"skinName",
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "Maging isang ${skinName}, ${playerName}",
+ 	 	 	"eng": "Be a ${skinName}, ${playerName}"
+ 	 	}
+ 	},
+ 	"thanksgivingPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Maligayang Thanksgiving!",
+ 	 	 	"eng": "Happy Thanksgiving!"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"trans": "Sa panahon ng kaganapan, ang inihaw na pabo ay bihirang ibababa mula sa scavenging at AKF bot sa lahat ng antas",
+ 	 	 	"eng": "During event period, Roasted Turkey will drop rarely from scavenging and AKF Bot on all levels"
+ 	 	},
+ 	 	"desc2": {
+ 	 	 	"trans": "Kapag natupok ang isang inihaw na pabo, makakakuha ka ng +20% exp sa mga gawain ng AFK sa loob ng 20 minuto",
+ 	 	 	"eng": "When a Roasted Turkey is consumed, you will get +20% EXP on AFK tasks for 20 minutes"
+ 	 	},
+ 	 	"footnote1": {
+ 	 	 	"trans": "Mangyaring tandaan na ang tseke ng bonus ng EXP ay nasa oras ng pagkumpleto ng AFK, kaya dapat na aktibo ang inihaw na buff ng pabo sa oras ng pagkumpleto upang matanggap ang bonus.",
+ 	 	 	"eng": "Please note that the EXP bonus check is at AFK completion time, so you must have the Roasted Turkey buff active at the time of completion to receive the bonus."
+ 	 	},
+ 	 	"footnote2": {
+ 	 	 	"trans": "Ang epekto na ito ay stack sa iba pang mga bonus ng EXP, at makakaapekto lamang sa mga gawain ng AFK; Ang mga gawain na walang mga timer ng AFK ay hindi maaapektuhan.",
+ 	 	 	"eng": "This effect will stack with other EXP bonus, and will only affect AFK tasks; tasks that does not have AFK timers will not be affected."
+ 	 	}
+ 	},
+ 	"thanksgivingPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Kaganapan ng Thanksgiving",
+ 	 	 	"eng": "Thanksgiving event"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "Ubusin ang masarap na pabo upang makakuha ng +${percent}% exp sa mga gawain sa AFK",
+ 	 	 	"eng": "Consume delicious turkey to get +${percent}% EXP on AFK tasks"
+ 	 	}
+ 	},
  	"retroPromo": {
  	 	"title": {
  	 	 	"trans": "Pag -update ng Synthwave",
@@ -8058,6 +9758,24 @@
  	 	"desc2": {
  	 	 	"trans": "Dinagdag ng dalawang bagong frame ng donator",
  	 	 	"eng": "Two new donator frames added"
+ 	 	}
+ 	},
+ 	"renamePetModal": {
+ 	 	"title": {
+ 	 	 	"trans": "Palitan ang Pangalan ng Alagang Hayop",
+ 	 	 	"eng": "Rename Pet"
+ 	 	},
+ 	 	"newName": {
+ 	 	 	"trans": "Bagong Pangalan",
+ 	 	 	"eng": "New Name"
+ 	 	},
+ 	 	"description": {
+ 	 	 	"trans": "Ilagay ang bagong pangalan para sa iyong alagang hayop",
+ 	 	 	"eng": "Enter new name for your pet"
+ 	 	},
+ 	 	"rename": {
+ 	 	 	"trans": "Baguhin ang Pangalan",
+ 	 	 	"eng": "Rename"
  	 	}
  	},
  	"reportPlayerModal": {
@@ -8133,9 +9851,24 @@
  	 	 	 	 	"trans": "Payagan ang manlalaro na ito na pamahalaan ang pahintulot ng iba pang mga manlalaro",
  	 	 	 	 	"eng": "Allow this player to manage permission of other players"
  	 	 	 	}
+ 	 	 	},
+ 	 	 	"send_notice": {
+ 	 	 	 	"trans": "Magpadala ng paunawa",
+ 	 	 	 	"eng": "Send Notice",
+ 	 	 	 	"description": {
+ 	 	 	 	 	"trans": "Payagan ang player na ito na magpadala ng paunawa sa lahat ng mga miyembro ng gang",
+ 	 	 	 	 	"eng": "Allow this player to send notice to all gang members"
+ 	 	 	 	}
  	 	 	}
  	 	},
  	 	"error": {
+ 	 	 	"insufficientBitcoin": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Mayroon kang hindi sapat na bitcoin, kinakailangan: ${amount}",
+ 	 	 	 	"eng": "You have insufficient Bitcoin, required: ${amount}"
+ 	 	 	},
  	 	 	"inviteCooldown": {
  	 	 	 	"trans": "Inanyayahan mo na ang player na ito kamakailan",
  	 	 	 	"eng": "You have already invited this player recently"
@@ -8274,6 +10007,17 @@
  	 	 	],
  	 	 	"trans": "${price} USD bawat buwan",
  	 	 	"eng": "${price} USD Per Month"
+ 	 	},
+ 	 	"inAppPurchaseDescription": {
+ 	 	 	"trans": "Subscription based donation, maaari mong kanselahin ito anumang oras mula sa iyong tindahan.",
+ 	 	 	"eng": "Subscription based donation, you can cancel it at anytime from your store."
+ 	 	},
+ 	 	"monthlyPrice": {
+ 	 	 	"vars": [
+ 	 	 	 	"price"
+ 	 	 	],
+ 	 	 	"trans": "${price} kada Buwan",
+ 	 	 	"eng": "${price} per Month"
  	 	}
  	},
  	"cosmetic": {
@@ -8308,6 +10052,150 @@
  	 	"checkEmail": {
  	 	 	"trans": "Mangyaring suriin ang iyong email at sundin ang mga tagubilin upang i -reset ang password",
  	 	 	"eng": "Please check your email and follow the instructions to reset the password"
+ 	 	}
+ 	},
+ 	"leaderboardTypePage": {
+ 	 	"gameplay": {
+ 	 	 	"trans": "Mga leaderboard ng gameplay",
+ 	 	 	"eng": "Gameplay Leaderboards"
+ 	 	},
+ 	 	"gameplayDesc": {
+ 	 	 	"trans": "Ang mga leaderboard na ito ay nagpapakita ng mga istatistika ng gameplay ng manlalaro.💪",
+ 	 	 	"eng": "These leaderboards shows player's gameplay statistics.💪"
+ 	 	},
+ 	 	"gang": {
+ 	 	 	"trans": "Nangungunang mga gang",
+ 	 	 	"eng": "Top Gangs"
+ 	 	},
+ 	 	"control": {
+ 	 	 	"trans": "Kontrol ng trabaho",
+ 	 	 	"eng": "Occupation Control"
+ 	 	},
+ 	 	"contribution": {
+ 	 	 	"trans": "Kontribusyon sa Komunidad",
+ 	 	 	"eng": "Community Contribution"
+ 	 	},
+ 	 	"contributionDesc": {
+ 	 	 	"trans": "Ang mga board na ito ay nagpapakita ng paggalang at kredito sa mga alamat na nag -ambag sa komunidad.❤️",
+ 	 	 	"eng": "These boards shows respect and credits to the legends who have contributed to the community.❤️"
+ 	 	}
+ 	},
+ 	"playerDetailsPage": {
+ 	 	"tabs": {
+ 	 	 	"stats": {
+ 	 	 	 	"trans": "estadistika",
+ 	 	 	 	"eng": "stats"
+ 	 	 	},
+ 	 	 	"equipment": {
+ 	 	 	 	"trans": "imbentaryo",
+ 	 	 	 	"eng": "inventory"
+ 	 	 	},
+ 	 	 	"assets": {
+ 	 	 	 	"trans": "yaman",
+ 	 	 	 	"eng": "assets"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"petListPage": {
+ 	 	"exceedSlot": {
+ 	 	 	"vars": [
+ 	 	 	 	"petName"
+ 	 	 	],
+ 	 	 	"trans": "Si ${petName} ay kasalukuyang nakatira sa kalsada dahil sa kakulangan ng espasyo sa iyong apartment",
+ 	 	 	"eng": "${petName} is currently living on the street due to lack of space in your apartment"
+ 	 	},
+ 	 	"noPet": {
+ 	 	 	"trans": "Wala ka pang alagang hayop",
+ 	 	 	"eng": "You have no pet yet"
+ 	 	},
+ 	 	"acquirePets": {
+ 	 	 	"trans": "Kuha ng mga alagang hayop",
+ 	 	 	"eng": "Acquire Pets"
+ 	 	}
+ 	},
+ 	"petAdoption": {
+ 	 	"error": {
+ 	 	 	"noBuff": {
+ 	 	 	 	"trans": "Di pa naa-activate ang buff",
+ 	 	 	 	"eng": "Buff is not activated"
+ 	 	 	},
+ 	 	 	"cooldown": {
+ 	 	 	 	"trans": "Nakapahinga muna ang pag-aampon ng alagang hayop",
+ 	 	 	 	"eng": "Pet adoption is on cooldown"
+ 	 	 	},
+ 	 	 	"noSlot": {
+ 	 	 	 	"trans": "Kailangan mo nang magrenta ng mas malaking apartment para magkasya ang mas maraming alagang hayop",
+ 	 	 	 	"eng": "You need to rent a bigger apartment to accommodate more pets"
+ 	 	 	},
+ 	 	 	"noItem": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Kailangan mo ng ${itemName} para makapag-ampon ng alagang hayop",
+ 	 	 	 	"eng": "You need a ${itemName} to adopt a pet"
+ 	 	 	}
+ 	 	},
+ 	 	"petSlot": {
+ 	 	 	"trans": "Kakayahan ng alagang hayop sa apartment",
+ 	 	 	"eng": "Apartment pet capacity"
+ 	 	},
+ 	 	"cooldownTitle": {
+ 	 	 	"trans": "May pag-aampon na pwede",
+ 	 	 	"eng": "Adoption Available"
+ 	 	},
+ 	 	"buffActivationButton": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Patakbuhin ang Adoption Buff",
+ 	 	 	 	"eng": "Activate Adoption Buff"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "I-activate para payagan ang lahat ng players na mag-ampon ng alagang hayop habang active ang buff",
+ 	 	 	 	"eng": "Activate to allow all players to adopt a pet while buff is active"
+ 	 	 	},
+ 	 	 	"buttonText": {
+ 	 	 	 	"activated": {
+ 	 	 	 	 	"trans": "Naka-activate",
+ 	 	 	 	 	"eng": "Activated"
+ 	 	 	 	},
+ 	 	 	 	"notActivated": {
+ 	 	 	 	 	"trans": "Patakbuhin ang Buff",
+ 	 	 	 	 	"eng": "Activate Buff"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"confirmTitle": {
+ 	 	 	 	"trans": "Patakbuhin ang Adoption Buff",
+ 	 	 	 	"eng": "Activate Adoption Buff"
+ 	 	 	},
+ 	 	 	"confirmDescription": {
+ 	 	 	 	"trans": "Sigurado ka bang gusto mong i-activate ang Adoption Buff?",
+ 	 	 	 	"eng": "Are you sure you want to activate the Adoption Buff?"
+ 	 	 	}
+ 	 	},
+ 	 	"noItemConfirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Wala kang ${itemName} sa imbentaryo",
+ 	 	 	 	"eng": "No ${itemName} in inventory"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Wala kang ${itemName} sa iyong imbentaryo, pero pwede mo pa ring i-activate ang buff para makinabang ang ibang players, subalit kung wala kang ${itemName}, hindi ka makakapag-ampon ng mga alagang hayop",
+ 	 	 	 	"eng": "You do not have an ${itemName} in your inventory, you still can activate the buff for other players to benefit, however without ${itemName} you will not be able to adopt pets"
+ 	 	 	},
+ 	 	 	"confirmText": {
+ 	 	 	 	"trans": "Patakbuhin ang Buff",
+ 	 	 	 	"eng": "Activate Buff"
+ 	 	 	}
+ 	 	},
+ 	 	"adoptButton": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Mag-ampon ng bagong alagang hayop",
+ 	 	 	 	"eng": "Adopt a new pet"
+ 	 	 	}
  	 	}
  	},
  	"sendCosmeticPage": {
@@ -8417,16 +10305,63 @@
  	 	 	"eng": "You have successfully sent an emblem to player \"${playerName}\""
  	 	}
  	},
+ 	"bulkCrafting": {
+ 	 	"cannotCraft": {
+ 	 	 	"trans": "Hindi ka maaaring gumawa habang hindi idle",
+ 	 	 	"eng": "You cannot craft while not idle"
+ 	 	}
+ 	},
+ 	"captcha": {
+ 	 	"success": {
+ 	 	 	"trans": "Tinanggap ang PIN code",
+ 	 	 	"eng": "Pin code accepted"
+ 	 	},
+ 	 	"invalid": {
+ 	 	 	"trans": "Di -wastong PIN code",
+ 	 	 	"eng": "Invalid Pin Code"
+ 	 	}
+ 	},
  	"chatModuleHelper": {
  	 	"aiConnectNotAvailable": {
  	 	 	"trans": "Tinanggihan ang pahintulot. Slanc hindi konektado sa chat",
  	 	 	"eng": "Permission Denied. SLANC not connected to chat"
  	 	}
  	},
+ 	"server": {
+ 	 	"announcement": {
+ 	 	 	"receiveItem": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player",
+ 	 	 	 	 	"item"
+ 	 	 	 	],
+ 	 	 	 	"trans": "🎉Congratulation! Ang ${player} ay nakatanggap ng ${item}!",
+ 	 	 	 	"eng": "🎉Congratulation! ${player} received ${item}!"
+ 	 	 	}
+ 	 	}
+ 	},
  	"gifting": {
  	 	"cannotSend": {
  	 	 	"trans": "Ang manlalaro na ito ay hindi maaaring makatanggap ng regalo ngayon",
  	 	 	"eng": "This player cannot receive gift now"
+ 	 	}
+ 	},
+ 	"topUpReward": {
+ 	 	"mail": {
+ 	 	 	"vars": [
+ 	 	 	 	"event",
+ 	 	 	 	"items"
+ 	 	 	],
+ 	 	 	"trans": "Ang ${event} Nangungunang Gantimpala ${items} ay ipinadala sa iyong inbox",
+ 	 	 	"eng": " ${event} top up reward ${items} has been sent to your inbox"
+ 	 	}
+ 	},
+ 	"error": {
+ 	 	"cannotUseItemInStatus": {
+ 	 	 	"vars": [
+ 	 	 	 	"minutes"
+ 	 	 	],
+ 	 	 	"trans": "Hindi mo maaaring gamitin ang item na ito dahil mayroong isang epekto sa katayuan na salungat dito",
+ 	 	 	"eng": "You cannot use this item because there is a status effect that conflicts with it"
  	 	}
  	},
  	"player": {
@@ -8454,6 +10389,10 @@
  	 	 	"invalidTravelLink": {
  	 	 	 	"trans": "Hindi wastong link sa paglalakbay, kung magpapatuloy mangyaring i -reload",
  	 	 	 	"eng": "Invalid Travel Link, if persist please reload"
+ 	 	 	},
+ 	 	 	"recipeDisabled": {
+ 	 	 	 	"trans": "Ang resipe na ito ay kasalukuyang hindi magagamit",
+ 	 	 	 	"eng": "This recipe is currently not available"
  	 	 	}
  	 	},
  	 	"escape": {
@@ -8481,6 +10420,13 @@
  	 	 	"eng": "Your level is too high to perform this action here, try to do it in the next zone."
  	 	},
  	 	"giveCred": {
+ 	 	 	"mail": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"playerName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Nakatanggap ka ng isang kredito sa kalye mula sa ${playerName}",
+ 	 	 	 	"eng": "You have received a street cred from ${playerName}"
+ 	 	 	},
  	 	 	"success": {
  	 	 	 	"trans": "Nagbigay ka ng pang -araw -araw na kredito sa kalye.",
  	 	 	 	"eng": "You have given daily street cred."
@@ -8500,9 +10446,9 @@
  	 	 	"trans": "Ang pangalang ito ay ginagamit ng iba pang manlalaro, mangyaring gumamit ng iba pang pangalan",
  	 	 	"eng": "this name is used by other player, please use other name"
  	 	},
- 	 	"nameIllegal": {
- 	 	 	"trans": "Iligal na pangalan, mangyaring gumamit ng iba pang pangalan",
- 	 	 	"eng": "Illegal name, please use other name"
+ 	 	"reservedKeyword": {
+ 	 	 	"trans": "Ang pangalang ito ay naglalaman ng mga nakalaan na mga salita, mangyaring gumamit ng iba pang pangalan",
+ 	 	 	"eng": "This name contains reserved wordings, please use other name"
  	 	},
  	 	"nameProfane": {
  	 	 	"trans": "Ang pangalang ito ay naglalaman ng mga salitang hindi pinapayagan, mangyaring gumamit ng iba pang pangalan",
@@ -8511,6 +10457,49 @@
  	 	"nameInvalid": {
  	 	 	"trans": "Ang haba ng pangalan ay dapat na mas malaki pagkatapos 4, mas mababa pagkatapos o katumbas ng 16 at naglalaman lamang ng mga character na Ingles, numero o \\ '_ \\'",
  	 	 	"eng": "name length must be greater then 4, less then or equal to 16 and only contains English characters, numbers or \\'_\\'"
+ 	 	}
+ 	},
+ 	"skip": {
+ 	 	"skipRewardMail": {
+ 	 	 	"1": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Nakatanggap ka ng \"Skip Emblem 1\" para sa pagkakaroon ng ${amount} Mga puntos ng Laktawan",
+ 	 	 	 	"eng": "You have received \"Skip Emblem 1\" for having ${amount} skip points"
+ 	 	 	},
+ 	 	 	"2": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Nakatanggap ka ng \"Skip Emblem 2\" para sa pagkakaroon ng ${amount} Mga puntos ng Laktawan",
+ 	 	 	 	"eng": "You have received \"Skip Emblem 2\" for having ${amount} skip points"
+ 	 	 	},
+ 	 	 	"3": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Nakatanggap ka ng \"Skip Emblem 3\" para sa pagkakaroon ng ${amount} Mga puntos ng Laktawan",
+ 	 	 	 	"eng": "You have received \"Skip Emblem 3\" for having ${amount} skip points"
+ 	 	 	},
+ 	 	 	"4": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"frameName",
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Nakatanggap ka ng \"${frameName}\" Donator chat frame para sa pagkakaroon ng ${amount} Mga puntos ng Laktawan",
+ 	 	 	 	"eng": "You have received \"${frameName}\" donator chat frame for having ${amount} skip points"
+ 	 	 	}
+ 	 	},
+ 	 	"announcement": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName",
+ 	 	 	 	"playerCount",
+ 	 	 	 	"skipTime",
+ 	 	 	 	"credButton"
+ 	 	 	],
+ 	 	 	"trans": "Ang ${playerName} ay gumagamit ng Global Time Skip, ang lahat ng mga online na manlalaro na kasalukuyang nagsasagawa ng gawain ng AFK (${playerCount} mga manlalaro) ay awtomatikong laktawan ng ${skipTime} minuto. Bigyan ang alamat ng ilang mga kredito? ${credButton}",
+ 	 	 	"eng": "${playerName} has used Global Time Skip, all online players currently performing AFK task (${playerCount} players) will automatically time skip by ${skipTime} minutes. Give the legend some creds? ${credButton}"
  	 	}
  	}
 }

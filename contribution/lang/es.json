@@ -1,4 +1,56 @@
 {
+ 	"apartment": {
+ 	 	"title": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "Apartamento de ${playerName}",
+ 	 	 	"eng": "${playerName}'s Apartment"
+ 	 	},
+ 	 	"terminateLease": {
+ 	 	 	"trans": "Finalizar contrato de arrendamiento",
+ 	 	 	"eng": "Terminate Lease"
+ 	 	},
+ 	 	"viewPets": {
+ 	 	 	"trans": "Ver mascotas",
+ 	 	 	"eng": "View Pets"
+ 	 	},
+ 	 	"address": {
+ 	 	 	"cityName": {
+ 	 	 	 	"trans": "Shangri-la",
+ 	 	 	 	"eng": "Shangri-la"
+ 	 	 	}
+ 	 	},
+ 	 	"rent": {
+ 	 	 	"paidMail": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Has pagado el alquiler de tu apartamento de ${amount}",
+ 	 	 	 	"eng": "You have paid your apartment rent of ${amount}"
+ 	 	 	},
+ 	 	 	"unpaidMail": {
+ 	 	 	 	"trans": "Has fallado en pagar el alquiler de tu apartamento, tu contrato de arrendamiento ha sido cancelado",
+ 	 	 	 	"eng": "You have failed to pay your apartment rent, your apartment has been terminated"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"purchaseApartmentUI": {
+ 	 	"confirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Alquilar Apartamento",
+ 	 	 	 	"eng": "Rent Apartment"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "¿Estás seguro de que quieres alquilar este apartamento?",
+ 	 	 	 	"eng": "Are you sure you want to rent this apartment?"
+ 	 	 	}
+ 	 	},
+ 	 	"rentButton": {
+ 	 	 	"trans": "Alquila ahora",
+ 	 	 	"eng": "Rent Now"
+ 	 	}
+ 	},
  	"tabs": {
  	 	"map": {
  	 	 	"trans": "Mapa",
@@ -22,10 +74,41 @@
  	 	}
  	},
  	"ui": {
- 	 	"blackMarket": {
- 	 	 	"selectItemButton": {
- 	 	 	 	"trans": "Imprimir y vender",
- 	 	 	 	"eng": "Print And Sell"
+ 	 	"bulkCraft": {
+ 	 	 	"amountSelect": {
+ 	 	 	 	"title": {
+ 	 	 	 	 	"trans": "Seleccione cantidad",
+ 	 	 	 	 	"eng": "Select Amount"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"duration": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"duration"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Esta tarea tomará ${duration}",
+ 	 	 	 	"eng": "This task will take ${duration}"
+ 	 	 	},
+ 	 	 	"durationTooLong": {
+ 	 	 	 	"trans": "Demasiados artículos seleccionados",
+ 	 	 	 	"eng": "Too many items selected"
+ 	 	 	}
+ 	 	},
+ 	 	"generalCaptcha": {
+ 	 	 	"inputLabel": {
+ 	 	 	 	"trans": "Código PIN",
+ 	 	 	 	"eng": "Pin Code"
+ 	 	 	},
+ 	 	 	"inputPlaceholder": {
+ 	 	 	 	"trans": "Ingrese el código PIN",
+ 	 	 	 	"eng": "Enter pin code"
+ 	 	 	},
+ 	 	 	"story": {
+ 	 	 	 	"trans": "Encontraste una antigua caja de seguridad cerrada, parece tener una nota adhesiva con un texto escrito.",
+ 	 	 	 	"eng": "You found an old locked safe box, there seems like a post-it with some text written on it."
+ 	 	 	},
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Código PIN requerido para desbloquear.",
+ 	 	 	 	"eng": "Pin code required to unlock"
  	 	 	}
  	 	},
  	 	"clan": {
@@ -47,15 +130,15 @@
  	 	 	 	"eng": "Deposit Bitcoin"
  	 	 	},
  	 	 	"editMotto": {
+ 	 	 	 	"button": {
+ 	 	 	 	 	"trans": "Editar lema de la Banda",
+ 	 	 	 	 	"eng": "Edit Gang Motto"
+ 	 	 	 	},
  	 	 	 	"modal": {
  	 	 	 	 	"title": {
  	 	 	 	 	 	"trans": "Por favor ingresa el lema de tu Banda",
  	 	 	 	 	 	"eng": "Please enter your gang motto"
  	 	 	 	 	}
- 	 	 	 	},
- 	 	 	 	"button": {
- 	 	 	 	 	"trans": "Editar lema de la Banda",
- 	 	 	 	 	"eng": "Edit Gang Motto"
  	 	 	 	}
  	 	 	},
  	 	 	"updateImage": {
@@ -172,12 +255,6 @@
  	 	 	 	}
  	 	 	}
  	 	},
- 	 	"supportUkraine": {
- 	 	 	"description": {
- 	 	 	 	"trans": "Personas de Ucrania, Rusia y de todo el mundo están sufriendo por la ambición de un solo hombre.\\n Hackea por el amor, no por la guerra.",
- 	 	 	 	"eng": "People of Ukraine, Russia and the whole world are suffering because one man's ambition.\\n Make love exploit, not war."
- 	 	 	}
- 	 	},
  	 	"bank": {
  	 	 	"balance": {
  	 	 	 	"trans": "Saldo",
@@ -288,24 +365,6 @@
  	 	 	 	}
  	 	 	}
  	 	},
- 	 	"generalCaptcha": {
- 	 	 	"story": {
- 	 	 	 	"trans": "Encontraste una antigua caja de seguridad cerrada, parece tener una nota adhesiva con un texto escrito.",
- 	 	 	 	"eng": "You found an old locked safe box, there seems like a post-it with some text written on it."
- 	 	 	},
- 	 	 	"title": {
- 	 	 	 	"trans": "Código PIN requerido para desbloquear.",
- 	 	 	 	"eng": "Pin code required to unlock"
- 	 	 	},
- 	 	 	"inputLabel": {
- 	 	 	 	"trans": "Código PIN",
- 	 	 	 	"eng": "Pin Code"
- 	 	 	},
- 	 	 	"inputPlaceholder": {
- 	 	 	 	"trans": "Ingrese el código PIN",
- 	 	 	 	"eng": "Enter pin code"
- 	 	 	}
- 	 	},
  	 	"chat": {
  	 	 	"reconnecting": {
  	 	 	 	"trans": "Restableciendo la conexión",
@@ -335,7 +394,7 @@
  	 	 	 	"eng": "Please do not send the same message repeatedly, spams will be muted."
  	 	 	},
  	 	 	"shortChatBlock": {
- 	 	 	 	"trans": "Por favor no envíes mensajes cortos, intenta una frase más larga.",
+ 	 	 	 	"trans": "Por favor no envíes mensajes cortos, intenta con una frase más larga.",
  	 	 	 	"eng": "Please do not send short messages, try a longer sentence instead."
  	 	 	},
  	 	 	"underlevelChatBlock": {
@@ -368,7 +427,7 @@
  	 	 	 	 	"vars": [
  	 	 	 	 	 	"vpnName"
  	 	 	 	 	],
- 	 	 	 	 	"trans": "El Chat está siendo hackeado, todo mensaje enviado será alterado. ¡Utiliza ${vpnName} para proteger tu conexión!",
+ 	 	 	 	 	"trans": "El Chat está siendo hackeado, todo mensaje enviado se verá alterado. ¡Utiliza ${vpnName} para proteger tu conexión!",
  	 	 	 	 	"eng": "Chat exploit is in effect, all message sent will be altered. use ${vpnName} to secure your connection!"
  	 	 	 	},
  	 	 	 	"activateVPN": {
@@ -397,6 +456,16 @@
  	 	 	}
  	 	},
  	 	"clanPage": {
+ 	 	 	"notice": {
+ 	 	 	 	"time": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"playerName",
+ 	 	 	 	 	 	"time"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "Publicado por ${playerName} ${time} hace",
+ 	 	 	 	 	"eng": "Posted by ${playerName} ${time} ago"
+ 	 	 	 	}
+ 	 	 	},
  	 	 	"createClan": {
  	 	 	 	"title": {
  	 	 	 	 	"trans": "No eres miembro de alguna Banda",
@@ -525,17 +594,27 @@
  	 	},
  	 	"timeSkip": {
  	 	 	"unitTimeSkipButton": {
- 	 	 	 	"title": {
+ 	 	 	 	"unit": {
  	 	 	 	 	"vars": [
- 	 	 	 	 	 	"timeSkipMinutes",
- 	 	 	 	 	 	"timeSkipCost"
+ 	 	 	 	 	 	"units"
  	 	 	 	 	],
- 	 	 	 	 	"trans": "Salto Global (${timeSkipMinutes} Min, Costo: ${timeSkipCost} Unidades)",
- 	 	 	 	 	"eng": "Global Skip (${timeSkipMinutes} Min, Cost ${timeSkipCost} Units)"
+ 	 	 	 	 	"trans": "${units} unidades",
+ 	 	 	 	 	"eng": "${units} units"
+ 	 	 	 	},
+ 	 	 	 	"minute": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"minutes"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "${minutes} unidades",
+ 	 	 	 	 	"eng": "Skip ${minutes} minutes"
+ 	 	 	 	},
+ 	 	 	 	"title2": {
+ 	 	 	 	 	"trans": "Termina ahora",
+ 	 	 	 	 	"eng": "Finish Now"
  	 	 	 	},
  	 	 	 	"description": {
  	 	 	 	 	"trans": "El Salto Global te permite omitir el tiempo de espera AFK y finalizarlo al instante.\r\n    Éste efecto también se aplicará a todos los jugadores que estén realizando tareas AFK",
- 	 	 	 	 	"eng": "Global Skip allow you to skip the AFK waiting time, and finish it instantly.\r\n    this effect will be applied to all player performing AFK task"
+ 	 	 	 	 	"eng": "Finish the task instantly for all players in the game and earn skip points to show your support to other players!"
  	 	 	 	}
  	 	 	},
  	 	 	"itemTimeSkipButton": {
@@ -579,7 +658,7 @@
  	 	 	 	}
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "El Salto Global te permite omitir el tiempo de espera AFK y finalizarlo al instante.\r\n    Éste efecto también se aplicará a todos los jugadores que estén realizando tareas AFK.",
+ 	 	 	 	"trans": "El Salto Global te permite omitir el tiempo de espera AFK y finalizarlo al instante.\r\n    Éste efecto se aplicará a todos los jugadores que estén realizando tareas AFK.",
  	 	 	 	"eng": "Global Skip allow you to skip the AFK waiting time, and finish it instantly.\r\n    this effect will be applied to all players performing an AFK task"
  	 	 	}
  	 	},
@@ -673,19 +752,23 @@
  	 	 	 	}
  	 	 	},
  	 	 	"locked": {
- 	 	 	 	"trans": "Encerrada",
+ 	 	 	 	"trans": "Bloqueado",
  	 	 	 	"eng": "Locked"
  	 	 	},
  	 	 	"unlocked": {
- 	 	 	 	"trans": "Desbloqueada",
+ 	 	 	 	"trans": "Desbloqueado",
  	 	 	 	"eng": "Unlocked"
  	 	 	},
+ 	 	 	"upgradeModuleTitleHeader": {
+ 	 	 	 	"trans": "Ranuras de actualización",
+ 	 	 	 	"eng": "Upgrades Slots"
+ 	 	 	},
  	 	 	"upgradeModuleTitle": {
- 	 	 	 	"trans": "Espacio ${index} de Mejora",
- 	 	 	 	"eng": "upgrade slot ${index}",
  	 	 	 	"vars": [
  	 	 	 	 	"index"
- 	 	 	 	]
+ 	 	 	 	],
+ 	 	 	 	"trans": "Espacio ${index} de Mejora",
+ 	 	 	 	"eng": "upgrade slot ${index}"
  	 	 	},
  	 	 	"equip": {
  	 	 	 	"trans": "Equipar",
@@ -756,7 +839,7 @@
  	 	 	 	 	 	"eng": "Are you sure you want to factory reset?"
  	 	 	 	 	},
  	 	 	 	 	"description": {
- 	 	 	 	 	 	"trans": "Al restablecer este artículo, perderá toda la calibración, sin embargo, podrá intercambiarlo a otros jugadores.",
+ 	 	 	 	 	 	"trans": "Al restablecer este artículo, perderá toda la calibración, sin embargo, podrá intercambiarlo con otros jugadores.",
  	 	 	 	 	 	"eng": "By resetting this item, you will lose all calibration, however you will be able to trade it to other players."
  	 	 	 	 	}
  	 	 	 	},
@@ -853,7 +936,7 @@
  	 	 	 	 	 	"eng": "printing level ${level} equipments"
  	 	 	 	 	},
  	 	 	 	 	"description": {
- 	 	 	 	 	 	"trans": "La impresión del equipamiento se basa en tu rango de Impresión, mejóralo con la Impresora Molecular 3D.",
+ 	 	 	 	 	 	"trans": "La impresión del equipamiento se basa en tu rango de Impresión, mejóralo imprimiendo mas items",
  	 	 	 	 	 	"eng": "equipment printing is based on your printing rank, level up your printing rank by printing more items"
  	 	 	 	 	}
  	 	 	 	}
@@ -900,7 +983,7 @@
  	 	 	 	"eng": "system link"
  	 	 	},
  	 	 	"streetCred": {
- 	 	 	 	"trans": "Reputación Callejera",
+ 	 	 	 	"trans": "Respeto Callejero",
  	 	 	 	"eng": "Street Cred"
  	 	 	},
  	 	 	"status": {
@@ -986,7 +1069,7 @@
  	 	 	 	 	"eng": "Remove from Friend List"
  	 	 	 	},
  	 	 	 	"giveStreetCred": {
- 	 	 	 	 	"trans": "Dar Reputación Callejera",
+ 	 	 	 	 	"trans": "Dar Respeto Callejero",
  	 	 	 	 	"eng": "Give Street Cred"
  	 	 	 	},
  	 	 	 	"report": {
@@ -997,14 +1080,6 @@
  	 	 	 	 	"trans": "Bloquear",
  	 	 	 	 	"eng": "Block Player"
  	 	 	 	}
- 	 	 	},
- 	 	 	"equipped": {
- 	 	 	 	"trans": "Equipado",
- 	 	 	 	"eng": "Equipped"
- 	 	 	},
- 	 	 	"inventory": {
- 	 	 	 	"trans": "Inventario",
- 	 	 	 	"eng": "Inventory"
  	 	 	}
  	 	},
  	 	"modal": {
@@ -1094,13 +1169,13 @@
  	 	 	 	"trans": "Actualmente no hay objetos a la venta de esta categoría",
  	 	 	 	"eng": "there is currently no items on sale for this category"
  	 	 	},
- 	 	 	"buy": {
- 	 	 	 	"trans": "Comprar",
- 	 	 	 	"eng": "Purchase"
+ 	 	 	"pricePerPiece": {
+ 	 	 	 	"trans": "por artículo",
+ 	 	 	 	"eng": "per item"
  	 	 	},
- 	 	 	"remove": {
- 	 	 	 	"trans": "Eliminar",
- 	 	 	 	"eng": "Remove"
+ 	 	 	"purchase": {
+ 	 	 	 	"trans": "Compra",
+ 	 	 	 	"eng": "Purchase"
  	 	 	},
  	 	 	"stall": {
  	 	 	 	"sellItemButton": {
@@ -1218,7 +1293,7 @@
  	 	 	 	 	 	"eng": "Use AI Core"
  	 	 	 	 	},
  	 	 	 	 	"description": {
- 	 	 	 	 	 	"trans": "Parece que tienes algunos núcleos de AI, úsalos para nivelar automáticamente AFK en un área adecuada.",
+ 	 	 	 	 	 	"trans": "Parece que tienes algunos núcleos de AI, úsalos para subir de nivel AFK en un área adecuada.",
  	 	 	 	 	 	"eng": "Looks like you have some AI Cores, use them to do AFK auto leveling in appropriate level area."
  	 	 	 	 	}
  	 	 	 	},
@@ -1260,7 +1335,7 @@
  	 	 	 	 	 	"eng": "Breach operation completed"
  	 	 	 	 	},
  	 	 	 	 	"subtitle": {
- 	 	 	 	 	 	"trans": "Desplegando explotación remota, paciencia...",
+ 	 	 	 	 	 	"trans": "Desplegando explotación remota, espere por favor...",
  	 	 	 	 	 	"eng": "Remote exploit deploying, please wait..."
  	 	 	 	 	}
  	 	 	 	}
@@ -1322,69 +1397,10 @@
  	 	 	 	"eng": "If you have any questions please feel free to contact Dexter directly via official Discord (Link can be found in Floating Menu -> Links) or email to ching.huang.dexter@gmail.com"
  	 	 	}
  	 	},
- 	 	"tipsBox": {
- 	 	 	"title": {
- 	 	 	 	"trans": "Consejos de un Pro",
- 	 	 	 	"eng": "Pro Tips"
- 	 	 	},
- 	 	 	"description": {
- 	 	 	 	"trans": "Presione para obtener más consejos.",
- 	 	 	 	"eng": "Click to get new tips"
- 	 	 	}
- 	 	},
  	 	"travel": {
  	 	 	"notUnlocked": {
  	 	 	 	"trans": "Aún no has desbloqueado esta área.",
  	 	 	 	"eng": "You have not unlocked this area yet"
- 	 	 	}
- 	 	},
- 	 	"machineCrafting": {
- 	 	 	"titleBox": {
- 	 	 	 	"tile": {
- 	 	 	 	 	"trans": "Sistema inactivo",
- 	 	 	 	 	"eng": "system idle"
- 	 	 	 	},
- 	 	 	 	"subtitle": {
- 	 	 	 	 	"trans": "Por favor, inserta un objeto",
- 	 	 	 	 	"eng": "Please insert an item"
- 	 	 	 	}
- 	 	 	},
- 	 	 	"selectItemButton": {
- 	 	 	 	"trans": "Reciclar Objeto",
- 	 	 	 	"eng": "Recycle Item"
- 	 	 	},
- 	 	 	"selectAmount": {
- 	 	 	 	"title": {
- 	 	 	 	 	"trans": "Por favor, selecciona una cantidad",
- 	 	 	 	 	"eng": "Please select amount"
- 	 	 	 	},
- 	 	 	 	"subtitle": {
- 	 	 	 	 	"vars": [
- 	 	 	 	 	 	"timeStr"
- 	 	 	 	 	],
- 	 	 	 	 	"trans": "Esto tomará ${timeStr}",
- 	 	 	 	 	"eng": "This will take ${timeStr}"
- 	 	 	 	}
- 	 	 	},
- 	 	 	"confirmModal": {
- 	 	 	 	"title": {
- 	 	 	 	 	"vars": [
- 	 	 	 	 	 	"itemName"
- 	 	 	 	 	],
- 	 	 	 	 	"trans": "Seleccionar ${itemName}?",
- 	 	 	 	 	"eng": "Select ${itemName}?"
- 	 	 	 	},
- 	 	 	 	"subtitle": {
- 	 	 	 	 	"vars": [
- 	 	 	 	 	 	"itemName"
- 	 	 	 	 	],
- 	 	 	 	 	"trans": "¿Estás seguro de que quieres seleccionar ${itemName}?",
- 	 	 	 	 	"eng": "Are you sure you want to select ${itemName}?"
- 	 	 	 	},
- 	 	 	 	"confirmText": {
- 	 	 	 	 	"trans": "estoy seguro",
- 	 	 	 	 	"eng": "I am sure"
- 	 	 	 	}
  	 	 	}
  	 	},
  	 	"setting": {
@@ -1409,7 +1425,7 @@
  	 	 	 	"eng": "sound effects"
  	 	 	},
  	 	 	"enableInGameNotificationSound": {
- 	 	 	 	"trans": "En el sonido de notificación del juego",
+ 	 	 	 	"trans": "Notificaciones con sonido",
  	 	 	 	"eng": "In game notification sound"
  	 	 	},
  	 	 	"disableAttackBar": {
@@ -1424,7 +1440,7 @@
  	 	 	},
  	 	 	"blockGifts": {
  	 	 	 	"title": {
- 	 	 	 	 	"trans": "Deshabilitar el recibir regalos",
+ 	 	 	 	 	"trans": "Rechazar regalos",
  	 	 	 	 	"eng": "Disable receiving gifts"
  	 	 	 	}
  	 	 	},
@@ -1495,6 +1511,12 @@
  	 	 	"save": {
  	 	 	 	"trans": "Guardar",
  	 	 	 	"eng": "save"
+ 	 	 	}
+ 	 	},
+ 	 	"petShop": {
+ 	 	 	"adapt": {
+ 	 	 	 	"trans": "Adopta una nueva mascota",
+ 	 	 	 	"eng": "Adopt a new pet"
  	 	 	}
  	 	},
  	 	"rangeSelector": {
@@ -1571,6 +1593,41 @@
  	 	 	"itemLocked": {
  	 	 	 	"trans": "Este objeto está bloqueado",
  	 	 	 	"eng": "This item is locked"
+ 	 	 	}
+ 	 	},
+ 	 	"machineCrafting": {
+ 	 	 	"selectAmount": {
+ 	 	 	 	"title": {
+ 	 	 	 	 	"trans": "Por favor, selecciona una cantidad",
+ 	 	 	 	 	"eng": "Please select amount"
+ 	 	 	 	},
+ 	 	 	 	"subtitle": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"timeStr"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "Esto tomará ${timeStr}",
+ 	 	 	 	 	"eng": "This will take ${timeStr}"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"confirmModal": {
+ 	 	 	 	"title": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"itemName"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "Seleccionar ${itemName}?",
+ 	 	 	 	 	"eng": "Select ${itemName}?"
+ 	 	 	 	},
+ 	 	 	 	"subtitle": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"itemName"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "¿Estás seguro de que quieres seleccionar ${itemName}?",
+ 	 	 	 	 	"eng": "Are you sure you want to select ${itemName}?"
+ 	 	 	 	},
+ 	 	 	 	"confirmText": {
+ 	 	 	 	 	"trans": "estoy seguro",
+ 	 	 	 	 	"eng": "I am sure"
+ 	 	 	 	}
  	 	 	}
  	 	},
  	 	"calibration": {
@@ -1682,6 +1739,39 @@
  	 	 	 	"eng": "Enter system passcode to proceed"
  	 	 	}
  	 	},
+ 	 	"marketItemPurchaseModal": {
+ 	 	 	"amount": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"price",
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${price} BTC por pieza por ${amount} piezas",
+ 	 	 	 	"eng": "${price} btc per piece for ${amount} pieces"
+ 	 	 	}
+ 	 	},
+ 	 	"marketItemSellModal": {
+ 	 	 	"amountTitle": {
+ 	 	 	 	"trans": "Cantidad para poner en el mercado",
+ 	 	 	 	"eng": "Quantity to put on market"
+ 	 	 	},
+ 	 	 	"priceTitle": {
+ 	 	 	 	"trans": "Precio por pieza",
+ 	 	 	 	"eng": "Price per piece"
+ 	 	 	},
+ 	 	 	"footer": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"price",
+ 	 	 	 	 	"quantity",
+ 	 	 	 	 	"totalPrice"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Este artículo se venderá por ${price} por pieza por ${quantity} piezas, si se venden todas las piezas, recibirá ${totalPrice}",
+ 	 	 	 	"eng": "This item will be sold for ${price} per piece for ${quantity} pieces, if all pieces are sold you will receive ${totalPrice}"
+ 	 	 	},
+ 	 	 	"sell": {
+ 	 	 	 	"trans": "Coloque el artículo en el mercado",
+ 	 	 	 	"eng": "Place Item on Market"
+ 	 	 	}
+ 	 	},
  	 	"dungeon": {
  	 	 	"public": {
  	 	 	 	"trans": "Mazmorra pública",
@@ -1780,7 +1870,7 @@
  	 	 	 	 	"vars": [
  	 	 	 	 	 	"date"
  	 	 	 	 	],
- 	 	 	 	 	"trans": "Expira a ${date}",
+ 	 	 	 	 	"trans": "Expira en ${date}",
  	 	 	 	 	"eng": "Expires at ${date}"
  	 	 	 	}
  	 	 	}
@@ -1799,7 +1889,7 @@
  	 	 	 	"eng": "Referral Program"
  	 	 	},
  	 	 	"skipQueue": {
- 	 	 	 	"trans": "Cola de Salto Global",
+ 	 	 	 	"trans": "Saltar cola global",
  	 	 	 	"eng": "Skip Queue"
  	 	 	},
  	 	 	"block-list": {
@@ -1955,6 +2045,10 @@
  	 	 	 	],
  	 	 	 	"trans": "${playerCount} jugador/es/as en línea.",
  	 	 	 	"eng": "${playerCount} player(s) connected"
+ 	 	 	},
+ 	 	 	"passwordProtected": {
+ 	 	 	 	"trans": "Contraseña protegida",
+ 	 	 	 	"eng": "Password protected"
  	 	 	}
  	 	},
  	 	"equipmentUpgrade": {
@@ -2047,7 +2141,7 @@
  	 	 	 	"eng": "please register or login with existing account"
  	 	 	},
  	 	 	"asusDescription": {
- 	 	 	 	"trans": "Los TELÉFONOS de marca ASUS (ZENFONE, ROG) tienen un error que afecta el clickear la pantalla, en ese caso intenta apagar y prender la pantalla, o colocar esta aplicación en segundo plano y reanudarla. Esto debería arreglar el problema :)",
+ 	 	 	 	"trans": "Los TELÉFONOS de marca ASUS (ZENFONE, ROG) tienen un error que impide clickear la pantalla, en ese caso intenta apagar y prender la pantalla, o colocar esta aplicación en segundo plano y reanudarla. Esto debería arreglar el problema :)",
  	 	 	 	"eng": "ASUS phone (Zenfone, ROG) has bug with screen being not clickable, in the case, please try turning your screen off and on again, or put this app to background and resume it again. this should fix the issue :)"
  	 	 	}
  	 	},
@@ -2387,13 +2481,19 @@
  	 	 	 	 	"vars": [
  	 	 	 	 	 	"itemName"
  	 	 	 	 	],
- 	 	 	 	 	"trans": "${itemName} ahora está activo, desbloquee el contenedor legendario ahora para tener un 0.5% de posibilidades adicionales para el equipo de rango epico por contenedor legendario",
+ 	 	 	 	 	"trans": "${itemName} ahora está activo, desbloquee el contenedor legendario ahora para tener un 0.5% de posibilidades adicionales de aparicion de un equipo de rango epico por contenedor legendario",
  	 	 	 	 	"eng": "${itemName} is now active, unlock Legendary Container now to have 0.5% additional chance for EPIC tier equipment per Legendary Container"
  	 	 	 	}
  	 	 	},
  	 	 	"unlock": {
  	 	 	 	"trans": "Desbloquear",
  	 	 	 	"eng": "Unlock"
+ 	 	 	},
+ 	 	 	"error": {
+ 	 	 	 	"notEnabled": {
+ 	 	 	 	 	"trans": "Este contenedor no se puede desbloquear en este momento",
+ 	 	 	 	 	"eng": "This container cannot be unlocked at this time"
+ 	 	 	 	}
  	 	 	}
  	 	}
  	},
@@ -2411,7 +2511,7 @@
  	 	},
  	 	"retro": {
  	 	 	"name": {
- 	 	 	 	"trans": "Synthwave paquete",
+ 	 	 	 	"trans": "paquete Synthwave",
  	 	 	 	"eng": "Synthwave bundle"
  	 	 	}
  	 	},
@@ -2443,6 +2543,18 @@
  	 	 	"name": {
  	 	 	 	"trans": "cinta de casete",
  	 	 	 	"eng": "cassette tape"
+ 	 	 	}
+ 	 	},
+ 	 	"rareEquipmentCrate": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Caja de equipos raros",
+ 	 	 	 	"eng": "Rare Equipment Crate"
+ 	 	 	}
+ 	 	},
+ 	 	"freeSkip": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Skip personal gratis",
+ 	 	 	 	"eng": "Free Personal Skip"
  	 	 	}
  	 	},
  	 	"cycle": {
@@ -2482,7 +2594,7 @@
  	 	 	 	 	"eng": "Once"
  	 	 	 	},
  	 	 	 	"description": {
- 	 	 	 	 	"trans": "Especial por cuenta de una sola vez",
+ 	 	 	 	 	"trans": "Especial de una sola vez por cuenta",
  	 	 	 	 	"eng": "One-time special per account"
  	 	 	 	}
  	 	 	}
@@ -2584,10 +2696,6 @@
  	 	 	"trans": "Recibir",
  	 	 	"eng": "Receives"
  	 	},
- 	 	"inputPlaceholder": {
- 	 	 	"trans": "Escribe un mensaje para comenzar a chatear.",
- 	 	 	"eng": "Enter message to start chatting"
- 	 	},
  	 	"moderators": {
  	 	 	"trans": "Moderadores",
  	 	 	"eng": "moderators"
@@ -2634,7 +2742,7 @@
  	 	 	 	"eng": "Name can only contain English letters, numbers and \"_\""
  	 	 	},
  	 	 	"hasSpace": {
- 	 	 	 	"trans": "El nombre no puede contener espacios, reemplazalo con \"_\"",
+ 	 	 	 	"trans": "El nombre no puede contener espacios, reemplaza el espacio con \"_\"",
  	 	 	 	"eng": "Name cannot contain spaces, you may replace the space with \"_\""
  	 	 	},
  	 	 	"tooShort": {
@@ -2692,8 +2800,25 @@
  	},
  	"enemy": {
  	 	"thief": {
- 	 	 	"trans": "Techno",
+ 	 	 	"trans": "Jefe Techno",
  	 	 	"eng": "Techno-Thief"
+ 	 	}
+ 	},
+ 	"globalPartyBanner": {
+ 	 	"title": {
+ 	 	 	"trans": "🎉 Fiesta global 🎉",
+ 	 	 	"eng": "🎉 Global Party 🎉"
+ 	 	},
+ 	 	"subtitle": {
+ 	 	 	"trans": "Alojado por:",
+ 	 	 	"eng": "Hosted by:"
+ 	 	},
+ 	 	"button,": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "Dar Respeto Callejero",
+ 	 	 	"eng": "Give street cred"
  	 	}
  	},
  	"cost": {
@@ -2734,7 +2859,7 @@
  	 	 	 	"vars": [
  	 	 	 	 	"remaining"
  	 	 	 	],
- 	 	 	 	"trans": "Al usar este elemento, actualizará el temporizador de la corriente activa actual y apilará el efecto si corresponde. (${remaining})",
+ 	 	 	 	"trans": "Al usar este elemento, actualizará el temporizador del buff activo actual y apilará el efecto si corresponde. (${remaining})",
  	 	 	 	"eng": "By using this item will refresh the timer of current active buff and stack the effect if applicable. (${remaining})"
  	 	 	},
  	 	 	"confirmText": {
@@ -2754,7 +2879,7 @@
  	 	 	 	"eng": "Max Health"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "Capacidad máxima de tu vida.",
+ 	 	 	 	"trans": "Capacidad de vida máxima.",
  	 	 	 	"eng": "Maximum health capacity"
  	 	 	}
  	 	},
@@ -2960,7 +3085,7 @@
  	 	},
  	 	"upgradeChance": {
  	 	 	"name": {
- 	 	 	 	"trans": "Probabilidad de calibración efectiva",
+ 	 	 	 	"trans": "Probabilidad de calibración correcta",
  	 	 	 	"eng": "Calibration Chance"
  	 	 	},
  	 	 	"description": {
@@ -2992,7 +3117,7 @@
  	 	},
  	 	"containerLegendaryDrop": {
  	 	 	"name": {
- 	 	 	 	"trans": "Oportunidad legendaria",
+ 	 	 	 	"trans": "Probabilidad legendaria",
  	 	 	 	"eng": "Legendary Chance"
  	 	 	}
  	 	},
@@ -3055,6 +3180,16 @@
  	 	 	 	"trans": "Los Voodoo Boys te infligen más daño.",
  	 	 	 	"eng": "Enemies of Voodoo Boys gang deals increased damage to you"
  	 	 	}
+ 	 	},
+ 	 	"afkExpMultiplier": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "AFK exp Multiplier",
+ 	 	 	 	"eng": "AFK EXP multiplier"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Aumente EXP que recibe de las tareas AFK",
+ 	 	 	 	"eng": "Increase EXP you receive from AFK tasks"
+ 	 	 	}
  	 	}
  	},
  	"modal": {
@@ -3090,13 +3225,13 @@
  	 	 	 	"trans": "Acceso denegado. Perfil no humano detectado.",
  	 	 	 	"eng": "Access denied. non-human profile detected."
  	 	 	},
+ 	 	 	"report1": {
+ 	 	 	 	"trans": "Reportar y Bloquear",
+ 	 	 	 	"eng": "Report & Block"
+ 	 	 	},
  	 	 	"block": {
  	 	 	 	"trans": "Bloquear",
  	 	 	 	"eng": "Block"
- 	 	 	},
- 	 	 	"report": {
- 	 	 	 	"trans": "Reportar y Bloquear",
- 	 	 	 	"eng": "Report and Block"
  	 	 	},
  	 	 	"openPlayerGang": {
  	 	 	 	"trans": "Ver Banda",
@@ -3236,7 +3371,7 @@
  	 	 	 	"vars": [
  	 	 	 	 	"search"
  	 	 	 	],
- 	 	 	 	"trans": "No se encontró el nombre de: \"${search}\".",
+ 	 	 	 	"trans": "No se encontró el jugador: \"${search}\".",
  	 	 	 	"eng": "No player with named \"${search}\" found"
  	 	 	}
  	 	},
@@ -3248,15 +3383,15 @@
  	 	},
  	 	"resultScreen": {
  	 	 	"title": {
- 	 	 	 	"trans": "Victoria",
- 	 	 	 	"eng": "Victory"
+ 	 	 	 	"trans": "Subida de nivel",
+ 	 	 	 	"eng": "Level up"
  	 	 	},
  	 	 	"subTitle": {
  	 	 	 	"vars": [
  	 	 	 	 	"levelName"
  	 	 	 	],
  	 	 	 	"trans": "Felicidades, ¡Has subido de nivel tu ${levelName}!",
- 	 	 	 	"eng": "Congratulation, you have leveled up your ${levelName}!"
+ 	 	 	 	"eng": "Congratulations, you have leveled up your ${levelName}!"
  	 	 	},
  	 	 	"fromTo": {
  	 	 	 	"vars": [
@@ -3265,6 +3400,10 @@
  	 	 	 	],
  	 	 	 	"trans": "${from} >>> ${to}",
  	 	 	 	"eng": "${from} => ${to}"
+ 	 	 	},
+ 	 	 	"title2": {
+ 	 	 	 	"trans": "Recibió",
+ 	 	 	 	"eng": "Received"
  	 	 	}
  	 	},
  	 	"review": {
@@ -3340,13 +3479,37 @@
  	 	 	}
  	 	}
  	},
+ 	"playerDetailsAssetsTab": {
+ 	 	"noAssets": {
+ 	 	 	"trans": "Este jugador no posee ningún activo",
+ 	 	 	"eng": "this player does not own any assets"
+ 	 	},
+ 	 	"apartment": {
+ 	 	 	"title": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"playerName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Apartamento de ${playerName}",
+ 	 	 	 	"eng": "${playerName}'s Apartment"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"playerStatusDisplay": {
+ 	 	"title": {
+ 	 	 	"vars": [
+ 	 	 	 	"action"
+ 	 	 	],
+ 	 	 	"trans": "${action} en progreso",
+ 	 	 	"eng": "${action} in progress"
+ 	 	}
+ 	},
  	"time": {
  	 	"error": {
  	 	 	"systemTimeIncorrect": {
  	 	 	 	"vars": [
  	 	 	 	 	"diff"
  	 	 	 	],
- 	 	 	 	"trans": "Tiempo de dispositivo inexacto (diferencia de tiempo: ${diff}). Para garantizar las características del juego como Buff, Time Skip y AFK Task se muestran correctamente. Sincrita el tiempo de su dispositivo con la red y asegúrese de que su zona de tiempo esté configurada correctamente",
+ 	 	 	 	"trans": "Tiempo de dispositivo inexacto (diferencia de tiempo: ${diff}). Para garantizar que las características del juego como Buff, Time Skip y AFK Task se muestren correctamente sincronize el tiempo de su dispositivo con la red y asegúrese de que su zona de tiempo esté configurada correctamente",
  	 	 	 	"eng": "Inaccurate device time (time difference: ${diff}). to ensure game features such as buff, time skip and AFK Task display correctly. Please sync your device time with network and ensure your time-zone is set correctly"
  	 	 	}
  	 	},
@@ -3566,7 +3729,7 @@
  	 	 	 	"eng": "You can take a look at our community tutorial page to learn more about the game. there are tons of tips and guides to help you get started!"
  	 	 	},
  	 	 	"questProgress": {
- 	 	 	 	"trans": "Tutorial Quest Complete",
+ 	 	 	 	"trans": "Mision de Tutorial completada",
  	 	 	 	"eng": "Tutorial quest complete"
  	 	 	}
  	 	},
@@ -3613,16 +3776,16 @@
  	 	 	 	 	"eng": "dungeon warrior"
  	 	 	 	}
  	 	 	},
- 	 	 	"clearDungeonCoOp": {
- 	 	 	 	"name": {
- 	 	 	 	 	"trans": "Amigos de la Mazmorra",
- 	 	 	 	 	"eng": "dungeon friends"
- 	 	 	 	}
- 	 	 	},
  	 	 	"clearDungeon": {
  	 	 	 	"name": {
  	 	 	 	 	"trans": "Merodeador de la mazmorra",
  	 	 	 	 	"eng": "dungeon crawler"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"clearDungeonCoOp": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Amigos de la Mazmorra",
+ 	 	 	 	 	"eng": "dungeon friends"
  	 	 	 	}
  	 	 	},
  	 	 	"dealDamage": {
@@ -3661,7 +3824,7 @@
  	},
  	"MutedScreen": {
  	 	"title": {
- 	 	 	"trans": "Chat discapacitado",
+ 	 	 	"trans": "Chat desabilitado",
  	 	 	"eng": "Chat Disabled"
  	 	},
  	 	"description1": {
@@ -3669,7 +3832,7 @@
  	 	 	"eng": "We are very sorry this happened, please understand we are required to maintain a safe environment for all players and ensure that everyone can play the game in a pleasant environment. Thats why we have to mute when it is needed. please do read our chat rules from the link below for full information"
  	 	},
  	 	"description2": {
- 	 	 	"trans": "Si cree que fue un malentendido, comuníquese con el moderador a través de nuestro canal de discordia vinculado a continuación.",
+ 	 	 	"trans": "Si cree que fue un malentendido, comuníquese con el moderador a través de nuestro canal de Discord vinculado a continuación.",
  	 	 	"eng": "If you believe it was a misunderstanding, please contact the moderator via our discord channel linked below."
  	 	},
  	 	"description3": {
@@ -3681,7 +3844,7 @@
  	 	 	"eng": "Alternatively, you may also contact the developer via email at ching.huang.dexter@gmail.com"
  	 	},
  	 	"rules": {
- 	 	 	"trans": "Reglas de chat",
+ 	 	 	"trans": "Reglas del chat",
  	 	 	"eng": "Chat Rules"
  	 	},
  	 	"appealForm": {
@@ -3689,10 +3852,148 @@
  	 	 	"eng": "Appeal Form"
  	 	}
  	},
+ 	"pet": {
+ 	 	"noName": {
+ 	 	 	"trans": "Sin nombre",
+ 	 	 	"eng": "unnamed"
+ 	 	},
+ 	 	"nameTooShort": {
+ 	 	 	"vars": [
+ 	 	 	 	"length"
+ 	 	 	],
+ 	 	 	"trans": "El nombre de la mascota debe tener al menos ${length} caracteres de longitud",
+ 	 	 	"eng": "Pet name must be at least ${length} characters long"
+ 	 	},
+ 	 	"nameTooLong": {
+ 	 	 	"vars": [
+ 	 	 	 	"length"
+ 	 	 	],
+ 	 	 	"trans": "El nombre de la mascota debe tener como máximo ${length} caracteres",
+ 	 	 	"eng": "Pet name must be at most ${length} characters long"
+ 	 	},
+ 	 	"nameCantContainSpaces": {
+ 	 	 	"trans": "El nombre de la mascota no puede contener espacios",
+ 	 	 	"eng": "Pet name can not contain spaces"
+ 	 	},
+ 	 	"rerollImage": {
+ 	 	 	"success": {
+ 	 	 	 	"trans": "Imagen de mascota cambiada exitosamente",
+ 	 	 	 	"eng": "Pet image changed successfully"
+ 	 	 	}
+ 	 	},
+ 	 	"adoption": {
+ 	 	 	"alreadyActivated": {
+ 	 	 	 	"trans": "El beneficio de Adopción de Mascotas ya está activado",
+ 	 	 	 	"eng": "Pet Adoption buff is already activated"
+ 	 	 	},
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player",
+ 	 	 	 	 	"npc"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${player} ha activado el Buff de Adopción, ¡puedes adoptar una mascota de ${npc} durante la duración del buff!",
+ 	 	 	 	"eng": "${player} has activated Adoption Buff, you can adopt a pet from ${npc} within the buff duration!"
+ 	 	 	},
+ 	 	 	"activated": {
+ 	 	 	 	"trans": "¡Bonificación de adopción de mascotas activada!",
+ 	 	 	 	"eng": "Pet adoption buff activated"
+ 	 	 	}
+ 	 	},
+ 	 	"error": {
+ 	 	 	"interactedRecently": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"hours"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Solo puedes interactuar con la mascota de un jugador una vez cada ${hours} horas",
+ 	 	 	 	"eng": "You can only interact with a player's pet once every ${hours} hours"
+ 	 	 	}
+ 	 	},
+ 	 	"played": {
+ 	 	 	"vars": [
+ 	 	 	 	"player",
+ 	 	 	 	"pet"
+ 	 	 	],
+ 	 	 	"trans": "${player} ha jugado con tu mascota ${pet}",
+ 	 	 	"eng": "${player} has played with your pet ${pet}",
+ 	 	 	"success": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"playerName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Has jugado con la mascota de ${playerName}",
+ 	 	 	 	"eng": "You have played with ${playerName}'s pet"
+ 	 	 	}
+ 	 	},
+ 	 	"rename": {
+ 	 	 	"badWord": {
+ 	 	 	 	"trans": "El nombre contiene palabras no permitidas",
+ 	 	 	 	"eng": "Name contains not allowed words"
+ 	 	 	},
+ 	 	 	"notEnoughIAP": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"price"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Necesitas ${price} Unidades para renombrar a tu mascota",
+ 	 	 	 	"eng": "You need ${price} Units to rename your pet"
+ 	 	 	}
+ 	 	},
+ 	 	"adopted": {
+ 	 	 	"vars": [
+ 	 	 	 	"player",
+ 	 	 	 	"pet"
+ 	 	 	],
+ 	 	 	"trans": "${player} ha adoptado a ${pet}",
+ 	 	 	"eng": "${player} has adopted ${pet}",
+ 	 	 	"mail": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"pet"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Has adoptado a ${pet}",
+ 	 	 	 	"eng": "You have adopted ${pet}"
+ 	 	 	}
+ 	 	},
+ 	 	"reviveActivate": {
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${player} ha utilizado el potenciador de resurrección de mascotas, ahora puedes revivir a una de tus mascotas durante la duración del potenciador.",
+ 	 	 	 	"eng": "${player} has used pet revival buff, you can now revive one of your pet within the buff duration."
+ 	 	 	}
+ 	 	},
+ 	 	"revive": {
+ 	 	 	"activated": {
+ 	 	 	 	"trans": "¡Buff de revivir mascota activado!",
+ 	 	 	 	"eng": "Pet revive buff activated"
+ 	 	 	},
+ 	 	 	"success": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"petName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Has revivido a ${petName}",
+ 	 	 	 	"eng": "You have revived ${petName}"
+ 	 	 	}
+ 	 	},
+ 	 	"reviveSuccess": {
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player",
+ 	 	 	 	 	"pet"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${player} ha revivido a ${pet}",
+ 	 	 	 	"eng": "${player} has revived ${pet}"
+ 	 	 	}
+ 	 	}
+ 	},
  	"priceTag": {
  	 	"free": {
  	 	 	"trans": "GRATIS",
  	 	 	"eng": "FREE"
+ 	 	}
+ 	},
+ 	"chatInput": {
+ 	 	"placeholder": {
+ 	 	 	"trans": "Introducir mensaje...",
+ 	 	 	"eng": "Enter Message..."
  	 	}
  	},
  	"itemList": {
@@ -3732,6 +4033,12 @@
  	 	 	"eng": "max"
  	 	}
  	},
+ 	"giveCredButton": {
+ 	 	"giveCred": {
+ 	 	 	"trans": "Dar crédito a la calle",
+ 	 	 	"eng": "Give Street Cred"
+ 	 	}
+ 	},
  	"actionStartModal": {
  	 	"timeReductionButton": {
  	 	 	"title": {
@@ -3767,7 +4074,7 @@
  	 	 	 	"vars": [
  	 	 	 	 	"itemName"
  	 	 	 	],
- 	 	 	 	"trans": "Aumento activado, debe marcar la casilla de verificación a continuación para habilitarla para esta tarea.",
+ 	 	 	 	"trans": "Aumento activado, debe marcar la casilla de verificación a continuación para habilitarlo para esta tarea.",
  	 	 	 	"eng": "Boost activated, you must tick the checkbox below to enable it for this task"
  	 	 	},
  	 	 	"notActivatedDescription": {
@@ -3796,7 +4103,7 @@
  	"trade": {
  	 	"moneySelectModal": {
  	 	 	"title": {
- 	 	 	 	"trans": "¿Cuánto bitcoin le gustaría unir al oficio?",
+ 	 	 	 	"trans": "¿Cuánto bitcoin le gustaría unir al comercio?",
  	 	 	 	"eng": "How much Bitcoin would you like to bind to the trade?"
  	 	 	}
  	 	},
@@ -3828,19 +4135,19 @@
  	 	},
  	 	"lockButton": {
  	 	 	"title": {
- 	 	 	 	"trans": "Cerrar",
+ 	 	 	 	"trans": "Aceptar",
  	 	 	 	"eng": "Lock"
  	 	 	}
  	 	},
  	 	"unlockButton": {
  	 	 	"title": {
- 	 	 	 	"trans": "desbloquear",
+ 	 	 	 	"trans": "Rechazar",
  	 	 	 	"eng": "Unlock"
  	 	 	}
  	 	},
  	 	"error": {
  	 	 	"tradeNoLongerExist": {
- 	 	 	 	"trans": "Esta sesión comercial ya no existía",
+ 	 	 	 	"trans": "Esta sesión comercial no existe",
  	 	 	 	"eng": "this trade session no longer existed"
  	 	 	},
  	 	 	"cantStartTradeNotIdle": {
@@ -3867,14 +4174,14 @@
  	 	 	 	"vars": [
  	 	 	 	 	"minutes"
  	 	 	 	],
- 	 	 	 	"trans": "No puede invitar con demasiada frecuencia, la invitación de intercambio de intercambio es de ${minutes} minutos",
+ 	 	 	 	"trans": "No puede invitar con tanta frecuencia, el tiempo restante para el intercambio es de ${minutes} minutos",
  	 	 	 	"eng": "You cannot invite too frequently, trade invite cooldown is ${minutes} minutes"
  	 	 	},
  	 	 	"maxItemsPerPlayer": {
  	 	 	 	"vars": [
  	 	 	 	 	"maxItems"
  	 	 	 	],
- 	 	 	 	"trans": "No puede agregar más de ${maxItems} elementos por reproductor",
+ 	 	 	 	"trans": "No puede agregar más de ${maxItems} elementos por jugador",
  	 	 	 	"eng": "You cannot add more than ${maxItems} items per player"
  	 	 	},
  	 	 	"notEnoughItems": {
@@ -3930,7 +4237,7 @@
  	 	 	 	"vars": [
  	 	 	 	 	"playerName"
  	 	 	 	],
- 	 	 	 	"trans": "${playerName} no tiene suficiente dinero para completar el comercio.",
+ 	 	 	 	"trans": "${playerName} no tiene suficiente dinero para completar el intercambio.",
  	 	 	 	"eng": "${playerName} doesn't have enough money to complete the trade."
  	 	 	}
  	 	},
@@ -3975,7 +4282,7 @@
  	 	 	"eng": "Click here to scan for street enemies"
  	 	},
  	 	"localCombatTip": {
- 	 	 	"trans": "Recibirás EXP, Bitcoin y botín cuando derrotes a los enemigos. \n                 ¡Inténtalo!",
+ 	 	 	"trans": "Recibirás EXP, Bitcoin y botín cuando derrotes a los enemigos.\r\n                 ¡Inténtalo!",
  	 	 	"eng": "you will receive exp, Bitcoin and loots when you defeat enemies,\r\n                give it a try now!"
  	 	},
  	 	"primaryAttack": {
@@ -3989,6 +4296,34 @@
  	 	"dungeonQuest": {
  	 	 	"trans": "Haz click en 'ACEPTAR MISIÓN' para aceptarla, puedes completar o abandonar la Misión en cualquier momento.",
  	 	 	"eng": "Click 'ACCEPT QUEST' to accept the quest, you may complete or abandon the quest at any time"
+ 	 	}
+ 	},
+ 	"enum": {
+ 	 	"apartmentType": {
+ 	 	 	"T1": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Apartamento en la zona marginal",
+ 	 	 	 	 	"eng": "slum apartment"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"T2": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Apartamento",
+ 	 	 	 	 	"eng": "apartment"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"T3": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Apartamento de lujo",
+ 	 	 	 	 	"eng": "luxury apartment"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"T4": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Ático",
+ 	 	 	 	 	"eng": "penthouse"
+ 	 	 	 	}
+ 	 	 	}
  	 	}
  	},
  	"iapCurrency": {
@@ -4151,7 +4486,7 @@
  	 	},
  	 	"paypal": {
  	 	 	"paypalBonusTitle": {
- 	 	 	 	"trans": "¡Todas las compras de PayPal otorgan un 10% adicional de Unidades!",
+ 	 	 	 	"trans": "¡Todas las compras de PayPal otorgan un 10% adicional de Unidades! PayPal solo puede usarse en la version web, simplemente inicie sesion con su buscador",
  	 	 	 	"eng": "All PayPal purchases grants 10% additional Units! You may use paypal only on website version, simply login with your browser."
  	 	 	},
  	 	 	"paypalBonus": {
@@ -4163,6 +4498,13 @@
  	 	 	"trans": "Recibir",
  	 	 	"eng": "Receive"
  	 	},
+ 	 	"bonusReward": {
+ 	 	 	"vars": [
+ 	 	 	 	"eventName"
+ 	 	 	],
+ 	 	 	"trans": "${eventName} Bonus:",
+ 	 	 	"eng": "${eventName} bonus:"
+ 	 	},
  	 	"purchasing": {
  	 	 	"trans": "Comprando",
  	 	 	"eng": "Purchasing"
@@ -4170,6 +4512,28 @@
  	 	"total": {
  	 	 	"trans": "Total",
  	 	 	"eng": "total"
+ 	 	}
+ 	},
+ 	"bulkCraftingSubtype": {
+ 	 	"recycle": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Reciclar",
+ 	 	 	 	"eng": "Recycle"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Agregue elementos para reciclarlos de manera más eficiente",
+ 	 	 	 	"eng": "Add items to recycle them more efficiently"
+ 	 	 	}
+ 	 	},
+ 	 	"printSell": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Imprimir y vender",
+ 	 	 	 	"eng": "Print & Sell"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Imprimir artículos y venderlos por dinero",
+ 	 	 	 	"eng": "Print items and sell them for money"
+ 	 	 	}
  	 	}
  	},
  	"donationType": {
@@ -4248,6 +4612,46 @@
  	 	"donation18": {
  	 	 	"trans": "Prestigio",
  	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation20": {
+ 	 	 	"trans": "Prestigio",
+ 	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation21": {
+ 	 	 	"trans": "Prestigio",
+ 	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation22": {
+ 	 	 	"trans": "Prestigio",
+ 	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation23": {
+ 	 	 	"trans": "Víspera de Todos los Santos",
+ 	 	 	"eng": "Halloween"
+ 	 	},
+ 	 	"donation24": {
+ 	 	 	"trans": "Envío",
+ 	 	 	"eng": "SkipSage"
+ 	 	},
+ 	 	"donation25": {
+ 	 	 	"trans": "Tiempo de Navidad",
+ 	 	 	"eng": "Christmastime"
+ 	 	},
+ 	 	"donation26": {
+ 	 	 	"trans": "Ciberdágico",
+ 	 	 	"eng": "CyberDragon"
+ 	 	},
+ 	 	"donation27": {
+ 	 	 	"trans": "Saltar señor",
+ 	 	 	"eng": "Skip Lord"
+ 	 	},
+ 	 	"donation28": {
+ 	 	 	"trans": "Sakura",
+ 	 	 	"eng": "Sakura"
+ 	 	},
+ 	 	"donation29": {
+ 	 	 	"trans": "Netrunner",
+ 	 	 	"eng": "Netrunner"
  	 	},
  	 	"moderator": {
  	 	 	"trans": "Moderador",
@@ -4442,11 +4846,11 @@
  	 	 	 	 	"eng": "Unlock profile picture customization"
  	 	 	 	},
  	 	 	 	"3": {
- 	 	 	 	 	"trans": "Marco de Chat de AntiVirus (con animación).",
+ 	 	 	 	 	"trans": "Marco de Chat Azul neon de AntiVirus (con animación).",
  	 	 	 	 	"eng": "Blue Neon chat frame (with animation)"
  	 	 	 	},
  	 	 	 	"4": {
- 	 	 	 	 	"trans": "Perfil enmarcado de AntiVirus (con animación).",
+ 	 	 	 	 	"trans": "Perfil enmarcado Azul neon de AntiVirus (con animación).",
  	 	 	 	 	"eng": "Blue Neon Framed Profile (with animation)"
  	 	 	 	},
  	 	 	 	"5": {
@@ -4482,11 +4886,11 @@
  	 	 	 	 	"eng": "Unlock profile picture customization"
  	 	 	 	},
  	 	 	 	"3": {
- 	 	 	 	 	"trans": "Marco de chat de Virus (con animación).",
+ 	 	 	 	 	"trans": "Marco de chat Violeta Neon de Virus (con animación).",
  	 	 	 	 	"eng": "Purple Neon chat frame (with animation)"
  	 	 	 	},
  	 	 	 	"4": {
- 	 	 	 	 	"trans": "Perfil enmarcado de Virus (con animación).",
+ 	 	 	 	 	"trans": "Perfil enmarcado Violeta Neon de Virus (con animación).",
  	 	 	 	 	"eng": "Purple Neon Framed Profile (with animation)"
  	 	 	 	},
  	 	 	 	"5": {
@@ -4522,11 +4926,11 @@
  	 	 	 	 	"eng": "Unlock profile picture customization"
  	 	 	 	},
  	 	 	 	"3": {
- 	 	 	 	 	"trans": "Marco de chat de Grafitero (con animación).",
+ 	 	 	 	 	"trans": "Marco de chat Naranja Neon de Grafitero (con animación).",
  	 	 	 	 	"eng": "Orange Neon chat frame (with animation)"
  	 	 	 	},
  	 	 	 	"4": {
- 	 	 	 	 	"trans": "Perfil enmarcado de Grafitero (con animación).",
+ 	 	 	 	 	"trans": "Perfil enmarcado Naranja Neon de Grafitero (con animación).",
  	 	 	 	 	"eng": "Orange Neon Framed Profile (with animation)"
  	 	 	 	},
  	 	 	 	"5": {
@@ -4562,11 +4966,11 @@
  	 	 	 	 	"eng": "Unlock profile picture customization"
  	 	 	 	},
  	 	 	 	"3": {
- 	 	 	 	 	"trans": "Marco de chat de Conejita (con animación).",
+ 	 	 	 	 	"trans": "Marco de chat Rosa Neon de Conejita (con animación).",
  	 	 	 	 	"eng": "Pink Neon chat frame (with animation)"
  	 	 	 	},
  	 	 	 	"4": {
- 	 	 	 	 	"trans": "Perfil enmarcado de Conejita (con animación).",
+ 	 	 	 	 	"trans": "Perfil enmarcado Rosa Neon de Conejita (con animación).",
  	 	 	 	 	"eng": "Pink Neon Framed Profile (with animation)"
  	 	 	 	},
  	 	 	 	"5": {
@@ -4990,6 +5394,406 @@
  	 	 	 	 	"eng": "More coming in future update"
  	 	 	 	}
  	 	 	}
+ 	 	},
+ 	 	"donation20": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Título de donación \"Prestigio\"",
+ 	 	 	 	 	"eng": "\"Prestige\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Desbloquear la personalización de la imagen del perfil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Marco blanco (con animación)",
+ 	 	 	 	 	"eng": "White frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Perfil blanco (con animación)",
+ 	 	 	 	 	"eng": "White Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Desbloquear biografía personalizada",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Decoración de código de barras en el perfil",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Personalizar el lema de pandillas",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Personalizar la imagen de las pandillas",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Más llegando en la actualización futura",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation21": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Título de donación \"Prestigio\"",
+ 	 	 	 	 	"eng": "\"Prestige\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Desbloquear la personalización de la imagen del perfil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Marco rojo (con animación)",
+ 	 	 	 	 	"eng": "Red frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Perfil rojo (con animación)",
+ 	 	 	 	 	"eng": "Red Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Desbloquear biografía personalizada",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Decoración de código de barras en el perfil",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Personalizar el lema de pandillas",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Personalizar la imagen de las pandillas",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Más llegando en la actualización futura",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation22": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Título de donación \"Prestigio\"",
+ 	 	 	 	 	"eng": "\"Prestige\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Desbloquear la personalización de la imagen del perfil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Marco de signo de neón (con animación)",
+ 	 	 	 	 	"eng": "Neon Sign frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Perfil púrpura (con animación)",
+ 	 	 	 	 	"eng": "Purple Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Desbloquear biografía personalizada",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Decoración de código de barras en el perfil",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Personalizar el lema de pandillas",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Personalizar la imagen de las pandillas",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Más llegando en la actualización futura",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation23": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Título de donación \"Halloween\"",
+ 	 	 	 	 	"eng": "\"Halloween\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Desbloquear la personalización de la imagen del perfil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Marco de Halloween (con animación)",
+ 	 	 	 	 	"eng": "Halloween frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Perfil de Halloween (con animación)",
+ 	 	 	 	 	"eng": "Halloween Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Desbloquear biografía personalizada",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Decoración de código de barras en el perfil",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Personalizar el lema de pandillas",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Personalizar la imagen de las pandillas",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Más llegando en la actualización futura",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation24": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Título de donación \"Skipgod\"",
+ 	 	 	 	 	"eng": "\"SkipSage\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Desbloquear la personalización de la imagen del perfil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Marco Skipgod (con animación)",
+ 	 	 	 	 	"eng": "SkipSage frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Perfil Skipgod (con animación)",
+ 	 	 	 	 	"eng": "SkipSage Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Desbloquear biografía personalizada",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Decoración de código de barras en el perfil",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Personalizar el lema de pandillas",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Personalizar la imagen de las pandillas",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Más llegando en la actualización futura",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation25": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Título de donación \"ChristMasTime\"",
+ 	 	 	 	 	"eng": "\"Christmastime\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Desbloquear la personalización de la imagen del perfil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Marco de Navidad (con animación)",
+ 	 	 	 	 	"eng": "Christmastime frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Perfil de Navidad (con animación)",
+ 	 	 	 	 	"eng": "Christmastime Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Desbloquear biografía personalizada",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Decoración de código de barras en el perfil",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Personalizar el lema de pandillas",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Personalizar la imagen de las pandillas",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Más llegando en la actualización futura",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation26": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Título de donación \"Cyberdragon\"",
+ 	 	 	 	 	"eng": "\"CyberDragon\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Desbloquear la personalización de la imagen del perfil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Marco cibernético (con animación)",
+ 	 	 	 	 	"eng": "CyberDragon frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Perfil cibernético (con animación)",
+ 	 	 	 	 	"eng": "CyberDragon Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Desbloquear biografía personalizada",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Desbloquear biografía personalizada",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Personalizar el lema de pandillas",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Personalizar la imagen de las pandillas",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Más llegando en la actualización futura",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation27": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Título de donación \"omitir el señor\"",
+ 	 	 	 	 	"eng": "\"Skip Lord\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Desbloquear la personalización de la imagen del perfil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Skip Lord Frame (con animación)",
+ 	 	 	 	 	"eng": "Skip Lord frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Skip Lord Perfil (con animación)",
+ 	 	 	 	 	"eng": "Skip Lord Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Desbloquear biografía personalizada",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Desbloquear biografía personalizada",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Personalizar el lema de pandillas",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Personalizar la imagen de las pandillas",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Más llegando en la actualización futura",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation28": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Título de donación \"Sakura\"",
+ 	 	 	 	 	"eng": "\"Sakura\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Desbloquear personalización de imagen de perfil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Marco de Sakura (con animación)",
+ 	 	 	 	 	"eng": "Sakura frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Perfil de Sakura (con animación)",
+ 	 	 	 	 	"eng": "Sakura Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Desbloquear biografía personalizada",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Desbloquear biografía personalizada",
+ 	 	 	 	 	"eng": "Sakura profile decoration"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Personaliza lema de la pandilla",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Personalizar imagen de pandilla",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Más contenido llegando en la próxima actualización",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation29": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Título de donación \"Netrunner\"",
+ 	 	 	 	 	"eng": "\"Netrunner\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Desbloquear personalización de imagen de perfil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Marco Netrunner (con animación)",
+ 	 	 	 	 	"eng": "Netrunner frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Perfil de Netrunner (con animación)",
+ 	 	 	 	 	"eng": "Netrunner Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Desbloquear biografía personalizada",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Desbloquear biografía personalizada",
+ 	 	 	 	 	"eng": "Netrunner profile decoration"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Personaliza lema de la pandilla",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Personaliza la imagen de la pandilla",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Más contenido llegando en la próxima actualización",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
  	 	}
  	},
  	"equipmentMarks": {
@@ -5058,6 +5862,33 @@
  	 	 	"eng": "backpack"
  	 	}
  	},
+ 	"gameEvent": {
+ 	 	"lunarNewYear": {
+ 	 	 	"trans": "Año Nuevo Lunar",
+ 	 	 	"eng": "Lunar New Year"
+ 	 	},
+ 	 	"halloween": {
+ 	 	 	"trans": "Víspera de Todos los Santos",
+ 	 	 	"eng": "Halloween"
+ 	 	},
+ 	 	"thanksgiving": {
+ 	 	 	"trans": "Acción de gracias",
+ 	 	 	"eng": "Thanksgiving"
+ 	 	},
+ 	 	"christmas": {
+ 	 	 	"trans": "Navidad",
+ 	 	 	"eng": "Christmas"
+ 	 	},
+ 	 	"sakura": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Marzo",
+ 	 	 	 	"eng": "${percent}% off during event",
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	]
+ 	 	 	}
+ 	 	}
+ 	},
  	"itemFilterType": {
  	 	"shopSell": {
  	 	 	"description": {
@@ -5071,6 +5902,12 @@
  	 	 	"name": {
  	 	 	 	"trans": "Equipo desconocido",
  	 	 	 	"eng": "Unknown Equipment"
+ 	 	 	}
+ 	 	},
+ 	 	"unknownCache": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Caché desconocido",
+ 	 	 	 	"eng": "Unknown Cache"
  	 	 	}
  	 	},
  	 	"aiCore": {
@@ -5109,7 +5946,7 @@
  	 	 	 	"eng": "Anti Matter Charge"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "Generador miniatura desechable de energía antimateria. \r\n        Este objeto produce cantidades enormes de energía. Puedes usarlo como Munición para tu arma destructiva. ",
+ 	 	 	 	"trans": "Generador miniatura desechable de energía antimateria de un solo uso. \r\n        Este objeto produce cantidades enormes de energía. Puedes usarlo como Munición para tu arma destructiva. ",
  	 	 	 	"eng": "High-tech, miniaturized, one-time use, antimatter energy generator. \r\n        This item produces enormous amounts of power. You can use this as ammunition for your destructive weapon. "
  	 	 	}
  	 	},
@@ -5139,7 +5976,7 @@
  	 	 	 	"eng": "Tech Scrap"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "Chatarra de Equipo desmontado, puedes usarlos para conseguir EXP de Impresión mediante la ingeniería inversa. \r\n        Puedes realizar ingeniería inversa en el Área Comercial de Shangri-La.",
+ 	 	 	 	"trans": "Chatarra de Equipo desmontado, puedes usarlos para conseguir EXP de Impresión mediante ingeniería inversa. \r\n        Puedes realizar ingeniería inversa en el Área Comercial de Shangri-La.",
  	 	 	 	"eng": "Technology scrap from disassembled equipment, this can be reverse engineered to gain printing xp. \r\n        You can perform reverse engineering in the Job Hub."
  	 	 	}
  	 	},
@@ -5297,7 +6134,7 @@
  	 	 	 	"eng": "Prestige Nano Medic Bot"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "nanomáquinas inyectables que es para uso militar anticipado, capaz de parchear lesiones en situación de combate",
+ 	 	 	 	"trans": "Nanomáquinas inyectables que es para uso militar avanzado, capaz de parchear lesiones en situación de combate",
  	 	 	 	"eng": "injectable nano machines that is for advance military use, capable of patching injury in combat situation"
  	 	 	}
  	 	},
@@ -5427,7 +6264,7 @@
  	 	 	 	"eng": "Medical Tech Cluster"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "Un grupo de piezas de tecnología médica. en este compacto de es más fácil almacenar y transportar",
+ 	 	 	 	"trans": "Un grupo de piezas de tecnología médica. en esta forma compacta es más fácil almacenar y transportar",
  	 	 	 	"eng": "A cluster of medical tech parts. in this compact from it's easier to store and transport"
  	 	 	}
  	 	},
@@ -5536,7 +6373,7 @@
  	 	},
  	 	"clanDungeonKey": {
  	 	 	"name": {
- 	 	 	 	"trans": "Transmisor de Orden Invasora de Banda",
+ 	 	 	 	"trans": "Transmisor de orden de invasión de Banda",
  	 	 	 	"eng": "Gang Invasion Order Transmitter"
  	 	 	},
  	 	 	"description": {
@@ -5603,7 +6440,7 @@
  	 	 	 	 	"maxStack",
  	 	 	 	 	"duration"
  	 	 	 	],
- 	 	 	 	"trans": "Contiene fragmentos de avance IA diseñado para ayudar con los equipos de actualización. Cuando se usa, disminuye la posibilidad de falla crítica en ${percent}% (apilable por ${maxStack} veces) por ${duration} minutos. Este efecto se aplicará a todos los jugadores en línea",
+ 	 	 	 	"trans": "Contiene fragmentos de avance IA diseñado para ayudar cuando se actualizan los equipos. Cuando se usa, disminuye la posibilidad de falla crítica en ${percent}% (apilable por ${maxStack} veces) por ${duration} minutos. Este efecto se aplicará a todos los jugadores en línea",
  	 	 	 	"eng": "Contains fragments of advance AI designed to assist with upgrading equipments. When used, decreases the chance of destructive failure by ${percent}% (stackable for ${maxStack} times) for ${duration} minutes.This effect will apply to all players online"
  	 	 	}
  	 	},
@@ -5644,7 +6481,7 @@
  	 	 	 	"eng": "Calibration Safety Nano Bots"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "Nanomáquinas experimentales diseñadas para anular el efecto destructivo en caso de falla crítica, \r\n         Cuando esto está activado, durante 5 minutos, todas las fallas de calibración no destruirán el Objeto.",
+ 	 	 	 	"trans": "Nanomáquinas experimentales diseñadas para anular el efecto destructivo en caso de falla crítica, \r\n         Cuando esto está activado, durante 5 minutos, todas las fallas de calibración no destruirán el Objeto (Se aplica a todos los jugadores).",
  	 	 	 	"eng": "Experimental nano machines designed to reduces and negate the destructive effect when failing calibration, \r\n        when this is activated, all calibration fails will not destroy the item for 5 minutes (Applies to all players)"
  	 	 	}
  	 	},
@@ -5654,7 +6491,7 @@
  	 	 	 	"eng": "Old Pouch"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "Bolsa antigua olvidada, \r\n         en uno de sus lados hay una extraña caricatura de una rana con boca grande y labios rojos,\r\n         el significado del siniestro dibujo es desconocido, pero la bolsa es útil para guardar un objeto pequeño. \r\n         Aumenta la capacidad del Inventario cuando está equipado.",
+ 	 	 	 	"trans": "Bolsa antigua olvidada, \r\n         en uno de sus lados hay una extraña caricatura de una rana con boca grande y labios rojos,\r\n         el significado del antiguo y siniestro dibujo es desconocido, pero la bolsa es útil para guardar objetos pequeños en ella. \r\n         Aumenta la capacidad del Inventario cuando está equipado.",
  	 	 	 	"eng": "A forgotten ancient pouch, \r\n        there is a weird cartoon frog with big mouth and red lips drawing at the side of it,\r\n        the meaning of the ancient ominous drawing is unknown, but it is handy for keep some small object in it.\r\n        increase inventory space when equipped."
  	 	 	}
  	 	},
@@ -5664,7 +6501,7 @@
  	 	 	 	"eng": "Fanny Pack"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "Riñonera de moda, firmada hace décadas por una leyenda llamado, a sí mismo, 'La Roca'. \r\n         Aumenta la capacidad del Inventario cuando está equipada.",
+ 	 	 	 	"trans": "Riñonera de moda, firmada hace décadas por una leyenda llamada, a sí mismo, 'La Roca'. \r\n         Aumenta la capacidad del Inventario cuando está equipada.",
  	 	 	 	"eng": "Cool and fashionable Fanny Pack, signed by a legend called The Rock himself from decades ago.\r\n        increase inventory space when equipped."
  	 	 	}
  	 	},
@@ -5684,7 +6521,7 @@
  	 	 	 	"eng": "Employee Office Case"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "Maletín de oficina de uso común, tiene una etiqueta con la impresión de \"Arasaka\", en él, \r\n         Aunque es especioso y tiene compartimentos de alta tecnología para almacenar documentos, no es muy adecuado para transportar armas. \r\n         Aumenta la capcidad del Inventario cuando está equipado",
+ 	 	 	 	"trans": "Maletín de oficina de uso común, tiene una etiqueta con la impresión de \"Arasaka\", en él, \r\n         Aunque es espacioso y tiene compartimentos de alta tecnología para almacenar documentos, no es muy adecuado para transportar armas. \r\n         Aumenta la capacidad del Inventario cuando está equipado",
  	 	 	 	"eng": "An standard issue office case, it has a label with whit print with \"Arasaka\" on it, \r\n        while it is specious and has some high tech compartment and slots for document storage, it is not not very suitable for carrying weapons\r\n        increase inventory space when equipped"
  	 	 	}
  	 	},
@@ -5704,7 +6541,7 @@
  	 	 	 	"eng": "Chat exploit transmitter [PIRATE]"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "Módulo de hack que intercepta los paquetes globales del chat y los modifica, realizando un ataque man-in-the-middle. \r\n         Transforma todo conversación en el chat global en idioma pirata. Esto afecta a todos los jugadores durante 10 minutos",
+ 	 	 	 	"trans": "Módulo de hack que intercepta los paquetes globales del chat y los modifica, realizando un ataque Man-In-The-Middle. \r\n         Transforma todo conversación en el chat global en idioma pirata. Esto afecta a todos los jugadores durante 10 minutos",
  	 	 	 	"eng": "A exploit module that intercepts global chat packages and modifies it, performing Man-In-The-Middle attack.\r\n        Transforms all speech at global chat to Pirate Speak. This effects all players for 10 minutes"
  	 	 	}
  	 	},
@@ -5714,7 +6551,7 @@
  	 	 	 	"eng": "Chat exploit transmitter [1337]"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "Módulo de hack que intercepta los paquetes globales de chat y los modifica, realizando un ataque man-in-the-middle. \r\n         Transforma toda conversación en el chat global a L33T SP34K. Esto afecta a todos los jugadores durante 10 minutos",
+ 	 	 	 	"trans": "Módulo de hack que intercepta los paquetes globales de chat y los modifica, realizando un ataque Man-In-The-Middle. \r\n         Transforma toda conversación en el chat global a L33T SP34K. Esto afecta a todos los jugadores durante 10 minutos",
  	 	 	 	"eng": "A exploit module that intercepts global chat packages and modifies it, performing Man-In-The-Middle attack.\r\n        Transforms all speech at global chat to l33t Sp34k. This effects all players for 10 minutes"
  	 	 	}
  	 	},
@@ -5734,13 +6571,23 @@
  	 	 	 	"eng": "Chat exploit transmitter [Love]"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "¡Recibe un poco de amor, y tú también recibe un poco de amor! ¡Todos reciban un poco de amor! \r\n         Cuando se usa a todos se aman unos a otros. \r\n         Esto afecta a todos los jugadores durante 10 minutos",
+ 	 	 	 	"trans": "¡Recibe un poco de amor, y tú también recibe un poco de amor! ¡Todos reciban un poco de amor! \r\n         Cuando se usa todos se aman unos a otros. \r\n         Esto afecta a todos los jugadores durante 10 minutos",
  	 	 	 	"eng": "You get some love, and you get some love! everyone gets some love!.\r\n        When used everyone loves each other\r\n        This effects all players fow 10 minutes"
+ 	 	 	}
+ 	 	},
+ 	 	"chatExploitPosh": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Transmisor de chat con exploit [Posh]",
+ 	 	 	 	"eng": "Chat exploit transmitter [Posh]"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Al activarse, toda la correspondencia ofrecida por los habitantes de nuestro reino de chat sufrirá una encantadora metamorfosis, vistiéndose con el distinguido atuendo del inglés caballeroso por una duración exacta de 10 minutos. Este truco solo funcionará correctamente con el inglés",
+ 	 	 	 	"eng": "Upon activation, all correspondence proffered by the denizens of our chat realm shall undergo a delightful metamorphosis, adorning itself in the distinguished garb of gentlemanly English for a duration of precisely 10 minutes. this exploit will only work well with English"
  	 	 	}
  	 	},
  	 	"upgradeResetShard": {
  	 	 	"name": {
- 	 	 	 	"trans": "Cápsula de Restauración",
+ 	 	 	 	"trans": "Cápsula de Restauración de fabrica",
  	 	 	 	"eng": "Factory reset shard"
  	 	 	},
  	 	 	"description": {
@@ -5788,6 +6635,16 @@
  	 	 	 	"eng": "An encrypted container with red, green decoration and a 'CyberSanta™' logo on the side of it."
  	 	 	}
  	 	},
+ 	 	"christmasGift2": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Contenedor helado",
+ 	 	 	 	"eng": "Frosty Container"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Un regalo misterioso envuelto en envases brillantes con temas de copos de nieve. Solo puede desbloquearlo en el [terminal] durante diciembre.",
+ 	 	 	 	"eng": "A mystery gift wrapped in sparkling, snowflake-themed packaging. You can only unlock it at the [Terminal] during December."
+ 	 	 	}
+ 	 	},
  	 	"rngInterferer": {
  	 	 	"name": {
  	 	 	 	"trans": "Interferencia RNG",
@@ -5823,7 +6680,7 @@
  	 	 	 	"eng": "Jack-o'-lantern"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "Una calabaza tallada que está iluminada por un LED en el interior. Es un artículo decorativo para el Halloween. Puedes crear un contenedor legendario cerrado con 100 de estos.",
+ 	 	 	 	"trans": "Una calabaza tallada que está iluminada por un LED en su interior. Es un artículo decorativo para Halloween. Puedes crear un contenedor legendario cerrado con 100 de estos.",
  	 	 	 	"eng": "A carved pumpkin that is lit by a LED inside. It's a decorative item use for of Halloween. You can craft a Locked Legendary Container with 100 of this"
  	 	 	}
  	 	},
@@ -5838,7 +6695,7 @@
  	 	 	 	 	"time",
  	 	 	 	 	"costMult"
  	 	 	 	],
- 	 	 	 	"trans": "Mientras que el fragmento esté activo, todos los jugadores pueden optar por iniciar ciertas tareas de AFK en Boost Mode ™, ganando una recompensa de ${rewardMult}x mientras aumentan el costo y la duración en ${costMult}x. \\ n * Este artículo todavía está beta y está sujeto a un cambio de equilibrio, use inmediatamente después de la compra *",
+ 	 	 	 	"trans": "Mientras que el fragmento esté activo, todos los jugadores pueden optar por iniciar ciertas tareas AFK en Boost Mode ™, ganando una recompensa de ${rewardMult}x mientras aumentan el costo y la duración en ${costMult}x. \\ n * Este artículo todavía está en fase beta y está sujeto a un cambio de equilibrio, use inmediatamente después de la compra *",
  	 	 	 	"eng": "While shard is active all players can choose to start certain AFK tasks in Boost Mode™, gaining ${rewardMult}x reward while increasing cost and duration by ${costMult}x. \\n* This item is still beta and subject to balance change, please use immediately after purchase *"
  	 	 	}
  	 	},
@@ -5858,7 +6715,7 @@
  	 	 	 	"eng": "Golden Coin"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "Una moneda dorada con un grabado de un dragón. La moneda física es muy rara de ver en estos días, debería poder comprar algo bueno en el distrito del mercado",
+ 	 	 	 	"trans": "Una moneda dorada con un grabado de un dragón. La moneda física es muy rara de ver en estos días, debería poder comprar algo bueno con ella en el distrito del mercado",
  	 	 	 	"eng": "A golden coin with a engraving of a dragon on it. physical currency is very rare to see these days, should be able to buy something good with it in the market district"
  	 	 	}
  	 	},
@@ -5871,8 +6728,21 @@
  	 	 	 	"vars": [
  	 	 	 	 	"percent"
  	 	 	 	],
- 	 	 	 	"trans": "Estas albóndigas son diferentes a cualquier otra. Hechas con amor y cuidado por yen, estos deliciosos bolsillos de bondad están llenos de los mejores ingredientes y cocinados a la perfección. \\ N Recuperan ${percent}% de salud tras el consumo",
+ 	 	 	 	"trans": "Estas albóndigas son diferentes a cualquier otra. Hechas con amor y cuidado por Yen, estos deliciosos bolsillos de bondad están llenos de los mejores ingredientes y cocinados a la perfección. \\ N Recuperan ${percent}% de salud tras el consumo",
  	 	 	 	"eng": "These dumplings are unlike any other. Made with love and care by Yen, these delicious pockets of goodness are filled with the finest ingredients and cooked to perfection.\\n recover ${percent}% health upon consumption"
+ 	 	 	}
+ 	 	},
+ 	 	"pumpkinPie": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Pastel de calabaza",
+ 	 	 	 	"eng": "Pumpkin Pie"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Un delicioso pastel de calabaza. Este pastel tiene una gran carga de crema de vainilla gruesa, deliciosa! \\ nrecover ${percent}% salud al consumo",
+ 	 	 	 	"eng": "A delicious pumpkin pie. this pie has big load of thick vanilla cream over it, delicious!\\nrecover ${percent}% health upon consumption"
  	 	 	}
  	 	},
  	 	"riceCake": {
@@ -5928,6 +6798,153 @@
  	 	 	 	"eng": "A token that can be used to exchange items"
  	 	 	}
  	 	},
+ 	 	"techScrapCluster": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Clúster de chatarra tecnológica",
+ 	 	 	 	"eng": "Tech Scrap Cluster"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Un clúster de chatarra tecnológica contiene 1000 restos tecnológicos, se puede usar para almacenar e intercambiar fácilmente",
+ 	 	 	 	"eng": "A Tech Scrap Cluster contains 1000 Tech Scraps, can be used to easily store and trade"
+ 	 	 	}
+ 	 	},
+ 	 	"rareEquipmentCrate": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Caja de equipos raros",
+ 	 	 	 	"eng": "Rare Equipment Crate"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Una caja que contiene equipos aleatorios u otros botines",
+ 	 	 	 	"eng": "A crate that contains a random equipments or other loots"
+ 	 	 	}
+ 	 	},
+ 	 	"globalPartyBuff": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Implementador de fiesta global",
+ 	 	 	 	"eng": "Global Party Deployer"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"afkPercent",
+ 	 	 	 	 	"btcPercent",
+ 	 	 	 	 	"expPercent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Cuando se despliega, reduce el tiempo de AFK en ${afkPercent}%, aumenta el BTC obtenido en ${btcPercent}%, aumenta la EXP obtenida en ${expPercent}%\\ny se mostrará un banner en la pantalla de chat con su nombre indicando que ha desplegado el buff",
+ 	 	 	 	"eng": "When deployed, reduce AFK time by ${afkPercent}%, increased BTC gained by ${btcPercent}%, increase EXP gained by ${expPercent}%\\nAnd a banner will be shown in chat screen with your name indicating that you have deployed the buff"
+ 	 	 	},
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"afkPercent",
+ 	 	 	 	 	"btcPercent",
+ 	 	 	 	 	"expPercent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "🎉Es Tiempo de fiesta! 🥳, reduce el tiempo de AFK en ${afkPercent}%, aumenta BTC obtenido en ${btcPercent}%, aumenta la EXP obtenida en ${expPercent}%",
+ 	 	 	 	"eng": "🎉Its Party Time!🥳, reduce AFK time by ${afkPercent}%, increased BTC gained by ${btcPercent}%, increase EXP gained by ${expPercent}%"
+ 	 	 	}
+ 	 	},
+ 	 	"turkey": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Pavo asado",
+ 	 	 	 	"eng": "Roasted Turkey"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Un delicioso pavo asado, cuando se consume aumenta la EXP recibida en tareas de AFK en ${percent}%",
+ 	 	 	 	"eng": "A delicious roasted turkey, when consumed increases EXP received in AFK tasks by ${percent}%"
+ 	 	 	}
+ 	 	},
+ 	 	"pudding": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Pudín de Navidad",
+ 	 	 	 	"eng": "Christmas Pudding"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Un denso y al vapor budín con frutas secas, nueces y a menudo llenas de alcohol, cuando los aumentos consumidos se reciben en tareas AFK en ${percent}%",
+ 	 	 	 	"eng": "A dense, steamed pudding with dried fruits, nuts, and often laced with alcohol, when consumed increases EXP received in AFK tasks by ${percent}%.\\nThis item can only be used during December"
+ 	 	 	},
+ 	 	 	"error": {
+ 	 	 	 	"trans": "Este artículo solo está disponible durante el evento de Navidad",
+ 	 	 	 	"eng": "This item is only available during Christmas Event"
+ 	 	 	}
+ 	 	},
+ 	 	"pawCredit": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Crédito de Garra",
+ 	 	 	 	"eng": "Paw Credit"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Un crédito que se puede usar para intercambiar objetos para mascotas en el Santuario de Neon Paw",
+ 	 	 	 	"eng": "A credit that can be used to exchange pet items at Neon Paw Sanctuary"
+ 	 	 	}
+ 	 	},
+ 	 	"petTokenShard": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Medallón de Servicio Voluntario",
+ 	 	 	 	"eng": "Volunteer Service Medallion"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Combina ${amount} de esto para obtener un Pase de Adopción de Santuario, y podrás usarlo para adoptar una nueva mascota",
+ 	 	 	 	"eng": "Combine ${amount} of this to get a Sanctuary Adoption Pass, and it can be used to adopt a new pet"
+ 	 	 	}
+ 	 	},
+ 	 	"petToken": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Medalla de Servicio Voluntario",
+ 	 	 	 	"eng": "Sanctuary Adoption Pass"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Combina ${amount} de esto para obtener un Pase de Adopción de Santuario, y podrás usarlo para adoptar una nueva mascota",
+ 	 	 	 	"eng": "A pass that can be used to adopt a pet from Neon Paw Sanctuary"
+ 	 	 	}
+ 	 	},
+ 	 	"petFood": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Mordiscos de ElectroFibra",
+ 	 	 	 	"eng": "ElectroFiber Bites"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "\"¡Los Mordiscos de ElectroFibra™ contienen una mezcla compleja de fibras que conducen y almacenan energía, potenciando la resistencia y la potencia de tu mascota para expediciones más largas en el ciberespacio salvaje!\"",
+ 	 	 	 	"eng": "\"ElectroFiber Bites™ contain a complex blend of fibers that conduct and store energy, boosting your pet's stamina and power for longer expeditions in the cyber wilderness.\""
+ 	 	 	}
+ 	 	},
+ 	 	"petToy": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "NanoMordisco Bola",
+ 	 	 	 	"eng": "NanoNibble Ball"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "\"Presentamos el NanoNibble Ball: una maravilla de la tecnología de juego diseñada para pura diversión. Cada bola se ilumina con patrones fascinantes al más mínimo toque, asegurando que tu mascota se divierta al máximo. Después de una sesión de diversión sin precedentes, la bola se descompone inteligentemente en partículas inofensivas y ecológicas, sin dejar rastro. Perfecto para una aventura única e inolvidable en compañía digital, es la experiencia definitiva de juego que desaparece sin dejar rastro, ahorrándote la limpieza.\"",
+ 	 	 	 	"eng": "\"Introducing the NanoNibble Ball – a marvel of playtime technology designed for sheer joy. Each ball lights up with mesmerizing patterns at the slightest touch, ensuring your pet is thoroughly entertained. After a session of unprecedented fun, the ball smartly deconstructs into harmless, eco-friendly particles, leaving no mess behind. Perfect for a single, unforgettable adventure in digital companionship, it’s the ultimate playtime experience that neatly disappears, sparing you the cleanup.\""
+ 	 	 	}
+ 	 	},
+ 	 	"petCleaner": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Rociador FurFlush",
+ 	 	 	 	"eng": "FurFlush Spray"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "FurFlush Spray: El elegante bote dice 'Limpieza instantánea, desaparición instantánea'. ¡Un rápido rociado convierte a tu mascota sucia en reluciente, sin enjuague, sin lío, ¡solo puff! Ideal para esos momentos de 'ups' antes de una reunión cibernética. Advertencia: Puede provocar un inesperado estilo en tu mascota. Magia de un solo uso para el compañero del explorador urbano. Desaparece después de usarlo, no deja evidencia, solo una mascota deslumbrante.",
+ 	 	 	 	"eng": "FurFlush Spray: The sleek canister reads 'Instant Clean, Instant Gone.' A quick spritz turns your grimy pet gleaming—no rinse, no mess, just poof! Perfect for those 'oops' moments before a cyber meet-up. Caution: May lead to unexpected pet swagger. Single-use magic for the urban explorer's companion. Disappears after use, leaving no evidence except a dazzling pet."
+ 	 	 	}
+ 	 	},
+ 	 	"petMedicine": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "CuraPerruna",
+ 	 	 	 	"eng": "PawfectCure"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Cuando tu mascota se siente mal, o simplemente no está en su mejor momento, este es el remedio infalible. Combate desde los moquitos hasta los \"comí algo raro\" blues. Cuidado con los efectos secundarios: puede causar una repentina apreciación por tu cocina y un aumento en los ataques de cariño. Porque a veces, el mejor remedio es un poco de risa... y PawfectCure.",
+ 	 	 	 	"eng": "When your pet's feeling under the weather, or just plain off, this is the go-to. It tackles everything from the sniffles to the 'I ate something weird' blues. Beware of side effects: may cause a sudden appreciation for your cooking and an increase in snuggle attacks. Because sometimes, the best remedy is a little laughter... and PawfectCure."
+ 	 	 	}
+ 	 	},
  	 	"experienceShard": {
  	 	 	"name": {
  	 	 	 	"vars": [
@@ -5940,7 +6957,7 @@
  	 	 	 	"vars": [
  	 	 	 	 	"levelName"
  	 	 	 	],
- 	 	 	 	"trans": "Dispositivo de almacenamiento que contiene algunas memorias de alguien, si lo usas podrás ganar ${levelName} EXP.",
+ 	 	 	 	"trans": "Dispositivo de almacenamiento que contiene algunas memorias y experiencia de alguien, si lo usas podrás ganar ${levelName} EXP.",
  	 	 	 	"eng": "A shard that contains someone's memory and experience. If used you may gain ${levelName} experience from this"
  	 	 	}
  	 	},
@@ -6066,6 +7083,12 @@
  	 	 	 	 	"trans": "Ir a la base de la banda.",
  	 	 	 	 	"eng": "Go to gang headquarters"
  	 	 	 	}
+ 	 	 	},
+ 	 	 	"toApartment": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Ve a tu apartamento",
+ 	 	 	 	 	"eng": "Go to your apartment"
+ 	 	 	 	}
  	 	 	}
  	 	},
  	 	"job": {
@@ -6116,12 +7139,35 @@
  	 	 	 	"eng": "Gang Headquarters"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "[Banda]\r\n        La sede donde tú y los otros miembros de tu banda pueden planificar su próxima operación.",
+ 	 	 	 	"trans": "[Banda]\r\n        La sede donde tú y los otros miembros de tu banda pueden planificar y ejecutar su próxima operación.",
  	 	 	 	"eng": "[Gang]\r\n        The headquarters for you and your gang members to plan and execute your next operation"
  	 	 	},
  	 	 	"cantEnterError": {
  	 	 	 	"trans": "Necesitas unirte a una banda para entrar a ésta área.",
  	 	 	 	"eng": "You need to join a gang to enter this area"
+ 	 	 	}
+ 	 	},
+ 	 	"apartment": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Mi Depa",
+ 	 	 	 	"eng": "My Apartment"
+ 	 	 	},
+ 	 	 	"toMainHub": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Regresa al Centro de la Ciudad de Shangri-La",
+ 	 	 	 	 	"eng": "Return to Shangri-La City Center"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "[Apartamento]\nTu acogedor apartamento en la ciudad. Tus mascotas te están esperando para que vuelvas a casa.",
+ 	 	 	 	"eng": "[Apartment]\r\n        Your cozy apartment in the city. your pets are waiting for you to come home."
+ 	 	 	},
+ 	 	 	"cantEnterError": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"level"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Necesitas tener al menos nivel ${level} para alquilar un apartamento",
+ 	 	 	 	"eng": "You need to be at least level ${level} to rent an apartment"
  	 	 	}
  	 	},
  	 	"zone": {
@@ -6311,7 +7357,7 @@
  	 	 	 	"eng": "To progress to the next area, you need to get Secret Key Fragments from dungeons, \r\n        and use the Terminal to Brute Force the key for next area"
  	 	 	},
  	 	 	"canAccessError": {
- 	 	 	 	"trans": "Necesitas ser nivel 5 para acceder a la Terminal.",
+ 	 	 	 	"trans": "Necesitas ser al menos nivel 5 para acceder a la Terminal.",
  	 	 	 	"eng": "You need to be at least level 5 to access terminal"
  	 	 	},
  	 	 	"description": {
@@ -6412,7 +7458,7 @@
  	 	"lunar": {
  	 	 	"defaultLines": {
  	 	 	 	"trans": [
- 	 	 	 	 	"¡Bienvenido! Siempre es un placer para nuestra familia ayudarte a encontrar el equipo perfecto."
+ 	 	 	 	 	"¡Bienvenido! Siempre es un placer para nuestra familia ayudarte a encontrar el equipamiento perfecto."
  	 	 	 	],
  	 	 	 	"eng": [
  	 	 	 	 	"Welcome, our family is always excited to help you find the perfect tech gear."
@@ -6430,12 +7476,12 @@
  	 	"bellial": {
  	 	 	"defaultLines": {
  	 	 	 	"trans": [
- 	 	 	 	 	"Life is tough, but you're tougher. Keep fighting.",
- 	 	 	 	 	"Stay strong, stay punk, and stay alive.",
- 	 	 	 	 	"Remember, your worth is not defined by your struggles.",
- 	 	 	 	 	"Don't let the system bring you down, rise up and rebel.",
- 	 	 	 	 	"Stay connected to your inner self, and disconnect from the noise.",
- 	 	 	 	 	"Stay online, stay strong, and stay true to yourself."
+ 	 	 	 	 	"La vida es dura, pero tu eres mas duro. Sigue Combatiendo.",
+ 	 	 	 	 	"Permanece fuerte, permanece punk y permanece vivo",
+ 	 	 	 	 	"Recuerda, tu valor no esta definido por tus luchas",
+ 	 	 	 	 	"No dejes que el sistema te deprima, levantate y revelate.",
+ 	 	 	 	 	"Mantente conectado con tu yo interior y desconéctate del ruido.",
+ 	 	 	 	 	"Mantente en línea, mantente fuerte y sé fiel a ti mismo."
  	 	 	 	],
  	 	 	 	"eng": [
  	 	 	 	 	"Life is tough, but you're tougher. Keep fighting.",
@@ -6453,6 +7499,56 @@
  	 	 	"npcName": {
  	 	 	 	"trans": "De primera calidad",
  	 	 	 	"eng": "B3llial"
+ 	 	 	}
+ 	 	},
+ 	 	"halloween": {
+ 	 	 	"defaultLines": {
+ 	 	 	 	"trans": [
+ 	 	 	 	 	"La calabaza es la fuente de mi poder!",
+ 	 	 	 	 	"Mira mi disfraz de calabaza!",
+ 	 	 	 	 	"Hmmmm, me pregunto que hay dentro de esta calabaza...",
+ 	 	 	 	 	"Dame tu calabaza, y te daré una recompensa a cambio!"
+ 	 	 	 	],
+ 	 	 	 	"eng": [
+ 	 	 	 	 	"Pumpkin is my source of power!",
+ 	 	 	 	 	"Check out my pumpkin costume!",
+ 	 	 	 	 	"Hmmmm, I wonder what's inside this pumpkin...",
+ 	 	 	 	 	"Give me your pumpkin, and I'll give you a treat!"
+ 	 	 	 	]
+ 	 	 	},
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Callejón",
+ 	 	 	 	"eng": "Alleyway"
+ 	 	 	},
+ 	 	 	"npcName": {
+ 	 	 	 	"trans": "raro de calabaza",
+ 	 	 	 	"eng": "pumpkin weirdo"
+ 	 	 	}
+ 	 	},
+ 	 	"petShop": {
+ 	 	 	"defaultLines": {
+ 	 	 	 	"trans": [
+ 	 	 	 	 	"Hey, choom! Neon Paws is for the brave. These sprites need your daily grind. Ready to dive in?",
+ 	 	 	 	 	"Lookin' sharp, netrunner! Here, pets are more than code, they need your daily hack to thrive.",
+ 	 	 	 	 	"What's up, street samurai? Partner with a survivor. Without your daily deeds, they're zeroed.",
+ 	 	 	 	 	"Edge runner, eh? This is where tech meets heart. Ignore them, and they vanish into the net. Daily care, got it?",
+ 	 	 	 	 	"Cyberdeck in hand, heart on sleeve? Our critters need that daily touch or they'll fade into the static."
+ 	 	 	 	],
+ 	 	 	 	"eng": [
+ 	 	 	 	 	"Hey, choom! Neon Paws is for the brave. These sprites need your daily grind. Ready to dive in?",
+ 	 	 	 	 	"Lookin' sharp, netrunner! Here, pets are more than code, they need your daily hack to thrive.",
+ 	 	 	 	 	"What's up, street samurai? Partner with a survivor. Without your daily deeds, they're zeroed.",
+ 	 	 	 	 	"Edge runner, eh? This is where tech meets heart. Ignore them, and they vanish into the net. Daily care, got it?",
+ 	 	 	 	 	"Cyberdeck in hand, heart on sleeve? Our critters need that daily touch or they'll fade into the static."
+ 	 	 	 	]
+ 	 	 	},
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Santuario de Patas Neón",
+ 	 	 	 	"eng": "Neon Paws Sanctuary"
+ 	 	 	},
+ 	 	 	"npcName": {
+ 	 	 	 	"trans": "Jin",
+ 	 	 	 	"eng": "Jin"
  	 	 	}
  	 	},
  	 	"recycleMachine": {
@@ -6484,6 +7580,58 @@
  	 	 	 	"trans": "Carroñeros",
  	 	 	 	"eng": "Scavengers"
  	 	 	}
+ 	 	}
+ 	},
+ 	"petType": {
+ 	 	"dog": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Perro",
+ 	 	 	 	"eng": "Dog"
+ 	 	 	}
+ 	 	},
+ 	 	"cat": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Gato",
+ 	 	 	 	"eng": "Cat"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"petStatus": {
+ 	 	"sick": {
+ 	 	 	"trans": "Genial",
+ 	 	 	"eng": "Sick"
+ 	 	},
+ 	 	"hungry": {
+ 	 	 	"trans": "Hambriento",
+ 	 	 	"eng": "Hungry"
+ 	 	},
+ 	 	"starving": {
+ 	 	 	"trans": "Hambriento",
+ 	 	 	"eng": "Starving"
+ 	 	},
+ 	 	"wellFed": {
+ 	 	 	"trans": "Satisfecho",
+ 	 	 	"eng": "Well Fed"
+ 	 	},
+ 	 	"dirty": {
+ 	 	 	"trans": "Sucio",
+ 	 	 	"eng": "Dirty"
+ 	 	},
+ 	 	"filthy": {
+ 	 	 	"trans": "Asqueroso",
+ 	 	 	"eng": "Filthy"
+ 	 	},
+ 	 	"dead": {
+ 	 	 	"trans": "Fallecido",
+ 	 	 	"eng": "Deceased"
+ 	 	},
+ 	 	"unhappy": {
+ 	 	 	"trans": "Insatisfecho",
+ 	 	 	"eng": "Unhappy"
+ 	 	},
+ 	 	"depressed": {
+ 	 	 	"trans": "Deprimido",
+ 	 	 	"eng": "Depressed"
  	 	}
  	},
  	"action": {
@@ -6613,13 +7761,29 @@
  	 	 	 	"eng": "Trade"
  	 	 	}
  	 	},
+ 	 	"bulkCrafting": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Crafting a granel",
+ 	 	 	 	"eng": "Bulk Crafting"
+ 	 	 	}
+ 	 	},
+ 	 	"petAFK": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Turno de Voluntariado en Refugio de Mascotas",
+ 	 	 	 	"eng": "Pet Shelter Volunteer Shift"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "¡Ofrece tu tiempo en el refugio de mascotas local para ayudar a cuidar a los animales!",
+ 	 	 	 	"eng": "Volunteer at the local pet shelter to help take care of the animals."
+ 	 	 	}
+ 	 	},
  	 	"autoFarm": {
  	 	 	"name": {
  	 	 	 	"trans": "Desplegar Bot de farmeo",
  	 	 	 	"eng": "Deploy farm bot"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "[Recoletor AFK de EXP]\r\n        Despliegas un Bot implementado con IA que explora por ti. Esto consumirá un Núcleo de IA y solo soporta un uso.",
+ 	 	 	 	"trans": "[Recolector AFK de EXP]\r\n        Despliegas un Bot implementado con IA que explora por ti. Esto consumirá un Núcleo de IA y solo soporta un uso.",
  	 	 	 	"eng": "[AFK Exp Farm]\r\n        Deploys an AI to dungeon for you. This will use up an AI Core, they usually only just manage the one trip."
  	 	 	},
  	 	 	"tut": {
@@ -6642,6 +7806,59 @@
  	 	 	 	"trans": "[Recolección de Recursos AFK]\r\n                    Buscar alrededor de ${zoneName} y recolectar objetos útiles.\r\n                    ¡Quien sabe, quizá tengas suerte!",
  	 	 	 	"eng": "[AFK Resource Gather]\r\n                    Search around in ${zoneName} and scavenge for useful items.\r\n                    Who knows, maybe you'll get lucky!"
  	 	 	}
+ 	 	}
+ 	},
+ 	"leaderboard": {
+ 	 	"skip": {
+ 	 	 	"trans": "Puntos de salto",
+ 	 	 	"eng": "Skip Points"
+ 	 	},
+ 	 	"level": {
+ 	 	 	"trans": "Nivel",
+ 	 	 	"eng": "Level"
+ 	 	},
+ 	 	"epicPrint": {
+ 	 	 	"trans": "Equipo épico impreso",
+ 	 	 	"eng": "Epic Equipment Printed"
+ 	 	},
+ 	 	"epicBagPrint": {
+ 	 	 	"trans": "Bolso épico hecho",
+ 	 	 	"eng": "Epic Bag Crafted"
+ 	 	},
+ 	 	"mining": {
+ 	 	 	"trans": "Nivel minero",
+ 	 	 	"eng": "Mining Level"
+ 	 	},
+ 	 	"ammo": {
+ 	 	 	"trans": "Y el nivel",
+ 	 	 	"eng": "Ammo Level"
+ 	 	},
+ 	 	"medical": {
+ 	 	 	"trans": "Nivel médico",
+ 	 	 	"eng": "Medical Level"
+ 	 	},
+ 	 	"scavenge": {
+ 	 	 	"trans": "Nivel de recolección",
+ 	 	 	"eng": "Scavenge Level"
+ 	 	},
+ 	 	"molecular": {
+ 	 	 	"trans": "Nivel de impresión molecular",
+ 	 	 	"eng": "Molecular Print Level"
+ 	 	},
+ 	 	"streetcred": {
+ 	 	 	"trans": "Credibilidad callejera",
+ 	 	 	"eng": "Street Cred"
+ 	 	},
+ 	 	"description": {
+ 	 	 	"vars": [
+ 	 	 	 	"minutes"
+ 	 	 	],
+ 	 	 	"trans": "Actualizaciones de la lista de tablas de clasificación cada ${minutes} minutos",
+ 	 	 	"eng": "Leaderboard listing updates every ${minutes} minutes"
+ 	 	},
+ 	 	"noPlayers": {
+ 	 	 	"trans": "Actualmente no hay jugadores en esta tabla de clasificación",
+ 	 	 	"eng": "Currently No Players in this Leaderboard"
  	 	}
  	},
  	"Quest": {
@@ -6708,11 +7925,11 @@
  	 	 	},
  	 	 	"clearChallengeDungeon": {
  	 	 	 	"name": {
- 	 	 	 	 	"trans": "Despejar una Mazmorra de Desafío",
+ 	 	 	 	 	"trans": "Despejar una Mazmorra Desafiante",
  	 	 	 	 	"eng": "Clear challenge dungeon"
  	 	 	 	},
  	 	 	 	"description": {
- 	 	 	 	 	"trans": "Despeja una Mazmorra de Desafío (puede ser cooperativo).",
+ 	 	 	 	 	"trans": "Despeja una Mazmorra Desafiante (puede ser cooperativo).",
  	 	 	 	 	"eng": "Clear a challenge dungeon (can be co-op)"
  	 	 	 	}
  	 	 	},
@@ -6768,7 +7985,7 @@
  	 	 	},
  	 	 	"tutorial": {
  	 	 	 	"name": {
- 	 	 	 	 	"trans": "Página de tutorial abierto",
+ 	 	 	 	 	"trans": "Abrir Tutorial",
  	 	 	 	 	"eng": "Open tutorial Page"
  	 	 	 	},
  	 	 	 	"description": {
@@ -6778,31 +7995,31 @@
  	 	 	},
  	 	 	"killGang1": {
  	 	 	 	"name": {
- 	 	 	 	 	"trans": "Derrota al miembro de la pandilla de los animales",
+ 	 	 	 	 	"trans": "Derrota al miembro de la pandilla de los Animales",
  	 	 	 	 	"eng": "Defeat Animals gang member"
  	 	 	 	},
  	 	 	 	"description": {
- 	 	 	 	 	"trans": "Derrota a los animales enemigos de pandillas",
+ 	 	 	 	 	"trans": "Derrota a los enemigos de la pandilla de los Animales",
  	 	 	 	 	"eng": "Defeat Animals gang enemies"
  	 	 	 	}
  	 	 	},
  	 	 	"killGang2": {
  	 	 	 	"name": {
- 	 	 	 	 	"trans": "Derrota miembro de la pandilla de los niños Voodoo",
+ 	 	 	 	 	"trans": "Derrota al miembro de la pandilla de los niños Voodoo",
  	 	 	 	 	"eng": "Defeat Voodoo boys gang member"
  	 	 	 	},
  	 	 	 	"description": {
- 	 	 	 	 	"trans": "Derrota a los enemigos de pandillas Voodoo Boys",
+ 	 	 	 	 	"trans": "Derrota a los enemigos de la pandilla de los niños Voodoo",
  	 	 	 	 	"eng": "Defeat Voodoo boys gang enemies"
  	 	 	 	}
  	 	 	},
  	 	 	"killGang3": {
  	 	 	 	"name": {
- 	 	 	 	 	"trans": "Derrotar miembro de la pandilla de Scavengers",
+ 	 	 	 	 	"trans": "Derrota al miembro de la pandilla de los Scavengers",
  	 	 	 	 	"eng": "Defeat Scavengers gang member"
  	 	 	 	},
  	 	 	 	"description": {
- 	 	 	 	 	"trans": "Derrota a los enemigos de la pandilla de los carroñeros",
+ 	 	 	 	 	"trans": "Derrota a los enemigos de la pandilla de los Scavengers",
  	 	 	 	 	"eng": "Defeat Scavengers gang enemies"
  	 	 	 	}
  	 	 	}
@@ -6835,6 +8052,12 @@
  	 	 	"name": {
  	 	 	 	"trans": "Desbloquear Contenedor Misterioso",
  	 	 	 	"eng": "Unlock Mysterious Container"
+ 	 	 	}
+ 	 	},
+ 	 	"christmasGift2": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Desbloquear contenedor Frosty",
+ 	 	 	 	"eng": "Unlock Frosty Container"
  	 	 	}
  	 	},
  	 	"backpack1": {
@@ -6873,14 +8096,8 @@
  	 	},
  	 	"aiCoreCluster": {
  	 	 	"name": {
- 	 	 	 	"trans": "Agrupamiento de núcleo IA",
+ 	 	 	 	"trans": "Grupo de núcleo IA",
  	 	 	 	"eng": "AI Core Cluster"
- 	 	 	}
- 	 	},
- 	 	"halloween": {
- 	 	 	"name": {
- 	 	 	 	"trans": "Jack O Linterna",
- 	 	 	 	"eng": "Jack O Lantern"
  	 	 	}
  	 	},
  	 	"christmasToBox": {
@@ -6900,6 +8117,40 @@
  	 	 	 	"trans": "Clúster de tecnología médica",
  	 	 	 	"eng": "Medical Tech Cluster"
  	 	 	}
+ 	 	},
+ 	 	"medicalTechClusterRevers": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Chatarra de tecnología médica",
+ 	 	 	 	"eng": "Medical Tech Scrap"
+ 	 	 	}
+ 	 	},
+ 	 	"techScrapCluster": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Clúster de chatarra tecnológica",
+ 	 	 	 	"eng": "Tech Scrap Cluster"
+ 	 	 	}
+ 	 	},
+ 	 	"techScrapClusterReverse": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Chatarra tecnológica",
+ 	 	 	 	"eng": "Tech Scrap"
+ 	 	 	}
+ 	 	},
+ 	 	"unlockRareEquipmentCrate": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Desbloquear caja de equipos raros",
+ 	 	 	 	"eng": "Unlock Rare Equipment Crate"
+ 	 	 	}
+ 	 	},
+ 	 	"craftPetToken": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Pase de Adopción del Refugio de Artesanía",
+ 	 	 	 	"eng": "Craft Sanctuary Adoption Pass"
+ 	 	 	}
+ 	 	},
+ 	 	"craft": {
+ 	 	 	"trans": "Crear",
+ 	 	 	"eng": "Craft"
  	 	},
  	 	"ammo1": {
  	 	 	"vars": [
@@ -6991,6 +8242,10 @@
  	 	 	"trans": "Exploit de Chat [AMOR]",
  	 	 	"eng": "Chat Exploit [LOVE]"
  	 	},
+ 	 	"posh": {
+ 	 	 	"trans": "Chat Exploit [POSH] ",
+ 	 	 	"eng": "Chat Exploit [POSH]"
+ 	 	},
  	 	"chatExploitProtect": {
  	 	 	"trans": "Encriptación de chat VPN",
  	 	 	"eng": "Chat Encryption"
@@ -7006,6 +8261,30 @@
  	 	"aiConnect": {
  	 	 	"trans": "Conexión del ciberespacio",
  	 	 	"eng": "Cyberspace Connection"
+ 	 	},
+ 	 	"globalParty": {
+ 	 	 	"trans": "Fiesta global",
+ 	 	 	"eng": "Global Party"
+ 	 	},
+ 	 	"afkExp": {
+ 	 	 	"trans": "AFK exp boost",
+ 	 	 	"eng": "AFK EXP Boost"
+ 	 	},
+ 	 	"petRevive": {
+ 	 	 	"trans": "Revivir Mascota",
+ 	 	 	"eng": "Pet Revive"
+ 	 	},
+ 	 	"petReviveDesc": {
+ 	 	 	"trans": "La resurrección de mascotas está disponible durante la duración de este beneficio.",
+ 	 	 	"eng": "Pet revival is now available during this buff duration."
+ 	 	},
+ 	 	"petDraw": {
+ 	 	 	"trans": "Adopción de mascotas activada",
+ 	 	 	"eng": "Pet Adoption Activated"
+ 	 	},
+ 	 	"petDrawDesc": {
+ 	 	 	"trans": "¡Adopción de mascotas disponible durante este aumento de bonificación!",
+ 	 	 	"eng": "Pet adoption is now available during this buff duration."
  	 	}
  	},
  	"combat": {
@@ -7039,7 +8318,7 @@
  	 	 	"vars": [
  	 	 	 	"enemy"
  	 	 	],
- 	 	 	"trans": "El nivel de su equipo promedio es demasiado alto para recibir una recompensa de ${enemy}",
+ 	 	 	"trans": "El nivel promedio de su equipo es demasiado alto para recibir una recompensa de ${enemy}",
  	 	 	"eng": "Your average equipment level is too high to receive reward from ${enemy}"
  	 	}
  	},
@@ -7068,9 +8347,55 @@
  	 	 	"eng": "You received ${amount} ${itemName}"
  	 	}
  	},
+ 	"chatExploit": {
+ 	 	"loveWords": {
+ 	 	 	"trans": [
+ 	 	 	 	"Te Amo",
+ 	 	 	 	"Ustedes son geniales",
+ 	 	 	 	"Ustedes son los mejores",
+ 	 	 	 	"¡Los amo a todos!",
+ 	 	 	 	"Son increíbles",
+ 	 	 	 	"Son mis mejores amigos",
+ 	 	 	 	"Los adoro",
+ 	 	 	 	"Eres genial",
+ 	 	 	 	"Eres el mejor",
+ 	 	 	 	"Somos increíbles",
+ 	 	 	 	"Eres increíble",
+ 	 	 	 	"Ten un precioso día",
+ 	 	 	 	"Te extraño mucho",
+ 	 	 	 	"Los extraño muchísimo",
+ 	 	 	 	"KYAAAAAAAAA UwU",
+ 	 	 	 	"Deseo que tengas un bonito día",
+ 	 	 	 	"¡Te amo mucho!",
+ 	 	 	 	"¿Puedo abrazarte?",
+ 	 	 	 	"¿Cuánto me amas?"
+ 	 	 	],
+ 	 	 	"eng": [
+ 	 	 	 	"Love you",
+ 	 	 	 	"You guys are great",
+ 	 	 	 	"You guys are the best",
+ 	 	 	 	"love yall",
+ 	 	 	 	"You are amazing",
+ 	 	 	 	"we are best friend",
+ 	 	 	 	"Love you all",
+ 	 	 	 	"you are great",
+ 	 	 	 	"you the best",
+ 	 	 	 	"we are awesome",
+ 	 	 	 	"you are awesome",
+ 	 	 	 	"have a nice day",
+ 	 	 	 	"miss you",
+ 	 	 	 	"miss you guys",
+ 	 	 	 	"KYAAAAAAAAA",
+ 	 	 	 	"wish you have nice day",
+ 	 	 	 	"I love you",
+ 	 	 	 	"can we hug?",
+ 	 	 	 	"how much you love me?"
+ 	 	 	]
+ 	 	}
+ 	},
  	"chatServer": {
  	 	"restarting": {
- 	 	 	"trans": "El servidor de chat se está reiniciando para una actualización...",
+ 	 	 	"trans": "El servidor de chat se reiniciará para una actualización...",
  	 	 	"eng": "Chat Server is restarting for a update..."
  	 	}
  	},
@@ -7090,7 +8415,7 @@
  	},
  	"dungeon": {
  	 	"enemyInRoomDoorError": {
- 	 	 	"trans": "No puedes usar la puerta mientras hayan enemigos en la habitación.",
+ 	 	 	"trans": "No puedes usar la puerta mientras haya enemigos en la habitación.",
  	 	 	"eng": "You cannot use door while there is still enemy in room"
  	 	},
  	 	"enemyInCrateDoorError": {
@@ -7355,55 +8680,13 @@
  	 	"upgradePocketed": {
  	 	 	"trans": "Extendido",
  	 	 	"eng": "of Expansion"
+ 	 	},
+ 	 	"upgradeHealing": {
+ 	 	 	"trans": "de curación",
+ 	 	 	"eng": "of Healing"
  	 	}
  	},
  	"market": {
- 	 	"amountSelectModal": {
- 	 	 	"title": {
- 	 	 	 	"trans": "¿Cuántos te gustaría comprar?",
- 	 	 	 	"eng": "How many would you like to purchase?"
- 	 	 	},
- 	 	 	"totalPrice": {
- 	 	 	 	"vars": [
- 	 	 	 	 	"total"
- 	 	 	 	],
- 	 	 	 	"trans": "Costará ${total} Bitcoin en total.",
- 	 	 	 	"eng": "it will cost ${total} Bitcoin total"
- 	 	 	}
- 	 	},
- 	 	"notEnoughMoney": {
- 	 	 	"trans": "Bitcoins insuficientes.",
- 	 	 	"eng": "Insufficient bitcoin"
- 	 	},
- 	 	"priceSelectModal": {
- 	 	 	"title2": {
- 	 	 	 	"vars": [
- 	 	 	 	 	"itemName"
- 	 	 	 	],
- 	 	 	 	"trans": "Precio por ${itemName}",
- 	 	 	 	"eng": "Price for ${itemName}"
- 	 	 	}
- 	 	},
- 	 	"priceConfirm": {
- 	 	 	"vars": [
- 	 	 	 	"amountStr",
- 	 	 	 	"priceStr",
- 	 	 	 	"itemName"
- 	 	 	],
- 	 	 	"trans": "Estás vendiendo ${amountStr} ${itemName}(s), al precio de ${priceStr} por Objeto.",
- 	 	 	"eng": "You are selling ${amountStr} ${itemName}(s), at the price of ${priceStr} Per Item"
- 	 	},
- 	 	"totalConfirm": {
- 	 	 	"vars": [
- 	 	 	 	"total"
- 	 	 	],
- 	 	 	"trans": "Si todos los objetos se venden, vas a ganar ${total} Bitcoins en total.",
- 	 	 	"eng": "If all items are sold, you will earn ${total} BitCoins"
- 	 	},
- 	 	"sellAmountModalTitle": {
- 	 	 	"trans": "¿Cuántos te gustaría vender?",
- 	 	 	"eng": "How many would you like to sell?"
- 	 	},
  	 	"upgradeSlot": {
  	 	 	"trans": "Mejora",
  	 	 	"eng": "Upgrade"
@@ -7420,14 +8703,163 @@
  	 	 	 	"slot",
  	 	 	 	"price"
  	 	 	],
- 	 	 	"trans": "Puede aumentar su ranura de mercado a ${slot} pagando ${price} bitcoins",
+ 	 	 	"trans": "Puede aumentar su ranura de mercado a ${slot} pagando ${price} BitCoins",
  	 	 	"eng": "You can increase your market slot to ${slot} by paying ${price} BitCoins"
+ 	 	},
+ 	 	"purchaseModal": {
+ 	 	 	"purchase": {
+ 	 	 	 	"trans": "Compra",
+ 	 	 	 	"eng": "Purchase"
+ 	 	 	}
  	 	}
  	},
  	"mobile": {
  	 	"returnToAppMessage": {
- 	 	 	"trans": "Sincronización con el servidor ..",
+ 	 	 	"trans": "Sincronizando con el servidor ..",
  	 	 	"eng": "Syncing with server.."
+ 	 	}
+ 	},
+ 	"petDetailsPage": {
+ 	 	"dispose": {
+ 	 	 	"trans": "Descartar",
+ 	 	 	"eng": "dispose"
+ 	 	},
+ 	 	"disposeConfirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Descartar",
+ 	 	 	 	"eng": "dispose"
+ 	 	 	},
+ 	 	 	"message": {
+ 	 	 	 	"trans": "¿Estás seguro de que quieres deshacerte de esta mascota? Esta acción no se puede deshacer",
+ 	 	 	 	"eng": "Are you sure you want to dispose of this pet? this cannot be undone"
+ 	 	 	}
+ 	 	},
+ 	 	"rerollImage": {
+ 	 	 	"trans": "Volver a tirar la imagen",
+ 	 	 	"eng": "re-roll Image"
+ 	 	},
+ 	 	"rerollImageConfirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Volver a tirar la imagen",
+ 	 	 	 	"eng": "re-roll Image"
+ 	 	 	},
+ 	 	 	"message": {
+ 	 	 	 	"trans": "¿Estás seguro de que quieres volver a tirar la imagen de esta mascota?",
+ 	 	 	 	"eng": "Are you sure you want to re-roll this pets image?"
+ 	 	 	}
+ 	 	},
+ 	 	"petNotFound": {
+ 	 	 	"trans": "Mascota no encontrada",
+ 	 	 	"eng": "Pet not found"
+ 	 	},
+ 	 	"name": {
+ 	 	 	"trans": "Nombre",
+ 	 	 	"eng": "name"
+ 	 	},
+ 	 	"age": {
+ 	 	 	"trans": "Edad",
+ 	 	 	"eng": "age"
+ 	 	},
+ 	 	"status": {
+ 	 	 	"trans": "Estado",
+ 	 	 	"eng": "status"
+ 	 	},
+ 	 	"noStatus": {
+ 	 	 	"trans": "Saludable",
+ 	 	 	"eng": "healthy"
+ 	 	},
+ 	 	"deadRemoveMessage": {
+ 	 	 	"vars": [
+ 	 	 	 	"date"
+ 	 	 	],
+ 	 	 	"trans": "Será eliminado en ${date}",
+ 	 	 	"eng": "will be removed at ${date}"
+ 	 	},
+ 	 	"hunger": {
+ 	 	 	"trans": "Hambre",
+ 	 	 	"eng": "Hunger"
+ 	 	},
+ 	 	"feed": {
+ 	 	 	"trans": "Alimentar",
+ 	 	 	"eng": "Feed"
+ 	 	},
+ 	 	"noFood": {
+ 	 	 	"vars": [
+ 	 	 	 	"item"
+ 	 	 	],
+ 	 	 	"trans": "No tienes ${item} para alimentar a tu mascota",
+ 	 	 	"eng": "You don't have ${item} to feed your pet"
+ 	 	},
+ 	 	"happiness": {
+ 	 	 	"trans": "Felicidad",
+ 	 	 	"eng": "Happiness"
+ 	 	},
+ 	 	"play": {
+ 	 	 	"trans": "Jugar",
+ 	 	 	"eng": "Play"
+ 	 	},
+ 	 	"noToy": {
+ 	 	 	"vars": [
+ 	 	 	 	"item"
+ 	 	 	],
+ 	 	 	"trans": "No tienes ${item} para jugar con tu mascota",
+ 	 	 	"eng": "You don't have ${item} to play with your pet"
+ 	 	},
+ 	 	"cleanliness": {
+ 	 	 	"trans": "Limpieza",
+ 	 	 	"eng": "Cleanliness"
+ 	 	},
+ 	 	"clean": {
+ 	 	 	"trans": "Limpiar",
+ 	 	 	"eng": "Clean"
+ 	 	},
+ 	 	"noCleaner": {
+ 	 	 	"vars": [
+ 	 	 	 	"item"
+ 	 	 	],
+ 	 	 	"trans": "No tienes ${item} para limpiar a tu mascota",
+ 	 	 	"eng": "You don't have ${item} to clean your pet"
+ 	 	},
+ 	 	"giveMedicine": {
+ 	 	 	"trans": "Administrar medicamento",
+ 	 	 	"eng": "Give Medicine"
+ 	 	},
+ 	 	"reviveButton": {
+ 	 	 	"trans": "Reanimar",
+ 	 	 	"eng": "Revive"
+ 	 	}
+ 	},
+ 	"sendStreetCred": {
+ 	 	"error": {
+ 	 	 	"giveSelf": {
+ 	 	 	 	"trans": "No puedes enviarle crédito a la calle a ti mismo",
+ 	 	 	 	"eng": "you can't send street cred to yourself"
+ 	 	 	}
+ 	 	},
+ 	 	"title": {
+ 	 	 	"trans": "Enviar Respeto Callejero",
+ 	 	 	"eng": "Send street cred"
+ 	 	},
+ 	 	"description": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "¿Estás seguro de que quieres enviar Respeto Callejero a ${playerName}? Puede enviar un punto de Respeto Callejero a cualquiera todos los días.",
+ 	 	 	"eng": "Are you sure you want to send street cred to ${playerName}? you can send one street cred to anyone everyday."
+ 	 	}
+ 	},
+ 	"sendStreetCredError": {
+ 	 	"title": {
+ 	 	 	"trans": "No se puede enviar Respeto Callejero ahora",
+ 	 	 	"eng": "Can't send street cred now"
+ 	 	},
+ 	 	"description2": {
+ 	 	 	"trans": "Solo puede enviar un punto de Respeto Callejero por día. Y debes ser de nivel 10 o superior.",
+ 	 	 	"eng": "You can only send one street cred per day. and you must be level 10 or above."
+ 	 	},
+ 	 	"confirmText": {
+ 	 	 	"trans": "DE ACUERDO",
+ 	 	 	"eng": "OK"
  	 	}
  	},
  	"secretKey": {
@@ -7542,52 +8974,27 @@
  	 	 	 	"trans": "Total: ${amount} ${itemName}",
  	 	 	 	"eng": "Total: ${amount} ${itemName}"
  	 	 	}
- 	 	}
- 	},
- 	"chatExploit": {
- 	 	"loveWords": {
- 	 	 	"trans": [
- 	 	 	 	"Te Amo",
- 	 	 	 	"Ustedes son geniales",
- 	 	 	 	"Ustedes son los mejores",
- 	 	 	 	"¡Los amo a todos!",
- 	 	 	 	"Son increíbles",
- 	 	 	 	"Son mis mejores amigos",
- 	 	 	 	"Los adoro",
- 	 	 	 	"Eres genial",
- 	 	 	 	"Eres el mejor",
- 	 	 	 	"Somos increíbles",
- 	 	 	 	"Eres increíble",
- 	 	 	 	"Ten un precioso día",
- 	 	 	 	"Te extraño mucho",
- 	 	 	 	"Los extraño muchísimo",
- 	 	 	 	"KYAAAAAAAAA UwU",
- 	 	 	 	"Deseo que tengas un bonito día",
- 	 	 	 	"¡Te am mucho!",
- 	 	 	 	"¿Puedo abrazarte?",
- 	 	 	 	"¿Cuánto me amas?"
+ 	 	},
+ 	 	"npcNotAvailable": {
+ 	 	 	"trans": "Esta tienda no está disponible en este momento",
+ 	 	 	"eng": "This shop is not available at the moment"
+ 	 	},
+ 	 	"purchasedMessage": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"item"
  	 	 	],
- 	 	 	"eng": [
- 	 	 	 	"Love you",
- 	 	 	 	"You guys are great",
- 	 	 	 	"You guys are the best",
- 	 	 	 	"love yall",
- 	 	 	 	"You are amazing",
- 	 	 	 	"we are best friend",
- 	 	 	 	"Love you all",
- 	 	 	 	"you are great",
- 	 	 	 	"you the best",
- 	 	 	 	"we are awesome",
- 	 	 	 	"you are awesome",
- 	 	 	 	"have a nice day",
- 	 	 	 	"miss you",
- 	 	 	 	"miss you guys",
- 	 	 	 	"KYAAAAAAAAA",
- 	 	 	 	"wish you have nice day",
- 	 	 	 	"I love you",
- 	 	 	 	"can we hug?",
- 	 	 	 	"how much you love me?"
- 	 	 	]
+ 	 	 	"trans": "Ha comprado ${amount} ${item}",
+ 	 	 	"eng": "You have purchased ${amount} ${item}"
+ 	 	},
+ 	 	"exchangedMessage": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"item",
+ 	 	 	 	"item2"
+ 	 	 	],
+ 	 	 	"trans": "Ha intercambiado ${amount} ${item} por ${item2}",
+ 	 	 	"eng": "You have exchanged ${amount} ${item} for ${item2}"
  	 	}
  	},
  	"bundleDetailsModal": {
@@ -7617,6 +9024,16 @@
  	 	 	 	"trans": "Compra",
  	 	 	 	"eng": "Purchase"
  	 	 	}
+ 	 	}
+ 	},
+ 	"clanNoticeModal": {
+ 	 	"title": {
+ 	 	 	"trans": "Ingrese un nuevo aviso",
+ 	 	 	"eng": "enter new notice"
+ 	 	},
+ 	 	"submit": {
+ 	 	 	"trans": "enviar",
+ 	 	 	"eng": "send"
  	 	}
  	},
  	"createClanModal": {
@@ -7668,7 +9085,7 @@
  	 	 	 	"eng": "Gang Bounty"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "Aceptar esta búsqueda y derrotar a los miembros de una pandilla de una pandilla desconocida para recibir recompensas",
+ 	 	 	 	"trans": "Aceptar esta búsqueda y derrotar a los miembros de una pandilla desconocida para recibir recompensas",
  	 	 	 	"eng": "Accepting this quest and defeat gang members of a unknown gang to receive rewards"
  	 	 	},
  	 	 	"reward": {
@@ -7685,26 +9102,57 @@
  	 	 	"eng": "Accept"
  	 	}
  	},
- 	"christmasPromo": {
+ 	"petReviveModal": {
+ 	 	"reviveButton": {
+ 	 	 	"error": {
+ 	 	 	 	"trans": "Has revivido recientemente a una mascota",
+ 	 	 	 	"eng": "You have revived a pet recently"
+ 	 	 	},
+ 	 	 	"trans": "Reanimar",
+ 	 	 	"eng": "Revive"
+ 	 	},
+ 	 	"activateButton": {
+ 	 	 	"error": {
+ 	 	 	 	"trans": "Primero tienes que activar la resurrección de la mascota",
+ 	 	 	 	"eng": "You need to activate pet revive first"
+ 	 	 	},
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Revivir mascota activado",
+ 	 	 	 	"eng": "Activate"
+ 	 	 	},
+ 	 	 	"desc": {
+ 	 	 	 	"trans": "Revivir mascota activado",
+ 	 	 	 	"eng": "Activate pet revive"
+ 	 	 	},
+ 	 	 	"loading": {
+ 	 	 	 	"trans": "Iniciando...",
+ 	 	 	 	"eng": "Activating..."
+ 	 	 	}
+ 	 	},
  	 	"title": {
- 	 	 	"trans": "¡Felices vacaciones de invierno!",
- 	 	 	"eng": "Happy Winter Holiday!"
+ 	 	 	"trans": "Revivir mascota",
+ 	 	 	"eng": "Revive pet"
+ 	 	},
+ 	 	"reviveDescription": {
+ 	 	 	"vars": [
+ 	 	 	 	"buffName"
+ 	 	 	],
+ 	 	 	"trans": "Puedes revivir a tu mascota cuando esté activo el buff ${buffName}",
+ 	 	 	"eng": "You may revive your pet when ${buffName} buff is active"
+ 	 	}
+ 	},
+ 	"artPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "¡Competencia de arte de personaje espeluznante!",
+ 	 	 	"eng": "Spooky Character Art Competition!"
  	 	},
  	 	"desc1": {
- 	 	 	"trans": "¡Es la época más maravillosa del año de nuevo! ¡En Shangri-La celebramos las vacaciones de invierno con un evento especial!",
- 	 	 	"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!"
+ 	 	 	"trans": "¡Estamos entregando cachés épicos, mochila exploradora, maleta de empleados y emblemas a los 5 principales ganadores!",
+ 	 	 	"eng": "We are giving out Epic Caches, Explorer Backpack, Employee Suitcase and Emblems to the top 5 winners!"
  	 	},
  	 	"desc2": {
- 	 	 	"vars": [
- 	 	 	 	"itemName",
- 	 	 	 	"craftItem"
- 	 	 	],
- 	 	 	"trans": "Enemigos y AI Core Auto Farm tendrán la oportunidad de soltar ${itemName}, ¡puede usar esto para crear ${craftItem} o abrirlo directamente!",
- 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop ${itemName}, you can use this to craft ${craftItem} or open it directly!"
- 	 	},
- 	 	"desc3": {
- 	 	 	"trans": "¡Durante la temporada de vacaciones, el marco de chat y el emblema limitados habrán disponibles dos veces!",
- 	 	 	"eng": "During the holiday season, two time limited chat frame and emblem will be available!"
+ 	 	 	"trans": "¡Mira el canal #Event en Discord para más detalles!",
+ 	 	 	"eng": "Check out the #event channel on Discord for more details!"
  	 	}
  	},
  	"halloweenPromo": {
@@ -7716,13 +9164,56 @@
  	 	 	"trans": "¡Es la época espeluznante del año otra vez! ¡Shang-Ri-La celebra Halloween con un evento especial!",
  	 	 	"eng": "Its the spooky time of the year again! Shang-ri-la is celebrating Halloween with a special event!"
  	 	},
- 	 	"desc2": {
- 	 	 	"trans": "¡Los enemigos y AI Core Auto Farm tendrán la oportunidad de dejar caer Jack-O-Linternas! ¡Puedes usarlos para crear contenedores legendarios bloqueados!",
- 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop Jack-o-lanterns! you can use these to craft Locked Legendary Containers!"
+ 	 	"desc2v2": {
+ 	 	 	"trans": "¡Los enemigos y AI Core Auto Farm tendrán la oportunidad de dejar caer las linternas Jack-O!",
+ 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop Jack-o-lanterns!"
  	 	},
- 	 	"desc3": {
- 	 	 	"trans": "¡Durante Halloween, un nivel de donación de chat de Cyber-Murciélago estará disponible por tiempo limitado!",
- 	 	 	"eng": "During Halloween, a time limited cyber-bat chat donation tier will be available!"
+ 	 	"desc3v2": {
+ 	 	 	"vars": [
+ 	 	 	 	"npc",
+ 	 	 	 	"location"
+ 	 	 	],
+ 	 	 	"trans": "Puede encontrar ${npc} a ${location} Durante Halloween, ¡intercambiará sus linternas Jack-o por recompensas!",
+ 	 	 	"eng": "You can find ${npc} at ${location} during Halloween, he will exchange your Jack-o-lanterns for rewards!"
+ 	 	},
+ 	 	"desc4v2": {
+ 	 	 	"trans": "¡Durante Halloween, un Time Limited Halloween, el nivel de donación de chat cibernético y los emblemas temáticos estarán disponibles!",
+ 	 	 	"eng": "During Halloween, a time limited halloween, cyber-bat chat donation tier and themed emblems will be available!"
+ 	 	}
+ 	},
+ 	"christmasPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "¡Felices vacaciones de invierno!",
+ 	 	 	"eng": "Happy Winter Holiday!"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"trans": "¡Es la época más maravillosa del año de nuevo! ¡En Shangri-La celebramos las vacaciones de invierno con un evento especial!",
+ 	 	 	"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!"
+ 	 	},
+ 	 	"v2": {
+ 	 	 	"desc2": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Enemigos y AI Core Auto Farm tendrán la oportunidad de soltar ${itemName}, ¡puedes desbloquearlo para recibir premios!",
+ 	 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop ${itemName}, you can unlock it to receive prizes!"
+ 	 	 	}
+ 	 	},
+ 	 	"v3": {
+ 	 	 	"desc3": {
+ 	 	 	 	"trans": "¡Durante la temporada de vacaciones, el marco de chat de Navidad y el emblema estarán disponibles!",
+ 	 	 	 	"eng": "During the holiday season, Christmas chat frame and emblem will be available!"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"christmasPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "¡Evento de Navidad!",
+ 	 	 	"eng": "Christmas Event!"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"trans": "Tiempo de botín limitado y marco de chat!",
+ 	 	 	"eng": "Time limited loot and chat frame!"
  	 	}
  	},
  	"lunarPromo": {
@@ -7734,15 +9225,14 @@
  	 	 	"trans": "El Año Nuevo Lunar está aquí, y estamos celebrando en Shang-Ri-La con un evento especial. Únase a nosotros mientras abrazamos el comienzo de un nuevo año, lleno de tradiciones, alegría y unión.",
  	 	 	"eng": "The lunar new year is here, and we're celebrating in Shang-ri-la with a special event. Join us as we embrace the start of a new year, filled with traditions, joy, and togetherness."
  	 	},
- 	 	"desc2": {
+ 	 	"desc2-v2": {
  	 	 	"vars": [
  	 	 	 	"npcShopName",
  	 	 	 	"coinItem",
- 	 	 	 	"llcName",
  	 	 	 	"npcName"
  	 	 	],
- 	 	 	"trans": "¡${npcShopName} ahora está abierto para negocios! ¡Puede usar ${coinItem} para comprar varias cocinas especiales y ${llcName} de ${npcName}!",
- 	 	 	"eng": "${npcShopName} is now open for business! You can use ${coinItem} to purchase various special cuisines and ${llcName} from ${npcName}!"
+ 	 	 	"trans": "¡${npcShopName} ahora está abierto para negocios! ¡Puede usar ${coinItem} para comprar varias cocinas especiales de ${npcName}!",
+ 	 	 	"eng": "${npcShopName} is now open for business! You can use ${coinItem} to purchase various special cuisines from ${npcName}!"
  	 	},
  	 	"desc3": {
  	 	 	"vars": [
@@ -7751,18 +9241,39 @@
  	 	 	],
  	 	 	"trans": "¡No es un año nuevo si ${envelopItem} no está involucrado! Enemigos y AI Core Auto Farm dejarán caer ${envelopItem}, ¡abrirlos para recibir una cantidad aleatoria de ${coinItem}!",
  	 	 	"eng": "It's not new year if ${envelopItem} is not involved! Enemies and AI Core auto farm will drop ${envelopItem}, open them to receive random amount of ${coinItem}!"
- 	 	},
+ 	 	}
+ 	},
+ 	"lunarPromo1": {
  	 	"desc4": {
  	 	 	"vars": [
- 	 	 	 	"envelopItem",
- 	 	 	 	"npcShop"
+ 	 	 	 	"itemName"
  	 	 	],
- 	 	 	"trans": "¡Ahora puede recibir 3 ${envelopItem} en ${npcShop} todos los días!",
- 	 	 	"eng": "You can now receive 3 free ${envelopItem} in ${npcShop} every day!"
+ 	 	 	"trans": "¡Obtenga base ${itemName} en el paquete de recarga!",
+ 	 	 	"eng": "Get free ${itemName} base on top up package!"
  	 	},
  	 	"desc5": {
- 	 	 	"trans": "Se agregaron dos nuevos nuevos cosméticos y emblemas limitados, solo comprables durante el período del evento.",
- 	 	 	"eng": "Added two new time limited chat frame and emblems, only purchasable during event period."
+ 	 	 	"trans": "Se agregó un marco de chat y emblemas de New Time Limited Limited, solo que se puede comprar durante el período del evento.",
+ 	 	 	"eng": "Added new time limited chat frame and emblems, only purchasable during event period."
+ 	 	}
+ 	},
+ 	"lunarNewYearPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "¡Feliz Año Nuevo Lunar!",
+ 	 	 	"eng": "Happy Lunar New Year!"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"item1",
+ 	 	 	 	"item2"
+ 	 	 	],
+ 	 	 	"trans": "Recibir ${item1} y ${item2} durante el año nuevo lunar 🥳",
+ 	 	 	"eng": "Receive free ${item1} and ${item2} during the lunar new year 🥳"
+ 	 	}
+ 	},
+ 	"promotionModal": {
+ 	 	"title": {
+ 	 	 	"trans": "Beneficios especiales",
+ 	 	 	"eng": "Special Benefits"
  	 	}
  	},
  	"referralPromo": {
@@ -7805,6 +9316,195 @@
  	 	 	"eng": "*You will receive the items in your item inbox when your friend reaches level 20"
  	 	}
  	},
+ 	"referralPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Recompensas de referencia",
+ 	 	 	"eng": "Referral rewards"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"trans": "Unidad gratuita*, contenedor bloqueado raro, Pack Fanny",
+ 	 	 	"eng": "Free Unit*, Rare Locked Container, Fanny Pack"
+ 	 	},
+ 	 	"details": {
+ 	 	 	"trans": "detalles",
+ 	 	 	"eng": "details"
+ 	 	}
+ 	},
+ 	"sakuraPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Festival de Sakura",
+ 	 	 	"eng": "Sakura Festival"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"trans": "¡El Festival de Primavera ha llegado! Los pétalos de sakura están cayendo, y el aire está lleno del aroma de las flores",
+ 	 	 	"eng": "The Spring Festival is here! Sakura petals are falling, and the air is filled with the fragrance of flowers. "
+ 	 	},
+ 	 	"desc2": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "Todos los saltos durante el período del evento obtienen un descuento del ${percent}% en la unidad requerida",
+ 	 	 	"eng": "All skips during the event period gets ${percent}% off discount on unit required"
+ 	 	},
+ 	 	"desc3": {
+ 	 	 	"trans": "Marco de chat y emblema exclusivos de Sakura disponibles durante el evento",
+ 	 	 	"eng": "Exclusive Sakura chat frame and emblem is available during event period"
+ 	 	},
+ 	 	"chatMessage1": {
+ 	 	 	"trans": "La primavera ha llegado",
+ 	 	 	"eng": "Spring is here"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "¡Todos los saltos durante el período del evento obtienen un descuento del ${percent}% en la unidad requerida! 🥳",
+ 	 	 	"eng": "All skips during the event period gets ${percent}% off discount on unit required 🥳"
+ 	 	}
+ 	},
+ 	"skipDiscountPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Descuento",
+ 	 	 	"eng": "Skip Discount"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "¡${percent}% de descuento en 105 minutos y omitidos más altos!",
+ 	 	 	"eng": "${percent}% discount on 105 minutes and higher skips!"
+ 	 	}
+ 	},
+ 	"skipPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Gane cosméticos exclusivos gratuitos saltando",
+ 	 	 	"eng": "Earn free exclusive cosmetics by skipping"
+ 	 	},
+ 	 	"subtitle": {
+ 	 	 	"trans": "¡Muestra cuánto has ayudado a la comunidad omitiendo! ❤️",
+ 	 	 	"eng": "Show off how much you have helped the community by skipping!❤️"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"emblem"
+ 	 	 	],
+ 	 	 	"trans": "Realizar ${amount} Skip para obtener un emblema de \"${emblem}\"",
+ 	 	 	"eng": "Collect ${amount} skip points to get \"${emblem}\" emblem"
+ 	 	},
+ 	 	"desc2": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"emblem"
+ 	 	 	],
+ 	 	 	"trans": "Realizar ${amount} Skip para obtener un emblema de \"${emblem}\"",
+ 	 	 	"eng": "Collect ${amount} skip points to get \"${emblem}\" emblem"
+ 	 	},
+ 	 	"desc3": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"emblem"
+ 	 	 	],
+ 	 	 	"trans": "Realizar ${amount} Skip para obtener un emblema de \"${frameName}\"",
+ 	 	 	"eng": "Collect ${amount} skip points to get \"${emblem}\" emblem"
+ 	 	},
+ 	 	"desc4": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"frameName"
+ 	 	 	],
+ 	 	 	"trans": "Realizar ${amount} Skip para recibir el marco de chat de donación \"${frameName}\" permanente",
+ 	 	 	"eng": "Collect ${amount} skip points to receive permanent \"${frameName}\" donation chat frame"
+ 	 	},
+ 	 	"chatMessage1": {
+ 	 	 	"vars": [
+ 	 	 	 	"points"
+ 	 	 	],
+ 	 	 	"trans": "Recibir a ${points} Puntos de omisión",
+ 	 	 	"eng": "Receive at ${points} skip points"
+ 	 	},
+ 	 	"desc5": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"frameName"
+ 	 	 	],
+ 	 	 	"trans": "Recoger ${amount} Puntos de omisión para recibir marco de chat de donación \"${frameName}\" permanente",
+ 	 	 	"eng": "Collect ${amount} skip points to receive permanent \"${frameName}\" donation chat frame"
+ 	 	},
+ 	 	"instructions1": {
+ 	 	 	"trans": "Skip Point que ganes es base en la duración de la omisión:",
+ 	 	 	"eng": "Skip point you earn is base on skip duration:"
+ 	 	},
+ 	 	"instructions2": {
+ 	 	 	"trans": "- 15 a 150 minutos = 1 punto por 15 minutos",
+ 	 	 	"eng": "- 15 to 150 minutes = 1 point per 15 minutes"
+ 	 	},
+ 	 	"instructions3": {
+ 	 	 	"trans": "- 150 minutos y más = 10 puntos",
+ 	 	 	"eng": "- 150 minutes and above = 10 points"
+ 	 	},
+ 	 	"footnote2": {
+ 	 	 	"trans": "Más de 150 minutos se fija a 10 puntos es alentar a múltiples saltos en lugar de un gran salto para maximizar el beneficio para la mayoría de los jugadores",
+ 	 	 	"eng": "Above 150 minutes is fixed to 10 points is to encourage multiple skips rather than one huge skip to maximize benefit for most players"
+ 	 	},
+ 	 	"footnote1": {
+ 	 	 	"trans": "La estadística de Skip comenzará a contar desde el comienzo de esta característica para todos.",
+ 	 	 	"eng": "The skip point statistic will start counting from the start of this feature for everyone."
+ 	 	}
+ 	},
+ 	"skipPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Skip para cosméticos exclusivos",
+ 	 	 	"eng": "Skip for exclusive cosmetics"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"trans": "Recibir varios cosméticos exclusivos saltando",
+ 	 	 	"eng": "Receive various exclusive cosmetics by skipping"
+ 	 	},
+ 	 	"chatMessage1": {
+ 	 	 	"vars": [
+ 	 	 	 	"skinName",
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "Ser ${skinName}, ${playerName}",
+ 	 	 	"eng": "Be a ${skinName}, ${playerName}"
+ 	 	}
+ 	},
+ 	"thanksgivingPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "¡Feliz día de acción de gracias!",
+ 	 	 	"eng": "Happy Thanksgiving!"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"trans": "Durante el período del evento, el pavo asado rara vez se eliminará de la eliminación y el bot de AKF en todos los niveles",
+ 	 	 	"eng": "During event period, Roasted Turkey will drop rarely from scavenging and AKF Bot on all levels"
+ 	 	},
+ 	 	"desc2": {
+ 	 	 	"trans": "Cuando se consume un pavo asado, obtendrá +20% de exp en tareas AFK durante 20 minutos",
+ 	 	 	"eng": "When a Roasted Turkey is consumed, you will get +20% EXP on AFK tasks for 20 minutes"
+ 	 	},
+ 	 	"footnote1": {
+ 	 	 	"trans": "Tenga en cuenta que el cheque de bonificación de EXP está en el momento de finalización de AFK, por lo que debe tener el aficionado al pavo asado al momento de la finalización para recibir el bono.",
+ 	 	 	"eng": "Please note that the EXP bonus check is at AFK completion time, so you must have the Roasted Turkey buff active at the time of completion to receive the bonus."
+ 	 	},
+ 	 	"footnote2": {
+ 	 	 	"trans": "Este efecto se acumulará con otro bono de EXP, y solo afectará las tareas de AFK; Las tareas que no tienen temporizadores AFK no se verán afectadas.",
+ 	 	 	"eng": "This effect will stack with other EXP bonus, and will only affect AFK tasks; tasks that does not have AFK timers will not be affected."
+ 	 	}
+ 	},
+ 	"thanksgivingPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Evento de Acción de Gracias",
+ 	 	 	"eng": "Thanksgiving event"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "Consume delicioso pavo para obtener +${percent}% exp en tareas de AFK",
+ 	 	 	"eng": "Consume delicious turkey to get +${percent}% EXP on AFK tasks"
+ 	 	}
+ 	},
  	"retroPromo": {
  	 	"title": {
  	 	 	"trans": "Actualización de synthwave",
@@ -7818,11 +9518,11 @@
  	 	 	"vars": [
  	 	 	 	"shopName"
  	 	 	],
- 	 	 	"trans": "Se agregó un elemento especial \"cinta de cassette\", cuando se usa, recibirá aficionados que le otorgan +20% de daño y +20% de defensa, la única forma de obtener este artículo es el paquete diario en ${shopName}",
+ 	 	 	"trans": "Se agregó un elemento especial \"cinta de cassette\", cuando se usa, recibirá buffs que le otorgan +20% de daño y +20% de defensa, la única forma de obtener este artículo es el paquete diario en ${shopName}",
  	 	 	"eng": "Added special item \"Cassette Tape\", when used you will receive buffs that gives you +20% damage and +20% defense, the only way to get this item is daily free bundle in ${shopName}"
  	 	},
  	 	"desc3": {
- 	 	 	"trans": "Detalles del elemento UI rediseñado, ahora resalta el botón principal y los botones secundarios se han cambiado a un tamaño más pequeño",
+ 	 	 	"trans": "Detalles de la UI rediseñado, ahora resalta el botón primario y los botones secundarios se han cambiado a un tamaño más pequeño",
  	 	 	"eng": "Item details UI redesigned, now it highlights primary button and secondary buttons has been changed to smaller size"
  	 	},
  	 	"desc4": {
@@ -7839,12 +9539,30 @@
  	 	 	"eng": "Anniversary Update!"
  	 	},
  	 	"desc1": {
- 	 	 	"trans": "Techno Thief aparecerá raramente en la mazmorra cuando abres cajas, sueltan mejores botín, incluidas las mayores posibilidades de elementos épicos",
+ 	 	 	"trans": "Techno Thief aparecerá raramente en la mazmorra cuando abres cajas y soltara mejores botínes, incluidas las mayores posibilidades de elementos épicos",
  	 	 	"eng": "Techno Thief will spawn rarely in dungeon when you open crates, they drop better loots, including higher chance of epic items"
  	 	},
  	 	"desc2": {
  	 	 	"trans": "Gang Dungeon tendrá la oportunidad de generar una búsqueda de pandillas, que implica matar enemigos de pandillas específicas de NPC",
  	 	 	"eng": "Two new donator frames added"
+ 	 	}
+ 	},
+ 	"renamePetModal": {
+ 	 	"title": {
+ 	 	 	"trans": "Renombrar Mascota",
+ 	 	 	"eng": "Rename Pet"
+ 	 	},
+ 	 	"newName": {
+ 	 	 	"trans": "Nuevo Nombre",
+ 	 	 	"eng": "New Name"
+ 	 	},
+ 	 	"description": {
+ 	 	 	"trans": "Ingresa un nuevo nombre para tu mascota",
+ 	 	 	"eng": "Enter new name for your pet"
+ 	 	},
+ 	 	"rename": {
+ 	 	 	"trans": "Cambiar nombre",
+ 	 	 	"eng": "Rename"
  	 	}
  	},
  	"reportPlayerModal": {
@@ -7920,9 +9638,24 @@
  	 	 	 	 	"trans": "Permitir que esta persona administre los permisos de otros jugadores.",
  	 	 	 	 	"eng": "Allow this player to manage permission of other players"
  	 	 	 	}
+ 	 	 	},
+ 	 	 	"send_notice": {
+ 	 	 	 	"trans": "Enviar aviso",
+ 	 	 	 	"eng": "Send Notice",
+ 	 	 	 	"description": {
+ 	 	 	 	 	"trans": "Permitir que este jugador envíe un aviso a todos los miembros de la pandilla",
+ 	 	 	 	 	"eng": "Allow this player to send notice to all gang members"
+ 	 	 	 	}
  	 	 	}
  	 	},
  	 	"error": {
+ 	 	 	"insufficientBitcoin": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Tienes insuficiente Bitcoin, requerido: ${amount}",
+ 	 	 	 	"eng": "You have insufficient Bitcoin, required: ${amount}"
+ 	 	 	},
  	 	 	"inviteCooldown": {
  	 	 	 	"trans": "Ya has invitado a este jugador recientemente",
  	 	 	 	"eng": "You have already invited this player recently"
@@ -7983,7 +9716,7 @@
  	 	 	 	"eng": "Equipment Tier"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "Equipos con nivel igual o inferior al nivel seleccionado seleccionado.",
+ 	 	 	 	"trans": "Equipos con nivel igual o inferior al nivel seleccionado.",
  	 	 	 	"eng": "Equipments with tier equal or lower than the selected tier selected."
  	 	 	}
  	 	},
@@ -7999,7 +9732,7 @@
  	 	 	 	"eng": "Cache Tier"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "Caches con nivel igual o más bajo que el nivel seleccionado seleccionado.",
+ 	 	 	 	"trans": "Caches con nivel igual o más bajo que el nivel seleccionado.",
  	 	 	 	"eng": "Caches with tier equal or lower than the selected tier selected."
  	 	 	}
  	 	},
@@ -8011,7 +9744,7 @@
  	 	},
  	 	"upgradeModuleTier": {
  	 	 	"title": {
- 	 	 	 	"trans": "Nivel de módulo de actualización",
+ 	 	 	 	"trans": "Actualizar rango de modulo",
  	 	 	 	"eng": "Upgrade Module Tier"
  	 	 	}
  	 	}
@@ -8061,6 +9794,17 @@
  	 	 	],
  	 	 	"trans": "${price} USD por mes",
  	 	 	"eng": "${price} USD Per Month"
+ 	 	},
+ 	 	"inAppPurchaseDescription": {
+ 	 	 	"trans": "Donación basada en suscripción, puedes cancelarla en cualquier momento desde tu tienda.",
+ 	 	 	"eng": "Subscription based donation, you can cancel it at anytime from your store."
+ 	 	},
+ 	 	"monthlyPrice": {
+ 	 	 	"vars": [
+ 	 	 	 	"price"
+ 	 	 	],
+ 	 	 	"trans": "${price} al Mes",
+ 	 	 	"eng": "${price} per Month"
  	 	}
  	},
  	"cosmetic": {
@@ -8074,7 +9818,7 @@
  	},
  	"forgotPasswordPage": {
  	 	"title": {
- 	 	 	"trans": "Ingrese su correo electrónico, el sistema le enviará un correo electrónico de contraseña de reinicio",
+ 	 	 	"trans": "Ingrese su correo electrónico, el sistema le enviará un correo electrónico de reinicio de contraseña",
  	 	 	"eng": "Enter your email, the system will send a reset password email to you"
  	 	},
  	 	"emailRequired": {
@@ -8089,12 +9833,156 @@
  	 	 	"vars": [
  	 	 	 	"email"
  	 	 	],
- 	 	 	"trans": "Se ha enviado un correo electrónico de restablecimiento de contraseña a {correo electrónico}",
+ 	 	 	"trans": "Se ha enviado un correo electrónico de restablecimiento de contraseña a {email}",
  	 	 	"eng": "An password reset email has been sent to {email}"
  	 	},
  	 	"checkEmail": {
  	 	 	"trans": "Consulte su correo electrónico y siga las instrucciones para restablecer la contraseña",
  	 	 	"eng": "Please check your email and follow the instructions to reset the password"
+ 	 	}
+ 	},
+ 	"leaderboardTypePage": {
+ 	 	"gameplay": {
+ 	 	 	"trans": "Tablas de clasificación de juego",
+ 	 	 	"eng": "Gameplay Leaderboards"
+ 	 	},
+ 	 	"gameplayDesc": {
+ 	 	 	"trans": "Estas tablas de clasificación muestran las estadísticas de juego del jugador",
+ 	 	 	"eng": "These leaderboards shows player's gameplay statistics.💪"
+ 	 	},
+ 	 	"gang": {
+ 	 	 	"trans": "Las mejores pandillas",
+ 	 	 	"eng": "Top Gangs"
+ 	 	},
+ 	 	"control": {
+ 	 	 	"trans": "Control de ocupación",
+ 	 	 	"eng": "Occupation Control"
+ 	 	},
+ 	 	"contribution": {
+ 	 	 	"trans": "Contribución de la comunidad",
+ 	 	 	"eng": "Community Contribution"
+ 	 	},
+ 	 	"contributionDesc": {
+ 	 	 	"trans": "Estos tableros muestran respeto y créditos a las leyendas que han contribuido a la comunidad",
+ 	 	 	"eng": "These boards shows respect and credits to the legends who have contributed to the community.❤️"
+ 	 	}
+ 	},
+ 	"playerDetailsPage": {
+ 	 	"tabs": {
+ 	 	 	"stats": {
+ 	 	 	 	"trans": "Estadísticas",
+ 	 	 	 	"eng": "stats"
+ 	 	 	},
+ 	 	 	"equipment": {
+ 	 	 	 	"trans": "Inventario",
+ 	 	 	 	"eng": "inventory"
+ 	 	 	},
+ 	 	 	"assets": {
+ 	 	 	 	"trans": "activos",
+ 	 	 	 	"eng": "assets"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"petListPage": {
+ 	 	"exceedSlot": {
+ 	 	 	"vars": [
+ 	 	 	 	"petName"
+ 	 	 	],
+ 	 	 	"trans": "${petName} actualmente está viviendo en la calle debido a la falta de espacio en tu apartamento",
+ 	 	 	"eng": "${petName} is currently living on the street due to lack of space in your apartment"
+ 	 	},
+ 	 	"noPet": {
+ 	 	 	"trans": "Todavía no tienes mascota",
+ 	 	 	"eng": "You have no pet yet"
+ 	 	},
+ 	 	"acquirePets": {
+ 	 	 	"trans": "Adquirir Mascotas",
+ 	 	 	"eng": "Acquire Pets"
+ 	 	}
+ 	},
+ 	"petAdoption": {
+ 	 	"error": {
+ 	 	 	"noBuff": {
+ 	 	 	 	"trans": "El buff no está activado",
+ 	 	 	 	"eng": "Buff is not activated"
+ 	 	 	},
+ 	 	 	"cooldown": {
+ 	 	 	 	"trans": "La adopción de mascotas está en tiempo de reutilización",
+ 	 	 	 	"eng": "Pet adoption is on cooldown"
+ 	 	 	},
+ 	 	 	"noSlot": {
+ 	 	 	 	"trans": "Se necesita un apartamento para adoptar una mascota",
+ 	 	 	 	"eng": "You need to rent a bigger apartment to accommodate more pets"
+ 	 	 	},
+ 	 	 	"noItem": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Necesitas un ${itemName} para adoptar una mascota",
+ 	 	 	 	"eng": "You need a ${itemName} to adopt a pet"
+ 	 	 	}
+ 	 	},
+ 	 	"petSlot": {
+ 	 	 	"trans": "Capacidad de mascotas en el apartamento",
+ 	 	 	"eng": "Apartment pet capacity"
+ 	 	},
+ 	 	"cooldownTitle": {
+ 	 	 	"trans": "Tiempo de espera para adopción",
+ 	 	 	"eng": "Adoption Available"
+ 	 	},
+ 	 	"buffActivationButton": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Activar bonificación de Adopción",
+ 	 	 	 	"eng": "Activate Adoption Buff"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Activa para permitir que todos los jugadores adopten una mascota mientras el potenciador esté activo",
+ 	 	 	 	"eng": "Activate to allow all players to adopt a pet while buff is active"
+ 	 	 	},
+ 	 	 	"buttonText": {
+ 	 	 	 	"activated": {
+ 	 	 	 	 	"trans": "Activado",
+ 	 	 	 	 	"eng": "Activated"
+ 	 	 	 	},
+ 	 	 	 	"notActivated": {
+ 	 	 	 	 	"trans": "Activar Mejora",
+ 	 	 	 	 	"eng": "Activate Buff"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"confirmTitle": {
+ 	 	 	 	"trans": "Activar bonificación de Adopción",
+ 	 	 	 	"eng": "Activate Adoption Buff"
+ 	 	 	},
+ 	 	 	"confirmDescription": {
+ 	 	 	 	"trans": "¿Estás seguro de que quieres activar el Beneficio de Adopción?",
+ 	 	 	 	"eng": "Are you sure you want to activate the Adoption Buff?"
+ 	 	 	}
+ 	 	},
+ 	 	"noItemConfirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "No hay ${itemName} en el inventario",
+ 	 	 	 	"eng": "No ${itemName} in inventory"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "No tienes un ${itemName} en tu inventario, aún puedes activar el beneficio para que otros jugadores se beneficien, sin embargo, sin ${itemName} no podrás adoptar mascotas",
+ 	 	 	 	"eng": "You do not have an ${itemName} in your inventory, you still can activate the buff for other players to benefit, however without ${itemName} you will not be able to adopt pets"
+ 	 	 	},
+ 	 	 	"confirmText": {
+ 	 	 	 	"trans": "Activar Mejora",
+ 	 	 	 	"eng": "Activate Buff"
+ 	 	 	}
+ 	 	},
+ 	 	"adoptButton": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Adopta una nueva mascota",
+ 	 	 	 	"eng": "Adopt a new pet"
+ 	 	 	}
  	 	}
  	},
  	"sendCosmeticPage": {
@@ -8126,11 +10014,11 @@
  	 	 	 	 	"playerName",
  	 	 	 	 	"price"
  	 	 	 	],
- 	 	 	 	"trans": "Enviar ${donationName} marco de chat de donación (costo ${price} unidad) al reproductor \"${playerName}\"?",
+ 	 	 	 	"trans": "Enviar ${donationName} (costo ${price} unidad) al jugador \"${playerName}\"?",
  	 	 	 	"eng": "Send ${donationName} donation chat frame (cost ${price} Unit) to player \"${playerName}\"?"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "Al hacer clic en Confirmar, usted acepta que no está enviando este regalo cosmético como parte de un oficio y es puramente un regalo para su amigo sin que se espere retorno.",
+ 	 	 	 	"trans": "Al hacer clic en Confirmar, usted acepta que no está enviando este regalo cosmético como parte de un comercio y es puramente un regalo para su amigo sin que se espere retorno.",
  	 	 	 	"eng": "By clicking confirm, you agree that you are not sending this cosmetic gift as part of a trade and is purely a gift to your friend with no return expected."
  	 	 	},
  	 	 	"confirmText": {
@@ -8143,11 +10031,11 @@
  	 	 	 	"donationName",
  	 	 	 	"playerName"
  	 	 	],
- 	 	 	"trans": "Has enviado con éxito ${donationName} marco de chat de donación al jugador \"${playerName}\"",
+ 	 	 	"trans": "Has enviado con éxito ${donationName} al jugador \"${playerName}\"",
  	 	 	"eng": "You have successfully sent ${donationName} donation chat frame to player \"${playerName}\""
  	 	},
  	 	"hasDonation": {
- 	 	 	"trans": "propietaria",
+ 	 	 	"trans": "propietario",
  	 	 	"eng": "owned"
  	 	},
  	 	"donationPrice": {
@@ -8188,7 +10076,7 @@
  	 	 	 	"eng": "Send emblem (cost ${price} Unit) to player \"${playerName}\"?"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "Al hacer clic en Confirmar, usted acepta que no está enviando este regalo cosmético como parte de un oficio y es puramente un regalo para su amigo sin que se espere retorno.",
+ 	 	 	 	"trans": "Al hacer clic en Confirmar, usted acepta que no está enviando este regalo cosmético como parte de un intercambio y es puramente un regalo para su amigo sin que se espere retorno.",
  	 	 	 	"eng": "By clicking confirm, you agree that you are not sending this cosmetic gift as part of a trade and is purely a gift to your friend with no return expected."
  	 	 	},
  	 	 	"confirmText": {
@@ -8204,10 +10092,38 @@
  	 	 	"eng": "You have successfully sent an emblem to player \"${playerName}\""
  	 	}
  	},
+ 	"bulkCrafting": {
+ 	 	"cannotCraft": {
+ 	 	 	"trans": "No puedes elaborar mientras no está inactivo",
+ 	 	 	"eng": "You cannot craft while not idle"
+ 	 	}
+ 	},
+ 	"captcha": {
+ 	 	"success": {
+ 	 	 	"trans": "Código PIN aceptado",
+ 	 	 	"eng": "Pin code accepted"
+ 	 	},
+ 	 	"invalid": {
+ 	 	 	"trans": "Código PIN no válido",
+ 	 	 	"eng": "Invalid Pin Code"
+ 	 	}
+ 	},
  	"chatModuleHelper": {
  	 	"aiConnectNotAvailable": {
- 	 	 	"trans": "Permiso denegado. Slanc no conectado al chat",
+ 	 	 	"trans": "Permiso denegado. SLANC no conectado al chat",
  	 	 	"eng": "Permission Denied. SLANC not connected to chat"
+ 	 	}
+ 	},
+ 	"server": {
+ 	 	"announcement": {
+ 	 	 	"receiveItem": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player",
+ 	 	 	 	 	"item"
+ 	 	 	 	],
+ 	 	 	 	"trans": "🎉congratulación! ${player} recibido ${item}!",
+ 	 	 	 	"eng": "🎉Congratulation! ${player} received ${item}!"
+ 	 	 	}
  	 	}
  	},
  	"gifting": {
@@ -8216,10 +10132,29 @@
  	 	 	"eng": "This player cannot receive gift now"
  	 	}
  	},
+ 	"topUpReward": {
+ 	 	"mail": {
+ 	 	 	"vars": [
+ 	 	 	 	"event",
+ 	 	 	 	"items"
+ 	 	 	],
+ 	 	 	"trans": "${event} recompensa de recarga ${items} se ha enviado a su bandeja de entrada",
+ 	 	 	"eng": " ${event} top up reward ${items} has been sent to your inbox"
+ 	 	}
+ 	},
+ 	"error": {
+ 	 	"cannotUseItemInStatus": {
+ 	 	 	"vars": [
+ 	 	 	 	"minutes"
+ 	 	 	],
+ 	 	 	"trans": "No puede usar este elemento porque hay un efecto de estado que entra en conflicto con él",
+ 	 	 	"eng": "You cannot use this item because there is a status effect that conflicts with it"
+ 	 	}
+ 	},
  	"player": {
  	 	"error": {
  	 	 	"deleteWhileMuted": {
- 	 	 	 	"trans": "No puede eliminar su cuenta cuando está apagado.",
+ 	 	 	 	"trans": "No puede eliminar su cuenta cuando estás silenciado.",
  	 	 	 	"eng": "You can't delete your account when you are muted."
  	 	 	},
  	 	 	"deleteAccountTooEarly": {
@@ -8239,8 +10174,12 @@
  	 	 	 	"eng": "You can't perform this action now"
  	 	 	},
  	 	 	"invalidTravelLink": {
- 	 	 	 	"trans": "Enlace de viaje no válido, si persiste, recargue",
+ 	 	 	 	"trans": "Enlace de viaje invalido, si persiste, recargue",
  	 	 	 	"eng": "Invalid Travel Link, if persist please reload"
+ 	 	 	},
+ 	 	 	"recipeDisabled": {
+ 	 	 	 	"trans": "Esta receta no está disponible actualmente",
+ 	 	 	 	"eng": "This recipe is currently not available"
  	 	 	}
  	 	},
  	 	"escape": {
@@ -8264,40 +10203,90 @@
  	 	 	"eng": "`You were killed by ${enemy}"
  	 	},
  	 	"levelTooHigh": {
- 	 	 	"trans": "Su nivel es demasiado alto para realizar esta acción aquí, intente hacerlo en la siguiente zona.",
+ 	 	 	"trans": "Tu nivel es demasiado alto para realizar esta acción aquí, intente hacerlo en la siguiente zona.",
  	 	 	"eng": "Your level is too high to perform this action here, try to do it in the next zone."
  	 	},
  	 	"giveCred": {
+ 	 	 	"mail": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"playerName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ha recibido un crédito callejero de ${playerName}",
+ 	 	 	 	"eng": "You have received a street cred from ${playerName}"
+ 	 	 	},
  	 	 	"success": {
- 	 	 	 	"trans": "Has dado crédito a la calle Daily.",
+ 	 	 	 	"trans": "Has dado un punto de Respeto Callejero diario.",
  	 	 	 	"eng": "You have given daily street cred."
  	 	 	},
  	 	 	"notEnoughLevelError": {
- 	 	 	 	"trans": "Debes ser el nivel 10 o superior para darle crédito a la calle del jugador",
+ 	 	 	 	"trans": "Debes ser nivel 10 o superior para darle Respeto Callejero al jugador",
  	 	 	 	"eng": "You must be level 10 or above to give player street cred"
  	 	 	},
  	 	 	"cooldownError": {
- 	 	 	 	"trans": "Todavía no puedes darle crédito a la calle (una vez todos los días)",
+ 	 	 	 	"trans": "Todavía no puedes darle Respeto Callejero (una vez todos los días)",
  	 	 	 	"eng": "You cannot give street cred yet (once every day)"
  	 	 	}
  	 	}
  	},
  	"basicInfo": {
  	 	"nameUsed": {
- 	 	 	"trans": "Este nombre es utilizado por otro jugador, use otro nombre",
+ 	 	 	"trans": "Este nombre esta siendo utilizado por otro jugador, use otro nombre",
  	 	 	"eng": "this name is used by other player, please use other name"
  	 	},
- 	 	"nameIllegal": {
- 	 	 	"trans": "Nombre ilegal, use otro nombre",
- 	 	 	"eng": "Illegal name, please use other name"
+ 	 	"reservedKeyword": {
+ 	 	 	"trans": "Este nombre contiene palabras reservadas, use otro nombre",
+ 	 	 	"eng": "This name contains reserved wordings, please use other name"
  	 	},
  	 	"nameProfane": {
  	 	 	"trans": "Este nombre contiene palabras no permitidas, use otro nombre",
  	 	 	"eng": "This name contains wordings not allowed, please use other name"
  	 	},
  	 	"nameInvalid": {
- 	 	 	"trans": "La longitud del nombre debe ser mayor que 4, menos o igual a 16 y solo contiene caracteres en inglés, números o \\ '_ \\'",
+ 	 	 	"trans": "La longitud del nombre debe ser mayor que 4, menor o igual a 16 y solo contener caracteres en inglés, números o \\ '_ \\'",
  	 	 	"eng": "name length must be greater then 4, less then or equal to 16 and only contains English characters, numbers or \\'_\\'"
+ 	 	}
+ 	},
+ 	"skip": {
+ 	 	"skipRewardMail": {
+ 	 	 	"1": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Has recibido \"Skip Emblem 1\" por tener ${amount} Puntos de omisión",
+ 	 	 	 	"eng": "You have received \"Skip Emblem 1\" for having ${amount} skip points"
+ 	 	 	},
+ 	 	 	"2": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Has recibido \"Skip Emblem 2\" por tener ${amount} Puntos de omisión",
+ 	 	 	 	"eng": "You have received \"Skip Emblem 2\" for having ${amount} skip points"
+ 	 	 	},
+ 	 	 	"3": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Has recibido \"Skip Emblem 3\" por tener ${amount} Puntos de omisión",
+ 	 	 	 	"eng": "You have received \"Skip Emblem 3\" for having ${amount} skip points"
+ 	 	 	},
+ 	 	 	"4": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"frameName",
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ha recibido el marco de chat de donante \"${frameName}\" por tener ${amount} Puntos de omisión",
+ 	 	 	 	"eng": "You have received \"${frameName}\" donator chat frame for having ${amount} skip points"
+ 	 	 	}
+ 	 	},
+ 	 	"announcement": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName",
+ 	 	 	 	"playerCount",
+ 	 	 	 	"skipTime",
+ 	 	 	 	"credButton"
+ 	 	 	],
+ 	 	 	"trans": "${playerName} ha utilizado Global Time Skip, todos los reproductores en línea que actualmente realizan tareas AFK (${playerCount} jugadores) se saltarán automáticamente por ${skipTime} minutos. ¿Darle a la leyenda algunos credibilidad? ${credButton}",
+ 	 	 	"eng": "${playerName} has used Global Time Skip, all online players currently performing AFK task (${playerCount} players) will automatically time skip by ${skipTime} minutes. Give the legend some creds? ${credButton}"
  	 	}
  	}
 }

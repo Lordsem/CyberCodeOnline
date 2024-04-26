@@ -1,4 +1,56 @@
 {
+ 	"apartment": {
+ 	 	"title": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "Apartamentul lui ${playerName}",
+ 	 	 	"eng": "${playerName}'s Apartment"
+ 	 	},
+ 	 	"terminateLease": {
+ 	 	 	"trans": "Anulare contract de închiriere",
+ 	 	 	"eng": "Terminate Lease"
+ 	 	},
+ 	 	"viewPets": {
+ 	 	 	"trans": "Vizualizează Animalele de Companie",
+ 	 	 	"eng": "View Pets"
+ 	 	},
+ 	 	"address": {
+ 	 	 	"cityName": {
+ 	 	 	 	"trans": "Shangri-la",
+ 	 	 	 	"eng": "Shangri-la"
+ 	 	 	}
+ 	 	},
+ 	 	"rent": {
+ 	 	 	"paidMail": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ai plătit chirie pentru apartamentul tău în valoare de ${amount}",
+ 	 	 	 	"eng": "You have paid your apartment rent of ${amount}"
+ 	 	 	},
+ 	 	 	"unpaidMail": {
+ 	 	 	 	"trans": "Ai eșuat să plătești chiria apartamentului tău, iar acesta a fost reziliat",
+ 	 	 	 	"eng": "You have failed to pay your apartment rent, your apartment has been terminated"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"purchaseApartmentUI": {
+ 	 	"confirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Închiriază Apartamentul",
+ 	 	 	 	"eng": "Rent Apartment"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Ești sigur că vrei să închiriezi acest apartament?",
+ 	 	 	 	"eng": "Are you sure you want to rent this apartment?"
+ 	 	 	}
+ 	 	},
+ 	 	"rentButton": {
+ 	 	 	"trans": "Închiriază acum",
+ 	 	 	"eng": "Rent Now"
+ 	 	}
+ 	},
  	"tabs": {
  	 	"map": {
  	 	 	"trans": "Hartă",
@@ -22,10 +74,41 @@
  	 	}
  	},
  	"ui": {
- 	 	"blackMarket": {
- 	 	 	"selectItemButton": {
- 	 	 	 	"trans": "Imprimare și vânzare",
- 	 	 	 	"eng": "Print And Sell"
+ 	 	"bulkCraft": {
+ 	 	 	"amountSelect": {
+ 	 	 	 	"title": {
+ 	 	 	 	 	"trans": "Selectați suma",
+ 	 	 	 	 	"eng": "Select Amount"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"duration": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"duration"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Această sarcină va lua ${duration}",
+ 	 	 	 	"eng": "This task will take ${duration}"
+ 	 	 	},
+ 	 	 	"durationTooLong": {
+ 	 	 	 	"trans": "Prea multe articole selectate",
+ 	 	 	 	"eng": "Too many items selected"
+ 	 	 	}
+ 	 	},
+ 	 	"generalCaptcha": {
+ 	 	 	"inputLabel": {
+ 	 	 	 	"trans": "Cod PIN",
+ 	 	 	 	"eng": "Pin Code"
+ 	 	 	},
+ 	 	 	"inputPlaceholder": {
+ 	 	 	 	"trans": "Introduceți codul PIN.",
+ 	 	 	 	"eng": "Enter pin code"
+ 	 	 	},
+ 	 	 	"story": {
+ 	 	 	 	"trans": "Ai găsit o veche cutie de siguranță închisă, se pare că un post-it cu un text scris pe el.",
+ 	 	 	 	"eng": "You found an old locked safe box, there seems like a post-it with some text written on it."
+ 	 	 	},
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Codul PIN este necesar pentru a debloca",
+ 	 	 	 	"eng": "Pin code required to unlock"
  	 	 	}
  	 	},
  	 	"clan": {
@@ -47,15 +130,15 @@
  	 	 	 	"eng": "Deposit Bitcoin"
  	 	 	},
  	 	 	"editMotto": {
+ 	 	 	 	"button": {
+ 	 	 	 	 	"trans": "Editați motto-ul bandei",
+ 	 	 	 	 	"eng": "Edit Gang Motto"
+ 	 	 	 	},
  	 	 	 	"modal": {
  	 	 	 	 	"title": {
  	 	 	 	 	 	"trans": "Introduceți motto-ul bandei",
  	 	 	 	 	 	"eng": "Please enter your gang motto"
  	 	 	 	 	}
- 	 	 	 	},
- 	 	 	 	"button": {
- 	 	 	 	 	"trans": "Editați motto-ul bandei",
- 	 	 	 	 	"eng": "Edit Gang Motto"
  	 	 	 	}
  	 	 	},
  	 	 	"updateImage": {
@@ -172,12 +255,6 @@
  	 	 	 	}
  	 	 	}
  	 	},
- 	 	"supportUkraine": {
- 	 	 	"description": {
- 	 	 	 	"trans": "Oamenii din Ucraina, Rusia și întreaga lume suferă pentru că ambiția unui om. \\ N face dragoste Exploit, nu război.",
- 	 	 	 	"eng": "People of Ukraine, Russia and the whole world are suffering because one man's ambition.\\n Make love exploit, not war."
- 	 	 	}
- 	 	},
  	 	"bank": {
  	 	 	"balance": {
  	 	 	 	"trans": "echilibru",
@@ -288,24 +365,6 @@
  	 	 	 	}
  	 	 	}
  	 	},
- 	 	"generalCaptcha": {
- 	 	 	"story": {
- 	 	 	 	"trans": "Ai găsit o veche cutie de siguranță închisă, se pare că un post-it cu un text scris pe el.",
- 	 	 	 	"eng": "You found an old locked safe box, there seems like a post-it with some text written on it."
- 	 	 	},
- 	 	 	"title": {
- 	 	 	 	"trans": "Codul PIN este necesar pentru a debloca",
- 	 	 	 	"eng": "Pin code required to unlock"
- 	 	 	},
- 	 	 	"inputLabel": {
- 	 	 	 	"trans": "Cod PIN",
- 	 	 	 	"eng": "Pin Code"
- 	 	 	},
- 	 	 	"inputPlaceholder": {
- 	 	 	 	"trans": "Introduceți codul PIN.",
- 	 	 	 	"eng": "Enter pin code"
- 	 	 	}
- 	 	},
  	 	"chat": {
  	 	 	"reconnecting": {
  	 	 	 	"trans": "Realizarea conexiunii",
@@ -397,6 +456,16 @@
  	 	 	}
  	 	},
  	 	"clanPage": {
+ 	 	 	"notice": {
+ 	 	 	 	"time": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"playerName",
+ 	 	 	 	 	 	"time"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "Postat de ${playerName} ${time} acum",
+ 	 	 	 	 	"eng": "Posted by ${playerName} ${time} ago"
+ 	 	 	 	}
+ 	 	 	},
  	 	 	"createClan": {
  	 	 	 	"title": {
  	 	 	 	 	"trans": "Nu ești membru al vreunei bande",
@@ -525,17 +594,27 @@
  	 	},
  	 	"timeSkip": {
  	 	 	"unitTimeSkipButton": {
- 	 	 	 	"title": {
+ 	 	 	 	"unit": {
  	 	 	 	 	"vars": [
- 	 	 	 	 	 	"timeSkipMinutes",
- 	 	 	 	 	 	"timeSkipCost"
+ 	 	 	 	 	 	"units"
  	 	 	 	 	],
- 	 	 	 	 	"trans": "Global Skip (${timeSkipMinutes} min, cost ${timeSkipCost} Unități)",
- 	 	 	 	 	"eng": "Global Skip (${timeSkipMinutes} Min, Cost ${timeSkipCost} Units)"
+ 	 	 	 	 	"trans": "${units} unități",
+ 	 	 	 	 	"eng": "${units} units"
+ 	 	 	 	},
+ 	 	 	 	"minute": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"minutes"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "${minutes} unități",
+ 	 	 	 	 	"eng": "Skip ${minutes} minutes"
+ 	 	 	 	},
+ 	 	 	 	"title2": {
+ 	 	 	 	 	"trans": "Termina acum",
+ 	 	 	 	 	"eng": "Finish Now"
  	 	 	 	},
  	 	 	 	"description": {
  	 	 	 	 	"trans": "Global Skip vă permite să săriți timpul de așteptare AFK și să îl terminați instantaneu. \n     Acest efect va fi aplicat tuturor jucătorului care efectuează sarcina AFK",
- 	 	 	 	 	"eng": "Global Skip allow you to skip the AFK waiting time, and finish it instantly.\r\n    this effect will be applied to all player performing AFK task"
+ 	 	 	 	 	"eng": "Finish the task instantly for all players in the game and earn skip points to show your support to other players!"
  	 	 	 	}
  	 	 	},
  	 	 	"itemTimeSkipButton": {
@@ -680,12 +759,16 @@
  	 	 	 	"trans": "Deblocat",
  	 	 	 	"eng": "Unlocked"
  	 	 	},
+ 	 	 	"upgradeModuleTitleHeader": {
+ 	 	 	 	"trans": "Sloturi de îmbunătățiri",
+ 	 	 	 	"eng": "Upgrades Slots"
+ 	 	 	},
  	 	 	"upgradeModuleTitle": {
- 	 	 	 	"trans": "Upgrade-uri",
- 	 	 	 	"eng": "upgrade slot ${index}",
  	 	 	 	"vars": [
  	 	 	 	 	"index"
- 	 	 	 	]
+ 	 	 	 	],
+ 	 	 	 	"trans": "Upgrade-uri",
+ 	 	 	 	"eng": "upgrade slot ${index}"
  	 	 	},
  	 	 	"equip": {
  	 	 	 	"trans": "Echipa",
@@ -997,14 +1080,6 @@
  	 	 	 	 	"trans": "Jucător de blocare",
  	 	 	 	 	"eng": "Block Player"
  	 	 	 	}
- 	 	 	},
- 	 	 	"equipped": {
- 	 	 	 	"trans": "Echipat",
- 	 	 	 	"eng": "Equipped"
- 	 	 	},
- 	 	 	"inventory": {
- 	 	 	 	"trans": "Inventar",
- 	 	 	 	"eng": "Inventory"
  	 	 	}
  	 	},
  	 	"modal": {
@@ -1094,13 +1169,13 @@
  	 	 	 	"trans": "În prezent nu există elemente în vânzare pentru această categorie",
  	 	 	 	"eng": "there is currently no items on sale for this category"
  	 	 	},
- 	 	 	"buy": {
+ 	 	 	"pricePerPiece": {
+ 	 	 	 	"trans": "pe articol",
+ 	 	 	 	"eng": "per item"
+ 	 	 	},
+ 	 	 	"purchase": {
  	 	 	 	"trans": "Cumpărare",
  	 	 	 	"eng": "Purchase"
- 	 	 	},
- 	 	 	"remove": {
- 	 	 	 	"trans": "Elimina",
- 	 	 	 	"eng": "Remove"
  	 	 	},
  	 	 	"stall": {
  	 	 	 	"sellItemButton": {
@@ -1322,69 +1397,10 @@
  	 	 	 	"eng": "If you have any questions please feel free to contact Dexter directly via official Discord (Link can be found in Floating Menu -> Links) or email to ching.huang.dexter@gmail.com"
  	 	 	}
  	 	},
- 	 	"tipsBox": {
- 	 	 	"title": {
- 	 	 	 	"trans": "Pro sfazuri",
- 	 	 	 	"eng": "Pro Tips"
- 	 	 	},
- 	 	 	"description": {
- 	 	 	 	"trans": "Faceți clic pentru a obține sfaturi noi",
- 	 	 	 	"eng": "Click to get new tips"
- 	 	 	}
- 	 	},
  	 	"travel": {
  	 	 	"notUnlocked": {
  	 	 	 	"trans": "Nu ați deblocat încă această zonă",
  	 	 	 	"eng": "You have not unlocked this area yet"
- 	 	 	}
- 	 	},
- 	 	"machineCrafting": {
- 	 	 	"titleBox": {
- 	 	 	 	"tile": {
- 	 	 	 	 	"trans": "sistem inactiv",
- 	 	 	 	 	"eng": "system idle"
- 	 	 	 	},
- 	 	 	 	"subtitle": {
- 	 	 	 	 	"trans": "Te rog, inserează un articol",
- 	 	 	 	 	"eng": "Please insert an item"
- 	 	 	 	}
- 	 	 	},
- 	 	 	"selectItemButton": {
- 	 	 	 	"trans": "Reciclează Obiectul",
- 	 	 	 	"eng": "Recycle Item"
- 	 	 	},
- 	 	 	"selectAmount": {
- 	 	 	 	"title": {
- 	 	 	 	 	"trans": "Te rog selectează cantitatea",
- 	 	 	 	 	"eng": "Please select amount"
- 	 	 	 	},
- 	 	 	 	"subtitle": {
- 	 	 	 	 	"vars": [
- 	 	 	 	 	 	"timeStr"
- 	 	 	 	 	],
- 	 	 	 	 	"trans": "Aceasta va avea durata de ${timeStr}",
- 	 	 	 	 	"eng": "This will take ${timeStr}"
- 	 	 	 	}
- 	 	 	},
- 	 	 	"confirmModal": {
- 	 	 	 	"title": {
- 	 	 	 	 	"vars": [
- 	 	 	 	 	 	"itemName"
- 	 	 	 	 	],
- 	 	 	 	 	"trans": "Selectați ${itemName}?",
- 	 	 	 	 	"eng": "Select ${itemName}?"
- 	 	 	 	},
- 	 	 	 	"subtitle": {
- 	 	 	 	 	"vars": [
- 	 	 	 	 	 	"itemName"
- 	 	 	 	 	],
- 	 	 	 	 	"trans": "Sunteți sigur că doriți să selectați ${itemName}?",
- 	 	 	 	 	"eng": "Are you sure you want to select ${itemName}?"
- 	 	 	 	},
- 	 	 	 	"confirmText": {
- 	 	 	 	 	"trans": "Sunt sigur",
- 	 	 	 	 	"eng": "I am sure"
- 	 	 	 	}
  	 	 	}
  	 	},
  	 	"setting": {
@@ -1497,6 +1513,12 @@
  	 	 	 	"eng": "save"
  	 	 	}
  	 	},
+ 	 	"petShop": {
+ 	 	 	"adapt": {
+ 	 	 	 	"trans": "Adoptă un animal de companie nou",
+ 	 	 	 	"eng": "Adopt a new pet"
+ 	 	 	}
+ 	 	},
  	 	"rangeSelector": {
  	 	 	"selectMaxValue": {
  	 	 	 	"title": {
@@ -1571,6 +1593,41 @@
  	 	 	"itemLocked": {
  	 	 	 	"trans": "Acest articol este blocat",
  	 	 	 	"eng": "This item is locked"
+ 	 	 	}
+ 	 	},
+ 	 	"machineCrafting": {
+ 	 	 	"selectAmount": {
+ 	 	 	 	"title": {
+ 	 	 	 	 	"trans": "Te rog selectează cantitatea",
+ 	 	 	 	 	"eng": "Please select amount"
+ 	 	 	 	},
+ 	 	 	 	"subtitle": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"timeStr"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "Aceasta va avea durata de ${timeStr}",
+ 	 	 	 	 	"eng": "This will take ${timeStr}"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"confirmModal": {
+ 	 	 	 	"title": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"itemName"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "Selectați ${itemName}?",
+ 	 	 	 	 	"eng": "Select ${itemName}?"
+ 	 	 	 	},
+ 	 	 	 	"subtitle": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"itemName"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "Sunteți sigur că doriți să selectați ${itemName}?",
+ 	 	 	 	 	"eng": "Are you sure you want to select ${itemName}?"
+ 	 	 	 	},
+ 	 	 	 	"confirmText": {
+ 	 	 	 	 	"trans": "Sunt sigur",
+ 	 	 	 	 	"eng": "I am sure"
+ 	 	 	 	}
  	 	 	}
  	 	},
  	 	"calibration": {
@@ -1680,6 +1737,39 @@
  	 	 	"title": {
  	 	 	 	"trans": "Introduce parola sistemului pentru a continua",
  	 	 	 	"eng": "Enter system passcode to proceed"
+ 	 	 	}
+ 	 	},
+ 	 	"marketItemPurchaseModal": {
+ 	 	 	"amount": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"price",
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${price} btc pe bucată pentru ${amount} piese",
+ 	 	 	 	"eng": "${price} btc per piece for ${amount} pieces"
+ 	 	 	}
+ 	 	},
+ 	 	"marketItemSellModal": {
+ 	 	 	"amountTitle": {
+ 	 	 	 	"trans": "Cantitate de pus pe piață",
+ 	 	 	 	"eng": "Quantity to put on market"
+ 	 	 	},
+ 	 	 	"priceTitle": {
+ 	 	 	 	"trans": "Preț pe bucată",
+ 	 	 	 	"eng": "Price per piece"
+ 	 	 	},
+ 	 	 	"footer": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"price",
+ 	 	 	 	 	"quantity",
+ 	 	 	 	 	"totalPrice"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Acest articol va fi vândut pentru ${price} pe bucată pentru ${quantity} piese, dacă toate piesele sunt vândute, veți primi ${totalPrice}",
+ 	 	 	 	"eng": "This item will be sold for ${price} per piece for ${quantity} pieces, if all pieces are sold you will receive ${totalPrice}"
+ 	 	 	},
+ 	 	 	"sell": {
+ 	 	 	 	"trans": "Puneți elementul pe piață",
+ 	 	 	 	"eng": "Place Item on Market"
  	 	 	}
  	 	},
  	 	"dungeon": {
@@ -1955,6 +2045,10 @@
  	 	 	 	],
  	 	 	 	"trans": "${playerCount} Player (e) conectat (e)",
  	 	 	 	"eng": "${playerCount} player(s) connected"
+ 	 	 	},
+ 	 	 	"passwordProtected": {
+ 	 	 	 	"trans": "Protectie cu parola",
+ 	 	 	 	"eng": "Password protected"
  	 	 	}
  	 	},
  	 	"equipmentUpgrade": {
@@ -2394,6 +2488,12 @@
  	 	 	"unlock": {
  	 	 	 	"trans": "Deblocare",
  	 	 	 	"eng": "Unlock"
+ 	 	 	},
+ 	 	 	"error": {
+ 	 	 	 	"notEnabled": {
+ 	 	 	 	 	"trans": "Acest container nu poate fi deblocat în acest moment",
+ 	 	 	 	 	"eng": "This container cannot be unlocked at this time"
+ 	 	 	 	}
  	 	 	}
  	 	}
  	},
@@ -2443,6 +2543,18 @@
  	 	 	"name": {
  	 	 	 	"trans": "caseta audio",
  	 	 	 	"eng": "cassette tape"
+ 	 	 	}
+ 	 	},
+ 	 	"rareEquipmentCrate": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Crate de echipamente rare",
+ 	 	 	 	"eng": "Rare Equipment Crate"
+ 	 	 	}
+ 	 	},
+ 	 	"freeSkip": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Skip personal gratuit",
+ 	 	 	 	"eng": "Free Personal Skip"
  	 	 	}
  	 	},
  	 	"cycle": {
@@ -2584,10 +2696,6 @@
  	 	 	"trans": "Primește",
  	 	 	"eng": "Receives"
  	 	},
- 	 	"inputPlaceholder": {
- 	 	 	"trans": "Introduceți mesajul pentru a începe discutarea",
- 	 	 	"eng": "Enter message to start chatting"
- 	 	},
  	 	"moderators": {
  	 	 	"trans": "moderatori",
  	 	 	"eng": "moderators"
@@ -2694,6 +2802,23 @@
  	 	"thief": {
  	 	 	"trans": "Tehno-Thro-Then",
  	 	 	"eng": "Techno-Thief"
+ 	 	}
+ 	},
+ 	"globalPartyBanner": {
+ 	 	"title": {
+ 	 	 	"trans": "🎉 Partidul global 🎉",
+ 	 	 	"eng": "🎉 Global Party 🎉"
+ 	 	},
+ 	 	"subtitle": {
+ 	 	 	"trans": "Găzduit de:",
+ 	 	 	"eng": "Hosted by:"
+ 	 	},
+ 	 	"button,": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "Dă credință de stradă",
+ 	 	 	"eng": "Give street cred"
  	 	}
  	},
  	"cost": {
@@ -3055,6 +3180,16 @@
  	 	 	 	"trans": "Vrăjmașii lui Voodoo Boys Gang Oferte vă vor afecta deteriorarea",
  	 	 	 	"eng": "Enemies of Voodoo Boys gang deals increased damage to you"
  	 	 	}
+ 	 	},
+ 	 	"afkExpMultiplier": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Multiplicator AFK EXP",
+ 	 	 	 	"eng": "AFK EXP multiplier"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Creșteți expul pe care îl primiți de la sarcinile AFK",
+ 	 	 	 	"eng": "Increase EXP you receive from AFK tasks"
+ 	 	 	}
  	 	}
  	},
  	"modal": {
@@ -3090,13 +3225,13 @@
  	 	 	 	"trans": "Acces interzis. Profil non-uman detectat.",
  	 	 	 	"eng": "Access denied. non-human profile detected."
  	 	 	},
+ 	 	 	"report1": {
+ 	 	 	 	"trans": "Raportează și Blochează",
+ 	 	 	 	"eng": "Report & Block"
+ 	 	 	},
  	 	 	"block": {
  	 	 	 	"trans": "bloc",
  	 	 	 	"eng": "Block"
- 	 	 	},
- 	 	 	"report": {
- 	 	 	 	"trans": "Raport și blochează",
- 	 	 	 	"eng": "Report and Block"
  	 	 	},
  	 	 	"openPlayerGang": {
  	 	 	 	"trans": "Vizualizați banda",
@@ -3249,14 +3384,14 @@
  	 	"resultScreen": {
  	 	 	"title": {
  	 	 	 	"trans": "Victorie",
- 	 	 	 	"eng": "Victory"
+ 	 	 	 	"eng": "Level up"
  	 	 	},
  	 	 	"subTitle": {
  	 	 	 	"vars": [
  	 	 	 	 	"levelName"
  	 	 	 	],
  	 	 	 	"trans": "Felicitări, ai ajuns la ${levelName}!",
- 	 	 	 	"eng": "Congratulation, you have leveled up your ${levelName}!"
+ 	 	 	 	"eng": "Congratulations, you have leveled up your ${levelName}!"
  	 	 	},
  	 	 	"fromTo": {
  	 	 	 	"vars": [
@@ -3265,6 +3400,10 @@
  	 	 	 	],
  	 	 	 	"trans": "${from} => ${to}",
  	 	 	 	"eng": "${from} => ${to}"
+ 	 	 	},
+ 	 	 	"title2": {
+ 	 	 	 	"trans": "Primit",
+ 	 	 	 	"eng": "Received"
  	 	 	}
  	 	},
  	 	"review": {
@@ -3338,6 +3477,30 @@
  	 	 	 	 	"eng": "Reload"
  	 	 	 	}
  	 	 	}
+ 	 	}
+ 	},
+ 	"playerDetailsAssetsTab": {
+ 	 	"noAssets": {
+ 	 	 	"trans": "Acest jucător nu deține niciun activ",
+ 	 	 	"eng": "this player does not own any assets"
+ 	 	},
+ 	 	"apartment": {
+ 	 	 	"title": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"playerName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Apartamentul lui ${playerName}",
+ 	 	 	 	"eng": "${playerName}'s Apartment"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"playerStatusDisplay": {
+ 	 	"title": {
+ 	 	 	"vars": [
+ 	 	 	 	"action"
+ 	 	 	],
+ 	 	 	"trans": "${action} în curs",
+ 	 	 	"eng": "${action} in progress"
  	 	}
  	},
  	"time": {
@@ -3613,16 +3776,16 @@
  	 	 	 	 	"eng": "dungeon warrior"
  	 	 	 	}
  	 	 	},
- 	 	 	"clearDungeonCoOp": {
- 	 	 	 	"name": {
- 	 	 	 	 	"trans": "prieteni pentru dungeon",
- 	 	 	 	 	"eng": "dungeon friends"
- 	 	 	 	}
- 	 	 	},
  	 	 	"clearDungeon": {
  	 	 	 	"name": {
  	 	 	 	 	"trans": "Dungeon Crawler",
  	 	 	 	 	"eng": "dungeon crawler"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"clearDungeonCoOp": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "prieteni pentru dungeon",
+ 	 	 	 	 	"eng": "dungeon friends"
  	 	 	 	}
  	 	 	},
  	 	 	"dealDamage": {
@@ -3689,10 +3852,148 @@
  	 	 	"eng": "Appeal Form"
  	 	}
  	},
+ 	"pet": {
+ 	 	"noName": {
+ 	 	 	"trans": "fără nume",
+ 	 	 	"eng": "unnamed"
+ 	 	},
+ 	 	"nameTooShort": {
+ 	 	 	"vars": [
+ 	 	 	 	"length"
+ 	 	 	],
+ 	 	 	"trans": "Numele de animal de companie trebuie să aibă cel puțin ${length} caractere",
+ 	 	 	"eng": "Pet name must be at least ${length} characters long"
+ 	 	},
+ 	 	"nameTooLong": {
+ 	 	 	"vars": [
+ 	 	 	 	"length"
+ 	 	 	],
+ 	 	 	"trans": "Numele de animal de companie trebuie să aibă cel mult ${length} caractere",
+ 	 	 	"eng": "Pet name must be at most ${length} characters long"
+ 	 	},
+ 	 	"nameCantContainSpaces": {
+ 	 	 	"trans": "Numele de animal nu poate conține spații",
+ 	 	 	"eng": "Pet name can not contain spaces"
+ 	 	},
+ 	 	"rerollImage": {
+ 	 	 	"success": {
+ 	 	 	 	"trans": "Imaginea animalului de companie a fost schimbată cu succes",
+ 	 	 	 	"eng": "Pet image changed successfully"
+ 	 	 	}
+ 	 	},
+ 	 	"adoption": {
+ 	 	 	"alreadyActivated": {
+ 	 	 	 	"trans": "Bonusul de Adoptare a Animalelor de Companie este deja activat",
+ 	 	 	 	"eng": "Pet Adoption buff is already activated"
+ 	 	 	},
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player",
+ 	 	 	 	 	"npc"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${player} a activat Bonusul de Adopție, poți adopta un animal de companie de la ${npc} în timpul duratei bonusului!",
+ 	 	 	 	"eng": "${player} has activated Adoption Buff, you can adopt a pet from ${npc} within the buff duration!"
+ 	 	 	},
+ 	 	 	"activated": {
+ 	 	 	 	"trans": "Bonus activat pentru adoptarea unui animal de companie",
+ 	 	 	 	"eng": "Pet adoption buff activated"
+ 	 	 	}
+ 	 	},
+ 	 	"error": {
+ 	 	 	"interactedRecently": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"hours"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Poți interacționa cu animalul de companie al unui jucător doar o dată la fiecare ${hours} ore",
+ 	 	 	 	"eng": "You can only interact with a player's pet once every ${hours} hours"
+ 	 	 	}
+ 	 	},
+ 	 	"played": {
+ 	 	 	"vars": [
+ 	 	 	 	"player",
+ 	 	 	 	"pet"
+ 	 	 	],
+ 	 	 	"trans": "${player} a jucat cu animalul tău de companie ${pet}",
+ 	 	 	"eng": "${player} has played with your pet ${pet}",
+ 	 	 	"success": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"playerName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ai jucat cu animalul de companie al lui ${playerName}",
+ 	 	 	 	"eng": "You have played with ${playerName}'s pet"
+ 	 	 	}
+ 	 	},
+ 	 	"rename": {
+ 	 	 	"badWord": {
+ 	 	 	 	"trans": "Numele conține cuvinte interzise",
+ 	 	 	 	"eng": "Name contains not allowed words"
+ 	 	 	},
+ 	 	 	"notEnoughIAP": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"price"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ai nevoie de ${price} Unități pentru a-ți redenumi animalul de companie",
+ 	 	 	 	"eng": "You need ${price} Units to rename your pet"
+ 	 	 	}
+ 	 	},
+ 	 	"adopted": {
+ 	 	 	"vars": [
+ 	 	 	 	"player",
+ 	 	 	 	"pet"
+ 	 	 	],
+ 	 	 	"trans": "${player} a adoptat ${pet}",
+ 	 	 	"eng": "${player} has adopted ${pet}",
+ 	 	 	"mail": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"pet"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ai adoptat ${pet}",
+ 	 	 	 	"eng": "You have adopted ${pet}"
+ 	 	 	}
+ 	 	},
+ 	 	"reviveActivate": {
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${player} a folosit un buff de reînviere a animalelor de companie, acum poți reînvia unul dintre animalele tale în timpul duratei buff-ului.",
+ 	 	 	 	"eng": "${player} has used pet revival buff, you can now revive one of your pet within the buff duration."
+ 	 	 	}
+ 	 	},
+ 	 	"revive": {
+ 	 	 	"activated": {
+ 	 	 	 	"trans": "Revitalizare animal de companie activată",
+ 	 	 	 	"eng": "Pet revive buff activated"
+ 	 	 	},
+ 	 	 	"success": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"petName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ai reînviat ${petName}",
+ 	 	 	 	"eng": "You have revived ${petName}"
+ 	 	 	}
+ 	 	},
+ 	 	"reviveSuccess": {
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player",
+ 	 	 	 	 	"pet"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${player} a reînviat pe ${pet}",
+ 	 	 	 	"eng": "${player} has revived ${pet}"
+ 	 	 	}
+ 	 	}
+ 	},
  	"priceTag": {
  	 	"free": {
  	 	 	"trans": "LIBER",
  	 	 	"eng": "FREE"
+ 	 	}
+ 	},
+ 	"chatInput": {
+ 	 	"placeholder": {
+ 	 	 	"trans": "Introdu mesajul...",
+ 	 	 	"eng": "Enter Message..."
  	 	}
  	},
  	"itemList": {
@@ -3730,6 +4031,12 @@
  	 	"max": {
  	 	 	"trans": "Max",
  	 	 	"eng": "max"
+ 	 	}
+ 	},
+ 	"giveCredButton": {
+ 	 	"giveCred": {
+ 	 	 	"trans": "Dă credință de stradă",
+ 	 	 	"eng": "Give Street Cred"
  	 	}
  	},
  	"actionStartModal": {
@@ -3991,6 +4298,34 @@
  	 	 	"eng": "Click 'ACCEPT QUEST' to accept the quest, you may complete or abandon the quest at any time"
  	 	}
  	},
+ 	"enum": {
+ 	 	"apartmentType": {
+ 	 	 	"T1": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Apartament din mahala",
+ 	 	 	 	 	"eng": "slum apartment"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"T2": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Apartament",
+ 	 	 	 	 	"eng": "apartment"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"T3": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Apartament de lux",
+ 	 	 	 	 	"eng": "luxury apartment"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"T4": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Apartament de lux",
+ 	 	 	 	 	"eng": "penthouse"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	}
+ 	},
  	"iapCurrency": {
  	 	"currency1": {
  	 	 	"name": {
@@ -4163,6 +4498,13 @@
  	 	 	"trans": "A primi",
  	 	 	"eng": "Receive"
  	 	},
+ 	 	"bonusReward": {
+ 	 	 	"vars": [
+ 	 	 	 	"eventName"
+ 	 	 	],
+ 	 	 	"trans": "${eventName} bonus:",
+ 	 	 	"eng": "${eventName} bonus:"
+ 	 	},
  	 	"purchasing": {
  	 	 	"trans": "Cumpărare",
  	 	 	"eng": "Purchasing"
@@ -4170,6 +4512,28 @@
  	 	"total": {
  	 	 	"trans": "total",
  	 	 	"eng": "total"
+ 	 	}
+ 	},
+ 	"bulkCraftingSubtype": {
+ 	 	"recycle": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Recicla",
+ 	 	 	 	"eng": "Recycle"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Adăugați articole pentru a le recicla mai eficient",
+ 	 	 	 	"eng": "Add items to recycle them more efficiently"
+ 	 	 	}
+ 	 	},
+ 	 	"printSell": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Tipărire și vinde",
+ 	 	 	 	"eng": "Print & Sell"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Imprimați articole și vindeți -le pentru bani",
+ 	 	 	 	"eng": "Print items and sell them for money"
+ 	 	 	}
  	 	}
  	},
  	"donationType": {
@@ -4248,6 +4612,46 @@
  	 	"donation18": {
  	 	 	"trans": "Prestigiu",
  	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation20": {
+ 	 	 	"trans": "Prestigiu",
+ 	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation21": {
+ 	 	 	"trans": "Prestigiu",
+ 	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation22": {
+ 	 	 	"trans": "Prestigiu",
+ 	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation23": {
+ 	 	 	"trans": "Halloween",
+ 	 	 	"eng": "Halloween"
+ 	 	},
+ 	 	"donation24": {
+ 	 	 	"trans": "Transport",
+ 	 	 	"eng": "SkipSage"
+ 	 	},
+ 	 	"donation25": {
+ 	 	 	"trans": "Christmastime",
+ 	 	 	"eng": "Christmastime"
+ 	 	},
+ 	 	"donation26": {
+ 	 	 	"trans": "Cyberdragon",
+ 	 	 	"eng": "CyberDragon"
+ 	 	},
+ 	 	"donation27": {
+ 	 	 	"trans": "Salt Doamne",
+ 	 	 	"eng": "Skip Lord"
+ 	 	},
+ 	 	"donation28": {
+ 	 	 	"trans": "Sakura",
+ 	 	 	"eng": "Sakura"
+ 	 	},
+ 	 	"donation29": {
+ 	 	 	"trans": "Netrunner",
+ 	 	 	"eng": "Netrunner"
  	 	},
  	 	"moderator": {
  	 	 	"trans": "Moderator",
@@ -4990,6 +5394,406 @@
  	 	 	 	 	"eng": "More coming in future update"
  	 	 	 	}
  	 	 	}
+ 	 	},
+ 	 	"donation20": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Titlul donației „Prestigiu”",
+ 	 	 	 	 	"eng": "\"Prestige\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Deblocați personalizarea imaginii de profil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Cadru alb (cu animație)",
+ 	 	 	 	 	"eng": "White frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Profil alb (cu animație)",
+ 	 	 	 	 	"eng": "White Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Deblocați bio personalizat",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Decorarea codurilor de bare pe profil",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Personalizați motto -ul bandei",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Personalizați imaginea bandei",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Mai multe venind în viitoarea actualizare",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation21": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Titlul donației „Prestigiu”",
+ 	 	 	 	 	"eng": "\"Prestige\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Deblocați personalizarea imaginii de profil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Cadru roșu (cu animație)",
+ 	 	 	 	 	"eng": "Red frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Profil roșu (cu animație)",
+ 	 	 	 	 	"eng": "Red Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Deblocați bio personalizat",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Decorarea codurilor de bare pe profil",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Personalizați motto -ul bandei",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Personalizați imaginea bandei",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Mai multe venind în viitoarea actualizare",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation22": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Titlul donației „Prestigiu”",
+ 	 	 	 	 	"eng": "\"Prestige\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Deblocați personalizarea imaginii de profil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Frame de semn neon (cu animație)",
+ 	 	 	 	 	"eng": "Neon Sign frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Profil violet (cu animație)",
+ 	 	 	 	 	"eng": "Purple Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Deblocați bio personalizat",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Decorarea codurilor de bare pe profil",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Personalizați motto -ul bandei",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Personalizați imaginea bandei",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Mai multe venind în viitoarea actualizare",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation23": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Titlul donației „Halloween”",
+ 	 	 	 	 	"eng": "\"Halloween\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Deblocați personalizarea imaginii de profil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Frame de Halloween (cu animație)",
+ 	 	 	 	 	"eng": "Halloween frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Profilul de Halloween (cu animație)",
+ 	 	 	 	 	"eng": "Halloween Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Deblocați bio personalizat",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Decorarea codurilor de bare pe profil",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Personalizați motto -ul bandei",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Personalizați imaginea bandei",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Mai multe venind în viitoarea actualizare",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation24": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Titlul donației „skipgod”",
+ 	 	 	 	 	"eng": "\"SkipSage\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Deblocați personalizarea imaginii de profil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Skipgod Frame (cu animație)",
+ 	 	 	 	 	"eng": "SkipSage frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Profilul skipgod (cu animație)",
+ 	 	 	 	 	"eng": "SkipSage Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Deblocați bio personalizat",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Decorarea codurilor de bare pe profil",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Personalizați motto -ul bandei",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Personalizați imaginea bandei",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Mai multe venind în viitoarea actualizare",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation25": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Titlul donației „Christmastime”",
+ 	 	 	 	 	"eng": "\"Christmastime\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Deblocați personalizarea imaginii de profil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Christmastime Frame (cu animație)",
+ 	 	 	 	 	"eng": "Christmastime frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Profilul Christmastime (cu animație)",
+ 	 	 	 	 	"eng": "Christmastime Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Deblocați bio personalizat",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Decorarea codurilor de bare pe profil",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Personalizați motto -ul bandei",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Personalizați imaginea bandei",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Mai multe venind în viitoarea actualizare",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation26": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Titlul donației „Cyberdragon”",
+ 	 	 	 	 	"eng": "\"CyberDragon\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Deblocați personalizarea imaginii de profil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Cadru cyberdragon (cu animație)",
+ 	 	 	 	 	"eng": "CyberDragon frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Profil cyberdragon (cu animație)",
+ 	 	 	 	 	"eng": "CyberDragon Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Deblochează biografia personalizată",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Deblocați bio personalizat",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Personalizați motto -ul bandei",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Personalizați imaginea bandei",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Mai multe venind în viitoarea actualizare",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation27": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Titlul donației „Skip Lord”",
+ 	 	 	 	 	"eng": "\"Skip Lord\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Deblocați personalizarea imaginii de profil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Skip Lord Frame (cu animație)",
+ 	 	 	 	 	"eng": "Skip Lord frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Profilul Skip Lord (cu animație)",
+ 	 	 	 	 	"eng": "Skip Lord Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Deblochează biografia personalizată",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Deblocați bio personalizat",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Personalizați motto -ul bandei",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Personalizați imaginea bandei",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Mai multe venind în viitoarea actualizare",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation28": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Titlu pentru donații \"Sakura\"",
+ 	 	 	 	 	"eng": "\"Sakura\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Deblochează personalizarea pozei de profil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Cadru Sakura (cu animație)",
+ 	 	 	 	 	"eng": "Sakura frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Profilul Sakura (cu animație)",
+ 	 	 	 	 	"eng": "Sakura Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Deblochează biografia personalizată",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Deblochează bio personalizat",
+ 	 	 	 	 	"eng": "Sakura profile decoration"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Personalizează deviza bandei",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Personalizează imaginea bandei",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Mai multe vor veni în actualizarea viitoare",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation29": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Titlu pentru donații \"Netrunner\"",
+ 	 	 	 	 	"eng": "\"Netrunner\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Deblochează personalizarea pozei de profil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Cadru Netrunner (cu animație)",
+ 	 	 	 	 	"eng": "Netrunner frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Profil Netrunner (cu animație)",
+ 	 	 	 	 	"eng": "Netrunner Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Deblochează biografia personalizată",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Deblochează bio personalizat",
+ 	 	 	 	 	"eng": "Netrunner profile decoration"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Personalizează deviza bandei",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Personalizează imaginea bandei",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Mai multe vor veni în actualizarea viitoare",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
  	 	}
  	},
  	"equipmentMarks": {
@@ -5058,6 +5862,33 @@
  	 	 	"eng": "backpack"
  	 	}
  	},
+ 	"gameEvent": {
+ 	 	"lunarNewYear": {
+ 	 	 	"trans": "Anul Nou Lunar",
+ 	 	 	"eng": "Lunar New Year"
+ 	 	},
+ 	 	"halloween": {
+ 	 	 	"trans": "Halloween",
+ 	 	 	"eng": "Halloween"
+ 	 	},
+ 	 	"thanksgiving": {
+ 	 	 	"trans": "Ziua Recunoștinței",
+ 	 	 	"eng": "Thanksgiving"
+ 	 	},
+ 	 	"christmas": {
+ 	 	 	"trans": "Crăciun",
+ 	 	 	"eng": "Christmas"
+ 	 	},
+ 	 	"sakura": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "${percent}% reducere în timpul evenimentului",
+ 	 	 	 	"eng": "${percent}% off during event",
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	]
+ 	 	 	}
+ 	 	}
+ 	},
  	"itemFilterType": {
  	 	"shopSell": {
  	 	 	"description": {
@@ -5071,6 +5902,12 @@
  	 	 	"name": {
  	 	 	 	"trans": "Echipament necunoscut",
  	 	 	 	"eng": "Unknown Equipment"
+ 	 	 	}
+ 	 	},
+ 	 	"unknownCache": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Cache necunoscută",
+ 	 	 	 	"eng": "Unknown Cache"
  	 	 	}
  	 	},
  	 	"aiCore": {
@@ -5738,6 +6575,16 @@
  	 	 	 	"eng": "You get some love, and you get some love! everyone gets some love!.\r\n        When used everyone loves each other\r\n        This effects all players fow 10 minutes"
  	 	 	}
  	 	},
+ 	 	"chatExploitPosh": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Transmițător de exploatare a chat-ului [Elegant]",
+ 	 	 	 	"eng": "Chat exploit transmitter [Posh]"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "La activare, toată corespondența oferită de locuitorii tărâmului nostru de chat va suferi o metamorfoză plăcută, îmbrăcându-se în haina distinsă a limbii engleze gentleman pentru o durată exactă de 10 minute. Acest exploit va funcționa doar cu limba engleză",
+ 	 	 	 	"eng": "Upon activation, all correspondence proffered by the denizens of our chat realm shall undergo a delightful metamorphosis, adorning itself in the distinguished garb of gentlemanly English for a duration of precisely 10 minutes. this exploit will only work well with English"
+ 	 	 	}
+ 	 	},
  	 	"upgradeResetShard": {
  	 	 	"name": {
  	 	 	 	"trans": "Resetarea din fabrică SHARD.",
@@ -5786,6 +6633,16 @@
  	 	 	"description": {
  	 	 	 	"trans": "Un container criptat cu decor roșu, verde și o siglă \"Cybersstanta ™\" pe partea ei.",
  	 	 	 	"eng": "An encrypted container with red, green decoration and a 'CyberSanta™' logo on the side of it."
+ 	 	 	}
+ 	 	},
+ 	 	"christmasGift2": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Container înghețat",
+ 	 	 	 	"eng": "Frosty Container"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Un cadou de mister înfășurat în ambalaje spumante, cu temă cu fulgi de zăpadă. Îl puteți debloca doar la [terminal] în decembrie.",
+ 	 	 	 	"eng": "A mystery gift wrapped in sparkling, snowflake-themed packaging. You can only unlock it at the [Terminal] during December."
  	 	 	}
  	 	},
  	 	"rngInterferer": {
@@ -5875,6 +6732,19 @@
  	 	 	 	"eng": "These dumplings are unlike any other. Made with love and care by Yen, these delicious pockets of goodness are filled with the finest ingredients and cooked to perfection.\\n recover ${percent}% health upon consumption"
  	 	 	}
  	 	},
+ 	 	"pumpkinPie": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Placinta de dovleac",
+ 	 	 	 	"eng": "Pumpkin Pie"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "O plăcintă delicioasă de dovleac. Această plăcintă are o încărcătură mare de cremă de vanilie groasă peste ea, delicioasă! \\ nrecover ${percent}% sănătate la consum",
+ 	 	 	 	"eng": "A delicious pumpkin pie. this pie has big load of thick vanilla cream over it, delicious!\\nrecover ${percent}% health upon consumption"
+ 	 	 	}
+ 	 	},
  	 	"riceCake": {
  	 	 	"name": {
  	 	 	 	"trans": "Tort de orez",
@@ -5926,6 +6796,153 @@
  	 	 	"description": {
  	 	 	 	"trans": "Un jeton care poate fi utilizat pentru schimbul de articole",
  	 	 	 	"eng": "A token that can be used to exchange items"
+ 	 	 	}
+ 	 	},
+ 	 	"techScrapCluster": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Cluster de resturi de tehnologie",
+ 	 	 	 	"eng": "Tech Scrap Cluster"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Un cluster de resturi tehnologice conține 1000 de resturi de tehnologie, poate fi utilizat pentru a stoca și comercializa cu ușurință",
+ 	 	 	 	"eng": "A Tech Scrap Cluster contains 1000 Tech Scraps, can be used to easily store and trade"
+ 	 	 	}
+ 	 	},
+ 	 	"rareEquipmentCrate": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Crate de echipamente rare",
+ 	 	 	 	"eng": "Rare Equipment Crate"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "O ladă care conține echipamente aleatorii sau alte loturi",
+ 	 	 	 	"eng": "A crate that contains a random equipments or other loots"
+ 	 	 	}
+ 	 	},
+ 	 	"globalPartyBuff": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Deploarea partidului global",
+ 	 	 	 	"eng": "Global Party Deployer"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"afkPercent",
+ 	 	 	 	 	"btcPercent",
+ 	 	 	 	 	"expPercent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Când este implementat, reduceți timpul AFK cu ${afkPercent}%, a crescut BTC câștigat cu ${btcPercent}%, creșterea expirată cu ${expPercent}%\\ nand Un banner va fi afișat în ecranul de chat cu numele dvs. care indică faptul că v -ați implementat buff",
+ 	 	 	 	"eng": "When deployed, reduce AFK time by ${afkPercent}%, increased BTC gained by ${btcPercent}%, increase EXP gained by ${expPercent}%\\nAnd a banner will be shown in chat screen with your name indicating that you have deployed the buff"
+ 	 	 	},
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"afkPercent",
+ 	 	 	 	 	"btcPercent",
+ 	 	 	 	 	"expPercent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "🎉its Timpul petrecerii! 🥳, reduce timpul AFK cu ${afkPercent}%, a crescut BTC câștigat cu ${btcPercent}%, creșterea expusă cu ${expPercent}%",
+ 	 	 	 	"eng": "🎉Its Party Time!🥳, reduce AFK time by ${afkPercent}%, increased BTC gained by ${btcPercent}%, increase EXP gained by ${expPercent}%"
+ 	 	 	}
+ 	 	},
+ 	 	"turkey": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Curcan prăjit",
+ 	 	 	 	"eng": "Roasted Turkey"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Un curcan delicios prăjit, atunci când consumată crește expultul primit în sarcinile AFK cu ${percent}%",
+ 	 	 	 	"eng": "A delicious roasted turkey, when consumed increases EXP received in AFK tasks by ${percent}%"
+ 	 	 	}
+ 	 	},
+ 	 	"pudding": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Budinca de Craciun",
+ 	 	 	 	"eng": "Christmas Pudding"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "O budincă densă, aburită, cu fructe uscate, nuci și adesea lăsate cu alcool, atunci când consumată crește expultul primit în sarcinile AFK cu ${percent}%",
+ 	 	 	 	"eng": "A dense, steamed pudding with dried fruits, nuts, and often laced with alcohol, when consumed increases EXP received in AFK tasks by ${percent}%.\\nThis item can only be used during December"
+ 	 	 	},
+ 	 	 	"error": {
+ 	 	 	 	"trans": "Acest articol este disponibil numai în timpul evenimentului de Crăciun",
+ 	 	 	 	"eng": "This item is only available during Christmas Event"
+ 	 	 	}
+ 	 	},
+ 	 	"pawCredit": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Credite cu labe",
+ 	 	 	 	"eng": "Paw Credit"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Un credit care poate fi folosit pentru a schimba obiecte pentru animale de companie la Sanctuarul Neon Paw",
+ 	 	 	 	"eng": "A credit that can be used to exchange pet items at Neon Paw Sanctuary"
+ 	 	 	}
+ 	 	},
+ 	 	"petTokenShard": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Medalia Serviciului Voluntar",
+ 	 	 	 	"eng": "Volunteer Service Medallion"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Combinați ${amount} din acestea pentru a obține un Pase de Adoptare pentru Sanctuar, pe care îl puteți folosi pentru a adopta un animal de companie nou",
+ 	 	 	 	"eng": "Combine ${amount} of this to get a Sanctuary Adoption Pass, and it can be used to adopt a new pet"
+ 	 	 	}
+ 	 	},
+ 	 	"petToken": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Medalia Serviciului Voluntar",
+ 	 	 	 	"eng": "Sanctuary Adoption Pass"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Combinați ${amount} din acestea pentru a obține un Pase de Adoptare pentru Sanctuar, pe care îl puteți folosi pentru a adopta un animal de companie nou",
+ 	 	 	 	"eng": "A pass that can be used to adopt a pet from Neon Paw Sanctuary"
+ 	 	 	}
+ 	 	},
+ 	 	"petFood": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "ElectroFiber Mușcături",
+ 	 	 	 	"eng": "ElectroFiber Bites"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "\"ElectroFiber Bites™ conțin o combinație complexă de fibre care conduc și stochează energie, sporind rezistența și puterea animalului tău de companie pentru expediții mai lungi în sălbăticia cibernetică.\"",
+ 	 	 	 	"eng": "\"ElectroFiber Bites™ contain a complex blend of fibers that conduct and store energy, boosting your pet's stamina and power for longer expeditions in the cyber wilderness.\""
+ 	 	 	}
+ 	 	},
+ 	 	"petToy": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Nanomuşcă Bila",
+ 	 	 	 	"eng": "NanoNibble Ball"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "\"Prezentăm Bila NanoNibble - o minune a tehnologiei de distracție concepută pentru pură bucurie. Fiecare bila se aprinde cu modele fascinante la cea mai mică atingere, asigurându-se că animalul tău de companie este complet distrat. După o sesiune de distracție fără precedent, bila se deconstruiește inteligent în particule inofensive și prietenoase cu mediul, lăsând în urmă un mediu curat. Perfectă pentru o singură aventură de neuitat în compania digitală, este experiența supremă de distracție care dispare cu eleganță, scutindu-te de curățenie.\"",
+ 	 	 	 	"eng": "\"Introducing the NanoNibble Ball – a marvel of playtime technology designed for sheer joy. Each ball lights up with mesmerizing patterns at the slightest touch, ensuring your pet is thoroughly entertained. After a session of unprecedented fun, the ball smartly deconstructs into harmless, eco-friendly particles, leaving no mess behind. Perfect for a single, unforgettable adventure in digital companionship, it’s the ultimate playtime experience that neatly disappears, sparing you the cleanup.\""
+ 	 	 	}
+ 	 	},
+ 	 	"petCleaner": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Spray FurFlush",
+ 	 	 	 	"eng": "FurFlush Spray"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Spray FurFlush: Canistra elegantă cu inscripția „Curățare instantanee, Dispariție instantanee”. Un strop rapid transformă animalul tău murdar într-o minune strălucitoare - fără clătire, fără mizerie, doar puf! Perfect pentru acele momente „ups” înainte de o întâlnire cyber. Atenție: Poate duce la un look neașteptat al animalului. Magie de unică folosință pentru companionul exploratorului urban. Dispare după utilizare, lăsând doar un animal de companie strălucitor.",
+ 	 	 	 	"eng": "FurFlush Spray: The sleek canister reads 'Instant Clean, Instant Gone.' A quick spritz turns your grimy pet gleaming—no rinse, no mess, just poof! Perfect for those 'oops' moments before a cyber meet-up. Caution: May lead to unexpected pet swagger. Single-use magic for the urban explorer's companion. Disappears after use, leaving no evidence except a dazzling pet."
+ 	 	 	}
+ 	 	},
+ 	 	"petMedicine": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "PawfectVindecare",
+ 	 	 	 	"eng": "PawfectCure"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Când animaluțul tău se simte rău sau pur și simplu nu e în apele lui, asta-i soluția de care ai nevoie. Tratează totul, de la strănuturi până la starea de „am mâncat ceva ciudat”. Ai grijă la efectele secundare: s-ar putea să-ți facă brusc poftă de mâncare și să crească atacurile de îmbrățișări. Pentru că uneori, cel mai bun remediu este puțină veselie... și PawfectCure.",
+ 	 	 	 	"eng": "When your pet's feeling under the weather, or just plain off, this is the go-to. It tackles everything from the sniffles to the 'I ate something weird' blues. Beware of side effects: may cause a sudden appreciation for your cooking and an increase in snuggle attacks. Because sometimes, the best remedy is a little laughter... and PawfectCure."
  	 	 	}
  	 	},
  	 	"experienceShard": {
@@ -6066,6 +7083,12 @@
  	 	 	 	 	"trans": "Mergi la Sediul General al găștii",
  	 	 	 	 	"eng": "Go to gang headquarters"
  	 	 	 	}
+ 	 	 	},
+ 	 	 	"toApartment": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Mergi la apartamentul tău",
+ 	 	 	 	 	"eng": "Go to your apartment"
+ 	 	 	 	}
  	 	 	}
  	 	},
  	 	"job": {
@@ -6122,6 +7145,29 @@
  	 	 	"cantEnterError": {
  	 	 	 	"trans": "Trebuie să vă alăturați unui câștig pentru a intra în această zonă",
  	 	 	 	"eng": "You need to join a gang to enter this area"
+ 	 	 	}
+ 	 	},
+ 	 	"apartment": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Apartamentul Meu",
+ 	 	 	 	"eng": "My Apartment"
+ 	 	 	},
+ 	 	 	"toMainHub": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Reveniți la Centrul Orașului Shangri-La",
+ 	 	 	 	 	"eng": "Return to Shangri-La City Center"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "[Apartament]\nApartamentul tău confortabil în oraș. Animalele tale de companie te așteaptă să vii acasă.",
+ 	 	 	 	"eng": "[Apartment]\r\n        Your cozy apartment in the city. your pets are waiting for you to come home."
+ 	 	 	},
+ 	 	 	"cantEnterError": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"level"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Trebuie să ai cel puțin nivelul ${level} pentru a închiria un apartament",
+ 	 	 	 	"eng": "You need to be at least level ${level} to rent an apartment"
  	 	 	}
  	 	},
  	 	"zone": {
@@ -6455,6 +7501,56 @@
  	 	 	 	"eng": "B3llial"
  	 	 	}
  	 	},
+ 	 	"halloween": {
+ 	 	 	"defaultLines": {
+ 	 	 	 	"trans": [
+ 	 	 	 	 	"Pumpkin is my source of power!",
+ 	 	 	 	 	"Check out my pumpkin costume!",
+ 	 	 	 	 	"Hmmmm, I wonder what's inside this pumpkin...",
+ 	 	 	 	 	"Give me your pumpkin, and I'll give you a treat!"
+ 	 	 	 	],
+ 	 	 	 	"eng": [
+ 	 	 	 	 	"Pumpkin is my source of power!",
+ 	 	 	 	 	"Check out my pumpkin costume!",
+ 	 	 	 	 	"Hmmmm, I wonder what's inside this pumpkin...",
+ 	 	 	 	 	"Give me your pumpkin, and I'll give you a treat!"
+ 	 	 	 	]
+ 	 	 	},
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Alee",
+ 	 	 	 	"eng": "Alleyway"
+ 	 	 	},
+ 	 	 	"npcName": {
+ 	 	 	 	"trans": "Weirdo de dovleac",
+ 	 	 	 	"eng": "pumpkin weirdo"
+ 	 	 	}
+ 	 	},
+ 	 	"petShop": {
+ 	 	 	"defaultLines": {
+ 	 	 	 	"trans": [
+ 	 	 	 	 	"Hey, choom! Neon Paws is for the brave. These sprites need your daily grind. Ready to dive in?",
+ 	 	 	 	 	"Lookin' sharp, netrunner! Here, pets are more than code, they need your daily hack to thrive.",
+ 	 	 	 	 	"What's up, street samurai? Partner with a survivor. Without your daily deeds, they're zeroed.",
+ 	 	 	 	 	"Edge runner, eh? This is where tech meets heart. Ignore them, and they vanish into the net. Daily care, got it?",
+ 	 	 	 	 	"Cyberdeck in hand, heart on sleeve? Our critters need that daily touch or they'll fade into the static."
+ 	 	 	 	],
+ 	 	 	 	"eng": [
+ 	 	 	 	 	"Hey, choom! Neon Paws is for the brave. These sprites need your daily grind. Ready to dive in?",
+ 	 	 	 	 	"Lookin' sharp, netrunner! Here, pets are more than code, they need your daily hack to thrive.",
+ 	 	 	 	 	"What's up, street samurai? Partner with a survivor. Without your daily deeds, they're zeroed.",
+ 	 	 	 	 	"Edge runner, eh? This is where tech meets heart. Ignore them, and they vanish into the net. Daily care, got it?",
+ 	 	 	 	 	"Cyberdeck in hand, heart on sleeve? Our critters need that daily touch or they'll fade into the static."
+ 	 	 	 	]
+ 	 	 	},
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Refugiul Neon Paws",
+ 	 	 	 	"eng": "Neon Paws Sanctuary"
+ 	 	 	},
+ 	 	 	"npcName": {
+ 	 	 	 	"trans": "Jin",
+ 	 	 	 	"eng": "Jin"
+ 	 	 	}
+ 	 	},
  	 	"recycleMachine": {
  	 	 	"name": {
  	 	 	 	"trans": "Reciclator Automatic",
@@ -6484,6 +7580,58 @@
  	 	 	 	"trans": "Scavente",
  	 	 	 	"eng": "Scavengers"
  	 	 	}
+ 	 	}
+ 	},
+ 	"petType": {
+ 	 	"dog": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Câine",
+ 	 	 	 	"eng": "Dog"
+ 	 	 	}
+ 	 	},
+ 	 	"cat": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Câine",
+ 	 	 	 	"eng": "Cat"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"petStatus": {
+ 	 	"sick": {
+ 	 	 	"trans": "Bolnav",
+ 	 	 	"eng": "Sick"
+ 	 	},
+ 	 	"hungry": {
+ 	 	 	"trans": "Înfometat",
+ 	 	 	"eng": "Hungry"
+ 	 	},
+ 	 	"starving": {
+ 	 	 	"trans": "Înfometat",
+ 	 	 	"eng": "Starving"
+ 	 	},
+ 	 	"wellFed": {
+ 	 	 	"trans": "Sătul la maxim",
+ 	 	 	"eng": "Well Fed"
+ 	 	},
+ 	 	"dirty": {
+ 	 	 	"trans": "Murdar",
+ 	 	 	"eng": "Dirty"
+ 	 	},
+ 	 	"filthy": {
+ 	 	 	"trans": "Mizerabil",
+ 	 	 	"eng": "Filthy"
+ 	 	},
+ 	 	"dead": {
+ 	 	 	"trans": "Decedat",
+ 	 	 	"eng": "Deceased"
+ 	 	},
+ 	 	"unhappy": {
+ 	 	 	"trans": "Nemulțumit",
+ 	 	 	"eng": "Unhappy"
+ 	 	},
+ 	 	"depressed": {
+ 	 	 	"trans": "Deprimat",
+ 	 	 	"eng": "Depressed"
  	 	}
  	},
  	"action": {
@@ -6613,6 +7761,22 @@
  	 	 	 	"eng": "Trade"
  	 	 	}
  	 	},
+ 	 	"bulkCrafting": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Crafting în vrac",
+ 	 	 	 	"eng": "Bulk Crafting"
+ 	 	 	}
+ 	 	},
+ 	 	"petAFK": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Schimb de voluntariat la adăpostul pentru animale",
+ 	 	 	 	"eng": "Pet Shelter Volunteer Shift"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Oferă-ți voluntariatul la adăpostul local pentru animale pentru a-i ajuta să aibă grijă de acestea.",
+ 	 	 	 	"eng": "Volunteer at the local pet shelter to help take care of the animals."
+ 	 	 	}
+ 	 	},
  	 	"autoFarm": {
  	 	 	"name": {
  	 	 	 	"trans": "Lansează robotul de farmare",
@@ -6642,6 +7806,59 @@
  	 	 	 	"trans": "[Obținere Resurse AFK]\r\n                    Caută în jur în ${zoneName} pentru a găsii obiecte utile.\r\n                    Cine știe, poate vei fi norocos!",
  	 	 	 	"eng": "[AFK Resource Gather]\r\n                    Search around in ${zoneName} and scavenge for useful items.\r\n                    Who knows, maybe you'll get lucky!"
  	 	 	}
+ 	 	}
+ 	},
+ 	"leaderboard": {
+ 	 	"skip": {
+ 	 	 	"trans": "Punctele de sărituri",
+ 	 	 	"eng": "Skip Points"
+ 	 	},
+ 	 	"level": {
+ 	 	 	"trans": "Nivel",
+ 	 	 	"eng": "Level"
+ 	 	},
+ 	 	"epicPrint": {
+ 	 	 	"trans": "Echipament epic tipărit",
+ 	 	 	"eng": "Epic Equipment Printed"
+ 	 	},
+ 	 	"epicBagPrint": {
+ 	 	 	"trans": "Geanta epică realizată",
+ 	 	 	"eng": "Epic Bag Crafted"
+ 	 	},
+ 	 	"mining": {
+ 	 	 	"trans": "Nivel minier",
+ 	 	 	"eng": "Mining Level"
+ 	 	},
+ 	 	"ammo": {
+ 	 	 	"trans": "Și nivelulvel",
+ 	 	 	"eng": "Ammo Level"
+ 	 	},
+ 	 	"medical": {
+ 	 	 	"trans": "Nivel medical",
+ 	 	 	"eng": "Medical Level"
+ 	 	},
+ 	 	"scavenge": {
+ 	 	 	"trans": "Nivel de scădere",
+ 	 	 	"eng": "Scavenge Level"
+ 	 	},
+ 	 	"molecular": {
+ 	 	 	"trans": "Nivel de imprimare moleculară",
+ 	 	 	"eng": "Molecular Print Level"
+ 	 	},
+ 	 	"streetcred": {
+ 	 	 	"trans": "Stradă cRED",
+ 	 	 	"eng": "Street Cred"
+ 	 	},
+ 	 	"description": {
+ 	 	 	"vars": [
+ 	 	 	 	"minutes"
+ 	 	 	],
+ 	 	 	"trans": "Actualizări de listare a clasamentului la fiecare ${minutes} minute",
+ 	 	 	"eng": "Leaderboard listing updates every ${minutes} minutes"
+ 	 	},
+ 	 	"noPlayers": {
+ 	 	 	"trans": "În prezent, nu există jucători în acest clasament",
+ 	 	 	"eng": "Currently No Players in this Leaderboard"
  	 	}
  	},
  	"Quest": {
@@ -6837,6 +8054,12 @@
  	 	 	 	"eng": "Unlock Mysterious Container"
  	 	 	}
  	 	},
+ 	 	"christmasGift2": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Deblocați recipientul înghețat",
+ 	 	 	 	"eng": "Unlock Frosty Container"
+ 	 	 	}
+ 	 	},
  	 	"backpack1": {
  	 	 	"name": {
  	 	 	 	"trans": "Săculeț Vechi",
@@ -6877,12 +8100,6 @@
  	 	 	 	"eng": "AI Core Cluster"
  	 	 	}
  	 	},
- 	 	"halloween": {
- 	 	 	"name": {
- 	 	 	 	"trans": "Jack O Lantern",
- 	 	 	 	"eng": "Jack O Lantern"
- 	 	 	}
- 	 	},
  	 	"christmasToBox": {
  	 	 	"name": {
  	 	 	 	"trans": "Container legendar blocat",
@@ -6900,6 +8117,40 @@
  	 	 	 	"trans": "Cluster de tehnologie medicală",
  	 	 	 	"eng": "Medical Tech Cluster"
  	 	 	}
+ 	 	},
+ 	 	"medicalTechClusterRevers": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Resturi medicale",
+ 	 	 	 	"eng": "Medical Tech Scrap"
+ 	 	 	}
+ 	 	},
+ 	 	"techScrapCluster": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Cluster de resturi de tehnologie",
+ 	 	 	 	"eng": "Tech Scrap Cluster"
+ 	 	 	}
+ 	 	},
+ 	 	"techScrapClusterReverse": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Resturi de tehnologie",
+ 	 	 	 	"eng": "Tech Scrap"
+ 	 	 	}
+ 	 	},
+ 	 	"unlockRareEquipmentCrate": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Deblocați lada echipamentelor rare",
+ 	 	 	 	"eng": "Unlock Rare Equipment Crate"
+ 	 	 	}
+ 	 	},
+ 	 	"craftPetToken": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Crează un Pașaport de Adopție pentru Sanctuar",
+ 	 	 	 	"eng": "Craft Sanctuary Adoption Pass"
+ 	 	 	}
+ 	 	},
+ 	 	"craft": {
+ 	 	 	"trans": "Creare",
+ 	 	 	"eng": "Craft"
  	 	},
  	 	"ammo1": {
  	 	 	"vars": [
@@ -6991,6 +8242,10 @@
  	 	 	"trans": "Chat Exploit [Dragoste]",
  	 	 	"eng": "Chat Exploit [LOVE]"
  	 	},
+ 	 	"posh": {
+ 	 	 	"trans": "Exploatare Chat [POSH]",
+ 	 	 	"eng": "Chat Exploit [POSH]"
+ 	 	},
  	 	"chatExploitProtect": {
  	 	 	"trans": "Criptare de chat",
  	 	 	"eng": "Chat Encryption"
@@ -7006,6 +8261,30 @@
  	 	"aiConnect": {
  	 	 	"trans": "Conexiune cibernetică",
  	 	 	"eng": "Cyberspace Connection"
+ 	 	},
+ 	 	"globalParty": {
+ 	 	 	"trans": "Partid global",
+ 	 	 	"eng": "Global Party"
+ 	 	},
+ 	 	"afkExp": {
+ 	 	 	"trans": "AFK Exp Boost",
+ 	 	 	"eng": "AFK EXP Boost"
+ 	 	},
+ 	 	"petRevive": {
+ 	 	 	"trans": "Revivare animal de companie",
+ 	 	 	"eng": "Pet Revive"
+ 	 	},
+ 	 	"petReviveDesc": {
+ 	 	 	"trans": "Revivarea animalelor de companie este acum disponibilă pe durata acestui buff.",
+ 	 	 	"eng": "Pet revival is now available during this buff duration."
+ 	 	},
+ 	 	"petDraw": {
+ 	 	 	"trans": "Adoptarea unui animal de companie a fost activată",
+ 	 	 	"eng": "Pet Adoption Activated"
+ 	 	},
+ 	 	"petDrawDesc": {
+ 	 	 	"trans": "Adoptarea de animale de companie este acum disponibilă pe durata acestui buff.",
+ 	 	 	"eng": "Pet adoption is now available during this buff duration."
  	 	}
  	},
  	"combat": {
@@ -7066,6 +8345,52 @@
  	 	 	],
  	 	 	"trans": "Ai primit ${amount} ${itemName}.",
  	 	 	"eng": "You received ${amount} ${itemName}"
+ 	 	}
+ 	},
+ 	"chatExploit": {
+ 	 	"loveWords": {
+ 	 	 	"trans": [
+ 	 	 	 	"Love you",
+ 	 	 	 	"You guys are great",
+ 	 	 	 	"You guys are the best",
+ 	 	 	 	"love yall",
+ 	 	 	 	"You are amazing",
+ 	 	 	 	"we are best friend",
+ 	 	 	 	"Love you all",
+ 	 	 	 	"you are great",
+ 	 	 	 	"you the best",
+ 	 	 	 	"we are awesome",
+ 	 	 	 	"you are awesome",
+ 	 	 	 	"have a nice day",
+ 	 	 	 	"miss you",
+ 	 	 	 	"miss you guys",
+ 	 	 	 	"KYAAAAAAAAA",
+ 	 	 	 	"wish you have nice day",
+ 	 	 	 	"I love you",
+ 	 	 	 	"can we hug?",
+ 	 	 	 	"how much you love me?"
+ 	 	 	],
+ 	 	 	"eng": [
+ 	 	 	 	"Love you",
+ 	 	 	 	"You guys are great",
+ 	 	 	 	"You guys are the best",
+ 	 	 	 	"love yall",
+ 	 	 	 	"You are amazing",
+ 	 	 	 	"we are best friend",
+ 	 	 	 	"Love you all",
+ 	 	 	 	"you are great",
+ 	 	 	 	"you the best",
+ 	 	 	 	"we are awesome",
+ 	 	 	 	"you are awesome",
+ 	 	 	 	"have a nice day",
+ 	 	 	 	"miss you",
+ 	 	 	 	"miss you guys",
+ 	 	 	 	"KYAAAAAAAAA",
+ 	 	 	 	"wish you have nice day",
+ 	 	 	 	"I love you",
+ 	 	 	 	"can we hug?",
+ 	 	 	 	"how much you love me?"
+ 	 	 	]
  	 	}
  	},
  	"chatServer": {
@@ -7355,55 +8680,13 @@
  	 	"upgradePocketed": {
  	 	 	"trans": "de expansiune",
  	 	 	"eng": "of Expansion"
+ 	 	},
+ 	 	"upgradeHealing": {
+ 	 	 	"trans": "de vindecare",
+ 	 	 	"eng": "of Healing"
  	 	}
  	},
  	"market": {
- 	 	"amountSelectModal": {
- 	 	 	"title": {
- 	 	 	 	"trans": "Câți doriți să achiziționați?",
- 	 	 	 	"eng": "How many would you like to purchase?"
- 	 	 	},
- 	 	 	"totalPrice": {
- 	 	 	 	"vars": [
- 	 	 	 	 	"total"
- 	 	 	 	],
- 	 	 	 	"trans": "Acesta va costa totalul ${total} Bitcoin",
- 	 	 	 	"eng": "it will cost ${total} Bitcoin total"
- 	 	 	}
- 	 	},
- 	 	"notEnoughMoney": {
- 	 	 	"trans": "Bitcoin insuficient",
- 	 	 	"eng": "Insufficient bitcoin"
- 	 	},
- 	 	"priceSelectModal": {
- 	 	 	"title2": {
- 	 	 	 	"vars": [
- 	 	 	 	 	"itemName"
- 	 	 	 	],
- 	 	 	 	"trans": "Preț pentru ${itemName}",
- 	 	 	 	"eng": "Price for ${itemName}"
- 	 	 	}
- 	 	},
- 	 	"priceConfirm": {
- 	 	 	"vars": [
- 	 	 	 	"amountStr",
- 	 	 	 	"priceStr",
- 	 	 	 	"itemName"
- 	 	 	],
- 	 	 	"trans": "Vinzi ${amountStr} ${itemName}(s), la prețul de ${priceStr} pe obiect.",
- 	 	 	"eng": "You are selling ${amountStr} ${itemName}(s), at the price of ${priceStr} Per Item"
- 	 	},
- 	 	"totalConfirm": {
- 	 	 	"vars": [
- 	 	 	 	"total"
- 	 	 	],
- 	 	 	"trans": "Dacă le vinzi pe toate, poți obține ${total} BitCoin-uri.",
- 	 	 	"eng": "If all items are sold, you will earn ${total} BitCoins"
- 	 	},
- 	 	"sellAmountModalTitle": {
- 	 	 	"trans": "Câte vrei să vinzi?",
- 	 	 	"eng": "How many would you like to sell?"
- 	 	},
  	 	"upgradeSlot": {
  	 	 	"trans": "Modernizare",
  	 	 	"eng": "Upgrade"
@@ -7422,12 +8705,161 @@
  	 	 	],
  	 	 	"trans": "Puteți crește slotul de piață la ${slot} plătind ${price} bitcoins",
  	 	 	"eng": "You can increase your market slot to ${slot} by paying ${price} BitCoins"
+ 	 	},
+ 	 	"purchaseModal": {
+ 	 	 	"purchase": {
+ 	 	 	 	"trans": "Cumpărare",
+ 	 	 	 	"eng": "Purchase"
+ 	 	 	}
  	 	}
  	},
  	"mobile": {
  	 	"returnToAppMessage": {
  	 	 	"trans": "Sincronizarea cu serverul ..",
  	 	 	"eng": "Syncing with server.."
+ 	 	}
+ 	},
+ 	"petDetailsPage": {
+ 	 	"dispose": {
+ 	 	 	"trans": "Eliminare",
+ 	 	 	"eng": "dispose"
+ 	 	},
+ 	 	"disposeConfirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Eliminare",
+ 	 	 	 	"eng": "dispose"
+ 	 	 	},
+ 	 	 	"message": {
+ 	 	 	 	"trans": "Ești sigur că vrei să renunți la acest animal de companie? Această acțiune nu poate fi anulată",
+ 	 	 	 	"eng": "Are you sure you want to dispose of this pet? this cannot be undone"
+ 	 	 	}
+ 	 	},
+ 	 	"rerollImage": {
+ 	 	 	"trans": "Reîncarcă Imaginea",
+ 	 	 	"eng": "re-roll Image"
+ 	 	},
+ 	 	"rerollImageConfirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Reîncarcă Imaginea",
+ 	 	 	 	"eng": "re-roll Image"
+ 	 	 	},
+ 	 	 	"message": {
+ 	 	 	 	"trans": "Ești sigur că vrei să reiei imaginea acestui animal de companie?",
+ 	 	 	 	"eng": "Are you sure you want to re-roll this pets image?"
+ 	 	 	}
+ 	 	},
+ 	 	"petNotFound": {
+ 	 	 	"trans": "Animalul de companie nu a fost găsit",
+ 	 	 	"eng": "Pet not found"
+ 	 	},
+ 	 	"name": {
+ 	 	 	"trans": "nume",
+ 	 	 	"eng": "name"
+ 	 	},
+ 	 	"age": {
+ 	 	 	"trans": "Vârstă",
+ 	 	 	"eng": "age"
+ 	 	},
+ 	 	"status": {
+ 	 	 	"trans": "stare",
+ 	 	 	"eng": "status"
+ 	 	},
+ 	 	"noStatus": {
+ 	 	 	"trans": "sănătos",
+ 	 	 	"eng": "healthy"
+ 	 	},
+ 	 	"deadRemoveMessage": {
+ 	 	 	"vars": [
+ 	 	 	 	"date"
+ 	 	 	],
+ 	 	 	"trans": "Va fi eliminat la ${date}",
+ 	 	 	"eng": "will be removed at ${date}"
+ 	 	},
+ 	 	"hunger": {
+ 	 	 	"trans": "Foame",
+ 	 	 	"eng": "Hunger"
+ 	 	},
+ 	 	"feed": {
+ 	 	 	"trans": "Hrană",
+ 	 	 	"eng": "Feed"
+ 	 	},
+ 	 	"noFood": {
+ 	 	 	"vars": [
+ 	 	 	 	"item"
+ 	 	 	],
+ 	 	 	"trans": "N-ai ${item} să-ți hrănești animalul de companie",
+ 	 	 	"eng": "You don't have ${item} to feed your pet"
+ 	 	},
+ 	 	"happiness": {
+ 	 	 	"trans": "Fericire",
+ 	 	 	"eng": "Happiness"
+ 	 	},
+ 	 	"play": {
+ 	 	 	"trans": "Joacă",
+ 	 	 	"eng": "Play"
+ 	 	},
+ 	 	"noToy": {
+ 	 	 	"vars": [
+ 	 	 	 	"item"
+ 	 	 	],
+ 	 	 	"trans": "Nu ai ${item} să te joci cu animalul tău de companie",
+ 	 	 	"eng": "You don't have ${item} to play with your pet"
+ 	 	},
+ 	 	"cleanliness": {
+ 	 	 	"trans": "Curățenie",
+ 	 	 	"eng": "Cleanliness"
+ 	 	},
+ 	 	"clean": {
+ 	 	 	"trans": "Curat",
+ 	 	 	"eng": "Clean"
+ 	 	},
+ 	 	"noCleaner": {
+ 	 	 	"vars": [
+ 	 	 	 	"item"
+ 	 	 	],
+ 	 	 	"trans": "Nu ai ${item} pentru a-ți curăța animalul de companie",
+ 	 	 	"eng": "You don't have ${item} to clean your pet"
+ 	 	},
+ 	 	"giveMedicine": {
+ 	 	 	"trans": "Dă medicamentul",
+ 	 	 	"eng": "Give Medicine"
+ 	 	},
+ 	 	"reviveButton": {
+ 	 	 	"trans": "Reînviere",
+ 	 	 	"eng": "Revive"
+ 	 	}
+ 	},
+ 	"sendStreetCred": {
+ 	 	"error": {
+ 	 	 	"giveSelf": {
+ 	 	 	 	"trans": "Nu vă puteți trimite credite de stradă",
+ 	 	 	 	"eng": "you can't send street cred to yourself"
+ 	 	 	}
+ 	 	},
+ 	 	"title": {
+ 	 	 	"trans": "Trimite credința de stradă",
+ 	 	 	"eng": "Send street cred"
+ 	 	},
+ 	 	"description": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "Ești sigur că vrei să trimiți credite de stradă la ${playerName}? Puteți trimite o singură credință de stradă oricui zilnic.",
+ 	 	 	"eng": "Are you sure you want to send street cred to ${playerName}? you can send one street cred to anyone everyday."
+ 	 	}
+ 	},
+ 	"sendStreetCredError": {
+ 	 	"title": {
+ 	 	 	"trans": "Nu pot trimite credința de stradă acum",
+ 	 	 	"eng": "Can't send street cred now"
+ 	 	},
+ 	 	"description2": {
+ 	 	 	"trans": "Puteți trimite doar o singură credință de stradă pe zi. Și trebuie să fiți nivelul 10 sau mai mult.",
+ 	 	 	"eng": "You can only send one street cred per day. and you must be level 10 or above."
+ 	 	},
+ 	 	"confirmText": {
+ 	 	 	"trans": "Bine",
+ 	 	 	"eng": "OK"
  	 	}
  	},
  	"secretKey": {
@@ -7542,52 +8974,27 @@
  	 	 	 	"trans": "Total: ${amount} ${itemName}",
  	 	 	 	"eng": "Total: ${amount} ${itemName}"
  	 	 	}
- 	 	}
- 	},
- 	"chatExploit": {
- 	 	"loveWords": {
- 	 	 	"trans": [
- 	 	 	 	"Love you",
- 	 	 	 	"You guys are great",
- 	 	 	 	"You guys are the best",
- 	 	 	 	"love yall",
- 	 	 	 	"You are amazing",
- 	 	 	 	"we are best friend",
- 	 	 	 	"Love you all",
- 	 	 	 	"you are great",
- 	 	 	 	"you the best",
- 	 	 	 	"we are awesome",
- 	 	 	 	"you are awesome",
- 	 	 	 	"have a nice day",
- 	 	 	 	"miss you",
- 	 	 	 	"miss you guys",
- 	 	 	 	"KYAAAAAAAAA",
- 	 	 	 	"wish you have nice day",
- 	 	 	 	"I love you",
- 	 	 	 	"can we hug?",
- 	 	 	 	"how much you love me?"
+ 	 	},
+ 	 	"npcNotAvailable": {
+ 	 	 	"trans": "Acest magazin nu este disponibil în acest moment",
+ 	 	 	"eng": "This shop is not available at the moment"
+ 	 	},
+ 	 	"purchasedMessage": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"item"
  	 	 	],
- 	 	 	"eng": [
- 	 	 	 	"Love you",
- 	 	 	 	"You guys are great",
- 	 	 	 	"You guys are the best",
- 	 	 	 	"love yall",
- 	 	 	 	"You are amazing",
- 	 	 	 	"we are best friend",
- 	 	 	 	"Love you all",
- 	 	 	 	"you are great",
- 	 	 	 	"you the best",
- 	 	 	 	"we are awesome",
- 	 	 	 	"you are awesome",
- 	 	 	 	"have a nice day",
- 	 	 	 	"miss you",
- 	 	 	 	"miss you guys",
- 	 	 	 	"KYAAAAAAAAA",
- 	 	 	 	"wish you have nice day",
- 	 	 	 	"I love you",
- 	 	 	 	"can we hug?",
- 	 	 	 	"how much you love me?"
- 	 	 	]
+ 	 	 	"trans": "Ați achiziționat ${amount} ${item}",
+ 	 	 	"eng": "You have purchased ${amount} ${item}"
+ 	 	},
+ 	 	"exchangedMessage": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"item",
+ 	 	 	 	"item2"
+ 	 	 	],
+ 	 	 	"trans": "Ați schimbat ${amount} ${item} pentru ${item2}",
+ 	 	 	"eng": "You have exchanged ${amount} ${item} for ${item2}"
  	 	}
  	},
  	"bundleDetailsModal": {
@@ -7617,6 +9024,16 @@
  	 	 	 	"trans": "Cumpărare",
  	 	 	 	"eng": "Purchase"
  	 	 	}
+ 	 	}
+ 	},
+ 	"clanNoticeModal": {
+ 	 	"title": {
+ 	 	 	"trans": "Introduceți noua notificare",
+ 	 	 	"eng": "enter new notice"
+ 	 	},
+ 	 	"submit": {
+ 	 	 	"trans": "trimite",
+ 	 	 	"eng": "send"
  	 	}
  	},
  	"createClanModal": {
@@ -7685,26 +9102,57 @@
  	 	 	"eng": "Accept"
  	 	}
  	},
- 	"christmasPromo": {
+ 	"petReviveModal": {
+ 	 	"reviveButton": {
+ 	 	 	"error": {
+ 	 	 	 	"trans": "Ai reînviat recent un animal de companie",
+ 	 	 	 	"eng": "You have revived a pet recently"
+ 	 	 	},
+ 	 	 	"trans": "Reînviere",
+ 	 	 	"eng": "Revive"
+ 	 	},
+ 	 	"activateButton": {
+ 	 	 	"error": {
+ 	 	 	 	"trans": "Trebuie să activezi mai întâi reînvierea animalului de companie",
+ 	 	 	 	"eng": "You need to activate pet revive first"
+ 	 	 	},
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Activează reînvierea animalului de companie",
+ 	 	 	 	"eng": "Activate"
+ 	 	 	},
+ 	 	 	"desc": {
+ 	 	 	 	"trans": "Activează reînvierea animalului de companie",
+ 	 	 	 	"eng": "Activate pet revive"
+ 	 	 	},
+ 	 	 	"loading": {
+ 	 	 	 	"trans": "Activare în curs...",
+ 	 	 	 	"eng": "Activating..."
+ 	 	 	}
+ 	 	},
  	 	"title": {
- 	 	 	"trans": "Vacanță de iarnă fericită!",
- 	 	 	"eng": "Happy Winter Holiday!"
+ 	 	 	"trans": "Revino la viață animalul de companie",
+ 	 	 	"eng": "Revive pet"
+ 	 	},
+ 	 	"reviveDescription": {
+ 	 	 	"vars": [
+ 	 	 	 	"buffName"
+ 	 	 	],
+ 	 	 	"trans": "Poți să-ți revii animalul de companie când este activă abilitatea ${buffName}",
+ 	 	 	"eng": "You may revive your pet when ${buffName} buff is active"
+ 	 	}
+ 	},
+ 	"artPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Competiție de artă personaje înfricoșătoare!",
+ 	 	 	"eng": "Spooky Character Art Competition!"
  	 	},
  	 	"desc1": {
- 	 	 	"trans": "Este cea mai minunată perioadă a anului din nou! În Shangri-La sărbătorim vacanța de iarnă cu un eveniment special!",
- 	 	 	"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!"
+ 	 	 	"trans": "Dăm cache -uri epice, rucsac Explorer, valize pentru angajați și embleme primilor 5 câștigători!",
+ 	 	 	"eng": "We are giving out Epic Caches, Explorer Backpack, Employee Suitcase and Emblems to the top 5 winners!"
  	 	},
  	 	"desc2": {
- 	 	 	"vars": [
- 	 	 	 	"itemName",
- 	 	 	 	"craftItem"
- 	 	 	],
- 	 	 	"trans": "Inamicii și AI Core Auto Farm vor avea șansa de a scădea ${itemName}, puteți utiliza acest lucru pentru a crea ${craftItem} sau a -l deschide direct!",
- 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop ${itemName}, you can use this to craft ${craftItem} or open it directly!"
- 	 	},
- 	 	"desc3": {
- 	 	 	"trans": "În timpul sezonului de sărbători, vor fi disponibile două timpuri de chat limitate și emblemă!",
- 	 	 	"eng": "During the holiday season, two time limited chat frame and emblem will be available!"
+ 	 	 	"trans": "Consultați canalul #Event de pe Discord pentru mai multe detalii!",
+ 	 	 	"eng": "Check out the #event channel on Discord for more details!"
  	 	}
  	},
  	"halloweenPromo": {
@@ -7716,13 +9164,56 @@
  	 	 	"trans": "Este din nou perioada înfricoșătoare a anului! Shang-ri-La sărbătorește Halloween-ul cu un eveniment special!",
  	 	 	"eng": "Its the spooky time of the year again! Shang-ri-la is celebrating Halloween with a special event!"
  	 	},
- 	 	"desc2": {
- 	 	 	"trans": "Inamicii și AI Core Auto Farm vor avea șansa de a renunța la Jack-O-Lanterns! Puteți utiliza acestea pentru a crea containere legendare încuiate!",
- 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop Jack-o-lanterns! you can use these to craft Locked Legendary Containers!"
+ 	 	"desc2v2": {
+ 	 	 	"trans": "Dușmanii și AI Core Auto Farm vor avea șansa de a renunța la Jack-O-Lanterns!",
+ 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop Jack-o-lanterns!"
  	 	},
- 	 	"desc3": {
- 	 	 	"trans": "În timpul Halloween-ului, va fi disponibil un nivel de donație de chat cibernetic limitat de timp!",
- 	 	 	"eng": "During Halloween, a time limited cyber-bat chat donation tier will be available!"
+ 	 	"desc3v2": {
+ 	 	 	"vars": [
+ 	 	 	 	"npc",
+ 	 	 	 	"location"
+ 	 	 	],
+ 	 	 	"trans": "Puteți găsi ${npc} la ${location} În timpul Halloween-ului, el vă va schimba Jack-O-Lanterns pentru recompense!",
+ 	 	 	"eng": "You can find ${npc} at ${location} during Halloween, he will exchange your Jack-o-lanterns for rewards!"
+ 	 	},
+ 	 	"desc4v2": {
+ 	 	 	"trans": "În timpul Halloween-ului, vor fi disponibile un nivel de donație de chat de chat cyber-bat și embleme tematice și embleme tematice!",
+ 	 	 	"eng": "During Halloween, a time limited halloween, cyber-bat chat donation tier and themed emblems will be available!"
+ 	 	}
+ 	},
+ 	"christmasPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Vacanță de iarnă fericită!",
+ 	 	 	"eng": "Happy Winter Holiday!"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"trans": "Este cea mai minunată perioadă a anului din nou! În Shangri-La sărbătorim vacanța de iarnă cu un eveniment special!",
+ 	 	 	"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!"
+ 	 	},
+ 	 	"v2": {
+ 	 	 	"desc2": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Dușmanii și AI Core Auto Farm vor avea șansa de a scădea ${itemName}, îl puteți debloca pentru a primi premii!",
+ 	 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop ${itemName}, you can unlock it to receive prizes!"
+ 	 	 	}
+ 	 	},
+ 	 	"v3": {
+ 	 	 	"desc3": {
+ 	 	 	 	"trans": "În timpul sezonului de sărbători, vor fi disponibile cadrul de chat de Crăciun și emblema!",
+ 	 	 	 	"eng": "During the holiday season, Christmas chat frame and emblem will be available!"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"christmasPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Eveniment de Crăciun!",
+ 	 	 	"eng": "Christmas Event!"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"trans": "TIMP LIMITED LOOT ȘI CHAT DE CHAT!",
+ 	 	 	"eng": "Time limited loot and chat frame!"
  	 	}
  	},
  	"lunarPromo": {
@@ -7734,15 +9225,14 @@
  	 	 	"trans": "Anul Nou Lunar este aici și sărbătorim în Shang-ri-La cu un eveniment special. Alăturați -ne în timp ce îmbrățișăm începutul unui nou an, plin de tradiții, bucurie și unire.",
  	 	 	"eng": "The lunar new year is here, and we're celebrating in Shang-ri-la with a special event. Join us as we embrace the start of a new year, filled with traditions, joy, and togetherness."
  	 	},
- 	 	"desc2": {
+ 	 	"desc2-v2": {
  	 	 	"vars": [
  	 	 	 	"npcShopName",
  	 	 	 	"coinItem",
- 	 	 	 	"llcName",
  	 	 	 	"npcName"
  	 	 	],
- 	 	 	"trans": "${npcShopName} este acum deschis pentru afaceri! Puteți utiliza ${coinItem} pentru a achiziționa diverse bucătării speciale și ${llcName} de la ${npcName}!",
- 	 	 	"eng": "${npcShopName} is now open for business! You can use ${coinItem} to purchase various special cuisines and ${llcName} from ${npcName}!"
+ 	 	 	"trans": "${npcShopName} este acum deschis pentru afaceri! Puteți utiliza ${coinItem} pentru a achiziționa diverse bucătării speciale de la ${npcName}!",
+ 	 	 	"eng": "${npcShopName} is now open for business! You can use ${coinItem} to purchase various special cuisines from ${npcName}!"
  	 	},
  	 	"desc3": {
  	 	 	"vars": [
@@ -7751,18 +9241,39 @@
  	 	 	],
  	 	 	"trans": "Nu este Anul Nou dacă ${envelopItem} nu este implicat! Inamicii și AI Core Auto Farm vor scădea ${envelopItem}, le deschide pentru a primi sumă aleatorie de ${coinItem}!",
  	 	 	"eng": "It's not new year if ${envelopItem} is not involved! Enemies and AI Core auto farm will drop ${envelopItem}, open them to receive random amount of ${coinItem}!"
- 	 	},
+ 	 	}
+ 	},
+ 	"lunarPromo1": {
  	 	"desc4": {
  	 	 	"vars": [
- 	 	 	 	"envelopItem",
- 	 	 	 	"npcShop"
+ 	 	 	 	"itemName"
  	 	 	],
- 	 	 	"trans": "Acum puteți primi 3 $ ${envelopItem} în ${npcShop} în fiecare zi!",
- 	 	 	"eng": "You can now receive 3 free ${envelopItem} in ${npcShop} every day!"
+ 	 	 	"trans": "Obțineți gratuit ${itemName} pe pachetul de sus în sus!",
+ 	 	 	"eng": "Get free ${itemName} base on top up package!"
  	 	},
  	 	"desc5": {
- 	 	 	"trans": "S -au adăugat două noi cadru de chat limitat și embleme, achiziționabile doar în perioada evenimentului.",
- 	 	 	"eng": "Added two new time limited chat frame and emblems, only purchasable during event period."
+ 	 	 	"trans": "S -a adăugat un nou cadru de chat limitat și embleme, achiziționabile doar în perioada evenimentului.",
+ 	 	 	"eng": "Added new time limited chat frame and emblems, only purchasable during event period."
+ 	 	}
+ 	},
+ 	"lunarNewYearPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Anul Nou Lunar fericit!",
+ 	 	 	"eng": "Happy Lunar New Year!"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"item1",
+ 	 	 	 	"item2"
+ 	 	 	],
+ 	 	 	"trans": "Primiți gratuit ${item1} și ${item2} în timpul lunii lunare 🥳",
+ 	 	 	"eng": "Receive free ${item1} and ${item2} during the lunar new year 🥳"
+ 	 	}
+ 	},
+ 	"promotionModal": {
+ 	 	"title": {
+ 	 	 	"trans": "Beneficii speciale",
+ 	 	 	"eng": "Special Benefits"
  	 	}
  	},
  	"referralPromo": {
@@ -7805,6 +9316,195 @@
  	 	 	"eng": "*You will receive the items in your item inbox when your friend reaches level 20"
  	 	}
  	},
+ 	"referralPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Recompense de trimitere",
+ 	 	 	"eng": "Referral rewards"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"trans": "Unitate gratuită*, container blocat rar, pachet Fanny",
+ 	 	 	"eng": "Free Unit*, Rare Locked Container, Fanny Pack"
+ 	 	},
+ 	 	"details": {
+ 	 	 	"trans": "Detalii",
+ 	 	 	"eng": "details"
+ 	 	}
+ 	},
+ 	"sakuraPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Festivalul Sakura",
+ 	 	 	"eng": "Sakura Festival"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"trans": "Festivalul de primăvară a sosit! Petalele de sakura cad, iar aerul e plin de parfum de flori",
+ 	 	 	"eng": "The Spring Festival is here! Sakura petals are falling, and the air is filled with the fragrance of flowers. "
+ 	 	},
+ 	 	"desc2": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "Toate salturile făcute în perioada evenimentului beneficiază de o reducere de ${percent}% la unitatea necesară",
+ 	 	 	"eng": "All skips during the event period gets ${percent}% off discount on unit required"
+ 	 	},
+ 	 	"desc3": {
+ 	 	 	"trans": "Rama de chat și emblema exclusivă Sakura sunt disponibile în perioada evenimentului",
+ 	 	 	"eng": "Exclusive Sakura chat frame and emblem is available during event period"
+ 	 	},
+ 	 	"chatMessage1": {
+ 	 	 	"trans": "A venit primăvara",
+ 	 	 	"eng": "Spring is here"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "Toate salturile făcute în perioada evenimentului beneficiază de o reducere de ${percent}% la unitatea necesară 🥳",
+ 	 	 	"eng": "All skips during the event period gets ${percent}% off discount on unit required 🥳"
+ 	 	}
+ 	},
+ 	"skipDiscountPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Skip reducere",
+ 	 	 	"eng": "Skip Discount"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "${percent}% reducere la 105 minute și salturi mai mari!",
+ 	 	 	"eng": "${percent}% discount on 105 minutes and higher skips!"
+ 	 	}
+ 	},
+ 	"skipPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Câștigați produse cosmetice exclusive gratuite sărituri",
+ 	 	 	"eng": "Earn free exclusive cosmetics by skipping"
+ 	 	},
+ 	 	"subtitle": {
+ 	 	 	"trans": "Arătați cât de mult ați ajutat comunitatea sărind! ❤️",
+ 	 	 	"eng": "Show off how much you have helped the community by skipping!❤️"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"emblem"
+ 	 	 	],
+ 	 	 	"trans": "Efectuați ${amount} săriți pentru a obține emblema \"${emblem}\"",
+ 	 	 	"eng": "Collect ${amount} skip points to get \"${emblem}\" emblem"
+ 	 	},
+ 	 	"desc2": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"emblem"
+ 	 	 	],
+ 	 	 	"trans": "Efectuați ${amount} săriți pentru a obține emblema \"${emblem}\"",
+ 	 	 	"eng": "Collect ${amount} skip points to get \"${emblem}\" emblem"
+ 	 	},
+ 	 	"desc3": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"emblem"
+ 	 	 	],
+ 	 	 	"trans": "Efectuați ${amount} săriți pentru a primi cadrul de chat de donație permanent \"${frameName}\"",
+ 	 	 	"eng": "Collect ${amount} skip points to get \"${emblem}\" emblem"
+ 	 	},
+ 	 	"desc4": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"frameName"
+ 	 	 	],
+ 	 	 	"trans": "Efectuați ${amount} săriți pentru a primi cadrul de chat de donație permanent \"${frameName}\"",
+ 	 	 	"eng": "Collect ${amount} skip points to receive permanent \"${frameName}\" donation chat frame"
+ 	 	},
+ 	 	"chatMessage1": {
+ 	 	 	"vars": [
+ 	 	 	 	"points"
+ 	 	 	],
+ 	 	 	"trans": "Primiți la ${points} Skip Puncte",
+ 	 	 	"eng": "Receive at ${points} skip points"
+ 	 	},
+ 	 	"desc5": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"frameName"
+ 	 	 	],
+ 	 	 	"trans": "Colectați ${amount} Skip Puncte pentru a primi permanent \"${frameName}\" Cadru de chat pentru donație",
+ 	 	 	"eng": "Collect ${amount} skip points to receive permanent \"${frameName}\" donation chat frame"
+ 	 	},
+ 	 	"instructions1": {
+ 	 	 	"trans": "Punctul de săritură pe care îl câștigați este de bază pe durata de salt:",
+ 	 	 	"eng": "Skip point you earn is base on skip duration:"
+ 	 	},
+ 	 	"instructions2": {
+ 	 	 	"trans": "- 15 până la 150 minute = 1 punct pe 15 minute",
+ 	 	 	"eng": "- 15 to 150 minutes = 1 point per 15 minutes"
+ 	 	},
+ 	 	"instructions3": {
+ 	 	 	"trans": "- 150 minute și peste = 10 puncte",
+ 	 	 	"eng": "- 150 minutes and above = 10 points"
+ 	 	},
+ 	 	"footnote2": {
+ 	 	 	"trans": "Peste 150 de minute este fixat la 10 puncte este de a încuraja mai multe salturi, mai degrabă decât un salt imens pentru a maximiza beneficiile pentru majoritatea jucătorilor",
+ 	 	 	"eng": "Above 150 minutes is fixed to 10 points is to encourage multiple skips rather than one huge skip to maximize benefit for most players"
+ 	 	},
+ 	 	"footnote1": {
+ 	 	 	"trans": "Statistica Skip va începe să numere de la începutul acestei caracteristici pentru toată lumea.",
+ 	 	 	"eng": "The skip point statistic will start counting from the start of this feature for everyone."
+ 	 	}
+ 	},
+ 	"skipPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Săriți pentru cosmetice exclusive",
+ 	 	 	"eng": "Skip for exclusive cosmetics"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"trans": "Primiți diverse produse cosmetice exclusive sărituri",
+ 	 	 	"eng": "Receive various exclusive cosmetics by skipping"
+ 	 	},
+ 	 	"chatMessage1": {
+ 	 	 	"vars": [
+ 	 	 	 	"skinName",
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "Fii un ${skinName}, ${playerName}",
+ 	 	 	"eng": "Be a ${skinName}, ${playerName}"
+ 	 	}
+ 	},
+ 	"thanksgivingPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Ziua Recunoștinței fericită!",
+ 	 	 	"eng": "Happy Thanksgiving!"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"trans": "În perioada evenimentului, Turcia prăjită va scădea rar de la Scavenging și AKF BOT la toate nivelurile",
+ 	 	 	"eng": "During event period, Roasted Turkey will drop rarely from scavenging and AKF Bot on all levels"
+ 	 	},
+ 	 	"desc2": {
+ 	 	 	"trans": "Când se consumă un curcan prăjit, veți primi +20% EXP la sarcinile AFK timp de 20 de minute",
+ 	 	 	"eng": "When a Roasted Turkey is consumed, you will get +20% EXP on AFK tasks for 20 minutes"
+ 	 	},
+ 	 	"footnote1": {
+ 	 	 	"trans": "Vă rugăm să rețineți că verificarea bonusului EXP este la momentul de finalizare AFK, așa că trebuie să aveți activitatea tamponului de curcan prăjit în momentul finalizării pentru a primi bonusul.",
+ 	 	 	"eng": "Please note that the EXP bonus check is at AFK completion time, so you must have the Roasted Turkey buff active at the time of completion to receive the bonus."
+ 	 	},
+ 	 	"footnote2": {
+ 	 	 	"trans": "Acest efect se va stiva cu un alt bonus EXP și va afecta doar sarcinile AFK; Sarcinile care nu au cronometre AFK nu vor fi afectate.",
+ 	 	 	"eng": "This effect will stack with other EXP bonus, and will only affect AFK tasks; tasks that does not have AFK timers will not be affected."
+ 	 	}
+ 	},
+ 	"thanksgivingPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Eveniment de Ziua Recunoștinței",
+ 	 	 	"eng": "Thanksgiving event"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "Consumați Turcia delicioasă pentru a obține +${percent}% Exp pe sarcinile AFK",
+ 	 	 	"eng": "Consume delicious turkey to get +${percent}% EXP on AFK tasks"
+ 	 	}
+ 	},
  	"retroPromo": {
  	 	"title": {
  	 	 	"trans": "Actualizare SynthWave",
@@ -7845,6 +9545,24 @@
  	 	"desc2": {
  	 	 	"trans": "Dungeon de bandă va avea șansa de a genera o căutare a bandelor, implicând uciderea inamicilor de bande specifice NPC",
  	 	 	"eng": "Two new donator frames added"
+ 	 	}
+ 	},
+ 	"renamePetModal": {
+ 	 	"title": {
+ 	 	 	"trans": "Redenumește Animalul de Companie",
+ 	 	 	"eng": "Rename Pet"
+ 	 	},
+ 	 	"newName": {
+ 	 	 	"trans": "Nume Nou",
+ 	 	 	"eng": "New Name"
+ 	 	},
+ 	 	"description": {
+ 	 	 	"trans": "Introdu un nou nume pentru animalul tău de companie",
+ 	 	 	"eng": "Enter new name for your pet"
+ 	 	},
+ 	 	"rename": {
+ 	 	 	"trans": "Redenumire",
+ 	 	 	"eng": "Rename"
  	 	}
  	},
  	"reportPlayerModal": {
@@ -7920,9 +9638,24 @@
  	 	 	 	 	"trans": "Permiteți acestui jucător să gestioneze permisiunea altor jucători",
  	 	 	 	 	"eng": "Allow this player to manage permission of other players"
  	 	 	 	}
+ 	 	 	},
+ 	 	 	"send_notice": {
+ 	 	 	 	"trans": "Trimite notificare",
+ 	 	 	 	"eng": "Send Notice",
+ 	 	 	 	"description": {
+ 	 	 	 	 	"trans": "Permiteți acestui jucător să trimită notificare tuturor membrilor bandei",
+ 	 	 	 	 	"eng": "Allow this player to send notice to all gang members"
+ 	 	 	 	}
  	 	 	}
  	 	},
  	 	"error": {
+ 	 	 	"insufficientBitcoin": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ai bitcoin insuficient, necesar: ${amount}",
+ 	 	 	 	"eng": "You have insufficient Bitcoin, required: ${amount}"
+ 	 	 	},
  	 	 	"inviteCooldown": {
  	 	 	 	"trans": "Ați invitat deja acest jucător recent",
  	 	 	 	"eng": "You have already invited this player recently"
@@ -8061,6 +9794,17 @@
  	 	 	],
  	 	 	"trans": "${price} USD pe lună",
  	 	 	"eng": "${price} USD Per Month"
+ 	 	},
+ 	 	"inAppPurchaseDescription": {
+ 	 	 	"trans": "Abonament bazat pe donații, îl poți anula oricând din magazinul tău.",
+ 	 	 	"eng": "Subscription based donation, you can cancel it at anytime from your store."
+ 	 	},
+ 	 	"monthlyPrice": {
+ 	 	 	"vars": [
+ 	 	 	 	"price"
+ 	 	 	],
+ 	 	 	"trans": "${price} pe lună",
+ 	 	 	"eng": "${price} per Month"
  	 	}
  	},
  	"cosmetic": {
@@ -8095,6 +9839,150 @@
  	 	"checkEmail": {
  	 	 	"trans": "Vă rugăm să verificați e -mailul și să urmați instrucțiunile pentru a reseta parola",
  	 	 	"eng": "Please check your email and follow the instructions to reset the password"
+ 	 	}
+ 	},
+ 	"leaderboardTypePage": {
+ 	 	"gameplay": {
+ 	 	 	"trans": "Clasamente de joc",
+ 	 	 	"eng": "Gameplay Leaderboards"
+ 	 	},
+ 	 	"gameplayDesc": {
+ 	 	 	"trans": "Aceste clasamente arată statisticile de joc ale jucătorului.💪",
+ 	 	 	"eng": "These leaderboards shows player's gameplay statistics.💪"
+ 	 	},
+ 	 	"gang": {
+ 	 	 	"trans": "Ganguri de top",
+ 	 	 	"eng": "Top Gangs"
+ 	 	},
+ 	 	"control": {
+ 	 	 	"trans": "Controlul ocupației",
+ 	 	 	"eng": "Occupation Control"
+ 	 	},
+ 	 	"contribution": {
+ 	 	 	"trans": "Contribuția comunității",
+ 	 	 	"eng": "Community Contribution"
+ 	 	},
+ 	 	"contributionDesc": {
+ 	 	 	"trans": "Aceste consilii arată respect și credite la legendele care au contribuit la comunitate.❤️",
+ 	 	 	"eng": "These boards shows respect and credits to the legends who have contributed to the community.❤️"
+ 	 	}
+ 	},
+ 	"playerDetailsPage": {
+ 	 	"tabs": {
+ 	 	 	"stats": {
+ 	 	 	 	"trans": "statistici",
+ 	 	 	 	"eng": "stats"
+ 	 	 	},
+ 	 	 	"equipment": {
+ 	 	 	 	"trans": "inventar",
+ 	 	 	 	"eng": "inventory"
+ 	 	 	},
+ 	 	 	"assets": {
+ 	 	 	 	"trans": "activează-ți resursele",
+ 	 	 	 	"eng": "assets"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"petListPage": {
+ 	 	"exceedSlot": {
+ 	 	 	"vars": [
+ 	 	 	 	"petName"
+ 	 	 	],
+ 	 	 	"trans": "${petName} locuiește în prezent pe stradă din cauza lipsei de spațiu în apartamentul tău",
+ 	 	 	"eng": "${petName} is currently living on the street due to lack of space in your apartment"
+ 	 	},
+ 	 	"noPet": {
+ 	 	 	"trans": "Încă nu ai niciun animal de companie",
+ 	 	 	"eng": "You have no pet yet"
+ 	 	},
+ 	 	"acquirePets": {
+ 	 	 	"trans": "Adoptă animale de companie",
+ 	 	 	"eng": "Acquire Pets"
+ 	 	}
+ 	},
+ 	"petAdoption": {
+ 	 	"error": {
+ 	 	 	"noBuff": {
+ 	 	 	 	"trans": "Buff-ul nu este activat",
+ 	 	 	 	"eng": "Buff is not activated"
+ 	 	 	},
+ 	 	 	"cooldown": {
+ 	 	 	 	"trans": "Adoptarea unui animal de companie este în pauză",
+ 	 	 	 	"eng": "Pet adoption is on cooldown"
+ 	 	 	},
+ 	 	 	"noSlot": {
+ 	 	 	 	"trans": "Este nevoie de un apartament pentru a adopta un animal de companie",
+ 	 	 	 	"eng": "You need to rent a bigger apartment to accommodate more pets"
+ 	 	 	},
+ 	 	 	"noItem": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ai nevoie de ${itemName} pentru a adopta un animal de companie",
+ 	 	 	 	"eng": "You need a ${itemName} to adopt a pet"
+ 	 	 	}
+ 	 	},
+ 	 	"petSlot": {
+ 	 	 	"trans": "Capacitatea de animale de companie în apartament",
+ 	 	 	"eng": "Apartment pet capacity"
+ 	 	},
+ 	 	"cooldownTitle": {
+ 	 	 	"trans": "Perioada de așteptare pentru adopție",
+ 	 	 	"eng": "Adoption Available"
+ 	 	},
+ 	 	"buffActivationButton": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Activează Bonusul de Adoptare",
+ 	 	 	 	"eng": "Activate Adoption Buff"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Activează pentru a permite tuturor jucătorilor să adopte un animal de companie în timp ce buff-ul este activ",
+ 	 	 	 	"eng": "Activate to allow all players to adopt a pet while buff is active"
+ 	 	 	},
+ 	 	 	"buttonText": {
+ 	 	 	 	"activated": {
+ 	 	 	 	 	"trans": "Activat",
+ 	 	 	 	 	"eng": "Activated"
+ 	 	 	 	},
+ 	 	 	 	"notActivated": {
+ 	 	 	 	 	"trans": "Activează Bonus",
+ 	 	 	 	 	"eng": "Activate Buff"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"confirmTitle": {
+ 	 	 	 	"trans": "Activează Bonusul de Adoptare",
+ 	 	 	 	"eng": "Activate Adoption Buff"
+ 	 	 	},
+ 	 	 	"confirmDescription": {
+ 	 	 	 	"trans": "Ești sigur că vrei să activezi Bonusul de Adoptare?",
+ 	 	 	 	"eng": "Are you sure you want to activate the Adoption Buff?"
+ 	 	 	}
+ 	 	},
+ 	 	"noItemConfirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Nicio ${itemName} în inventar",
+ 	 	 	 	"eng": "No ${itemName} in inventory"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Nu ai un ${itemName} în inventar, totuși poți activa beneficiul pentru alți jucători să-l folosească, însă fără ${itemName} nu vei putea adopta animale de companie",
+ 	 	 	 	"eng": "You do not have an ${itemName} in your inventory, you still can activate the buff for other players to benefit, however without ${itemName} you will not be able to adopt pets"
+ 	 	 	},
+ 	 	 	"confirmText": {
+ 	 	 	 	"trans": "Activează Bonus",
+ 	 	 	 	"eng": "Activate Buff"
+ 	 	 	}
+ 	 	},
+ 	 	"adoptButton": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Adoptă un animal de companie nou",
+ 	 	 	 	"eng": "Adopt a new pet"
+ 	 	 	}
  	 	}
  	},
  	"sendCosmeticPage": {
@@ -8204,16 +10092,63 @@
  	 	 	"eng": "You have successfully sent an emblem to player \"${playerName}\""
  	 	}
  	},
+ 	"bulkCrafting": {
+ 	 	"cannotCraft": {
+ 	 	 	"trans": "Nu puteți să mearci în timp ce nu este inactiv",
+ 	 	 	"eng": "You cannot craft while not idle"
+ 	 	}
+ 	},
+ 	"captcha": {
+ 	 	"success": {
+ 	 	 	"trans": "Cod PIN acceptat",
+ 	 	 	"eng": "Pin code accepted"
+ 	 	},
+ 	 	"invalid": {
+ 	 	 	"trans": "Cod PIN nevalid",
+ 	 	 	"eng": "Invalid Pin Code"
+ 	 	}
+ 	},
  	"chatModuleHelper": {
  	 	"aiConnectNotAvailable": {
  	 	 	"trans": "Acces refuzat. SLANCE Nu este conectat la chat",
  	 	 	"eng": "Permission Denied. SLANC not connected to chat"
  	 	}
  	},
+ 	"server": {
+ 	 	"announcement": {
+ 	 	 	"receiveItem": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player",
+ 	 	 	 	 	"item"
+ 	 	 	 	],
+ 	 	 	 	"trans": "🎉Congratulare! ${player} Primit ${item}!",
+ 	 	 	 	"eng": "🎉Congratulation! ${player} received ${item}!"
+ 	 	 	}
+ 	 	}
+ 	},
  	"gifting": {
  	 	"cannotSend": {
  	 	 	"trans": "Acest jucător nu poate primi cadou acum",
  	 	 	"eng": "This player cannot receive gift now"
+ 	 	}
+ 	},
+ 	"topUpReward": {
+ 	 	"mail": {
+ 	 	 	"vars": [
+ 	 	 	 	"event",
+ 	 	 	 	"items"
+ 	 	 	],
+ 	 	 	"trans": "${event} Top Up Recompensă ${items} a fost trimis în căsuța de e -mail",
+ 	 	 	"eng": " ${event} top up reward ${items} has been sent to your inbox"
+ 	 	}
+ 	},
+ 	"error": {
+ 	 	"cannotUseItemInStatus": {
+ 	 	 	"vars": [
+ 	 	 	 	"minutes"
+ 	 	 	],
+ 	 	 	"trans": "Nu puteți utiliza acest articol, deoarece există un efect de stare care intră în conflict cu acesta",
+ 	 	 	"eng": "You cannot use this item because there is a status effect that conflicts with it"
  	 	}
  	},
  	"player": {
@@ -8241,6 +10176,10 @@
  	 	 	"invalidTravelLink": {
  	 	 	 	"trans": "Link de călătorie nevalid, dacă persistă, vă rugăm să reîncărcați",
  	 	 	 	"eng": "Invalid Travel Link, if persist please reload"
+ 	 	 	},
+ 	 	 	"recipeDisabled": {
+ 	 	 	 	"trans": "Această rețetă nu este în prezent disponibilă",
+ 	 	 	 	"eng": "This recipe is currently not available"
  	 	 	}
  	 	},
  	 	"escape": {
@@ -8268,6 +10207,13 @@
  	 	 	"eng": "Your level is too high to perform this action here, try to do it in the next zone."
  	 	},
  	 	"giveCred": {
+ 	 	 	"mail": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"playerName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ați primit un credite de stradă de la ${playerName}",
+ 	 	 	 	"eng": "You have received a street cred from ${playerName}"
+ 	 	 	},
  	 	 	"success": {
  	 	 	 	"trans": "Ați dat credite Daily Street.",
  	 	 	 	"eng": "You have given daily street cred."
@@ -8287,9 +10233,9 @@
  	 	 	"trans": "Acest nume este folosit de un alt jucător, vă rugăm să folosiți alt nume",
  	 	 	"eng": "this name is used by other player, please use other name"
  	 	},
- 	 	"nameIllegal": {
- 	 	 	"trans": "Nume ilegal, vă rugăm să folosiți alt nume",
- 	 	 	"eng": "Illegal name, please use other name"
+ 	 	"reservedKeyword": {
+ 	 	 	"trans": "Acest nume conține cuvinte rezervate, vă rugăm să utilizați alt nume",
+ 	 	 	"eng": "This name contains reserved wordings, please use other name"
  	 	},
  	 	"nameProfane": {
  	 	 	"trans": "Acest nume conține cuvinte care nu sunt permise, vă rugăm să folosiți alt nume",
@@ -8298,6 +10244,49 @@
  	 	"nameInvalid": {
  	 	 	"trans": "Lungimea numelui trebuie să fie mai mare decât 4, mai puțin atunci sau egală cu 16 și conține doar caractere engleze, numere sau \\ '_ \\'",
  	 	 	"eng": "name length must be greater then 4, less then or equal to 16 and only contains English characters, numbers or \\'_\\'"
+ 	 	}
+ 	},
+ 	"skip": {
+ 	 	"skipRewardMail": {
+ 	 	 	"1": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ați primit „Skip Emblem 1” pentru că aveți ${amount} Skip Points",
+ 	 	 	 	"eng": "You have received \"Skip Emblem 1\" for having ${amount} skip points"
+ 	 	 	},
+ 	 	 	"2": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ați primit „Skip Emblem 2” pentru a avea ${amount} Skip Points",
+ 	 	 	 	"eng": "You have received \"Skip Emblem 2\" for having ${amount} skip points"
+ 	 	 	},
+ 	 	 	"3": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ați primit „Skip Emblem 3” pentru a avea ${amount} Skip Points",
+ 	 	 	 	"eng": "You have received \"Skip Emblem 3\" for having ${amount} skip points"
+ 	 	 	},
+ 	 	 	"4": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"frameName",
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Ați primit „${frameName}” rama de chat pentru a avea ${amount} puncte de salt",
+ 	 	 	 	"eng": "You have received \"${frameName}\" donator chat frame for having ${amount} skip points"
+ 	 	 	}
+ 	 	},
+ 	 	"announcement": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName",
+ 	 	 	 	"playerCount",
+ 	 	 	 	"skipTime",
+ 	 	 	 	"credButton"
+ 	 	 	],
+ 	 	 	"trans": "${playerName} a folosit Global Time Skip, toți jucătorii online care efectuează în prezent Task AFK (${playerCount} jucători) vor sări automat în timp de ${skipTime} minute. Dă -i legendei câteva credințe? ${credButton}",
+ 	 	 	"eng": "${playerName} has used Global Time Skip, all online players currently performing AFK task (${playerCount} players) will automatically time skip by ${skipTime} minutes. Give the legend some creds? ${credButton}"
  	 	}
  	}
 }

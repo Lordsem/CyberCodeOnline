@@ -1,4 +1,56 @@
 {
+ 	"apartment": {
+ 	 	"title": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "${playerName}'in Dairesi",
+ 	 	 	"eng": "${playerName}'s Apartment"
+ 	 	},
+ 	 	"terminateLease": {
+ 	 	 	"trans": "Kira Sözleşmesini Sonlandır",
+ 	 	 	"eng": "Terminate Lease"
+ 	 	},
+ 	 	"viewPets": {
+ 	 	 	"trans": "Evcil Hayvanları Görüntüle",
+ 	 	 	"eng": "View Pets"
+ 	 	},
+ 	 	"address": {
+ 	 	 	"cityName": {
+ 	 	 	 	"trans": "Shangri-la",
+ 	 	 	 	"eng": "Shangri-la"
+ 	 	 	}
+ 	 	},
+ 	 	"rent": {
+ 	 	 	"paidMail": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${amount} tutarındaki daire kiranı ödedin",
+ 	 	 	 	"eng": "You have paid your apartment rent of ${amount}"
+ 	 	 	},
+ 	 	 	"unpaidMail": {
+ 	 	 	 	"trans": "Daire kirasını ödemediğin için apartmanın sonlandırıldı",
+ 	 	 	 	"eng": "You have failed to pay your apartment rent, your apartment has been terminated"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"purchaseApartmentUI": {
+ 	 	"confirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Daire Kirala",
+ 	 	 	 	"eng": "Rent Apartment"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Bu daireyi kiralamak istediğinden emin misin?",
+ 	 	 	 	"eng": "Are you sure you want to rent this apartment?"
+ 	 	 	}
+ 	 	},
+ 	 	"rentButton": {
+ 	 	 	"trans": "Hemen Kirala",
+ 	 	 	"eng": "Rent Now"
+ 	 	}
+ 	},
  	"tabs": {
  	 	"map": {
  	 	 	"trans": "Harita",
@@ -22,10 +74,41 @@
  	 	}
  	},
  	"ui": {
- 	 	"blackMarket": {
- 	 	 	"selectItemButton": {
- 	 	 	 	"trans": "Üret ve Sat",
- 	 	 	 	"eng": "Print And Sell"
+ 	 	"bulkCraft": {
+ 	 	 	"amountSelect": {
+ 	 	 	 	"title": {
+ 	 	 	 	 	"trans": "Miktarı seçin",
+ 	 	 	 	 	"eng": "Select Amount"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"duration": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"duration"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Bu görev ${duration} alacak",
+ 	 	 	 	"eng": "This task will take ${duration}"
+ 	 	 	},
+ 	 	 	"durationTooLong": {
+ 	 	 	 	"trans": "Çok fazla öğe seçildi",
+ 	 	 	 	"eng": "Too many items selected"
+ 	 	 	}
+ 	 	},
+ 	 	"generalCaptcha": {
+ 	 	 	"inputLabel": {
+ 	 	 	 	"trans": "PIN Kodu",
+ 	 	 	 	"eng": "Pin Code"
+ 	 	 	},
+ 	 	 	"inputPlaceholder": {
+ 	 	 	 	"trans": "PIN kodunu girin",
+ 	 	 	 	"eng": "Enter pin code"
+ 	 	 	},
+ 	 	 	"story": {
+ 	 	 	 	"trans": "Eski bir kilitli kasa buldunuz, üzerinde bazı yazılar olan bir yapışkan kağıt var gibi görünüyor.",
+ 	 	 	 	"eng": "You found an old locked safe box, there seems like a post-it with some text written on it."
+ 	 	 	},
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Kilidi açmak için PIN kodu gereklidir",
+ 	 	 	 	"eng": "Pin code required to unlock"
  	 	 	}
  	 	},
  	 	"clan": {
@@ -47,15 +130,15 @@
  	 	 	 	"eng": "Deposit Bitcoin"
  	 	 	},
  	 	 	"editMotto": {
+ 	 	 	 	"button": {
+ 	 	 	 	 	"trans": "Çete Sloganını Değiştirin",
+ 	 	 	 	 	"eng": "Edit Gang Motto"
+ 	 	 	 	},
  	 	 	 	"modal": {
  	 	 	 	 	"title": {
  	 	 	 	 	 	"trans": "Lütfen çete sloganını girin",
  	 	 	 	 	 	"eng": "Please enter your gang motto"
  	 	 	 	 	}
- 	 	 	 	},
- 	 	 	 	"button": {
- 	 	 	 	 	"trans": "Çete Sloganını Değiştirin",
- 	 	 	 	 	"eng": "Edit Gang Motto"
  	 	 	 	}
  	 	 	},
  	 	 	"updateImage": {
@@ -172,12 +255,6 @@
  	 	 	 	}
  	 	 	}
  	 	},
- 	 	"supportUkraine": {
- 	 	 	"description": {
- 	 	 	 	"trans": "Ukrayna, Rusya ve tüm dünya tek bir adamın hırsı yüzünden acı çekiyor.\\n Savaşı değil, aşkı istismar edin.",
- 	 	 	 	"eng": "People of Ukraine, Russia and the whole world are suffering because one man's ambition.\\n Make love exploit, not war."
- 	 	 	}
- 	 	},
  	 	"bank": {
  	 	 	"balance": {
  	 	 	 	"trans": "Bakiye",
@@ -288,24 +365,6 @@
  	 	 	 	}
  	 	 	}
  	 	},
- 	 	"generalCaptcha": {
- 	 	 	"story": {
- 	 	 	 	"trans": "Eski bir kilitli kasa buldunuz, üzerinde bazı yazılar olan bir yapışkan kağıt var gibi görünüyor.",
- 	 	 	 	"eng": "You found an old locked safe box, there seems like a post-it with some text written on it."
- 	 	 	},
- 	 	 	"title": {
- 	 	 	 	"trans": "Kilidi açmak için PIN kodu gereklidir",
- 	 	 	 	"eng": "Pin code required to unlock"
- 	 	 	},
- 	 	 	"inputLabel": {
- 	 	 	 	"trans": "PIN Kodu",
- 	 	 	 	"eng": "Pin Code"
- 	 	 	},
- 	 	 	"inputPlaceholder": {
- 	 	 	 	"trans": "PIN kodunu girin",
- 	 	 	 	"eng": "Enter pin code"
- 	 	 	}
- 	 	},
  	 	"chat": {
  	 	 	"reconnecting": {
  	 	 	 	"trans": "Yeniden bağlantı kuruluyor",
@@ -397,6 +456,16 @@
  	 	 	}
  	 	},
  	 	"clanPage": {
+ 	 	 	"notice": {
+ 	 	 	 	"time": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"playerName",
+ 	 	 	 	 	 	"time"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "Gönderen ${playerName} ${time} önce",
+ 	 	 	 	 	"eng": "Posted by ${playerName} ${time} ago"
+ 	 	 	 	}
+ 	 	 	},
  	 	 	"createClan": {
  	 	 	 	"title": {
  	 	 	 	 	"trans": "Herhangi bir çetenin üyesi değilsin",
@@ -525,17 +594,27 @@
  	 	},
  	 	"timeSkip": {
  	 	 	"unitTimeSkipButton": {
- 	 	 	 	"title": {
+ 	 	 	 	"unit": {
  	 	 	 	 	"vars": [
- 	 	 	 	 	 	"timeSkipMinutes",
- 	 	 	 	 	 	"timeSkipCost"
+ 	 	 	 	 	 	"units"
  	 	 	 	 	],
- 	 	 	 	 	"trans": "${timeSkipMinutes} Dakikalık Küresel Hızlandırma, Maliyeti ${timeSkipCost} Birim",
- 	 	 	 	 	"eng": "Global Skip (${timeSkipMinutes} Min, Cost ${timeSkipCost} Units)"
+ 	 	 	 	 	"trans": "${units} birimleri",
+ 	 	 	 	 	"eng": "${units} units"
+ 	 	 	 	},
+ 	 	 	 	"minute": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"minutes"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "${minutes} birimleri",
+ 	 	 	 	 	"eng": "Skip ${minutes} minutes"
+ 	 	 	 	},
+ 	 	 	 	"title2": {
+ 	 	 	 	 	"trans": "Şimdi bitir",
+ 	 	 	 	 	"eng": "Finish Now"
  	 	 	 	},
  	 	 	 	"description": {
  	 	 	 	 	"trans": "Küresel Hızlandırma, AFK bekleme süresini geçmenizi ve anında bitirmenizi sağlar.\r\n     Bu etki, AFK görevinde olan tüm oyunculara uygulanacaktır",
- 	 	 	 	 	"eng": "Global Skip allow you to skip the AFK waiting time, and finish it instantly.\r\n    this effect will be applied to all player performing AFK task"
+ 	 	 	 	 	"eng": "Finish the task instantly for all players in the game and earn skip points to show your support to other players!"
  	 	 	 	}
  	 	 	},
  	 	 	"itemTimeSkipButton": {
@@ -680,12 +759,16 @@
  	 	 	 	"trans": "Kilidi",
  	 	 	 	"eng": "Unlocked"
  	 	 	},
+ 	 	 	"upgradeModuleTitleHeader": {
+ 	 	 	 	"trans": "Yuvaları yükseltiyor",
+ 	 	 	 	"eng": "Upgrades Slots"
+ 	 	 	},
  	 	 	"upgradeModuleTitle": {
- 	 	 	 	"trans": "yükseltme yuvası ${index}",
- 	 	 	 	"eng": "upgrade slot ${index}",
  	 	 	 	"vars": [
  	 	 	 	 	"index"
- 	 	 	 	]
+ 	 	 	 	],
+ 	 	 	 	"trans": "yükseltme yuvası ${index}",
+ 	 	 	 	"eng": "upgrade slot ${index}"
  	 	 	},
  	 	 	"equip": {
  	 	 	 	"trans": "Kuşan",
@@ -997,14 +1080,6 @@
  	 	 	 	 	"trans": "Block Player",
  	 	 	 	 	"eng": "Block Player"
  	 	 	 	}
- 	 	 	},
- 	 	 	"equipped": {
- 	 	 	 	"trans": "Kullanımda",
- 	 	 	 	"eng": "Equipped"
- 	 	 	},
- 	 	 	"inventory": {
- 	 	 	 	"trans": "Envanter",
- 	 	 	 	"eng": "Inventory"
  	 	 	}
  	 	},
  	 	"modal": {
@@ -1094,13 +1169,13 @@
  	 	 	 	"trans": "Şu anda satışta bu kategoriye göre ürün bulunmamaktadır",
  	 	 	 	"eng": "there is currently no items on sale for this category"
  	 	 	},
- 	 	 	"buy": {
- 	 	 	 	"trans": "Satın al",
- 	 	 	 	"eng": "Purchase"
+ 	 	 	"pricePerPiece": {
+ 	 	 	 	"trans": "madde başına",
+ 	 	 	 	"eng": "per item"
  	 	 	},
- 	 	 	"remove": {
- 	 	 	 	"trans": "Kaldır",
- 	 	 	 	"eng": "Remove"
+ 	 	 	"purchase": {
+ 	 	 	 	"trans": "Satın almak",
+ 	 	 	 	"eng": "Purchase"
  	 	 	},
  	 	 	"stall": {
  	 	 	 	"sellItemButton": {
@@ -1322,69 +1397,10 @@
  	 	 	 	"eng": "If you have any questions please feel free to contact Dexter directly via official Discord (Link can be found in Floating Menu -> Links) or email to ching.huang.dexter@gmail.com"
  	 	 	}
  	 	},
- 	 	"tipsBox": {
- 	 	 	"title": {
- 	 	 	 	"trans": "Gelişmiş İpuçları",
- 	 	 	 	"eng": "Pro Tips"
- 	 	 	},
- 	 	 	"description": {
- 	 	 	 	"trans": "Yeni ipuçları almak için tıklayın",
- 	 	 	 	"eng": "Click to get new tips"
- 	 	 	}
- 	 	},
  	 	"travel": {
  	 	 	"notUnlocked": {
  	 	 	 	"trans": "Henüz bu bölgenin kilidini açmadın",
  	 	 	 	"eng": "You have not unlocked this area yet"
- 	 	 	}
- 	 	},
- 	 	"machineCrafting": {
- 	 	 	"titleBox": {
- 	 	 	 	"tile": {
- 	 	 	 	 	"trans": "Sistem Beklemede",
- 	 	 	 	 	"eng": "system idle"
- 	 	 	 	},
- 	 	 	 	"subtitle": {
- 	 	 	 	 	"trans": "Lütfen bir eşya yerleştirin",
- 	 	 	 	 	"eng": "Please insert an item"
- 	 	 	 	}
- 	 	 	},
- 	 	 	"selectItemButton": {
- 	 	 	 	"trans": "Eşyayı geri dönüştür",
- 	 	 	 	"eng": "Recycle Item"
- 	 	 	},
- 	 	 	"selectAmount": {
- 	 	 	 	"title": {
- 	 	 	 	 	"trans": "Lütfen miktar seçiniz",
- 	 	 	 	 	"eng": "Please select amount"
- 	 	 	 	},
- 	 	 	 	"subtitle": {
- 	 	 	 	 	"vars": [
- 	 	 	 	 	 	"timeStr"
- 	 	 	 	 	],
- 	 	 	 	 	"trans": "Bu ${timeStr} zaman alacak",
- 	 	 	 	 	"eng": "This will take ${timeStr}"
- 	 	 	 	}
- 	 	 	},
- 	 	 	"confirmModal": {
- 	 	 	 	"title": {
- 	 	 	 	 	"vars": [
- 	 	 	 	 	 	"itemName"
- 	 	 	 	 	],
- 	 	 	 	 	"trans": "${itemName} seçin mi?",
- 	 	 	 	 	"eng": "Select ${itemName}?"
- 	 	 	 	},
- 	 	 	 	"subtitle": {
- 	 	 	 	 	"vars": [
- 	 	 	 	 	 	"itemName"
- 	 	 	 	 	],
- 	 	 	 	 	"trans": "${itemName} seçmek istediğinizden emin misiniz?",
- 	 	 	 	 	"eng": "Are you sure you want to select ${itemName}?"
- 	 	 	 	},
- 	 	 	 	"confirmText": {
- 	 	 	 	 	"trans": "eminim",
- 	 	 	 	 	"eng": "I am sure"
- 	 	 	 	}
  	 	 	}
  	 	},
  	 	"setting": {
@@ -1497,6 +1513,12 @@
  	 	 	 	"eng": "save"
  	 	 	}
  	 	},
+ 	 	"petShop": {
+ 	 	 	"adapt": {
+ 	 	 	 	"trans": "Yeni bir evcil hayvan edinmek",
+ 	 	 	 	"eng": "Adopt a new pet"
+ 	 	 	}
+ 	 	},
  	 	"rangeSelector": {
  	 	 	"selectMaxValue": {
  	 	 	 	"title": {
@@ -1571,6 +1593,41 @@
  	 	 	"itemLocked": {
  	 	 	 	"trans": "Bu öğe kilitli",
  	 	 	 	"eng": "This item is locked"
+ 	 	 	}
+ 	 	},
+ 	 	"machineCrafting": {
+ 	 	 	"selectAmount": {
+ 	 	 	 	"title": {
+ 	 	 	 	 	"trans": "Lütfen miktar seçiniz",
+ 	 	 	 	 	"eng": "Please select amount"
+ 	 	 	 	},
+ 	 	 	 	"subtitle": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"timeStr"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "Bu ${timeStr} zaman alacak",
+ 	 	 	 	 	"eng": "This will take ${timeStr}"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"confirmModal": {
+ 	 	 	 	"title": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"itemName"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "${itemName} seçin mi?",
+ 	 	 	 	 	"eng": "Select ${itemName}?"
+ 	 	 	 	},
+ 	 	 	 	"subtitle": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"itemName"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "${itemName} seçmek istediğinizden emin misiniz?",
+ 	 	 	 	 	"eng": "Are you sure you want to select ${itemName}?"
+ 	 	 	 	},
+ 	 	 	 	"confirmText": {
+ 	 	 	 	 	"trans": "eminim",
+ 	 	 	 	 	"eng": "I am sure"
+ 	 	 	 	}
  	 	 	}
  	 	},
  	 	"calibration": {
@@ -1680,6 +1737,39 @@
  	 	 	"title": {
  	 	 	 	"trans": "İlerlemek için sistem şifresini giriniz",
  	 	 	 	"eng": "Enter system passcode to proceed"
+ 	 	 	}
+ 	 	},
+ 	 	"marketItemPurchaseModal": {
+ 	 	 	"amount": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"price",
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${amount} parçaları için ${price} parça başına btc",
+ 	 	 	 	"eng": "${price} btc per piece for ${amount} pieces"
+ 	 	 	}
+ 	 	},
+ 	 	"marketItemSellModal": {
+ 	 	 	"amountTitle": {
+ 	 	 	 	"trans": "Piyasaya sürülecek miktar",
+ 	 	 	 	"eng": "Quantity to put on market"
+ 	 	 	},
+ 	 	 	"priceTitle": {
+ 	 	 	 	"trans": "Parça başına fiyat",
+ 	 	 	 	"eng": "Price per piece"
+ 	 	 	},
+ 	 	 	"footer": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"price",
+ 	 	 	 	 	"quantity",
+ 	 	 	 	 	"totalPrice"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Bu öğe ${quantity} parçaları için parça başına ${price} için satılacaktır, eğer tüm parçalar satılırsa ${totalPrice} alırsınız",
+ 	 	 	 	"eng": "This item will be sold for ${price} per piece for ${quantity} pieces, if all pieces are sold you will receive ${totalPrice}"
+ 	 	 	},
+ 	 	 	"sell": {
+ 	 	 	 	"trans": "Öğeyi piyasaya sürün",
+ 	 	 	 	"eng": "Place Item on Market"
  	 	 	}
  	 	},
  	 	"dungeon": {
@@ -1955,6 +2045,10 @@
  	 	 	 	],
  	 	 	 	"trans": "${playerCount} Oyuncu(lar) Bağlı",
  	 	 	 	"eng": "${playerCount} player(s) connected"
+ 	 	 	},
+ 	 	 	"passwordProtected": {
+ 	 	 	 	"trans": "Şifre korumalı",
+ 	 	 	 	"eng": "Password protected"
  	 	 	}
  	 	},
  	 	"equipmentUpgrade": {
@@ -2394,6 +2488,12 @@
  	 	 	"unlock": {
  	 	 	 	"trans": "Kilidini aç",
  	 	 	 	"eng": "Unlock"
+ 	 	 	},
+ 	 	 	"error": {
+ 	 	 	 	"notEnabled": {
+ 	 	 	 	 	"trans": "Bu konteynerin kilidi şu anda açılamaz",
+ 	 	 	 	 	"eng": "This container cannot be unlocked at this time"
+ 	 	 	 	}
  	 	 	}
  	 	}
  	},
@@ -2443,6 +2543,18 @@
  	 	 	"name": {
  	 	 	 	"trans": "kaset",
  	 	 	 	"eng": "cassette tape"
+ 	 	 	}
+ 	 	},
+ 	 	"rareEquipmentCrate": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Nadir Ekipman Sandığı",
+ 	 	 	 	"eng": "Rare Equipment Crate"
+ 	 	 	}
+ 	 	},
+ 	 	"freeSkip": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Ücretsiz kişisel atlama",
+ 	 	 	 	"eng": "Free Personal Skip"
  	 	 	}
  	 	},
  	 	"cycle": {
@@ -2584,10 +2696,6 @@
  	 	 	"trans": "Kazanacakların",
  	 	 	"eng": "Receives"
  	 	},
- 	 	"inputPlaceholder": {
- 	 	 	"trans": "Sohbet etmeye başlamak için mesaj girin",
- 	 	 	"eng": "Enter message to start chatting"
- 	 	},
  	 	"moderators": {
  	 	 	"trans": "moderatörler",
  	 	 	"eng": "moderators"
@@ -2694,6 +2802,23 @@
  	 	"thief": {
  	 	 	"trans": "Tekno şeriat",
  	 	 	"eng": "Techno-Thief"
+ 	 	}
+ 	},
+ 	"globalPartyBanner": {
+ 	 	"title": {
+ 	 	 	"trans": "🎉 Küresel Parti 🎉",
+ 	 	 	"eng": "🎉 Global Party 🎉"
+ 	 	},
+ 	 	"subtitle": {
+ 	 	 	"trans": "Tarafından barındırılan:",
+ 	 	 	"eng": "Hosted by:"
+ 	 	},
+ 	 	"button,": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "Sokak kredisi vermek",
+ 	 	 	"eng": "Give street cred"
  	 	}
  	},
  	"cost": {
@@ -3055,6 +3180,16 @@
  	 	 	 	"trans": "Voodoo Boys çetesinin düşmanları size daha fazla hasar verir",
  	 	 	 	"eng": "Enemies of Voodoo Boys gang deals increased damage to you"
  	 	 	}
+ 	 	},
+ 	 	"afkExpMultiplier": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "AFK exp çarpanı",
+ 	 	 	 	"eng": "AFK EXP multiplier"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "AFK görevlerinden aldığınız exp'i artırın",
+ 	 	 	 	"eng": "Increase EXP you receive from AFK tasks"
+ 	 	 	}
  	 	}
  	},
  	"modal": {
@@ -3090,13 +3225,13 @@
  	 	 	 	"trans": "Erişim engellendi. İnsan olmayan profil tespit edildi.",
  	 	 	 	"eng": "Access denied. non-human profile detected."
  	 	 	},
+ 	 	 	"report1": {
+ 	 	 	 	"trans": "Rapor Et ve Engelle",
+ 	 	 	 	"eng": "Report & Block"
+ 	 	 	},
  	 	 	"block": {
  	 	 	 	"trans": "Engellek",
  	 	 	 	"eng": "Block"
- 	 	 	},
- 	 	 	"report": {
- 	 	 	 	"trans": "Rapor Et ve Engelle",
- 	 	 	 	"eng": "Report and Block"
  	 	 	},
  	 	 	"openPlayerGang": {
  	 	 	 	"trans": "Çeteyi Görüntüle",
@@ -3249,14 +3384,14 @@
  	 	"resultScreen": {
  	 	 	"title": {
  	 	 	 	"trans": "Zafer",
- 	 	 	 	"eng": "Victory"
+ 	 	 	 	"eng": "Level up"
  	 	 	},
  	 	 	"subTitle": {
  	 	 	 	"vars": [
  	 	 	 	 	"levelName"
  	 	 	 	],
  	 	 	 	"trans": "Tebrikler, ${levelName} seviyesini artırdınız!",
- 	 	 	 	"eng": "Congratulation, you have leveled up your ${levelName}!"
+ 	 	 	 	"eng": "Congratulations, you have leveled up your ${levelName}!"
  	 	 	},
  	 	 	"fromTo": {
  	 	 	 	"vars": [
@@ -3265,6 +3400,10 @@
  	 	 	 	],
  	 	 	 	"trans": "${from} => ${to}",
  	 	 	 	"eng": "${from} => ${to}"
+ 	 	 	},
+ 	 	 	"title2": {
+ 	 	 	 	"trans": "Kabul edilmiş",
+ 	 	 	 	"eng": "Received"
  	 	 	}
  	 	},
  	 	"review": {
@@ -3338,6 +3477,30 @@
  	 	 	 	 	"eng": "Reload"
  	 	 	 	}
  	 	 	}
+ 	 	}
+ 	},
+ 	"playerDetailsAssetsTab": {
+ 	 	"noAssets": {
+ 	 	 	"trans": "Bu oyuncunun hiçbir varlığı yok",
+ 	 	 	"eng": "this player does not own any assets"
+ 	 	},
+ 	 	"apartment": {
+ 	 	 	"title": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"playerName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${playerName}'in Dairesi",
+ 	 	 	 	"eng": "${playerName}'s Apartment"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"playerStatusDisplay": {
+ 	 	"title": {
+ 	 	 	"vars": [
+ 	 	 	 	"action"
+ 	 	 	],
+ 	 	 	"trans": "${action} devam eden",
+ 	 	 	"eng": "${action} in progress"
  	 	}
  	},
  	"time": {
@@ -3613,16 +3776,16 @@
  	 	 	 	 	"eng": "dungeon warrior"
  	 	 	 	}
  	 	 	},
- 	 	 	"clearDungeonCoOp": {
- 	 	 	 	"name": {
- 	 	 	 	 	"trans": "zindan arkadaşları",
- 	 	 	 	 	"eng": "dungeon friends"
- 	 	 	 	}
- 	 	 	},
  	 	 	"clearDungeon": {
  	 	 	 	"name": {
  	 	 	 	 	"trans": "zindan sürüngeni",
  	 	 	 	 	"eng": "dungeon crawler"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"clearDungeonCoOp": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "zindan arkadaşları",
+ 	 	 	 	 	"eng": "dungeon friends"
  	 	 	 	}
  	 	 	},
  	 	 	"dealDamage": {
@@ -3689,10 +3852,148 @@
  	 	 	"eng": "Appeal Form"
  	 	}
  	},
+ 	"pet": {
+ 	 	"noName": {
+ 	 	 	"trans": "İsimsiz",
+ 	 	 	"eng": "unnamed"
+ 	 	},
+ 	 	"nameTooShort": {
+ 	 	 	"vars": [
+ 	 	 	 	"length"
+ 	 	 	],
+ 	 	 	"trans": "Evcil hayvan adı en az ${length} karakter uzunluğunda olmalıdır",
+ 	 	 	"eng": "Pet name must be at least ${length} characters long"
+ 	 	},
+ 	 	"nameTooLong": {
+ 	 	 	"vars": [
+ 	 	 	 	"length"
+ 	 	 	],
+ 	 	 	"trans": "Evcil hayvan adı en fazla ${length} karakter uzunluğunda olmalıdır",
+ 	 	 	"eng": "Pet name must be at most ${length} characters long"
+ 	 	},
+ 	 	"nameCantContainSpaces": {
+ 	 	 	"trans": "Evcil hayvan adı boşluk içeremez",
+ 	 	 	"eng": "Pet name can not contain spaces"
+ 	 	},
+ 	 	"rerollImage": {
+ 	 	 	"success": {
+ 	 	 	 	"trans": "Evcil hayvan resmi başarıyla değiştirildi",
+ 	 	 	 	"eng": "Pet image changed successfully"
+ 	 	 	}
+ 	 	},
+ 	 	"adoption": {
+ 	 	 	"alreadyActivated": {
+ 	 	 	 	"trans": "Evcil Hayvan Sahiplenme bonusu zaten aktive edildi",
+ 	 	 	 	"eng": "Pet Adoption buff is already activated"
+ 	 	 	},
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player",
+ 	 	 	 	 	"npc"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${player} Benimseme Gücü'nü aktif etti, buff süresi içinde ${npc} adresinden bir evcil hayvan sahiplenebilirsin!",
+ 	 	 	 	"eng": "${player} has activated Adoption Buff, you can adopt a pet from ${npc} within the buff duration!"
+ 	 	 	},
+ 	 	 	"activated": {
+ 	 	 	 	"trans": "Evcil hayvan sahiplenme bonusu etkinleştirildi",
+ 	 	 	 	"eng": "Pet adoption buff activated"
+ 	 	 	}
+ 	 	},
+ 	 	"error": {
+ 	 	 	"interactedRecently": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"hours"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Bir oyuncunun evcil hayvanıyla sadece her ${hours} saatte bir etkileşime geçebilirsin",
+ 	 	 	 	"eng": "You can only interact with a player's pet once every ${hours} hours"
+ 	 	 	}
+ 	 	},
+ 	 	"played": {
+ 	 	 	"vars": [
+ 	 	 	 	"player",
+ 	 	 	 	"pet"
+ 	 	 	],
+ 	 	 	"trans": "${player} senin evcil hayvanın ${pet} ile oynadı",
+ 	 	 	"eng": "${player} has played with your pet ${pet}",
+ 	 	 	"success": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"playerName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${playerName}'in evcil hayvanıyla oynadın",
+ 	 	 	 	"eng": "You have played with ${playerName}'s pet"
+ 	 	 	}
+ 	 	},
+ 	 	"rename": {
+ 	 	 	"badWord": {
+ 	 	 	 	"trans": "İsim yasaklı kelimeler içeriyor",
+ 	 	 	 	"eng": "Name contains not allowed words"
+ 	 	 	},
+ 	 	 	"notEnoughIAP": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"price"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Evcil hayvanını yeniden adlandırmak için ${price} Birime ihtiyacın var",
+ 	 	 	 	"eng": "You need ${price} Units to rename your pet"
+ 	 	 	}
+ 	 	},
+ 	 	"adopted": {
+ 	 	 	"vars": [
+ 	 	 	 	"player",
+ 	 	 	 	"pet"
+ 	 	 	],
+ 	 	 	"trans": "${player} ${pet}'ı benimsemiş",
+ 	 	 	"eng": "${player} has adopted ${pet}",
+ 	 	 	"mail": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"pet"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${pet} benimsedin",
+ 	 	 	 	"eng": "You have adopted ${pet}"
+ 	 	 	}
+ 	 	},
+ 	 	"reviveActivate": {
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${player} evcil hayvan canlandırma büyüsünü kullandı, artık büyünün süresi içinde bir evcil hayvanını canlandırabilirsin.",
+ 	 	 	 	"eng": "${player} has used pet revival buff, you can now revive one of your pet within the buff duration."
+ 	 	 	}
+ 	 	},
+ 	 	"revive": {
+ 	 	 	"activated": {
+ 	 	 	 	"trans": "Evcil hayvan canlandırma gücü etkinleştirildi",
+ 	 	 	 	"eng": "Pet revive buff activated"
+ 	 	 	},
+ 	 	 	"success": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"petName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${petName} canlandırıldın",
+ 	 	 	 	"eng": "You have revived ${petName}"
+ 	 	 	}
+ 	 	},
+ 	 	"reviveSuccess": {
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player",
+ 	 	 	 	 	"pet"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${player} ${pet} tarafından yeniden hayata döndü",
+ 	 	 	 	"eng": "${player} has revived ${pet}"
+ 	 	 	}
+ 	 	}
+ 	},
  	"priceTag": {
  	 	"free": {
  	 	 	"trans": "BEDAVA",
  	 	 	"eng": "FREE"
+ 	 	}
+ 	},
+ 	"chatInput": {
+ 	 	"placeholder": {
+ 	 	 	"trans": "Mesajı Gir...",
+ 	 	 	"eng": "Enter Message..."
  	 	}
  	},
  	"itemList": {
@@ -3730,6 +4031,12 @@
  	 	"max": {
  	 	 	"trans": "maksimum",
  	 	 	"eng": "max"
+ 	 	}
+ 	},
+ 	"giveCredButton": {
+ 	 	"giveCred": {
+ 	 	 	"trans": "Sokak kredisi vermek",
+ 	 	 	"eng": "Give Street Cred"
  	 	}
  	},
  	"actionStartModal": {
@@ -3991,6 +4298,34 @@
  	 	 	"eng": "Click 'ACCEPT QUEST' to accept the quest, you may complete or abandon the quest at any time"
  	 	}
  	},
+ 	"enum": {
+ 	 	"apartmentType": {
+ 	 	 	"T1": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Ghetto daire",
+ 	 	 	 	 	"eng": "slum apartment"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"T2": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Daire",
+ 	 	 	 	 	"eng": "apartment"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"T3": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Lüks daire",
+ 	 	 	 	 	"eng": "luxury apartment"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"T4": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Çatı katı",
+ 	 	 	 	 	"eng": "penthouse"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	}
+ 	},
  	"iapCurrency": {
  	 	"currency1": {
  	 	 	"name": {
@@ -4163,6 +4498,13 @@
  	 	 	"trans": "Al",
  	 	 	"eng": "Receive"
  	 	},
+ 	 	"bonusReward": {
+ 	 	 	"vars": [
+ 	 	 	 	"eventName"
+ 	 	 	],
+ 	 	 	"trans": "${eventName} bonus:",
+ 	 	 	"eng": "${eventName} bonus:"
+ 	 	},
  	 	"purchasing": {
  	 	 	"trans": "Satın alma",
  	 	 	"eng": "Purchasing"
@@ -4170,6 +4512,28 @@
  	 	"total": {
  	 	 	"trans": "Toplam",
  	 	 	"eng": "total"
+ 	 	}
+ 	},
+ 	"bulkCraftingSubtype": {
+ 	 	"recycle": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Geri dönüştürmek",
+ 	 	 	 	"eng": "Recycle"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Bunları daha verimli bir şekilde geri dönüştürmek için öğeler ekleyin",
+ 	 	 	 	"eng": "Add items to recycle them more efficiently"
+ 	 	 	}
+ 	 	},
+ 	 	"printSell": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Baskı ve Sat",
+ 	 	 	 	"eng": "Print & Sell"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Öğeleri yazdırın ve para için sat",
+ 	 	 	 	"eng": "Print items and sell them for money"
+ 	 	 	}
  	 	}
  	},
  	"donationType": {
@@ -4248,6 +4612,46 @@
  	 	"donation18": {
  	 	 	"trans": "Prestij",
  	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation20": {
+ 	 	 	"trans": "Prestij",
+ 	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation21": {
+ 	 	 	"trans": "Prestij",
+ 	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation22": {
+ 	 	 	"trans": "Prestij",
+ 	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation23": {
+ 	 	 	"trans": "Cadılar Bayramı",
+ 	 	 	"eng": "Halloween"
+ 	 	},
+ 	 	"donation24": {
+ 	 	 	"trans": "Nakliye",
+ 	 	 	"eng": "SkipSage"
+ 	 	},
+ 	 	"donation25": {
+ 	 	 	"trans": "Noel zamanı",
+ 	 	 	"eng": "Christmastime"
+ 	 	},
+ 	 	"donation26": {
+ 	 	 	"trans": "Siberdragon",
+ 	 	 	"eng": "CyberDragon"
+ 	 	},
+ 	 	"donation27": {
+ 	 	 	"trans": "Lord atla",
+ 	 	 	"eng": "Skip Lord"
+ 	 	},
+ 	 	"donation28": {
+ 	 	 	"trans": "Sakura",
+ 	 	 	"eng": "Sakura"
+ 	 	},
+ 	 	"donation29": {
+ 	 	 	"trans": "Ağ Koşucusu",
+ 	 	 	"eng": "Netrunner"
  	 	},
  	 	"moderator": {
  	 	 	"trans": "Moderatör",
@@ -4990,6 +5394,406 @@
  	 	 	 	 	"eng": "More coming in future update"
  	 	 	 	}
  	 	 	}
+ 	 	},
+ 	 	"donation20": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"Prestij\" Bağış Başlığı",
+ 	 	 	 	 	"eng": "\"Prestige\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Profil Resim Özelleştirme Kilidini Aç",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Beyaz Çerçeve (Animasyon ile)",
+ 	 	 	 	 	"eng": "White frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Beyaz Profil (animasyon ile)",
+ 	 	 	 	 	"eng": "White Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Özel biyografiyi aç",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Profilde barkod dekorasyonu",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Çete sloganı özelleştir",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Çete görüntüsünü özelleştir",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Gelecek Güncellemede Daha Fazla Geliyor",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation21": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"Prestij\" Bağış Başlığı",
+ 	 	 	 	 	"eng": "\"Prestige\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Profil Resim Özelleştirme Kilidini Aç",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Kırmızı çerçeve (animasyon ile)",
+ 	 	 	 	 	"eng": "Red frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Kırmızı profil (animasyon ile)",
+ 	 	 	 	 	"eng": "Red Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Özel biyografiyi aç",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Profilde barkod dekorasyonu",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Çete sloganı özelleştir",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Çete görüntüsünü özelleştir",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Gelecek Güncellemede Daha Fazla Geliyor",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation22": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"Prestij\" Bağış Başlığı",
+ 	 	 	 	 	"eng": "\"Prestige\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Profil Resim Özelleştirme Kilidini Aç",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Neon işaret çerçevesi (animasyon ile)",
+ 	 	 	 	 	"eng": "Neon Sign frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Mor profil (animasyon ile)",
+ 	 	 	 	 	"eng": "Purple Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Özel biyografiyi aç",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Profilde barkod dekorasyonu",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Çete sloganı özelleştir",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Çete görüntüsünü özelleştir",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Gelecek Güncellemede Daha Fazla Geliyor",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation23": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"Cadılar Bayramı\" Bağış Başlığı",
+ 	 	 	 	 	"eng": "\"Halloween\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Profil Resim Özelleştirme Kilidini Aç",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Cadılar Bayramı Çerçevesi (Animasyon ile)",
+ 	 	 	 	 	"eng": "Halloween frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Cadılar Bayramı Profili (Animasyon ile)",
+ 	 	 	 	 	"eng": "Halloween Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Özel biyografiyi aç",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Profilde barkod dekorasyonu",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Çete sloganı özelleştir",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Çete görüntüsünü özelleştir",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Gelecek Güncellemede Daha Fazla Geliyor",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation24": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"Skipgod\" Bağış Başlığı",
+ 	 	 	 	 	"eng": "\"SkipSage\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Profil Resim Özelleştirme Kilidini Aç",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Skipgod Frame (animasyon ile)",
+ 	 	 	 	 	"eng": "SkipSage frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Skipgod profili (animasyon ile)",
+ 	 	 	 	 	"eng": "SkipSage Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Özel biyografiyi aç",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Profilde barkod dekorasyonu",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Çete sloganı özelleştir",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Çete görüntüsünü özelleştir",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Gelecek Güncellemede Daha Fazla Geliyor",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation25": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"Christmastime\" bağış başlığı",
+ 	 	 	 	 	"eng": "\"Christmastime\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Profil Resim Özelleştirme Kilidini Aç",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Christmastime Frame (animasyon ile)",
+ 	 	 	 	 	"eng": "Christmastime frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Christmastime Profili (animasyon ile)",
+ 	 	 	 	 	"eng": "Christmastime Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Özel biyografiyi aç",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Profilde barkod dekorasyonu",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Çete sloganı özelleştir",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Çete görüntüsünü özelleştir",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Gelecek Güncellemede Daha Fazla Geliyor",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation26": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"Cyberdragon\" Bağış Başlığı",
+ 	 	 	 	 	"eng": "\"CyberDragon\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Profil Resim Özelleştirme Kilidini Aç",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Cyberdragon Frame (animasyon ile)",
+ 	 	 	 	 	"eng": "CyberDragon frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Cyberdragon Profili (animasyon ile)",
+ 	 	 	 	 	"eng": "CyberDragon Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Özel biyografiyi aç",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Profilde barkod dekorasyonu",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Çete sloganı özelleştir",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Çete görüntüsünü özelleştir",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Gelecek Güncellemede Daha Fazla Geliyor",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation27": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"Lord'u Atla\" Bağış Başlığı",
+ 	 	 	 	 	"eng": "\"Skip Lord\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Profil Resim Özelleştirme Kilidini Aç",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Lord Frame (Animasyon ile) atla",
+ 	 	 	 	 	"eng": "Skip Lord frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Lord Profilini Atla (Animasyon ile)",
+ 	 	 	 	 	"eng": "Skip Lord Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Özel biyografiyi aç",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Özel biyografiyi aç",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Çete sloganı özelleştir",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Çete görüntüsünü özelleştir",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Gelecek Güncellemede Daha Fazla Geliyor",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation28": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"Sakura\" bağış başlığı",
+ 	 	 	 	 	"eng": "\"Sakura\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Profil resmi özelleştirmesini aç",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Sakura çerçeve (animasyonlu)",
+ 	 	 	 	 	"eng": "Sakura frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Sakura Profili (animasyonlu)",
+ 	 	 	 	 	"eng": "Sakura Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Özel biyografiyi aç",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Özel biyografiyi aç",
+ 	 	 	 	 	"eng": "Sakura profile decoration"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Çete sloganını özelleştir",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Çete imajını özelleştir",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Gelecek güncellemede daha fazlası var",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation29": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"Ağ Koşucusu\" Bağış Başlığı",
+ 	 	 	 	 	"eng": "\"Netrunner\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Profil resmi özelleştirmesini açın",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Ağ Koşucusu çerçevesi (animasyonlu)",
+ 	 	 	 	 	"eng": "Netrunner frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Ağ Avcısı Profili (animasyonlu)",
+ 	 	 	 	 	"eng": "Netrunner Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Özel biyografiyi aç",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Özel biyografiyi aç",
+ 	 	 	 	 	"eng": "Netrunner profile decoration"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Çete sloganını özelleştir",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Çete imajını özelleştir",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Gelecek güncellemede daha fazlası var",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
  	 	}
  	},
  	"equipmentMarks": {
@@ -5058,6 +5862,33 @@
  	 	 	"eng": "backpack"
  	 	}
  	},
+ 	"gameEvent": {
+ 	 	"lunarNewYear": {
+ 	 	 	"trans": "Aysal yeni yıl",
+ 	 	 	"eng": "Lunar New Year"
+ 	 	},
+ 	 	"halloween": {
+ 	 	 	"trans": "Cadılar Bayramı",
+ 	 	 	"eng": "Halloween"
+ 	 	},
+ 	 	"thanksgiving": {
+ 	 	 	"trans": "Şükran Günü",
+ 	 	 	"eng": "Thanksgiving"
+ 	 	},
+ 	 	"christmas": {
+ 	 	 	"trans": "Noel",
+ 	 	 	"eng": "Christmas"
+ 	 	},
+ 	 	"sakura": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Etkinlik süresince ${percent}% indirim",
+ 	 	 	 	"eng": "${percent}% off during event",
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	]
+ 	 	 	}
+ 	 	}
+ 	},
  	"itemFilterType": {
  	 	"shopSell": {
  	 	 	"description": {
@@ -5071,6 +5902,12 @@
  	 	 	"name": {
  	 	 	 	"trans": "Bilinmeyen Ekipman",
  	 	 	 	"eng": "Unknown Equipment"
+ 	 	 	}
+ 	 	},
+ 	 	"unknownCache": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Bilinmeyen önbellek",
+ 	 	 	 	"eng": "Unknown Cache"
  	 	 	}
  	 	},
  	 	"aiCore": {
@@ -5738,6 +6575,16 @@
  	 	 	 	"eng": "You get some love, and you get some love! everyone gets some love!.\r\n        When used everyone loves each other\r\n        This effects all players fow 10 minutes"
  	 	 	}
  	 	},
+ 	 	"chatExploitPosh": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Sohbet hilesi vericisi [Şık]",
+ 	 	 	 	"eng": "Chat exploit transmitter [Posh]"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Aktivasyon gerçekleştiğinde, sohbet dünyamızın sakinlerinin tüm yazışmaları, tam olarak 10 dakika boyunca kibar İngilizce'nin seçkin kıyafetlerine bürünecek hoş bir dönüşüm geçirecektir. Bu hile sadece İngilizce ile iyi çalışacaktır",
+ 	 	 	 	"eng": "Upon activation, all correspondence proffered by the denizens of our chat realm shall undergo a delightful metamorphosis, adorning itself in the distinguished garb of gentlemanly English for a duration of precisely 10 minutes. this exploit will only work well with English"
+ 	 	 	}
+ 	 	},
  	 	"upgradeResetShard": {
  	 	 	"name": {
  	 	 	 	"trans": "Fabrika Ayarı Parçacığı",
@@ -5786,6 +6633,16 @@
  	 	 	"description": {
  	 	 	 	"trans": "Kırmızı, yeşil dekorasyonu ve yanında bir 'Cybersanta™' logolu şifreli bir konteyner.",
  	 	 	 	"eng": "An encrypted container with red, green decoration and a 'CyberSanta™' logo on the side of it."
+ 	 	 	}
+ 	 	},
+ 	 	"christmasGift2": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Soğuk kaplı konteyner",
+ 	 	 	 	"eng": "Frosty Container"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Köpüklü, kar tanesi temalı ambalajla sarılmış gizemli bir hediye. Sadece Aralık ayında [terminal] 'de kilidini açabilirsiniz.",
+ 	 	 	 	"eng": "A mystery gift wrapped in sparkling, snowflake-themed packaging. You can only unlock it at the [Terminal] during December."
  	 	 	}
  	 	},
  	 	"rngInterferer": {
@@ -5875,6 +6732,19 @@
  	 	 	 	"eng": "These dumplings are unlike any other. Made with love and care by Yen, these delicious pockets of goodness are filled with the finest ingredients and cooked to perfection.\\n recover ${percent}% health upon consumption"
  	 	 	}
  	 	},
+ 	 	"pumpkinPie": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Balkabağı pastası",
+ 	 	 	 	"eng": "Pumpkin Pie"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Lezzetli bir balkabağı turtası. Bu turta üzerinde büyük bir yük kalın vanilyalı krem var, lezzetli! \\ nrecover ${percent}% Sağlık tüketim üzerine",
+ 	 	 	 	"eng": "A delicious pumpkin pie. this pie has big load of thick vanilla cream over it, delicious!\\nrecover ${percent}% health upon consumption"
+ 	 	 	}
+ 	 	},
  	 	"riceCake": {
  	 	 	"name": {
  	 	 	 	"trans": "Pirinç keki",
@@ -5926,6 +6796,153 @@
  	 	 	"description": {
  	 	 	 	"trans": "Eşyaları değiştirmek için kullanılabilecek bir jeton",
  	 	 	 	"eng": "A token that can be used to exchange items"
+ 	 	 	}
+ 	 	},
+ 	 	"techScrapCluster": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Teknik hurda kümesi",
+ 	 	 	 	"eng": "Tech Scrap Cluster"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Teknik hurda kümesi 1000 teknoloji hurdası içerir, kolayca depolamak ve ticaret yapmak için kullanılabilir",
+ 	 	 	 	"eng": "A Tech Scrap Cluster contains 1000 Tech Scraps, can be used to easily store and trade"
+ 	 	 	}
+ 	 	},
+ 	 	"rareEquipmentCrate": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Nadir Ekipman Sandığı",
+ 	 	 	 	"eng": "Rare Equipment Crate"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Rastgele bir ekipman veya diğer yağışlar içeren bir sandık",
+ 	 	 	 	"eng": "A crate that contains a random equipments or other loots"
+ 	 	 	}
+ 	 	},
+ 	 	"globalPartyBuff": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Küresel Parti Dağıtıcısı",
+ 	 	 	 	"eng": "Global Party Deployer"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"afkPercent",
+ 	 	 	 	 	"btcPercent",
+ 	 	 	 	 	"expPercent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Dağıtım yapıldığında, AFK zamanını%${afkPercent} oranında azaltın, btc'nin ${btcPercent}%,%{2}%kazanılan artışı, bir afişin artışı, bir afişin, adınızla konuşlandırıldığını gösteren sohbet ekranında gösterilecektir. Buff",
+ 	 	 	 	"eng": "When deployed, reduce AFK time by ${afkPercent}%, increased BTC gained by ${btcPercent}%, increase EXP gained by ${expPercent}%\\nAnd a banner will be shown in chat screen with your name indicating that you have deployed the buff"
+ 	 	 	},
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"afkPercent",
+ 	 	 	 	 	"btcPercent",
+ 	 	 	 	 	"expPercent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "🎉 Party Saati!",
+ 	 	 	 	"eng": "🎉Its Party Time!🥳, reduce AFK time by ${afkPercent}%, increased BTC gained by ${btcPercent}%, increase EXP gained by ${expPercent}%"
+ 	 	 	}
+ 	 	},
+ 	 	"turkey": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Kızarmış hindi",
+ 	 	 	 	"eng": "Roasted Turkey"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Tüketildiğinde lezzetli bir kavrulmuş hindi, AFK görevlerinde alınan EXP ${percent}%",
+ 	 	 	 	"eng": "A delicious roasted turkey, when consumed increases EXP received in AFK tasks by ${percent}%"
+ 	 	 	}
+ 	 	},
+ 	 	"pudding": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Yılbaşı pudingi",
+ 	 	 	 	"eng": "Christmas Pudding"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Kurutulmuş meyveler, fındık ve genellikle alkolle bağlanmış yoğun, buğulanmış bir puding, AFK görevlerinde alınan exp artışları ${percent}%",
+ 	 	 	 	"eng": "A dense, steamed pudding with dried fruits, nuts, and often laced with alcohol, when consumed increases EXP received in AFK tasks by ${percent}%.\\nThis item can only be used during December"
+ 	 	 	},
+ 	 	 	"error": {
+ 	 	 	 	"trans": "Bu öğe yalnızca Noel etkinliği sırasında mevcuttur",
+ 	 	 	 	"eng": "This item is only available during Christmas Event"
+ 	 	 	}
+ 	 	},
+ 	 	"pawCredit": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Patik Kredi",
+ 	 	 	 	"eng": "Paw Credit"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Neon Pati Barınağı'nda evcil hayvan eşyalarını değiştirmek için kullanılabilecek bir kredi",
+ 	 	 	 	"eng": "A credit that can be used to exchange pet items at Neon Paw Sanctuary"
+ 	 	 	}
+ 	 	},
+ 	 	"petTokenShard": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Gönüllü Hizmet Madalyası",
+ 	 	 	 	"eng": "Volunteer Service Medallion"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Yeni bir evcil hayvan sahiplenmek için bu miktarı birleştir, ve bir Sanctuary Adoption Pass alabilirsin",
+ 	 	 	 	"eng": "Combine ${amount} of this to get a Sanctuary Adoption Pass, and it can be used to adopt a new pet"
+ 	 	 	}
+ 	 	},
+ 	 	"petToken": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Gönüllü Hizmet Madalyası",
+ 	 	 	 	"eng": "Sanctuary Adoption Pass"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Bunların ${amount} tanesini bir araya getirerek Bir Barınak Sahiplenme Bileti alabilir ve yeni bir evcil hayvan sahiplenmek için kullanabilirsin",
+ 	 	 	 	"eng": "A pass that can be used to adopt a pet from Neon Paw Sanctuary"
+ 	 	 	}
+ 	 	},
+ 	 	"petFood": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Elektrofiber Isırıkları",
+ 	 	 	 	"eng": "ElectroFiber Bites"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "\"ElectroFiber Bites™, enerji ileten ve depolayan liflerin karmaşık bir karışımını içerir, bu sayede evcil dostunun dayanıklılığını ve gücünü artırarak siber vahşi doğada daha uzun keşifler yapmasını sağlar.\"",
+ 	 	 	 	"eng": "\"ElectroFiber Bites™ contain a complex blend of fibers that conduct and store energy, boosting your pet's stamina and power for longer expeditions in the cyber wilderness.\""
+ 	 	 	}
+ 	 	},
+ 	 	"petToy": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "NanoKüçük Top",
+ 	 	 	 	"eng": "NanoNibble Ball"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "\"NanoNibble Topu tanıtıyoruz - saf mutluluk için tasarlanmış oyun teknolojisinin bir harikası. Her top, hafif bir dokunuşta büyüleyici desenlerle aydınlanır, böylece evcil hayvanınız tamamen eğlendirilir. Eşi benzeri olmayan eğlenceli bir oturumdan sonra, top zararsız, çevre dostu parçalara ayrılır ve hiçbir iz bırakmadan temizlik yapmanıza gerek kalmaz. Tek seferlik, unutulmaz bir dijital arkadaşlık macerası için mükemmel olan bu top, temizlik yapmanızı gerektirmeden kaybolan en üstün oyun deneyimidir.\"",
+ 	 	 	 	"eng": "\"Introducing the NanoNibble Ball – a marvel of playtime technology designed for sheer joy. Each ball lights up with mesmerizing patterns at the slightest touch, ensuring your pet is thoroughly entertained. After a session of unprecedented fun, the ball smartly deconstructs into harmless, eco-friendly particles, leaving no mess behind. Perfect for a single, unforgettable adventure in digital companionship, it’s the ultimate playtime experience that neatly disappears, sparing you the cleanup.\""
+ 	 	 	}
+ 	 	},
+ 	 	"petCleaner": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "KürkTemiz Sprey'i",
+ 	 	 	 	"eng": "FurFlush Spray"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "FurFlush Sprey: Şık teneke kutu üzerinde 'Anında Temizlik, Anında Yok Olan' yazıyor. Hızlı bir püskürtme işinizi görmüş evcil hayvanınızı parlatır - durulama yok, dağıtma yok, sadece tıss! Siber buluşmaya gitmeden önceki 'hop' anları için mükemmel. Dikkat: Beklenmedik evcil hayvan havalı hareketler sergileyebilir. Şehir gezgini dostu için tek kullanımlık sihir. Kullanımdan sonra kaybolur, sadece parlak bir evcil hayvan bırakarak hiçbir iz bırakmaz.",
+ 	 	 	 	"eng": "FurFlush Spray: The sleek canister reads 'Instant Clean, Instant Gone.' A quick spritz turns your grimy pet gleaming—no rinse, no mess, just poof! Perfect for those 'oops' moments before a cyber meet-up. Caution: May lead to unexpected pet swagger. Single-use magic for the urban explorer's companion. Disappears after use, leaving no evidence except a dazzling pet."
+ 	 	 	}
+ 	 	},
+ 	 	"petMedicine": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "TatlıTedavi",
+ 	 	 	 	"eng": "PawfectCure"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Evcil hayvanın kendini kötü hissettiğinde ya da sadece garip hissettiğinde, işte bu kullanılacak şey. Burnun akmasıyla başlayıp 'garip bir şey yedim' mavisine kadar her şeyi ele alır. Yan etkilere dikkat: aniden yemeklerine olan takdiri artırabilir ve kucaklama saldırılarında artışa neden olabilir. Çünkü bazen, en iyi çözüm biraz gülme... ve PatiMükemmelİlaç.",
+ 	 	 	 	"eng": "When your pet's feeling under the weather, or just plain off, this is the go-to. It tackles everything from the sniffles to the 'I ate something weird' blues. Beware of side effects: may cause a sudden appreciation for your cooking and an increase in snuggle attacks. Because sometimes, the best remedy is a little laughter... and PawfectCure."
  	 	 	}
  	 	},
  	 	"experienceShard": {
@@ -6066,6 +7083,12 @@
  	 	 	 	 	"trans": "Çete Karargahı'na git",
  	 	 	 	 	"eng": "Go to gang headquarters"
  	 	 	 	}
+ 	 	 	},
+ 	 	 	"toApartment": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Apartmanına git",
+ 	 	 	 	 	"eng": "Go to your apartment"
+ 	 	 	 	}
  	 	 	}
  	 	},
  	 	"job": {
@@ -6122,6 +7145,29 @@
  	 	 	"cantEnterError": {
  	 	 	 	"trans": "Bu bölgeye girmek için bir çeteye katılmanız gerekir",
  	 	 	 	"eng": "You need to join a gang to enter this area"
+ 	 	 	}
+ 	 	},
+ 	 	"apartment": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Benim Dairesi",
+ 	 	 	 	"eng": "My Apartment"
+ 	 	 	},
+ 	 	 	"toMainHub": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Shangri-La Şehir Merkezi'ne geri dön",
+ 	 	 	 	 	"eng": "Return to Shangri-La City Center"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "[Daire]\n        Şehirdeki rahat dairen. Evcil hayvanların seni eve gelmeni bekliyor.",
+ 	 	 	 	"eng": "[Apartment]\r\n        Your cozy apartment in the city. your pets are waiting for you to come home."
+ 	 	 	},
+ 	 	 	"cantEnterError": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"level"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Bir daire kiralamak için en az ${level} seviyesinde olmalısın",
+ 	 	 	 	"eng": "You need to be at least level ${level} to rent an apartment"
  	 	 	}
  	 	},
  	 	"zone": {
@@ -6455,6 +7501,56 @@
  	 	 	 	"eng": "B3llial"
  	 	 	}
  	 	},
+ 	 	"halloween": {
+ 	 	 	"defaultLines": {
+ 	 	 	 	"trans": [
+ 	 	 	 	 	"Pumpkin is my source of power!",
+ 	 	 	 	 	"Check out my pumpkin costume!",
+ 	 	 	 	 	"Hmmmm, I wonder what's inside this pumpkin...",
+ 	 	 	 	 	"Give me your pumpkin, and I'll give you a treat!"
+ 	 	 	 	],
+ 	 	 	 	"eng": [
+ 	 	 	 	 	"Pumpkin is my source of power!",
+ 	 	 	 	 	"Check out my pumpkin costume!",
+ 	 	 	 	 	"Hmmmm, I wonder what's inside this pumpkin...",
+ 	 	 	 	 	"Give me your pumpkin, and I'll give you a treat!"
+ 	 	 	 	]
+ 	 	 	},
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Sokak yolu",
+ 	 	 	 	"eng": "Alleyway"
+ 	 	 	},
+ 	 	 	"npcName": {
+ 	 	 	 	"trans": "balkabağı garip",
+ 	 	 	 	"eng": "pumpkin weirdo"
+ 	 	 	}
+ 	 	},
+ 	 	"petShop": {
+ 	 	 	"defaultLines": {
+ 	 	 	 	"trans": [
+ 	 	 	 	 	"Hey, choom! Neon Paws is for the brave. These sprites need your daily grind. Ready to dive in?",
+ 	 	 	 	 	"Lookin' sharp, netrunner! Here, pets are more than code, they need your daily hack to thrive.",
+ 	 	 	 	 	"What's up, street samurai? Partner with a survivor. Without your daily deeds, they're zeroed.",
+ 	 	 	 	 	"Edge runner, eh? This is where tech meets heart. Ignore them, and they vanish into the net. Daily care, got it?",
+ 	 	 	 	 	"Cyberdeck in hand, heart on sleeve? Our critters need that daily touch or they'll fade into the static."
+ 	 	 	 	],
+ 	 	 	 	"eng": [
+ 	 	 	 	 	"Hey, choom! Neon Paws is for the brave. These sprites need your daily grind. Ready to dive in?",
+ 	 	 	 	 	"Lookin' sharp, netrunner! Here, pets are more than code, they need your daily hack to thrive.",
+ 	 	 	 	 	"What's up, street samurai? Partner with a survivor. Without your daily deeds, they're zeroed.",
+ 	 	 	 	 	"Edge runner, eh? This is where tech meets heart. Ignore them, and they vanish into the net. Daily care, got it?",
+ 	 	 	 	 	"Cyberdeck in hand, heart on sleeve? Our critters need that daily touch or they'll fade into the static."
+ 	 	 	 	]
+ 	 	 	},
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Neon Patiler Barınağı",
+ 	 	 	 	"eng": "Neon Paws Sanctuary"
+ 	 	 	},
+ 	 	 	"npcName": {
+ 	 	 	 	"trans": "Jin",
+ 	 	 	 	"eng": "Jin"
+ 	 	 	}
+ 	 	},
  	 	"recycleMachine": {
  	 	 	"name": {
  	 	 	 	"trans": "Otomatik Geri Dönüştürücü",
@@ -6484,6 +7580,58 @@
  	 	 	 	"trans": "Çöpçüler",
  	 	 	 	"eng": "Scavengers"
  	 	 	}
+ 	 	}
+ 	},
+ 	"petType": {
+ 	 	"dog": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Köpek",
+ 	 	 	 	"eng": "Dog"
+ 	 	 	}
+ 	 	},
+ 	 	"cat": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Kedi",
+ 	 	 	 	"eng": "Cat"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"petStatus": {
+ 	 	"sick": {
+ 	 	 	"trans": "Hasta olmuşsun",
+ 	 	 	"eng": "Sick"
+ 	 	},
+ 	 	"hungry": {
+ 	 	 	"trans": "Acıktım",
+ 	 	 	"eng": "Hungry"
+ 	 	},
+ 	 	"starving": {
+ 	 	 	"trans": "Açlıktan ölüyorum",
+ 	 	 	"eng": "Starving"
+ 	 	},
+ 	 	"wellFed": {
+ 	 	 	"trans": "İyi doyurulmuş",
+ 	 	 	"eng": "Well Fed"
+ 	 	},
+ 	 	"dirty": {
+ 	 	 	"trans": "Kirli",
+ 	 	 	"eng": "Dirty"
+ 	 	},
+ 	 	"filthy": {
+ 	 	 	"trans": "Kirli",
+ 	 	 	"eng": "Filthy"
+ 	 	},
+ 	 	"dead": {
+ 	 	 	"trans": "Ölü",
+ 	 	 	"eng": "Deceased"
+ 	 	},
+ 	 	"unhappy": {
+ 	 	 	"trans": "Mutlu değil",
+ 	 	 	"eng": "Unhappy"
+ 	 	},
+ 	 	"depressed": {
+ 	 	 	"trans": "Morali Bozuk",
+ 	 	 	"eng": "Depressed"
  	 	}
  	},
  	"action": {
@@ -6613,6 +7761,22 @@
  	 	 	 	"eng": "Trade"
  	 	 	}
  	 	},
+ 	 	"bulkCrafting": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Toplu işçilik",
+ 	 	 	 	"eng": "Bulk Crafting"
+ 	 	 	}
+ 	 	},
+ 	 	"petAFK": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Hayvan Barınağı Gönüllü Vardiya",
+ 	 	 	 	"eng": "Pet Shelter Volunteer Shift"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Yerel hayvan barınağında gönüllü olarak hayvanlara bakım yap.",
+ 	 	 	 	"eng": "Volunteer at the local pet shelter to help take care of the animals."
+ 	 	 	}
+ 	 	},
  	 	"autoFarm": {
  	 	 	"name": {
  	 	 	 	"trans": "Toplama Botu Yerleştir",
@@ -6642,6 +7806,59 @@
  	 	 	 	"trans": "AFK Kaynak Toplama\r\n                    ${zoneName} bölgesi çevresini ara ve işe yarar eşyaları yağmala.\r\n                    Kim bilir? Belki dört ayak üstüne düşersin!",
  	 	 	 	"eng": "[AFK Resource Gather]\r\n                    Search around in ${zoneName} and scavenge for useful items.\r\n                    Who knows, maybe you'll get lucky!"
  	 	 	}
+ 	 	}
+ 	},
+ 	"leaderboard": {
+ 	 	"skip": {
+ 	 	 	"trans": "Puanları atla",
+ 	 	 	"eng": "Skip Points"
+ 	 	},
+ 	 	"level": {
+ 	 	 	"trans": "Seviyesi",
+ 	 	 	"eng": "Level"
+ 	 	},
+ 	 	"epicPrint": {
+ 	 	 	"trans": "Destansı ekipman basılı",
+ 	 	 	"eng": "Epic Equipment Printed"
+ 	 	},
+ 	 	"epicBagPrint": {
+ 	 	 	"trans": "Epik çanta hazırlanmış",
+ 	 	 	"eng": "Epic Bag Crafted"
+ 	 	},
+ 	 	"mining": {
+ 	 	 	"trans": "Madencilik seviyesi",
+ 	 	 	"eng": "Mining Level"
+ 	 	},
+ 	 	"ammo": {
+ 	 	 	"trans": "Ve seviyeli",
+ 	 	 	"eng": "Ammo Level"
+ 	 	},
+ 	 	"medical": {
+ 	 	 	"trans": "Sağlık seviyesi",
+ 	 	 	"eng": "Medical Level"
+ 	 	},
+ 	 	"scavenge": {
+ 	 	 	"trans": "Temizleme seviyesi",
+ 	 	 	"eng": "Scavenge Level"
+ 	 	},
+ 	 	"molecular": {
+ 	 	 	"trans": "Moleküler baskı seviyesi",
+ 	 	 	"eng": "Molecular Print Level"
+ 	 	},
+ 	 	"streetcred": {
+ 	 	 	"trans": "Sokak kredisi",
+ 	 	 	"eng": "Street Cred"
+ 	 	},
+ 	 	"description": {
+ 	 	 	"vars": [
+ 	 	 	 	"minutes"
+ 	 	 	],
+ 	 	 	"trans": "Lider tablosu listeleme güncellemeleri her ${minutes} dakikada bir",
+ 	 	 	"eng": "Leaderboard listing updates every ${minutes} minutes"
+ 	 	},
+ 	 	"noPlayers": {
+ 	 	 	"trans": "Şu anda bu lider tablosunda oyuncu yok",
+ 	 	 	"eng": "Currently No Players in this Leaderboard"
  	 	}
  	},
  	"Quest": {
@@ -6837,6 +8054,12 @@
  	 	 	 	"eng": "Unlock Mysterious Container"
  	 	 	}
  	 	},
+ 	 	"christmasGift2": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Ayak kabın kilidini açın",
+ 	 	 	 	"eng": "Unlock Frosty Container"
+ 	 	 	}
+ 	 	},
  	 	"backpack1": {
  	 	 	"name": {
  	 	 	 	"trans": "Eski Kese",
@@ -6877,12 +8100,6 @@
  	 	 	 	"eng": "AI Core Cluster"
  	 	 	}
  	 	},
- 	 	"halloween": {
- 	 	 	"name": {
- 	 	 	 	"trans": "Jack O Lantern",
- 	 	 	 	"eng": "Jack O Lantern"
- 	 	 	}
- 	 	},
  	 	"christmasToBox": {
  	 	 	"name": {
  	 	 	 	"trans": "Kilitli efsanevi konteyner",
@@ -6900,6 +8117,40 @@
  	 	 	 	"trans": "Tıbbi teknoloji kümesi",
  	 	 	 	"eng": "Medical Tech Cluster"
  	 	 	}
+ 	 	},
+ 	 	"medicalTechClusterRevers": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Tıbbi teknoloji hurdası",
+ 	 	 	 	"eng": "Medical Tech Scrap"
+ 	 	 	}
+ 	 	},
+ 	 	"techScrapCluster": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Teknik hurda kümesi",
+ 	 	 	 	"eng": "Tech Scrap Cluster"
+ 	 	 	}
+ 	 	},
+ 	 	"techScrapClusterReverse": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Teknoloji hurdası",
+ 	 	 	 	"eng": "Tech Scrap"
+ 	 	 	}
+ 	 	},
+ 	 	"unlockRareEquipmentCrate": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Nadir Ekipman Sandığı Kilidini Çıkarın",
+ 	 	 	 	"eng": "Unlock Rare Equipment Crate"
+ 	 	 	}
+ 	 	},
+ 	 	"craftPetToken": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Ustalık Barınağı Evlatlık Geçişi",
+ 	 	 	 	"eng": "Craft Sanctuary Adoption Pass"
+ 	 	 	}
+ 	 	},
+ 	 	"craft": {
+ 	 	 	"trans": "İşle",
+ 	 	 	"eng": "Craft"
  	 	},
  	 	"ammo1": {
  	 	 	"vars": [
@@ -6991,6 +8242,10 @@
  	 	 	"trans": "Sohbet Exploit [AŞK]",
  	 	 	"eng": "Chat Exploit [LOVE]"
  	 	},
+ 	 	"posh": {
+ 	 	 	"trans": "Sohbet Sömürüsü [POSH]",
+ 	 	 	"eng": "Chat Exploit [POSH]"
+ 	 	},
  	 	"chatExploitProtect": {
  	 	 	"trans": "Sohbet Şifreleme",
  	 	 	"eng": "Chat Encryption"
@@ -7006,6 +8261,30 @@
  	 	"aiConnect": {
  	 	 	"trans": "Siber uzay bağlantısı",
  	 	 	"eng": "Cyberspace Connection"
+ 	 	},
+ 	 	"globalParty": {
+ 	 	 	"trans": "Küresel parti",
+ 	 	 	"eng": "Global Party"
+ 	 	},
+ 	 	"afkExp": {
+ 	 	 	"trans": "AFK Exp Boost",
+ 	 	 	"eng": "AFK EXP Boost"
+ 	 	},
+ 	 	"petRevive": {
+ 	 	 	"trans": "Evcil Hayvanı Canlandır",
+ 	 	 	"eng": "Pet Revive"
+ 	 	},
+ 	 	"petReviveDesc": {
+ 	 	 	"trans": "Bu güçlendirme süresi boyunca artık evcil hayvanın yeniden canlandırılabilir.",
+ 	 	 	"eng": "Pet revival is now available during this buff duration."
+ 	 	},
+ 	 	"petDraw": {
+ 	 	 	"trans": "Evcil Hayvan Sahiplenme Aktif Edildi",
+ 	 	 	"eng": "Pet Adoption Activated"
+ 	 	},
+ 	 	"petDrawDesc": {
+ 	 	 	"trans": "Bu güçlendirme süresince artık evcil hayvan sahiplenme mümkün.",
+ 	 	 	"eng": "Pet adoption is now available during this buff duration."
  	 	}
  	},
  	"combat": {
@@ -7066,6 +8345,52 @@
  	 	 	],
  	 	 	"trans": "${amount} ${itemName} kazandın",
  	 	 	"eng": "You received ${amount} ${itemName}"
+ 	 	}
+ 	},
+ 	"chatExploit": {
+ 	 	"loveWords": {
+ 	 	 	"trans": [
+ 	 	 	 	"Seni seviyorum",
+ 	 	 	 	"Siz harika birisiniz",
+ 	 	 	 	"Siz en iyisisiniz",
+ 	 	 	 	"Sizi seviyorum",
+ 	 	 	 	"İnanılmazsın",
+ 	 	 	 	"En iyi arkadaşız",
+ 	 	 	 	"Hepinizi seviyorum",
+ 	 	 	 	"Harikasın",
+ 	 	 	 	"En iyisisin",
+ 	 	 	 	"Harikayız",
+ 	 	 	 	"Harikasın",
+ 	 	 	 	"İyi günler",
+ 	 	 	 	"Seni özlüyorum",
+ 	 	 	 	"Sizi özlüyorum",
+ 	 	 	 	"KYAAAAAAAAA",
+ 	 	 	 	"Umarım günün güzel geçer",
+ 	 	 	 	"Seni seviyorum",
+ 	 	 	 	"Sarılabilir miyiz?",
+ 	 	 	 	"Beni ne kadar seviyorsun?"
+ 	 	 	],
+ 	 	 	"eng": [
+ 	 	 	 	"Love you",
+ 	 	 	 	"You guys are great",
+ 	 	 	 	"You guys are the best",
+ 	 	 	 	"love yall",
+ 	 	 	 	"You are amazing",
+ 	 	 	 	"we are best friend",
+ 	 	 	 	"Love you all",
+ 	 	 	 	"you are great",
+ 	 	 	 	"you the best",
+ 	 	 	 	"we are awesome",
+ 	 	 	 	"you are awesome",
+ 	 	 	 	"have a nice day",
+ 	 	 	 	"miss you",
+ 	 	 	 	"miss you guys",
+ 	 	 	 	"KYAAAAAAAAA",
+ 	 	 	 	"wish you have nice day",
+ 	 	 	 	"I love you",
+ 	 	 	 	"can we hug?",
+ 	 	 	 	"how much you love me?"
+ 	 	 	]
  	 	}
  	},
  	"chatServer": {
@@ -7355,55 +8680,13 @@
  	 	"upgradePocketed": {
  	 	 	"trans": "Genişleme",
  	 	 	"eng": "of Expansion"
+ 	 	},
+ 	 	"upgradeHealing": {
+ 	 	 	"trans": "iyileşme",
+ 	 	 	"eng": "of Healing"
  	 	}
  	},
  	"market": {
- 	 	"amountSelectModal": {
- 	 	 	"title": {
- 	 	 	 	"trans": "Kaç tane satın almak istersiniz?",
- 	 	 	 	"eng": "How many would you like to purchase?"
- 	 	 	},
- 	 	 	"totalPrice": {
- 	 	 	 	"vars": [
- 	 	 	 	 	"total"
- 	 	 	 	],
- 	 	 	 	"trans": "Toplam ${total} Bitcoin'e mal olacak",
- 	 	 	 	"eng": "it will cost ${total} Bitcoin total"
- 	 	 	}
- 	 	},
- 	 	"notEnoughMoney": {
- 	 	 	"trans": "Bitcoin yetersiz",
- 	 	 	"eng": "Insufficient bitcoin"
- 	 	},
- 	 	"priceSelectModal": {
- 	 	 	"title2": {
- 	 	 	 	"vars": [
- 	 	 	 	 	"itemName"
- 	 	 	 	],
- 	 	 	 	"trans": "${itemName} için fiyat",
- 	 	 	 	"eng": "Price for ${itemName}"
- 	 	 	}
- 	 	},
- 	 	"priceConfirm": {
- 	 	 	"vars": [
- 	 	 	 	"amountStr",
- 	 	 	 	"priceStr",
- 	 	 	 	"itemName"
- 	 	 	],
- 	 	 	"trans": "${amountStr} adet ${itemName}, ürün başına ${priceStr} fiyata satıyorsunuz",
- 	 	 	"eng": "You are selling ${amountStr} ${itemName}(s), at the price of ${priceStr} Per Item"
- 	 	},
- 	 	"totalConfirm": {
- 	 	 	"vars": [
- 	 	 	 	"total"
- 	 	 	],
- 	 	 	"trans": "Eğer hepsi satılırsa ${total} Bitcoin kazanacaksın",
- 	 	 	"eng": "If all items are sold, you will earn ${total} BitCoins"
- 	 	},
- 	 	"sellAmountModalTitle": {
- 	 	 	"trans": "Kaç adet satmak istiyorsun?",
- 	 	 	"eng": "How many would you like to sell?"
- 	 	},
  	 	"upgradeSlot": {
  	 	 	"trans": "Güncelleme",
  	 	 	"eng": "Upgrade"
@@ -7422,12 +8705,161 @@
  	 	 	],
  	 	 	"trans": "${price} bitcoin ödeyerek pazar yuvanızı ${slot} olarak artırabilirsiniz",
  	 	 	"eng": "You can increase your market slot to ${slot} by paying ${price} BitCoins"
+ 	 	},
+ 	 	"purchaseModal": {
+ 	 	 	"purchase": {
+ 	 	 	 	"trans": "Satın almak",
+ 	 	 	 	"eng": "Purchase"
+ 	 	 	}
  	 	}
  	},
  	"mobile": {
  	 	"returnToAppMessage": {
  	 	 	"trans": "Sunucu ile senkronizasyon ..",
  	 	 	"eng": "Syncing with server.."
+ 	 	}
+ 	},
+ 	"petDetailsPage": {
+ 	 	"dispose": {
+ 	 	 	"trans": "imha et",
+ 	 	 	"eng": "dispose"
+ 	 	},
+ 	 	"disposeConfirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "imha et",
+ 	 	 	 	"eng": "dispose"
+ 	 	 	},
+ 	 	 	"message": {
+ 	 	 	 	"trans": "Bu evcil hayvanı atmak istediğinden emin misin? Bu geri alınamaz",
+ 	 	 	 	"eng": "Are you sure you want to dispose of this pet? this cannot be undone"
+ 	 	 	}
+ 	 	},
+ 	 	"rerollImage": {
+ 	 	 	"trans": "Yeniden Atış Yap",
+ 	 	 	"eng": "re-roll Image"
+ 	 	},
+ 	 	"rerollImageConfirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Yeniden Atış Yap",
+ 	 	 	 	"eng": "re-roll Image"
+ 	 	 	},
+ 	 	 	"message": {
+ 	 	 	 	"trans": "Bu evcil hayvanın resmini yeniden çekmek istediğinden emin misin?",
+ 	 	 	 	"eng": "Are you sure you want to re-roll this pets image?"
+ 	 	 	}
+ 	 	},
+ 	 	"petNotFound": {
+ 	 	 	"trans": "Evcil hayvan bulunamadı",
+ 	 	 	"eng": "Pet not found"
+ 	 	},
+ 	 	"name": {
+ 	 	 	"trans": "İsim",
+ 	 	 	"eng": "name"
+ 	 	},
+ 	 	"age": {
+ 	 	 	"trans": "Yaş",
+ 	 	 	"eng": "age"
+ 	 	},
+ 	 	"status": {
+ 	 	 	"trans": "durum",
+ 	 	 	"eng": "status"
+ 	 	},
+ 	 	"noStatus": {
+ 	 	 	"trans": "Sağlıklı",
+ 	 	 	"eng": "healthy"
+ 	 	},
+ 	 	"deadRemoveMessage": {
+ 	 	 	"vars": [
+ 	 	 	 	"date"
+ 	 	 	],
+ 	 	 	"trans": "${date} noktasında kaldırılacak",
+ 	 	 	"eng": "will be removed at ${date}"
+ 	 	},
+ 	 	"hunger": {
+ 	 	 	"trans": "Açlık",
+ 	 	 	"eng": "Hunger"
+ 	 	},
+ 	 	"feed": {
+ 	 	 	"trans": "Besle",
+ 	 	 	"eng": "Feed"
+ 	 	},
+ 	 	"noFood": {
+ 	 	 	"vars": [
+ 	 	 	 	"item"
+ 	 	 	],
+ 	 	 	"trans": "Evcil hayvanını beslemek için ${item} paran yok",
+ 	 	 	"eng": "You don't have ${item} to feed your pet"
+ 	 	},
+ 	 	"happiness": {
+ 	 	 	"trans": "Mutluluk",
+ 	 	 	"eng": "Happiness"
+ 	 	},
+ 	 	"play": {
+ 	 	 	"trans": "Oyna",
+ 	 	 	"eng": "Play"
+ 	 	},
+ 	 	"noToy": {
+ 	 	 	"vars": [
+ 	 	 	 	"item"
+ 	 	 	],
+ 	 	 	"trans": "Evinde oyun oynamak için ${item} paran yok",
+ 	 	 	"eng": "You don't have ${item} to play with your pet"
+ 	 	},
+ 	 	"cleanliness": {
+ 	 	 	"trans": "Temizlik",
+ 	 	 	"eng": "Cleanliness"
+ 	 	},
+ 	 	"clean": {
+ 	 	 	"trans": "Temizle",
+ 	 	 	"eng": "Clean"
+ 	 	},
+ 	 	"noCleaner": {
+ 	 	 	"vars": [
+ 	 	 	 	"item"
+ 	 	 	],
+ 	 	 	"trans": "Evcil hayvanını temizlemek için ${item} paran yok",
+ 	 	 	"eng": "You don't have ${item} to clean your pet"
+ 	 	},
+ 	 	"giveMedicine": {
+ 	 	 	"trans": "İlaç vermek",
+ 	 	 	"eng": "Give Medicine"
+ 	 	},
+ 	 	"reviveButton": {
+ 	 	 	"trans": "Canlandır",
+ 	 	 	"eng": "Revive"
+ 	 	}
+ 	},
+ 	"sendStreetCred": {
+ 	 	"error": {
+ 	 	 	"giveSelf": {
+ 	 	 	 	"trans": "Kendinize sokak kredisi gönderemezsin",
+ 	 	 	 	"eng": "you can't send street cred to yourself"
+ 	 	 	}
+ 	 	},
+ 	 	"title": {
+ 	 	 	"trans": "Sokak Kredisi Gönder",
+ 	 	 	"eng": "Send street cred"
+ 	 	},
+ 	 	"description": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "${playerName} 'a sokak kredisi göndermek istediğinizden emin misiniz? Her gün herkese bir sokak kredisi gönderebilirsiniz.",
+ 	 	 	"eng": "Are you sure you want to send street cred to ${playerName}? you can send one street cred to anyone everyday."
+ 	 	}
+ 	},
+ 	"sendStreetCredError": {
+ 	 	"title": {
+ 	 	 	"trans": "Şimdi sokak kredisi gönderemiyorum",
+ 	 	 	"eng": "Can't send street cred now"
+ 	 	},
+ 	 	"description2": {
+ 	 	 	"trans": "Günde sadece bir sokak kredisi gönderebilirsiniz. Ve seviye 10 veya üstü olmalısınız.",
+ 	 	 	"eng": "You can only send one street cred per day. and you must be level 10 or above."
+ 	 	},
+ 	 	"confirmText": {
+ 	 	 	"trans": "TAMAM",
+ 	 	 	"eng": "OK"
  	 	}
  	},
  	"secretKey": {
@@ -7542,52 +8974,27 @@
  	 	 	 	"trans": "Toplam: ${amount} ${itemName}",
  	 	 	 	"eng": "Total: ${amount} ${itemName}"
  	 	 	}
- 	 	}
- 	},
- 	"chatExploit": {
- 	 	"loveWords": {
- 	 	 	"trans": [
- 	 	 	 	"Seni seviyorum",
- 	 	 	 	"Siz harika birisiniz",
- 	 	 	 	"Siz en iyisisiniz",
- 	 	 	 	"Sizi seviyorum",
- 	 	 	 	"İnanılmazsın",
- 	 	 	 	"En iyi arkadaşız",
- 	 	 	 	"Hepinizi seviyorum",
- 	 	 	 	"Harikasın",
- 	 	 	 	"En iyisisin",
- 	 	 	 	"Harikayız",
- 	 	 	 	"Harikasın",
- 	 	 	 	"İyi günler",
- 	 	 	 	"Seni özlüyorum",
- 	 	 	 	"Sizi özlüyorum",
- 	 	 	 	"KYAAAAAAAAA",
- 	 	 	 	"Umarım günün güzel geçer",
- 	 	 	 	"Seni seviyorum",
- 	 	 	 	"Sarılabilir miyiz?",
- 	 	 	 	"Beni ne kadar seviyorsun?"
+ 	 	},
+ 	 	"npcNotAvailable": {
+ 	 	 	"trans": "Bu dükkan şu anda mevcut değil",
+ 	 	 	"eng": "This shop is not available at the moment"
+ 	 	},
+ 	 	"purchasedMessage": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"item"
  	 	 	],
- 	 	 	"eng": [
- 	 	 	 	"Love you",
- 	 	 	 	"You guys are great",
- 	 	 	 	"You guys are the best",
- 	 	 	 	"love yall",
- 	 	 	 	"You are amazing",
- 	 	 	 	"we are best friend",
- 	 	 	 	"Love you all",
- 	 	 	 	"you are great",
- 	 	 	 	"you the best",
- 	 	 	 	"we are awesome",
- 	 	 	 	"you are awesome",
- 	 	 	 	"have a nice day",
- 	 	 	 	"miss you",
- 	 	 	 	"miss you guys",
- 	 	 	 	"KYAAAAAAAAA",
- 	 	 	 	"wish you have nice day",
- 	 	 	 	"I love you",
- 	 	 	 	"can we hug?",
- 	 	 	 	"how much you love me?"
- 	 	 	]
+ 	 	 	"trans": "${amount} ${item} satın aldınız",
+ 	 	 	"eng": "You have purchased ${amount} ${item}"
+ 	 	},
+ 	 	"exchangedMessage": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"item",
+ 	 	 	 	"item2"
+ 	 	 	],
+ 	 	 	"trans": "${amount} ${item} ${item2} için değiştirdiniz",
+ 	 	 	"eng": "You have exchanged ${amount} ${item} for ${item2}"
  	 	}
  	},
  	"bundleDetailsModal": {
@@ -7617,6 +9024,16 @@
  	 	 	 	"trans": "Satın alma",
  	 	 	 	"eng": "Purchase"
  	 	 	}
+ 	 	}
+ 	},
+ 	"clanNoticeModal": {
+ 	 	"title": {
+ 	 	 	"trans": "Yeni Bildirim Girin",
+ 	 	 	"eng": "enter new notice"
+ 	 	},
+ 	 	"submit": {
+ 	 	 	"trans": "Göndermek",
+ 	 	 	"eng": "send"
  	 	}
  	},
  	"createClanModal": {
@@ -7685,26 +9102,57 @@
  	 	 	"eng": "Accept"
  	 	}
  	},
- 	"christmasPromo": {
+ 	"petReviveModal": {
+ 	 	"reviveButton": {
+ 	 	 	"error": {
+ 	 	 	 	"trans": "Son zamanlarda bir evcil hayvanı dirilttin",
+ 	 	 	 	"eng": "You have revived a pet recently"
+ 	 	 	},
+ 	 	 	"trans": "Canlandır",
+ 	 	 	"eng": "Revive"
+ 	 	},
+ 	 	"activateButton": {
+ 	 	 	"error": {
+ 	 	 	 	"trans": "Önce evcil hayvanın yeniden canlanmasını etkinleştirmen gerekiyor",
+ 	 	 	 	"eng": "You need to activate pet revive first"
+ 	 	 	},
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Evcil hayvanın canlanmasını başlat",
+ 	 	 	 	"eng": "Activate"
+ 	 	 	},
+ 	 	 	"desc": {
+ 	 	 	 	"trans": "Evcil hayvanın canlandırılmasını başlat",
+ 	 	 	 	"eng": "Activate pet revive"
+ 	 	 	},
+ 	 	 	"loading": {
+ 	 	 	 	"trans": "Aktivasyon...",
+ 	 	 	 	"eng": "Activating..."
+ 	 	 	}
+ 	 	},
  	 	"title": {
- 	 	 	"trans": "Mutlu kış tatili!",
- 	 	 	"eng": "Happy Winter Holiday!"
+ 	 	 	"trans": "Evcil hayvanı canlandır",
+ 	 	 	"eng": "Revive pet"
+ 	 	},
+ 	 	"reviveDescription": {
+ 	 	 	"vars": [
+ 	 	 	 	"buffName"
+ 	 	 	],
+ 	 	 	"trans": "${buffName} gücü aktif olduğunda evcil hayvanını canlandırabilirsin",
+ 	 	 	"eng": "You may revive your pet when ${buffName} buff is active"
+ 	 	}
+ 	},
+ 	"artPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Ürkütücü karakter sanat yarışması!",
+ 	 	 	"eng": "Spooky Character Art Competition!"
  	 	},
  	 	"desc1": {
- 	 	 	"trans": "Yine yılın en harika zamanı! Shangri-la'da kış tatilini özel bir etkinlikle kutluyoruz!",
- 	 	 	"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!"
+ 	 	 	"trans": "En iyi 5 kazanan için destansı önbellekler, kaşif sırt çantası, çalışan valiz ve amblemler veriyoruz!",
+ 	 	 	"eng": "We are giving out Epic Caches, Explorer Backpack, Employee Suitcase and Emblems to the top 5 winners!"
  	 	},
  	 	"desc2": {
- 	 	 	"vars": [
- 	 	 	 	"itemName",
- 	 	 	 	"craftItem"
- 	 	 	],
- 	 	 	"trans": "Düşmanlar ve AI Core Auto Farm ${itemName} düşürme şansına sahip olacak, bunu ${craftItem} yapmak veya doğrudan açmak için kullanabilirsiniz!",
- 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop ${itemName}, you can use this to craft ${craftItem} or open it directly!"
- 	 	},
- 	 	"desc3": {
- 	 	 	"trans": "Tatil sezonu boyunca, iki kez sınırlı sohbet çerçevesi ve amblemi sunulacak!",
- 	 	 	"eng": "During the holiday season, two time limited chat frame and emblem will be available!"
+ 	 	 	"trans": "Daha fazla ayrıntı için Discord'daki #event kanalına göz atın!",
+ 	 	 	"eng": "Check out the #event channel on Discord for more details!"
  	 	}
  	},
  	"halloweenPromo": {
@@ -7716,13 +9164,56 @@
  	 	 	"trans": "Yine yılın ürkütücü zamanı! Shang-Ri-la Cadılar Bayramı'nı özel bir etkinlikle kutluyor!",
  	 	 	"eng": "Its the spooky time of the year again! Shang-ri-la is celebrating Halloween with a special event!"
  	 	},
- 	 	"desc2": {
- 	 	 	"trans": "Düşmanlar ve AI Core Auto Farm, Jack-O-Lanterns'i düşürme şansına sahip olacak! Bunları kilitli efsanevi kaplar yapmak için kullanabilirsiniz!",
- 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop Jack-o-lanterns! you can use these to craft Locked Legendary Containers!"
+ 	 	"desc2v2": {
+ 	 	 	"trans": "Düşmanlar ve AI Core Auto Farm, Jack-O-Lanterns'i düşürme şansına sahip olacak!",
+ 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop Jack-o-lanterns!"
  	 	},
- 	 	"desc3": {
- 	 	 	"trans": "Cadılar Bayramı sırasında, Time Limited Cyber-Bat sohbet bağış katmanı sunulacak!",
- 	 	 	"eng": "During Halloween, a time limited cyber-bat chat donation tier will be available!"
+ 	 	"desc3v2": {
+ 	 	 	"vars": [
+ 	 	 	 	"npc",
+ 	 	 	 	"location"
+ 	 	 	],
+ 	 	 	"trans": "Cadılar Bayramı sırasında ${npc} ${location} adresinde bulabilirsiniz, Jack-O-Lantern'lerinizi ödüller için değiştirecektir!",
+ 	 	 	"eng": "You can find ${npc} at ${location} during Halloween, he will exchange your Jack-o-lanterns for rewards!"
+ 	 	},
+ 	 	"desc4v2": {
+ 	 	 	"trans": "Cadılar Bayramı sırasında, Time Limited Cadılar Bayramı, Siber Bat Sohbet Bağışı Seviyesi ve Temalı Amblemler sunulacak!",
+ 	 	 	"eng": "During Halloween, a time limited halloween, cyber-bat chat donation tier and themed emblems will be available!"
+ 	 	}
+ 	},
+ 	"christmasPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Mutlu kış tatili!",
+ 	 	 	"eng": "Happy Winter Holiday!"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"trans": "Yine yılın en harika zamanı! Shangri-la'da kış tatilini özel bir etkinlikle kutluyoruz!",
+ 	 	 	"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!"
+ 	 	},
+ 	 	"v2": {
+ 	 	 	"desc2": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Düşmanlar ve AI Core Auto Farm ${itemName} düşürme şansına sahip olacak, ödül almak için kilidini açabilirsiniz!",
+ 	 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop ${itemName}, you can unlock it to receive prizes!"
+ 	 	 	}
+ 	 	},
+ 	 	"v3": {
+ 	 	 	"desc3": {
+ 	 	 	 	"trans": "Tatil sezonunda Noel sohbet çerçevesi ve amblemi mevcut olacak!",
+ 	 	 	 	"eng": "During the holiday season, Christmas chat frame and emblem will be available!"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"christmasPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Noel etkinliği!",
+ 	 	 	"eng": "Christmas Event!"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"trans": "Time Sınırlı Yağma ve Sohbet Çerçevesi!",
+ 	 	 	"eng": "Time limited loot and chat frame!"
  	 	}
  	},
  	"lunarPromo": {
@@ -7734,15 +9225,14 @@
  	 	 	"trans": "Ay Yeni Yılı burada ve Shang-Ri-La'da özel bir etkinlikle kutluyoruz. Gelenekler, sevinç ve beraberlik ile dolu yeni bir yılın başlangıcını kucaklarken bize katılın.",
  	 	 	"eng": "The lunar new year is here, and we're celebrating in Shang-ri-la with a special event. Join us as we embrace the start of a new year, filled with traditions, joy, and togetherness."
  	 	},
- 	 	"desc2": {
+ 	 	"desc2-v2": {
  	 	 	"vars": [
  	 	 	 	"npcShopName",
  	 	 	 	"coinItem",
- 	 	 	 	"llcName",
  	 	 	 	"npcName"
  	 	 	],
- 	 	 	"trans": "${npcShopName} artık iş için açık! Çeşitli özel mutfaklar ve ${llcName} ${npcName} 'den satın almak için ${coinItem} kullanabilirsiniz!",
- 	 	 	"eng": "${npcShopName} is now open for business! You can use ${coinItem} to purchase various special cuisines and ${llcName} from ${npcName}!"
+ 	 	 	"trans": "${npcShopName} artık iş için açık! ${npcName} 'den çeşitli özel mutfaklar satın almak için ${coinItem} kullanabilirsiniz!",
+ 	 	 	"eng": "${npcShopName} is now open for business! You can use ${coinItem} to purchase various special cuisines from ${npcName}!"
  	 	},
  	 	"desc3": {
  	 	 	"vars": [
@@ -7751,18 +9241,39 @@
  	 	 	],
  	 	 	"trans": "${envelopItem} dahil değilse yeni yıl değil! Düşmanlar ve AI Core Auto Farm ${envelopItem} düşecek, rastgele miktarda ${coinItem} almak için onları açacak!",
  	 	 	"eng": "It's not new year if ${envelopItem} is not involved! Enemies and AI Core auto farm will drop ${envelopItem}, open them to receive random amount of ${coinItem}!"
- 	 	},
+ 	 	}
+ 	},
+ 	"lunarPromo1": {
  	 	"desc4": {
  	 	 	"vars": [
- 	 	 	 	"envelopItem",
- 	 	 	 	"npcShop"
+ 	 	 	 	"itemName"
  	 	 	],
- 	 	 	"trans": "Artık her gün ${npcShop} içinde 3 ücretsiz {0} alabilirsiniz!",
- 	 	 	"eng": "You can now receive 3 free ${envelopItem} in ${npcShop} every day!"
+ 	 	 	"trans": "Top yukarı pakette ücretsiz ${itemName} taban alın!",
+ 	 	 	"eng": "Get free ${itemName} base on top up package!"
  	 	},
  	 	"desc5": {
- 	 	 	"trans": "Yalnızca etkinlik döneminde satın alınabilen iki yeni zaman sınırlı sohbet çerçevesi ve amblemi eklendi.",
- 	 	 	"eng": "Added two new time limited chat frame and emblems, only purchasable during event period."
+ 	 	 	"trans": "Yalnızca etkinlik döneminde satın alınabilecek yeni Time Sınırlı Sohbet Çerçevesi ve Amblemleri eklendi.",
+ 	 	 	"eng": "Added new time limited chat frame and emblems, only purchasable during event period."
+ 	 	}
+ 	},
+ 	"lunarNewYearPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Mutlu Ay Yeni Yıl!",
+ 	 	 	"eng": "Happy Lunar New Year!"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"item1",
+ 	 	 	 	"item2"
+ 	 	 	],
+ 	 	 	"trans": "Ay Yeni Yılı sırasında ücretsiz ${item1} ve ${item2} alın 🥳",
+ 	 	 	"eng": "Receive free ${item1} and ${item2} during the lunar new year 🥳"
+ 	 	}
+ 	},
+ 	"promotionModal": {
+ 	 	"title": {
+ 	 	 	"trans": "Özel Faydalar",
+ 	 	 	"eng": "Special Benefits"
  	 	}
  	},
  	"referralPromo": {
@@ -7805,6 +9316,195 @@
  	 	 	"eng": "*You will receive the items in your item inbox when your friend reaches level 20"
  	 	}
  	},
+ 	"referralPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Tavsiye Ödülleri",
+ 	 	 	"eng": "Referral rewards"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"trans": "Ücretsiz birim*, nadir kilitli konteyner, Fanny Pack",
+ 	 	 	"eng": "Free Unit*, Rare Locked Container, Fanny Pack"
+ 	 	},
+ 	 	"details": {
+ 	 	 	"trans": "detaylar",
+ 	 	 	"eng": "details"
+ 	 	}
+ 	},
+ 	"sakuraPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Sakura Festivali",
+ 	 	 	"eng": "Sakura Festival"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"trans": "Bahar Festivali geldi! Sakura yaprakları dökülüyor ve hava çiçeklerin kokusuyla dolu",
+ 	 	 	"eng": "The Spring Festival is here! Sakura petals are falling, and the air is filled with the fragrance of flowers. "
+ 	 	},
+ 	 	"desc2": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "Etkinlik süresince yapılan tüm atlamalar, gerekli birimlerde %${percent} indirim sağlar",
+ 	 	 	"eng": "All skips during the event period gets ${percent}% off discount on unit required"
+ 	 	},
+ 	 	"desc3": {
+ 	 	 	"trans": "Özel Sakura sohbet çerçevesi ve amblemi etkinlik süresince mevcuttur",
+ 	 	 	"eng": "Exclusive Sakura chat frame and emblem is available during event period"
+ 	 	},
+ 	 	"chatMessage1": {
+ 	 	 	"trans": "İlkbahar geldi",
+ 	 	 	"eng": "Spring is here"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "Etkinlik süresince yapılan tüm atlamalar, gerekli birimde %${percent} indirim alır 🥳",
+ 	 	 	"eng": "All skips during the event period gets ${percent}% off discount on unit required 🥳"
+ 	 	}
+ 	},
+ 	"skipDiscountPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "İndirimi atla",
+ 	 	 	"eng": "Skip Discount"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "${percent}% 105 dakikada indirim ve daha yüksek atlamalar!",
+ 	 	 	"eng": "${percent}% discount on 105 minutes and higher skips!"
+ 	 	}
+ 	},
+ 	"skipPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Atlayarak ücretsiz özel kozmetik kazanın",
+ 	 	 	"eng": "Earn free exclusive cosmetics by skipping"
+ 	 	},
+ 	 	"subtitle": {
+ 	 	 	"trans": "Atlayarak topluluğa ne kadar yardımcı olduğunuzu gösterin!",
+ 	 	 	"eng": "Show off how much you have helped the community by skipping!❤️"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"emblem"
+ 	 	 	],
+ 	 	 	"trans": "\"${emblem}\" amblemi almak için ${amount} atlayın",
+ 	 	 	"eng": "Collect ${amount} skip points to get \"${emblem}\" emblem"
+ 	 	},
+ 	 	"desc2": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"emblem"
+ 	 	 	],
+ 	 	 	"trans": "\"${emblem}\" amblemi almak için ${amount} atlayın",
+ 	 	 	"eng": "Collect ${amount} skip points to get \"${emblem}\" emblem"
+ 	 	},
+ 	 	"desc3": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"emblem"
+ 	 	 	],
+ 	 	 	"trans": "Kalıcı \"${frameName}\" bağış sohbet çerçevesi almak için ${amount} atla",
+ 	 	 	"eng": "Collect ${amount} skip points to get \"${emblem}\" emblem"
+ 	 	},
+ 	 	"desc4": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"frameName"
+ 	 	 	],
+ 	 	 	"trans": "Kalıcı \"${frameName}\" bağış sohbet çerçevesi almak için ${amount} atla",
+ 	 	 	"eng": "Collect ${amount} skip points to receive permanent \"${frameName}\" donation chat frame"
+ 	 	},
+ 	 	"chatMessage1": {
+ 	 	 	"vars": [
+ 	 	 	 	"points"
+ 	 	 	],
+ 	 	 	"trans": "${points} atlama puanlarından alın",
+ 	 	 	"eng": "Receive at ${points} skip points"
+ 	 	},
+ 	 	"desc5": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"frameName"
+ 	 	 	],
+ 	 	 	"trans": "Kalıcı \"${frameName}\" bağış sohbet çerçevesi almak için ${amount} atlama puanlarını toplayın",
+ 	 	 	"eng": "Collect ${amount} skip points to receive permanent \"${frameName}\" donation chat frame"
+ 	 	},
+ 	 	"instructions1": {
+ 	 	 	"trans": "Kazandığınız atlama noktası atlama süresine dayanır:",
+ 	 	 	"eng": "Skip point you earn is base on skip duration:"
+ 	 	},
+ 	 	"instructions2": {
+ 	 	 	"trans": "- 15 ila 150 dakika = 15 dakikada 1 puan",
+ 	 	 	"eng": "- 15 to 150 minutes = 1 point per 15 minutes"
+ 	 	},
+ 	 	"instructions3": {
+ 	 	 	"trans": "- 150 dakika ve üstü = 10 puan",
+ 	 	 	"eng": "- 150 minutes and above = 10 points"
+ 	 	},
+ 	 	"footnote2": {
+ 	 	 	"trans": "150 dakikadan fazla 10 puana sabitlenir, çoğu oyuncu için faydayı en üst düzeye çıkarmak için büyük bir atlama yerine birden fazla atlamayı teşvik etmektir",
+ 	 	 	"eng": "Above 150 minutes is fixed to 10 points is to encourage multiple skips rather than one huge skip to maximize benefit for most players"
+ 	 	},
+ 	 	"footnote1": {
+ 	 	 	"trans": "Skip istatistiği, bu özelliğin başlangıcından herkes için saymaya başlayacaktır.",
+ 	 	 	"eng": "The skip point statistic will start counting from the start of this feature for everyone."
+ 	 	}
+ 	},
+ 	"skipPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Özel kozmetikler için atlayın",
+ 	 	 	"eng": "Skip for exclusive cosmetics"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"trans": "Atlayarak çeşitli özel kozmetikler alın",
+ 	 	 	"eng": "Receive various exclusive cosmetics by skipping"
+ 	 	},
+ 	 	"chatMessage1": {
+ 	 	 	"vars": [
+ 	 	 	 	"skinName",
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "${skinName}, ${playerName}",
+ 	 	 	"eng": "Be a ${skinName}, ${playerName}"
+ 	 	}
+ 	},
+ 	"thanksgivingPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Şükran Günü kutlu olsun!",
+ 	 	 	"eng": "Happy Thanksgiving!"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"trans": "Etkinlik döneminde, kavrulmuş Türkiye nadiren tüm seviyelerde temizleme ve AKF botundan düşecek",
+ 	 	 	"eng": "During event period, Roasted Turkey will drop rarely from scavenging and AKF Bot on all levels"
+ 	 	},
+ 	 	"desc2": {
+ 	 	 	"trans": "Kavrulmuş bir hindi tüketildiğinde, 20 dakika boyunca AFK görevlerinde +% 20 exp alacaksınız",
+ 	 	 	"eng": "When a Roasted Turkey is consumed, you will get +20% EXP on AFK tasks for 20 minutes"
+ 	 	},
+ 	 	"footnote1": {
+ 	 	 	"trans": "Exp bonus kontrolünün AFK tamamlama süresinde olduğunu lütfen unutmayın, bu nedenle bonus almak için tamamlanma sırasında kavrulmuş hindi tutkunu aktif hale getirmeniz gerekir.",
+ 	 	 	"eng": "Please note that the EXP bonus check is at AFK completion time, so you must have the Roasted Turkey buff active at the time of completion to receive the bonus."
+ 	 	},
+ 	 	"footnote2": {
+ 	 	 	"trans": "Bu etki diğer exp bonusu ile istiflenecek ve yalnızca AFK görevlerini etkileyecektir; AFK zamanlayıcıları olmayan görevler etkilenmeyecektir.",
+ 	 	 	"eng": "This effect will stack with other EXP bonus, and will only affect AFK tasks; tasks that does not have AFK timers will not be affected."
+ 	 	}
+ 	},
+ 	"thanksgivingPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Şükran Günü etkinliği",
+ 	 	 	"eng": "Thanksgiving event"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "AFK görevlerinde +${percent}% exp almak için lezzetli hindi tüketin",
+ 	 	 	"eng": "Consume delicious turkey to get +${percent}% EXP on AFK tasks"
+ 	 	}
+ 	},
  	"retroPromo": {
  	 	"title": {
  	 	 	"trans": "Synthwave güncellemesi",
@@ -7845,6 +9545,24 @@
  	 	"desc2": {
  	 	 	"trans": "İki yeni bağışçı çerçevesi eklendi",
  	 	 	"eng": "Two new donator frames added"
+ 	 	}
+ 	},
+ 	"renamePetModal": {
+ 	 	"title": {
+ 	 	 	"trans": "Evcil Hayvanı Yeniden Adlandır",
+ 	 	 	"eng": "Rename Pet"
+ 	 	},
+ 	 	"newName": {
+ 	 	 	"trans": "Yeni İsim",
+ 	 	 	"eng": "New Name"
+ 	 	},
+ 	 	"description": {
+ 	 	 	"trans": "Evcil hayvanınız için yeni bir isim girin",
+ 	 	 	"eng": "Enter new name for your pet"
+ 	 	},
+ 	 	"rename": {
+ 	 	 	"trans": "Yeniden Adlandır",
+ 	 	 	"eng": "Rename"
  	 	}
  	},
  	"reportPlayerModal": {
@@ -7920,9 +9638,24 @@
  	 	 	 	 	"trans": "Bu oyuncunun diğer oyuncuların iznini yönetmesine izin verin",
  	 	 	 	 	"eng": "Allow this player to manage permission of other players"
  	 	 	 	}
+ 	 	 	},
+ 	 	 	"send_notice": {
+ 	 	 	 	"trans": "Bildirim Gönder",
+ 	 	 	 	"eng": "Send Notice",
+ 	 	 	 	"description": {
+ 	 	 	 	 	"trans": "Bu oyuncunun tüm çete üyelerine bildirim göndermesine izin verin",
+ 	 	 	 	 	"eng": "Allow this player to send notice to all gang members"
+ 	 	 	 	}
  	 	 	}
  	 	},
  	 	"error": {
+ 	 	 	"insufficientBitcoin": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Yetersiz bitcoin var, gerekli: ${amount}",
+ 	 	 	 	"eng": "You have insufficient Bitcoin, required: ${amount}"
+ 	 	 	},
  	 	 	"inviteCooldown": {
  	 	 	 	"trans": "Bu oyuncuyu yakın zamanda davet ettiniz",
  	 	 	 	"eng": "You have already invited this player recently"
@@ -8061,6 +9794,17 @@
  	 	 	],
  	 	 	"trans": "Ayda ${price} USD",
  	 	 	"eng": "${price} USD Per Month"
+ 	 	},
+ 	 	"inAppPurchaseDescription": {
+ 	 	 	"trans": "Abonelik tabanlı bağış, istediğin zaman mağazandan iptal edebilirsin.",
+ 	 	 	"eng": "Subscription based donation, you can cancel it at anytime from your store."
+ 	 	},
+ 	 	"monthlyPrice": {
+ 	 	 	"vars": [
+ 	 	 	 	"price"
+ 	 	 	],
+ 	 	 	"trans": "Aylık ${price}",
+ 	 	 	"eng": "${price} per Month"
  	 	}
  	},
  	"cosmetic": {
@@ -8095,6 +9839,150 @@
  	 	"checkEmail": {
  	 	 	"trans": "Lütfen e -postanızı kontrol edin ve şifreyi sıfırlamak için talimatları izleyin",
  	 	 	"eng": "Please check your email and follow the instructions to reset the password"
+ 	 	}
+ 	},
+ 	"leaderboardTypePage": {
+ 	 	"gameplay": {
+ 	 	 	"trans": "Oyun lideri tabloları",
+ 	 	 	"eng": "Gameplay Leaderboards"
+ 	 	},
+ 	 	"gameplayDesc": {
+ 	 	 	"trans": "Bu skor tabloları oyuncunun oyun istatistiklerini gösterir. 💪",
+ 	 	 	"eng": "These leaderboards shows player's gameplay statistics.💪"
+ 	 	},
+ 	 	"gang": {
+ 	 	 	"trans": "En iyi çeteler",
+ 	 	 	"eng": "Top Gangs"
+ 	 	},
+ 	 	"control": {
+ 	 	 	"trans": "Meslek kontrolü",
+ 	 	 	"eng": "Occupation Control"
+ 	 	},
+ 	 	"contribution": {
+ 	 	 	"trans": "Topluluk Katkısı",
+ 	 	 	"eng": "Community Contribution"
+ 	 	},
+ 	 	"contributionDesc": {
+ 	 	 	"trans": "Bu kurullar, topluluğa katkıda bulunan efsanelere saygı ve kredi gösterir",
+ 	 	 	"eng": "These boards shows respect and credits to the legends who have contributed to the community.❤️"
+ 	 	}
+ 	},
+ 	"playerDetailsPage": {
+ 	 	"tabs": {
+ 	 	 	"stats": {
+ 	 	 	 	"trans": "istatistikler",
+ 	 	 	 	"eng": "stats"
+ 	 	 	},
+ 	 	 	"equipment": {
+ 	 	 	 	"trans": "Envanter",
+ 	 	 	 	"eng": "inventory"
+ 	 	 	},
+ 	 	 	"assets": {
+ 	 	 	 	"trans": "varlıklar",
+ 	 	 	 	"eng": "assets"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"petListPage": {
+ 	 	"exceedSlot": {
+ 	 	 	"vars": [
+ 	 	 	 	"petName"
+ 	 	 	],
+ 	 	 	"trans": "${petName} şu anda apartmanda yer olmadığı için sokakta yaşıyor",
+ 	 	 	"eng": "${petName} is currently living on the street due to lack of space in your apartment"
+ 	 	},
+ 	 	"noPet": {
+ 	 	 	"trans": "Henüz bir evcil hayvanın yok",
+ 	 	 	"eng": "You have no pet yet"
+ 	 	},
+ 	 	"acquirePets": {
+ 	 	 	"trans": "Evcil Hayvan Edin",
+ 	 	 	"eng": "Acquire Pets"
+ 	 	}
+ 	},
+ 	"petAdoption": {
+ 	 	"error": {
+ 	 	 	"noBuff": {
+ 	 	 	 	"trans": "Buff aktif değil",
+ 	 	 	 	"eng": "Buff is not activated"
+ 	 	 	},
+ 	 	 	"cooldown": {
+ 	 	 	 	"trans": "Evcil hayvan sahiplenme işlemi şu anda beklemede, biraz sonra tekrar dene!",
+ 	 	 	 	"eng": "Pet adoption is on cooldown"
+ 	 	 	},
+ 	 	 	"noSlot": {
+ 	 	 	 	"trans": "Bir evcil hayvan sahiplenmek için bir daire gereklidir",
+ 	 	 	 	"eng": "You need to rent a bigger apartment to accommodate more pets"
+ 	 	 	},
+ 	 	 	"noItem": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Bir evcil hayvan sahiplenmek için bir ${itemName}'a ihtiyacın var",
+ 	 	 	 	"eng": "You need a ${itemName} to adopt a pet"
+ 	 	 	}
+ 	 	},
+ 	 	"petSlot": {
+ 	 	 	"trans": "Apartman evcil hayvan kapasitesi",
+ 	 	 	"eng": "Apartment pet capacity"
+ 	 	},
+ 	 	"cooldownTitle": {
+ 	 	 	"trans": "Benimseme Soğuma Süresi",
+ 	 	 	"eng": "Adoption Available"
+ 	 	},
+ 	 	"buffActivationButton": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Benimseme Gücünü Aktifleştir",
+ 	 	 	 	"eng": "Activate Adoption Buff"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Aktifleştirildiğinde tüm oyuncuların bir evcil hayvan edinmesine izin verirken buff aktifken",
+ 	 	 	 	"eng": "Activate to allow all players to adopt a pet while buff is active"
+ 	 	 	},
+ 	 	 	"buttonText": {
+ 	 	 	 	"activated": {
+ 	 	 	 	 	"trans": "Aktive Edildi",
+ 	 	 	 	 	"eng": "Activated"
+ 	 	 	 	},
+ 	 	 	 	"notActivated": {
+ 	 	 	 	 	"trans": "Buff'i etkinleştir",
+ 	 	 	 	 	"eng": "Activate Buff"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"confirmTitle": {
+ 	 	 	 	"trans": "Benimseme Gücünü Aktifleştir",
+ 	 	 	 	"eng": "Activate Adoption Buff"
+ 	 	 	},
+ 	 	 	"confirmDescription": {
+ 	 	 	 	"trans": "Adoption Buff'i etkinleştirmek istediğinden emin misin?",
+ 	 	 	 	"eng": "Are you sure you want to activate the Adoption Buff?"
+ 	 	 	}
+ 	 	},
+ 	 	"noItemConfirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Envanterde ${itemName} yok",
+ 	 	 	 	"eng": "No ${itemName} in inventory"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Envanterinde ${itemName} bulunmuyor, ancak diğer oyuncuların faydalanması için güçlendirme etkinleştirebilirsin. Ancak ${itemName} olmadan evcil hayvan sahiplenemezsin",
+ 	 	 	 	"eng": "You do not have an ${itemName} in your inventory, you still can activate the buff for other players to benefit, however without ${itemName} you will not be able to adopt pets"
+ 	 	 	},
+ 	 	 	"confirmText": {
+ 	 	 	 	"trans": "Buff'i etkinleştir",
+ 	 	 	 	"eng": "Activate Buff"
+ 	 	 	}
+ 	 	},
+ 	 	"adoptButton": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Yeni bir evcil hayvan edinmek",
+ 	 	 	 	"eng": "Adopt a new pet"
+ 	 	 	}
  	 	}
  	},
  	"sendCosmeticPage": {
@@ -8204,16 +10092,63 @@
  	 	 	"eng": "You have successfully sent an emblem to player \"${playerName}\""
  	 	}
  	},
+ 	"bulkCrafting": {
+ 	 	"cannotCraft": {
+ 	 	 	"trans": "Boşta değilken zanaat yapamazsın",
+ 	 	 	"eng": "You cannot craft while not idle"
+ 	 	}
+ 	},
+ 	"captcha": {
+ 	 	"success": {
+ 	 	 	"trans": "Pin kodu kabul edildi",
+ 	 	 	"eng": "Pin code accepted"
+ 	 	},
+ 	 	"invalid": {
+ 	 	 	"trans": "Geçersiz Pin Kodu",
+ 	 	 	"eng": "Invalid Pin Code"
+ 	 	}
+ 	},
  	"chatModuleHelper": {
  	 	"aiConnectNotAvailable": {
  	 	 	"trans": "İzin reddedildi. SHANC Sohbete Bağlı Değil",
  	 	 	"eng": "Permission Denied. SLANC not connected to chat"
  	 	}
  	},
+ 	"server": {
+ 	 	"announcement": {
+ 	 	 	"receiveItem": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player",
+ 	 	 	 	 	"item"
+ 	 	 	 	],
+ 	 	 	 	"trans": "🎉Congratülasyon! ${player} ${item}!",
+ 	 	 	 	"eng": "🎉Congratulation! ${player} received ${item}!"
+ 	 	 	}
+ 	 	}
+ 	},
  	"gifting": {
  	 	"cannotSend": {
  	 	 	"trans": "Bu oyuncu şimdi hediye alamıyor",
  	 	 	"eng": "This player cannot receive gift now"
+ 	 	}
+ 	},
+ 	"topUpReward": {
+ 	 	"mail": {
+ 	 	 	"vars": [
+ 	 	 	 	"event",
+ 	 	 	 	"items"
+ 	 	 	],
+ 	 	 	"trans": "${event} Top Up Ödül ${items} Gelen kutunuza gönderildi",
+ 	 	 	"eng": " ${event} top up reward ${items} has been sent to your inbox"
+ 	 	}
+ 	},
+ 	"error": {
+ 	 	"cannotUseItemInStatus": {
+ 	 	 	"vars": [
+ 	 	 	 	"minutes"
+ 	 	 	],
+ 	 	 	"trans": "Bu öğeyi kullanamazsınız çünkü onunla çelişen bir durum etkisi vardır",
+ 	 	 	"eng": "You cannot use this item because there is a status effect that conflicts with it"
  	 	}
  	},
  	"player": {
@@ -8241,6 +10176,10 @@
  	 	 	"invalidTravelLink": {
  	 	 	 	"trans": "Geçersiz seyahat bağlantısı, devam ederse lütfen yeniden yükleyin",
  	 	 	 	"eng": "Invalid Travel Link, if persist please reload"
+ 	 	 	},
+ 	 	 	"recipeDisabled": {
+ 	 	 	 	"trans": "Bu tarif şu anda mevcut değil",
+ 	 	 	 	"eng": "This recipe is currently not available"
  	 	 	}
  	 	},
  	 	"escape": {
@@ -8268,6 +10207,13 @@
  	 	 	"eng": "Your level is too high to perform this action here, try to do it in the next zone."
  	 	},
  	 	"giveCred": {
+ 	 	 	"mail": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"playerName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${playerName} 'dan bir sokak kredisi aldınız",
+ 	 	 	 	"eng": "You have received a street cred from ${playerName}"
+ 	 	 	},
  	 	 	"success": {
  	 	 	 	"trans": "Daily Street kredisi verdin.",
  	 	 	 	"eng": "You have given daily street cred."
@@ -8287,9 +10233,9 @@
  	 	 	"trans": "Bu isim diğer oyuncu tarafından kullanılır, lütfen başka adı kullanın",
  	 	 	"eng": "this name is used by other player, please use other name"
  	 	},
- 	 	"nameIllegal": {
- 	 	 	"trans": "Yasadışı isim, lütfen başka bir isim kullanın",
- 	 	 	"eng": "Illegal name, please use other name"
+ 	 	"reservedKeyword": {
+ 	 	 	"trans": "Bu ad ayrılmış ifadeler içerir, lütfen başka bir isim kullanın",
+ 	 	 	"eng": "This name contains reserved wordings, please use other name"
  	 	},
  	 	"nameProfane": {
  	 	 	"trans": "Bu ad izin verilmeyen ifadeler içerir, lütfen başka bir isim kullanın",
@@ -8298,6 +10244,49 @@
  	 	"nameInvalid": {
  	 	 	"trans": "İsim uzunluğu 4'ten daha büyük olmalı, daha az veya 16'ya eşit olmalı ve sadece İngilizce karakterler, sayılar veya \\ '_ \\' içerir",
  	 	 	"eng": "name length must be greater then 4, less then or equal to 16 and only contains English characters, numbers or \\'_\\'"
+ 	 	}
+ 	},
+ 	"skip": {
+ 	 	"skipRewardMail": {
+ 	 	 	"1": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${amount} atlama puanlarına sahip olduğunuz için \"Skip Emblem 1\" yi aldınız",
+ 	 	 	 	"eng": "You have received \"Skip Emblem 1\" for having ${amount} skip points"
+ 	 	 	},
+ 	 	 	"2": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${amount} atlama puanları için \"Skip Emblem 2\" yi aldınız",
+ 	 	 	 	"eng": "You have received \"Skip Emblem 2\" for having ${amount} skip points"
+ 	 	 	},
+ 	 	 	"3": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${amount} atlama puanları için \"Skip Emblem 3\" yi aldınız",
+ 	 	 	 	"eng": "You have received \"Skip Emblem 3\" for having ${amount} skip points"
+ 	 	 	},
+ 	 	 	"4": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"frameName",
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${amount} atlama puanları için \"${frameName}\" bağışçı sohbet çerçevesi aldınız",
+ 	 	 	 	"eng": "You have received \"${frameName}\" donator chat frame for having ${amount} skip points"
+ 	 	 	}
+ 	 	},
+ 	 	"announcement": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName",
+ 	 	 	 	"playerCount",
+ 	 	 	 	"skipTime",
+ 	 	 	 	"credButton"
+ 	 	 	],
+ 	 	 	"trans": "${playerName} Global Time Skip'i kullandı, şu anda AFK görevini gerçekleştiren tüm çevrimiçi oyuncular (${playerCount} oyuncular) otomatik olarak ${skipTime} dakika sürecek. Efsaneye biraz krediler mi verin? ${credButton}",
+ 	 	 	"eng": "${playerName} has used Global Time Skip, all online players currently performing AFK task (${playerCount} players) will automatically time skip by ${skipTime} minutes. Give the legend some creds? ${credButton}"
  	 	}
  	}
 }

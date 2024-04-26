@@ -1,4 +1,56 @@
 {
+ 	"apartment": {
+ 	 	"title": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "${playerName}的公寓",
+ 	 	 	"eng": "${playerName}'s Apartment"
+ 	 	},
+ 	 	"terminateLease": {
+ 	 	 	"trans": "終止租約",
+ 	 	 	"eng": "Terminate Lease"
+ 	 	},
+ 	 	"viewPets": {
+ 	 	 	"trans": "查看寵物",
+ 	 	 	"eng": "View Pets"
+ 	 	},
+ 	 	"address": {
+ 	 	 	"cityName": {
+ 	 	 	 	"trans": "香格里拉",
+ 	 	 	 	"eng": "Shangri-la"
+ 	 	 	}
+ 	 	},
+ 	 	"rent": {
+ 	 	 	"paidMail": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "你已經支付了你的公寓租金 ${amount}",
+ 	 	 	 	"eng": "You have paid your apartment rent of ${amount}"
+ 	 	 	},
+ 	 	 	"unpaidMail": {
+ 	 	 	 	"trans": "你沒有付公寓租金，租約已被終止。",
+ 	 	 	 	"eng": "You have failed to pay your apartment rent, your apartment has been terminated"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"purchaseApartmentUI": {
+ 	 	"confirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "租賃公寓",
+ 	 	 	 	"eng": "Rent Apartment"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "你確定要租這間公寓嗎？",
+ 	 	 	 	"eng": "Are you sure you want to rent this apartment?"
+ 	 	 	}
+ 	 	},
+ 	 	"rentButton": {
+ 	 	 	"trans": "立即租借",
+ 	 	 	"eng": "Rent Now"
+ 	 	}
+ 	},
  	"tabs": {
  	 	"map": {
  	 	 	"trans": "地圖",
@@ -22,10 +74,41 @@
  	 	}
  	},
  	"ui": {
- 	 	"blackMarket": {
- 	 	 	"selectItemButton": {
- 	 	 	 	"trans": "列印和販賣",
- 	 	 	 	"eng": "Print And Sell"
+ 	 	"bulkCraft": {
+ 	 	 	"amountSelect": {
+ 	 	 	 	"title": {
+ 	 	 	 	 	"trans": "選擇金額",
+ 	 	 	 	 	"eng": "Select Amount"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"duration": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"duration"
+ 	 	 	 	],
+ 	 	 	 	"trans": "此任務將消耗${duration}",
+ 	 	 	 	"eng": "This task will take ${duration}"
+ 	 	 	},
+ 	 	 	"durationTooLong": {
+ 	 	 	 	"trans": "選擇的物品太多",
+ 	 	 	 	"eng": "Too many items selected"
+ 	 	 	}
+ 	 	},
+ 	 	"generalCaptcha": {
+ 	 	 	"inputLabel": {
+ 	 	 	 	"trans": "PIN碼",
+ 	 	 	 	"eng": "Pin Code"
+ 	 	 	},
+ 	 	 	"inputPlaceholder": {
+ 	 	 	 	"trans": "輸入PIN碼",
+ 	 	 	 	"eng": "Enter pin code"
+ 	 	 	},
+ 	 	 	"story": {
+ 	 	 	 	"trans": "您找到了一個上鎖的舊保險箱，上面的便利貼好像寫了些什麼。",
+ 	 	 	 	"eng": "You found an old locked safe box, there seems like a post-it with some text written on it."
+ 	 	 	},
+ 	 	 	"title": {
+ 	 	 	 	"trans": "需要PIN碼以解鎖",
+ 	 	 	 	"eng": "Pin code required to unlock"
  	 	 	}
  	 	},
  	 	"clan": {
@@ -47,15 +130,15 @@
  	 	 	 	"eng": "Deposit Bitcoin"
  	 	 	},
  	 	 	"editMotto": {
+ 	 	 	 	"button": {
+ 	 	 	 	 	"trans": "編輯公會座右銘",
+ 	 	 	 	 	"eng": "Edit Gang Motto"
+ 	 	 	 	},
  	 	 	 	"modal": {
  	 	 	 	 	"title": {
  	 	 	 	 	 	"trans": "請輸入公會的座右銘",
  	 	 	 	 	 	"eng": "Please enter your gang motto"
  	 	 	 	 	}
- 	 	 	 	},
- 	 	 	 	"button": {
- 	 	 	 	 	"trans": "編輯公會座右銘",
- 	 	 	 	 	"eng": "Edit Gang Motto"
  	 	 	 	}
  	 	 	},
  	 	 	"updateImage": {
@@ -172,12 +255,6 @@
  	 	 	 	}
  	 	 	}
  	 	},
- 	 	"supportUkraine": {
- 	 	 	"description": {
- 	 	 	 	"trans": "因為一個人的野心，烏克蘭、俄羅斯和整個世界的人們都在受苦。\r\n用愛聊天，不要戰爭。",
- 	 	 	 	"eng": "People of Ukraine, Russia and the whole world are suffering because one man's ambition.\\n Make love exploit, not war."
- 	 	 	}
- 	 	},
  	 	"bank": {
  	 	 	"balance": {
  	 	 	 	"trans": "餘額",
@@ -230,7 +307,7 @@
  	 	 	 	"eng": "Increase the max amount of items you can store in vault to ${upgradeToSlot}"
  	 	 	},
  	 	 	"itemLocked": {
- 	 	 	 	"trans": "此項目已鎖定，無法儲存。",
+ 	 	 	 	"trans": "此物品已鎖定，無法儲存。",
  	 	 	 	"eng": "This item is locked and can not be stored."
  	 	 	},
  	 	 	"modal": {
@@ -288,24 +365,6 @@
  	 	 	 	}
  	 	 	}
  	 	},
- 	 	"generalCaptcha": {
- 	 	 	"story": {
- 	 	 	 	"trans": "您找到了一個上鎖的舊保險箱，上面的便利貼好像寫了些什麼。",
- 	 	 	 	"eng": "You found an old locked safe box, there seems like a post-it with some text written on it."
- 	 	 	},
- 	 	 	"title": {
- 	 	 	 	"trans": "解鎖所需的PIN碼",
- 	 	 	 	"eng": "Pin code required to unlock"
- 	 	 	},
- 	 	 	"inputLabel": {
- 	 	 	 	"trans": "PIN碼",
- 	 	 	 	"eng": "Pin Code"
- 	 	 	},
- 	 	 	"inputPlaceholder": {
- 	 	 	 	"trans": "輸入PIN碼",
- 	 	 	 	"eng": "Enter pin code"
- 	 	 	}
- 	 	},
  	 	"chat": {
  	 	 	"reconnecting": {
  	 	 	 	"trans": "重新連線",
@@ -327,11 +386,11 @@
  	 	 	 	"eng": "Links are not allowed"
  	 	 	},
  	 	 	"spamBlock": {
- 	 	 	 	"trans": "請不要發送無意義的訊息，垃圾訊息將被禁言。",
+ 	 	 	 	"trans": "請不要傳送無意義的訊息，垃圾訊息將被禁言。",
  	 	 	 	"eng": "Please do not send meaningless message, spams will be muted."
  	 	 	},
  	 	 	"repeatBlock": {
- 	 	 	 	"trans": "請不要重複發送相同的訊息，濫發訊息將被禁言。",
+ 	 	 	 	"trans": "請不要重複傳送相同的訊息，濫發訊息將被禁言。",
  	 	 	 	"eng": "Please do not send the same message repeatedly, spams will be muted."
  	 	 	},
  	 	 	"shortChatBlock": {
@@ -342,7 +401,7 @@
  	 	 	 	"vars": [
  	 	 	 	 	"minLevel"
  	 	 	 	],
- 	 	 	 	"trans": "您至少需要達到等級${minLevel}才能發送聊天訊息",
+ 	 	 	 	"trans": "您至少需要達到等級${minLevel}才能傳送聊天訊息",
  	 	 	 	"eng": "You need to be at least level ${minLevel} to send chat messages"
  	 	 	},
  	 	 	"chat": {
@@ -392,11 +451,21 @@
  	 	},
  	 	"chatPreview": {
  	 	 	"notConnected": {
- 	 	 	 	"trans": "聊天系統未連接",
+ 	 	 	 	"trans": "聊天系統未連線",
  	 	 	 	"eng": "chat system not connected"
  	 	 	}
  	 	},
  	 	"clanPage": {
+ 	 	 	"notice": {
+ 	 	 	 	"time": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"playerName",
+ 	 	 	 	 	 	"time"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "發表於${playerName} ${time}以前",
+ 	 	 	 	 	"eng": "Posted by ${playerName} ${time} ago"
+ 	 	 	 	}
+ 	 	 	},
  	 	 	"createClan": {
  	 	 	 	"title": {
  	 	 	 	 	"trans": "您不是任何公會的成員",
@@ -441,7 +510,7 @@
  	 	 	 	"eng": "Critical Error: Neural Link Disconnected"
  	 	 	},
  	 	 	"progressBarTitle": {
- 	 	 	 	"trans": "重新建立連接",
+ 	 	 	 	"trans": "重新建立連線",
  	 	 	 	"eng": "Re-establishing connection"
  	 	 	}
  	 	},
@@ -525,17 +594,27 @@
  	 	},
  	 	"timeSkip": {
  	 	 	"unitTimeSkipButton": {
- 	 	 	 	"title": {
+ 	 	 	 	"unit": {
  	 	 	 	 	"vars": [
- 	 	 	 	 	 	"timeSkipMinutes",
- 	 	 	 	 	 	"timeSkipCost"
+ 	 	 	 	 	 	"units"
  	 	 	 	 	],
- 	 	 	 	 	"trans": "全域時光飛逝（${timeSkipMinutes} 分鐘，費用: ${timeSkipCost}Unit）",
- 	 	 	 	 	"eng": "Global Skip (${timeSkipMinutes} Min, Cost ${timeSkipCost} Units)"
+ 	 	 	 	 	"trans": "${units}單位",
+ 	 	 	 	 	"eng": "${units} units"
+ 	 	 	 	},
+ 	 	 	 	"minute": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"minutes"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "${minutes}分鐘",
+ 	 	 	 	 	"eng": "Skip ${minutes} minutes"
+ 	 	 	 	},
+ 	 	 	 	"title2": {
+ 	 	 	 	 	"trans": "立刻完成",
+ 	 	 	 	 	"eng": "Finish Now"
  	 	 	 	},
  	 	 	 	"description": {
  	 	 	 	 	"trans": "「全域時光飛逝」使您跳過掛機等待時間，並立即完成掛機作業。 \n     此效果將適用於全球所有正在執行掛機作業的玩家",
- 	 	 	 	 	"eng": "Global Skip allow you to skip the AFK waiting time, and finish it instantly.\r\n    this effect will be applied to all player performing AFK task"
+ 	 	 	 	 	"eng": "Finish the task instantly for all players in the game and earn skip points to show your support to other players!"
  	 	 	 	}
  	 	 	},
  	 	 	"itemTimeSkipButton": {
@@ -543,7 +622,7 @@
  	 	 	 	 	"vars": [
  	 	 	 	 	 	"itemSkipMinutes"
  	 	 	 	 	],
- 	 	 	 	 	"trans": "免費跳過（${itemSkipMinutes} 分鐘）",
+ 	 	 	 	 	"trans": "免費時光飛逝（${itemSkipMinutes} 分鐘）",
  	 	 	 	 	"eng": "Free time skip (${itemSkipMinutes} Min)"
  	 	 	 	},
  	 	 	 	"description": {
@@ -680,12 +759,16 @@
  	 	 	 	"trans": "已解鎖",
  	 	 	 	"eng": "Unlocked"
  	 	 	},
+ 	 	 	"upgradeModuleTitleHeader": {
+ 	 	 	 	"trans": "升級插槽",
+ 	 	 	 	"eng": "Upgrades Slots"
+ 	 	 	},
  	 	 	"upgradeModuleTitle": {
- 	 	 	 	"trans": "升級模組${index}",
- 	 	 	 	"eng": "upgrade slot ${index}",
  	 	 	 	"vars": [
  	 	 	 	 	"index"
- 	 	 	 	]
+ 	 	 	 	],
+ 	 	 	 	"trans": "升級模組${index}",
+ 	 	 	 	"eng": "upgrade slot ${index}"
  	 	 	},
  	 	 	"equip": {
  	 	 	 	"trans": "裝備",
@@ -834,7 +917,7 @@
  	 	 	 	"eng": " Repair all items for (${repairFee} Bitcoin)"
  	 	 	},
  	 	 	"notAvailable": {
- 	 	 	 	"trans": "此NPC當前不可用",
+ 	 	 	 	"trans": "此NPC目前不可用",
  	 	 	 	"eng": "This NPC is currently not available"
  	 	 	},
  	 	 	"unlockContainerButton": {
@@ -870,11 +953,11 @@
  	 	 	 	"vars": [
  	 	 	 	 	"skipCount"
  	 	 	 	],
- 	 	 	 	"trans": "跳過中${skipCount}",
+ 	 	 	 	"trans": "飛逝中${skipCount}",
  	 	 	 	"eng": "Skipping ${skipCount}"
  	 	 	},
  	 	 	"skipAvailable": {
- 	 	 	 	"trans": "可以使用跳過",
+ 	 	 	 	"trans": "可以使用飛逝",
  	 	 	 	"eng": "Skip Available"
  	 	 	}
  	 	},
@@ -912,7 +995,7 @@
  	 	 	 	"eng": "Bio"
  	 	 	},
  	 	 	"bioNotFound": {
- 	 	 	 	"trans": "已編輯",
+ 	 	 	 	"trans": "已隱藏",
  	 	 	 	"eng": "REDACTED"
  	 	 	},
  	 	 	"decoration1": {
@@ -966,7 +1049,7 @@
  	 	 	 	 	"eng": "Send Gift"
  	 	 	 	},
  	 	 	 	"trade": {
- 	 	 	 	 	"trans": "發送交易請求",
+ 	 	 	 	 	"trans": "傳送交易請求",
  	 	 	 	 	"eng": "Send Trade Request"
  	 	 	 	},
  	 	 	 	"sendCosmetic": {
@@ -997,14 +1080,6 @@
  	 	 	 	 	"trans": "封鎖玩家",
  	 	 	 	 	"eng": "Block Player"
  	 	 	 	}
- 	 	 	},
- 	 	 	"equipped": {
- 	 	 	 	"trans": "已裝備",
- 	 	 	 	"eng": "Equipped"
- 	 	 	},
- 	 	 	"inventory": {
- 	 	 	 	"trans": "背包",
- 	 	 	 	"eng": "Inventory"
  	 	 	}
  	 	},
  	 	"modal": {
@@ -1094,13 +1169,13 @@
  	 	 	 	"trans": "目前沒有販賣此類的物品",
  	 	 	 	"eng": "there is currently no items on sale for this category"
  	 	 	},
- 	 	 	"buy": {
+ 	 	 	"pricePerPiece": {
+ 	 	 	 	"trans": "每件",
+ 	 	 	 	"eng": "per item"
+ 	 	 	},
+ 	 	 	"purchase": {
  	 	 	 	"trans": "購買",
  	 	 	 	"eng": "Purchase"
- 	 	 	},
- 	 	 	"remove": {
- 	 	 	 	"trans": "移除",
- 	 	 	 	"eng": "Remove"
  	 	 	},
  	 	 	"stall": {
  	 	 	 	"sellItemButton": {
@@ -1123,7 +1198,7 @@
  	 	 	 	"eng": "Syncing"
  	 	 	},
  	 	 	"incompleteError": {
- 	 	 	 	"trans": "請確保您的設備時間正確。",
+ 	 	 	 	"trans": "請確保您的裝置時間正確。",
  	 	 	 	"eng": "Please ensure your device time is correct."
  	 	 	},
  	 	 	"manualRefresh": {
@@ -1322,69 +1397,10 @@
  	 	 	 	"eng": "If you have any questions please feel free to contact Dexter directly via official Discord (Link can be found in Floating Menu -> Links) or email to ching.huang.dexter@gmail.com"
  	 	 	}
  	 	},
- 	 	"tipsBox": {
- 	 	 	"title": {
- 	 	 	 	"trans": "專業提示",
- 	 	 	 	"eng": "Pro Tips"
- 	 	 	},
- 	 	 	"description": {
- 	 	 	 	"trans": "點擊取得新提示",
- 	 	 	 	"eng": "Click to get new tips"
- 	 	 	}
- 	 	},
  	 	"travel": {
  	 	 	"notUnlocked": {
  	 	 	 	"trans": "尚未解鎖這個區域",
  	 	 	 	"eng": "You have not unlocked this area yet"
- 	 	 	}
- 	 	},
- 	 	"machineCrafting": {
- 	 	 	"titleBox": {
- 	 	 	 	"tile": {
- 	 	 	 	 	"trans": "系統閒置",
- 	 	 	 	 	"eng": "system idle"
- 	 	 	 	},
- 	 	 	 	"subtitle": {
- 	 	 	 	 	"trans": "請插入物品",
- 	 	 	 	 	"eng": "Please insert an item"
- 	 	 	 	}
- 	 	 	},
- 	 	 	"selectItemButton": {
- 	 	 	 	"trans": "回收物品",
- 	 	 	 	"eng": "Recycle Item"
- 	 	 	},
- 	 	 	"selectAmount": {
- 	 	 	 	"title": {
- 	 	 	 	 	"trans": "請選擇金額",
- 	 	 	 	 	"eng": "Please select amount"
- 	 	 	 	},
- 	 	 	 	"subtitle": {
- 	 	 	 	 	"vars": [
- 	 	 	 	 	 	"timeStr"
- 	 	 	 	 	],
- 	 	 	 	 	"trans": "這將需要${timeStr}",
- 	 	 	 	 	"eng": "This will take ${timeStr}"
- 	 	 	 	}
- 	 	 	},
- 	 	 	"confirmModal": {
- 	 	 	 	"title": {
- 	 	 	 	 	"vars": [
- 	 	 	 	 	 	"itemName"
- 	 	 	 	 	],
- 	 	 	 	 	"trans": "選擇${itemName}？",
- 	 	 	 	 	"eng": "Select ${itemName}?"
- 	 	 	 	},
- 	 	 	 	"subtitle": {
- 	 	 	 	 	"vars": [
- 	 	 	 	 	 	"itemName"
- 	 	 	 	 	],
- 	 	 	 	 	"trans": "您確定要選擇${itemName}嗎？",
- 	 	 	 	 	"eng": "Are you sure you want to select ${itemName}?"
- 	 	 	 	},
- 	 	 	 	"confirmText": {
- 	 	 	 	 	"trans": "我確定",
- 	 	 	 	 	"eng": "I am sure"
- 	 	 	 	}
  	 	 	}
  	 	},
  	 	"setting": {
@@ -1440,7 +1456,7 @@
  	 	 	 	 	"eng": "Hide NPC"
  	 	 	 	},
  	 	 	 	"description": {
- 	 	 	 	 	"trans": "在屏幕上隱藏NPC立繪",
+ 	 	 	 	 	"trans": "在畫面上隱藏NPC立繪",
  	 	 	 	 	"eng": "Hide NPC art on screen"
  	 	 	 	}
  	 	 	},
@@ -1495,6 +1511,12 @@
  	 	 	"save": {
  	 	 	 	"trans": "儲存",
  	 	 	 	"eng": "save"
+ 	 	 	}
+ 	 	},
+ 	 	"petShop": {
+ 	 	 	"adapt": {
+ 	 	 	 	"trans": "領養一隻新寵物",
+ 	 	 	 	"eng": "Adopt a new pet"
  	 	 	}
  	 	},
  	 	"rangeSelector": {
@@ -1573,6 +1595,41 @@
  	 	 	 	"eng": "This item is locked"
  	 	 	}
  	 	},
+ 	 	"machineCrafting": {
+ 	 	 	"selectAmount": {
+ 	 	 	 	"title": {
+ 	 	 	 	 	"trans": "請選擇金額",
+ 	 	 	 	 	"eng": "Please select amount"
+ 	 	 	 	},
+ 	 	 	 	"subtitle": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"timeStr"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "這將需要${timeStr}",
+ 	 	 	 	 	"eng": "This will take ${timeStr}"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"confirmModal": {
+ 	 	 	 	"title": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"itemName"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "選擇${itemName}？",
+ 	 	 	 	 	"eng": "Select ${itemName}?"
+ 	 	 	 	},
+ 	 	 	 	"subtitle": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"itemName"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "您確定要選擇${itemName}嗎？",
+ 	 	 	 	 	"eng": "Are you sure you want to select ${itemName}?"
+ 	 	 	 	},
+ 	 	 	 	"confirmText": {
+ 	 	 	 	 	"trans": "我確定",
+ 	 	 	 	 	"eng": "I am sure"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
  	 	"calibration": {
  	 	 	"confirmation": {
  	 	 	 	"title": {
@@ -1629,7 +1686,7 @@
  	 	 	 	 	"eng": "View Profile"
  	 	 	 	},
  	 	 	 	"assignRank": {
- 	 	 	 	 	"trans": "分配等級",
+ 	 	 	 	 	"trans": "分配官階",
  	 	 	 	 	"eng": "Assign Rank"
  	 	 	 	},
  	 	 	 	"kickPlayer": {
@@ -1682,6 +1739,39 @@
  	 	 	 	"eng": "Enter system passcode to proceed"
  	 	 	}
  	 	},
+ 	 	"marketItemPurchaseModal": {
+ 	 	 	"amount": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"price",
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "單價${price} btc 總共${amount}個",
+ 	 	 	 	"eng": "${price} btc per piece for ${amount} pieces"
+ 	 	 	}
+ 	 	},
+ 	 	"marketItemSellModal": {
+ 	 	 	"amountTitle": {
+ 	 	 	 	"trans": "上架數量",
+ 	 	 	 	"eng": "Quantity to put on market"
+ 	 	 	},
+ 	 	 	"priceTitle": {
+ 	 	 	 	"trans": "單價",
+ 	 	 	 	"eng": "Price per piece"
+ 	 	 	},
+ 	 	 	"footer": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"price",
+ 	 	 	 	 	"quantity",
+ 	 	 	 	 	"totalPrice"
+ 	 	 	 	],
+ 	 	 	 	"trans": "此物品將以單價${price}，總共${quantity}個的價格上架，如果全數售出，您將收到${totalPrice}",
+ 	 	 	 	"eng": "This item will be sold for ${price} per piece for ${quantity} pieces, if all pieces are sold you will receive ${totalPrice}"
+ 	 	 	},
+ 	 	 	"sell": {
+ 	 	 	 	"trans": "上架",
+ 	 	 	 	"eng": "Place Item on Market"
+ 	 	 	}
+ 	 	},
  	 	"dungeon": {
  	 	 	"public": {
  	 	 	 	"trans": "公開地下城",
@@ -1719,7 +1809,7 @@
  	 	 	 	"trans": "先買一些醫療用品吧？",
  	 	 	 	"eng": "Maybe buy some healing item first?",
  	 	 	 	"des": {
- 	 	 	 	 	"trans": "您背包中沒有生命恢復物品，進入地下城前建議您先從城市中的雜貨店購買生命恢復物品，在地下城中戰鬥無法自動恢復生命",
+ 	 	 	 	 	"trans": "您背包中沒有生命恢復物品，進入地下城前建議您先從城市中的雜貨店購買醫療用品，在地下城中戰鬥無法自動恢復生命",
  	 	 	 	 	"eng": "Seems like you dont have any Pain Away with you, purchase it from Trinoky Mart in the city first before entering dungeons, since you will not regen after battles in dungeon"
  	 	 	 	},
  	 	 	 	"cancel": {
@@ -1799,7 +1889,7 @@
  	 	 	 	"eng": "Referral Program"
  	 	 	},
  	 	 	"skipQueue": {
- 	 	 	 	"trans": "跳過佇列",
+ 	 	 	 	"trans": "飛逝佇列",
  	 	 	 	"eng": "Skip Queue"
  	 	 	},
  	 	 	"block-list": {
@@ -1955,6 +2045,10 @@
  	 	 	 	],
  	 	 	 	"trans": "${playerCount}位玩家在線上",
  	 	 	 	"eng": "${playerCount} player(s) connected"
+ 	 	 	},
+ 	 	 	"passwordProtected": {
+ 	 	 	 	"trans": "密碼保護",
+ 	 	 	 	"eng": "Password protected"
  	 	 	}
  	 	},
  	 	"equipmentUpgrade": {
@@ -1971,11 +2065,11 @@
  	 	 	 	}
  	 	 	},
  	 	 	"failureRateNoBreak": {
- 	 	 	 	"trans": "無損的機率",
+ 	 	 	 	"trans": "安全失敗機率",
  	 	 	 	"eng": "Chance of safe failure"
  	 	 	},
  	 	 	"failureRate": {
- 	 	 	 	"trans": "受破壞的機率",
+ 	 	 	 	"trans": "受破壞失敗機率",
  	 	 	 	"eng": "Chance of destructive failure"
  	 	 	},
  	 	 	"notActivated": {
@@ -1988,7 +2082,7 @@
  	 	 	 	 	"eng": "Please insert Calibration Core"
  	 	 	 	},
  	 	 	 	"description": {
- 	 	 	 	 	"trans": "您需要插入校準核心以升級設備。",
+ 	 	 	 	 	"trans": "您需要插入校準核心以升級裝備。",
  	 	 	 	 	"eng": "You need to insert Calibration Core to upgrade your equipment."
  	 	 	 	},
  	 	 	 	"noCore": {
@@ -2001,7 +2095,7 @@
  	 	 	 	"eng": "Insert Core"
  	 	 	},
  	 	 	"activateDescription": {
- 	 	 	 	"trans": "校准裝備需要校準核心",
+ 	 	 	 	"trans": "校準裝備需要校準核心",
  	 	 	 	"eng": "A Calibration Core is required to calibrate equipment"
  	 	 	},
  	 	 	"activating": {
@@ -2275,7 +2369,7 @@
  	 	 	 	"eng": "equipment"
  	 	 	},
  	 	 	"enemyGangsAndMark": {
- 	 	 	 	"trans": "敵人幫派和設備標記",
+ 	 	 	 	"trans": "敵人幫派和裝備標記",
  	 	 	 	"eng": "Enemy Gangs and Equipment Marks"
  	 	 	},
  	 	 	"timeSkip": {
@@ -2327,7 +2421,7 @@
  	 	 	 	"eng": "account"
  	 	 	},
  	 	 	"ai": {
- 	 	 	 	"trans": "人工智能",
+ 	 	 	 	"trans": "人工智慧",
  	 	 	 	"eng": "Artificial Intelligence"
  	 	 	}
  	 	},
@@ -2355,7 +2449,7 @@
  	 	 	 	"eng": "Select Container"
  	 	 	},
  	 	 	"hint": {
- 	 	 	 	"trans": "解鎖容器以獲取內部的物品，需要少量的科技碎片",
+ 	 	 	 	"trans": "解鎖容器可獲得內部的物品，需要少量的科技碎片",
  	 	 	 	"eng": "Unlock a container to get the items inside, requires small amount of tech scraps"
  	 	 	},
  	 	 	"increaseEpicDropRate": {
@@ -2394,6 +2488,12 @@
  	 	 	"unlock": {
  	 	 	 	"trans": "解鎖",
  	 	 	 	"eng": "Unlock"
+ 	 	 	},
+ 	 	 	"error": {
+ 	 	 	 	"notEnabled": {
+ 	 	 	 	 	"trans": "現在無法解鎖此容器",
+ 	 	 	 	 	"eng": "This container cannot be unlocked at this time"
+ 	 	 	 	}
  	 	 	}
  	 	}
  	},
@@ -2417,7 +2517,7 @@
  	 	},
  	 	"skip": {
  	 	 	"name": {
- 	 	 	 	"trans": "跳過資源禮包",
+ 	 	 	 	"trans": "飛逝資源禮包",
  	 	 	 	"eng": "Skip supply bundle"
  	 	 	}
  	 	},
@@ -2443,6 +2543,18 @@
  	 	 	"name": {
  	 	 	 	"trans": "錄音帶",
  	 	 	 	"eng": "cassette tape"
+ 	 	 	}
+ 	 	},
+ 	 	"rareEquipmentCrate": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "稀有裝備箱",
+ 	 	 	 	"eng": "Rare Equipment Crate"
+ 	 	 	}
+ 	 	},
+ 	 	"freeSkip": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "免費的個人時光飛逝",
+ 	 	 	 	"eng": "Free Personal Skip"
  	 	 	}
  	 	},
  	 	"cycle": {
@@ -2478,7 +2590,7 @@
  	 	 	},
  	 	 	"once": {
  	 	 	 	"name": {
- 	 	 	 	 	"trans": "單次",
+ 	 	 	 	 	"trans": "一次",
  	 	 	 	 	"eng": "Once"
  	 	 	 	},
  	 	 	 	"description": {
@@ -2529,7 +2641,7 @@
  	 	 	"eng": "Confirm"
  	 	},
  	 	"send": {
- 	 	 	"trans": "發送",
+ 	 	 	"trans": "傳送",
  	 	 	"eng": "send"
  	 	},
  	 	"requires": {
@@ -2541,7 +2653,7 @@
  	 	 	"eng": "Durability"
  	 	},
  	 	"equipped": {
- 	 	 	"trans": "已裝備",
+ 	 	 	"trans": "裝備欄",
  	 	 	"eng": "Equipped"
  	 	},
  	 	"ok": {
@@ -2577,16 +2689,12 @@
  	 	 	"eng": "Rank"
  	 	},
  	 	"quickSlot": {
- 	 	 	"trans": "快捷欄",
+ 	 	 	"trans": "快捷欄位",
  	 	 	"eng": "Quick Slot"
  	 	},
  	 	"receives": {
  	 	 	"trans": "收到",
  	 	 	"eng": "Receives"
- 	 	},
- 	 	"inputPlaceholder": {
- 	 	 	"trans": "輸入文字以開始聊天",
- 	 	 	"eng": "Enter message to start chatting"
  	 	},
  	 	"moderators": {
  	 	 	"trans": "管理員",
@@ -2685,7 +2793,7 @@
  	"battleUI": {
  	 	"quickSlotModal": {
  	 	 	"title": {
- 	 	 	 	"trans": "選擇一個物品以綁定到快速插槽",
+ 	 	 	 	"trans": "選擇一個物品以綁定到快捷欄位",
  	 	 	 	"eng": "Select an item to bind to quick slot"
  	 	 	}
  	 	}
@@ -2694,6 +2802,23 @@
  	 	"thief": {
  	 	 	"trans": "科技歹徒",
  	 	 	"eng": "Techno-Thief"
+ 	 	}
+ 	},
+ 	"globalPartyBanner": {
+ 	 	"title": {
+ 	 	 	"trans": "🎉全球派對🎉",
+ 	 	 	"eng": "🎉 Global Party 🎉"
+ 	 	},
+ 	 	"subtitle": {
+ 	 	 	"trans": "主辦：",
+ 	 	 	"eng": "Hosted by:"
+ 	 	},
+ 	 	"button,": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "給予街頭聲望",
+ 	 	 	"eng": "Give street cred"
  	 	}
  	},
  	"cost": {
@@ -2960,7 +3085,7 @@
  	 	},
  	 	"upgradeChance": {
  	 	 	"name": {
- 	 	 	 	"trans": "校準機會",
+ 	 	 	 	"trans": "校準機率",
  	 	 	 	"eng": "Calibration Chance"
  	 	 	},
  	 	 	"description": {
@@ -2980,7 +3105,7 @@
  	 	},
  	 	"containerEpicDrop": {
  	 	 	"name": {
- 	 	 	 	"trans": "史詩機會",
+ 	 	 	 	"trans": "史詩機率",
  	 	 	 	"eng": "Epic Chance"
  	 	 	}
  	 	},
@@ -2992,7 +3117,7 @@
  	 	},
  	 	"containerLegendaryDrop": {
  	 	 	"name": {
- 	 	 	 	"trans": "傳奇機會",
+ 	 	 	 	"trans": "傳奇機率",
  	 	 	 	"eng": "Legendary Chance"
  	 	 	}
  	 	},
@@ -3055,6 +3180,16 @@
  	 	 	 	"trans": "「巫毒小子」幫派敵人將對您造成更多的傷害",
  	 	 	 	"eng": "Enemies of Voodoo Boys gang deals increased damage to you"
  	 	 	}
+ 	 	},
+ 	 	"afkExpMultiplier": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "AFK EXP加成",
+ 	 	 	 	"eng": "AFK EXP multiplier"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "增加您從AFK任務中收到的經驗",
+ 	 	 	 	"eng": "Increase EXP you receive from AFK tasks"
+ 	 	 	}
  	 	}
  	},
  	"modal": {
@@ -3087,16 +3222,16 @@
  	 	 	 	"eng": "View Profile"
  	 	 	},
  	 	 	"openBotProfileMessage": {
- 	 	 	 	"trans": "拒絕訪問。 檢測到非人類檔案",
+ 	 	 	 	"trans": "拒絕存取。 檢測到非人類檔案",
  	 	 	 	"eng": "Access denied. non-human profile detected."
+ 	 	 	},
+ 	 	 	"report1": {
+ 	 	 	 	"trans": "檢舉並封鎖",
+ 	 	 	 	"eng": "Report & Block"
  	 	 	},
  	 	 	"block": {
  	 	 	 	"trans": "封鎖",
  	 	 	 	"eng": "Block"
- 	 	 	},
- 	 	 	"report": {
- 	 	 	 	"trans": "檢舉和封鎖",
- 	 	 	 	"eng": "Report and Block"
  	 	 	},
  	 	 	"openPlayerGang": {
  	 	 	 	"trans": "查看公會",
@@ -3107,7 +3242,7 @@
  	 	 	 	"eng": "Send Gift"
  	 	 	},
  	 	 	"sendPrivateMessage": {
- 	 	 	 	"trans": "發送私人訊息",
+ 	 	 	 	"trans": "傳送私人訊息",
  	 	 	 	"eng": "Send Private Message"
  	 	 	},
  	 	 	"reply": {
@@ -3249,14 +3384,14 @@
  	 	"resultScreen": {
  	 	 	"title": {
  	 	 	 	"trans": "勝利",
- 	 	 	 	"eng": "Victory"
+ 	 	 	 	"eng": "Level up"
  	 	 	},
  	 	 	"subTitle": {
  	 	 	 	"vars": [
  	 	 	 	 	"levelName"
  	 	 	 	],
  	 	 	 	"trans": "恭喜您，您已經升級了您的${levelName}！",
- 	 	 	 	"eng": "Congratulation, you have leveled up your ${levelName}!"
+ 	 	 	 	"eng": "Congratulations, you have leveled up your ${levelName}!"
  	 	 	},
  	 	 	"fromTo": {
  	 	 	 	"vars": [
@@ -3265,6 +3400,10 @@
  	 	 	 	],
  	 	 	 	"trans": "${from} => ${to}",
  	 	 	 	"eng": "${from} => ${to}"
+ 	 	 	},
+ 	 	 	"title2": {
+ 	 	 	 	"trans": "已收到",
+ 	 	 	 	"eng": "Received"
  	 	 	}
  	 	},
  	 	"review": {
@@ -3340,13 +3479,37 @@
  	 	 	}
  	 	}
  	},
+ 	"playerDetailsAssetsTab": {
+ 	 	"noAssets": {
+ 	 	 	"trans": "這位玩家沒有任何資產。",
+ 	 	 	"eng": "this player does not own any assets"
+ 	 	},
+ 	 	"apartment": {
+ 	 	 	"title": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"playerName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${playerName}的公寓",
+ 	 	 	 	"eng": "${playerName}'s Apartment"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"playerStatusDisplay": {
+ 	 	"title": {
+ 	 	 	"vars": [
+ 	 	 	 	"action"
+ 	 	 	],
+ 	 	 	"trans": "${action}中",
+ 	 	 	"eng": "${action} in progress"
+ 	 	}
+ 	},
  	"time": {
  	 	"error": {
  	 	 	"systemTimeIncorrect": {
  	 	 	 	"vars": [
  	 	 	 	 	"diff"
  	 	 	 	],
- 	 	 	 	"trans": "設備時間不準確（時間差：${diff}）。 為了確保buff、時間跳過和AFK任務等等的遊戲功能正確顯示。 請將設備時間與網路同步，並設定正確的時區",
+ 	 	 	 	"trans": "裝置時間不準確（時間差：${diff}）。 為了確保buff、時光飛逝和AFK任務等等的遊戲功能正確顯示。 請將裝置時間與網路同步，並設定正確的時區",
  	 	 	 	"eng": "Inaccurate device time (time difference: ${diff}). to ensure game features such as buff, time skip and AFK Task display correctly. Please sync your device time with network and ensure your time-zone is set correctly"
  	 	 	}
  	 	},
@@ -3508,7 +3671,7 @@
  	 	 	 	"eng": "Allies and Friends"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "歡迎來到 CyberCode Online， \r\n         在線上交朋友對您完成合作任務非常有用， \r\n         如果有任何問題，請別介意在聊天室中諮詢其他玩家 :) \r\n         請記住，如果您在聊天室中發送垃圾內容，您將會被禁言。",
+ 	 	 	 	"trans": "歡迎來到 CyberCode Online， \r\n         在線上交朋友對您完成合作任務非常有用， \r\n         如果有任何問題，請別介意在聊天室中諮詢其他玩家 :) \r\n         請記住，如果您在聊天室中傳送垃圾內容，您將會被禁言。",
  	 	 	 	"eng": "Welcome to CyberCode Online,\r\n        making friends with people online will be very useful for you to complete co-op quests,\r\n        go ahead ask people online if you have got any questions :)\r\n        Remember, if you spam in the chat, you will be muted by moderators."
  	 	 	}
  	 	},
@@ -3613,16 +3776,16 @@
  	 	 	 	 	"eng": "dungeon warrior"
  	 	 	 	}
  	 	 	},
- 	 	 	"clearDungeonCoOp": {
- 	 	 	 	"name": {
- 	 	 	 	 	"trans": "地下城好夥伴",
- 	 	 	 	 	"eng": "dungeon friends"
- 	 	 	 	}
- 	 	 	},
  	 	 	"clearDungeon": {
  	 	 	 	"name": {
  	 	 	 	 	"trans": "地下城爬行者",
  	 	 	 	 	"eng": "dungeon crawler"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"clearDungeonCoOp": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "地下城好夥伴",
+ 	 	 	 	 	"eng": "dungeon friends"
  	 	 	 	}
  	 	 	},
  	 	 	"dealDamage": {
@@ -3665,7 +3828,7 @@
  	 	 	"eng": "Chat Disabled"
  	 	},
  	 	"description1": {
- 	 	 	"trans": "我們非常遺憾地發生這種情況，請體諒我們需要為所有玩家維護一個安全的環境，並確保每個人都可以在宜人的環境中玩遊戲。 這就是為什麼我們需要在必要時禁言的原因。 請從下面的連結中閱讀我們的聊天規則以獲取完整資訊",
+ 	 	 	"trans": "我們非常遺憾地發生這種情況，請體諒我們需要為所有玩家維護一個安全的環境，並確保每個人都可以在宜人的環境中玩遊戲。 這就是為什麼我們需要在必要時禁言的原因。 請從下面的連結中閱讀我們的聊天規則可獲得完整資訊",
  	 	 	"eng": "We are very sorry this happened, please understand we are required to maintain a safe environment for all players and ensure that everyone can play the game in a pleasant environment. Thats why we have to mute when it is needed. please do read our chat rules from the link below for full information"
  	 	},
  	 	"description2": {
@@ -3689,10 +3852,148 @@
  	 	 	"eng": "Appeal Form"
  	 	}
  	},
+ 	"pet": {
+ 	 	"noName": {
+ 	 	 	"trans": "未命名",
+ 	 	 	"eng": "unnamed"
+ 	 	},
+ 	 	"nameTooShort": {
+ 	 	 	"vars": [
+ 	 	 	 	"length"
+ 	 	 	],
+ 	 	 	"trans": "寵物名稱必須至少包含 ${length} 個字元",
+ 	 	 	"eng": "Pet name must be at least ${length} characters long"
+ 	 	},
+ 	 	"nameTooLong": {
+ 	 	 	"vars": [
+ 	 	 	 	"length"
+ 	 	 	],
+ 	 	 	"trans": "寵物名稱最多只能有${length}個字元",
+ 	 	 	"eng": "Pet name must be at most ${length} characters long"
+ 	 	},
+ 	 	"nameCantContainSpaces": {
+ 	 	 	"trans": "寵物名稱不能包含空格",
+ 	 	 	"eng": "Pet name can not contain spaces"
+ 	 	},
+ 	 	"rerollImage": {
+ 	 	 	"success": {
+ 	 	 	 	"trans": "成功更改寵物圖片！",
+ 	 	 	 	"eng": "Pet image changed successfully"
+ 	 	 	}
+ 	 	},
+ 	 	"adoption": {
+ 	 	 	"alreadyActivated": {
+ 	 	 	 	"trans": "寵物領養增益已啟動",
+ 	 	 	 	"eng": "Pet Adoption buff is already activated"
+ 	 	 	},
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player",
+ 	 	 	 	 	"npc"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${player} 使用了寵物領養增益，你可以在增益時間內從 ${npc} 領養寵物！",
+ 	 	 	 	"eng": "${player} has activated Adoption Buff, you can adopt a pet from ${npc} within the buff duration!"
+ 	 	 	},
+ 	 	 	"activated": {
+ 	 	 	 	"trans": "領養寵物增益已啟動",
+ 	 	 	 	"eng": "Pet adoption buff activated"
+ 	 	 	}
+ 	 	},
+ 	 	"error": {
+ 	 	 	"interactedRecently": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"hours"
+ 	 	 	 	],
+ 	 	 	 	"trans": "你每隔${hours}小時才能跟玩家的寵物互動一次。",
+ 	 	 	 	"eng": "You can only interact with a player's pet once every ${hours} hours"
+ 	 	 	}
+ 	 	},
+ 	 	"played": {
+ 	 	 	"vars": [
+ 	 	 	 	"player",
+ 	 	 	 	"pet"
+ 	 	 	],
+ 	 	 	"trans": "${player} 剛剛跟你的寵物 ${pet} 一起玩！",
+ 	 	 	"eng": "${player} has played with your pet ${pet}",
+ 	 	 	"success": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"playerName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "你已經跟${playerName}的寵物玩過啦",
+ 	 	 	 	"eng": "You have played with ${playerName}'s pet"
+ 	 	 	}
+ 	 	},
+ 	 	"rename": {
+ 	 	 	"badWord": {
+ 	 	 	 	"trans": "名稱包含不允許的字詞",
+ 	 	 	 	"eng": "Name contains not allowed words"
+ 	 	 	},
+ 	 	 	"notEnoughIAP": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"price"
+ 	 	 	 	],
+ 	 	 	 	"trans": "你需要 ${price} 單位才能重新命名你的寵物",
+ 	 	 	 	"eng": "You need ${price} Units to rename your pet"
+ 	 	 	}
+ 	 	},
+ 	 	"adopted": {
+ 	 	 	"vars": [
+ 	 	 	 	"player",
+ 	 	 	 	"pet"
+ 	 	 	],
+ 	 	 	"trans": "${player} 已領養了 ${pet}",
+ 	 	 	"eng": "${player} has adopted ${pet}",
+ 	 	 	"mail": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"pet"
+ 	 	 	 	],
+ 	 	 	 	"trans": "你已領養了 ${pet}",
+ 	 	 	 	"eng": "You have adopted ${pet}"
+ 	 	 	}
+ 	 	},
+ 	 	"reviveActivate": {
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${player} 使用了寵物復活增益，你現在可以在增益持續期間內復活一隻寵物。",
+ 	 	 	 	"eng": "${player} has used pet revival buff, you can now revive one of your pet within the buff duration."
+ 	 	 	}
+ 	 	},
+ 	 	"revive": {
+ 	 	 	"activated": {
+ 	 	 	 	"trans": "寵物復活增益已啟動",
+ 	 	 	 	"eng": "Pet revive buff activated"
+ 	 	 	},
+ 	 	 	"success": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"petName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "你已經復活了 ${petName}",
+ 	 	 	 	"eng": "You have revived ${petName}"
+ 	 	 	}
+ 	 	},
+ 	 	"reviveSuccess": {
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player",
+ 	 	 	 	 	"pet"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${player} 已經復活 ${pet}。",
+ 	 	 	 	"eng": "${player} has revived ${pet}"
+ 	 	 	}
+ 	 	}
+ 	},
  	"priceTag": {
  	 	"free": {
  	 	 	"trans": "免費",
  	 	 	"eng": "FREE"
+ 	 	}
+ 	},
+ 	"chatInput": {
+ 	 	"placeholder": {
+ 	 	 	"trans": "輸入訊息...",
+ 	 	 	"eng": "Enter Message..."
  	 	}
  	},
  	"itemList": {
@@ -3710,15 +4011,15 @@
  	},
  	"sessionClosedScreen": {
  	 	"title": {
- 	 	 	"trans": "您已經在另一台裝置上登錄",
+ 	 	 	"trans": "您已經在另一台裝置上登入",
  	 	 	"eng": "You have logged in on another device"
  	 	},
  	 	"description": {
- 	 	 	"trans": "如果您希望繼續在此裝置上遊玩，請單擊重新連線。",
+ 	 	 	"trans": "如果您希望繼續在此裝置上遊玩，請點選重新連線。",
  	 	 	"eng": "If you wish to continue playing on this device, please click reconnect."
  	 	},
  	 	"restartApp": {
- 	 	 	"trans": "立即重新連接",
+ 	 	 	"trans": "立即重新連線",
  	 	 	"eng": "Reconnect Now"
  	 	}
  	},
@@ -3730,6 +4031,12 @@
  	 	"max": {
  	 	 	"trans": "最大",
  	 	 	"eng": "max"
+ 	 	}
+ 	},
+ 	"giveCredButton": {
+ 	 	"giveCred": {
+ 	 	 	"trans": "給予街頭聲望",
+ 	 	 	"eng": "Give Street Cred"
  	 	}
  	},
  	"actionStartModal": {
@@ -3796,7 +4103,7 @@
  	"trade": {
  	 	"moneySelectModal": {
  	 	 	"title": {
- 	 	 	 	"trans": "您想對交易約束多少比特幣？",
+ 	 	 	 	"trans": "您想交易多少比特幣？",
  	 	 	 	"eng": "How much Bitcoin would you like to bind to the trade?"
  	 	 	}
  	 	},
@@ -3808,7 +4115,7 @@
  	 	 	"eng": "Waiting for ${playerName} to accept the trade..."
  	 	},
  	 	"lockedItem": {
- 	 	 	"trans": "您已經鎖定了此物品，首先解鎖了交易",
+ 	 	 	"trans": "您已經鎖定了此物品，解鎖以進行交易",
  	 	 	"eng": "You have locked this item, unlock it first to trade"
  	 	},
  	 	"selectAmount": {
@@ -3852,7 +4159,7 @@
  	 	 	 	"eng": "You can not start a trade now"
  	 	 	},
  	 	 	"targetPlayerBlockedYou": {
- 	 	 	 	"trans": "您不能將交易邀請發送給這個玩家",
+ 	 	 	 	"trans": "您不能將交易邀請傳送給這個玩家",
  	 	 	 	"eng": "You cannot send trade invite to this player"
  	 	 	},
  	 	 	"targetPlayerBlockedGifts": {
@@ -3897,14 +4204,14 @@
  	 	 	 	 	"itemName",
  	 	 	 	 	"playerName"
  	 	 	 	],
- 	 	 	 	"trans": "${playerName}在其庫存中沒有足夠的空間，${itemName}",
+ 	 	 	 	"trans": "${playerName}的背包中沒有足夠的空間容納${itemName}",
  	 	 	 	"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade."
  	 	 	},
  	 	 	"youNotEnoughSpace": {
  	 	 	 	"vars": [
  	 	 	 	 	"itemName"
  	 	 	 	],
- 	 	 	 	"trans": "${itemName}的庫存中您沒有足夠的空間",
+ 	 	 	 	"trans": "您的背包沒有足夠的空間容納${itemName}",
  	 	 	 	"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade."
  	 	 	},
  	 	 	"youNotEnoughItem": {
@@ -3948,7 +4255,7 @@
  	 	 	 	 	"itemName",
  	 	 	 	 	"playerName"
  	 	 	 	],
- 	 	 	 	"trans": "您發送${itemName}給${playerName}",
+ 	 	 	 	"trans": "您寄送${itemName}給${playerName}",
  	 	 	 	"eng": "You sent ${itemName} to ${playerName}"
  	 	 	}
  	 	},
@@ -3965,7 +4272,7 @@
  	 	 	 	"money",
  	 	 	 	"playerName"
  	 	 	],
- 	 	 	"trans": "您將${money} BTC發送到${playerName}",
+ 	 	 	"trans": "您將${money} BTC傳送到${playerName}",
  	 	 	"eng": "You sent ${money} BTC to ${playerName}"
  	 	}
  	},
@@ -3989,6 +4296,34 @@
  	 	"dungeonQuest": {
  	 	 	"trans": "點擊「接受任務」接受任務，可以隨時完成或放棄任務",
  	 	 	"eng": "Click 'ACCEPT QUEST' to accept the quest, you may complete or abandon the quest at any time"
+ 	 	}
+ 	},
+ 	"enum": {
+ 	 	"apartmentType": {
+ 	 	 	"T1": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "貧民窟蟻居",
+ 	 	 	 	 	"eng": "slum apartment"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"T2": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "公寓",
+ 	 	 	 	 	"eng": "apartment"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"T3": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "豪華公寓",
+ 	 	 	 	 	"eng": "luxury apartment"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"T4": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "頂樓豪宅",
+ 	 	 	 	 	"eng": "penthouse"
+ 	 	 	 	}
+ 	 	 	}
  	 	}
  	},
  	"iapCurrency": {
@@ -4163,6 +4498,13 @@
  	 	 	"trans": "收到",
  	 	 	"eng": "Receive"
  	 	},
+ 	 	"bonusReward": {
+ 	 	 	"vars": [
+ 	 	 	 	"eventName"
+ 	 	 	],
+ 	 	 	"trans": "${eventName}獎金：",
+ 	 	 	"eng": "${eventName} bonus:"
+ 	 	},
  	 	"purchasing": {
  	 	 	"trans": "購買中",
  	 	 	"eng": "Purchasing"
@@ -4170,6 +4512,28 @@
  	 	"total": {
  	 	 	"trans": "全部",
  	 	 	"eng": "total"
+ 	 	}
+ 	},
+ 	"bulkCraftingSubtype": {
+ 	 	"recycle": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "回收",
+ 	 	 	 	"eng": "Recycle"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "添加物品以更有效地回收它們",
+ 	 	 	 	"eng": "Add items to recycle them more efficiently"
+ 	 	 	}
+ 	 	},
+ 	 	"printSell": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "列印並販賣",
+ 	 	 	 	"eng": "Print & Sell"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "列印物品並以金錢出售",
+ 	 	 	 	"eng": "Print items and sell them for money"
+ 	 	 	}
  	 	}
  	},
  	"donationType": {
@@ -4248,6 +4612,46 @@
  	 	"donation18": {
  	 	 	"trans": "至尊",
  	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation20": {
+ 	 	 	"trans": "至尊",
+ 	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation21": {
+ 	 	 	"trans": "至尊",
+ 	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation22": {
+ 	 	 	"trans": "至尊",
+ 	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation23": {
+ 	 	 	"trans": "萬聖節",
+ 	 	 	"eng": "Halloween"
+ 	 	},
+ 	 	"donation24": {
+ 	 	 	"trans": "時空操弄者",
+ 	 	 	"eng": "SkipSage"
+ 	 	},
+ 	 	"donation25": {
+ 	 	 	"trans": "聖誕時光",
+ 	 	 	"eng": "Christmastime"
+ 	 	},
+ 	 	"donation26": {
+ 	 	 	"trans": "Cyber​​dragon",
+ 	 	 	"eng": "CyberDragon"
+ 	 	},
+ 	 	"donation27": {
+ 	 	 	"trans": "時空統治者",
+ 	 	 	"eng": "Skip Lord"
+ 	 	},
+ 	 	"donation28": {
+ 	 	 	"trans": "櫻花",
+ 	 	 	"eng": "Sakura"
+ 	 	},
+ 	 	"donation29": {
+ 	 	 	"trans": "竄網使",
+ 	 	 	"eng": "Netrunner"
  	 	},
  	 	"moderator": {
  	 	 	"trans": "聊天管理",
@@ -4990,6 +5394,406 @@
  	 	 	 	 	"eng": "More coming in future update"
  	 	 	 	}
  	 	 	}
+ 	 	},
+ 	 	"donation20": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "“至尊”贊助頭銜",
+ 	 	 	 	 	"eng": "\"Prestige\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "解鎖自訂個人檔案圖片",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "白色聊天外框（內建動畫）",
+ 	 	 	 	 	"eng": "White frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "白色個人檔案外框（內建動畫）",
+ 	 	 	 	 	"eng": "White Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "解鎖自訂個人簡歷",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "個人檔案的條碼裝飾",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "自訂公會座右銘",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "自訂公會圖片",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "未來會有更多的更新",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation21": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "“至尊”贊助頭銜",
+ 	 	 	 	 	"eng": "\"Prestige\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "解鎖自訂個人檔案圖片",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "紅色聊天外框（內建動畫）",
+ 	 	 	 	 	"eng": "Red frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "紅色個人檔案外框（內建動畫）",
+ 	 	 	 	 	"eng": "Red Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "解鎖自訂個人簡歷",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "個人檔案的條碼裝飾",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "自訂公會座右銘",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "自訂公會圖片",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "未來會有更多的更新",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation22": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "“至尊”贊助頭銜",
+ 	 	 	 	 	"eng": "\"Prestige\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "自訂個人檔案圖片",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "霓虹聊天外框（內建動畫）",
+ 	 	 	 	 	"eng": "Neon Sign frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "紫色個人檔案外框（內建動畫）",
+ 	 	 	 	 	"eng": "Purple Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "自訂個人簡歷",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "個人檔案的條碼裝飾",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "自訂公會座右銘",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "自訂公會圖片",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "未來會有更多的更新",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation23": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "“萬聖節”贊助頭銜",
+ 	 	 	 	 	"eng": "\"Halloween\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "自訂個人檔案圖片",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "萬聖節聊天外框（內建動畫）",
+ 	 	 	 	 	"eng": "Halloween frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "萬聖節個人檔案外框（內建動畫）",
+ 	 	 	 	 	"eng": "Halloween Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "自訂個人簡歷 ",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "個人檔案的條碼裝飾",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "自訂公會座右銘",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "自訂公會圖片",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "未來會有更多的更新",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation24": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "“時空操弄者”贊助頭銜",
+ 	 	 	 	 	"eng": "\"SkipSage\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "自訂個人檔案圖片",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "時空操弄者聊天外框（內建動畫）",
+ 	 	 	 	 	"eng": "SkipSage frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "時空操弄者個人檔案外框（內建動畫）",
+ 	 	 	 	 	"eng": "SkipSage Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "自訂個人簡歷",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "個人檔案的條碼裝飾",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "自訂公會座右銘",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "自訂公會圖片",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "未來會有更多的更新",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation25": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "“聖誕時光”贊助頭銜",
+ 	 	 	 	 	"eng": "\"Christmastime\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "自訂個人檔案圖片",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "聖誕時光聊天外框（內建動畫）",
+ 	 	 	 	 	"eng": "Christmastime frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "聖誕時光個人檔案外框（內建動畫）",
+ 	 	 	 	 	"eng": "Christmastime Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "自訂個人簡歷",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "個人檔案的條碼裝飾",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "自訂公會座右銘",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "自訂公會圖片",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "未來會有更多的更新",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation26": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "“ Cyber​​dragon”贊助頭銜",
+ 	 	 	 	 	"eng": "\"CyberDragon\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "自訂個人檔案圖片",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Cyber​​dragon聊天外框（內建動畫）",
+ 	 	 	 	 	"eng": "CyberDragon frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Cyber​​dragon個人檔案外框（內建動畫）",
+ 	 	 	 	 	"eng": "CyberDragon Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "自訂個人簡歷",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "個人檔案的條碼裝飾",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "自訂公會座右銘",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "自訂公會圖片",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "未來會有更多的更新",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation27": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "“時空統治者”贊助頭銜",
+ 	 	 	 	 	"eng": "\"Skip Lord\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "自訂個人檔案圖片",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "時空統治者聊天外框（內建動畫）",
+ 	 	 	 	 	"eng": "Skip Lord frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "時空統治者個人檔案外框（內建動畫）",
+ 	 	 	 	 	"eng": "Skip Lord Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "自訂個人簡歷",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "個人檔案的條碼裝飾",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "自訂公會座右銘",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "自訂公會圖片",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "未來會有更多的更新",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation28": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"櫻花\" 贊助頭銜",
+ 	 	 	 	 	"eng": "\"Sakura\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "自訂個人檔案圖片",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "櫻花聊天外框（內建動畫）",
+ 	 	 	 	 	"eng": "Sakura frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "櫻花個人檔案外框（內建動畫）",
+ 	 	 	 	 	"eng": "Sakura Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "自訂個人簡歷",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "個人檔案櫻花裝飾",
+ 	 	 	 	 	"eng": "Sakura profile decoration"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "自訂公會座右銘",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "自訂公會圖片",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "未來會有更多的更新。",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation29": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"竄網使\" 贊助頭銜",
+ 	 	 	 	 	"eng": "\"Netrunner\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "自訂個人檔案圖片",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "竄網使聊天外框（內建動畫）",
+ 	 	 	 	 	"eng": "Netrunner frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "竄網使個人檔案外框（內建動畫）",
+ 	 	 	 	 	"eng": "Netrunner Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "自訂個人簡歷",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "個人檔案Netrunner裝飾",
+ 	 	 	 	 	"eng": "Netrunner profile decoration"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "自訂公會座右銘",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "自訂公會圖片",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "未來會有更多的更新",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
  	 	}
  	},
  	"equipmentMarks": {
@@ -4999,7 +5803,7 @@
  	 	 	 	"eng": "Lethal"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "對「野獸幫」幫派敵人造成更多的傷害。 自「流浪者」幫派敵人受到更多的傷害。",
+ 	 	 	 	"trans": "對「野獸幫」幫派敵人造成更多的傷害。 受到更多「流浪者」幫派敵人的傷害。",
  	 	 	 	"eng": "deals increased damage to Animals gang. receives increased damage from Scavengers gang."
  	 	 	}
  	 	},
@@ -5009,7 +5813,7 @@
  	 	 	 	"eng": "Disruptor"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "對「巫毒小子」幫派敵人造成更多的傷害。 自「野獸幫」幫派敵人受到更多的傷害。",
+ 	 	 	 	"trans": "對「巫毒小子」幫派敵人造成更多的傷害。 受到更多「野獸幫」幫派敵人的傷害。",
  	 	 	 	"eng": "deals increased damage to Voodoo Boys gang. receives increased damage from Animals gang."
  	 	 	}
  	 	},
@@ -5019,7 +5823,7 @@
  	 	 	 	"eng": "Makeshift"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "對「流浪者」幫派敵人造成更多的傷害。 自「巫毒小子」幫派敵人受到更多的傷害。",
+ 	 	 	 	"trans": "對「流浪者」幫派敵人造成更多的傷害。 受到更多「巫毒小子」幫派敵人的傷害。",
  	 	 	 	"eng": "deals increased damage to Scavengers gang. receives increased damage from Voodoo Boys gang."
  	 	 	}
  	 	}
@@ -5058,6 +5862,33 @@
  	 	 	"eng": "backpack"
  	 	}
  	},
+ 	"gameEvent": {
+ 	 	"lunarNewYear": {
+ 	 	 	"trans": "農曆新年",
+ 	 	 	"eng": "Lunar New Year"
+ 	 	},
+ 	 	"halloween": {
+ 	 	 	"trans": "萬聖節",
+ 	 	 	"eng": "Halloween"
+ 	 	},
+ 	 	"thanksgiving": {
+ 	 	 	"trans": "感恩",
+ 	 	 	"eng": "Thanksgiving"
+ 	 	},
+ 	 	"christmas": {
+ 	 	 	"trans": "聖誕節",
+ 	 	 	"eng": "Christmas"
+ 	 	},
+ 	 	"sakura": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "活動期間${percent}%折扣",
+ 	 	 	 	"eng": "${percent}% off during event",
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	]
+ 	 	 	}
+ 	 	}
+ 	},
  	"itemFilterType": {
  	 	"shopSell": {
  	 	 	"description": {
@@ -5071,6 +5902,12 @@
  	 	 	"name": {
  	 	 	 	"trans": "未知裝備",
  	 	 	 	"eng": "Unknown Equipment"
+ 	 	 	}
+ 	 	},
+ 	 	"unknownCache": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "未知的快取",
+ 	 	 	 	"eng": "Unknown Cache"
  	 	 	}
  	 	},
  	 	"aiCore": {
@@ -5427,7 +6264,7 @@
  	 	 	 	"eng": "Medical Tech Cluster"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "一組醫療科技零件。 方便儲存及傳送",
+ 	 	 	 	"trans": "一組醫療科技零件。 方便儲存及寄送",
  	 	 	 	"eng": "A cluster of medical tech parts. in this compact from it's easier to store and transport"
  	 	 	}
  	 	},
@@ -5437,7 +6274,7 @@
  	 	 	 	"eng": "Cassette Tape"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "播放這卷卡式錄音帶，讓復古電子樂將您帶到有著無限可能的霓虹世界。 有了這個時髦的增益，您將準備好面對未來賽博朋克的任何挑戰！",
+ 	 	 	 	"trans": "播放這卷卡式錄音帶，讓復古電子樂將您帶到有著無限可能的霓虹世界。 有了這個時髦的增益，您將準備好面對未來賽博龐克的任何挑戰！",
  	 	 	 	"eng": "Pop in this cassette tape and let the sweet sounds of retro synthwave transport you to a neon-soaked world of infinite possibility. With this groovy boost, you'll be ready to take on any challenge the cyberpunk future has in store!"
  	 	 	}
  	 	},
@@ -5467,7 +6304,7 @@
  	 	 	 	"eng": "Synaptic Acceleration Transmitter"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "向所有已連接至電馭網路的用戶散播漏洞，對神經突觸處理器進行超頻，以在短時間內獲得超人般的心智。\r\n        \r\n        使用後會給予全球所有線上玩家加成，10分鐘內完成掛機任務的速度提升5%(可疊加)",
+ 	 	 	 	"trans": "向所有已連線至電馭網路的用戶散播漏洞，對神經突觸處理器進行超頻，以在短時間內獲得超人般的心智。\r\n        \r\n        使用後會給予全球所有線上玩家加成，10分鐘內完成掛機任務的速度提升5%(可疊加)",
  	 	 	 	"eng": "Broadcasts exploits to all cybernetically connected users, overclocking their synaptic processors thus allowing super-human mental capacity for short period of time.\r\n        \r\n        When used, gives Global Buff to all players online, allowing them to complete AFK tasks in +5% speed for 10 minutes (stackable)"
  	 	 	}
  	 	},
@@ -5477,30 +6314,30 @@
  	 	 	 	"eng": "Rare Synaptic Acceleration Transmitter"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "向所有已連接至電馭網路的用戶散播漏洞，對神經突觸處理器進行超頻，以在短時間內獲得超人般的心智。\r\n        \r\n        使用後會給予全球所有線上玩家加成，20分鐘內完成掛機任務的速度提升40%(可疊加)",
+ 	 	 	 	"trans": "向所有已連線至電馭網路的用戶散播漏洞，對神經突觸處理器進行超頻，以在短時間內獲得超人般的心智。\r\n        \r\n        使用後會給予全球所有線上玩家加成，20分鐘內完成掛機任務的速度提升40%(可疊加)",
  	 	 	 	"eng": "Broadcasts exploits to all cybernetically connected users, overclocking their synaptic processors thus allowing super-human mental capacity for short period of time.\r\n        \r\n        When used, gives Global Buff to all players online, allowing them to complete AFK tasks in +40% speed for 20 minutes (stackable)"
  	 	 	}
  	 	},
  	 	"expMultiplier": {
  	 	 	"name": {
- 	 	 	 	"trans": "額葉皮質優化器",
+ 	 	 	 	"trans": "額葉皮質增強傳送器",
  	 	 	 	"eng": "Frontal Cortex Optimization Transmitter"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "向所有已連接至電馭網路的用戶散播漏洞，透過已安裝的電馭裝置來增強他們的額葉皮層，增加使用者的記憶容量。\r\n\r\n        使用後會給予全球所有線上玩家加成，20分鐘內經驗值獲得量提升180%\r\n        ",
+ 	 	 	 	"trans": "向所有已連線至電馭網路的用戶散播漏洞，透過已安裝的電馭裝置來增強他們的額葉皮層，增加使用者的記憶容量。\r\n\r\n        使用後會給予全球所有線上玩家加成，20分鐘內經驗值獲得量提升180%\r\n        ",
  	 	 	 	"eng": "Broadcasts exploits to all cybernetically connected users, enhancing their Frontal Cortex integration with cyberwares installed, thus increasing memory capability of the user.\r\n\r\n        When used, gives Global Buff to all players online, increase EXP gained to 180% for 20 minutes\r\n        "
  	 	 	}
  	 	},
  	 	"btcMultiplier": {
  	 	 	"name": {
- 	 	 	 	"trans": "交易漏洞發信器",
+ 	 	 	 	"trans": "交易漏洞傳送器",
  	 	 	 	"eng": "Transaction Exploit Transmitter"
  	 	 	},
  	 	 	"description": {
  	 	 	 	"vars": [
  	 	 	 	 	"currencyName"
  	 	 	 	],
- 	 	 	 	"trans": "向所有已連接至電馭網路的用戶散播漏洞，暫時替換他們的交易演算法，讓使用者可取得額外的${currencyName}。\r\n\r\n        使用後會給予全球所有線上玩家加成，20分鐘內比特幣取得量提升40%(可疊加)\r\n        ",
+ 	 	 	 	"trans": "向所有已連線至電馭網路的用戶散播漏洞，暫時替換他們的交易演算法，讓使用者可取得額外的${currencyName}。\r\n\r\n        使用後會給予全球所有線上玩家加成，20分鐘內比特幣取得量提升40%(可疊加)\r\n        ",
  	 	 	 	"eng": "Broadcasts exploits to all cybernetically connected users, argument their transaction algorithm temporary, allowing user to receive bonus  ${currencyName}.\r\n\r\n        When used, gives Global Buff to all players online, increase BitCoin gained by 40% for 20 minutes (stackable)\r\n        "
  	 	 	}
  	 	},
@@ -5536,11 +6373,11 @@
  	 	},
  	 	"clanDungeonKey": {
  	 	 	"name": {
- 	 	 	 	"trans": "公會入侵指令發信器",
+ 	 	 	 	"trans": "公會入侵指令傳送器",
  	 	 	 	"eng": "Gang Invasion Order Transmitter"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "一個簡單的發信器，可以與您的公會加密頻道綁定並提供入侵指令。\r\n         啟動公會地下城需要此物品",
+ 	 	 	 	"trans": "一個簡單的傳送器，可以與您的公會加密頻道綁定並提供入侵指令。\r\n         啟動公會地下城需要此物品",
  	 	 	 	"eng": "A simple transmitter device that can be bind to your gang encrypted channel and give out invasion order.\r\n        This item is required to activate Gang Dungeons"
  	 	 	}
  	 	},
@@ -5566,11 +6403,11 @@
  	 	},
  	 	"upgradeActivator": {
  	 	 	"name": {
- 	 	 	 	"trans": "設備校準核心",
+ 	 	 	 	"trans": "裝備校準核心",
  	 	 	 	"eng": "Equipment Calibration Core"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "黑市記憶碎片內含高度加密的算法和升級設備過程中至關重要的原理圖",
+ 	 	 	 	"trans": "黑市記憶碎片內含高度加密的算法和升級裝備過程中至關重要的原理圖",
  	 	 	 	"eng": "A black market memory shard contains highly encrypted algorithm and schematic that is crucial in the process of upgrading equipments"
  	 	 	}
  	 	},
@@ -5603,7 +6440,7 @@
  	 	 	 	 	"maxStack",
  	 	 	 	 	"duration"
  	 	 	 	],
- 	 	 	 	"trans": "包含高階AI的碎片，用來協助升級設備。 使用時，在${duration}分鐘將毀損性失敗的可能性減少{percent}％（可堆疊${maxStack}次）減少毀損性失敗的可能性。此效果將適用於全球所有線上玩家",
+ 	 	 	 	"trans": "包含高階AI的碎片，用來協助升級裝備。 使用時，在${duration}分鐘將毀損性失敗的可能性減少{percent}％（可堆疊${maxStack}次）減少毀損性失敗的可能性。此效果將適用於全球所有線上玩家",
  	 	 	 	"eng": "Contains fragments of advance AI designed to assist with upgrading equipments. When used, decreases the chance of destructive failure by ${percent}% (stackable for ${maxStack} times) for ${duration} minutes.This effect will apply to all players online"
  	 	 	}
  	 	},
@@ -5619,7 +6456,7 @@
  	 	 	 	"eng": "Calibration AI Shard (50%) [EVENT]"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "內含先進AI的碎片，旨在協助升級設備。\r\n         使用後，5分鐘內將毀損性失敗的可能性降低50％，這只對自己有效。\r\n         您可以在您的公會總部校準物品, 首先必須加入或創立一個公會。",
+ 	 	 	 	"trans": "內含先進AI的碎片，旨在協助升級裝備。\r\n         使用後，5分鐘內將毀損性失敗的可能性降低50％，這只對自己有效。\r\n         您可以在您的公會總部校準物品, 首先必須加入或創立一個公會。",
  	 	 	 	"eng": "Contains fragments of advance AI designed to assist with upgrading equipments.\r\n        When used, decreases the chance of destructive failure by 50% for 5 minutes. this only affect yourself.\r\n        You can calibrate items in your Gang Headquarters, you must join or start a gang first."
  	 	 	}
  	 	},
@@ -5700,7 +6537,7 @@
  	 	},
  	 	"chatExploitPirate": {
  	 	 	"name": {
- 	 	 	 	"trans": "聊天漏洞發信器[PIRATE]",
+ 	 	 	 	"trans": "聊天漏洞傳送器[PIRATE]",
  	 	 	 	"eng": "Chat exploit transmitter [PIRATE]"
  	 	 	},
  	 	 	"description": {
@@ -5710,7 +6547,7 @@
  	 	},
  	 	"chatExploitLeet": {
  	 	 	"name": {
- 	 	 	 	"trans": "聊天漏洞發信器[1337]",
+ 	 	 	 	"trans": "聊天漏洞傳送器[1337]",
  	 	 	 	"eng": "Chat exploit transmitter [1337]"
  	 	 	},
  	 	 	"description": {
@@ -5720,7 +6557,7 @@
  	 	},
  	 	"chatExploitUwU": {
  	 	 	"name": {
- 	 	 	 	"trans": "聊天漏洞發信器[uwu]",
+ 	 	 	 	"trans": "聊天漏洞傳送器[uwu]",
  	 	 	 	"eng": "Chat exploit transmitter [UwU]"
  	 	 	},
  	 	 	"description": {
@@ -5730,12 +6567,22 @@
  	 	},
  	 	"chatExploitLove": {
  	 	 	"name": {
- 	 	 	 	"trans": "聊天漏洞發信器[Love]",
+ 	 	 	 	"trans": "聊天漏洞傳送器[Love]",
  	 	 	 	"eng": "Chat exploit transmitter [Love]"
  	 	 	},
  	 	 	"description": {
  	 	 	 	"trans": "您得到了一些愛，您們也得到了一些愛！每個人都得到一些愛！\r\n         使用後，每個人都相愛 \r\n         這會影響所有玩家10分鐘",
  	 	 	 	"eng": "You get some love, and you get some love! everyone gets some love!.\r\n        When used everyone loves each other\r\n        This effects all players fow 10 minutes"
+ 	 	 	}
+ 	 	},
+ 	 	"chatExploitPosh": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "聊天漏洞發射器 [高雅]",
+ 	 	 	 	"eng": "Chat exploit transmitter [Posh]"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "一旦啟動，此領域的居民所提供的所有通訊將經歷一次愉快的變身，穿上紳士英文的優雅外衣，持續十分鐘。只適用於英文。",
+ 	 	 	 	"eng": "Upon activation, all correspondence proffered by the denizens of our chat realm shall undergo a delightful metamorphosis, adorning itself in the distinguished garb of gentlemanly English for a duration of precisely 10 minutes. this exploit will only work well with English"
  	 	 	}
  	 	},
  	 	"upgradeResetShard": {
@@ -5786,6 +6633,16 @@
  	 	 	"description": {
  	 	 	 	"trans": "具有紅色、綠色裝飾和「Cybersanta™」標誌的加密容器。",
  	 	 	 	"eng": "An encrypted container with red, green decoration and a 'CyberSanta™' logo on the side of it."
+ 	 	 	}
+ 	 	},
+ 	 	"christmasGift2": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "霜凍容器",
+ 	 	 	 	"eng": "Frosty Container"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "一個神秘的禮物，包裹著閃閃發光的雪花主題容器。 您只能在12月到[終端機]解鎖它。",
+ 	 	 	 	"eng": "A mystery gift wrapped in sparkling, snowflake-themed packaging. You can only unlock it at the [Terminal] during December."
  	 	 	}
  	 	},
  	 	"rngInterferer": {
@@ -5858,7 +6715,7 @@
  	 	 	 	"eng": "Golden Coin"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "金幣，上面刻有龍。 現在實體貨幣很少見，應該能夠在市場區購買好東西",
+ 	 	 	 	"trans": "刻著龍紋的金幣。 現在實體貨幣很少見，應該能在市集買到好東西",
  	 	 	 	"eng": "A golden coin with a engraving of a dragon on it. physical currency is very rare to see these days, should be able to buy something good with it in the market district"
  	 	 	}
  	 	},
@@ -5873,6 +6730,19 @@
  	 	 	 	],
  	 	 	 	"trans": "由燕愛心製作的美味餃子，填滿了最好的食材，烹製得完美無缺。食用後，可以恢復${percent}%血量",
  	 	 	 	"eng": "These dumplings are unlike any other. Made with love and care by Yen, these delicious pockets of goodness are filled with the finest ingredients and cooked to perfection.\\n recover ${percent}% health upon consumption"
+ 	 	 	}
+ 	 	},
+ 	 	"pumpkinPie": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "南瓜派",
+ 	 	 	 	"eng": "Pumpkin Pie"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "美味的南瓜派。 該餡餅上面有大量濃的香草奶油，美味！",
+ 	 	 	 	"eng": "A delicious pumpkin pie. this pie has big load of thick vanilla cream over it, delicious!\\nrecover ${percent}% health upon consumption"
  	 	 	}
  	 	},
  	 	"riceCake": {
@@ -5910,7 +6780,7 @@
  	 	 	 	"vars": [
  	 	 	 	 	"minute"
  	 	 	 	],
- 	 	 	 	"trans": "使用Slanc連接器將Slanc連接到公頻${minute}分鐘",
+ 	 	 	 	"trans": "將Slanc連線到公頻${minute}分鐘",
  	 	 	 	"eng": "Use SLANC Connector to connect SLANC to global chat for ${minute} minutes"
  	 	 	},
  	 	 	"announcement": {
@@ -5926,6 +6796,153 @@
  	 	 	"description": {
  	 	 	 	"trans": "一個可用於交換物品的代幣",
  	 	 	 	"eng": "A token that can be used to exchange items"
+ 	 	 	}
+ 	 	},
+ 	 	"techScrapCluster": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "科技集群",
+ 	 	 	 	"eng": "Tech Scrap Cluster"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "科技集群包含1000個科技碎片，可用於輕鬆儲存和交易",
+ 	 	 	 	"eng": "A Tech Scrap Cluster contains 1000 Tech Scraps, can be used to easily store and trade"
+ 	 	 	}
+ 	 	},
+ 	 	"rareEquipmentCrate": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "稀有裝備箱",
+ 	 	 	 	"eng": "Rare Equipment Crate"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "包含隨機裝備或其他物品",
+ 	 	 	 	"eng": "A crate that contains a random equipments or other loots"
+ 	 	 	}
+ 	 	},
+ 	 	"globalPartyBuff": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "全球派對啟動器",
+ 	 	 	 	"eng": "Global Party Deployer"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"afkPercent",
+ 	 	 	 	 	"btcPercent",
+ 	 	 	 	 	"expPercent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "部署時，將AFK時間減少${afkPercent}％，增加了btc ${btcPercent}％，增加了${expPercent}％\\ nand \\ nand \\ n and在聊天屏幕上顯示橫幅，並顯示您已部署已部署的旗幟增益",
+ 	 	 	 	"eng": "When deployed, reduce AFK time by ${afkPercent}%, increased BTC gained by ${btcPercent}%, increase EXP gained by ${expPercent}%\\nAnd a banner will be shown in chat screen with your name indicating that you have deployed the buff"
+ 	 	 	},
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"afkPercent",
+ 	 	 	 	 	"btcPercent",
+ 	 	 	 	 	"expPercent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "🎉ITSParty Time！🥳，將AFK時間減少${afkPercent}％，增加了BTC，獲得了${btcPercent}％，增加了Exp ${expPercent}％",
+ 	 	 	 	"eng": "🎉Its Party Time!🥳, reduce AFK time by ${afkPercent}%, increased BTC gained by ${btcPercent}%, increase EXP gained by ${expPercent}%"
+ 	 	 	}
+ 	 	},
+ 	 	"turkey": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "烤火雞",
+ 	 	 	 	"eng": "Roasted Turkey"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "一隻美味的烤火雞，使用後增加AFK任務中收到的經驗值${percent}％",
+ 	 	 	 	"eng": "A delicious roasted turkey, when consumed increases EXP received in AFK tasks by ${percent}%"
+ 	 	 	}
+ 	 	},
+ 	 	"pudding": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "聖誕布丁",
+ 	 	 	 	"eng": "Christmas Pudding"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "冒著熱氣，口感綿密的布丁，含有果乾，堅果，還有一些酒精點綴。品嘗之後，會增加AFK任務中收到的EXP，${percent}％。此物品只能在聖誕期間使用",
+ 	 	 	 	"eng": "A dense, steamed pudding with dried fruits, nuts, and often laced with alcohol, when consumed increases EXP received in AFK tasks by ${percent}%.\\nThis item can only be used during December"
+ 	 	 	},
+ 	 	 	"error": {
+ 	 	 	 	"trans": "此物品僅在聖誕節活動期間可使用",
+ 	 	 	 	"eng": "This item is only available during Christmas Event"
+ 	 	 	}
+ 	 	},
+ 	 	"pawCredit": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "肉球積分",
+ 	 	 	 	"eng": "Paw Credit"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "可以在霓虹肉球收容所兌換寵物物品的積分",
+ 	 	 	 	"eng": "A credit that can be used to exchange pet items at Neon Paw Sanctuary"
+ 	 	 	}
+ 	 	},
+ 	 	"petTokenShard": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "志工勳章",
+ 	 	 	 	"eng": "Volunteer Service Medallion"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "合成${amount}個勳章來獲得一張收容所領養通行證，可以用來領養新寵物。",
+ 	 	 	 	"eng": "Combine ${amount} of this to get a Sanctuary Adoption Pass, and it can be used to adopt a new pet"
+ 	 	 	}
+ 	 	},
+ 	 	"petToken": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "收容所領養通行證",
+ 	 	 	 	"eng": "Sanctuary Adoption Pass"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "可以在霓虹肉球收容所領養寵物。",
+ 	 	 	 	"eng": "A pass that can be used to adopt a pet from Neon Paw Sanctuary"
+ 	 	 	}
+ 	 	},
+ 	 	"petFood": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "電纖嚼嚼",
+ 	 	 	 	"eng": "ElectroFiber Bites"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "\"電纖嚼嚼™ 含有一種複雜的纖維混合物，可以傳導和儲存能量，提供耐力和力量讓你的寵物在電子荒野中進行更長的遠征。\"",
+ 	 	 	 	"eng": "\"ElectroFiber Bites™ contain a complex blend of fibers that conduct and store energy, boosting your pet's stamina and power for longer expeditions in the cyber wilderness.\""
+ 	 	 	}
+ 	 	},
+ 	 	"petToy": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "奈米咬咬玩具球",
+ 	 	 	 	"eng": "NanoNibble Ball"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "\"全新推出的奈米玩具球 - 一項遊戲科技的奇蹟，專為帶來純粹的樂趣而設計。每個球在輕微觸碰時會亮起迷人的圖案，確保您的寵物能得到充分的娛樂。在一場前所未有的樂趣體驗後，這個球會自動解構成無害、環保的微粒，不會留下任何髒亂。完美適合單次難忘的數位陪伴冒險，是一場絕佳的遊戲體驗，省去您的清理麻煩。\"",
+ 	 	 	 	"eng": "\"Introducing the NanoNibble Ball – a marvel of playtime technology designed for sheer joy. Each ball lights up with mesmerizing patterns at the slightest touch, ensuring your pet is thoroughly entertained. After a session of unprecedented fun, the ball smartly deconstructs into harmless, eco-friendly particles, leaving no mess behind. Perfect for a single, unforgettable adventure in digital companionship, it’s the ultimate playtime experience that neatly disappears, sparing you the cleanup.\""
+ 	 	 	}
+ 	 	},
+ 	 	"petCleaner": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "柔順毛毛噴霧",
+ 	 	 	 	"eng": "FurFlush Spray"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "柔順毛毛噴霧：時尚罐身上寫著『瞬間清潔，瞬間消失』。快速噴灑讓你髒兮兮的寵物瞬間變得閃閃發亮—不用沖洗，不會弄髒，就像魔法一樣！最適合在網路見面前的『糟糕』時刻使用。注意：可能會讓寵物意外展現自信滿滿的態度。專為都市探險家的夥伴設計的一次性魔法。使用後消失，除了閃亮的寵物外，不會留下任何痕跡。",
+ 	 	 	 	"eng": "FurFlush Spray: The sleek canister reads 'Instant Clean, Instant Gone.' A quick spritz turns your grimy pet gleaming—no rinse, no mess, just poof! Perfect for those 'oops' moments before a cyber meet-up. Caution: May lead to unexpected pet swagger. Single-use magic for the urban explorer's companion. Disappears after use, leaving no evidence except a dazzling pet."
+ 	 	 	}
+ 	 	},
+ 	 	"petMedicine": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "汪喵奇癒劑",
+ 	 	 	 	"eng": "PawfectCure"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "當你的寵物感覺不適或情緒低落時，這就是必備良藥。它可以應對從感冒到「我吃了一些奇怪東西」的種種問題。請注意副作用：可能會突然對你的烹飪產生讚賞，並增加撒嬌攻勢。因為有時候，最好的療法就是一點笑聲...和汪喵奇癒劑。",
+ 	 	 	 	"eng": "When your pet's feeling under the weather, or just plain off, this is the go-to. It tackles everything from the sniffles to the 'I ate something weird' blues. Beware of side effects: may cause a sudden appreciation for your cooking and an increase in snuggle attacks. Because sometimes, the best remedy is a little laughter... and PawfectCure."
  	 	 	}
  	 	},
  	 	"experienceShard": {
@@ -6066,6 +7083,12 @@
  	 	 	 	 	"trans": "前往公會總部",
  	 	 	 	 	"eng": "Go to gang headquarters"
  	 	 	 	}
+ 	 	 	},
+ 	 	 	"toApartment": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "前往你的公寓",
+ 	 	 	 	 	"eng": "Go to your apartment"
+ 	 	 	 	}
  	 	 	}
  	 	},
  	 	"job": {
@@ -6122,6 +7145,29 @@
  	 	 	"cantEnterError": {
  	 	 	 	"trans": "您需要加入公會才能進入此區域",
  	 	 	 	"eng": "You need to join a gang to enter this area"
+ 	 	 	}
+ 	 	},
+ 	 	"apartment": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "我的公寓",
+ 	 	 	 	"eng": "My Apartment"
+ 	 	 	},
+ 	 	 	"toMainHub": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "返回香格里拉市中心",
+ 	 	 	 	 	"eng": "Return to Shangri-La City Center"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "[公寓]\n        你在城市裡的舒適公寓。你的寵物正在等著你回家。",
+ 	 	 	 	"eng": "[Apartment]\r\n        Your cozy apartment in the city. your pets are waiting for you to come home."
+ 	 	 	},
+ 	 	 	"cantEnterError": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"level"
+ 	 	 	 	],
+ 	 	 	 	"trans": "你需要達到${level}級才能租房。",
+ 	 	 	 	"eng": "You need to be at least level ${level} to rent an apartment"
  	 	 	}
  	 	},
  	 	"zone": {
@@ -6362,7 +7408,7 @@
  	 	 	 	"trans": [
  	 	 	 	 	"相信我，您在這裡只會找到上等貨。",
  	 	 	 	 	"如果您給我一些比特幣，我可以幫助您。",
- 	 	 	 	 	"我可以修理您的設備......但要付出代價。",
+ 	 	 	 	 	"我可以修理您的裝備......但要付出代價。",
  	 	 	 	 	"您想要什麼，陌生人？",
  	 	 	 	 	"看看我今天搜刮到了什麼。",
  	 	 	 	 	"在這些地方找不到更好的東西了。",
@@ -6390,7 +7436,7 @@
  	 	 	 	 	"您見過弒世者(Worldslayer)嗎？",
  	 	 	 	 	"代我向總統問好！",
  	 	 	 	 	"我想知道 Lucille 在做什麼......",
- 	 	 	 	 	"別光顧著逛街。買點東西！",
+ 	 	 	 	 	"別光顧著看。買點東西！",
  	 	 	 	 	"您在尋找什麼特別的東西？",
  	 	 	 	 	"您看起來就像看到便宜貨一樣！",
  	 	 	 	 	"我曾經是一個像您一樣的冒險家，直到我的膝蓋中了一顆子彈",
@@ -6417,7 +7463,7 @@
  	 	 	 	 	"我女兒的名字不是 Mithra！不要再取笑她了！",
  	 	 	 	 	"您準備好了嗎？",
  	 	 	 	 	"沒有容器的話，鑰匙什麼都不是。",
- 	 	 	 	 	"哪個更沉重？旅行者？您的槍，還是您的過去？",
+ 	 	 	 	 	"哪個更沉重？您的槍，還是您的過去？",
  	 	 	 	 	"鑰匙高於一切......除了一杯好酒。",
  	 	 	 	 	"一把鑰匙，一個目的。"
  	 	 	 	],
@@ -6572,10 +7618,10 @@
  	 	 	 	 	"看來有人需要一個新的背包。",
  	 	 	 	 	"如果您喜歡它，就把它裝進袋子裡！",
  	 	 	 	 	"您的口袋似乎滿了。我可以幫您減輕這個負擔。",
- 	 	 	 	 	"您的手臂上裝滿了東西，怎麼能打仗呢？",
+ 	 	 	 	 	"手臂上掛滿了東西要怎麼戰鬥呢？",
  	 	 	 	 	"您知道，您不必把您的所有東西都裝在您的口袋裡。",
  	 	 	 	 	"這樣吧，您把您的舊背包給我，我給您一個新背包。",
- 	 	 	 	 	"您走路的樣子讓我覺得您負荷太重。",
+ 	 	 	 	 	"您走路的樣子讓我覺得您的負擔太重。",
  	 	 	 	 	"當您想保證背包的安全時，您可以來跟我說。"
  	 	 	 	],
  	 	 	 	"eng": [
@@ -6598,7 +7644,7 @@
  	 	"blackMarket": {
  	 	 	"defaultLines": {
  	 	 	 	"trans": [
- 	 	 	 	 	"Hey kid, wanna make some quick bucks?"
+ 	 	 	 	 	"嘿，小子。急需要用錢嗎？"
  	 	 	 	],
  	 	 	 	"eng": [
  	 	 	 	 	"Hey kid, wanna make some quick bucks?"
@@ -6609,7 +7655,7 @@
  	 	 	 	"eng": "Black Market"
  	 	 	},
  	 	 	"npcName": {
- 	 	 	 	"trans": "零",
+ 	 	 	 	"trans": "澪",
  	 	 	 	"eng": "Zero"
  	 	 	}
  	 	},
@@ -6635,10 +7681,10 @@
  	 	 	"defaultLines": {
  	 	 	 	"trans": [
  	 	 	 	 	"生活艱難，但你更堅強。繼續奮鬥。",
- 	 	 	 	 	"保持堅強，保持朋克，保持生存。",
+ 	 	 	 	 	"保持堅強，保持龐克，保持生存。",
  	 	 	 	 	"請記住，你的價值不是由你的掙扎來定義的。",
  	 	 	 	 	"不要讓系統把你打倒，站起來反抗。",
- 	 	 	 	 	"保持與內心自我連接，遠離噪音。",
+ 	 	 	 	 	"保持與內心自我連結，遠離噪音。",
  	 	 	 	 	"保持在線，保持堅強，並對自己保持真實。"
  	 	 	 	],
  	 	 	 	"eng": [
@@ -6655,8 +7701,58 @@
  	 	 	 	"eng": "Alleyway"
  	 	 	},
  	 	 	"npcName": {
- 	 	 	 	"trans": "優質的",
+ 	 	 	 	"trans": "Bellial",
  	 	 	 	"eng": "B3llial"
+ 	 	 	}
+ 	 	},
+ 	 	"halloween": {
+ 	 	 	"defaultLines": {
+ 	 	 	 	"trans": [
+ 	 	 	 	 	"Pumpkin is my source of power!",
+ 	 	 	 	 	"Check out my pumpkin costume!",
+ 	 	 	 	 	"Hmmmm, I wonder what's inside this pumpkin...",
+ 	 	 	 	 	"Give me your pumpkin, and I'll give you a treat!"
+ 	 	 	 	],
+ 	 	 	 	"eng": [
+ 	 	 	 	 	"Pumpkin is my source of power!",
+ 	 	 	 	 	"Check out my pumpkin costume!",
+ 	 	 	 	 	"Hmmmm, I wonder what's inside this pumpkin...",
+ 	 	 	 	 	"Give me your pumpkin, and I'll give you a treat!"
+ 	 	 	 	]
+ 	 	 	},
+ 	 	 	"name": {
+ 	 	 	 	"trans": "小巷",
+ 	 	 	 	"eng": "Alleyway"
+ 	 	 	},
+ 	 	 	"npcName": {
+ 	 	 	 	"trans": "南瓜怪人",
+ 	 	 	 	"eng": "pumpkin weirdo"
+ 	 	 	}
+ 	 	},
+ 	 	"petShop": {
+ 	 	 	"defaultLines": {
+ 	 	 	 	"trans": [
+ 	 	 	 	 	"Hey, choom! Neon Paws is for the brave. These sprites need your daily grind. Ready to dive in?",
+ 	 	 	 	 	"Lookin' sharp, netrunner! Here, pets are more than code, they need your daily hack to thrive.",
+ 	 	 	 	 	"What's up, street samurai? Partner with a survivor. Without your daily deeds, they're zeroed.",
+ 	 	 	 	 	"Edge runner, eh? This is where tech meets heart. Ignore them, and they vanish into the net. Daily care, got it?",
+ 	 	 	 	 	"Cyberdeck in hand, heart on sleeve? Our critters need that daily touch or they'll fade into the static."
+ 	 	 	 	],
+ 	 	 	 	"eng": [
+ 	 	 	 	 	"Hey, choom! Neon Paws is for the brave. These sprites need your daily grind. Ready to dive in?",
+ 	 	 	 	 	"Lookin' sharp, netrunner! Here, pets are more than code, they need your daily hack to thrive.",
+ 	 	 	 	 	"What's up, street samurai? Partner with a survivor. Without your daily deeds, they're zeroed.",
+ 	 	 	 	 	"Edge runner, eh? This is where tech meets heart. Ignore them, and they vanish into the net. Daily care, got it?",
+ 	 	 	 	 	"Cyberdeck in hand, heart on sleeve? Our critters need that daily touch or they'll fade into the static."
+ 	 	 	 	]
+ 	 	 	},
+ 	 	 	"name": {
+ 	 	 	 	"trans": "霓虹肉球收容所",
+ 	 	 	 	"eng": "Neon Paws Sanctuary"
+ 	 	 	},
+ 	 	 	"npcName": {
+ 	 	 	 	"trans": "金",
+ 	 	 	 	"eng": "Jin"
  	 	 	}
  	 	},
  	 	"recycleMachine": {
@@ -6688,6 +7784,58 @@
  	 	 	 	"trans": "流浪者",
  	 	 	 	"eng": "Scavengers"
  	 	 	}
+ 	 	}
+ 	},
+ 	"petType": {
+ 	 	"dog": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "狗",
+ 	 	 	 	"eng": "Dog"
+ 	 	 	}
+ 	 	},
+ 	 	"cat": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "貓",
+ 	 	 	 	"eng": "Cat"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"petStatus": {
+ 	 	"sick": {
+ 	 	 	"trans": "生病",
+ 	 	 	"eng": "Sick"
+ 	 	},
+ 	 	"hungry": {
+ 	 	 	"trans": "餓",
+ 	 	 	"eng": "Hungry"
+ 	 	},
+ 	 	"starving": {
+ 	 	 	"trans": "超餓",
+ 	 	 	"eng": "Starving"
+ 	 	},
+ 	 	"wellFed": {
+ 	 	 	"trans": "營養充足",
+ 	 	 	"eng": "Well Fed"
+ 	 	},
+ 	 	"dirty": {
+ 	 	 	"trans": "髒",
+ 	 	 	"eng": "Dirty"
+ 	 	},
+ 	 	"filthy": {
+ 	 	 	"trans": "超髒",
+ 	 	 	"eng": "Filthy"
+ 	 	},
+ 	 	"dead": {
+ 	 	 	"trans": "已故",
+ 	 	 	"eng": "Deceased"
+ 	 	},
+ 	 	"unhappy": {
+ 	 	 	"trans": "不開心",
+ 	 	 	"eng": "Unhappy"
+ 	 	},
+ 	 	"depressed": {
+ 	 	 	"trans": "憂鬱",
+ 	 	 	"eng": "Depressed"
  	 	}
  	},
  	"action": {
@@ -6807,7 +7955,7 @@
  	 	 	 	"eng": "Hack SL Data Fortress"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "發起針對香格里拉數據堡壘的網路空間聯合攻擊。\r\n如果攻擊成功，有可能迫使SL數據堡壘將漏洞傳輸給所有透過電馭網路連接的用戶。",
+ 	 	 	 	"trans": "發起針對香格里拉數據堡壘的網路空間聯合攻擊。\r\n如果攻擊成功，有可能迫使SL數據堡壘將漏洞傳輸給所有透過電馭網路連線的用戶。",
  	 	 	 	"eng": "Launch a collaborative attack in cyberspace targeting the Shangri-La Data Fortress.\r\nIf the attack succeeds, it’s possible to force the Data Fortress to transmit exploits to all cybernetically connected users."
  	 	 	}
  	 	},
@@ -6815,6 +7963,22 @@
  	 	 	"name": {
  	 	 	 	"trans": "交易",
  	 	 	 	"eng": "Trade"
+ 	 	 	}
+ 	 	},
+ 	 	"bulkCrafting": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "大量製作",
+ 	 	 	 	"eng": "Bulk Crafting"
+ 	 	 	}
+ 	 	},
+ 	 	"petAFK": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "動物中途之家志工輪班",
+ 	 	 	 	"eng": "Pet Shelter Volunteer Shift"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "到當地的動物中途之家當志工，幫忙照顧這些可愛的小動物。",
+ 	 	 	 	"eng": "Volunteer at the local pet shelter to help take care of the animals."
  	 	 	}
  	 	},
  	 	"autoFarm": {
@@ -6846,6 +8010,59 @@
  	 	 	 	"trans": "[掛機蒐集資源]\r\n                    在${zoneName}附近搜索有用的物資。\r\n                    誰知道呢，說不定會找到寶物喔！",
  	 	 	 	"eng": "[AFK Resource Gather]\r\n                    Search around in ${zoneName} and scavenge for useful items.\r\n                    Who knows, maybe you'll get lucky!"
  	 	 	}
+ 	 	}
+ 	},
+ 	"leaderboard": {
+ 	 	"skip": {
+ 	 	 	"trans": "飛逝點數",
+ 	 	 	"eng": "Skip Points"
+ 	 	},
+ 	 	"level": {
+ 	 	 	"trans": "等級",
+ 	 	 	"eng": "Level"
+ 	 	},
+ 	 	"epicPrint": {
+ 	 	 	"trans": "史詩裝備列印",
+ 	 	 	"eng": "Epic Equipment Printed"
+ 	 	},
+ 	 	"epicBagPrint": {
+ 	 	 	"trans": "史詩背包製作",
+ 	 	 	"eng": "Epic Bag Crafted"
+ 	 	},
+ 	 	"mining": {
+ 	 	 	"trans": "挖礦等級",
+ 	 	 	"eng": "Mining Level"
+ 	 	},
+ 	 	"ammo": {
+ 	 	 	"trans": "彈藥等級",
+ 	 	 	"eng": "Ammo Level"
+ 	 	},
+ 	 	"medical": {
+ 	 	 	"trans": "醫療等級",
+ 	 	 	"eng": "Medical Level"
+ 	 	},
+ 	 	"scavenge": {
+ 	 	 	"trans": "搜索等級",
+ 	 	 	"eng": "Scavenge Level"
+ 	 	},
+ 	 	"molecular": {
+ 	 	 	"trans": "列印等級",
+ 	 	 	"eng": "Molecular Print Level"
+ 	 	},
+ 	 	"streetcred": {
+ 	 	 	"trans": "街頭聲望",
+ 	 	 	"eng": "Street Cred"
+ 	 	},
+ 	 	"description": {
+ 	 	 	"vars": [
+ 	 	 	 	"minutes"
+ 	 	 	],
+ 	 	 	"trans": "排行榜每${minutes}分鐘更新一次",
+ 	 	 	"eng": "Leaderboard listing updates every ${minutes} minutes"
+ 	 	},
+ 	 	"noPlayers": {
+ 	 	 	"trans": "目前該排行榜中沒有玩家",
+ 	 	 	"eng": "Currently No Players in this Leaderboard"
  	 	}
  	},
  	"Quest": {
@@ -6982,31 +8199,31 @@
  	 	 	},
  	 	 	"killGang1": {
  	 	 	 	"name": {
- 	 	 	 	 	"trans": "擊敗動物幫派成員",
+ 	 	 	 	 	"trans": "擊敗「野獸幫」幫派成員",
  	 	 	 	 	"eng": "Defeat Animals gang member"
  	 	 	 	},
  	 	 	 	"description": {
- 	 	 	 	 	"trans": "擊敗動物幫派敵人",
+ 	 	 	 	 	"trans": "擊敗「野獸幫」幫派敵人",
  	 	 	 	 	"eng": "Defeat Animals gang enemies"
  	 	 	 	}
  	 	 	},
  	 	 	"killGang2": {
  	 	 	 	"name": {
- 	 	 	 	 	"trans": "擊敗Voodoo男孩幫派成員",
+ 	 	 	 	 	"trans": "擊敗「巫毒小子」幫派成員",
  	 	 	 	 	"eng": "Defeat Voodoo boys gang member"
  	 	 	 	},
  	 	 	 	"description": {
- 	 	 	 	 	"trans": "擊敗伏都教男孩幫敵人",
+ 	 	 	 	 	"trans": "擊敗「巫毒小子」幫派敵人",
  	 	 	 	 	"eng": "Defeat Voodoo boys gang enemies"
  	 	 	 	}
  	 	 	},
  	 	 	"killGang3": {
  	 	 	 	"name": {
- 	 	 	 	 	"trans": "擊敗清道夫幫派成員",
+ 	 	 	 	 	"trans": "擊敗「流浪者」幫派成員",
  	 	 	 	 	"eng": "Defeat Scavengers gang member"
  	 	 	 	},
  	 	 	 	"description": {
- 	 	 	 	 	"trans": "擊敗清道夫幫派敵人",
+ 	 	 	 	 	"trans": "擊敗「流浪者」幫派敵人",
  	 	 	 	 	"eng": "Defeat Scavengers gang enemies"
  	 	 	 	}
  	 	 	}
@@ -7039,6 +8256,12 @@
  	 	 	"name": {
  	 	 	 	"trans": "解鎖神秘的容器",
  	 	 	 	"eng": "Unlock Mysterious Container"
+ 	 	 	}
+ 	 	},
+ 	 	"christmasGift2": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "解鎖霜凍容器",
+ 	 	 	 	"eng": "Unlock Frosty Container"
  	 	 	}
  	 	},
  	 	"backpack1": {
@@ -7081,12 +8304,6 @@
  	 	 	 	"eng": "AI Core Cluster"
  	 	 	}
  	 	},
- 	 	"halloween": {
- 	 	 	"name": {
- 	 	 	 	"trans": "傑克燈籠",
- 	 	 	 	"eng": "Jack O Lantern"
- 	 	 	}
- 	 	},
  	 	"christmasToBox": {
  	 	 	"name": {
  	 	 	 	"trans": "傳奇已加密容器",
@@ -7104,6 +8321,40 @@
  	 	 	 	"trans": "醫療科技集群",
  	 	 	 	"eng": "Medical Tech Cluster"
  	 	 	}
+ 	 	},
+ 	 	"medicalTechClusterRevers": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "醫療科技零件",
+ 	 	 	 	"eng": "Medical Tech Scrap"
+ 	 	 	}
+ 	 	},
+ 	 	"techScrapCluster": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "科技集群",
+ 	 	 	 	"eng": "Tech Scrap Cluster"
+ 	 	 	}
+ 	 	},
+ 	 	"techScrapClusterReverse": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "科技碎片",
+ 	 	 	 	"eng": "Tech Scrap"
+ 	 	 	}
+ 	 	},
+ 	 	"unlockRareEquipmentCrate": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "解鎖稀有裝備箱",
+ 	 	 	 	"eng": "Unlock Rare Equipment Crate"
+ 	 	 	}
+ 	 	},
+ 	 	"craftPetToken": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "合成收容所領養通行證",
+ 	 	 	 	"eng": "Craft Sanctuary Adoption Pass"
+ 	 	 	}
+ 	 	},
+ 	 	"craft": {
+ 	 	 	"trans": "合成",
+ 	 	 	"eng": "Craft"
  	 	},
  	 	"ammo1": {
  	 	 	"vars": [
@@ -7195,6 +8446,10 @@
  	 	 	"trans": "聊天漏洞[LOVE]",
  	 	 	"eng": "Chat Exploit [LOVE]"
  	 	},
+ 	 	"posh": {
+ 	 	 	"trans": "聊天漏洞 [高雅]",
+ 	 	 	"eng": "Chat Exploit [POSH]"
+ 	 	},
  	 	"chatExploitProtect": {
  	 	 	"trans": "聊天加密",
  	 	 	"eng": "Chat Encryption"
@@ -7208,8 +8463,32 @@
  	 	 	"eng": "Flash Grenade"
  	 	},
  	 	"aiConnect": {
- 	 	 	"trans": "網路空間連接",
+ 	 	 	"trans": "網路空間連線",
  	 	 	"eng": "Cyberspace Connection"
+ 	 	},
+ 	 	"globalParty": {
+ 	 	 	"trans": "全球派對",
+ 	 	 	"eng": "Global Party"
+ 	 	},
+ 	 	"afkExp": {
+ 	 	 	"trans": "AFK EXP提升",
+ 	 	 	"eng": "AFK EXP Boost"
+ 	 	},
+ 	 	"petRevive": {
+ 	 	 	"trans": "寵物復活",
+ 	 	 	"eng": "Pet Revive"
+ 	 	},
+ 	 	"petReviveDesc": {
+ 	 	 	"trans": "在這個增益期間內可以復活寵物。",
+ 	 	 	"eng": "Pet revival is now available during this buff duration."
+ 	 	},
+ 	 	"petDraw": {
+ 	 	 	"trans": "寵物領養",
+ 	 	 	"eng": "Pet Adoption Activated"
+ 	 	},
+ 	 	"petDrawDesc": {
+ 	 	 	"trans": "在這個增益期間內可以領養寵物。",
+ 	 	 	"eng": "Pet adoption is now available during this buff duration."
  	 	}
  	},
  	"combat": {
@@ -7272,6 +8551,52 @@
  	 	 	"eng": "You received ${amount} ${itemName}"
  	 	}
  	},
+ 	"chatExploit": {
+ 	 	"loveWords": {
+ 	 	 	"trans": [
+ 	 	 	 	"愛您!",
+ 	 	 	 	"您們最棒了",
+ 	 	 	 	"好喜歡您們",
+ 	 	 	 	"愛死您們了",
+ 	 	 	 	"您好棒",
+ 	 	 	 	"我們是最好的朋友",
+ 	 	 	 	"好愛您們",
+ 	 	 	 	"您好好喔",
+ 	 	 	 	"我愛您",
+ 	 	 	 	"我們最棒了",
+ 	 	 	 	"您們太神了",
+ 	 	 	 	"您對我很重要",
+ 	 	 	 	"我想您",
+ 	 	 	 	"我好想您們喔",
+ 	 	 	 	"KYAAAAAAAAA",
+ 	 	 	 	"祝您有個美好的一天",
+ 	 	 	 	"好愛您",
+ 	 	 	 	"要抱抱",
+ 	 	 	 	"您有多愛我"
+ 	 	 	],
+ 	 	 	"eng": [
+ 	 	 	 	"Love you",
+ 	 	 	 	"You guys are great",
+ 	 	 	 	"You guys are the best",
+ 	 	 	 	"love yall",
+ 	 	 	 	"You are amazing",
+ 	 	 	 	"we are best friend",
+ 	 	 	 	"Love you all",
+ 	 	 	 	"you are great",
+ 	 	 	 	"you the best",
+ 	 	 	 	"we are awesome",
+ 	 	 	 	"you are awesome",
+ 	 	 	 	"have a nice day",
+ 	 	 	 	"miss you",
+ 	 	 	 	"miss you guys",
+ 	 	 	 	"KYAAAAAAAAA",
+ 	 	 	 	"wish you have nice day",
+ 	 	 	 	"I love you",
+ 	 	 	 	"can we hug?",
+ 	 	 	 	"how much you love me?"
+ 	 	 	]
+ 	 	}
+ 	},
  	"chatServer": {
  	 	"restarting": {
  	 	 	"trans": "聊天伺服器正在更新...",
@@ -7321,7 +8646,7 @@
  	 	 	"eng": "Hey guys! join my dungeon [${type}](lv${level}) ==> ${dungeonInvite}"
  	 	},
  	 	"shareDungeonCooldown": {
- 	 	 	"trans": "請不要連續發送邀請！",
+ 	 	 	"trans": "請不要連續傳送邀請！",
  	 	 	"eng": "Please wait before sending another invite"
  	 	},
  	 	"normal": {
@@ -7421,7 +8746,7 @@
  	 	 	"eng": "Do you think you are strong enough? take on stronger enemies in dungeon!\r\n                        remember to buy some healing item! you won't regen after battle in dungeon"
  	 	},
  	 	"cleared": {
- 	 	 	"trans": "已清除地牢！",
+ 	 	 	"trans": "已清除地下城！",
  	 	 	"eng": "Dungeon cleared!"
  	 	}
  	},
@@ -7559,55 +8884,13 @@
  	 	"upgradePocketed": {
  	 	 	"trans": "擴張",
  	 	 	"eng": "of Expansion"
+ 	 	},
+ 	 	"upgradeHealing": {
+ 	 	 	"trans": "癒合",
+ 	 	 	"eng": "of Healing"
  	 	}
  	},
  	"market": {
- 	 	"amountSelectModal": {
- 	 	 	"title": {
- 	 	 	 	"trans": "您想購買多少？",
- 	 	 	 	"eng": "How many would you like to purchase?"
- 	 	 	},
- 	 	 	"totalPrice": {
- 	 	 	 	"vars": [
- 	 	 	 	 	"total"
- 	 	 	 	],
- 	 	 	 	"trans": "共計將花費${total}比特幣",
- 	 	 	 	"eng": "it will cost ${total} Bitcoin total"
- 	 	 	}
- 	 	},
- 	 	"notEnoughMoney": {
- 	 	 	"trans": "比特幣不足",
- 	 	 	"eng": "Insufficient bitcoin"
- 	 	},
- 	 	"priceSelectModal": {
- 	 	 	"title2": {
- 	 	 	 	"vars": [
- 	 	 	 	 	"itemName"
- 	 	 	 	],
- 	 	 	 	"trans": "${itemName}的價格",
- 	 	 	 	"eng": "Price for ${itemName}"
- 	 	 	}
- 	 	},
- 	 	"priceConfirm": {
- 	 	 	"vars": [
- 	 	 	 	"amountStr",
- 	 	 	 	"priceStr",
- 	 	 	 	"itemName"
- 	 	 	],
- 	 	 	"trans": "您以每件${priceStr}的商品價格販賣${amountStr} ${itemName}",
- 	 	 	"eng": "You are selling ${amountStr} ${itemName}(s), at the price of ${priceStr} Per Item"
- 	 	},
- 	 	"totalConfirm": {
- 	 	 	"vars": [
- 	 	 	 	"total"
- 	 	 	],
- 	 	 	"trans": "所有物品售出後，您將獲得${total}比特幣",
- 	 	 	"eng": "If all items are sold, you will earn ${total} BitCoins"
- 	 	},
- 	 	"sellAmountModalTitle": {
- 	 	 	"trans": "您想出售多少？",
- 	 	 	"eng": "How many would you like to sell?"
- 	 	},
  	 	"upgradeSlot": {
  	 	 	"trans": "升級",
  	 	 	"eng": "Upgrade"
@@ -7616,7 +8899,7 @@
  	 	 	"vars": [
  	 	 	 	"slot"
  	 	 	],
- 	 	 	"trans": "將市場可販賣數項升級到${slot}",
+ 	 	 	"trans": "將市場貨架升級到${slot}",
  	 	 	"eng": "Upgrade Market Slot to ${slot}"
  	 	},
  	 	"upgradeSlotDesc": {
@@ -7624,14 +8907,163 @@
  	 	 	 	"slot",
  	 	 	 	"price"
  	 	 	],
- 	 	 	"trans": "您可以透過支付${price}Bitcoin來將您的市場貨架增加到${slot}格",
+ 	 	 	"trans": "您可以支付${price}Bitcoin將您的市場貨架增加到${slot}格",
  	 	 	"eng": "You can increase your market slot to ${slot} by paying ${price} BitCoins"
+ 	 	},
+ 	 	"purchaseModal": {
+ 	 	 	"purchase": {
+ 	 	 	 	"trans": "購買",
+ 	 	 	 	"eng": "Purchase"
+ 	 	 	}
  	 	}
  	},
  	"mobile": {
  	 	"returnToAppMessage": {
  	 	 	"trans": "伺服器同步中..",
  	 	 	"eng": "Syncing with server.."
+ 	 	}
+ 	},
+ 	"petDetailsPage": {
+ 	 	"dispose": {
+ 	 	 	"trans": "拋棄",
+ 	 	 	"eng": "dispose"
+ 	 	},
+ 	 	"disposeConfirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "拋棄",
+ 	 	 	 	"eng": "dispose"
+ 	 	 	},
+ 	 	 	"message": {
+ 	 	 	 	"trans": "你確定要拋棄這隻寵物嗎？這將無法復原。",
+ 	 	 	 	"eng": "Are you sure you want to dispose of this pet? this cannot be undone"
+ 	 	 	}
+ 	 	},
+ 	 	"rerollImage": {
+ 	 	 	"trans": "重骰圖片",
+ 	 	 	"eng": "re-roll Image"
+ 	 	},
+ 	 	"rerollImageConfirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "重骰圖片",
+ 	 	 	 	"eng": "re-roll Image"
+ 	 	 	},
+ 	 	 	"message": {
+ 	 	 	 	"trans": "你確定要重新抽取這隻寵物的圖片嗎？",
+ 	 	 	 	"eng": "Are you sure you want to re-roll this pets image?"
+ 	 	 	}
+ 	 	},
+ 	 	"petNotFound": {
+ 	 	 	"trans": "未找到寵物",
+ 	 	 	"eng": "Pet not found"
+ 	 	},
+ 	 	"name": {
+ 	 	 	"trans": "名稱",
+ 	 	 	"eng": "name"
+ 	 	},
+ 	 	"age": {
+ 	 	 	"trans": "年齡",
+ 	 	 	"eng": "age"
+ 	 	},
+ 	 	"status": {
+ 	 	 	"trans": "狀態",
+ 	 	 	"eng": "status"
+ 	 	},
+ 	 	"noStatus": {
+ 	 	 	"trans": "健康",
+ 	 	 	"eng": "healthy"
+ 	 	},
+ 	 	"deadRemoveMessage": {
+ 	 	 	"vars": [
+ 	 	 	 	"date"
+ 	 	 	],
+ 	 	 	"trans": "將在 ${date} 時移除",
+ 	 	 	"eng": "will be removed at ${date}"
+ 	 	},
+ 	 	"hunger": {
+ 	 	 	"trans": "飽足感",
+ 	 	 	"eng": "Hunger"
+ 	 	},
+ 	 	"feed": {
+ 	 	 	"trans": "餵食",
+ 	 	 	"eng": "Feed"
+ 	 	},
+ 	 	"noFood": {
+ 	 	 	"vars": [
+ 	 	 	 	"item"
+ 	 	 	],
+ 	 	 	"trans": "你沒有 ${item} 可以餵你的寵物",
+ 	 	 	"eng": "You don't have ${item} to feed your pet"
+ 	 	},
+ 	 	"happiness": {
+ 	 	 	"trans": "心情",
+ 	 	 	"eng": "Happiness"
+ 	 	},
+ 	 	"play": {
+ 	 	 	"trans": "玩耍",
+ 	 	 	"eng": "Play"
+ 	 	},
+ 	 	"noToy": {
+ 	 	 	"vars": [
+ 	 	 	 	"item"
+ 	 	 	],
+ 	 	 	"trans": "你沒有 ${item} 可以和你的寵物玩。",
+ 	 	 	"eng": "You don't have ${item} to play with your pet"
+ 	 	},
+ 	 	"cleanliness": {
+ 	 	 	"trans": "清潔度",
+ 	 	 	"eng": "Cleanliness"
+ 	 	},
+ 	 	"clean": {
+ 	 	 	"trans": "清潔",
+ 	 	 	"eng": "Clean"
+ 	 	},
+ 	 	"noCleaner": {
+ 	 	 	"vars": [
+ 	 	 	 	"item"
+ 	 	 	],
+ 	 	 	"trans": "你沒有 ${item} 可以清潔你的寵物",
+ 	 	 	"eng": "You don't have ${item} to clean your pet"
+ 	 	},
+ 	 	"giveMedicine": {
+ 	 	 	"trans": "治療",
+ 	 	 	"eng": "Give Medicine"
+ 	 	},
+ 	 	"reviveButton": {
+ 	 	 	"trans": "復活",
+ 	 	 	"eng": "Revive"
+ 	 	}
+ 	},
+ 	"sendStreetCred": {
+ 	 	"error": {
+ 	 	 	"giveSelf": {
+ 	 	 	 	"trans": "你不能將街頭聲望發送給自己",
+ 	 	 	 	"eng": "you can't send street cred to yourself"
+ 	 	 	}
+ 	 	},
+ 	 	"title": {
+ 	 	 	"trans": "給予街頭聲望",
+ 	 	 	"eng": "Send street cred"
+ 	 	},
+ 	 	"description": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "您確定要將街頭聲望送給${playerName}嗎？ 您可以每天送給任何人一個街頭聲望。",
+ 	 	 	"eng": "Are you sure you want to send street cred to ${playerName}? you can send one street cred to anyone everyday."
+ 	 	}
+ 	},
+ 	"sendStreetCredError": {
+ 	 	"title": {
+ 	 	 	"trans": "現在無法給予街頭聲望",
+ 	 	 	"eng": "Can't send street cred now"
+ 	 	},
+ 	 	"description2": {
+ 	 	 	"trans": "您每天只能給予一個街頭聲望。 而且您必須在10等以上。",
+ 	 	 	"eng": "You can only send one street cred per day. and you must be level 10 or above."
+ 	 	},
+ 	 	"confirmText": {
+ 	 	 	"trans": "好的",
+ 	 	 	"eng": "OK"
  	 	}
  	},
  	"secretKey": {
@@ -7694,7 +9126,7 @@
  	 	 	 	"likerName",
  	 	 	 	"amount"
  	 	 	],
- 	 	 	"trans": "${likerName}已向您發送${amount}的敬意",
+ 	 	 	"trans": "${likerName}已向您傳送${amount}的敬意",
  	 	 	"eng": "${likerName} has send you ${amount} respects for your skip"
  	 	}
  	},
@@ -7746,52 +9178,27 @@
  	 	 	 	"trans": "總計：${amount} ${itemName}",
  	 	 	 	"eng": "Total: ${amount} ${itemName}"
  	 	 	}
- 	 	}
- 	},
- 	"chatExploit": {
- 	 	"loveWords": {
- 	 	 	"trans": [
- 	 	 	 	"愛您!",
- 	 	 	 	"您們最棒了",
- 	 	 	 	"好喜歡您們",
- 	 	 	 	"愛死您們了",
- 	 	 	 	"您好棒",
- 	 	 	 	"我們是最好的朋友",
- 	 	 	 	"好愛您們",
- 	 	 	 	"您好好喔",
- 	 	 	 	"我愛您",
- 	 	 	 	"我們最棒了",
- 	 	 	 	"您們太神了",
- 	 	 	 	"您對我很重要",
- 	 	 	 	"我想您",
- 	 	 	 	"我好想您們喔",
- 	 	 	 	"KYAAAAAAAAA",
- 	 	 	 	"祝您有個美好的一天",
- 	 	 	 	"好愛您",
- 	 	 	 	"要抱抱",
- 	 	 	 	"您有多愛我"
+ 	 	},
+ 	 	"npcNotAvailable": {
+ 	 	 	"trans": "此商店目前尚未開放",
+ 	 	 	"eng": "This shop is not available at the moment"
+ 	 	},
+ 	 	"purchasedMessage": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"item"
  	 	 	],
- 	 	 	"eng": [
- 	 	 	 	"Love you",
- 	 	 	 	"You guys are great",
- 	 	 	 	"You guys are the best",
- 	 	 	 	"love yall",
- 	 	 	 	"You are amazing",
- 	 	 	 	"we are best friend",
- 	 	 	 	"Love you all",
- 	 	 	 	"you are great",
- 	 	 	 	"you the best",
- 	 	 	 	"we are awesome",
- 	 	 	 	"you are awesome",
- 	 	 	 	"have a nice day",
- 	 	 	 	"miss you",
- 	 	 	 	"miss you guys",
- 	 	 	 	"KYAAAAAAAAA",
- 	 	 	 	"wish you have nice day",
- 	 	 	 	"I love you",
- 	 	 	 	"can we hug?",
- 	 	 	 	"how much you love me?"
- 	 	 	]
+ 	 	 	"trans": "您已經購買了${amount} ${item}",
+ 	 	 	"eng": "You have purchased ${amount} ${item}"
+ 	 	},
+ 	 	"exchangedMessage": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"item",
+ 	 	 	 	"item2"
+ 	 	 	],
+ 	 	 	"trans": "您已經用${amount} ${item} 交換了${item2}",
+ 	 	 	"eng": "You have exchanged ${amount} ${item} for ${item2}"
  	 	}
  	},
  	"bundleDetailsModal": {
@@ -7821,6 +9228,16 @@
  	 	 	 	"trans": "購買",
  	 	 	 	"eng": "Purchase"
  	 	 	}
+ 	 	}
+ 	},
+ 	"clanNoticeModal": {
+ 	 	"title": {
+ 	 	 	"trans": "輸入新通知",
+ 	 	 	"eng": "enter new notice"
+ 	 	},
+ 	 	"submit": {
+ 	 	 	"trans": "傳送",
+ 	 	 	"eng": "send"
  	 	}
  	},
  	"createClanModal": {
@@ -7863,7 +9280,7 @@
  	},
  	"gangQuestAcceptModal": {
  	 	"title": {
- 	 	 	"trans": "檢測到地牢任務",
+ 	 	 	"trans": "偵測到地城任務",
  	 	 	"eng": "Dungeon Quest Detected"
  	 	},
  	 	"quest": {
@@ -7876,7 +9293,7 @@
  	 	 	 	"eng": "Accepting this quest and defeat gang members of a unknown gang to receive rewards"
  	 	 	},
  	 	 	"reward": {
- 	 	 	 	"trans": "接受此任務後，您將在您的任務選項卡中收到目標幫派信息",
+ 	 	 	 	"trans": "接受此任務後，您將在您的任務頁面中收到目標幫派訊息",
  	 	 	 	"eng": "You will receive target gang information in your quest tab after accepting this quest"
  	 	 	}
  	 	},
@@ -7889,26 +9306,57 @@
  	 	 	"eng": "Accept"
  	 	}
  	},
- 	"christmasPromo": {
+ 	"petReviveModal": {
+ 	 	"reviveButton": {
+ 	 	 	"error": {
+ 	 	 	 	"trans": "你最近剛復活了一隻寵物",
+ 	 	 	 	"eng": "You have revived a pet recently"
+ 	 	 	},
+ 	 	 	"trans": "復活",
+ 	 	 	"eng": "Revive"
+ 	 	},
+ 	 	"activateButton": {
+ 	 	 	"error": {
+ 	 	 	 	"trans": "你需要先啟動寵物復活",
+ 	 	 	 	"eng": "You need to activate pet revive first"
+ 	 	 	},
+ 	 	 	"title": {
+ 	 	 	 	"trans": "啟動寵物復活",
+ 	 	 	 	"eng": "Activate"
+ 	 	 	},
+ 	 	 	"desc": {
+ 	 	 	 	"trans": "啟動寵物復活",
+ 	 	 	 	"eng": "Activate pet revive"
+ 	 	 	},
+ 	 	 	"loading": {
+ 	 	 	 	"trans": "啟動中...",
+ 	 	 	 	"eng": "Activating..."
+ 	 	 	}
+ 	 	},
  	 	"title": {
- 	 	 	"trans": "冬季快樂！",
- 	 	 	"eng": "Happy Winter Holiday!"
+ 	 	 	"trans": "復活寵物",
+ 	 	 	"eng": "Revive pet"
+ 	 	},
+ 	 	"reviveDescription": {
+ 	 	 	"vars": [
+ 	 	 	 	"buffName"
+ 	 	 	],
+ 	 	 	"trans": "當 ${buffName} 增益效果啟動時，你可以讓你的寵物復活",
+ 	 	 	"eng": "You may revive your pet when ${buffName} buff is active"
+ 	 	}
+ 	},
+ 	"artPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "陰森的角色藝術比賽！",
+ 	 	 	"eng": "Spooky Character Art Competition!"
  	 	},
  	 	"desc1": {
- 	 	 	"trans": "這是一年中最美好的時光！ 在香格里拉，我們正在舉行特別活動來慶祝冬季假期！",
- 	 	 	"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!"
+ 	 	 	"trans": "獎品包含史詩快取，探險家背包，公事包和徽章贈送給前5名！",
+ 	 	 	"eng": "We are giving out Epic Caches, Explorer Backpack, Employee Suitcase and Emblems to the top 5 winners!"
  	 	},
  	 	"desc2": {
- 	 	 	"vars": [
- 	 	 	 	"itemName",
- 	 	 	 	"craftItem"
- 	 	 	],
- 	 	 	"trans": "敵人和AI掛機將有機會掉落${itemName}，您可以使用它來製作${craftItem}或直接打開它！",
- 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop ${itemName}, you can use this to craft ${craftItem} or open it directly!"
- 	 	},
- 	 	"desc3": {
- 	 	 	"trans": "在假期期間，將有兩個期間限定的聊天外框和徽章！",
- 	 	 	"eng": "During the holiday season, two time limited chat frame and emblem will be available!"
+ 	 	 	"trans": "在Discord的#Event頻道上查看更多詳細資訊！",
+ 	 	 	"eng": "Check out the #event channel on Discord for more details!"
  	 	}
  	},
  	"halloweenPromo": {
@@ -7920,13 +9368,56 @@
  	 	 	"trans": "又到了每年最古靈精怪的時間！ Shang-Ri-La正在透過特別活動慶祝萬聖節！",
  	 	 	"eng": "Its the spooky time of the year again! Shang-ri-la is celebrating Halloween with a special event!"
  	 	},
- 	 	"desc2": {
- 	 	 	"trans": "擊敗敵人和部屬AI掛機機器人將有機會獲得傑克燈籠！ 您可以使用它們來製作傳奇已加密容器！",
- 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop Jack-o-lanterns! you can use these to craft Locked Legendary Containers!"
+ 	 	"desc2v2": {
+ 	 	 	"trans": "擊敗敵人和部屬AI掛機機器人將有機會獲得傑克燈籠！",
+ 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop Jack-o-lanterns!"
  	 	},
- 	 	"desc3": {
- 	 	 	"trans": "萬聖節期間限定：賽博蝙蝠聊天外框！",
- 	 	 	"eng": "During Halloween, a time limited cyber-bat chat donation tier will be available!"
+ 	 	"desc3v2": {
+ 	 	 	"vars": [
+ 	 	 	 	"npc",
+ 	 	 	 	"location"
+ 	 	 	],
+ 	 	 	"trans": "萬聖節期間您可以在${location}找到${npc}，用傑克燈籠跟他換取獎品！",
+ 	 	 	"eng": "You can find ${npc} at ${location} during Halloween, he will exchange your Jack-o-lanterns for rewards!"
+ 	 	},
+ 	 	"desc4v2": {
+ 	 	 	"trans": "在萬聖節期間，賽博蝙蝠聊天外框和主題徽章限時販售！",
+ 	 	 	"eng": "During Halloween, a time limited halloween, cyber-bat chat donation tier and themed emblems will be available!"
+ 	 	}
+ 	},
+ 	"christmasPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "冬季快樂！",
+ 	 	 	"eng": "Happy Winter Holiday!"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"trans": "這是一年中最美好的時光！ 在香格里拉，我們正在舉行特別活動來慶祝冬季假期！",
+ 	 	 	"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!"
+ 	 	},
+ 	 	"v2": {
+ 	 	 	"desc2": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "敵人和AI掛機將有機會掉落${itemName}，您可以解鎖它以獲得獎品！",
+ 	 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop ${itemName}, you can unlock it to receive prizes!"
+ 	 	 	}
+ 	 	},
+ 	 	"v3": {
+ 	 	 	"desc3": {
+ 	 	 	 	"trans": "在假期期間，將提供聖誕節主題外框與徽章！",
+ 	 	 	 	"eng": "During the holiday season, Christmas chat frame and emblem will be available!"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"christmasPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "聖誕節活動！",
+ 	 	 	"eng": "Christmas Event!"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"trans": "期間限定的戰利品和聊天外框！",
+ 	 	 	"eng": "Time limited loot and chat frame!"
  	 	}
  	},
  	"lunarPromo": {
@@ -7938,15 +9429,14 @@
  	 	 	"trans": "農曆新年要到了，我們正在香格里拉舉行特別活動。 加入我們，讓我們用傳統，喜悅和團結迎接新的一年。",
  	 	 	"eng": "The lunar new year is here, and we're celebrating in Shang-ri-la with a special event. Join us as we embrace the start of a new year, filled with traditions, joy, and togetherness."
  	 	},
- 	 	"desc2": {
+ 	 	"desc2-v2": {
  	 	 	"vars": [
  	 	 	 	"npcShopName",
  	 	 	 	"coinItem",
- 	 	 	 	"llcName",
  	 	 	 	"npcName"
  	 	 	],
- 	 	 	"trans": "${npcShopName}已開始營業！ 您可以使用${coinItem}向${npcName}購買各種特殊美食和${llcName}！",
- 	 	 	"eng": "${npcShopName} is now open for business! You can use ${coinItem} to purchase various special cuisines and ${llcName} from ${npcName}!"
+ 	 	 	"trans": "${npcShopName}已開始營業！ 您可以使用${coinItem}向${npcName}購買各種特殊美食！",
+ 	 	 	"eng": "${npcShopName} is now open for business! You can use ${coinItem} to purchase various special cuisines from ${npcName}!"
  	 	},
  	 	"desc3": {
  	 	 	"vars": [
@@ -7955,23 +9445,44 @@
  	 	 	],
  	 	 	"trans": "沒有${envelopItem}就不是過年！ 敵人和AI Core掛機將掉落${envelopItem}，打開它們以獲得隨機數量的${coinItem}！",
  	 	 	"eng": "It's not new year if ${envelopItem} is not involved! Enemies and AI Core auto farm will drop ${envelopItem}, open them to receive random amount of ${coinItem}!"
- 	 	},
+ 	 	}
+ 	},
+ 	"lunarPromo1": {
  	 	"desc4": {
  	 	 	"vars": [
- 	 	 	 	"envelopItem",
- 	 	 	 	"npcShop"
+ 	 	 	 	"itemName"
  	 	 	],
- 	 	 	"trans": "您現在可以每天在${npcShop}中收到3個免費${envelopItem}！",
- 	 	 	"eng": "You can now receive 3 free ${envelopItem} in ${npcShop} every day!"
+ 	 	 	"trans": "現在儲值即可獲得免費的${itemName}！",
+ 	 	 	"eng": "Get free ${itemName} base on top up package!"
  	 	},
  	 	"desc5": {
- 	 	 	"trans": "添加了兩個新的限時聊天外框和徽章，僅可在活動期間購買。",
- 	 	 	"eng": "Added two new time limited chat frame and emblems, only purchasable during event period."
+ 	 	 	"trans": "添加了新的限時販賣聊天外框和徽章，只能在活動期間購買。",
+ 	 	 	"eng": "Added new time limited chat frame and emblems, only purchasable during event period."
+ 	 	}
+ 	},
+ 	"lunarNewYearPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "春節快樂！",
+ 	 	 	"eng": "Happy Lunar New Year!"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"item1",
+ 	 	 	 	"item2"
+ 	 	 	],
+ 	 	 	"trans": "在春節期間免費獲得${item1}和${item2}",
+ 	 	 	"eng": "Receive free ${item1} and ${item2} during the lunar new year 🥳"
+ 	 	}
+ 	},
+ 	"promotionModal": {
+ 	 	"title": {
+ 	 	 	"trans": "福利",
+ 	 	 	"eng": "Special Benefits"
  	 	}
  	},
  	"referralPromo": {
  	 	"title": {
- 	 	 	"trans": "推薦您的朋友就可以獲得棒棒的獎勵！",
+ 	 	 	"trans": "推薦您的朋友就可以獲得好棒棒的獎勵！",
  	 	 	"eng": "Refer your friends to get amazing rewards!"
  	 	},
  	 	"desc1": {
@@ -8009,13 +9520,202 @@
  	 	 	"eng": "*You will receive the items in your item inbox when your friend reaches level 20"
  	 	}
  	},
+ 	"referralPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "推薦獎勵",
+ 	 	 	"eng": "Referral rewards"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"trans": "免費Unit*，稀有容器，腰包",
+ 	 	 	"eng": "Free Unit*, Rare Locked Container, Fanny Pack"
+ 	 	},
+ 	 	"details": {
+ 	 	 	"trans": "細節",
+ 	 	 	"eng": "details"
+ 	 	}
+ 	},
+ 	"sakuraPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "櫻花節",
+ 	 	 	"eng": "Sakura Festival"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"trans": "春節到了！櫻花瓣飄落，空氣中彌漫著花香。",
+ 	 	 	"eng": "The Spring Festival is here! Sakura petals are falling, and the air is filled with the fragrance of flowers. "
+ 	 	},
+ 	 	"desc2": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "在活動期間內，所有跳過的任務都可享有單位所需的${percent}%折扣。",
+ 	 	 	"eng": "All skips during the event period gets ${percent}% off discount on unit required"
+ 	 	},
+ 	 	"desc3": {
+ 	 	 	"trans": "獨家櫻花聊天框和徽章在活動期間限定上架啦！",
+ 	 	 	"eng": "Exclusive Sakura chat frame and emblem is available during event period"
+ 	 	},
+ 	 	"chatMessage1": {
+ 	 	 	"trans": "春天來了",
+ 	 	 	"eng": "Spring is here"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "活動期間內所有跳過的任務，所需單位可享${percent}%折扣優惠 🥳",
+ 	 	 	"eng": "All skips during the event period gets ${percent}% off discount on unit required 🥳"
+ 	 	}
+ 	},
+ 	"skipDiscountPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "時光飛逝折扣",
+ 	 	 	"eng": "Skip Discount"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "現在使用105分鐘或更久的飛逝享有${percent}%off！",
+ 	 	 	"eng": "${percent}% discount on 105 minutes and higher skips!"
+ 	 	}
+ 	},
+ 	"skipPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "使用全域時光飛逝以取得免費的獨享造型",
+ 	 	 	"eng": "Earn free exclusive cosmetics by skipping"
+ 	 	},
+ 	 	"subtitle": {
+ 	 	 	"trans": "炫耀您對玩家們的幫助！❤️",
+ 	 	 	"eng": "Show off how much you have helped the community by skipping!❤️"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"emblem"
+ 	 	 	],
+ 	 	 	"trans": "累積${amount}飛逝點數可獲得“ ${emblem}”徽章",
+ 	 	 	"eng": "Collect ${amount} skip points to get \"${emblem}\" emblem"
+ 	 	},
+ 	 	"desc2": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"emblem"
+ 	 	 	],
+ 	 	 	"trans": "累積${amount}飛逝點數可獲得“ ${emblem}”徽章",
+ 	 	 	"eng": "Collect ${amount} skip points to get \"${emblem}\" emblem"
+ 	 	},
+ 	 	"desc3": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"emblem"
+ 	 	 	],
+ 	 	 	"trans": "累積${amount}飛逝點數可獲得“ ${emblem}”徽章",
+ 	 	 	"eng": "Collect ${amount} skip points to get \"${emblem}\" emblem"
+ 	 	},
+ 	 	"desc4": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"frameName"
+ 	 	 	],
+ 	 	 	"trans": "累積${amount}飛逝點數可獲得永久的“ ${frameName}”聊天外框",
+ 	 	 	"eng": "Collect ${amount} skip points to receive permanent \"${frameName}\" donation chat frame"
+ 	 	},
+ 	 	"chatMessage1": {
+ 	 	 	"vars": [
+ 	 	 	 	"points"
+ 	 	 	],
+ 	 	 	"trans": "${points}飛逝點數獎勵",
+ 	 	 	"eng": "Receive at ${points} skip points"
+ 	 	},
+ 	 	"desc5": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"frameName"
+ 	 	 	],
+ 	 	 	"trans": "累積${amount}飛逝點數可獲得永久的“ ${frameName}”聊天外框",
+ 	 	 	"eng": "Collect ${amount} skip points to receive permanent \"${frameName}\" donation chat frame"
+ 	 	},
+ 	 	"instructions1": {
+ 	 	 	"trans": "您賺取的飛逝點數是以跳過時間長度計算：",
+ 	 	 	"eng": "Skip point you earn is base on skip duration:"
+ 	 	},
+ 	 	"instructions2": {
+ 	 	 	"trans": "- 15至150分鐘=每15分鐘1分",
+ 	 	 	"eng": "- 15 to 150 minutes = 1 point per 15 minutes"
+ 	 	},
+ 	 	"instructions3": {
+ 	 	 	"trans": "- 150分鐘及以上=10分",
+ 	 	 	"eng": "- 150 minutes and above = 10 points"
+ 	 	},
+ 	 	"footnote2": {
+ 	 	 	"trans": "超過150分鐘的飛逝統一為10分是因為相較於一個超久的時光飛逝，多次飛逝可以讓大多數玩家的受益最大化",
+ 	 	 	"eng": "Above 150 minutes is fixed to 10 points is to encourage multiple skips rather than one huge skip to maximize benefit for most players"
+ 	 	},
+ 	 	"footnote1": {
+ 	 	 	"trans": "全域時光飛逝的點數計算將從此功能開放開始。",
+ 	 	 	"eng": "The skip point statistic will start counting from the start of this feature for everyone."
+ 	 	}
+ 	},
+ 	"skipPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "時光飛逝獨家造型",
+ 	 	 	"eng": "Skip for exclusive cosmetics"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"trans": "透過時光飛逝獲得各種獨享造型",
+ 	 	 	"eng": "Receive various exclusive cosmetics by skipping"
+ 	 	},
+ 	 	"chatMessage1": {
+ 	 	 	"vars": [
+ 	 	 	 	"skinName",
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "成為${skinName}吧，${playerName}",
+ 	 	 	"eng": "Be a ${skinName}, ${playerName}"
+ 	 	}
+ 	},
+ 	"thanksgivingPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "感恩節快樂！",
+ 	 	 	"eng": "Happy Thanksgiving!"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"trans": "在活動期間，從搜索和AKF掛機任務中有低機率獲取烤火雞",
+ 	 	 	"eng": "During event period, Roasted Turkey will drop rarely from scavenging and AKF Bot on all levels"
+ 	 	},
+ 	 	"desc2": {
+ 	 	 	"trans": "當食用烤火雞後，您將在20分鐘內獲得 +20％的AFK經驗",
+ 	 	 	"eng": "When a Roasted Turkey is consumed, you will get +20% EXP on AFK tasks for 20 minutes"
+ 	 	},
+ 	 	"footnote1": {
+ 	 	 	"trans": "請注意，EXP加成是在AFK完成的時間點計算的，因此在任務完成的當下有已啟動的增益，您才能獲得加成。",
+ 	 	 	"eng": "Please note that the EXP bonus check is at AFK completion time, so you must have the Roasted Turkey buff active at the time of completion to receive the bonus."
+ 	 	},
+ 	 	"footnote2": {
+ 	 	 	"trans": "這種效果將與其他EXP加成一起堆疊，並且只會影響AFK任務； 沒有AFK計時的任務不會得到增益。",
+ 	 	 	"eng": "This effect will stack with other EXP bonus, and will only affect AFK tasks; tasks that does not have AFK timers will not be affected."
+ 	 	}
+ 	},
+ 	"thanksgivingPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "感恩節活動",
+ 	 	 	"eng": "Thanksgiving event"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "咬一口美味的火雞以獲得 +${percent}％ AFK任務 EXP",
+ 	 	 	"eng": "Consume delicious turkey to get +${percent}% EXP on AFK tasks"
+ 	 	}
+ 	},
  	"retroPromo": {
  	 	"title": {
  	 	 	"trans": "Synthwave更新",
  	 	 	"eng": "Sythwave Update"
  	 	},
  	 	"desc1": {
- 	 	 	"trans": "添加的醫療科技集群可以使用1000個醫療科技零件製成。 這可以用來有效儲存大量醫療科技零件",
+ 	 	 	"trans": "新添加的醫療科技集群可以使用1000個醫療科技零件製成。 這可以用來有效儲存大量醫療科技零件",
  	 	 	"eng": "Added Medical Tech Cluster, can be crafted with 1000 medical tech parts. this can be use to efficiently store large amount of medical tech parts"
  	 	},
  	 	"desc2": {
@@ -8049,6 +9749,24 @@
  	 	"desc2": {
  	 	 	"trans": "公會地城將有機會產生公會任務，內容包含擊敗特定NPC幫派的敵人",
  	 	 	"eng": "Two new donator frames added"
+ 	 	}
+ 	},
+ 	"renamePetModal": {
+ 	 	"title": {
+ 	 	 	"trans": "更改寵物名稱",
+ 	 	 	"eng": "Rename Pet"
+ 	 	},
+ 	 	"newName": {
+ 	 	 	"trans": "新名稱",
+ 	 	 	"eng": "New Name"
+ 	 	},
+ 	 	"description": {
+ 	 	 	"trans": "輸入你寵物的新名字",
+ 	 	 	"eng": "Enter new name for your pet"
+ 	 	},
+ 	 	"rename": {
+ 	 	 	"trans": "重新命名",
+ 	 	 	"eng": "Rename"
  	 	}
  	},
  	"reportPlayerModal": {
@@ -8124,9 +9842,24 @@
  	 	 	 	 	"trans": "給予該玩家管理公會成員的權限",
  	 	 	 	 	"eng": "Allow this player to manage permission of other players"
  	 	 	 	}
+ 	 	 	},
+ 	 	 	"send_notice": {
+ 	 	 	 	"trans": "傳送通知",
+ 	 	 	 	"eng": "Send Notice",
+ 	 	 	 	"description": {
+ 	 	 	 	 	"trans": "允許該玩家向所有幫派成員傳送通知",
+ 	 	 	 	 	"eng": "Allow this player to send notice to all gang members"
+ 	 	 	 	}
  	 	 	}
  	 	},
  	 	"error": {
+ 	 	 	"insufficientBitcoin": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "您的比特幣不足，需要：${amount}",
+ 	 	 	 	"eng": "You have insufficient Bitcoin, required: ${amount}"
+ 	 	 	},
  	 	 	"inviteCooldown": {
  	 	 	 	"trans": "您最近已經邀請了這個玩家",
  	 	 	 	"eng": "You have already invited this player recently"
@@ -8265,6 +9998,17 @@
  	 	 	],
  	 	 	"trans": "${price}每月美元",
  	 	 	"eng": "${price} USD Per Month"
+ 	 	},
+ 	 	"inAppPurchaseDescription": {
+ 	 	 	"trans": "訂閱式捐款，你可以隨時在商店裡取消。",
+ 	 	 	"eng": "Subscription based donation, you can cancel it at anytime from your store."
+ 	 	},
+ 	 	"monthlyPrice": {
+ 	 	 	"vars": [
+ 	 	 	 	"price"
+ 	 	 	],
+ 	 	 	"trans": "每月${price}",
+ 	 	 	"eng": "${price} per Month"
  	 	}
  	},
  	"cosmetic": {
@@ -8278,7 +10022,7 @@
  	},
  	"forgotPasswordPage": {
  	 	"title": {
- 	 	 	"trans": "輸入您的電子郵件，系統將向您發送重置密碼電子郵件",
+ 	 	 	"trans": "輸入您的電子郵件，系統將向您傳送重置密碼電子郵件",
  	 	 	"eng": "Enter your email, the system will send a reset password email to you"
  	 	},
  	 	"emailRequired": {
@@ -8286,19 +10030,163 @@
  	 	 	"eng": "Email is required"
  	 	},
  	 	"sendEmail": {
- 	 	 	"trans": "發送電子郵件",
+ 	 	 	"trans": "傳送電子郵件",
  	 	 	"eng": "Send Email"
  	 	},
  	 	"emailSent": {
  	 	 	"vars": [
  	 	 	 	"email"
  	 	 	],
- 	 	 	"trans": "密碼重置電子郵件已發送到{email}",
+ 	 	 	"trans": "密碼重置電子郵件已傳送到{email}",
  	 	 	"eng": "An password reset email has been sent to {email}"
  	 	},
  	 	"checkEmail": {
  	 	 	"trans": "請檢查您的電子郵件並按照說明重置密碼",
  	 	 	"eng": "Please check your email and follow the instructions to reset the password"
+ 	 	}
+ 	},
+ 	"leaderboardTypePage": {
+ 	 	"gameplay": {
+ 	 	 	"trans": "遊戲排行榜",
+ 	 	 	"eng": "Gameplay Leaderboards"
+ 	 	},
+ 	 	"gameplayDesc": {
+ 	 	 	"trans": "這些排行榜顯示了玩家的遊戲數據。",
+ 	 	 	"eng": "These leaderboards shows player's gameplay statistics.💪"
+ 	 	},
+ 	 	"gang": {
+ 	 	 	"trans": "公會排名",
+ 	 	 	"eng": "Top Gangs"
+ 	 	},
+ 	 	"control": {
+ 	 	 	"trans": "佔領控制",
+ 	 	 	"eng": "Occupation Control"
+ 	 	},
+ 	 	"contribution": {
+ 	 	 	"trans": "社群貢獻",
+ 	 	 	"eng": "Community Contribution"
+ 	 	},
+ 	 	"contributionDesc": {
+ 	 	 	"trans": "這些名單代表了對大佬們的尊敬和感謝，他們為社群做出了許多貢獻。",
+ 	 	 	"eng": "These boards shows respect and credits to the legends who have contributed to the community.❤️"
+ 	 	}
+ 	},
+ 	"playerDetailsPage": {
+ 	 	"tabs": {
+ 	 	 	"stats": {
+ 	 	 	 	"trans": "數據",
+ 	 	 	 	"eng": "stats"
+ 	 	 	},
+ 	 	 	"equipment": {
+ 	 	 	 	"trans": "背包",
+ 	 	 	 	"eng": "inventory"
+ 	 	 	},
+ 	 	 	"assets": {
+ 	 	 	 	"trans": "資產",
+ 	 	 	 	"eng": "assets"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"petListPage": {
+ 	 	"exceedSlot": {
+ 	 	 	"vars": [
+ 	 	 	 	"petName"
+ 	 	 	],
+ 	 	 	"trans": "${petName}目前因為公寓空間不足，只好流落街頭。",
+ 	 	 	"eng": "${petName} is currently living on the street due to lack of space in your apartment"
+ 	 	},
+ 	 	"noPet": {
+ 	 	 	"trans": "你還沒有寵物喔。",
+ 	 	 	"eng": "You have no pet yet"
+ 	 	},
+ 	 	"acquirePets": {
+ 	 	 	"trans": "取得寵物",
+ 	 	 	"eng": "Acquire Pets"
+ 	 	}
+ 	},
+ 	"petAdoption": {
+ 	 	"error": {
+ 	 	 	"noBuff": {
+ 	 	 	 	"trans": "增益尚未啟動",
+ 	 	 	 	"eng": "Buff is not activated"
+ 	 	 	},
+ 	 	 	"cooldown": {
+ 	 	 	 	"trans": "寵物領養冷卻中",
+ 	 	 	 	"eng": "Pet adoption is on cooldown"
+ 	 	 	},
+ 	 	 	"noSlot": {
+ 	 	 	 	"trans": "需要更大的公寓才能領養更多寵物",
+ 	 	 	 	"eng": "You need to rent a bigger apartment to accommodate more pets"
+ 	 	 	},
+ 	 	 	"noItem": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "領養寵物需要 ${itemName}。",
+ 	 	 	 	"eng": "You need a ${itemName} to adopt a pet"
+ 	 	 	}
+ 	 	},
+ 	 	"petSlot": {
+ 	 	 	"trans": "公寓寵物容納量",
+ 	 	 	"eng": "Apartment pet capacity"
+ 	 	},
+ 	 	"cooldownTitle": {
+ 	 	 	"trans": "領養冷卻時間",
+ 	 	 	"eng": "Adoption Available"
+ 	 	},
+ 	 	"buffActivationButton": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "啟動領養增益",
+ 	 	 	 	"eng": "Activate Adoption Buff"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "當增益啟動時，所有玩家都可以領養寵物。",
+ 	 	 	 	"eng": "Activate to allow all players to adopt a pet while buff is active"
+ 	 	 	},
+ 	 	 	"buttonText": {
+ 	 	 	 	"activated": {
+ 	 	 	 	 	"trans": "已啟動",
+ 	 	 	 	 	"eng": "Activated"
+ 	 	 	 	},
+ 	 	 	 	"notActivated": {
+ 	 	 	 	 	"trans": "啟動增益",
+ 	 	 	 	 	"eng": "Activate Buff"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"confirmTitle": {
+ 	 	 	 	"trans": "啟動領養增益",
+ 	 	 	 	"eng": "Activate Adoption Buff"
+ 	 	 	},
+ 	 	 	"confirmDescription": {
+ 	 	 	 	"trans": "你確定要啟動領養增益嗎？",
+ 	 	 	 	"eng": "Are you sure you want to activate the Adoption Buff?"
+ 	 	 	}
+ 	 	},
+ 	 	"noItemConfirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "背包裡沒有 ${itemName}",
+ 	 	 	 	"eng": "No ${itemName} in inventory"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "你的背包裡沒有 ${itemName}，你仍然可以啟動增益效果讓其他玩家受益，但是沒有 ${itemName} 你將無法領養寵物。",
+ 	 	 	 	"eng": "You do not have an ${itemName} in your inventory, you still can activate the buff for other players to benefit, however without ${itemName} you will not be able to adopt pets"
+ 	 	 	},
+ 	 	 	"confirmText": {
+ 	 	 	 	"trans": "啟動增益",
+ 	 	 	 	"eng": "Activate Buff"
+ 	 	 	}
+ 	 	},
+ 	 	"adoptButton": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "領養一隻新寵物",
+ 	 	 	 	"eng": "Adopt a new pet"
+ 	 	 	}
  	 	}
  	},
  	"sendCosmeticPage": {
@@ -8404,20 +10292,67 @@
  	 	 	"vars": [
  	 	 	 	"playerName"
  	 	 	],
- 	 	 	"trans": "您已成功將徽章發送給玩家“ ${playerName}”",
+ 	 	 	"trans": "您已成功將徽章送給玩家“ ${playerName}”",
  	 	 	"eng": "You have successfully sent an emblem to player \"${playerName}\""
+ 	 	}
+ 	},
+ 	"bulkCrafting": {
+ 	 	"cannotCraft": {
+ 	 	 	"trans": "你不能在閒置的時候製作",
+ 	 	 	"eng": "You cannot craft while not idle"
+ 	 	}
+ 	},
+ 	"captcha": {
+ 	 	"success": {
+ 	 	 	"trans": "PIN碼已接受",
+ 	 	 	"eng": "Pin code accepted"
+ 	 	},
+ 	 	"invalid": {
+ 	 	 	"trans": "無效的PIN碼",
+ 	 	 	"eng": "Invalid Pin Code"
  	 	}
  	},
  	"chatModuleHelper": {
  	 	"aiConnectNotAvailable": {
- 	 	 	"trans": "沒有權限。 不連接到聊天室",
+ 	 	 	"trans": "沒有權限。 無法連線至聊天室",
  	 	 	"eng": "Permission Denied. SLANC not connected to chat"
+ 	 	}
+ 	},
+ 	"server": {
+ 	 	"announcement": {
+ 	 	 	"receiveItem": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player",
+ 	 	 	 	 	"item"
+ 	 	 	 	],
+ 	 	 	 	"trans": "🎉恭喜！ ${player}獲得${item}！",
+ 	 	 	 	"eng": "🎉Congratulation! ${player} received ${item}!"
+ 	 	 	}
  	 	}
  	},
  	"gifting": {
  	 	"cannotSend": {
  	 	 	"trans": "這個玩家現在無法收到禮物",
  	 	 	"eng": "This player cannot receive gift now"
+ 	 	}
+ 	},
+ 	"topUpReward": {
+ 	 	"mail": {
+ 	 	 	"vars": [
+ 	 	 	 	"event",
+ 	 	 	 	"items"
+ 	 	 	],
+ 	 	 	"trans": "${event}充滿獎勵${items}已發送到您的收件箱",
+ 	 	 	"eng": " ${event} top up reward ${items} has been sent to your inbox"
+ 	 	}
+ 	},
+ 	"error": {
+ 	 	"cannotUseItemInStatus": {
+ 	 	 	"vars": [
+ 	 	 	 	"minutes"
+ 	 	 	],
+ 	 	 	"trans": "您不能使用此物品，因為與既存效應衝突",
+ 	 	 	"eng": "You cannot use this item because there is a status effect that conflicts with it"
  	 	}
  	},
  	"player": {
@@ -8445,6 +10380,10 @@
  	 	 	"invalidTravelLink": {
  	 	 	 	"trans": "無效的旅行連結，如果持續存在，請重新載入",
  	 	 	 	"eng": "Invalid Travel Link, if persist please reload"
+ 	 	 	},
+ 	 	 	"recipeDisabled": {
+ 	 	 	 	"trans": "此合成目前不可使用",
+ 	 	 	 	"eng": "This recipe is currently not available"
  	 	 	}
  	 	},
  	 	"escape": {
@@ -8472,6 +10411,13 @@
  	 	 	"eng": "Your level is too high to perform this action here, try to do it in the next zone."
  	 	},
  	 	"giveCred": {
+ 	 	 	"mail": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"playerName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "您已經從${playerName}那裡獲得了街頭聲望",
+ 	 	 	 	"eng": "You have received a street cred from ${playerName}"
+ 	 	 	},
  	 	 	"success": {
  	 	 	 	"trans": "您已成功與給予街頭聲望",
  	 	 	 	"eng": "You have given daily street cred."
@@ -8491,9 +10437,9 @@
  	 	 	"trans": "此名稱已由其他玩家使用，請使用其他名稱",
  	 	 	"eng": "this name is used by other player, please use other name"
  	 	},
- 	 	"nameIllegal": {
- 	 	 	"trans": "非法名稱，請使用其他名稱",
- 	 	 	"eng": "Illegal name, please use other name"
+ 	 	"reservedKeyword": {
+ 	 	 	"trans": "此名稱包含保留措辭，請使用其他名稱",
+ 	 	 	"eng": "This name contains reserved wordings, please use other name"
  	 	},
  	 	"nameProfane": {
  	 	 	"trans": "此名稱包含不允許的措辭，請使用其他名稱",
@@ -8502,6 +10448,49 @@
  	 	"nameInvalid": {
  	 	 	"trans": "名稱長度必須大於4，少於或等於16，並且僅包含英文字母，數字或\\'_ \\'",
  	 	 	"eng": "name length must be greater then 4, less then or equal to 16 and only contains English characters, numbers or \\'_\\'"
+ 	 	}
+ 	},
+ 	"skip": {
+ 	 	"skipRewardMail": {
+ 	 	 	"1": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "您已累積${amount}飛逝點數，獲得“飛逝徽章1”",
+ 	 	 	 	"eng": "You have received \"Skip Emblem 1\" for having ${amount} skip points"
+ 	 	 	},
+ 	 	 	"2": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "您已累積${amount}飛逝點數，獲得“飛逝徽章2”",
+ 	 	 	 	"eng": "You have received \"Skip Emblem 2\" for having ${amount} skip points"
+ 	 	 	},
+ 	 	 	"3": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "您已累積${amount}飛逝點數，獲得“飛逝徽章3”",
+ 	 	 	 	"eng": "You have received \"Skip Emblem 3\" for having ${amount} skip points"
+ 	 	 	},
+ 	 	 	"4": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"frameName",
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "您已累積${amount}飛逝點數，獲得“ ${frameName}”聊天外框",
+ 	 	 	 	"eng": "You have received \"${frameName}\" donator chat frame for having ${amount} skip points"
+ 	 	 	}
+ 	 	},
+ 	 	"announcement": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName",
+ 	 	 	 	"playerCount",
+ 	 	 	 	"skipTime",
+ 	 	 	 	"credButton"
+ 	 	 	],
+ 	 	 	"trans": "${playerName}使用了全域時光飛逝，${playerCount}位目前執行AFK任務的玩家都將自動跳過${skipTime}分鐘。 給這位大佬一些聲望？ ${credButton}",
+ 	 	 	"eng": "${playerName} has used Global Time Skip, all online players currently performing AFK task (${playerCount} players) will automatically time skip by ${skipTime} minutes. Give the legend some creds? ${credButton}"
  	 	}
  	}
 }

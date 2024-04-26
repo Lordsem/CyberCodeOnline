@@ -1,4 +1,56 @@
 {
+ 	"apartment": {
+ 	 	"title": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "${playerName}의 아파트",
+ 	 	 	"eng": "${playerName}'s Apartment"
+ 	 	},
+ 	 	"terminateLease": {
+ 	 	 	"trans": "임대 계약 해지",
+ 	 	 	"eng": "Terminate Lease"
+ 	 	},
+ 	 	"viewPets": {
+ 	 	 	"trans": "애완동물 보기",
+ 	 	 	"eng": "View Pets"
+ 	 	},
+ 	 	"address": {
+ 	 	 	"cityName": {
+ 	 	 	 	"trans": "상그릴라",
+ 	 	 	 	"eng": "Shangri-la"
+ 	 	 	}
+ 	 	},
+ 	 	"rent": {
+ 	 	 	"paidMail": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "아파트 월세를 ${amount} 지불했습니다",
+ 	 	 	 	"eng": "You have paid your apartment rent of ${amount}"
+ 	 	 	},
+ 	 	 	"unpaidMail": {
+ 	 	 	 	"trans": "아파트 월세 납부에 실패했습니다. 당신의 아파트 계약이 해지되었습니다",
+ 	 	 	 	"eng": "You have failed to pay your apartment rent, your apartment has been terminated"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"purchaseApartmentUI": {
+ 	 	"confirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "아파트 임대하기",
+ 	 	 	 	"eng": "Rent Apartment"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "이 아파트를 임대하는 것이 확실합니까?",
+ 	 	 	 	"eng": "Are you sure you want to rent this apartment?"
+ 	 	 	}
+ 	 	},
+ 	 	"rentButton": {
+ 	 	 	"trans": "임대하기",
+ 	 	 	"eng": "Rent Now"
+ 	 	}
+ 	},
  	"tabs": {
  	 	"map": {
  	 	 	"trans": "지도",
@@ -22,10 +74,41 @@
  	 	}
  	},
  	"ui": {
- 	 	"blackMarket": {
- 	 	 	"selectItemButton": {
- 	 	 	 	"trans": "인쇄 및 판매",
- 	 	 	 	"eng": "Print And Sell"
+ 	 	"bulkCraft": {
+ 	 	 	"amountSelect": {
+ 	 	 	 	"title": {
+ 	 	 	 	 	"trans": "수량을 선택하세요",
+ 	 	 	 	 	"eng": "Select Amount"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"duration": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"duration"
+ 	 	 	 	],
+ 	 	 	 	"trans": "이 작업은 ${duration}만큼 걸립니다",
+ 	 	 	 	"eng": "This task will take ${duration}"
+ 	 	 	},
+ 	 	 	"durationTooLong": {
+ 	 	 	 	"trans": "너무 많은 아이템이 선택되었습니다.",
+ 	 	 	 	"eng": "Too many items selected"
+ 	 	 	}
+ 	 	},
+ 	 	"generalCaptcha": {
+ 	 	 	"inputLabel": {
+ 	 	 	 	"trans": "PIN 코드",
+ 	 	 	 	"eng": "Pin Code"
+ 	 	 	},
+ 	 	 	"inputPlaceholder": {
+ 	 	 	 	"trans": "PIN 코드를 입력하세요",
+ 	 	 	 	"eng": "Enter pin code"
+ 	 	 	},
+ 	 	 	"story": {
+ 	 	 	 	"trans": "오래된 금고를 발견했습니다. 포스트잇에 어떤 텍스트가 써져있는 것 같네요.",
+ 	 	 	 	"eng": "You found an old locked safe box, there seems like a post-it with some text written on it."
+ 	 	 	},
+ 	 	 	"title": {
+ 	 	 	 	"trans": "잠금을 해제하려면 PIN코드가 필요합니다",
+ 	 	 	 	"eng": "Pin code required to unlock"
  	 	 	}
  	 	},
  	 	"clan": {
@@ -47,15 +130,15 @@
  	 	 	 	"eng": "Deposit Bitcoin"
  	 	 	},
  	 	 	"editMotto": {
+ 	 	 	 	"button": {
+ 	 	 	 	 	"trans": "갱단 모토 편집",
+ 	 	 	 	 	"eng": "Edit Gang Motto"
+ 	 	 	 	},
  	 	 	 	"modal": {
  	 	 	 	 	"title": {
  	 	 	 	 	 	"trans": "갱단의 모토를 입력하세요",
  	 	 	 	 	 	"eng": "Please enter your gang motto"
  	 	 	 	 	}
- 	 	 	 	},
- 	 	 	 	"button": {
- 	 	 	 	 	"trans": "갱단 모토 편집",
- 	 	 	 	 	"eng": "Edit Gang Motto"
  	 	 	 	}
  	 	 	},
  	 	 	"updateImage": {
@@ -172,12 +255,6 @@
  	 	 	 	}
  	 	 	}
  	 	},
- 	 	"supportUkraine": {
- 	 	 	"description": {
- 	 	 	 	"trans": "우크라이나, 러시아 및 온 세상의 사람들은 한 남자의 야망 때문에 고통을 겪고 있습니다.",
- 	 	 	 	"eng": "People of Ukraine, Russia and the whole world are suffering because one man's ambition.\\n Make love exploit, not war."
- 	 	 	}
- 	 	},
  	 	"bank": {
  	 	 	"balance": {
  	 	 	 	"trans": "잔고",
@@ -230,7 +307,7 @@
  	 	 	 	"eng": "Increase the max amount of items you can store in vault to ${upgradeToSlot}"
  	 	 	},
  	 	 	"itemLocked": {
- 	 	 	 	"trans": "이 항목은 잠겨져 저장할 수 없습니다.",
+ 	 	 	 	"trans": "이 항목은 잠겨져 보관할 수 없습니다.",
  	 	 	 	"eng": "This item is locked and can not be stored."
  	 	 	},
  	 	 	"modal": {
@@ -286,24 +363,6 @@
  	 	 	 	 	 	"eng": "Destruct."
  	 	 	 	 	}
  	 	 	 	}
- 	 	 	}
- 	 	},
- 	 	"generalCaptcha": {
- 	 	 	"story": {
- 	 	 	 	"trans": "오래된 금고를 발견했습니다. 포스트잇에 어떤 텍스트가 써져있는 것 같네요.",
- 	 	 	 	"eng": "You found an old locked safe box, there seems like a post-it with some text written on it."
- 	 	 	},
- 	 	 	"title": {
- 	 	 	 	"trans": "잠금을 해제하려면 PIN코드가 필요합니다",
- 	 	 	 	"eng": "Pin code required to unlock"
- 	 	 	},
- 	 	 	"inputLabel": {
- 	 	 	 	"trans": "PIN 코드",
- 	 	 	 	"eng": "Pin Code"
- 	 	 	},
- 	 	 	"inputPlaceholder": {
- 	 	 	 	"trans": "PIN 코드를 입력하세요",
- 	 	 	 	"eng": "Enter pin code"
  	 	 	}
  	 	},
  	 	"chat": {
@@ -397,6 +456,16 @@
  	 	 	}
  	 	},
  	 	"clanPage": {
+ 	 	 	"notice": {
+ 	 	 	 	"time": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"playerName",
+ 	 	 	 	 	 	"time"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "게시자 ${playerName} ${time} 이전",
+ 	 	 	 	 	"eng": "Posted by ${playerName} ${time} ago"
+ 	 	 	 	}
+ 	 	 	},
  	 	 	"createClan": {
  	 	 	 	"title": {
  	 	 	 	 	"trans": "당신은 갱단의 일원이 아닙니다",
@@ -525,17 +594,27 @@
  	 	},
  	 	"timeSkip": {
  	 	 	"unitTimeSkipButton": {
- 	 	 	 	"title": {
+ 	 	 	 	"unit": {
  	 	 	 	 	"vars": [
- 	 	 	 	 	 	"timeSkipMinutes",
- 	 	 	 	 	 	"timeSkipCost"
+ 	 	 	 	 	 	"units"
  	 	 	 	 	],
- 	 	 	 	 	"trans": "글로벌 스킵 (${timeSkipMinutes} 분, ${timeSkipCost} 유닛 필요)",
- 	 	 	 	 	"eng": "Global Skip (${timeSkipMinutes} Min, Cost ${timeSkipCost} Units)"
+ 	 	 	 	 	"trans": "${units} 유닛",
+ 	 	 	 	 	"eng": "${units} units"
+ 	 	 	 	},
+ 	 	 	 	"minute": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"minutes"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "${minutes}분 스킵",
+ 	 	 	 	 	"eng": "Skip ${minutes} minutes"
+ 	 	 	 	},
+ 	 	 	 	"title2": {
+ 	 	 	 	 	"trans": "즉시 완료",
+ 	 	 	 	 	"eng": "Finish Now"
  	 	 	 	},
  	 	 	 	"description": {
- 	 	 	 	 	"trans": "글로벌 스킵을 통해 오프라인 대기 시간을 건너뛰고 즉시 완료할 수 있습니다. \r\n        이 효과는 오프라인 작업을 수행하는 모든 플레이어에게 적용됩니다",
- 	 	 	 	 	"eng": "Global Skip allow you to skip the AFK waiting time, and finish it instantly.\r\n    this effect will be applied to all player performing AFK task"
+ 	 	 	 	 	"trans": "게임 내의 모든 플레이어를 위해 작업을 즉시 완료하고 스킵 포인트를 받아 다른 사람에 대한 당신의 후원을 표시하세요!",
+ 	 	 	 	 	"eng": "Finish the task instantly for all players in the game and earn skip points to show your support to other players!"
  	 	 	 	}
  	 	 	},
  	 	 	"itemTimeSkipButton": {
@@ -680,12 +759,16 @@
  	 	 	 	"trans": "잠금 해제",
  	 	 	 	"eng": "Unlocked"
  	 	 	},
+ 	 	 	"upgradeModuleTitleHeader": {
+ 	 	 	 	"trans": "업그레이드 슬롯",
+ 	 	 	 	"eng": "Upgrades Slots"
+ 	 	 	},
  	 	 	"upgradeModuleTitle": {
- 	 	 	 	"trans": "칸 업그레이드",
- 	 	 	 	"eng": "upgrade slot ${index}",
  	 	 	 	"vars": [
  	 	 	 	 	"index"
- 	 	 	 	]
+ 	 	 	 	],
+ 	 	 	 	"trans": "업그레이드 슬롯 ${index}",
+ 	 	 	 	"eng": "upgrade slot ${index}"
  	 	 	},
  	 	 	"equip": {
  	 	 	 	"trans": "장착",
@@ -997,14 +1080,6 @@
  	 	 	 	 	"trans": "해당 플레이어 차단하기",
  	 	 	 	 	"eng": "Block Player"
  	 	 	 	}
- 	 	 	},
- 	 	 	"equipped": {
- 	 	 	 	"trans": "장착중",
- 	 	 	 	"eng": "Equipped"
- 	 	 	},
- 	 	 	"inventory": {
- 	 	 	 	"trans": "인벤토리",
- 	 	 	 	"eng": "Inventory"
  	 	 	}
  	 	},
  	 	"modal": {
@@ -1094,13 +1169,13 @@
  	 	 	 	"trans": "현재 이 아이템을 파는 사람이 없습니다",
  	 	 	 	"eng": "there is currently no items on sale for this category"
  	 	 	},
- 	 	 	"buy": {
+ 	 	 	"pricePerPiece": {
+ 	 	 	 	"trans": "품목 당",
+ 	 	 	 	"eng": "per item"
+ 	 	 	},
+ 	 	 	"purchase": {
  	 	 	 	"trans": "구입",
  	 	 	 	"eng": "Purchase"
- 	 	 	},
- 	 	 	"remove": {
- 	 	 	 	"trans": "제거",
- 	 	 	 	"eng": "Remove"
  	 	 	},
  	 	 	"stall": {
  	 	 	 	"sellItemButton": {
@@ -1322,69 +1397,10 @@
  	 	 	 	"eng": "If you have any questions please feel free to contact Dexter directly via official Discord (Link can be found in Floating Menu -> Links) or email to ching.huang.dexter@gmail.com"
  	 	 	}
  	 	},
- 	 	"tipsBox": {
- 	 	 	"title": {
- 	 	 	 	"trans": "꿀☆팁",
- 	 	 	 	"eng": "Pro Tips"
- 	 	 	},
- 	 	 	"description": {
- 	 	 	 	"trans": "새로운 팁을 얻으려면 클릭하십시오",
- 	 	 	 	"eng": "Click to get new tips"
- 	 	 	}
- 	 	},
  	 	"travel": {
  	 	 	"notUnlocked": {
  	 	 	 	"trans": "이 지역은 아직 해금되지 않았습니다",
  	 	 	 	"eng": "You have not unlocked this area yet"
- 	 	 	}
- 	 	},
- 	 	"machineCrafting": {
- 	 	 	"titleBox": {
- 	 	 	 	"tile": {
- 	 	 	 	 	"trans": "시스템 비가동중",
- 	 	 	 	 	"eng": "system idle"
- 	 	 	 	},
- 	 	 	 	"subtitle": {
- 	 	 	 	 	"trans": "아이템을 넣으세요",
- 	 	 	 	 	"eng": "Please insert an item"
- 	 	 	 	}
- 	 	 	},
- 	 	 	"selectItemButton": {
- 	 	 	 	"trans": "아이템 재활용",
- 	 	 	 	"eng": "Recycle Item"
- 	 	 	},
- 	 	 	"selectAmount": {
- 	 	 	 	"title": {
- 	 	 	 	 	"trans": "수량을 선택하세요",
- 	 	 	 	 	"eng": "Please select amount"
- 	 	 	 	},
- 	 	 	 	"subtitle": {
- 	 	 	 	 	"vars": [
- 	 	 	 	 	 	"timeStr"
- 	 	 	 	 	],
- 	 	 	 	 	"trans": "이것은 ${timeStr}이(가) 걸릴 것입니다",
- 	 	 	 	 	"eng": "This will take ${timeStr}"
- 	 	 	 	}
- 	 	 	},
- 	 	 	"confirmModal": {
- 	 	 	 	"title": {
- 	 	 	 	 	"vars": [
- 	 	 	 	 	 	"itemName"
- 	 	 	 	 	],
- 	 	 	 	 	"trans": "${itemName}을 선택합니까?",
- 	 	 	 	 	"eng": "Select ${itemName}?"
- 	 	 	 	},
- 	 	 	 	"subtitle": {
- 	 	 	 	 	"vars": [
- 	 	 	 	 	 	"itemName"
- 	 	 	 	 	],
- 	 	 	 	 	"trans": "${itemName}을 선택 하시겠습니까?",
- 	 	 	 	 	"eng": "Are you sure you want to select ${itemName}?"
- 	 	 	 	},
- 	 	 	 	"confirmText": {
- 	 	 	 	 	"trans": "확실합니다.",
- 	 	 	 	 	"eng": "I am sure"
- 	 	 	 	}
  	 	 	}
  	 	},
  	 	"setting": {
@@ -1497,6 +1513,12 @@
  	 	 	 	"eng": "save"
  	 	 	}
  	 	},
+ 	 	"petShop": {
+ 	 	 	"adapt": {
+ 	 	 	 	"trans": "새 애완동물 입양하기",
+ 	 	 	 	"eng": "Adopt a new pet"
+ 	 	 	}
+ 	 	},
  	 	"rangeSelector": {
  	 	 	"selectMaxValue": {
  	 	 	 	"title": {
@@ -1571,6 +1593,41 @@
  	 	 	"itemLocked": {
  	 	 	 	"trans": "이 항목은 잠겨 있습니다",
  	 	 	 	"eng": "This item is locked"
+ 	 	 	}
+ 	 	},
+ 	 	"machineCrafting": {
+ 	 	 	"selectAmount": {
+ 	 	 	 	"title": {
+ 	 	 	 	 	"trans": "수량을 선택하세요",
+ 	 	 	 	 	"eng": "Please select amount"
+ 	 	 	 	},
+ 	 	 	 	"subtitle": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"timeStr"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "이것은 ${timeStr}이(가) 걸릴 것입니다",
+ 	 	 	 	 	"eng": "This will take ${timeStr}"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"confirmModal": {
+ 	 	 	 	"title": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"itemName"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "${itemName}을(를) 선택합니까?",
+ 	 	 	 	 	"eng": "Select ${itemName}?"
+ 	 	 	 	},
+ 	 	 	 	"subtitle": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"itemName"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "${itemName}을(를) 선택하는 것이 확실합니까?",
+ 	 	 	 	 	"eng": "Are you sure you want to select ${itemName}?"
+ 	 	 	 	},
+ 	 	 	 	"confirmText": {
+ 	 	 	 	 	"trans": "확실합니다.",
+ 	 	 	 	 	"eng": "I am sure"
+ 	 	 	 	}
  	 	 	}
  	 	},
  	 	"calibration": {
@@ -1680,6 +1737,39 @@
  	 	 	"title": {
  	 	 	 	"trans": "계속하려면 시스템 암호를 입력하세요",
  	 	 	 	"eng": "Enter system passcode to proceed"
+ 	 	 	}
+ 	 	},
+ 	 	"marketItemPurchaseModal": {
+ 	 	 	"amount": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"price",
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${price} ${amount} 조각에 대한 조각 당 btc",
+ 	 	 	 	"eng": "${price} btc per piece for ${amount} pieces"
+ 	 	 	}
+ 	 	},
+ 	 	"marketItemSellModal": {
+ 	 	 	"amountTitle": {
+ 	 	 	 	"trans": "시장에 출시 할 수량",
+ 	 	 	 	"eng": "Quantity to put on market"
+ 	 	 	},
+ 	 	 	"priceTitle": {
+ 	 	 	 	"trans": "조각 당 가격",
+ 	 	 	 	"eng": "Price per piece"
+ 	 	 	},
+ 	 	 	"footer": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"price",
+ 	 	 	 	 	"quantity",
+ 	 	 	 	 	"totalPrice"
+ 	 	 	 	],
+ 	 	 	 	"trans": "이 항목은 조각 당 ${price}에 ${quantity} 조각으로 판매됩니다. 모든 조각이 판매되면 ${totalPrice}를 받게됩니다",
+ 	 	 	 	"eng": "This item will be sold for ${price} per piece for ${quantity} pieces, if all pieces are sold you will receive ${totalPrice}"
+ 	 	 	},
+ 	 	 	"sell": {
+ 	 	 	 	"trans": "시장에 품목을 배치하십시오",
+ 	 	 	 	"eng": "Place Item on Market"
  	 	 	}
  	 	},
  	 	"dungeon": {
@@ -1955,6 +2045,10 @@
  	 	 	 	],
  	 	 	 	"trans": "${playerCount}명의 유저 접속중",
  	 	 	 	"eng": "${playerCount} player(s) connected"
+ 	 	 	},
+ 	 	 	"passwordProtected": {
+ 	 	 	 	"trans": "비밀번호로 보호됨",
+ 	 	 	 	"eng": "Password protected"
  	 	 	}
  	 	},
  	 	"equipmentUpgrade": {
@@ -2387,13 +2481,19 @@
  	 	 	 	 	"vars": [
  	 	 	 	 	 	"itemName"
  	 	 	 	 	],
- 	 	 	 	 	"trans": "${itemName}은 이제 활성화되어 있으며, 0.5%의 추가 에픽 장비 등장 확률을 가진 전설 상자를 잠금 해제합니다",
+ 	 	 	 	 	"trans": "${itemName}은 활성화되어 있으며, 에픽 장비 획득 확률이 0.5% 증가합니다.",
  	 	 	 	 	"eng": "${itemName} is now active, unlock Legendary Container now to have 0.5% additional chance for EPIC tier equipment per Legendary Container"
  	 	 	 	}
  	 	 	},
  	 	 	"unlock": {
  	 	 	 	"trans": "잠금 해제",
  	 	 	 	"eng": "Unlock"
+ 	 	 	},
+ 	 	 	"error": {
+ 	 	 	 	"notEnabled": {
+ 	 	 	 	 	"trans": "이 컨테이너는 현재 잠금 해제 할 수 없습니다",
+ 	 	 	 	 	"eng": "This container cannot be unlocked at this time"
+ 	 	 	 	}
  	 	 	}
  	 	}
  	},
@@ -2443,6 +2543,18 @@
  	 	 	"name": {
  	 	 	 	"trans": "카세트 테이프",
  	 	 	 	"eng": "cassette tape"
+ 	 	 	}
+ 	 	},
+ 	 	"rareEquipmentCrate": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "희귀 장비 상자",
+ 	 	 	 	"eng": "Rare Equipment Crate"
+ 	 	 	}
+ 	 	},
+ 	 	"freeSkip": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "무료 개인 스킵",
+ 	 	 	 	"eng": "Free Personal Skip"
  	 	 	}
  	 	},
  	 	"cycle": {
@@ -2584,10 +2696,6 @@
  	 	 	"trans": "결과물",
  	 	 	"eng": "Receives"
  	 	},
- 	 	"inputPlaceholder": {
- 	 	 	"trans": "채팅을 시작하려면 메시지를 입력하십시오",
- 	 	 	"eng": "Enter message to start chatting"
- 	 	},
  	 	"moderators": {
  	 	 	"trans": "관리자",
  	 	 	"eng": "moderators"
@@ -2694,6 +2802,23 @@
  	 	"thief": {
  	 	 	"trans": "기술자",
  	 	 	"eng": "Techno-Thief"
+ 	 	}
+ 	},
+ 	"globalPartyBanner": {
+ 	 	"title": {
+ 	 	 	"trans": "🎉 글로벌 파티 🎉",
+ 	 	 	"eng": "🎉 Global Party 🎉"
+ 	 	},
+ 	 	"subtitle": {
+ 	 	 	"trans": "주최자:",
+ 	 	 	"eng": "Hosted by:"
+ 	 	},
+ 	 	"button,": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "명성 주기",
+ 	 	 	"eng": "Give street cred"
  	 	}
  	},
  	"cost": {
@@ -3055,6 +3180,16 @@
  	 	 	 	"trans": "부두보이즈 갱단의 적으로부터 더 많은 데미지를 받습니다",
  	 	 	 	"eng": "Enemies of Voodoo Boys gang deals increased damage to you"
  	 	 	}
+ 	 	},
+ 	 	"afkExpMultiplier": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "AFK EXP 배율",
+ 	 	 	 	"eng": "AFK EXP multiplier"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "AFK 작업에서받는 EXP를 늘립니다",
+ 	 	 	 	"eng": "Increase EXP you receive from AFK tasks"
+ 	 	 	}
  	 	}
  	},
  	"modal": {
@@ -3090,13 +3225,13 @@
  	 	 	 	"trans": "접근 불가. 비인간 프로파일이 감지되었습니다.",
  	 	 	 	"eng": "Access denied. non-human profile detected."
  	 	 	},
+ 	 	 	"report1": {
+ 	 	 	 	"trans": "신고 및 차단",
+ 	 	 	 	"eng": "Report & Block"
+ 	 	 	},
  	 	 	"block": {
  	 	 	 	"trans": "차단",
  	 	 	 	"eng": "Block"
- 	 	 	},
- 	 	 	"report": {
- 	 	 	 	"trans": "신고 및 차단",
- 	 	 	 	"eng": "Report and Block"
  	 	 	},
  	 	 	"openPlayerGang": {
  	 	 	 	"trans": "갱단 보기",
@@ -3248,15 +3383,15 @@
  	 	},
  	 	"resultScreen": {
  	 	 	"title": {
- 	 	 	 	"trans": "승리",
- 	 	 	 	"eng": "Victory"
+ 	 	 	 	"trans": "레벨 업",
+ 	 	 	 	"eng": "Level up"
  	 	 	},
  	 	 	"subTitle": {
  	 	 	 	"vars": [
  	 	 	 	 	"levelName"
  	 	 	 	],
  	 	 	 	"trans": "축하합니다, ${levelName}의 레벨이 올랐습니다!",
- 	 	 	 	"eng": "Congratulation, you have leveled up your ${levelName}!"
+ 	 	 	 	"eng": "Congratulations, you have leveled up your ${levelName}!"
  	 	 	},
  	 	 	"fromTo": {
  	 	 	 	"vars": [
@@ -3265,6 +3400,10 @@
  	 	 	 	],
  	 	 	 	"trans": "${from} => ${to}",
  	 	 	 	"eng": "${from} => ${to}"
+ 	 	 	},
+ 	 	 	"title2": {
+ 	 	 	 	"trans": "수령",
+ 	 	 	 	"eng": "Received"
  	 	 	}
  	 	},
  	 	"review": {
@@ -3340,6 +3479,30 @@
  	 	 	}
  	 	}
  	},
+ 	"playerDetailsAssetsTab": {
+ 	 	"noAssets": {
+ 	 	 	"trans": "이 플레이어는 어떤 자산도 소유하고 있지 않습니다",
+ 	 	 	"eng": "this player does not own any assets"
+ 	 	},
+ 	 	"apartment": {
+ 	 	 	"title": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"playerName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${playerName}의 아파트",
+ 	 	 	 	"eng": "${playerName}'s Apartment"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"playerStatusDisplay": {
+ 	 	"title": {
+ 	 	 	"vars": [
+ 	 	 	 	"action"
+ 	 	 	],
+ 	 	 	"trans": "${action} 작업 중",
+ 	 	 	"eng": "${action} in progress"
+ 	 	}
+ 	},
  	"time": {
  	 	"error": {
  	 	 	"systemTimeIncorrect": {
@@ -3394,14 +3557,14 @@
  	 	 	 	"verb",
  	 	 	 	"amount"
  	 	 	],
- 	 	 	"trans": "${verb}(을)를 ${amount}번 할 수 있습니다.",
+ 	 	 	"trans": "${amount}번 ${verb} 할 수 있습니다.",
  	 	 	"eng": "You can ${verb} ${amount} times"
  	 	},
  	 	"noAmountText": {
  	 	 	"vars": [
  	 	 	 	"verb"
  	 	 	],
- 	 	 	"trans": "당신은 ${verb}를 할 수 없습니다",
+ 	 	 	"trans": "${verb} 할 수 없습니다",
  	 	 	"eng": "You are not able to ${verb} this"
  	 	},
  	 	"timeRequiredText": {
@@ -3613,16 +3776,16 @@
  	 	 	 	 	"eng": "dungeon warrior"
  	 	 	 	}
  	 	 	},
- 	 	 	"clearDungeonCoOp": {
- 	 	 	 	"name": {
- 	 	 	 	 	"trans": "협동 공략",
- 	 	 	 	 	"eng": "dungeon friends"
- 	 	 	 	}
- 	 	 	},
  	 	 	"clearDungeon": {
  	 	 	 	"name": {
  	 	 	 	 	"trans": "던전 제패자",
  	 	 	 	 	"eng": "dungeon crawler"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"clearDungeonCoOp": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "협동 던전",
+ 	 	 	 	 	"eng": "dungeon friends"
  	 	 	 	}
  	 	 	},
  	 	 	"dealDamage": {
@@ -3642,7 +3805,7 @@
  	 	 	 	"eng": "Kill enemy"
  	 	 	},
  	 	 	"gang": {
- 	 	 	 	"trans": "갱 멤버를 물리칩니다",
+ 	 	 	 	"trans": "갱 멤버 물리치기",
  	 	 	 	"eng": "Defeat gang members"
  	 	 	},
  	 	 	"getMoney": {
@@ -3689,10 +3852,148 @@
  	 	 	"eng": "Appeal Form"
  	 	}
  	},
+ 	"pet": {
+ 	 	"noName": {
+ 	 	 	"trans": "이름 없음",
+ 	 	 	"eng": "unnamed"
+ 	 	},
+ 	 	"nameTooShort": {
+ 	 	 	"vars": [
+ 	 	 	 	"length"
+ 	 	 	],
+ 	 	 	"trans": "애완동물 이름은 적어도 ${length}자 이상이어야 합니다",
+ 	 	 	"eng": "Pet name must be at least ${length} characters long"
+ 	 	},
+ 	 	"nameTooLong": {
+ 	 	 	"vars": [
+ 	 	 	 	"length"
+ 	 	 	],
+ 	 	 	"trans": "애완동물 이름은 최대 ${length}자까지 가능합니다",
+ 	 	 	"eng": "Pet name must be at most ${length} characters long"
+ 	 	},
+ 	 	"nameCantContainSpaces": {
+ 	 	 	"trans": "애완동물 이름에는 공백을 포함할 수 없습니다",
+ 	 	 	"eng": "Pet name can not contain spaces"
+ 	 	},
+ 	 	"rerollImage": {
+ 	 	 	"success": {
+ 	 	 	 	"trans": "펫 이미지가 성공적으로 변경되었습니다",
+ 	 	 	 	"eng": "Pet image changed successfully"
+ 	 	 	}
+ 	 	},
+ 	 	"adoption": {
+ 	 	 	"alreadyActivated": {
+ 	 	 	 	"trans": "펫 입양 버프가 이미 활성화되었습니다",
+ 	 	 	 	"eng": "Pet Adoption buff is already activated"
+ 	 	 	},
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player",
+ 	 	 	 	 	"npc"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${player}님이 양육 버프를 발동했어! 버프 지속 시간 동안 ${npc}에서 애완동물을 입양할 수 있어!",
+ 	 	 	 	"eng": "${player} has activated Adoption Buff, you can adopt a pet from ${npc} within the buff duration!"
+ 	 	 	},
+ 	 	 	"activated": {
+ 	 	 	 	"trans": "애완동물 입양 버프 발동",
+ 	 	 	 	"eng": "Pet adoption buff activated"
+ 	 	 	}
+ 	 	},
+ 	 	"error": {
+ 	 	 	"interactedRecently": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"hours"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${hours}시간마다 한 플레이어의 애완동물과만 상호작용 할 수 있습니다",
+ 	 	 	 	"eng": "You can only interact with a player's pet once every ${hours} hours"
+ 	 	 	}
+ 	 	},
+ 	 	"played": {
+ 	 	 	"vars": [
+ 	 	 	 	"player",
+ 	 	 	 	"pet"
+ 	 	 	],
+ 	 	 	"trans": "${player}님이 당신의 애완동물 ${pet}와 놀았습니다",
+ 	 	 	"eng": "${player} has played with your pet ${pet}",
+ 	 	 	"success": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"playerName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "너, ${playerName}의 애완동물과 놀았어",
+ 	 	 	 	"eng": "You have played with ${playerName}'s pet"
+ 	 	 	}
+ 	 	},
+ 	 	"rename": {
+ 	 	 	"badWord": {
+ 	 	 	 	"trans": "금지된 단어가 포함되어 있습니다",
+ 	 	 	 	"eng": "Name contains not allowed words"
+ 	 	 	},
+ 	 	 	"notEnoughIAP": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"price"
+ 	 	 	 	],
+ 	 	 	 	"trans": "펫의 이름을 변경하려면 ${price} 유닛이 필요합니다",
+ 	 	 	 	"eng": "You need ${price} Units to rename your pet"
+ 	 	 	}
+ 	 	},
+ 	 	"adopted": {
+ 	 	 	"vars": [
+ 	 	 	 	"player",
+ 	 	 	 	"pet"
+ 	 	 	],
+ 	 	 	"trans": "${player}님이 ${pet}을(를) 입양했습니다",
+ 	 	 	"eng": "${player} has adopted ${pet}",
+ 	 	 	"mail": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"pet"
+ 	 	 	 	],
+ 	 	 	 	"trans": "당신은 ${pet}을(를) 입양했습니다",
+ 	 	 	 	"eng": "You have adopted ${pet}"
+ 	 	 	}
+ 	 	},
+ 	 	"reviveActivate": {
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${player}님이 애완동물 부활 버프를 사용했습니다. 이제 버프 지속 기간 내에 애완동물을 부활시킬 수 있습니다.",
+ 	 	 	 	"eng": "${player} has used pet revival buff, you can now revive one of your pet within the buff duration."
+ 	 	 	}
+ 	 	},
+ 	 	"revive": {
+ 	 	 	"activated": {
+ 	 	 	 	"trans": "펫 부활 버프 활성화됨",
+ 	 	 	 	"eng": "Pet revive buff activated"
+ 	 	 	},
+ 	 	 	"success": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"petName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${petName}을(를) 부활시켰습니다.",
+ 	 	 	 	"eng": "You have revived ${petName}"
+ 	 	 	}
+ 	 	},
+ 	 	"reviveSuccess": {
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player",
+ 	 	 	 	 	"pet"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${player}가 ${pet}을(를) 부활시켰습니다",
+ 	 	 	 	"eng": "${player} has revived ${pet}"
+ 	 	 	}
+ 	 	}
+ 	},
  	"priceTag": {
  	 	"free": {
  	 	 	"trans": "무료",
  	 	 	"eng": "FREE"
+ 	 	}
+ 	},
+ 	"chatInput": {
+ 	 	"placeholder": {
+ 	 	 	"trans": "메시지 입력...",
+ 	 	 	"eng": "Enter Message..."
  	 	}
  	},
  	"itemList": {
@@ -3730,6 +4031,12 @@
  	 	"max": {
  	 	 	"trans": "최대",
  	 	 	"eng": "max"
+ 	 	}
+ 	},
+ 	"giveCredButton": {
+ 	 	"giveCred": {
+ 	 	 	"trans": "명성 주기",
+ 	 	 	"eng": "Give Street Cred"
  	 	}
  	},
  	"actionStartModal": {
@@ -3897,21 +4204,21 @@
  	 	 	 	 	"itemName",
  	 	 	 	 	"playerName"
  	 	 	 	],
- 	 	 	 	"trans": "${playerName}은 ${itemName}에 대한 인벤토리 충분한 여유가 없습니다",
+ 	 	 	 	"trans": "${playerName}은 ${itemName}을(를) 위한 공간이 부족해서 거래를 완료할 수 없습니다.",
  	 	 	 	"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade."
  	 	 	},
  	 	 	"youNotEnoughSpace": {
  	 	 	 	"vars": [
  	 	 	 	 	"itemName"
  	 	 	 	],
- 	 	 	 	"trans": "당신은 ${itemName}에 대한 인벤토리에 충분한 여유가 없습니다.",
+ 	 	 	 	"trans": "당신은 인벤토리에 ${itemName}을(를) 위한 공간이 부족해서 거래를 완료할 수 없습니다.",
  	 	 	 	"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade."
  	 	 	},
  	 	 	"youNotEnoughItem": {
  	 	 	 	"vars": [
  	 	 	 	 	"itemName"
  	 	 	 	],
- 	 	 	 	"trans": "${itemName}가 부족해 거래를 진행할 수 없습니다..",
+ 	 	 	 	"trans": "${itemName}가 부족해 거래를 진행할 수 없습니다.",
  	 	 	 	"eng": "You don't have enough ${itemName} to complete the trade."
  	 	 	},
  	 	 	"otherPlayerNotEnoughItem": {
@@ -3989,6 +4296,34 @@
  	 	"dungeonQuest": {
  	 	 	"trans": "퀘스트를 수락하려면 '퀘스트 수락'을 클릭하세요. 퀘스트는 언제든지 완료하거나 포기할 수 있습니다",
  	 	 	"eng": "Click 'ACCEPT QUEST' to accept the quest, you may complete or abandon the quest at any time"
+ 	 	}
+ 	},
+ 	"enum": {
+ 	 	"apartmentType": {
+ 	 	 	"T1": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "빈민가 거주지",
+ 	 	 	 	 	"eng": "slum apartment"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"T2": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "아파트",
+ 	 	 	 	 	"eng": "apartment"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"T3": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "고급 아파트",
+ 	 	 	 	 	"eng": "luxury apartment"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"T4": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "펜트하우스",
+ 	 	 	 	 	"eng": "penthouse"
+ 	 	 	 	}
+ 	 	 	}
  	 	}
  	},
  	"iapCurrency": {
@@ -4151,7 +4486,7 @@
  	 	},
  	 	"paypal": {
  	 	 	"paypalBonusTitle": {
- 	 	 	 	"trans": "페이팔 결제시 10%의 보너스 유닛을 드립니다!",
+ 	 	 	 	"trans": "페이팔 결제시 10%의 보너스 유닛을 드립니다! 웹사이트 버전에서만 이용 가능하며, 브라우저에서 쉽게 로그인 가능합니다.",
  	 	 	 	"eng": "All PayPal purchases grants 10% additional Units! You may use paypal only on website version, simply login with your browser."
  	 	 	},
  	 	 	"paypalBonus": {
@@ -4163,6 +4498,13 @@
  	 	 	"trans": "받기",
  	 	 	"eng": "Receive"
  	 	},
+ 	 	"bonusReward": {
+ 	 	 	"vars": [
+ 	 	 	 	"eventName"
+ 	 	 	],
+ 	 	 	"trans": "${eventName} 보너스 :",
+ 	 	 	"eng": "${eventName} bonus:"
+ 	 	},
  	 	"purchasing": {
  	 	 	"trans": "구매",
  	 	 	"eng": "Purchasing"
@@ -4170,6 +4512,28 @@
  	 	"total": {
  	 	 	"trans": "총",
  	 	 	"eng": "total"
+ 	 	}
+ 	},
+ 	"bulkCraftingSubtype": {
+ 	 	"recycle": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "재활용",
+ 	 	 	 	"eng": "Recycle"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "더 효율적으로 재활용하기 위해 아이템을 추가하십시오",
+ 	 	 	 	"eng": "Add items to recycle them more efficiently"
+ 	 	 	}
+ 	 	},
+ 	 	"printSell": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "인쇄 및 판매",
+ 	 	 	 	"eng": "Print & Sell"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "아이템을 인쇄하여 돈으로 판매",
+ 	 	 	 	"eng": "Print items and sell them for money"
+ 	 	 	}
  	 	}
  	},
  	"donationType": {
@@ -4238,7 +4602,7 @@
  	 	 	"eng": "Retro Miami"
  	 	},
  	 	"donation17": {
- 	 	 	"trans": "명성",
+ 	 	 	"trans": "프레스티지",
  	 	 	"eng": "Prestige"
  	 	},
  	 	"donation19": {
@@ -4246,8 +4610,48 @@
  	 	 	"eng": "CyberPuppy"
  	 	},
  	 	"donation18": {
- 	 	 	"trans": "명성",
+ 	 	 	"trans": "프레스티지",
  	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation20": {
+ 	 	 	"trans": "프레스티지",
+ 	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation21": {
+ 	 	 	"trans": "프레스티지",
+ 	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation22": {
+ 	 	 	"trans": "프레스티지",
+ 	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation23": {
+ 	 	 	"trans": "할로윈",
+ 	 	 	"eng": "Halloween"
+ 	 	},
+ 	 	"donation24": {
+ 	 	 	"trans": "스킵 현자",
+ 	 	 	"eng": "SkipSage"
+ 	 	},
+ 	 	"donation25": {
+ 	 	 	"trans": "크리스마스 날",
+ 	 	 	"eng": "Christmastime"
+ 	 	},
+ 	 	"donation26": {
+ 	 	 	"trans": "사이버-드래곤",
+ 	 	 	"eng": "CyberDragon"
+ 	 	},
+ 	 	"donation27": {
+ 	 	 	"trans": "스킵의 왕",
+ 	 	 	"eng": "Skip Lord"
+ 	 	},
+ 	 	"donation28": {
+ 	 	 	"trans": "벚꽃",
+ 	 	 	"eng": "Sakura"
+ 	 	},
+ 	 	"donation29": {
+ 	 	 	"trans": "넷러너",
+ 	 	 	"eng": "Netrunner"
  	 	},
  	 	"moderator": {
  	 	 	"trans": "관리자",
@@ -4714,7 +5118,7 @@
  	 	"donation13": {
  	 	 	"benefits": {
  	 	 	 	"1": {
- 	 	 	 	 	"trans": "\"사이버-눈송이\"기부 제목",
+ 	 	 	 	 	"trans": "\"사이버-눈송이\"후원 타이틀",
  	 	 	 	 	"eng": "\"CyberFrost\" donation title"
  	 	 	 	},
  	 	 	 	"2": {
@@ -4874,23 +5278,23 @@
  	 	"donation17": {
  	 	 	"benefits": {
  	 	 	 	"1": {
- 	 	 	 	 	"trans": "\"프레스티지\"기부 제목",
+ 	 	 	 	 	"trans": "\"프레스티지\"후원 타이틀",
  	 	 	 	 	"eng": "\"Prestige\" donation title"
  	 	 	 	},
  	 	 	 	"2": {
- 	 	 	 	 	"trans": "프로필 사진 사용자 정의 잠금 해제",
+ 	 	 	 	 	"trans": "프로필 사진 커스터마이징 가능",
  	 	 	 	 	"eng": "Unlock profile picture customization"
  	 	 	 	},
  	 	 	 	"3": {
- 	 	 	 	 	"trans": "블랙 프레임 (애니메이션 포함)",
+ 	 	 	 	 	"trans": "검은색 프레임 (애니메이션 포함)",
  	 	 	 	 	"eng": "Black frame (with animation)"
  	 	 	 	},
  	 	 	 	"4": {
- 	 	 	 	 	"trans": "블랙 프로필 (애니메이션 포함)",
+ 	 	 	 	 	"trans": "검은색 프로필 (애니메이션 포함)",
  	 	 	 	 	"eng": "Black Profile (with animation)"
  	 	 	 	},
  	 	 	 	"5": {
- 	 	 	 	 	"trans": "사용자 정의 바이오 잠금 해제",
+ 	 	 	 	 	"trans": "맞춤형 자기소개 작성 가능",
  	 	 	 	 	"eng": "Unlock custom bio"
  	 	 	 	},
  	 	 	 	"6": {
@@ -4898,15 +5302,15 @@
  	 	 	 	 	"eng": "Barcode decoration on profile"
  	 	 	 	},
  	 	 	 	"7": {
- 	 	 	 	 	"trans": "갱 모토를 사용자 정의하십시오",
+ 	 	 	 	 	"trans": "갱 모토 작성 가능",
  	 	 	 	 	"eng": "Customize gang motto"
  	 	 	 	},
  	 	 	 	"8": {
- 	 	 	 	 	"trans": "갱 이미지를 사용자 정의하십시오",
+ 	 	 	 	 	"trans": "갱 이미지 업로드 가능",
  	 	 	 	 	"eng": "Customize gang image"
  	 	 	 	},
  	 	 	 	"9": {
- 	 	 	 	 	"trans": "향후 업데이트에 더 많이 올 것입니다",
+ 	 	 	 	 	"trans": "향후 업데이트시 기능 추가 예정",
  	 	 	 	 	"eng": "More coming in future update"
  	 	 	 	}
  	 	 	}
@@ -4914,23 +5318,23 @@
  	 	"donation19": {
  	 	 	"benefits": {
  	 	 	 	"1": {
- 	 	 	 	 	"trans": "\"Cyberpuppy\"기부 제목",
+ 	 	 	 	 	"trans": "\"Cyberpuppy\"후원 타이틀",
  	 	 	 	 	"eng": "\"CyberPuppy\" donation title"
  	 	 	 	},
  	 	 	 	"2": {
- 	 	 	 	 	"trans": "프로필 사진 사용자 정의 잠금 해제",
+ 	 	 	 	 	"trans": "프로필 사진 커스터마이징 가능",
  	 	 	 	 	"eng": "Unlock profile picture customization"
  	 	 	 	},
  	 	 	 	"3": {
- 	 	 	 	 	"trans": "브라운 프레임 (애니메이션 포함)",
+ 	 	 	 	 	"trans": "갈색 프레임 (애니메이션 포함)",
  	 	 	 	 	"eng": "Brown frame (with animation)"
  	 	 	 	},
  	 	 	 	"4": {
- 	 	 	 	 	"trans": "브라운 프로필 (애니메이션 포함)",
+ 	 	 	 	 	"trans": "갈색 프로필 (애니메이션 포함)",
  	 	 	 	 	"eng": "Brown Profile (with animation)"
  	 	 	 	},
  	 	 	 	"5": {
- 	 	 	 	 	"trans": "사용자 정의 바이오 잠금 해제",
+ 	 	 	 	 	"trans": "맞춤형 자기소개 작성 가능",
  	 	 	 	 	"eng": "Unlock custom bio"
  	 	 	 	},
  	 	 	 	"6": {
@@ -4938,15 +5342,15 @@
  	 	 	 	 	"eng": "Barcode decoration on profile"
  	 	 	 	},
  	 	 	 	"7": {
- 	 	 	 	 	"trans": "갱 모토를 사용자 정의하십시오",
+ 	 	 	 	 	"trans": "갱 모토 작성 가능",
  	 	 	 	 	"eng": "Customize gang motto"
  	 	 	 	},
  	 	 	 	"8": {
- 	 	 	 	 	"trans": "갱 이미지를 사용자 정의하십시오",
+ 	 	 	 	 	"trans": "갱 이미지 업로드 가능",
  	 	 	 	 	"eng": "Customize gang image"
  	 	 	 	},
  	 	 	 	"9": {
- 	 	 	 	 	"trans": "향후 업데이트에 더 많이 올 것입니다",
+ 	 	 	 	 	"trans": "향후 업데이트시 기능 추가 예정",
  	 	 	 	 	"eng": "More coming in future update"
  	 	 	 	}
  	 	 	}
@@ -4954,20 +5358,260 @@
  	 	"donation18": {
  	 	 	"benefits": {
  	 	 	 	"1": {
- 	 	 	 	 	"trans": "\"프레스티지\"기부 제목",
+ 	 	 	 	 	"trans": "\"프레스티지\"후원 타이틀",
  	 	 	 	 	"eng": "\"Prestige\" donation title"
  	 	 	 	},
  	 	 	 	"2": {
- 	 	 	 	 	"trans": "프로필 사진 사용자 정의 잠금 해제",
+ 	 	 	 	 	"trans": "프로필 사진 커스터마이징 가능",
  	 	 	 	 	"eng": "Unlock profile picture customization"
  	 	 	 	},
  	 	 	 	"3": {
- 	 	 	 	 	"trans": "오션 프레임 (애니메이션 포함)",
+ 	 	 	 	 	"trans": "바다 프레임 (애니메이션 포함)",
  	 	 	 	 	"eng": "Ocean frame (with animation)"
  	 	 	 	},
  	 	 	 	"4": {
- 	 	 	 	 	"trans": "해양 프로필 (애니메이션 포함)",
+ 	 	 	 	 	"trans": "바다 프로필 (애니메이션 포함)",
  	 	 	 	 	"eng": "Ocean Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "맞춤형 자기소개 작성 가능",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "프로필의 바코드 장식",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "갱 모토 작성 가능",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "갱 이미지 업로드 가능",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "향후 업데이트시 기능 추가 예정",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation20": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"프레스티지\"후원 타이틀",
+ 	 	 	 	 	"eng": "\"Prestige\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "프로필 사진 커스터마이징 가능",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "흰색 프레임 (애니메이션 포함)",
+ 	 	 	 	 	"eng": "White frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "흰색 프로필 (애니메이션 포함)",
+ 	 	 	 	 	"eng": "White Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "맞춤형 자기소개 작성 가능",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "프로필의 바코드 장식",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "갱 모토 작성 가능",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "갱 이미지 업로드 가능",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "향후 업데이트시 기능 추가 예정",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation21": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"프레스티지\"후원 타이틀",
+ 	 	 	 	 	"eng": "\"Prestige\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "프로필 사진 커스터마이징 가능",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "빨간색 프레임 (애니메이션 포함)",
+ 	 	 	 	 	"eng": "Red frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "빨간색 프로필 (애니메이션 포함)",
+ 	 	 	 	 	"eng": "Red Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "맞춤형 자기소개 작성 가능",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "프로필의 바코드 장식",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "갱 모토 작성 가능",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "갱 이미지 업로드 가능",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "향후 업데이트시 기능 추가 예정",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation22": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"프레스티지\"후원 타이틀",
+ 	 	 	 	 	"eng": "\"Prestige\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "프로필 사진 커스터마이징 가능",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "네온사인 프레임 (애니메이션 포함)",
+ 	 	 	 	 	"eng": "Neon Sign frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "보라색 프로필 (애니메이션 포함)",
+ 	 	 	 	 	"eng": "Purple Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "맞춤형 자기소개 작성 가능",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "프로필의 바코드 장식",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "갱 모토 작성 가능",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "갱 이미지 업로드 가능",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "향후 업데이트시 기능 추가 예정",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation23": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"할로윈\"후원 타이틀",
+ 	 	 	 	 	"eng": "\"Halloween\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "프로필 사진 커스터마이징 가능",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "할로윈 프레임 (애니메이션 포함)",
+ 	 	 	 	 	"eng": "Halloween frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "할로윈 프로필 (애니메이션 포함)",
+ 	 	 	 	 	"eng": "Halloween Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "맞춤형 자기소개 작성 가능",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "프로필의 바코드 장식",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "갱 모토 작성 가능",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "갱 이미지 업로드 가능",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "향후 업데이트시 기능 추가 예정",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation24": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"스킵 현자\"후원 타이틀",
+ 	 	 	 	 	"eng": "\"SkipSage\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "프로필 사진 커스터마이징 가능",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "스킵 현자 프레임 (애니메이션 포함)",
+ 	 	 	 	 	"eng": "SkipSage frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "스킵 현자 프로필 (애니메이션 포함)",
+ 	 	 	 	 	"eng": "SkipSage Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "맞춤형 자기소개 작성 가능",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "프로필의 바코드 장식",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "갱 모토 작성 가능",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "갱 이미지 업로드 가능",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "향후 업데이트시 기능 추가 예정",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation25": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"크리스마스 날\"후원 타이틀",
+ 	 	 	 	 	"eng": "\"Christmastime\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "프로필 사진 커스터마이징 가능",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "크리스마스 날 프레임 (애니메이션 포함)",
+ 	 	 	 	 	"eng": "Christmastime frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "크리스마스 날 프로필 (애니메이션 포함)",
+ 	 	 	 	 	"eng": "Christmastime Profile (with animation)"
  	 	 	 	},
  	 	 	 	"5": {
  	 	 	 	 	"trans": "사용자 정의 바이오 잠금 해제",
@@ -4978,15 +5622,175 @@
  	 	 	 	 	"eng": "Barcode decoration on profile"
  	 	 	 	},
  	 	 	 	"7": {
- 	 	 	 	 	"trans": "갱 모토를 사용자 정의하십시오",
+ 	 	 	 	 	"trans": "갱 모토 작성 가능",
  	 	 	 	 	"eng": "Customize gang motto"
  	 	 	 	},
  	 	 	 	"8": {
- 	 	 	 	 	"trans": "갱 이미지를 사용자 정의하십시오",
+ 	 	 	 	 	"trans": "갱 이미지 업로드 가능",
  	 	 	 	 	"eng": "Customize gang image"
  	 	 	 	},
  	 	 	 	"9": {
- 	 	 	 	 	"trans": "향후 업데이트에 더 많이 올 것입니다",
+ 	 	 	 	 	"trans": "향후 업데이트시 기능 추가 예정",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation26": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"사이버-드래곤\"후원 타이틀",
+ 	 	 	 	 	"eng": "\"CyberDragon\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "프로필 사진 커스터마이징 가능",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "사이버-드래곤 프레임 (애니메이션 포함)",
+ 	 	 	 	 	"eng": "CyberDragon frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "사이버-드래곤 프로필 (애니메이션 포함)",
+ 	 	 	 	 	"eng": "CyberDragon Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "커스텀 바이오 잠금 해제",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "프로필의 바코드 장식",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "갱 모토작성 가능",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "갱 이미지 업로드 가능",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "향후 업데이트시 기능 추가 예정",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation27": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"스킵의 왕\"후원 타이틀",
+ 	 	 	 	 	"eng": "\"Skip Lord\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "프로필 사진 커스터마이징 가능",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "스킵의 왕 프레임 (애니메이션 포함)",
+ 	 	 	 	 	"eng": "Skip Lord frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "스킵의 왕 프로필 (애니메이션 포함)",
+ 	 	 	 	 	"eng": "Skip Lord Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "커스텀 바이오 잠금 해제",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "프로필의 바코드 장식",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "갱 모토 작성 가능",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "갱 이미지 업로드 가능",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "향후 업데이트시 기능 추가 예정",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation28": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"벚꽃\" 후원 타이틀",
+ 	 	 	 	 	"eng": "\"Sakura\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "프로필 사진 커스터마이징 가능",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "벚꽃 프레임 (애니메이션 포함)",
+ 	 	 	 	 	"eng": "Sakura frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "벚꽃 프로필 (애니메이션 포함)",
+ 	 	 	 	 	"eng": "Sakura Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "커스텀 바이오 잠금 해제",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "벚꽃 프로필 장식",
+ 	 	 	 	 	"eng": "Sakura profile decoration"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "갱 모토 작성 가능",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "갱 이미지 업로드 가능",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "향후 업데이트시 기능 추가 예정",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation29": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"넷러너\" 기부 제목",
+ 	 	 	 	 	"eng": "\"Netrunner\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "프로필 사진 커스터마이징 잠금 해제",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "넷러너 프레임 (애니메이션 포함)",
+ 	 	 	 	 	"eng": "Netrunner frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "넷러너 프로필 (애니메이션 포함)",
+ 	 	 	 	 	"eng": "Netrunner Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "커스텀 바이오 잠금 해제",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "커스텀 바이오 잠금 해제",
+ 	 	 	 	 	"eng": "Netrunner profile decoration"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "갱 모토를 커스터마이징하세요",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "갱 이미지를 커스터마이징하세요",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "향후 업데이트에서 더 많은 것이 기대되니 기대해 줘!",
  	 	 	 	 	"eng": "More coming in future update"
  	 	 	 	}
  	 	 	}
@@ -5058,6 +5862,33 @@
  	 	 	"eng": "backpack"
  	 	}
  	},
+ 	"gameEvent": {
+ 	 	"lunarNewYear": {
+ 	 	 	"trans": "설",
+ 	 	 	"eng": "Lunar New Year"
+ 	 	},
+ 	 	"halloween": {
+ 	 	 	"trans": "할로윈",
+ 	 	 	"eng": "Halloween"
+ 	 	},
+ 	 	"thanksgiving": {
+ 	 	 	"trans": "추수 감사절",
+ 	 	 	"eng": "Thanksgiving"
+ 	 	},
+ 	 	"christmas": {
+ 	 	 	"trans": "크리스마스",
+ 	 	 	"eng": "Christmas"
+ 	 	},
+ 	 	"sakura": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "이벤트 기간 동안 ${percent}% 할인",
+ 	 	 	 	"eng": "${percent}% off during event",
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	]
+ 	 	 	}
+ 	 	}
+ 	},
  	"itemFilterType": {
  	 	"shopSell": {
  	 	 	"description": {
@@ -5073,9 +5904,15 @@
  	 	 	 	"eng": "Unknown Equipment"
  	 	 	}
  	 	},
+ 	 	"unknownCache": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "무작위 캐시",
+ 	 	 	 	"eng": "Unknown Cache"
+ 	 	 	}
+ 	 	},
  	 	"aiCore": {
  	 	 	"name": {
- 	 	 	 	"trans": "AI 코어",
+ 	 	 	 	"trans": "[부품] AI 코어",
  	 	 	 	"eng": "AI Core"
  	 	 	},
  	 	 	"description": {
@@ -5085,7 +5922,7 @@
  	 	},
  	 	"aiCoreCluster": {
  	 	 	"name": {
- 	 	 	 	"trans": "AI 코어 클러스터",
+ 	 	 	 	"trans": "[부품] AI 코어 클러스터",
  	 	 	 	"eng": "AI Core Cluster"
  	 	 	},
  	 	 	"description": {
@@ -5423,7 +6260,7 @@
  	 	},
  	 	"medicalTechCluster": {
  	 	 	"name": {
- 	 	 	 	"trans": "의료 공학 클러스터",
+ 	 	 	 	"trans": "[부품] 의료 공학 클러스터",
  	 	 	 	"eng": "Medical Tech Cluster"
  	 	 	},
  	 	 	"description": {
@@ -5453,7 +6290,7 @@
  	 	},
  	 	"hashProcessor": {
  	 	 	"name": {
- 	 	 	 	"trans": "Hash 프로세서",
+ 	 	 	 	"trans": "[부품] Hash 프로세서",
  	 	 	 	"eng": "Hash Processor"
  	 	 	},
  	 	 	"description": {
@@ -5576,7 +6413,7 @@
  	 	},
  	 	"upgradeChanceIncreaser0": {
  	 	 	"name": {
- 	 	 	 	"trans": "교정 AI 샤드 (5%)",
+ 	 	 	 	"trans": "[버프] 교정 AI 샤드 (5%)",
  	 	 	 	"eng": "Calibration AI Shard (5%)"
  	 	 	}
  	 	},
@@ -5592,7 +6429,7 @@
  	 	},
  	 	"upgradeChanceIncreaser1": {
  	 	 	"name": {
- 	 	 	 	"trans": "교정 AI 샤드 (10%)",
+ 	 	 	 	"trans": "[버프] 교정 AI 샤드 (10%)",
  	 	 	 	"eng": "Calibration AI Shard (10%)"
  	 	 	}
  	 	},
@@ -5609,13 +6446,13 @@
  	 	},
  	 	"upgradeChanceIncreaser2": {
  	 	 	"name": {
- 	 	 	 	"trans": "교정 AI 샤드 (50%)",
+ 	 	 	 	"trans": "[버프] 교정 AI 샤드 (50%)",
  	 	 	 	"eng": "Calibration AI Shard (50%)"
  	 	 	}
  	 	},
  	 	"upgradeChanceIncreaser2personal": {
  	 	 	"name": {
- 	 	 	 	"trans": "교정 AI 샤드 (50%) [이벤트]",
+ 	 	 	 	"trans": "[버프] 교정 AI 샤드 (50%) [이벤트]",
  	 	 	 	"eng": "Calibration AI Shard (50%) [EVENT]"
  	 	 	},
  	 	 	"description": {
@@ -5625,7 +6462,7 @@
  	 	},
  	 	"upgradeChanceIncreaser3": {
  	 	 	"name": {
- 	 	 	 	"trans": "교정 AI 샤드 (100%)",
+ 	 	 	 	"trans": "[버프] 교정 AI 샤드 (100%)",
  	 	 	 	"eng": "Calibration AI Shard (100%)"
  	 	 	}
  	 	},
@@ -5634,13 +6471,13 @@
  	 	 	 	"vars": [
  	 	 	 	 	"percent"
  	 	 	 	],
- 	 	 	 	"trans": "교정 AI 샤드 (${percent} %)",
+ 	 	 	 	"trans": "[버프] 교정 AI 샤드 (${percent} %)",
  	 	 	 	"eng": "Calibration AI Shard (${percent}%)"
  	 	 	}
  	 	},
  	 	"upgradeNoBreak": {
  	 	 	"name": {
- 	 	 	 	"trans": "교정 실패 무효화 나노봇",
+ 	 	 	 	"trans": "[버프] 교정 실패 무효화 나노봇",
  	 	 	 	"eng": "Calibration Safety Nano Bots"
  	 	 	},
  	 	 	"description": {
@@ -5738,6 +6575,16 @@
  	 	 	 	"eng": "You get some love, and you get some love! everyone gets some love!.\r\n        When used everyone loves each other\r\n        This effects all players fow 10 minutes"
  	 	 	}
  	 	},
+ 	 	"chatExploitPosh": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "채팅 악용 전송기 [포시]",
+ 	 	 	 	"eng": "Chat exploit transmitter [Posh]"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "활성화되면, 우리 채팅 영역 주민들이 제공하는 모든 통신은 매우 멋진 영국 신사의 옷을 입은 채로 정확히 10분 동안 화려한 변신을 겪을 것이다. 이 작전은 영어로만 잘 작동한다",
+ 	 	 	 	"eng": "Upon activation, all correspondence proffered by the denizens of our chat realm shall undergo a delightful metamorphosis, adorning itself in the distinguished garb of gentlemanly English for a duration of precisely 10 minutes. this exploit will only work well with English"
+ 	 	 	}
+ 	 	},
  	 	"upgradeResetShard": {
  	 	 	"name": {
  	 	 	 	"trans": "공장 초기화 샤드",
@@ -5760,7 +6607,7 @@
  	 	},
  	 	"chatExploitProtect": {
  	 	 	"name": {
- 	 	 	 	"trans": "사이버 터널 VPN",
+ 	 	 	 	"trans": "[버프] 사이버 터널 VPN",
  	 	 	 	"eng": "CyberTunnel VPN"
  	 	 	},
  	 	 	"description": {
@@ -5788,9 +6635,19 @@
  	 	 	 	"eng": "An encrypted container with red, green decoration and a 'CyberSanta™' logo on the side of it."
  	 	 	}
  	 	},
+ 	 	"christmasGift2": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "서리낀 상자",
+ 	 	 	 	"eng": "Frosty Container"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "반짝이는 눈송이 테마의 포장으로 감싸져있는 미스터리 선물. 12월중에 [터미널]에서 잠금을 해제 할 수 있습니다.",
+ 	 	 	 	"eng": "A mystery gift wrapped in sparkling, snowflake-themed packaging. You can only unlock it at the [Terminal] during December."
+ 	 	 	}
+ 	 	},
  	 	"rngInterferer": {
  	 	 	"name": {
- 	 	 	 	"trans": "RNG 간섭기",
+ 	 	 	 	"trans": "[버프] RNG 간섭기",
  	 	 	 	"eng": "RNG Interferer"
  	 	 	},
  	 	 	"descriptionv3": {
@@ -5829,7 +6686,7 @@
  	 	},
  	 	"afkRewardBoost": {
  	 	 	"name": {
- 	 	 	 	"trans": "전리품 향상 샤드",
+ 	 	 	 	"trans": "[버프] 전리품 향상 샤드",
  	 	 	 	"eng": "Reward Booster Shard"
  	 	 	},
  	 	 	"description": {
@@ -5844,7 +6701,7 @@
  	 	},
  	 	"newYear": {
  	 	 	"name": {
- 	 	 	 	"trans": "빨간 봉투",
+ 	 	 	 	"trans": "[이벤트] 빨간 봉투",
  	 	 	 	"eng": "Red Envelope"
  	 	 	},
  	 	 	"description": {
@@ -5854,7 +6711,7 @@
  	 	},
  	 	"lunarCoin": {
  	 	 	"name": {
- 	 	 	 	"trans": "황금 동전",
+ 	 	 	 	"trans": "[이벤트] 황금 동전",
  	 	 	 	"eng": "Golden Coin"
  	 	 	},
  	 	 	"description": {
@@ -5864,7 +6721,7 @@
  	 	},
  	 	"dumplings": {
  	 	 	"name": {
- 	 	 	 	"trans": "만두",
+ 	 	 	 	"trans": "[버프] 만두",
  	 	 	 	"eng": "Dumplings"
  	 	 	},
  	 	 	"description": {
@@ -5875,9 +6732,22 @@
  	 	 	 	"eng": "These dumplings are unlike any other. Made with love and care by Yen, these delicious pockets of goodness are filled with the finest ingredients and cooked to perfection.\\n recover ${percent}% health upon consumption"
  	 	 	}
  	 	},
+ 	 	"pumpkinPie": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "호박 파이",
+ 	 	 	 	"eng": "Pumpkin Pie"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "맛있는 호박 파이. 이 파이 위에는 두꺼운 바닐라 크림을 잔뜩 뿌려져 있습니다. 맛있습니다! \\n섭취 시 체력이 ${percent}% 회복됩니다",
+ 	 	 	 	"eng": "A delicious pumpkin pie. this pie has big load of thick vanilla cream over it, delicious!\\nrecover ${percent}% health upon consumption"
+ 	 	 	}
+ 	 	},
  	 	"riceCake": {
  	 	 	"name": {
- 	 	 	 	"trans": "떡",
+ 	 	 	 	"trans": "[버프] 떡",
  	 	 	 	"eng": "Rice Cake"
  	 	 	},
  	 	 	"description": {
@@ -5890,7 +6760,7 @@
  	 	},
  	 	"sushi": {
  	 	 	"name": {
- 	 	 	 	"trans": "초밥",
+ 	 	 	 	"trans": "[버프] 초밥",
  	 	 	 	"eng": "Sushi"
  	 	 	},
  	 	 	"description": {
@@ -5903,7 +6773,7 @@
  	 	},
  	 	"summonAI": {
  	 	 	"name": {
- 	 	 	 	"trans": "Slanc 커넥터",
+ 	 	 	 	"trans": "[버프] SLANC 커넥터",
  	 	 	 	"eng": "SLANC Connector"
  	 	 	},
  	 	 	"description": {
@@ -5914,7 +6784,7 @@
  	 	 	 	"eng": "Use SLANC Connector to connect SLANC to global chat for ${minute} minutes"
  	 	 	},
  	 	 	"announcement": {
- 	 	 	 	"trans": "Slanc은 채팅을 시작했습니다",
+ 	 	 	 	"trans": "SLANC가 채팅을 시작했습니다",
  	 	 	 	"eng": "SLANC has entered the chat"
  	 	 	}
  	 	},
@@ -5926,6 +6796,153 @@
  	 	 	"description": {
  	 	 	 	"trans": "품목을 교환하는 데 사용할 수있는 토큰",
  	 	 	 	"eng": "A token that can be used to exchange items"
+ 	 	 	}
+ 	 	},
+ 	 	"techScrapCluster": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "[부품] 공학 클러스터",
+ 	 	 	 	"eng": "Tech Scrap Cluster"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "공학 클러스터에는 1000 개의 공학 조각이 포함되어 있습니다. 쉽게 조립 및 분해 될 수 있습니다.",
+ 	 	 	 	"eng": "A Tech Scrap Cluster contains 1000 Tech Scraps, can be used to easily store and trade"
+ 	 	 	}
+ 	 	},
+ 	 	"rareEquipmentCrate": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "희귀 장비 상자",
+ 	 	 	 	"eng": "Rare Equipment Crate"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "임의의 장비 또는 기타 전리품이 들어있는 상자",
+ 	 	 	 	"eng": "A crate that contains a random equipments or other loots"
+ 	 	 	}
+ 	 	},
+ 	 	"globalPartyBuff": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "글로벌 파티 배포기",
+ 	 	 	 	"eng": "Global Party Deployer"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"afkPercent",
+ 	 	 	 	 	"btcPercent",
+ 	 	 	 	 	"expPercent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "배포되면 AFK 시간을 ${afkPercent}% 줄이고, BTC 획득량을 ${btcPercent}%, 경험치 획득량을 ${expPercent}%증가 시킵니다.\\n 당신의 이름이 적힌 배너가 버프를 활성화 한 것을 표시하기 위해 채팅 화면에 표기됩니다.",
+ 	 	 	 	"eng": "When deployed, reduce AFK time by ${afkPercent}%, increased BTC gained by ${btcPercent}%, increase EXP gained by ${expPercent}%\\nAnd a banner will be shown in chat screen with your name indicating that you have deployed the buff"
+ 	 	 	},
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"afkPercent",
+ 	 	 	 	 	"btcPercent",
+ 	 	 	 	 	"expPercent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "🎉파티 시간!🥳, AFK 시간이 ${afkPercent}%만큼 줄고, BTC 획득량이 ${btcPercent}%, 경험치 획득량이 ${expPercent}%증가합니다.",
+ 	 	 	 	"eng": "🎉Its Party Time!🥳, reduce AFK time by ${afkPercent}%, increased BTC gained by ${btcPercent}%, increase EXP gained by ${expPercent}%"
+ 	 	 	}
+ 	 	},
+ 	 	"turkey": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "구운 칠면조",
+ 	 	 	 	"eng": "Roasted Turkey"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "맛있는 구운 칠면조. 섭취 시 AFK 작업에서 받는 EXP가 ${percent}% 증가합니다",
+ 	 	 	 	"eng": "A delicious roasted turkey, when consumed increases EXP received in AFK tasks by ${percent}%"
+ 	 	 	}
+ 	 	},
+ 	 	"pudding": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "크리스마스 푸딩",
+ 	 	 	 	"eng": "Christmas Pudding"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "말린 과일, 견과류, 가끔은 알콜을 가미해 농밀하게 찐 이 푸딩은 AFK 작업에서 얻는 EXP를 ${percent}%만큼 증가시킵니다.\\n이 아이템은 12월 동안에 사용할 수 있습니다",
+ 	 	 	 	"eng": "A dense, steamed pudding with dried fruits, nuts, and often laced with alcohol, when consumed increases EXP received in AFK tasks by ${percent}%.\\nThis item can only be used during December"
+ 	 	 	},
+ 	 	 	"error": {
+ 	 	 	 	"trans": "이 항목은 크리스마스 이벤트 중에만 사용할 수 있습니다",
+ 	 	 	 	"eng": "This item is only available during Christmas Event"
+ 	 	 	}
+ 	 	},
+ 	 	"pawCredit": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "[펫] 발자국 증명서",
+ 	 	 	 	"eng": "Paw Credit"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "네온-발자국 성소에서 애완동물 용품으로 교환할 수 있는 봉사 증명서. \\n강아지 발자국이 찍혀있습니다.",
+ 	 	 	 	"eng": "A credit that can be used to exchange pet items at Neon Paw Sanctuary"
+ 	 	 	}
+ 	 	},
+ 	 	"petTokenShard": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "[펫] 자원봉사 메달",
+ 	 	 	 	"eng": "Volunteer Service Medallion"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${amount}개를 모아 [펫] 성소 입양 패스권을 얻을 수 있습니다. 그것으로 새로운 애완동물을 입양할 수 있습니다",
+ 	 	 	 	"eng": "Combine ${amount} of this to get a Sanctuary Adoption Pass, and it can be used to adopt a new pet"
+ 	 	 	}
+ 	 	},
+ 	 	"petToken": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "[펫] 성소 입양 패스권",
+ 	 	 	 	"eng": "Sanctuary Adoption Pass"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "네온 발자국 성소에서 애완동물을 입양 할 수 있는 패스권 ",
+ 	 	 	 	"eng": "A pass that can be used to adopt a pet from Neon Paw Sanctuary"
+ 	 	 	}
+ 	 	},
+ 	 	"petFood": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "[펫] 전기섬유 껌",
+ 	 	 	 	"eng": "ElectroFiber Bites"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "\"전기섬유 껌™은 에너지를 전도하고 저장하는 복잡한 섬유의 혼합물을 포함하고 있어, 애완동물의 더 긴 사이버 황무지 탐험을 위해 체력과 힘을 향상시킵니다.\"",
+ 	 	 	 	"eng": "\"ElectroFiber Bites™ contain a complex blend of fibers that conduct and store energy, boosting your pet's stamina and power for longer expeditions in the cyber wilderness.\""
+ 	 	 	}
+ 	 	},
+ 	 	"petToy": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "[펫] 나노니블 공",
+ 	 	 	 	"eng": "NanoNibble Ball"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "\"나노니블 볼을 소개합니다 - 순수한 즐거움을 위해 디자인된 플레이타임 기술의 경이로움. 각각의 볼은 가볍게 만지면 황홀한 패턴으로 빛나며, 당신의 애완동물이 완전히 즐거워할 수 있도록 합니다. 전례없는 재미의 세션 이후, 볼은 스마트하게 해롭지 않고 친환경적인 입자로 해체되어 어떠한 남은 흔적도 남기지 않습니다. 디지털 동반자와의 단 하나의 잊지 못할 모험에 완벽한, 청소가 필요 없이 사라져 버리는 최고의 놀이 경험입니다.\"",
+ 	 	 	 	"eng": "\"Introducing the NanoNibble Ball – a marvel of playtime technology designed for sheer joy. Each ball lights up with mesmerizing patterns at the slightest touch, ensuring your pet is thoroughly entertained. After a session of unprecedented fun, the ball smartly deconstructs into harmless, eco-friendly particles, leaving no mess behind. Perfect for a single, unforgettable adventure in digital companionship, it’s the ultimate playtime experience that neatly disappears, sparing you the cleanup.\""
+ 	 	 	}
+ 	 	},
+ 	 	"petCleaner": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "[펫] 털 청결제 스프레이",
+ 	 	 	 	"eng": "FurFlush Spray"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "털 청결제 스프레이: 유선형의 통에 '즉각적인 청결, 즉각적인 사라짐'이 적혀 있습니다. 빠른 스프레이로 당신의 더러운 애완동물을 반짝반짝하게 만들어줍니다 - 헹구지 않고 복잡하지 않게 그냥 쏘세요! 사이버 미팅 전 갑작스러운 순간에 완벽합니다. 주의: 예상치 못한 애완동물 스웨거로 이어질 수 있습니다. 도시 탐험가의 동반자를 위한 일회용 마법. 사용 후 사라져서 눈부신 애완동물 외에는 증거가 남지 않습니다.",
+ 	 	 	 	"eng": "FurFlush Spray: The sleek canister reads 'Instant Clean, Instant Gone.' A quick spritz turns your grimy pet gleaming—no rinse, no mess, just poof! Perfect for those 'oops' moments before a cyber meet-up. Caution: May lead to unexpected pet swagger. Single-use magic for the urban explorer's companion. Disappears after use, leaving no evidence except a dazzling pet."
+ 	 	 	}
+ 	 	},
+ 	 	"petMedicine": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "[펫] Paw펙트큐어",
+ 	 	 	 	"eng": "PawfectCure"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "반려동물이 기분이 좋지 않거나 그냥 기분이 이상할 때의 답. 콧물부터 '뭔가 이상한 걸 먹었어' 증후군까지 모두 해결해 줍니다. 부작용 주의: 당신의 요리에 대한 갑작스러운 감사와 포옹 공격의 증가를 야기할 수 있습니다. 가끔씩, 최고의 치료법은 바로 조금의 웃음... 그리고 Paw펙트큐어.",
+ 	 	 	 	"eng": "When your pet's feeling under the weather, or just plain off, this is the go-to. It tackles everything from the sniffles to the 'I ate something weird' blues. Beware of side effects: may cause a sudden appreciation for your cooking and an increase in snuggle attacks. Because sometimes, the best remedy is a little laughter... and PawfectCure."
  	 	 	}
  	 	},
  	 	"experienceShard": {
@@ -6066,6 +7083,12 @@
  	 	 	 	 	"trans": "갱 본부로 가기",
  	 	 	 	 	"eng": "Go to gang headquarters"
  	 	 	 	}
+ 	 	 	},
+ 	 	 	"toApartment": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "아파트로 이동",
+ 	 	 	 	 	"eng": "Go to your apartment"
+ 	 	 	 	}
  	 	 	}
  	 	},
  	 	"job": {
@@ -6122,6 +7145,29 @@
  	 	 	"cantEnterError": {
  	 	 	 	"trans": "이 구역에 들어가기 위해서는 갱에 가입해야 합니다",
  	 	 	 	"eng": "You need to join a gang to enter this area"
+ 	 	 	}
+ 	 	},
+ 	 	"apartment": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "내 아파트",
+ 	 	 	 	"eng": "My Apartment"
+ 	 	 	},
+ 	 	 	"toMainHub": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "샹그릴라 도심부로 돌아가기",
+ 	 	 	 	 	"eng": "Return to Shangri-La City Center"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "[아파트]\r\n        도시 속 아늑한 아파트. 당신의 애완동물들이 당신이 집에 오길 기다리고 있습니다.",
+ 	 	 	 	"eng": "[Apartment]\r\n        Your cozy apartment in the city. your pets are waiting for you to come home."
+ 	 	 	},
+ 	 	 	"cantEnterError": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"level"
+ 	 	 	 	],
+ 	 	 	 	"trans": "아파트를 렌트하려면 적어도 레벨 ${level}이상이어야 합니다",
+ 	 	 	 	"eng": "You need to be at least level ${level} to rent an apartment"
  	 	 	}
  	 	},
  	 	"zone": {
@@ -6282,7 +7328,7 @@
  	 	 	 	"eng": "You need to be at least level 3 to access cosmetic merchant"
  	 	 	},
  	 	 	"tut": {
- 	 	 	 	"trans": "게임이 마음에 들으셨다면, 기부 해보는건 어떨까요? :)",
+ 	 	 	 	"trans": "게임이 마음에 들으셨다면, 후원 해보는건 어떨까요? :)",
  	 	 	 	"eng": "If you liked the game, please consider donation :)"
  	 	 	}
  	 	},
@@ -6560,8 +7606,58 @@
  	 	 	 	"eng": "Alleyway"
  	 	 	},
  	 	 	"npcName": {
- 	 	 	 	"trans": "프리미엄",
+ 	 	 	 	"trans": "벨리알",
  	 	 	 	"eng": "B3llial"
+ 	 	 	}
+ 	 	},
+ 	 	"halloween": {
+ 	 	 	"defaultLines": {
+ 	 	 	 	"trans": [
+ 	 	 	 	 	"호박은 내 힘의 원천이지!",
+ 	 	 	 	 	"내 호박의상 좀 봐!!",
+ 	 	 	 	 	"흠, 이 호박 안에 뭐가 들었을지 궁금한걸...",
+ 	 	 	 	 	"네 호박을 주면 한턱 쏘지!"
+ 	 	 	 	],
+ 	 	 	 	"eng": [
+ 	 	 	 	 	"Pumpkin is my source of power!",
+ 	 	 	 	 	"Check out my pumpkin costume!",
+ 	 	 	 	 	"Hmmmm, I wonder what's inside this pumpkin...",
+ 	 	 	 	 	"Give me your pumpkin, and I'll give you a treat!"
+ 	 	 	 	]
+ 	 	 	},
+ 	 	 	"name": {
+ 	 	 	 	"trans": "골목",
+ 	 	 	 	"eng": "Alleyway"
+ 	 	 	},
+ 	 	 	"npcName": {
+ 	 	 	 	"trans": "호박괴물",
+ 	 	 	 	"eng": "pumpkin weirdo"
+ 	 	 	}
+ 	 	},
+ 	 	"petShop": {
+ 	 	 	"defaultLines": {
+ 	 	 	 	"trans": [
+ 	 	 	 	 	"어이! 네온 발자국은 용감한 자들을 위한 곳이야. 이 요정들은 매일 너의 관심이 필요해. 빠져들 준비 됐어?",
+ 	 	 	 	 	"잘 봐, 넷러너! 자 봐봐, 펫은 코드 그 이상이라고! 녀석들이 성장하려면 매일 너의 관심이 필요해.",
+ 	 	 	 	 	"무슨 일이야, 방랑 무사? 생존자를 위한 파트너. 너의 일상 생활이 없다면 녀석들은 없어질거야.",
+ 	 	 	 	 	"엣지러너, 어? 여긴 기술과 마음이 만나는 곳이지. 애들을 거부하면, 그물속으로 사라지겠지. 매일 관리하는거야. 알겠지?",
+ 	 	 	 	 	"손에는 사이버덱, 소매에는 심장? 우리의 생물들은 일상적인 손길이 필요해. 아니라면 움직임이 없어지겠지."
+ 	 	 	 	],
+ 	 	 	 	"eng": [
+ 	 	 	 	 	"Hey, choom! Neon Paws is for the brave. These sprites need your daily grind. Ready to dive in?",
+ 	 	 	 	 	"Lookin' sharp, netrunner! Here, pets are more than code, they need your daily hack to thrive.",
+ 	 	 	 	 	"What's up, street samurai? Partner with a survivor. Without your daily deeds, they're zeroed.",
+ 	 	 	 	 	"Edge runner, eh? This is where tech meets heart. Ignore them, and they vanish into the net. Daily care, got it?",
+ 	 	 	 	 	"Cyberdeck in hand, heart on sleeve? Our critters need that daily touch or they'll fade into the static."
+ 	 	 	 	]
+ 	 	 	},
+ 	 	 	"name": {
+ 	 	 	 	"trans": "네온 발자국 성소",
+ 	 	 	 	"eng": "Neon Paws Sanctuary"
+ 	 	 	},
+ 	 	 	"npcName": {
+ 	 	 	 	"trans": "진",
+ 	 	 	 	"eng": "Jin"
  	 	 	}
  	 	},
  	 	"recycleMachine": {
@@ -6593,6 +7689,58 @@
  	 	 	 	"trans": "스캐빈저",
  	 	 	 	"eng": "Scavengers"
  	 	 	}
+ 	 	}
+ 	},
+ 	"petType": {
+ 	 	"dog": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "개",
+ 	 	 	 	"eng": "Dog"
+ 	 	 	}
+ 	 	},
+ 	 	"cat": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "고양이",
+ 	 	 	 	"eng": "Cat"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"petStatus": {
+ 	 	"sick": {
+ 	 	 	"trans": "아픔",
+ 	 	 	"eng": "Sick"
+ 	 	},
+ 	 	"hungry": {
+ 	 	 	"trans": "배고픔",
+ 	 	 	"eng": "Hungry"
+ 	 	},
+ 	 	"starving": {
+ 	 	 	"trans": "굶주림",
+ 	 	 	"eng": "Starving"
+ 	 	},
+ 	 	"wellFed": {
+ 	 	 	"trans": "배부름",
+ 	 	 	"eng": "Well Fed"
+ 	 	},
+ 	 	"dirty": {
+ 	 	 	"trans": "더러움",
+ 	 	 	"eng": "Dirty"
+ 	 	},
+ 	 	"filthy": {
+ 	 	 	"trans": "매우 더러움",
+ 	 	 	"eng": "Filthy"
+ 	 	},
+ 	 	"dead": {
+ 	 	 	"trans": "사망",
+ 	 	 	"eng": "Deceased"
+ 	 	},
+ 	 	"unhappy": {
+ 	 	 	"trans": "행복하지 않음",
+ 	 	 	"eng": "Unhappy"
+ 	 	},
+ 	 	"depressed": {
+ 	 	 	"trans": "우울함",
+ 	 	 	"eng": "Depressed"
  	 	}
  	},
  	"action": {
@@ -6688,11 +7836,11 @@
  	 	},
  	 	"gambling2": {
  	 	 	"name": {
- 	 	 	 	"trans": "메가 Pachinko S Plus Pro Max",
+ 	 	 	 	"trans": "MEGA 파칭코 S Plus Pro Max",
  	 	 	 	"eng": "Play MEGA Pachinko s plus pro max"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "Konnichiwa !! uwu. \r\n 오늘따라 운이 좋으신 거 같나요? \r\n 한 번에 1,000,000 BTC, 기간 한정 특가!!!!! 운이 좋다면 0.1퍼센트 확률로 '에픽' 아이템을 얻을 수도 있습니다!",
+ 	 	 	 	"trans": "Konnichiwa !! uwu. \r\n 오늘따라 운이 좋으신 거 같나요? \r\n 한 번에 1,000,000 BTC (기간 한정 특가!!!!!) 운이 좋다면 0.1퍼센트 확률로 '에픽' 아이템을 얻을 수도 있습니다!",
  	 	 	 	"eng": "Konnichiwa!! UwU\r\n        Are you feeling rich and lucky today?\r\n        play now only 1,000,000 btc once (limited time special offer!) with 0.1% chance to win a EPIC item! \r\n        "
  	 	 	}
  	 	},
@@ -6720,6 +7868,22 @@
  	 	 	"name": {
  	 	 	 	"trans": "거래",
  	 	 	 	"eng": "Trade"
+ 	 	 	}
+ 	 	},
+ 	 	"bulkCrafting": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "대량 제작",
+ 	 	 	 	"eng": "Bulk Crafting"
+ 	 	 	}
+ 	 	},
+ 	 	"petAFK": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "동물 보호소 자원봉사자 교대 근무",
+ 	 	 	 	"eng": "Pet Shelter Volunteer Shift"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "동물을 돌보는 것을 돕기 위해 지역 애완동물 보호소에서 자원봉사를 합니다.",
+ 	 	 	 	"eng": "Volunteer at the local pet shelter to help take care of the animals."
  	 	 	}
  	 	},
  	 	"autoFarm": {
@@ -6751,6 +7915,59 @@
  	 	 	 	"trans": "[자동 탐색 자원 수집]\r\n                    ${zoneName}에서 탐색을 하며 유용한 아이템들을 찾아보세요.\r\n                    운이 좋을지 누가 알겠어요!",
  	 	 	 	"eng": "[AFK Resource Gather]\r\n                    Search around in ${zoneName} and scavenge for useful items.\r\n                    Who knows, maybe you'll get lucky!"
  	 	 	}
+ 	 	}
+ 	},
+ 	"leaderboard": {
+ 	 	"skip": {
+ 	 	 	"trans": "스킵 포인트",
+ 	 	 	"eng": "Skip Points"
+ 	 	},
+ 	 	"level": {
+ 	 	 	"trans": "레벨",
+ 	 	 	"eng": "Level"
+ 	 	},
+ 	 	"epicPrint": {
+ 	 	 	"trans": "인쇄한 에픽 장비",
+ 	 	 	"eng": "Epic Equipment Printed"
+ 	 	},
+ 	 	"epicBagPrint": {
+ 	 	 	"trans": "제작한 에픽 가방",
+ 	 	 	"eng": "Epic Bag Crafted"
+ 	 	},
+ 	 	"mining": {
+ 	 	 	"trans": "채굴 레벨",
+ 	 	 	"eng": "Mining Level"
+ 	 	},
+ 	 	"ammo": {
+ 	 	 	"trans": "탄약 레벨",
+ 	 	 	"eng": "Ammo Level"
+ 	 	},
+ 	 	"medical": {
+ 	 	 	"trans": "의학 레벨",
+ 	 	 	"eng": "Medical Level"
+ 	 	},
+ 	 	"scavenge": {
+ 	 	 	"trans": "탐색 레벨",
+ 	 	 	"eng": "Scavenge Level"
+ 	 	},
+ 	 	"molecular": {
+ 	 	 	"trans": "인쇄 레벨",
+ 	 	 	"eng": "Molecular Print Level"
+ 	 	},
+ 	 	"streetcred": {
+ 	 	 	"trans": "명성",
+ 	 	 	"eng": "Street Cred"
+ 	 	},
+ 	 	"description": {
+ 	 	 	"vars": [
+ 	 	 	 	"minutes"
+ 	 	 	],
+ 	 	 	"trans": "리더 보드 목록은 ${minutes}분마다 업데이트됩니다",
+ 	 	 	"eng": "Leaderboard listing updates every ${minutes} minutes"
+ 	 	},
+ 	 	"noPlayers": {
+ 	 	 	"trans": "현재이 리더 보드에는 플레이어가 없습니다",
+ 	 	 	"eng": "Currently No Players in this Leaderboard"
  	 	}
  	},
  	"Quest": {
@@ -6887,31 +8104,31 @@
  	 	 	},
  	 	 	"killGang1": {
  	 	 	 	"name": {
- 	 	 	 	 	"trans": "동물 갱 멤버를 물리 치십시오",
+ 	 	 	 	 	"trans": "애니멀즈 갱 멤버를 물리치십시오",
  	 	 	 	 	"eng": "Defeat Animals gang member"
  	 	 	 	},
  	 	 	 	"description": {
- 	 	 	 	 	"trans": "동물 갱수를 물리칩니다",
+ 	 	 	 	 	"trans": "애니멀즈 갱 멤버를 물리치십시오",
  	 	 	 	 	"eng": "Defeat Animals gang enemies"
  	 	 	 	}
  	 	 	},
  	 	 	"killGang2": {
  	 	 	 	"name": {
- 	 	 	 	 	"trans": "부두 소년 갱 멤버를 물리 치십시오",
+ 	 	 	 	 	"trans": "부두보이즈 갱 멤버를 물리치십시오",
  	 	 	 	 	"eng": "Defeat Voodoo boys gang member"
  	 	 	 	},
  	 	 	 	"description": {
- 	 	 	 	 	"trans": "부두 소년 갱수를 물리 치십시오",
+ 	 	 	 	 	"trans": "부두보이즈 갱 멤버를 물리치십시오",
  	 	 	 	 	"eng": "Defeat Voodoo boys gang enemies"
  	 	 	 	}
  	 	 	},
  	 	 	"killGang3": {
  	 	 	 	"name": {
- 	 	 	 	 	"trans": "스 캐빈 저 갱 멤버를 물리칩니다",
+ 	 	 	 	 	"trans": "스캐빈저 갱 멤버를 물리치십시오",
  	 	 	 	 	"eng": "Defeat Scavengers gang member"
  	 	 	 	},
  	 	 	 	"description": {
- 	 	 	 	 	"trans": "청소부 갱수를 물리 치십시오",
+ 	 	 	 	 	"trans": "스캐빈저 갱 멤버를 물리치십시오",
  	 	 	 	 	"eng": "Defeat Scavengers gang enemies"
  	 	 	 	}
  	 	 	}
@@ -6942,8 +8159,14 @@
  	 	},
  	 	"christmasGift": {
  	 	 	"name": {
- 	 	 	 	"trans": "신비한 상자를 열기",
+ 	 	 	 	"trans": "신비한 상자 열기",
  	 	 	 	"eng": "Unlock Mysterious Container"
+ 	 	 	}
+ 	 	},
+ 	 	"christmasGift2": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "서리낀 상자 열기",
+ 	 	 	 	"eng": "Unlock Frosty Container"
  	 	 	}
  	 	},
  	 	"backpack1": {
@@ -6976,20 +8199,14 @@
  	 	},
  	 	"backpack5": {
  	 	 	"name": {
- 	 	 	 	"trans": "자율 저장 장치",
+ 	 	 	 	"trans": "자동 저장 장치",
  	 	 	 	"eng": "Autonomous Storage Unit"
  	 	 	}
  	 	},
  	 	"aiCoreCluster": {
  	 	 	"name": {
- 	 	 	 	"trans": "AI 코어 클러스터",
+ 	 	 	 	"trans": "[부품] AI 코어 클러스터",
  	 	 	 	"eng": "AI Core Cluster"
- 	 	 	}
- 	 	},
- 	 	"halloween": {
- 	 	 	"name": {
- 	 	 	 	"trans": "[이벤트] 잭 오 랜턴",
- 	 	 	 	"eng": "Jack O Lantern"
  	 	 	}
  	 	},
  	 	"christmasToBox": {
@@ -7000,15 +8217,49 @@
  	 	},
  	 	"lunarLoot": {
  	 	 	"name": {
- 	 	 	 	"trans": "빨간 봉투",
+ 	 	 	 	"trans": "[이벤트] 빨간 봉투",
  	 	 	 	"eng": "Red Envelope"
  	 	 	}
  	 	},
  	 	"medicalTechCluster": {
  	 	 	"name": {
- 	 	 	 	"trans": "의료 공학 클러스터",
+ 	 	 	 	"trans": "[부품] 의료 공학 클러스터",
  	 	 	 	"eng": "Medical Tech Cluster"
  	 	 	}
+ 	 	},
+ 	 	"medicalTechClusterRevers": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "[부품] 의료 공학 조각",
+ 	 	 	 	"eng": "Medical Tech Scrap"
+ 	 	 	}
+ 	 	},
+ 	 	"techScrapCluster": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "[부품] 공학 클러스터",
+ 	 	 	 	"eng": "Tech Scrap Cluster"
+ 	 	 	}
+ 	 	},
+ 	 	"techScrapClusterReverse": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "[부품] 공학 조각",
+ 	 	 	 	"eng": "Tech Scrap"
+ 	 	 	}
+ 	 	},
+ 	 	"unlockRareEquipmentCrate": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "희귀 장비 상자 열기",
+ 	 	 	 	"eng": "Unlock Rare Equipment Crate"
+ 	 	 	}
+ 	 	},
+ 	 	"craftPetToken": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "성소 입양 패스권 제작",
+ 	 	 	 	"eng": "Craft Sanctuary Adoption Pass"
+ 	 	 	}
+ 	 	},
+ 	 	"craft": {
+ 	 	 	"trans": "제작",
+ 	 	 	"eng": "Craft"
  	 	},
  	 	"ammo1": {
  	 	 	"vars": [
@@ -7100,6 +8351,10 @@
  	 	 	"trans": "채팅 취약점 [사랑]",
  	 	 	"eng": "Chat Exploit [LOVE]"
  	 	},
+ 	 	"posh": {
+ 	 	 	"trans": "채팅 해킹 [POSH]",
+ 	 	 	"eng": "Chat Exploit [POSH]"
+ 	 	},
  	 	"chatExploitProtect": {
  	 	 	"trans": "채팅 암호화",
  	 	 	"eng": "Chat Encryption"
@@ -7115,6 +8370,30 @@
  	 	"aiConnect": {
  	 	 	"trans": "사이버 공간 연결",
  	 	 	"eng": "Cyberspace Connection"
+ 	 	},
+ 	 	"globalParty": {
+ 	 	 	"trans": "글로벌 파티",
+ 	 	 	"eng": "Global Party"
+ 	 	},
+ 	 	"afkExp": {
+ 	 	 	"trans": "AFK 경험치 부스트",
+ 	 	 	"eng": "AFK EXP Boost"
+ 	 	},
+ 	 	"petRevive": {
+ 	 	 	"trans": "펫 부활",
+ 	 	 	"eng": "Pet Revive"
+ 	 	},
+ 	 	"petReviveDesc": {
+ 	 	 	"trans": "이 버프 시간 동안 애완동물의 부활이 가능합니다.",
+ 	 	 	"eng": "Pet revival is now available during this buff duration."
+ 	 	},
+ 	 	"petDraw": {
+ 	 	 	"trans": "반려동물 입양 활성화",
+ 	 	 	"eng": "Pet Adoption Activated"
+ 	 	},
+ 	 	"petDrawDesc": {
+ 	 	 	"trans": "이 버프 시간 동안 애완동물 입양이 가능합니다.",
+ 	 	 	"eng": "Pet adoption is now available during this buff duration."
  	 	}
  	},
  	"combat": {
@@ -7175,6 +8454,52 @@
  	 	 	],
  	 	 	"trans": "${itemName}(을)를 ${amount}개 획득했습니다",
  	 	 	"eng": "You received ${amount} ${itemName}"
+ 	 	}
+ 	},
+ 	"chatExploit": {
+ 	 	"loveWords": {
+ 	 	 	"trans": [
+ 	 	 	 	"사랑해요!",
+ 	 	 	 	"넌 소중해~",
+ 	 	 	 	"넌 최고야!",
+ 	 	 	 	"모두 사랑해!",
+ 	 	 	 	"정말 대단해요",
+ 	 	 	 	"우리는 최고의 친구에요",
+ 	 	 	 	"모두들 사랑해요",
+ 	 	 	 	"당신은 최고에요",
+ 	 	 	 	"님은 최고야",
+ 	 	 	 	"난 멋져",
+ 	 	 	 	"너무 대단해요!",
+ 	 	 	 	"좋은 하루 되세요",
+ 	 	 	 	"보고싶어",
+ 	 	 	 	"그리워 얘들아...",
+ 	 	 	 	"꺄아아아아악",
+ 	 	 	 	"행복한 하루 되세요~",
+ 	 	 	 	"사랑해요~",
+ 	 	 	 	"안아줘요",
+ 	 	 	 	"나 얼마나 좋아해?"
+ 	 	 	],
+ 	 	 	"eng": [
+ 	 	 	 	"Love you",
+ 	 	 	 	"You guys are great",
+ 	 	 	 	"You guys are the best",
+ 	 	 	 	"love yall",
+ 	 	 	 	"You are amazing",
+ 	 	 	 	"we are best friend",
+ 	 	 	 	"Love you all",
+ 	 	 	 	"you are great",
+ 	 	 	 	"you the best",
+ 	 	 	 	"we are awesome",
+ 	 	 	 	"you are awesome",
+ 	 	 	 	"have a nice day",
+ 	 	 	 	"miss you",
+ 	 	 	 	"miss you guys",
+ 	 	 	 	"KYAAAAAAAAA",
+ 	 	 	 	"wish you have nice day",
+ 	 	 	 	"I love you",
+ 	 	 	 	"can we hug?",
+ 	 	 	 	"how much you love me?"
+ 	 	 	]
  	 	}
  	},
  	"chatServer": {
@@ -7464,55 +8789,13 @@
  	 	"upgradePocketed": {
  	 	 	"trans": "확장의",
  	 	 	"eng": "of Expansion"
+ 	 	},
+ 	 	"upgradeHealing": {
+ 	 	 	"trans": "회복의",
+ 	 	 	"eng": "of Healing"
  	 	}
  	},
  	"market": {
- 	 	"amountSelectModal": {
- 	 	 	"title": {
- 	 	 	 	"trans": "구매하실 수량을 입력해주세요.",
- 	 	 	 	"eng": "How many would you like to purchase?"
- 	 	 	},
- 	 	 	"totalPrice": {
- 	 	 	 	"vars": [
- 	 	 	 	 	"total"
- 	 	 	 	],
- 	 	 	 	"trans": "총 ${total}비트코인이 지불됩니다.",
- 	 	 	 	"eng": "it will cost ${total} Bitcoin total"
- 	 	 	}
- 	 	},
- 	 	"notEnoughMoney": {
- 	 	 	"trans": "비트코인이 부족합니다.",
- 	 	 	"eng": "Insufficient bitcoin"
- 	 	},
- 	 	"priceSelectModal": {
- 	 	 	"title2": {
- 	 	 	 	"vars": [
- 	 	 	 	 	"itemName"
- 	 	 	 	],
- 	 	 	 	"trans": "${itemName}의 가격",
- 	 	 	 	"eng": "Price for ${itemName}"
- 	 	 	}
- 	 	},
- 	 	"priceConfirm": {
- 	 	 	"vars": [
- 	 	 	 	"amountStr",
- 	 	 	 	"priceStr",
- 	 	 	 	"itemName"
- 	 	 	],
- 	 	 	"trans": "${amountStr}개의 ${itemName}를 개당 ${priceStr}에 팝니다.",
- 	 	 	"eng": "You are selling ${amountStr} ${itemName}(s), at the price of ${priceStr} Per Item"
- 	 	},
- 	 	"totalConfirm": {
- 	 	 	"vars": [
- 	 	 	 	"total"
- 	 	 	],
- 	 	 	"trans": "만약 모든 아이템이 팔리면 ${total}BTC를 얻습니다.",
- 	 	 	"eng": "If all items are sold, you will earn ${total} BitCoins"
- 	 	},
- 	 	"sellAmountModalTitle": {
- 	 	 	"trans": "판매하실 수량을 입력해주세요.",
- 	 	 	"eng": "How many would you like to sell?"
- 	 	},
  	 	"upgradeSlot": {
  	 	 	"trans": "업그레이드",
  	 	 	"eng": "Upgrade"
@@ -7531,12 +8814,161 @@
  	 	 	],
  	 	 	"trans": "${price} 비트 코인을 지불하여 시장 슬롯을 ${slot}개로 늘릴 수 있습니다",
  	 	 	"eng": "You can increase your market slot to ${slot} by paying ${price} BitCoins"
+ 	 	},
+ 	 	"purchaseModal": {
+ 	 	 	"purchase": {
+ 	 	 	 	"trans": "구입",
+ 	 	 	 	"eng": "Purchase"
+ 	 	 	}
  	 	}
  	},
  	"mobile": {
  	 	"returnToAppMessage": {
  	 	 	"trans": "서버 동기화 중...",
  	 	 	"eng": "Syncing with server.."
+ 	 	}
+ 	},
+ 	"petDetailsPage": {
+ 	 	"dispose": {
+ 	 	 	"trans": "버리기",
+ 	 	 	"eng": "dispose"
+ 	 	},
+ 	 	"disposeConfirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "버리기",
+ 	 	 	 	"eng": "dispose"
+ 	 	 	},
+ 	 	 	"message": {
+ 	 	 	 	"trans": "정말 이 동물을 버리겠습니까? 이건 취소할 수 없습니다",
+ 	 	 	 	"eng": "Are you sure you want to dispose of this pet? this cannot be undone"
+ 	 	 	}
+ 	 	},
+ 	 	"rerollImage": {
+ 	 	 	"trans": "이미지 다시 뽑기",
+ 	 	 	"eng": "re-roll Image"
+ 	 	},
+ 	 	"rerollImageConfirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "이미지 다시 뽑기",
+ 	 	 	 	"eng": "re-roll Image"
+ 	 	 	},
+ 	 	 	"message": {
+ 	 	 	 	"trans": "이 펫의 이미지를 다시 뽑으시겠습니까?",
+ 	 	 	 	"eng": "Are you sure you want to re-roll this pets image?"
+ 	 	 	}
+ 	 	},
+ 	 	"petNotFound": {
+ 	 	 	"trans": "애완동물을 찾을 수 없습니다",
+ 	 	 	"eng": "Pet not found"
+ 	 	},
+ 	 	"name": {
+ 	 	 	"trans": "이름",
+ 	 	 	"eng": "name"
+ 	 	},
+ 	 	"age": {
+ 	 	 	"trans": "나이",
+ 	 	 	"eng": "age"
+ 	 	},
+ 	 	"status": {
+ 	 	 	"trans": "상태",
+ 	 	 	"eng": "status"
+ 	 	},
+ 	 	"noStatus": {
+ 	 	 	"trans": "건강함",
+ 	 	 	"eng": "healthy"
+ 	 	},
+ 	 	"deadRemoveMessage": {
+ 	 	 	"vars": [
+ 	 	 	 	"date"
+ 	 	 	],
+ 	 	 	"trans": "${date}에서 제거될 예정입니다",
+ 	 	 	"eng": "will be removed at ${date}"
+ 	 	},
+ 	 	"hunger": {
+ 	 	 	"trans": "만복도",
+ 	 	 	"eng": "Hunger"
+ 	 	},
+ 	 	"feed": {
+ 	 	 	"trans": "먹이기",
+ 	 	 	"eng": "Feed"
+ 	 	},
+ 	 	"noFood": {
+ 	 	 	"vars": [
+ 	 	 	 	"item"
+ 	 	 	],
+ 	 	 	"trans": "반려동물에게 먹일 ${item}이 없습니다",
+ 	 	 	"eng": "You don't have ${item} to feed your pet"
+ 	 	},
+ 	 	"happiness": {
+ 	 	 	"trans": "행복도",
+ 	 	 	"eng": "Happiness"
+ 	 	},
+ 	 	"play": {
+ 	 	 	"trans": "놀기",
+ 	 	 	"eng": "Play"
+ 	 	},
+ 	 	"noToy": {
+ 	 	 	"vars": [
+ 	 	 	 	"item"
+ 	 	 	],
+ 	 	 	"trans": "펫과 놀아줄 ${item}이 없습니다",
+ 	 	 	"eng": "You don't have ${item} to play with your pet"
+ 	 	},
+ 	 	"cleanliness": {
+ 	 	 	"trans": "청결",
+ 	 	 	"eng": "Cleanliness"
+ 	 	},
+ 	 	"clean": {
+ 	 	 	"trans": "씻기기",
+ 	 	 	"eng": "Clean"
+ 	 	},
+ 	 	"noCleaner": {
+ 	 	 	"vars": [
+ 	 	 	 	"item"
+ 	 	 	],
+ 	 	 	"trans": "반려동물을 씻길 ${item}가 없습니다",
+ 	 	 	"eng": "You don't have ${item} to clean your pet"
+ 	 	},
+ 	 	"giveMedicine": {
+ 	 	 	"trans": "약 줘주세요",
+ 	 	 	"eng": "Give Medicine"
+ 	 	},
+ 	 	"reviveButton": {
+ 	 	 	"trans": "부활",
+ 	 	 	"eng": "Revive"
+ 	 	}
+ 	},
+ 	"sendStreetCred": {
+ 	 	"error": {
+ 	 	 	"giveSelf": {
+ 	 	 	 	"trans": "자신에겐 명성을 보낼 수 없습니다",
+ 	 	 	 	"eng": "you can't send street cred to yourself"
+ 	 	 	}
+ 	 	},
+ 	 	"title": {
+ 	 	 	"trans": "명성 주기",
+ 	 	 	"eng": "Send street cred"
+ 	 	},
+ 	 	"description": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "${playerName}에게 명성을 주고 싶습니까? 당신은 매일 누군가에게 하나의 명성만 보낼 수 있습니다.",
+ 	 	 	"eng": "Are you sure you want to send street cred to ${playerName}? you can send one street cred to anyone everyday."
+ 	 	}
+ 	},
+ 	"sendStreetCredError": {
+ 	 	"title": {
+ 	 	 	"trans": "지금은 명성을 보낼 수 없습니다.",
+ 	 	 	"eng": "Can't send street cred now"
+ 	 	},
+ 	 	"description2": {
+ 	 	 	"trans": "당신은 하루에 하나의 명성만 보낼 수 있으며, 레벨이 10 이상이어야 합니다.",
+ 	 	 	"eng": "You can only send one street cred per day. and you must be level 10 or above."
+ 	 	},
+ 	 	"confirmText": {
+ 	 	 	"trans": "확인",
+ 	 	 	"eng": "OK"
  	 	}
  	},
  	"secretKey": {
@@ -7651,52 +9083,27 @@
  	 	 	 	"trans": "총합 : ${amount} ${itemName}",
  	 	 	 	"eng": "Total: ${amount} ${itemName}"
  	 	 	}
- 	 	}
- 	},
- 	"chatExploit": {
- 	 	"loveWords": {
- 	 	 	"trans": [
- 	 	 	 	"사랑해요!",
- 	 	 	 	"넌 소중해~",
- 	 	 	 	"넌 최고야!",
- 	 	 	 	"모두 사랑해!",
- 	 	 	 	"정말 대단해요",
- 	 	 	 	"우리는 최고의 친구에요",
- 	 	 	 	"모두들 사랑해요",
- 	 	 	 	"당신은 최고에요",
- 	 	 	 	"님은 최고야",
- 	 	 	 	"난 멋져",
- 	 	 	 	"너무 대단해요!",
- 	 	 	 	"좋은 하루 되세요",
- 	 	 	 	"보고싶어",
- 	 	 	 	"그리워 얘들아...",
- 	 	 	 	"꺄아아아아악",
- 	 	 	 	"행복한 하루 되세요~",
- 	 	 	 	"사랑해요~",
- 	 	 	 	"안아줘요",
- 	 	 	 	"나 얼마나 좋아해?"
+ 	 	},
+ 	 	"npcNotAvailable": {
+ 	 	 	"trans": "이 상점은 현재 이용할 수 없습니다",
+ 	 	 	"eng": "This shop is not available at the moment"
+ 	 	},
+ 	 	"purchasedMessage": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"item"
  	 	 	],
- 	 	 	"eng": [
- 	 	 	 	"Love you",
- 	 	 	 	"You guys are great",
- 	 	 	 	"You guys are the best",
- 	 	 	 	"love yall",
- 	 	 	 	"You are amazing",
- 	 	 	 	"we are best friend",
- 	 	 	 	"Love you all",
- 	 	 	 	"you are great",
- 	 	 	 	"you the best",
- 	 	 	 	"we are awesome",
- 	 	 	 	"you are awesome",
- 	 	 	 	"have a nice day",
- 	 	 	 	"miss you",
- 	 	 	 	"miss you guys",
- 	 	 	 	"KYAAAAAAAAA",
- 	 	 	 	"wish you have nice day",
- 	 	 	 	"I love you",
- 	 	 	 	"can we hug?",
- 	 	 	 	"how much you love me?"
- 	 	 	]
+ 	 	 	"trans": "당신은 ${amount} ${item}을 구입했습니다",
+ 	 	 	"eng": "You have purchased ${amount} ${item}"
+ 	 	},
+ 	 	"exchangedMessage": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"item",
+ 	 	 	 	"item2"
+ 	 	 	],
+ 	 	 	"trans": "${amount} ${item}을 ${item2}로 교환했습니다",
+ 	 	 	"eng": "You have exchanged ${amount} ${item} for ${item2}"
  	 	}
  	},
  	"bundleDetailsModal": {
@@ -7726,6 +9133,16 @@
  	 	 	 	"trans": "구입",
  	 	 	 	"eng": "Purchase"
  	 	 	}
+ 	 	}
+ 	},
+ 	"clanNoticeModal": {
+ 	 	"title": {
+ 	 	 	"trans": "새로운 공지사항을 입력하십시오",
+ 	 	 	"eng": "enter new notice"
+ 	 	},
+ 	 	"submit": {
+ 	 	 	"trans": "보내기",
+ 	 	 	"eng": "send"
  	 	}
  	},
  	"createClanModal": {
@@ -7773,15 +9190,15 @@
  	 	},
  	 	"quest": {
  	 	 	"title": {
- 	 	 	 	"trans": "갱 바운티",
+ 	 	 	 	"trans": "갱 현상금",
  	 	 	 	"eng": "Gang Bounty"
  	 	 	},
  	 	 	"description": {
- 	 	 	 	"trans": "이 퀘스트를 받아들이고 알려지지 않은 갱단의 갱단 멤버를 물리 치고 보상을받습니다",
+ 	 	 	 	"trans": "이 퀘스트를 수락하고 무작위 갱단의 멤버를 물리쳐 보상을 받습니다",
  	 	 	 	"eng": "Accepting this quest and defeat gang members of a unknown gang to receive rewards"
  	 	 	},
  	 	 	"reward": {
- 	 	 	 	"trans": "이 퀘스트를 수락 한 후 퀘스트 탭에서 대상 갱 정보를 받게됩니다",
+ 	 	 	 	"trans": "이 퀘스트를 수락한 후 퀘스트 탭에서 대상 갱 정보를 받게 됩니다",
  	 	 	 	"eng": "You will receive target gang information in your quest tab after accepting this quest"
  	 	 	}
  	 	},
@@ -7790,30 +9207,61 @@
  	 	 	"eng": "Cancel"
  	 	},
  	 	"accept": {
- 	 	 	"trans": "수용하다",
+ 	 	 	"trans": "수락",
  	 	 	"eng": "Accept"
  	 	}
  	},
- 	"christmasPromo": {
+ 	"petReviveModal": {
+ 	 	"reviveButton": {
+ 	 	 	"error": {
+ 	 	 	 	"trans": "최근에 애완동물을 부활시켰습니다",
+ 	 	 	 	"eng": "You have revived a pet recently"
+ 	 	 	},
+ 	 	 	"trans": "부활",
+ 	 	 	"eng": "Revive"
+ 	 	},
+ 	 	"activateButton": {
+ 	 	 	"error": {
+ 	 	 	 	"trans": "애완동물 부활을 먼저 활성화해야 합니다",
+ 	 	 	 	"eng": "You need to activate pet revive first"
+ 	 	 	},
+ 	 	 	"title": {
+ 	 	 	 	"trans": "활성화",
+ 	 	 	 	"eng": "Activate"
+ 	 	 	},
+ 	 	 	"desc": {
+ 	 	 	 	"trans": "애완동물 부활 활성화",
+ 	 	 	 	"eng": "Activate pet revive"
+ 	 	 	},
+ 	 	 	"loading": {
+ 	 	 	 	"trans": "활성화 중...",
+ 	 	 	 	"eng": "Activating..."
+ 	 	 	}
+ 	 	},
  	 	"title": {
- 	 	 	"trans": "메리 크리스마스!",
- 	 	 	"eng": "Happy Winter Holiday!"
+ 	 	 	"trans": "애완동물 부활",
+ 	 	 	"eng": "Revive pet"
+ 	 	},
+ 	 	"reviveDescription": {
+ 	 	 	"vars": [
+ 	 	 	 	"buffName"
+ 	 	 	],
+ 	 	 	"trans": "${buffName} 버프가 활성화되어 있을 때에만 애완동물을 부활시킬 수 있습니다",
+ 	 	 	"eng": "You may revive your pet when ${buffName} buff is active"
+ 	 	}
+ 	},
+ 	"artPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "으스스한 캐릭터 아트 경쟁!",
+ 	 	 	"eng": "Spooky Character Art Competition!"
  	 	},
  	 	"desc1": {
- 	 	 	"trans": "축복이 가득한 날이 다시 돌아왔습니다! 샹그릴라가 준비하는 특별한 축제와 함께 크리스마스를 기념해보세요!",
- 	 	 	"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!"
+ 	 	 	"trans": "상위 5명에게 에픽 캐시, 모험가의 배낭, 직원 서류 가방 및 엠블럼이 지급됩니다!",
+ 	 	 	"eng": "We are giving out Epic Caches, Explorer Backpack, Employee Suitcase and Emblems to the top 5 winners!"
  	 	},
  	 	"desc2": {
- 	 	 	"vars": [
- 	 	 	 	"itemName",
- 	 	 	 	"craftItem"
- 	 	 	],
- 	 	 	"trans": "적 사냥과 AI코어 자동 사냥으로 ${itemName}을 얻을 수 있으며, 이로 ${craftItem}을 제작하거나 직접 열 수 있습니다!",
- 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop ${itemName}, you can use this to craft ${craftItem} or open it directly!"
- 	 	},
- 	 	"desc3": {
- 	 	 	"trans": "거기에 더해, 크리스마스 기간 한정 후원 타이틀 두 개와 엠블럼을 구매하실 수 있습니다!",
- 	 	 	"eng": "During the holiday season, two time limited chat frame and emblem will be available!"
+ 	 	 	"trans": "자세한 내용은 Discord의 #Event 채널을 확인하세요!",
+ 	 	 	"eng": "Check out the #event channel on Discord for more details!"
  	 	}
  	},
  	"halloweenPromo": {
@@ -7825,13 +9273,56 @@
  	 	 	"trans": "올해 가장 으스스한 날이 돌아왔습니다! 샹그릴라가 준비하는 특별한 축제와 함께 할로윈을 기념해보세요!",
  	 	 	"eng": "Its the spooky time of the year again! Shang-ri-la is celebrating Halloween with a special event!"
  	 	},
- 	 	"desc2": {
- 	 	 	"trans": "적 사냥과 AI코어 자동 사냥으로 잭 오 랜턴을 얻을 수 있습니다! 잭 오 랜턴 100개로 잠긴 전설 상자를 제작할 수 있습니다.",
- 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop Jack-o-lanterns! you can use these to craft Locked Legendary Containers!"
+ 	 	"desc2v2": {
+ 	 	 	"trans": "전투와 AI 자동사냥에서 잭 오 랜턴이 떨어집니다!",
+ 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop Jack-o-lanterns!"
  	 	},
- 	 	"desc3": {
- 	 	 	"trans": "거기에 더해, 할로윈 기간 한정 사이버-박쥐 프레스티지 후원을 구매하실 수 있습니다!",
- 	 	 	"eng": "During Halloween, a time limited cyber-bat chat donation tier will be available!"
+ 	 	"desc3v2": {
+ 	 	 	"vars": [
+ 	 	 	 	"npc",
+ 	 	 	 	"location"
+ 	 	 	],
+ 	 	 	"trans": "할로윈 중에 ${location}에서 ${npc}를 찾을 수 있습니다. 그는 잭 오 랜턴을 보상으로 교환 해줍니다!",
+ 	 	 	"eng": "You can find ${npc} at ${location} during Halloween, he will exchange your Jack-o-lanterns for rewards!"
+ 	 	},
+ 	 	"desc4v2": {
+ 	 	 	"trans": "할로윈 기간 동안 할로윈, 사이버-박쥐 후원 및 테마 엠블럼을 한정적으로 구매 할 수 있습니다!",
+ 	 	 	"eng": "During Halloween, a time limited halloween, cyber-bat chat donation tier and themed emblems will be available!"
+ 	 	}
+ 	},
+ 	"christmasPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "메리 크리스마스!",
+ 	 	 	"eng": "Happy Winter Holiday!"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"trans": "축복이 가득한 날이 다시 돌아왔습니다! 샹그릴라에 준비해 둔 특별한 축제와 함께 크리스마스를 기념해보세요!",
+ 	 	 	"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!"
+ 	 	},
+ 	 	"v2": {
+ 	 	 	"desc2": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "전투와 자동사냥에서 ${itemName}이 드랍되고 그것을 열어 보상을 받을 수 있습니다!",
+ 	 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop ${itemName}, you can unlock it to receive prizes!"
+ 	 	 	}
+ 	 	},
+ 	 	"v3": {
+ 	 	 	"desc3": {
+ 	 	 	 	"trans": "연말 연시에는 크리스마스 채팅 프레임과 엠블럼을 획득 가능합니다!",
+ 	 	 	 	"eng": "During the holiday season, Christmas chat frame and emblem will be available!"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"christmasPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "크리스마스 이벤트!",
+ 	 	 	"eng": "Christmas Event!"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"trans": "한정판 전리품과 채팅 프레임!",
+ 	 	 	"eng": "Time limited loot and chat frame!"
  	 	}
  	},
  	"lunarPromo": {
@@ -7843,15 +9334,14 @@
  	 	 	"trans": "새해가 오고, 까치 설날도 오고 있습니다! 그래서 샹그릴라에서 특별 행사를 준비했습니다. 전통, 기쁨, 공존으로 가득찰 새해의 시작을 같이 만끽해보세요.",
  	 	 	"eng": "The lunar new year is here, and we're celebrating in Shang-ri-la with a special event. Join us as we embrace the start of a new year, filled with traditions, joy, and togetherness."
  	 	},
- 	 	"desc2": {
+ 	 	"desc2-v2": {
  	 	 	"vars": [
  	 	 	 	"npcShopName",
  	 	 	 	"coinItem",
- 	 	 	 	"llcName",
  	 	 	 	"npcName"
  	 	 	],
- 	 	 	"trans": "${npcShopName}이 가게를 열었습니다! ${coinItem}을 주고 ${npcName}에서 다양한 특수 요리와 ${llcName}를 구매할 수 있습니다!",
- 	 	 	"eng": "${npcShopName} is now open for business! You can use ${coinItem} to purchase various special cuisines and ${llcName} from ${npcName}!"
+ 	 	 	"trans": "${npcShopName}이(가) 영업 중입니다! ${coinItem}을 사용하여 ${npcName}에서 다양한 특별 요리를 구입할 수 있습니다!",
+ 	 	 	"eng": "${npcShopName} is now open for business! You can use ${coinItem} to purchase various special cuisines from ${npcName}!"
  	 	},
  	 	"desc3": {
  	 	 	"vars": [
@@ -7860,18 +9350,39 @@
  	 	 	],
  	 	 	"trans": "${envelopItem} 없이는 설날이라 부를 수 없죠! 전투와 자동 사냥에서 ${envelopItem}를 획득할 수 있으며, 봉투를 열어 랜덤한 양의 ${coinItem}을 얻어보세요!",
  	 	 	"eng": "It's not new year if ${envelopItem} is not involved! Enemies and AI Core auto farm will drop ${envelopItem}, open them to receive random amount of ${coinItem}!"
- 	 	},
+ 	 	}
+ 	},
+ 	"lunarPromo1": {
  	 	"desc4": {
  	 	 	"vars": [
- 	 	 	 	"envelopItem",
- 	 	 	 	"npcShop"
+ 	 	 	 	"itemName"
  	 	 	],
- 	 	 	"trans": "이제 매일 ${npcShop}에서 무료로 ${envelopItem}를 3개 받을 수 있습니다!",
- 	 	 	"eng": "You can now receive 3 free ${envelopItem} in ${npcShop} every day!"
+ 	 	 	"trans": "결제 패키지에서 무료로 ${itemName}를 받으세요!",
+ 	 	 	"eng": "Get free ${itemName} base on top up package!"
  	 	},
  	 	"desc5": {
- 	 	 	"trans": "두 개의 새로운 한정 채팅 프레임과 엠블럼이 추가되었으며, 이벤트 기간 동안만 구매할 수 있습니다.",
- 	 	 	"eng": "Added two new time limited chat frame and emblems, only purchasable during event period."
+ 	 	 	"trans": "기간 한정 채팅 프레임과 엠블럼이 추가되었습니다. 이벤트 기간 동안만 구매할 수 있습니다.",
+ 	 	 	"eng": "Added new time limited chat frame and emblems, only purchasable during event period."
+ 	 	}
+ 	},
+ 	"lunarNewYearPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "새해 복 많이 받으세요!",
+ 	 	 	"eng": "Happy Lunar New Year!"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"item1",
+ 	 	 	 	"item2"
+ 	 	 	],
+ 	 	 	"trans": "설 기간동안 ${item1}와 ${item2}를 무료로 받으세요 🥳",
+ 	 	 	"eng": "Receive free ${item1} and ${item2} during the lunar new year 🥳"
+ 	 	}
+ 	},
+ 	"promotionModal": {
+ 	 	"title": {
+ 	 	 	"trans": "특별한 혜택",
+ 	 	 	"eng": "Special Benefits"
  	 	}
  	},
  	"referralPromo": {
@@ -7914,6 +9425,195 @@
  	 	 	"eng": "*You will receive the items in your item inbox when your friend reaches level 20"
  	 	}
  	},
+ 	"referralPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "추천 보상",
+ 	 	 	"eng": "Referral rewards"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"trans": "무료 장치*, 희귀 잠긴 컨테이너, 패니 팩",
+ 	 	 	"eng": "Free Unit*, Rare Locked Container, Fanny Pack"
+ 	 	},
+ 	 	"details": {
+ 	 	 	"trans": "세부",
+ 	 	 	"eng": "details"
+ 	 	}
+ 	},
+ 	"sakuraPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "벚꽃 축제",
+ 	 	 	"eng": "Sakura Festival"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"trans": "봄 축제가 왔습니다! 벚꽃잎이 흩날리고, 공기는 꽃향기로 가득합니다",
+ 	 	 	"eng": "The Spring Festival is here! Sakura petals are falling, and the air is filled with the fragrance of flowers. "
+ 	 	},
+ 	 	"desc2": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "이벤트 기간 동안, 모든 스킵은 ${percent}% 할인 혜택을 받습니다",
+ 	 	 	"eng": "All skips during the event period gets ${percent}% off discount on unit required"
+ 	 	},
+ 	 	"desc3": {
+ 	 	 	"trans": "이벤트 기간 동안 독점적인 사쿠라 채팅 프레임과 엠블럼을 획득할 수 있습니다",
+ 	 	 	"eng": "Exclusive Sakura chat frame and emblem is available during event period"
+ 	 	},
+ 	 	"chatMessage1": {
+ 	 	 	"trans": "봄이 왔습니다",
+ 	 	 	"eng": "Spring is here"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "이벤트 기간 동안의 모든 스킵은 ${percent}% 할인 받습니다 🥳",
+ 	 	 	"eng": "All skips during the event period gets ${percent}% off discount on unit required 🥳"
+ 	 	}
+ 	},
+ 	"skipDiscountPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "스킵 할인",
+ 	 	 	"eng": "Skip Discount"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "105분 이상 스킵 ${percent}% 할인!",
+ 	 	 	"eng": "${percent}% discount on 105 minutes and higher skips!"
+ 	 	}
+ 	},
+ 	"skipPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "스킵을 통해 독점 코스매틱을 무료로 받을 수 있습니다",
+ 	 	 	"eng": "Earn free exclusive cosmetics by skipping"
+ 	 	},
+ 	 	"subtitle": {
+ 	 	 	"trans": "스킵을 통해 커뮤니티에 얼마나 많은 도움을 주었는지 보여주세요!❤️",
+ 	 	 	"eng": "Show off how much you have helped the community by skipping!❤️"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"emblem"
+ 	 	 	],
+ 	 	 	"trans": "${amount}스킵 포인트를 모아 \"${emblem}\"엠블럼을 얻으세요",
+ 	 	 	"eng": "Collect ${amount} skip points to get \"${emblem}\" emblem"
+ 	 	},
+ 	 	"desc2": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"emblem"
+ 	 	 	],
+ 	 	 	"trans": "${amount}스킵 포인트를 모아 \"${emblem}\"엠블럼을 얻으세요",
+ 	 	 	"eng": "Collect ${amount} skip points to get \"${emblem}\" emblem"
+ 	 	},
+ 	 	"desc3": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"emblem"
+ 	 	 	],
+ 	 	 	"trans": "${amount}스킵 포인트를 모아 \"${emblem}\"엠블럼을 얻으세요",
+ 	 	 	"eng": "Collect ${amount} skip points to get \"${emblem}\" emblem"
+ 	 	},
+ 	 	"desc4": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"frameName"
+ 	 	 	],
+ 	 	 	"trans": "${amount}스킵 포인트를 모아 \"${frameName}\"후원 채팅 프레임을 받으세요",
+ 	 	 	"eng": "Collect ${amount} skip points to receive permanent \"${frameName}\" donation chat frame"
+ 	 	},
+ 	 	"chatMessage1": {
+ 	 	 	"vars": [
+ 	 	 	 	"points"
+ 	 	 	],
+ 	 	 	"trans": "${points}스킵포인트로 획득",
+ 	 	 	"eng": "Receive at ${points} skip points"
+ 	 	},
+ 	 	"desc5": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"frameName"
+ 	 	 	],
+ 	 	 	"trans": "${amount}스킵 포인트를 모아 \"${frameName}\"후원 채팅 프레임을 받으세요",
+ 	 	 	"eng": "Collect ${amount} skip points to receive permanent \"${frameName}\" donation chat frame"
+ 	 	},
+ 	 	"instructions1": {
+ 	 	 	"trans": "스킵 포인트는 스킵 시간을 기반으로합니다",
+ 	 	 	"eng": "Skip point you earn is base on skip duration:"
+ 	 	},
+ 	 	"instructions2": {
+ 	 	 	"trans": "- 15 ~ 150 분 = 15 분당 1 포인트",
+ 	 	 	"eng": "- 15 to 150 minutes = 1 point per 15 minutes"
+ 	 	},
+ 	 	"instructions3": {
+ 	 	 	"trans": "- 150 분 이상 = 10 점",
+ 	 	 	"eng": "- 150 minutes and above = 10 points"
+ 	 	},
+ 	 	"footnote2": {
+ 	 	 	"trans": "150 분 이상은 10 점으로 고정되어 있습니다. 대부분의 플레이어에게 혜택을 극대화하기 위해 하나의 큰 스킵보다는 여러 번의 스킵을 장려하는 것입니다",
+ 	 	 	"eng": "Above 150 minutes is fixed to 10 points is to encourage multiple skips rather than one huge skip to maximize benefit for most players"
+ 	 	},
+ 	 	"footnote1": {
+ 	 	 	"trans": "스킵 포인트 통계는 모든 사용자에 대해 이 기능이 시작될 때부터 카운트를 시작합니다.",
+ 	 	 	"eng": "The skip point statistic will start counting from the start of this feature for everyone."
+ 	 	}
+ 	},
+ 	"skipPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "독점 코스메틱을 위해 스킵하세요",
+ 	 	 	"eng": "Skip for exclusive cosmetics"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"trans": "스킵을 통해 다양한 독점 코스메틱을 받습니다",
+ 	 	 	"eng": "Receive various exclusive cosmetics by skipping"
+ 	 	},
+ 	 	"chatMessage1": {
+ 	 	 	"vars": [
+ 	 	 	 	"skinName",
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "${skinName}, ${playerName}",
+ 	 	 	"eng": "Be a ${skinName}, ${playerName}"
+ 	 	}
+ 	},
+ 	"thanksgivingPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "행복한 추수 감사절!",
+ 	 	 	"eng": "Happy Thanksgiving!"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"trans": "이벤트 기간 동안, 모든 레벨의 탐색 및 자동사냥에서 낮은 확률로 구운 칠면조가 나옵니다",
+ 	 	 	"eng": "During event period, Roasted Turkey will drop rarely from scavenging and AKF Bot on all levels"
+ 	 	},
+ 	 	"desc2": {
+ 	 	 	"trans": "구운 칠면조를 섭취하면 20 분 동안 AFK 작업에서 +20% EXP를 받습니다",
+ 	 	 	"eng": "When a Roasted Turkey is consumed, you will get +20% EXP on AFK tasks for 20 minutes"
+ 	 	},
+ 	 	"footnote1": {
+ 	 	 	"trans": "EXP 보너스는 AFK 완료 시 적용되므로 AFK 완료 시점에 구운 칠면조 버프를 활성화해야 하는 걸 명심하세요.",
+ 	 	 	"eng": "Please note that the EXP bonus check is at AFK completion time, so you must have the Roasted Turkey buff active at the time of completion to receive the bonus."
+ 	 	},
+ 	 	"footnote2": {
+ 	 	 	"trans": "이 효과는 다른 EXP 보너스와 중첩되고 AFK 작업에만 영향을 미칩니다. AFK 타이머가 없는 작업은 영향을 받지 않습니다.",
+ 	 	 	"eng": "This effect will stack with other EXP bonus, and will only affect AFK tasks; tasks that does not have AFK timers will not be affected."
+ 	 	}
+ 	},
+ 	"thanksgivingPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "추수 감사절 이벤트",
+ 	 	 	"eng": "Thanksgiving event"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "맛있는 칠면조를 섭취해 AFK 작업에서 +${percent}% exp를 얻습니다",
+ 	 	 	"eng": "Consume delicious turkey to get +${percent}% EXP on AFK tasks"
+ 	 	}
+ 	},
  	"retroPromo": {
  	 	"title": {
  	 	 	"trans": "신스웨이브 업데이트",
@@ -7948,12 +9648,30 @@
  	 	 	"eng": "Anniversary Update!"
  	 	},
  	 	"desc1": {
- 	 	 	"trans": "Techno Thief는 상자를 열 때 던전에서 거의 스폰되지 않습니다",
+ 	 	 	"trans": "기술자는 던전에서 상자를 열 때 낮은 확률로 생성됩니다. 그들은 더 높은 확률의 에픽 아이템을 포함한 더욱 좋은 노획물을 남깁니다.",
  	 	 	"eng": "Techno Thief will spawn rarely in dungeon when you open crates, they drop better loots, including higher chance of epic items"
  	 	},
  	 	"desc2": {
- 	 	 	"trans": "갱 던전은 특정 NPC 갱단의 적을 죽이는 갱 퀘스트를 스폰 할 기회를 가질 것입니다",
+ 	 	 	"trans": "새로운 후원자 프레임 두개 추가",
  	 	 	"eng": "Two new donator frames added"
+ 	 	}
+ 	},
+ 	"renamePetModal": {
+ 	 	"title": {
+ 	 	 	"trans": "애완동물 이름 변경",
+ 	 	 	"eng": "Rename Pet"
+ 	 	},
+ 	 	"newName": {
+ 	 	 	"trans": "새로운 이름",
+ 	 	 	"eng": "New Name"
+ 	 	},
+ 	 	"description": {
+ 	 	 	"trans": "반려동물의 새 이름을 입력하세요",
+ 	 	 	"eng": "Enter new name for your pet"
+ 	 	},
+ 	 	"rename": {
+ 	 	 	"trans": "이름 변경",
+ 	 	 	"eng": "Rename"
  	 	}
  	},
  	"reportPlayerModal": {
@@ -7965,7 +9683,7 @@
  	 	 	"eng": "reporting ${playerName}"
  	 	},
  	 	"description": {
- 	 	 	"trans": "신고는 관리자에게 자동으로 전송됩니다. 신고를 오용하거나, 도배하거나, 장난치는 데 쓰지 마십시오.",
+ 	 	 	"trans": "신고는 관리자에게 자동으로 전송됩니다. \\n신고를 오용하거나, 도배하거나, 장난치는 데 쓰지 마십시오.",
  	 	 	"eng": "Report will be sent to moderators automatically. \\nPlease do not misuses, spamming or play with the report system"
  	 	},
  	 	"textInput": {
@@ -8029,9 +9747,24 @@
  	 	 	 	 	"trans": "다른 갱단 인원의 권한을 조정할 수 있게 합니다.",
  	 	 	 	 	"eng": "Allow this player to manage permission of other players"
  	 	 	 	}
+ 	 	 	},
+ 	 	 	"send_notice": {
+ 	 	 	 	"trans": "공지",
+ 	 	 	 	"eng": "Send Notice",
+ 	 	 	 	"description": {
+ 	 	 	 	 	"trans": "이 플레이어가 모든 갱단 멤버들에게 공지를 보낼 수 있도록 합니다",
+ 	 	 	 	 	"eng": "Allow this player to send notice to all gang members"
+ 	 	 	 	}
  	 	 	}
  	 	},
  	 	"error": {
+ 	 	 	"insufficientBitcoin": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "비트 코인이 부족합니다. 필요 : ${amount}",
+ 	 	 	 	"eng": "You have insufficient Bitcoin, required: ${amount}"
+ 	 	 	},
  	 	 	"inviteCooldown": {
  	 	 	 	"trans": "최근 해당 플레이어를 이미 초대했습니다",
  	 	 	 	"eng": "You have already invited this player recently"
@@ -8168,8 +9901,19 @@
  	 	 	"vars": [
  	 	 	 	"price"
  	 	 	],
- 	 	 	"trans": "매달 ${price} USD",
+ 	 	 	"trans": "월 ${price} USD",
  	 	 	"eng": "${price} USD Per Month"
+ 	 	},
+ 	 	"inAppPurchaseDescription": {
+ 	 	 	"trans": "언제든지 상점에서 구독 기반 기부를 취소할 수 있습니다.",
+ 	 	 	"eng": "Subscription based donation, you can cancel it at anytime from your store."
+ 	 	},
+ 	 	"monthlyPrice": {
+ 	 	 	"vars": [
+ 	 	 	 	"price"
+ 	 	 	],
+ 	 	 	"trans": "월 ${price}",
+ 	 	 	"eng": "${price} per Month"
  	 	}
  	},
  	"cosmetic": {
@@ -8204,6 +9948,150 @@
  	 	"checkEmail": {
  	 	 	"trans": "이메일을 확인하고 지침을 따라 비밀번호를 재설정하십시오",
  	 	 	"eng": "Please check your email and follow the instructions to reset the password"
+ 	 	}
+ 	},
+ 	"leaderboardTypePage": {
+ 	 	"gameplay": {
+ 	 	 	"trans": "게임 플레이 리더 보드",
+ 	 	 	"eng": "Gameplay Leaderboards"
+ 	 	},
+ 	 	"gameplayDesc": {
+ 	 	 	"trans": "이 리더 보드는 플레이어의 게임 플레이 통계를 보여줍니다",
+ 	 	 	"eng": "These leaderboards shows player's gameplay statistics.💪"
+ 	 	},
+ 	 	"gang": {
+ 	 	 	"trans": "상위 갱",
+ 	 	 	"eng": "Top Gangs"
+ 	 	},
+ 	 	"control": {
+ 	 	 	"trans": "통제 점수",
+ 	 	 	"eng": "Occupation Control"
+ 	 	},
+ 	 	"contribution": {
+ 	 	 	"trans": "커뮤니티 기여",
+ 	 	 	"eng": "Community Contribution"
+ 	 	},
+ 	 	"contributionDesc": {
+ 	 	 	"trans": "이 보드는 커뮤니티에 기여한 전설에 대한 존중과 크레딧을 보여줍니다",
+ 	 	 	"eng": "These boards shows respect and credits to the legends who have contributed to the community.❤️"
+ 	 	}
+ 	},
+ 	"playerDetailsPage": {
+ 	 	"tabs": {
+ 	 	 	"stats": {
+ 	 	 	 	"trans": "스탯",
+ 	 	 	 	"eng": "stats"
+ 	 	 	},
+ 	 	 	"equipment": {
+ 	 	 	 	"trans": "인벤토리",
+ 	 	 	 	"eng": "inventory"
+ 	 	 	},
+ 	 	 	"assets": {
+ 	 	 	 	"trans": "자산",
+ 	 	 	 	"eng": "assets"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"petListPage": {
+ 	 	"exceedSlot": {
+ 	 	 	"vars": [
+ 	 	 	 	"petName"
+ 	 	 	],
+ 	 	 	"trans": "${petName}은(는) 아파트 공간 부족으로 현재 길거리에서 생활 중입니다",
+ 	 	 	"eng": "${petName} is currently living on the street due to lack of space in your apartment"
+ 	 	},
+ 	 	"noPet": {
+ 	 	 	"trans": "아직 애완동물이 없습니다",
+ 	 	 	"eng": "You have no pet yet"
+ 	 	},
+ 	 	"acquirePets": {
+ 	 	 	"trans": "애완동물 획득",
+ 	 	 	"eng": "Acquire Pets"
+ 	 	}
+ 	},
+ 	"petAdoption": {
+ 	 	"error": {
+ 	 	 	"noBuff": {
+ 	 	 	 	"trans": "버프가 비활성화 상태입니다",
+ 	 	 	 	"eng": "Buff is not activated"
+ 	 	 	},
+ 	 	 	"cooldown": {
+ 	 	 	 	"trans": "애완동물 입양은 쿨타임 중입니다",
+ 	 	 	 	"eng": "Pet adoption is on cooldown"
+ 	 	 	},
+ 	 	 	"noSlot": {
+ 	 	 	 	"trans": "반려동물을 입양하려면 아파트가 필요합니다",
+ 	 	 	 	"eng": "You need to rent a bigger apartment to accommodate more pets"
+ 	 	 	},
+ 	 	 	"noItem": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "애완동물을 입양하려면 ${itemName}이 필요합니다",
+ 	 	 	 	"eng": "You need a ${itemName} to adopt a pet"
+ 	 	 	}
+ 	 	},
+ 	 	"petSlot": {
+ 	 	 	"trans": "아파트 반려동물 수용량",
+ 	 	 	"eng": "Apartment pet capacity"
+ 	 	},
+ 	 	"cooldownTitle": {
+ 	 	 	"trans": "입양 가능",
+ 	 	 	"eng": "Adoption Available"
+ 	 	},
+ 	 	"buffActivationButton": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "입양 버프 활성화하기",
+ 	 	 	 	"eng": "Activate Adoption Buff"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "버프가 활성화 된 동안 모든 플레이어가 펫을 입양할 수 있게 됩니다.",
+ 	 	 	 	"eng": "Activate to allow all players to adopt a pet while buff is active"
+ 	 	 	},
+ 	 	 	"buttonText": {
+ 	 	 	 	"activated": {
+ 	 	 	 	 	"trans": "활성화됨",
+ 	 	 	 	 	"eng": "Activated"
+ 	 	 	 	},
+ 	 	 	 	"notActivated": {
+ 	 	 	 	 	"trans": "버프 활성화",
+ 	 	 	 	 	"eng": "Activate Buff"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"confirmTitle": {
+ 	 	 	 	"trans": "입양 버프 활성화",
+ 	 	 	 	"eng": "Activate Adoption Buff"
+ 	 	 	},
+ 	 	 	"confirmDescription": {
+ 	 	 	 	"trans": "입양 버프를 활성화하시겠습니까?",
+ 	 	 	 	"eng": "Are you sure you want to activate the Adoption Buff?"
+ 	 	 	}
+ 	 	},
+ 	 	"noItemConfirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "인벤토리에 ${itemName}이(가) 없습니다",
+ 	 	 	 	"eng": "No ${itemName} in inventory"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "인벤토리에 ${itemName}이(가) 없습니다. 다른 플레이어들이 혜택을 받을 수 있도록 버프를 활성화할 수는 있지만, ${itemName}이 없으면 애완동물을 입양할 수 없습니다",
+ 	 	 	 	"eng": "You do not have an ${itemName} in your inventory, you still can activate the buff for other players to benefit, however without ${itemName} you will not be able to adopt pets"
+ 	 	 	},
+ 	 	 	"confirmText": {
+ 	 	 	 	"trans": "버프 활성화",
+ 	 	 	 	"eng": "Activate Buff"
+ 	 	 	}
+ 	 	},
+ 	 	"adoptButton": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "새로운 애완동물 입양하기",
+ 	 	 	 	"eng": "Adopt a new pet"
+ 	 	 	}
  	 	}
  	},
  	"sendCosmeticPage": {
@@ -8313,16 +10201,63 @@
  	 	 	"eng": "You have successfully sent an emblem to player \"${playerName}\""
  	 	}
  	},
+ 	"bulkCrafting": {
+ 	 	"cannotCraft": {
+ 	 	 	"trans": "기본상태가 아닌 동안에는 제작을 할 수 없습니다",
+ 	 	 	"eng": "You cannot craft while not idle"
+ 	 	}
+ 	},
+ 	"captcha": {
+ 	 	"success": {
+ 	 	 	"trans": "핀 코드가 허용됩니다",
+ 	 	 	"eng": "Pin code accepted"
+ 	 	},
+ 	 	"invalid": {
+ 	 	 	"trans": "잘못된 핀 코드",
+ 	 	 	"eng": "Invalid Pin Code"
+ 	 	}
+ 	},
  	"chatModuleHelper": {
  	 	"aiConnectNotAvailable": {
- 	 	 	"trans": "허가 거부. Slanc은 채팅에 연결되지 않았습니다",
+ 	 	 	"trans": "요청 거부. Slanc은 채팅에 연결되지 않았습니다",
  	 	 	"eng": "Permission Denied. SLANC not connected to chat"
+ 	 	}
+ 	},
+ 	"server": {
+ 	 	"announcement": {
+ 	 	 	"receiveItem": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player",
+ 	 	 	 	 	"item"
+ 	 	 	 	],
+ 	 	 	 	"trans": "🎉축하합니다! ${player}님이 ${item}를 얻었습니다!",
+ 	 	 	 	"eng": "🎉Congratulation! ${player} received ${item}!"
+ 	 	 	}
  	 	}
  	},
  	"gifting": {
  	 	"cannotSend": {
  	 	 	"trans": "이 플레이어는 지금 선물을 받을 수 없습니다",
  	 	 	"eng": "This player cannot receive gift now"
+ 	 	}
+ 	},
+ 	"topUpReward": {
+ 	 	"mail": {
+ 	 	 	"vars": [
+ 	 	 	 	"event",
+ 	 	 	 	"items"
+ 	 	 	],
+ 	 	 	"trans": "${event} 결제 보상 ${items}이(가) 당신의 우편함에 전송되었습니다",
+ 	 	 	"eng": " ${event} top up reward ${items} has been sent to your inbox"
+ 	 	}
+ 	},
+ 	"error": {
+ 	 	"cannotUseItemInStatus": {
+ 	 	 	"vars": [
+ 	 	 	 	"minutes"
+ 	 	 	],
+ 	 	 	"trans": "이 아이템과 충돌하는 상태 효과가 있으므로 이 아이템을 사용할 수 없습니다",
+ 	 	 	"eng": "You cannot use this item because there is a status effect that conflicts with it"
  	 	}
  	},
  	"player": {
@@ -8350,6 +10285,10 @@
  	 	 	"invalidTravelLink": {
  	 	 	 	"trans": "유효하지 않은 링크입니다. 계속 진행하려면 새로고침하십시오",
  	 	 	 	"eng": "Invalid Travel Link, if persist please reload"
+ 	 	 	},
+ 	 	 	"recipeDisabled": {
+ 	 	 	 	"trans": "이 레시피는 현재 사용할 수 없습니다",
+ 	 	 	 	"eng": "This recipe is currently not available"
  	 	 	}
  	 	},
  	 	"escape": {
@@ -8377,6 +10316,13 @@
  	 	 	"eng": "Your level is too high to perform this action here, try to do it in the next zone."
  	 	},
  	 	"giveCred": {
+ 	 	 	"mail": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"playerName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "당신은 ${playerName}로부터 명성을 받았습니다",
+ 	 	 	 	"eng": "You have received a street cred from ${playerName}"
+ 	 	 	},
  	 	 	"success": {
  	 	 	 	"trans": "당신은 일일 명성을 주었습니다.",
  	 	 	 	"eng": "You have given daily street cred."
@@ -8396,9 +10342,9 @@
  	 	 	"trans": "이 닉네임은 다른 플레이어가 사용합니다. 다른 닉네임을 사용하십시오",
  	 	 	"eng": "this name is used by other player, please use other name"
  	 	},
- 	 	"nameIllegal": {
- 	 	 	"trans": "부적절한 닉네임입니다, 다른 닉네임을 사용하십시오",
- 	 	 	"eng": "Illegal name, please use other name"
+ 	 	"reservedKeyword": {
+ 	 	 	"trans": "이 이름에는 제한된 단어가 포함되어 있습니다",
+ 	 	 	"eng": "This name contains reserved wordings, please use other name"
  	 	},
  	 	"nameProfane": {
  	 	 	"trans": "이 닉네임에는 사용할 수 없는 단어가 포함되어 있습니다. 다른 닉네임을 사용하십시오",
@@ -8407,6 +10353,49 @@
  	 	"nameInvalid": {
  	 	 	"trans": "이름 길이는 4자 초과, 16자 이하여야 하며, 영어 문자, 숫자 또는 \\ '_ \\'만 포함해야합니다",
  	 	 	"eng": "name length must be greater then 4, less then or equal to 16 and only contains English characters, numbers or \\'_\\'"
+ 	 	}
+ 	},
+ 	"skip": {
+ 	 	"skipRewardMail": {
+ 	 	 	"1": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${amount}스킵 포인에 도달해 \"Skip Emblem 1\"를 받았습니다",
+ 	 	 	 	"eng": "You have received \"Skip Emblem 1\" for having ${amount} skip points"
+ 	 	 	},
+ 	 	 	"2": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${amount}스킵 포인에 도달해 \"Skip Emblem 2\"를 받았습니다",
+ 	 	 	 	"eng": "You have received \"Skip Emblem 2\" for having ${amount} skip points"
+ 	 	 	},
+ 	 	 	"3": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${amount}스킵 포인에 도달해 \"Skip Emblem 3\"를 받았습니다",
+ 	 	 	 	"eng": "You have received \"Skip Emblem 3\" for having ${amount} skip points"
+ 	 	 	},
+ 	 	 	"4": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"frameName",
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${amount}스킵 포인에 도달해 \"${frameName}\"기부자 채팅 프레임을 받았습니다",
+ 	 	 	 	"eng": "You have received \"${frameName}\" donator chat frame for having ${amount} skip points"
+ 	 	 	}
+ 	 	},
+ 	 	"announcement": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName",
+ 	 	 	 	"playerCount",
+ 	 	 	 	"skipTime",
+ 	 	 	 	"credButton"
+ 	 	 	],
+ 	 	 	"trans": "${playerName}님이 글로벌 스킵을 사용했습니다. AFK 작업을 수행중인 모든 온라인 플레이어(${playerCount}명)는 자동으로 ${skipTime}분 스킵됩니다. 이 전설적인 플레이어에게 명성을 주시겠습니까? ${credButton}",
+ 	 	 	"eng": "${playerName} has used Global Time Skip, all online players currently performing AFK task (${playerCount} players) will automatically time skip by ${skipTime} minutes. Give the legend some creds? ${credButton}"
  	 	}
  	}
 }

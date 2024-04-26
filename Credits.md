@@ -5,28 +5,32 @@
 Artra
 AskAmando
 Ayanna
-B3llial
-BoxinFoxx
 HBUNKNOWN
 Indilil
+[krolik](https://github.com/kroliklapine)
+FadedPassiflora
 Nokan
 Lissa
+Slwny
 Tear1
 Unca_Feddit
 Wooffle
 YANDEREsenpaiXD
 YIRUO
 ZhannaKim26
+
 ## Retired Moderators
 [alfaice](https://github.com/alfaice)
 AlphaC58
+B3llial
 [CMDR7](https://github.com/cmdr7)
 [Deckeeper](https://github.com/deckeeper)
 Dr_Pig
 EsmeJ
 Fudgee
 HLYGD
-[krolik](https://github.com/kroliklapine)
+BoxinFoxx
+[Mancipi](https://github.com/Mancipi)
 [l33t4ng3l](https://github.com/l33t4ng3l)
 [PotatoMan](https://github.com/PotatoMan145)
 [Tripplehelix](https://github.com/tripplehelix)
@@ -120,7 +124,7 @@ Wanna
 [Fataliste](https://github.com/Nasaelo)
 [Karont20](https://github.com/KarontDev)
 [VanrSky](https://github.com/Paugwvsk)
-[BazzJazz](https://github.com/BassJazz) 
+[BasedBunny](https://github.com/BassJazz) 
 [Syll](https://github.com/iburiedthesun) 
 [blacksurgeon](https://github.com/blacksurgeon) 
 [RedWolf141](https://github.com/RedWolf141)
@@ -140,6 +144,8 @@ ClayBravo6
 [Elrecoal-19](https://github.com/Elrecoal-19)
 Ambr_ence
 Vargur
+[lag145](https://github.com/lag145)
+[Mackerels](https://github.com/mackerels0x00)
 
 ## Proofreading
 [Skippayy](https://github.com/skippayyyy)
@@ -196,6 +202,7 @@ Xenacious69
 ## Dungeons
 Alecto
 [alfaice](https://github.com/alfaice)
+Alhoor
 Alice
 AlphaC58
 Amalgamate
@@ -281,6 +288,7 @@ Vega_Efsunborn
 [Laani](https://github.com/Laani)
 [Manz](https://github.com/manztellen)
 [Christophers27](https://github.com/Christophers27)
+[Mackerels](https://github.com/mackerels0x00)
 
 ## Game resources (words)
 [apetro](https://github.com/apetro/)
@@ -320,6 +328,7 @@ Redinator
 [Ryujin](https://github.com/Ryujin-cybercode)
 Satan
 [Skippayy](https://github.com/skippayyyy)
+[Tallerpie](https://github.com/Tallerpie)
 [Tripplehelix](https://github.com/tripplehelix)
 [Veyrin](https://github.com/darkrevelations)
 [Sakura](https://github.com/lux-sakura)

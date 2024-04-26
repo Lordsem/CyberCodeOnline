@@ -1,4 +1,56 @@
 {
+ 	"apartment": {
+ 	 	"title": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "Apartemen ${playerName}",
+ 	 	 	"eng": "${playerName}'s Apartment"
+ 	 	},
+ 	 	"terminateLease": {
+ 	 	 	"trans": "Batalkan Sewa",
+ 	 	 	"eng": "Terminate Lease"
+ 	 	},
+ 	 	"viewPets": {
+ 	 	 	"trans": "Lihat Hewan Peliharaan",
+ 	 	 	"eng": "View Pets"
+ 	 	},
+ 	 	"address": {
+ 	 	 	"cityName": {
+ 	 	 	 	"trans": "Shangri-la",
+ 	 	 	 	"eng": "Shangri-la"
+ 	 	 	}
+ 	 	},
+ 	 	"rent": {
+ 	 	 	"paidMail": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Kamu sudah bayar sewa apartemenmu sebesar ${amount}",
+ 	 	 	 	"eng": "You have paid your apartment rent of ${amount}"
+ 	 	 	},
+ 	 	 	"unpaidMail": {
+ 	 	 	 	"trans": "You have failed to pay your apartment rent, your apartment has been terminated",
+ 	 	 	 	"eng": "You have failed to pay your apartment rent, your apartment has been terminated"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"purchaseApartmentUI": {
+ 	 	"confirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Sewa Apartemen",
+ 	 	 	 	"eng": "Rent Apartment"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Kamu yakin mau sewa apartemen ini?",
+ 	 	 	 	"eng": "Are you sure you want to rent this apartment?"
+ 	 	 	}
+ 	 	},
+ 	 	"rentButton": {
+ 	 	 	"trans": "Sewa Sekarang",
+ 	 	 	"eng": "Rent Now"
+ 	 	}
+ 	},
  	"tabs": {
  	 	"map": {
  	 	 	"trans": "Peta",
@@ -22,10 +74,41 @@
  	 	}
  	},
  	"ui": {
- 	 	"blackMarket": {
- 	 	 	"selectItemButton": {
- 	 	 	 	"trans": "Print dan jual",
- 	 	 	 	"eng": "Print And Sell"
+ 	 	"bulkCraft": {
+ 	 	 	"amountSelect": {
+ 	 	 	 	"title": {
+ 	 	 	 	 	"trans": "Pilih Jumlah",
+ 	 	 	 	 	"eng": "Select Amount"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"duration": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"duration"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Tugas ini akan memakan ${duration}",
+ 	 	 	 	"eng": "This task will take ${duration}"
+ 	 	 	},
+ 	 	 	"durationTooLong": {
+ 	 	 	 	"trans": "Terlalu banyak item yang dipilih",
+ 	 	 	 	"eng": "Too many items selected"
+ 	 	 	}
+ 	 	},
+ 	 	"generalCaptcha": {
+ 	 	 	"inputLabel": {
+ 	 	 	 	"trans": "Kode PIN",
+ 	 	 	 	"eng": "Pin Code"
+ 	 	 	},
+ 	 	 	"inputPlaceholder": {
+ 	 	 	 	"trans": "Masukkan kode PIN.",
+ 	 	 	 	"eng": "Enter pin code"
+ 	 	 	},
+ 	 	 	"story": {
+ 	 	 	 	"trans": "Kamu menemukan brankas tua yang terkunci, sepertinya ada note dengan tulisan di atasnya.",
+ 	 	 	 	"eng": "You found an old locked safe box, there seems like a post-it with some text written on it."
+ 	 	 	},
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Kode PIN diperlukan untuk membuka kunci",
+ 	 	 	 	"eng": "Pin code required to unlock"
  	 	 	}
  	 	},
  	 	"clan": {
@@ -47,15 +130,15 @@
  	 	 	 	"eng": "Deposit Bitcoin"
  	 	 	},
  	 	 	"editMotto": {
+ 	 	 	 	"button": {
+ 	 	 	 	 	"trans": "Edit Motto Geng",
+ 	 	 	 	 	"eng": "Edit Gang Motto"
+ 	 	 	 	},
  	 	 	 	"modal": {
  	 	 	 	 	"title": {
  	 	 	 	 	 	"trans": "Silakan masukkan motto geng mu",
  	 	 	 	 	 	"eng": "Please enter your gang motto"
  	 	 	 	 	}
- 	 	 	 	},
- 	 	 	 	"button": {
- 	 	 	 	 	"trans": "Edit Motto Geng",
- 	 	 	 	 	"eng": "Edit Gang Motto"
  	 	 	 	}
  	 	 	},
  	 	 	"updateImage": {
@@ -132,7 +215,7 @@
  	 	 	 	 	 	"eng": "Decryption successful"
  	 	 	 	 	},
  	 	 	 	 	"description": {
- 	 	 	 	 	 	"trans": "pengolahan",
+ 	 	 	 	 	 	"trans": "sedang mengolah",
  	 	 	 	 	 	"eng": "processing"
  	 	 	 	 	}
  	 	 	 	},
@@ -151,7 +234,7 @@
  	 	 	 	 	"eng": "seconds"
  	 	 	 	},
  	 	 	 	"colorBox": {
- 	 	 	 	 	"trans": "Klik pada warna ini di bawah ini",
+ 	 	 	 	 	"trans": "Klik pada warna di bawah ini",
  	 	 	 	 	"eng": "Click on this color below"
  	 	 	 	},
  	 	 	 	"lose": {
@@ -170,12 +253,6 @@
  	 	 	 	 	 	}
  	 	 	 	 	}
  	 	 	 	}
- 	 	 	}
- 	 	},
- 	 	"supportUkraine": {
- 	 	 	"description": {
- 	 	 	 	"trans": "Orang-orang Ukraina, Rusia dan seluruh dunia menderita karena ambisi satu orang. \\n Exploitasi cinta, bukan perang.",
- 	 	 	 	"eng": "People of Ukraine, Russia and the whole world are suffering because one man's ambition.\\n Make love exploit, not war."
  	 	 	}
  	 	},
  	 	"bank": {
@@ -257,7 +334,7 @@
  	 	 	 	 	"eng": "Upgrade Vault"
  	 	 	 	},
  	 	 	 	"confirm": {
- 	 	 	 	 	"trans": "Meningkatkan",
+ 	 	 	 	 	"trans": "Tingkatkan",
  	 	 	 	 	"eng": "Upgrade"
  	 	 	 	}
  	 	 	},
@@ -288,27 +365,9 @@
  	 	 	 	}
  	 	 	}
  	 	},
- 	 	"generalCaptcha": {
- 	 	 	"story": {
- 	 	 	 	"trans": "Kamu menemukan brankas tua yang terkunci, sepertinya ada note dengan tulisan di atasnya.",
- 	 	 	 	"eng": "You found an old locked safe box, there seems like a post-it with some text written on it."
- 	 	 	},
- 	 	 	"title": {
- 	 	 	 	"trans": "Kode PIN diperlukan untuk membuka kunci",
- 	 	 	 	"eng": "Pin code required to unlock"
- 	 	 	},
- 	 	 	"inputLabel": {
- 	 	 	 	"trans": "Kode PIN",
- 	 	 	 	"eng": "Pin Code"
- 	 	 	},
- 	 	 	"inputPlaceholder": {
- 	 	 	 	"trans": "Masukkan kode PIN.",
- 	 	 	 	"eng": "Enter pin code"
- 	 	 	}
- 	 	},
  	 	"chat": {
  	 	 	"reconnecting": {
- 	 	 	 	"trans": "Menyambungkan Koneksi",
+ 	 	 	 	"trans": "Menyambungkan koneksi",
  	 	 	 	"eng": "Reestablishing connection"
  	 	 	},
  	 	 	"notAtBottom": {
@@ -397,6 +456,16 @@
  	 	 	}
  	 	},
  	 	"clanPage": {
+ 	 	 	"notice": {
+ 	 	 	 	"time": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"playerName",
+ 	 	 	 	 	 	"time"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "Diposting oleh ${playerName} ${time} lalu",
+ 	 	 	 	 	"eng": "Posted by ${playerName} ${time} ago"
+ 	 	 	 	}
+ 	 	 	},
  	 	 	"createClan": {
  	 	 	 	"title": {
  	 	 	 	 	"trans": "Kamu bukan anggota geng mana pun",
@@ -471,7 +540,7 @@
  	 	 	 	"eng": "Quick Slots"
  	 	 	},
  	 	 	"equipped": {
- 	 	 	 	"trans": "Lengkap",
+ 	 	 	 	"trans": "Dilengkapi",
  	 	 	 	"eng": "Equipped"
  	 	 	}
  	 	},
@@ -525,17 +594,27 @@
  	 	},
  	 	"timeSkip": {
  	 	 	"unitTimeSkipButton": {
- 	 	 	 	"title": {
+ 	 	 	 	"unit": {
  	 	 	 	 	"vars": [
- 	 	 	 	 	 	"timeSkipMinutes",
- 	 	 	 	 	 	"timeSkipCost"
+ 	 	 	 	 	 	"units"
  	 	 	 	 	],
- 	 	 	 	 	"trans": "Global Skip (${timeSkipMinutes} menit, biaya ${timeSkipCost} Units)",
- 	 	 	 	 	"eng": "Global Skip (${timeSkipMinutes} Min, Cost ${timeSkipCost} Units)"
+ 	 	 	 	 	"trans": "${units} unit",
+ 	 	 	 	 	"eng": "${units} units"
+ 	 	 	 	},
+ 	 	 	 	"minute": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"minutes"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "${minutes} unit",
+ 	 	 	 	 	"eng": "Skip ${minutes} minutes"
+ 	 	 	 	},
+ 	 	 	 	"title2": {
+ 	 	 	 	 	"trans": "Selesaikan sekarang",
+ 	 	 	 	 	"eng": "Finish Now"
  	 	 	 	},
  	 	 	 	"description": {
  	 	 	 	 	"trans": "Skip Global memungkinkan kamu untuk melewati waktu tunggu AFK, dan menyelesaikannya secara instan. \n     Efek ini akan diterapkan pada semua pemain yang melakukan tugas AFK",
- 	 	 	 	 	"eng": "Global Skip allow you to skip the AFK waiting time, and finish it instantly.\r\n    this effect will be applied to all player performing AFK task"
+ 	 	 	 	 	"eng": "Finish the task instantly for all players in the game and earn skip points to show your support to other players!"
  	 	 	 	}
  	 	 	},
  	 	 	"itemTimeSkipButton": {
@@ -647,7 +726,7 @@
  	 	 	 	}
  	 	 	},
  	 	 	"areaEffect": {
- 	 	 	 	"trans": "[AOE] Efek Area, efek dari item ini akan diterima oleh sekutu dalam satu pertempuran dengan mu.",
+ 	 	 	 	"trans": "[AOE] Area of Effect (Efek Area), efek dari item ini akan diterima oleh sekutu dalam satu pertempuran dengan mu.",
  	 	 	 	"eng": "[AOE] Area of Effect, the effect of this item will apply allies in combat with you."
  	 	 	},
  	 	 	"lockModal": {
@@ -663,7 +742,7 @@
  	 	 	 	},
  	 	 	 	"lock": {
  	 	 	 	 	"title": {
- 	 	 	 	 	 	"trans": "Item kunci?",
+ 	 	 	 	 	 	"trans": "Kunci item?",
  	 	 	 	 	 	"eng": "Lock item?"
  	 	 	 	 	},
  	 	 	 	 	"description": {
@@ -677,15 +756,19 @@
  	 	 	 	"eng": "Locked"
  	 	 	},
  	 	 	"unlocked": {
- 	 	 	 	"trans": "Tidak terkunci",
+ 	 	 	 	"trans": "Kunci terbuka",
  	 	 	 	"eng": "Unlocked"
  	 	 	},
+ 	 	 	"upgradeModuleTitleHeader": {
+ 	 	 	 	"trans": "Upgrade slot",
+ 	 	 	 	"eng": "Upgrades Slots"
+ 	 	 	},
  	 	 	"upgradeModuleTitle": {
- 	 	 	 	"trans": "Upgrade",
- 	 	 	 	"eng": "upgrade slot ${index}",
  	 	 	 	"vars": [
  	 	 	 	 	"index"
- 	 	 	 	]
+ 	 	 	 	],
+ 	 	 	 	"trans": "Upgrade",
+ 	 	 	 	"eng": "upgrade slot ${index}"
  	 	 	},
  	 	 	"equip": {
  	 	 	 	"trans": "Lengkapi",
@@ -715,7 +798,7 @@
  	 	 	 	"eng": "Print Cache"
  	 	 	},
  	 	 	"printCacheDescription": {
- 	 	 	 	"trans": "Ubah cache ini menjadi barang senjata atau peralatan yang Kamu bisa uae.",
+ 	 	 	 	"trans": "Ubah cache ini menjadi barang, senjata, atau peralatan yang dapat kamu gunakan.",
  	 	 	 	"eng": "Turn this cache into a weapon or equipment item that you can use."
  	 	 	},
  	 	 	"openContainer": {
@@ -745,14 +828,14 @@
  	 	 	},
  	 	 	"itemUpgradeButton": {
  	 	 	 	"title": {
- 	 	 	 	 	"trans": "meningkatkan",
+ 	 	 	 	 	"trans": "tingkatkan",
  	 	 	 	 	"eng": "upgrade"
  	 	 	 	}
  	 	 	},
  	 	 	"factoryReset": {
  	 	 	 	"confirmation": {
  	 	 	 	 	"title": {
- 	 	 	 	 	 	"trans": "Apakah Anda yakin ingin reset pabrik?",
+ 	 	 	 	 	 	"trans": "Apakah Anda yakin ingin melakukan reset pabrik?",
  	 	 	 	 	 	"eng": "Are you sure you want to factory reset?"
  	 	 	 	 	},
  	 	 	 	 	"description": {
@@ -760,7 +843,7 @@
  	 	 	 	 	 	"eng": "By resetting this item, you will lose all calibration, however you will be able to trade it to other players."
  	 	 	 	 	}
  	 	 	 	},
- 	 	 	 	"trans": "Pengaturan Ulang",
+ 	 	 	 	"trans": "Reset Pabrik",
  	 	 	 	"eng": "Factory Reset"
  	 	 	},
  	 	 	"noItem": {
@@ -802,14 +885,14 @@
  	 	},
  	 	"map": {
  	 	 	"interactable": {
- 	 	 	 	"trans": "Interaksi",
+ 	 	 	 	"trans": "Dapat diinteraksi",
  	 	 	 	"eng": "Interactable"
  	 	 	},
  	 	 	"hiddenNpcTip": {
  	 	 	 	"vars": [
  	 	 	 	 	"hiddenCount"
  	 	 	 	],
- 	 	 	 	"trans": "${hiddenCount} Lebih banyak interaksi dapat dibuka di lokasi ini, naikkan tingkat untuk membuka kunci mereka.",
+ 	 	 	 	"trans": "${hiddenCount} Lebih banyak interaksi dapat dibuka di lokasi ini, naikkan level untuk membuka kunci mereka.",
  	 	 	 	"eng": "${hiddenCount} more interactables can be unlocked at this location, level up to unlock them."
  	 	 	},
  	 	 	"travel": {
@@ -823,7 +906,7 @@
  	 	},
  	 	"npc": {
  	 	 	"notUnlocked": {
- 	 	 	 	"trans": "Ini belum bisa dibuka, coba naikkan tingkatanmu",
+ 	 	 	 	"trans": "Ini belum bisa dibuka, coba naikkan levelmu",
  	 	 	 	"eng": "This is not unlocked yet, try leveling up your character"
  	 	 	},
  	 	 	"repairItems": {
@@ -920,7 +1003,7 @@
  	 	 	 	"eng": "confidential"
  	 	 	},
  	 	 	"decoration2": {
- 	 	 	 	"trans": "Properti SLPD",
+ 	 	 	 	"trans": "Properti milik Kepolisian Shangri-La",
  	 	 	 	"eng": "Property of SLPD"
  	 	 	},
  	 	 	"accountCreated": {
@@ -948,7 +1031,7 @@
  	 	 	 	 	"eng": "Permissions"
  	 	 	 	},
  	 	 	 	"transferLeadership": {
- 	 	 	 	 	"trans": "Memindahkan Kepemimpinan",
+ 	 	 	 	 	"trans": "Pindahkan Kepemimpinan",
  	 	 	 	 	"eng": "Transfer Leadership"
  	 	 	 	}
  	 	 	},
@@ -997,14 +1080,6 @@
  	 	 	 	 	"trans": "BLOCK Player",
  	 	 	 	 	"eng": "Block Player"
  	 	 	 	}
- 	 	 	},
- 	 	 	"equipped": {
- 	 	 	 	"trans": "Dipakai",
- 	 	 	 	"eng": "Equipped"
- 	 	 	},
- 	 	 	"inventory": {
- 	 	 	 	"trans": "Inventaris",
- 	 	 	 	"eng": "Inventory"
  	 	 	}
  	 	},
  	 	"modal": {
@@ -1030,13 +1105,13 @@
  	 	 	 	 	"eng": "Calibration Success"
  	 	 	 	},
  	 	 	 	"subtitle": {
- 	 	 	 	 	"trans": "tidak terdeteksi ERROR",
+ 	 	 	 	 	"trans": "ERROR tidak terdeteksi",
  	 	 	 	 	"eng": "No error detected"
  	 	 	 	}
  	 	 	},
  	 	 	"leaveDungeon": {
  	 	 	 	"title": {
- 	 	 	 	 	"trans": "Yakin akan meninggalkan dungeon ini?",
+ 	 	 	 	 	"trans": "Yakin ingin meninggalkan dungeon ini?",
  	 	 	 	 	"eng": "Are you sure you want to leave this dungeon?"
  	 	 	 	},
  	 	 	 	"subtitle": {
@@ -1064,7 +1139,7 @@
  	 	 	 	"vars": [
  	 	 	 	 	"nextSlotSize"
  	 	 	 	],
- 	 	 	 	"trans": "Tambahkan ruang menjadi ${nextSlotSize}",
+ 	 	 	 	"trans": "Tambahkan ruang lapak menjadi ${nextSlotSize}",
  	 	 	 	"eng": "Increase slot to ${nextSlotSize}"
  	 	 	},
  	 	 	"increaseSlotDescription": {
@@ -1094,13 +1169,13 @@
  	 	 	 	"trans": "Saat ini tidak ada item yang dijual untuk kategori ini",
  	 	 	 	"eng": "there is currently no items on sale for this category"
  	 	 	},
- 	 	 	"buy": {
- 	 	 	 	"trans": "Beli",
- 	 	 	 	"eng": "Purchase"
+ 	 	 	"pricePerPiece": {
+ 	 	 	 	"trans": "per item",
+ 	 	 	 	"eng": "per item"
  	 	 	},
- 	 	 	"remove": {
- 	 	 	 	"trans": "Menghapus",
- 	 	 	 	"eng": "Remove"
+ 	 	 	"purchase": {
+ 	 	 	 	"trans": "Pembelian",
+ 	 	 	 	"eng": "Purchase"
  	 	 	},
  	 	 	"stall": {
  	 	 	 	"sellItemButton": {
@@ -1115,7 +1190,7 @@
  	 	},
  	 	"afkTask": {
  	 	 	"newbieTip": {
- 	 	 	 	"trans": "Tugas akan berlanjut meski Kamu menutup permainan",
+ 	 	 	 	"trans": "Tugas akan berlanjut meski Kamu menutup permainan, AFK aja gapapa kok.",
  	 	 	 	"eng": "The task will continue even if you close the game"
  	 	 	},
  	 	 	"syncing": {
@@ -1123,7 +1198,7 @@
  	 	 	 	"eng": "Syncing"
  	 	 	},
  	 	 	"incompleteError": {
- 	 	 	 	"trans": "Harap pastikan waktu perangkatmu benar.",
+ 	 	 	 	"trans": "Harap pastikan waktu perangkatmu benar ya.",
  	 	 	 	"eng": "Please ensure your device time is correct."
  	 	 	},
  	 	 	"manualRefresh": {
@@ -1151,7 +1226,7 @@
  	 	 	 	"eng": "Are you sure you want to abort?"
  	 	 	},
  	 	 	"abortWarning": {
- 	 	 	 	"trans": "Dengan menggabungkan ini Kamu tidak akan menerima hadiah apapun dan bahan yang digunakan tidak akan dikembalikan",
+ 	 	 	 	"trans": "Dengan membatalkan ini, Kamu tidak akan menerima hadiah apapun dan bahan yang digunakan tidak akan dikembalikan.",
  	 	 	 	"eng": "By aborting this you won\\'t receive any reward and the material used won\\'t be returned"
  	 	 	}
  	 	},
@@ -1168,7 +1243,7 @@
  	 	 	 	 	"vars": [
  	 	 	 	 	 	"points"
  	 	 	 	 	],
- 	 	 	 	 	"trans": "${points} Kontrol pekerjaan",
+ 	 	 	 	 	"trans": "${points} Kontrol Penempatan",
  	 	 	 	 	"eng": "${points} Occupation Control"
  	 	 	 	}
  	 	 	}
@@ -1181,21 +1256,21 @@
  	 	 	 	},
  	 	 	 	"printingTooLow": {
  	 	 	 	 	"title": {
- 	 	 	 	 	 	"trans": "Tingkatkan Percetakan Peringkat",
+ 	 	 	 	 	 	"trans": "Tingkatkan Peringkat Percetakan",
  	 	 	 	 	 	"eng": "Improve Printing Rank"
  	 	 	 	 	},
  	 	 	 	 	"description": {
- 	 	 	 	 	 	"trans": "Percetakan peringkat menentukan Level item yang Kamu cetak. Dapatkan Printing Exp dengan Print & Jual di Pasar Hitam",
+ 	 	 	 	 	 	"trans": "Peringkat percetakan menentukan Level item yang Kamu cetak. Dapatkan Exp pencetakan dengan Cetak & Jual di Pasar Hitam",
  	 	 	 	 	 	"eng": "Printing Rank determines the level of item you print. Gain printing exp by print & sell in Black Market"
  	 	 	 	 	}
  	 	 	 	},
  	 	 	 	"gearTooWeak": {
  	 	 	 	 	"title": {
- 	 	 	 	 	 	"trans": "Dapatkan peralatan yang lebih baik!",
+ 	 	 	 	 	 	"trans": "Lu masih lemah, dapatkan peralatan yang lebih baik!",
  	 	 	 	 	 	"eng": "Get even better equipments!"
  	 	 	 	 	},
  	 	 	 	 	"description": {
- 	 	 	 	 	 	"trans": "Peralatan Kamu saat ini tampaknya ketinggalan jabatan untuk levelmu, coba Print yang lebih kuat untuk menggantinya",
+ 	 	 	 	 	 	"trans": "Peralatan Kamu saat ini tampaknya ketinggalan jaman untuk levelmu, coba Buat (Cetak atau temukan) yang lebih kuat untuk menggantinya",
  	 	 	 	 	 	"eng": "Your current equipment seems abit outdated for your level, try printing stronger ones to replace them"
  	 	 	 	 	}
  	 	 	 	},
@@ -1208,27 +1283,27 @@
  	 	 	 	 	 	"vars": [
  	 	 	 	 	 	 	"itemName"
  	 	 	 	 	 	],
- 	 	 	 	 	 	"trans": "Kamu dapat memutakhirkan peralatanmu dengan menggunakan ${itemName}",
+ 	 	 	 	 	 	"trans": "Kamu dapat meningkatkan peralatanmu dengan menggunakan ${itemName}",
  	 	 	 	 	 	"eng": "You can upgrade your equipment by using the ${itemName}"
  	 	 	 	 	}
  	 	 	 	},
  	 	 	 	"aiCore": {
  	 	 	 	 	"title": {
- 	 	 	 	 	 	"trans": "Gunakan AI CORN",
+ 	 	 	 	 	 	"trans": "Gunakan Inti AI",
  	 	 	 	 	 	"eng": "Use AI Core"
  	 	 	 	 	},
  	 	 	 	 	"description": {
- 	 	 	 	 	 	"trans": "Sepertinya Kamu memiliki beberapa inti AI, menggunakannya untuk melakukan level afk otomatis di area Level yang sesuai.",
+ 	 	 	 	 	 	"trans": "Sepertinya Kamu memiliki beberapa inti AI, gunakan untuk melakukan AFK auto leveling di area Level yang sesuai.",
  	 	 	 	 	 	"eng": "Looks like you have some AI Cores, use them to do AFK auto leveling in appropriate level area."
  	 	 	 	 	}
  	 	 	 	},
  	 	 	 	"noAiCore": {
  	 	 	 	 	"title": {
- 	 	 	 	 	 	"trans": "Dapatkan AI Core",
+ 	 	 	 	 	 	"trans": "Dapatkan Inti AI",
  	 	 	 	 	 	"eng": "Acquire AI Cores"
  	 	 	 	 	},
  	 	 	 	 	"description": {
- 	 	 	 	 	 	"trans": "Kamu mungkin mendapatkan inti ai dengan: \n         - Bergaul di berbagai lokasi \n         - Kerajinan dengan prosesor hash dan memo teknologi \n         - Menjarah dari musuh di semua lokasi",
+ 	 	 	 	 	 	"trans": "Kamu mungkin mendapatkan inti ai dengan: \n         - Memulung di berbagai lokasi \n         - Membuatnya dengan Hash Processors dan sisa-sisa teknologi (Tech Scraps) \n         - Menjarah dari musuh di semua lokasi",
  	 	 	 	 	 	"eng": "You may get AI Cores by: \r\n        - Scavenge in various locations\r\n        - Crafting with Hash Processors and Tech Scraps\r\n        - Looting from enemies in all locations"
  	 	 	 	 	}
  	 	 	 	},
@@ -1241,7 +1316,7 @@
  	 	 	},
  	 	 	"globalQuest": {
  	 	 	 	"progressTitle": {
- 	 	 	 	 	"trans": "Penerobosan Benteng SL-Data",
+ 	 	 	 	 	"trans": "Peretasan Benteng Data SL",
  	 	 	 	 	"eng": "SL-Data Fortress Breach"
  	 	 	 	},
  	 	 	 	"infoBox": {
@@ -1250,13 +1325,13 @@
  	 	 	 	 	 	"eng": "Cyberspace breach in progress"
  	 	 	 	 	},
  	 	 	 	 	"subtitle": {
- 	 	 	 	 	 	"trans": "Bergabunglah dengan dengan netrunner lain untuk menembus benteng SL-Data untuk memberikan semua pemain buff",
+ 	 	 	 	 	 	"trans": "Bergabunglah dengan dengan Netrunner lain dalam meretas benteng Data SL untuk memberikan semua pemain buff",
  	 	 	 	 	 	"eng": "Join forces with other Netrunners to breach the SL-Data Fortress to grant all players with buff"
  	 	 	 	 	}
  	 	 	 	},
  	 	 	 	"completeBox": {
  	 	 	 	 	"title": {
- 	 	 	 	 	 	"trans": "Operasi penembusan selesai",
+ 	 	 	 	 	 	"trans": "Operasi peretasan selesai",
  	 	 	 	 	 	"eng": "Breach operation completed"
  	 	 	 	 	},
  	 	 	 	 	"subtitle": {
@@ -1318,73 +1393,14 @@
  	 	 	 	}
  	 	 	},
  	 	 	"content": {
- 	 	 	 	"trans": "Jika Kamu memiliki pertanyaan, jangan ragu untuk menghubungi Dexter secara langsung melalui perselisihan resmi (tautan dapat ditemukan di menu mengambang -> tautan) atau email ke ching.huang.dexter@gmail.com",
+ 	 	 	 	"trans": "Jika Kamu memiliki pertanyaan, jangan ragu untuk menghubungi Dexter secara langsung melalui Discord resmi kami (tautan dapat ditemukan di menu mengambang (Floating Menu) -> tautan) atau email ke ching.huang.dexter@gmail.com",
  	 	 	 	"eng": "If you have any questions please feel free to contact Dexter directly via official Discord (Link can be found in Floating Menu -> Links) or email to ching.huang.dexter@gmail.com"
- 	 	 	}
- 	 	},
- 	 	"tipsBox": {
- 	 	 	"title": {
- 	 	 	 	"trans": "Pro Tips",
- 	 	 	 	"eng": "Pro Tips"
- 	 	 	},
- 	 	 	"description": {
- 	 	 	 	"trans": "Klik untuk mendapatkan tips baru",
- 	 	 	 	"eng": "Click to get new tips"
  	 	 	}
  	 	},
  	 	"travel": {
  	 	 	"notUnlocked": {
  	 	 	 	"trans": "Kamu belum membuka kunci area ini",
  	 	 	 	"eng": "You have not unlocked this area yet"
- 	 	 	}
- 	 	},
- 	 	"machineCrafting": {
- 	 	 	"titleBox": {
- 	 	 	 	"tile": {
- 	 	 	 	 	"trans": "sistem menganggur",
- 	 	 	 	 	"eng": "system idle"
- 	 	 	 	},
- 	 	 	 	"subtitle": {
- 	 	 	 	 	"trans": "Masukkan sebuah item",
- 	 	 	 	 	"eng": "Please insert an item"
- 	 	 	 	}
- 	 	 	},
- 	 	 	"selectItemButton": {
- 	 	 	 	"trans": "Daur Ulang item",
- 	 	 	 	"eng": "Recycle Item"
- 	 	 	},
- 	 	 	"selectAmount": {
- 	 	 	 	"title": {
- 	 	 	 	 	"trans": "Pilih jumlah",
- 	 	 	 	 	"eng": "Please select amount"
- 	 	 	 	},
- 	 	 	 	"subtitle": {
- 	 	 	 	 	"vars": [
- 	 	 	 	 	 	"timeStr"
- 	 	 	 	 	],
- 	 	 	 	 	"trans": "Ini akan membutuhkan waktu selama ${timeStr}",
- 	 	 	 	 	"eng": "This will take ${timeStr}"
- 	 	 	 	}
- 	 	 	},
- 	 	 	"confirmModal": {
- 	 	 	 	"title": {
- 	 	 	 	 	"vars": [
- 	 	 	 	 	 	"itemName"
- 	 	 	 	 	],
- 	 	 	 	 	"trans": "Pilih ${itemName}?",
- 	 	 	 	 	"eng": "Select ${itemName}?"
- 	 	 	 	},
- 	 	 	 	"subtitle": {
- 	 	 	 	 	"vars": [
- 	 	 	 	 	 	"itemName"
- 	 	 	 	 	],
- 	 	 	 	 	"trans": "Anda yakin ingin memilih ${itemName}?",
- 	 	 	 	 	"eng": "Are you sure you want to select ${itemName}?"
- 	 	 	 	},
- 	 	 	 	"confirmText": {
- 	 	 	 	 	"trans": "saya yakin",
- 	 	 	 	 	"eng": "I am sure"
- 	 	 	 	}
  	 	 	}
  	 	},
  	 	"setting": {
@@ -1401,24 +1417,24 @@
  	 	 	 	"eng": "Language"
  	 	 	},
  	 	 	"enableBackgroundMusic": {
- 	 	 	 	"trans": "latarbelakang musik",
+ 	 	 	 	"trans": "musik latar belakang (BGM)",
  	 	 	 	"eng": "background music"
  	 	 	},
  	 	 	"enableSoundEffects": {
- 	 	 	 	"trans": "efek suara",
+ 	 	 	 	"trans": "efek suara (SFX)",
  	 	 	 	"eng": "sound effects"
  	 	 	},
  	 	 	"enableInGameNotificationSound": {
- 	 	 	 	"trans": "Dalam suara pemberitahuan game",
+ 	 	 	 	"trans": "Suara notifikasi dalam game",
  	 	 	 	"eng": "In game notification sound"
  	 	 	},
  	 	 	"disableAttackBar": {
  	 	 	 	"title": {
- 	 	 	 	 	"trans": "Nonaktifkan bar waktu serangan",
+ 	 	 	 	 	"trans": "Nonaktifkan timing bar serangan",
  	 	 	 	 	"eng": "Disable Attack Timing Bar"
  	 	 	 	},
  	 	 	 	"description": {
- 	 	 	 	 	"trans": "Menonaktifkan bar waktu serangan tidak akan memberikan kerusakan ekstra",
+ 	 	 	 	 	"trans": "Menonaktifkan timing bar serangan tidak akan memberikan kerusakan ekstra",
  	 	 	 	 	"eng": "Disabling attack timing bar will not grant extra damage"
  	 	 	 	}
  	 	 	},
@@ -1440,13 +1456,13 @@
  	 	 	 	 	"eng": "Hide NPC"
  	 	 	 	},
  	 	 	 	"description": {
- 	 	 	 	 	"trans": "Sembunyikan seni NPC di layar",
+ 	 	 	 	 	"trans": "Sembunyikan art NPC di layar",
  	 	 	 	 	"eng": "Hide NPC art on screen"
  	 	 	 	}
  	 	 	},
  	 	 	"disableSkipRespectNoti": {
  	 	 	 	"title": {
- 	 	 	 	 	"trans": "Nonaktifkan Pemberitahuan Skip Respect",
+ 	 	 	 	 	"trans": "Nonaktifkan Notifikasi Skip Respect",
  	 	 	 	 	"eng": "Disable Skip Respect Notification"
  	 	 	 	}
  	 	 	},
@@ -1456,7 +1472,7 @@
  	 	 	 	 	"eng": "Disable Chat Effect"
  	 	 	 	},
  	 	 	 	"description": {
- 	 	 	 	 	"trans": "Nonaktifkan jika tab obrolan tertinggal saat lompatan",
+ 	 	 	 	 	"trans": "Nonaktifkan jika tab obrolan nge-lag saat skip",
  	 	 	 	 	"eng": "Disable if chat tab lags during skips"
  	 	 	 	}
  	 	 	},
@@ -1485,28 +1501,34 @@
  	 	 	 	}
  	 	 	},
  	 	 	"dangerZone": {
- 	 	 	 	"trans": "Daerah Bahaya",
+ 	 	 	 	"trans": "Daerah Berbahaya",
  	 	 	 	"eng": "Danger Zone"
  	 	 	},
  	 	 	"restartRequired": {
- 	 	 	 	"trans": "Aplikasi akan merestart sendiri setelah tersimpan",
+ 	 	 	 	"trans": "Aplikasi akan merestart sendiri setelah tersimpan (Save)",
  	 	 	 	"eng": "App will self restart after save"
  	 	 	},
  	 	 	"save": {
- 	 	 	 	"trans": "Simpan",
+ 	 	 	 	"trans": "Simpan (Save)",
  	 	 	 	"eng": "save"
+ 	 	 	}
+ 	 	},
+ 	 	"petShop": {
+ 	 	 	"adapt": {
+ 	 	 	 	"trans": "Adopsi hewan peliharaan baru",
+ 	 	 	 	"eng": "Adopt a new pet"
  	 	 	}
  	 	},
  	 	"rangeSelector": {
  	 	 	"selectMaxValue": {
  	 	 	 	"title": {
- 	 	 	 	 	"trans": "Pilih Maks Nilai",
+ 	 	 	 	 	"trans": "Pilih Nilai Maksimal",
  	 	 	 	 	"eng": "Select max value"
  	 	 	 	}
  	 	 	},
  	 	 	"selectMinValue": {
  	 	 	 	"title": {
- 	 	 	 	 	"trans": "Pilih Min Nilai",
+ 	 	 	 	 	"trans": "Pilih Nilai Minimal",
  	 	 	 	 	"eng": "Select min value"
  	 	 	 	}
  	 	 	}
@@ -1521,7 +1543,7 @@
  	 	},
  	 	"job": {
  	 	 	"cantEnterError": {
- 	 	 	 	"trans": "Kamu membutuhkan setidaknya Level 2 untuk mengakses Hub Pekerjaan",
+ 	 	 	 	"trans": "Kamu membutuhkan setidaknya Level 2 untuk mengakses Pusat Pekerjaan",
  	 	 	 	"eng": "You need to be at least level 2 to access the job hub"
  	 	 	}
  	 	},
@@ -1532,7 +1554,7 @@
  	 	 	 	 	"eng": "Cancel Afk and logout?"
  	 	 	 	},
  	 	 	 	"description": {
- 	 	 	 	 	"trans": "Apakah Kamu yakin ingin membatalkan AFK dan logout? Sumber daya yang digunakan untuk memulai tugas tidak akan dikembalikan.",
+ 	 	 	 	 	"trans": "Apakah Kamu yakin ingin membatalkan AFK dan logout? Sumber daya yang digunakan untuk memulai tugas ini tidak akan dikembalikan.",
  	 	 	 	 	"eng": "Are you sure you want to cancel your afk and logout? the resource used to start the task will NOT be refunded."
  	 	 	 	}
  	 	 	}
@@ -1571,6 +1593,41 @@
  	 	 	"itemLocked": {
  	 	 	 	"trans": "Item ini terkunci",
  	 	 	 	"eng": "This item is locked"
+ 	 	 	}
+ 	 	},
+ 	 	"machineCrafting": {
+ 	 	 	"selectAmount": {
+ 	 	 	 	"title": {
+ 	 	 	 	 	"trans": "Pilih jumlah",
+ 	 	 	 	 	"eng": "Please select amount"
+ 	 	 	 	},
+ 	 	 	 	"subtitle": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"timeStr"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "Ini akan membutuhkan waktu selama ${timeStr}",
+ 	 	 	 	 	"eng": "This will take ${timeStr}"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"confirmModal": {
+ 	 	 	 	"title": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"itemName"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "Pilih ${itemName}?",
+ 	 	 	 	 	"eng": "Select ${itemName}?"
+ 	 	 	 	},
+ 	 	 	 	"subtitle": {
+ 	 	 	 	 	"vars": [
+ 	 	 	 	 	 	"itemName"
+ 	 	 	 	 	],
+ 	 	 	 	 	"trans": "Anda yakin ingin memilih ${itemName}?",
+ 	 	 	 	 	"eng": "Are you sure you want to select ${itemName}?"
+ 	 	 	 	},
+ 	 	 	 	"confirmText": {
+ 	 	 	 	 	"trans": "saya yakin",
+ 	 	 	 	 	"eng": "I am sure"
+ 	 	 	 	}
  	 	 	}
  	 	},
  	 	"calibration": {
@@ -1633,7 +1690,7 @@
  	 	 	 	 	"eng": "Assign Rank"
  	 	 	 	},
  	 	 	 	"kickPlayer": {
- 	 	 	 	 	"trans": "tendangan pemain",
+ 	 	 	 	 	"trans": "Keluarkan pemain",
  	 	 	 	 	"eng": "kick player"
  	 	 	 	}
  	 	 	},
@@ -1682,6 +1739,39 @@
  	 	 	 	"eng": "Enter system passcode to proceed"
  	 	 	}
  	 	},
+ 	 	"marketItemPurchaseModal": {
+ 	 	 	"amount": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"price",
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${price} btc per potong untuk ${amount} potongan",
+ 	 	 	 	"eng": "${price} btc per piece for ${amount} pieces"
+ 	 	 	}
+ 	 	},
+ 	 	"marketItemSellModal": {
+ 	 	 	"amountTitle": {
+ 	 	 	 	"trans": "Kuantitas untuk dipasarkan",
+ 	 	 	 	"eng": "Quantity to put on market"
+ 	 	 	},
+ 	 	 	"priceTitle": {
+ 	 	 	 	"trans": "Harga per potong",
+ 	 	 	 	"eng": "Price per piece"
+ 	 	 	},
+ 	 	 	"footer": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"price",
+ 	 	 	 	 	"quantity",
+ 	 	 	 	 	"totalPrice"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Item ini akan dijual seharga ${price} per potong untuk ${quantity} potongan, jika semua bagian dijual, Anda akan menerima ${totalPrice}",
+ 	 	 	 	"eng": "This item will be sold for ${price} per piece for ${quantity} pieces, if all pieces are sold you will receive ${totalPrice}"
+ 	 	 	},
+ 	 	 	"sell": {
+ 	 	 	 	"trans": "Tempatkan item di pasar",
+ 	 	 	 	"eng": "Place Item on Market"
+ 	 	 	}
+ 	 	},
  	 	"dungeon": {
  	 	 	"public": {
  	 	 	 	"trans": "Dungeon publik",
@@ -1701,17 +1791,17 @@
  	 	 	 	 	"eng": "Dungeons"
  	 	 	 	},
  	 	 	 	"des": {
- 	 	 	 	 	"trans": "Di rubanah, Kamu tidak akan sembuh setelah setiap pertarungan, dan musuh lebih kuat, tetapi ada lebih banyak exp dan jarahan",
+ 	 	 	 	 	"trans": "Di dungeon, Kamu tidak akan sembuh setelah setiap pertarungan, dan musuh menjadi lebih kuat, tetapi ada lebih banyak exp dan jarahan",
  	 	 	 	 	"eng": "In dungeons, you will not heal after each fight, and enemies are stronger, but there are more exp and loots"
  	 	 	 	}
  	 	 	},
  	 	 	"underMaintenance": {
  	 	 	 	"title": {
- 	 	 	 	 	"trans": "Dungeon di bawah pemeliharaan",
+ 	 	 	 	 	"trans": "Dungeon di bawah pemeliharaan (Maintenance)",
  	 	 	 	 	"eng": "Dungeons Under Maintenance"
  	 	 	 	},
  	 	 	 	"des": {
- 	 	 	 	 	"trans": "Dungeon saat ini sedang dalam pemeliharaan, Dexter bekerja untuk membawanya kembali sesegera mungkin!",
+ 	 	 	 	 	"trans": "Dungeon saat ini sedang dalam pemeliharaan (Maintenance), Dexter bekerja untuk membawanya kembali sesegera mungkin!",
  	 	 	 	 	"eng": "Dungeons are currently under maintenance, Dexter is working on bringing them back as soon as possible!"
  	 	 	 	}
  	 	 	},
@@ -1719,7 +1809,7 @@
  	 	 	 	"trans": "Mungkin membeli beberapa Item penyembuhan terlebih dahulu?",
  	 	 	 	"eng": "Maybe buy some healing item first?",
  	 	 	 	"des": {
- 	 	 	 	 	"trans": "Sepertinya Kamu tidak memiliki rasa sakit, beli dari Toko Trinoky di kota terlebih dahulu sebelum memasuki rubanah, karena Kamu tidak akan mengatur setelah pertempuran di rubanah",
+ 	 	 	 	 	"trans": "Sepertinya Kamu tidak memiliki penghilang rasa sakit, beli dari Toko Trinoky di kota terlebih dahulu sebelum memasuki dungeon, mengingat kamu tidak akan regen setelah pertempuran di dungeon",
  	 	 	 	 	"eng": "Seems like you dont have any Pain Away with you, purchase it from Trinoky Mart in the city first before entering dungeons, since you will not regen after battles in dungeon"
  	 	 	 	},
  	 	 	 	"cancel": {
@@ -1955,6 +2045,10 @@
  	 	 	 	],
  	 	 	 	"trans": "${playerCount} pemain tersambung",
  	 	 	 	"eng": "${playerCount} player(s) connected"
+ 	 	 	},
+ 	 	 	"passwordProtected": {
+ 	 	 	 	"trans": "Dilindungi kata sandi",
+ 	 	 	 	"eng": "Password protected"
  	 	 	}
  	 	},
  	 	"equipmentUpgrade": {
@@ -2394,6 +2488,12 @@
  	 	 	"unlock": {
  	 	 	 	"trans": "Membuka kunci",
  	 	 	 	"eng": "Unlock"
+ 	 	 	},
+ 	 	 	"error": {
+ 	 	 	 	"notEnabled": {
+ 	 	 	 	 	"trans": "Wadah ini tidak dapat dibuka pada saat ini",
+ 	 	 	 	 	"eng": "This container cannot be unlocked at this time"
+ 	 	 	 	}
  	 	 	}
  	 	}
  	},
@@ -2443,6 +2543,18 @@
  	 	 	"name": {
  	 	 	 	"trans": "pita kaset",
  	 	 	 	"eng": "cassette tape"
+ 	 	 	}
+ 	 	},
+ 	 	"rareEquipmentCrate": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Peti Peralatan Langka",
+ 	 	 	 	"eng": "Rare Equipment Crate"
+ 	 	 	}
+ 	 	},
+ 	 	"freeSkip": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Skip pribadi gratis",
+ 	 	 	 	"eng": "Free Personal Skip"
  	 	 	}
  	 	},
  	 	"cycle": {
@@ -2584,10 +2696,6 @@
  	 	 	"trans": "Menerima",
  	 	 	"eng": "Receives"
  	 	},
- 	 	"inputPlaceholder": {
- 	 	 	"trans": "Masukkan pesan untuk mulai mengobrol",
- 	 	 	"eng": "Enter message to start chatting"
- 	 	},
  	 	"moderators": {
  	 	 	"trans": "Moderator",
  	 	 	"eng": "moderators"
@@ -2694,6 +2802,23 @@
  	 	"thief": {
  	 	 	"trans": "Techno-The-The-Penyimpanan",
  	 	 	"eng": "Techno-Thief"
+ 	 	}
+ 	},
+ 	"globalPartyBanner": {
+ 	 	"title": {
+ 	 	 	"trans": "🎉 Partai Global 🎉",
+ 	 	 	"eng": "🎉 Global Party 🎉"
+ 	 	},
+ 	 	"subtitle": {
+ 	 	 	"trans": "Diselenggarakan oleh:",
+ 	 	 	"eng": "Hosted by:"
+ 	 	},
+ 	 	"button,": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "Berikan kredibilitas jalanan",
+ 	 	 	"eng": "Give street cred"
  	 	}
  	},
  	"cost": {
@@ -3055,6 +3180,16 @@
  	 	 	 	"trans": "Musuh dari geng Voodoo Boys menyerang dengan damage yang lebih tinggi padamu",
  	 	 	 	"eng": "Enemies of Voodoo Boys gang deals increased damage to you"
  	 	 	}
+ 	 	},
+ 	 	"afkExpMultiplier": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Pengganda AFK Exp",
+ 	 	 	 	"eng": "AFK EXP multiplier"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Tingkatkan exp yang Anda terima dari tugas AFK",
+ 	 	 	 	"eng": "Increase EXP you receive from AFK tasks"
+ 	 	 	}
  	 	}
  	},
  	"modal": {
@@ -3090,13 +3225,13 @@
  	 	 	 	"trans": "Akses ditolak. Profil non-manusia terdeteksi.",
  	 	 	 	"eng": "Access denied. non-human profile detected."
  	 	 	},
+ 	 	 	"report1": {
+ 	 	 	 	"trans": "Laporkan & Blokir",
+ 	 	 	 	"eng": "Report & Block"
+ 	 	 	},
  	 	 	"block": {
  	 	 	 	"trans": "Blokir",
  	 	 	 	"eng": "Block"
- 	 	 	},
- 	 	 	"report": {
- 	 	 	 	"trans": "Laporkan dan Blokir",
- 	 	 	 	"eng": "Report and Block"
  	 	 	},
  	 	 	"openPlayerGang": {
  	 	 	 	"trans": "Lihat Gang",
@@ -3249,14 +3384,14 @@
  	 	"resultScreen": {
  	 	 	"title": {
  	 	 	 	"trans": "Menang",
- 	 	 	 	"eng": "Victory"
+ 	 	 	 	"eng": "Level up"
  	 	 	},
  	 	 	"subTitle": {
  	 	 	 	"vars": [
  	 	 	 	 	"levelName"
  	 	 	 	],
  	 	 	 	"trans": "Selamat, Kamu telah meningkatkan level ${levelName} Kamu!",
- 	 	 	 	"eng": "Congratulation, you have leveled up your ${levelName}!"
+ 	 	 	 	"eng": "Congratulations, you have leveled up your ${levelName}!"
  	 	 	},
  	 	 	"fromTo": {
  	 	 	 	"vars": [
@@ -3265,6 +3400,10 @@
  	 	 	 	],
  	 	 	 	"trans": "${from} => ${to}",
  	 	 	 	"eng": "${from} => ${to}"
+ 	 	 	},
+ 	 	 	"title2": {
+ 	 	 	 	"trans": "Diterima",
+ 	 	 	 	"eng": "Received"
  	 	 	}
  	 	},
  	 	"review": {
@@ -3338,6 +3477,30 @@
  	 	 	 	 	"eng": "Reload"
  	 	 	 	}
  	 	 	}
+ 	 	}
+ 	},
+ 	"playerDetailsAssetsTab": {
+ 	 	"noAssets": {
+ 	 	 	"trans": "Pemain ini tidak memiliki aset apapun",
+ 	 	 	"eng": "this player does not own any assets"
+ 	 	},
+ 	 	"apartment": {
+ 	 	 	"title": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"playerName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Apartemen ${playerName}",
+ 	 	 	 	"eng": "${playerName}'s Apartment"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"playerStatusDisplay": {
+ 	 	"title": {
+ 	 	 	"vars": [
+ 	 	 	 	"action"
+ 	 	 	],
+ 	 	 	"trans": "${action} sedang berlangsung",
+ 	 	 	"eng": "${action} in progress"
  	 	}
  	},
  	"time": {
@@ -3613,16 +3776,16 @@
  	 	 	 	 	"eng": "dungeon warrior"
  	 	 	 	}
  	 	 	},
- 	 	 	"clearDungeonCoOp": {
- 	 	 	 	"name": {
- 	 	 	 	 	"trans": "Teman dungeon",
- 	 	 	 	 	"eng": "dungeon friends"
- 	 	 	 	}
- 	 	 	},
  	 	 	"clearDungeon": {
  	 	 	 	"name": {
  	 	 	 	 	"trans": "Penjelajah dungeon",
  	 	 	 	 	"eng": "dungeon crawler"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"clearDungeonCoOp": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Teman dungeon",
+ 	 	 	 	 	"eng": "dungeon friends"
  	 	 	 	}
  	 	 	},
  	 	 	"dealDamage": {
@@ -3689,10 +3852,148 @@
  	 	 	"eng": "Appeal Form"
  	 	}
  	},
+ 	"pet": {
+ 	 	"noName": {
+ 	 	 	"trans": "Tanpa nama",
+ 	 	 	"eng": "unnamed"
+ 	 	},
+ 	 	"nameTooShort": {
+ 	 	 	"vars": [
+ 	 	 	 	"length"
+ 	 	 	],
+ 	 	 	"trans": "Nama hewan peliharaan harus terdiri dari setidaknya ${length} karakter",
+ 	 	 	"eng": "Pet name must be at least ${length} characters long"
+ 	 	},
+ 	 	"nameTooLong": {
+ 	 	 	"vars": [
+ 	 	 	 	"length"
+ 	 	 	],
+ 	 	 	"trans": "Nama hewan peliharaan harus terdiri dari maksimal ${length} karakter",
+ 	 	 	"eng": "Pet name must be at most ${length} characters long"
+ 	 	},
+ 	 	"nameCantContainSpaces": {
+ 	 	 	"trans": "Nama hewan peliharaan tidak boleh mengandung spasi",
+ 	 	 	"eng": "Pet name can not contain spaces"
+ 	 	},
+ 	 	"rerollImage": {
+ 	 	 	"success": {
+ 	 	 	 	"trans": "Gambar hewan peliharaan berhasil diubah",
+ 	 	 	 	"eng": "Pet image changed successfully"
+ 	 	 	}
+ 	 	},
+ 	 	"adoption": {
+ 	 	 	"alreadyActivated": {
+ 	 	 	 	"trans": "Buff Adopsi Hewan Peliharaan sudah diaktifkan",
+ 	 	 	 	"eng": "Pet Adoption buff is already activated"
+ 	 	 	},
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player",
+ 	 	 	 	 	"npc"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${player} telah mengaktifkan Buff Adopsi, kamu bisa mengadopsi hewan peliharaan dari ${npc} selama durasi buff berlangsung!",
+ 	 	 	 	"eng": "${player} has activated Adoption Buff, you can adopt a pet from ${npc} within the buff duration!"
+ 	 	 	},
+ 	 	 	"activated": {
+ 	 	 	 	"trans": "Buff adopsi hewan peliharaan diaktifkan",
+ 	 	 	 	"eng": "Pet adoption buff activated"
+ 	 	 	}
+ 	 	},
+ 	 	"error": {
+ 	 	 	"interactedRecently": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"hours"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Kamu hanya bisa berinteraksi dengan hewan peliharaan pemain sekali setiap ${hours} jam",
+ 	 	 	 	"eng": "You can only interact with a player's pet once every ${hours} hours"
+ 	 	 	}
+ 	 	},
+ 	 	"played": {
+ 	 	 	"vars": [
+ 	 	 	 	"player",
+ 	 	 	 	"pet"
+ 	 	 	],
+ 	 	 	"trans": "${player} telah bermain dengan hewan peliharaanmu ${pet}",
+ 	 	 	"eng": "${player} has played with your pet ${pet}",
+ 	 	 	"success": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"playerName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Kamu sudah main dengan hewan peliharaan ${playerName}",
+ 	 	 	 	"eng": "You have played with ${playerName}'s pet"
+ 	 	 	}
+ 	 	},
+ 	 	"rename": {
+ 	 	 	"badWord": {
+ 	 	 	 	"trans": "Nama mengandung kata-kata yang tidak diperbolehkan",
+ 	 	 	 	"eng": "Name contains not allowed words"
+ 	 	 	},
+ 	 	 	"notEnoughIAP": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"price"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Kamu memerlukan ${price} Unit untuk mengganti nama peliharamu",
+ 	 	 	 	"eng": "You need ${price} Units to rename your pet"
+ 	 	 	}
+ 	 	},
+ 	 	"adopted": {
+ 	 	 	"vars": [
+ 	 	 	 	"player",
+ 	 	 	 	"pet"
+ 	 	 	],
+ 	 	 	"trans": "${player} telah mengadopsi ${pet}",
+ 	 	 	"eng": "${player} has adopted ${pet}",
+ 	 	 	"mail": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"pet"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Kamu telah mengadopsi ${pet}",
+ 	 	 	 	"eng": "You have adopted ${pet}"
+ 	 	 	}
+ 	 	},
+ 	 	"reviveActivate": {
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${player} telah menggunakan buff penyembuhan hewan peliharaan, kamu sekarang bisa menghidupkan kembali salah satu hewan peliharaanmu selama durasi buff berlangsung.",
+ 	 	 	 	"eng": "${player} has used pet revival buff, you can now revive one of your pet within the buff duration."
+ 	 	 	}
+ 	 	},
+ 	 	"revive": {
+ 	 	 	"activated": {
+ 	 	 	 	"trans": "Buff bangkitkan hewan peliharaan diaktifkan",
+ 	 	 	 	"eng": "Pet revive buff activated"
+ 	 	 	},
+ 	 	 	"success": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"petName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Kamu telah berhasil menghidupkan kembali ${petName}",
+ 	 	 	 	"eng": "You have revived ${petName}"
+ 	 	 	}
+ 	 	},
+ 	 	"reviveSuccess": {
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player",
+ 	 	 	 	 	"pet"
+ 	 	 	 	],
+ 	 	 	 	"trans": "${player} telah bangkit kembali ${pet}",
+ 	 	 	 	"eng": "${player} has revived ${pet}"
+ 	 	 	}
+ 	 	}
+ 	},
  	"priceTag": {
  	 	"free": {
  	 	 	"trans": "GRATIS",
  	 	 	"eng": "FREE"
+ 	 	}
+ 	},
+ 	"chatInput": {
+ 	 	"placeholder": {
+ 	 	 	"trans": "Masukkan Pesan...",
+ 	 	 	"eng": "Enter Message..."
  	 	}
  	},
  	"itemList": {
@@ -3730,6 +4031,12 @@
  	 	"max": {
  	 	 	"trans": "Max",
  	 	 	"eng": "max"
+ 	 	}
+ 	},
+ 	"giveCredButton": {
+ 	 	"giveCred": {
+ 	 	 	"trans": "Berikan kredibilitas jalanan",
+ 	 	 	"eng": "Give Street Cred"
  	 	}
  	},
  	"actionStartModal": {
@@ -3991,6 +4298,34 @@
  	 	 	"eng": "Click 'ACCEPT QUEST' to accept the quest, you may complete or abandon the quest at any time"
  	 	}
  	},
+ 	"enum": {
+ 	 	"apartmentType": {
+ 	 	 	"T1": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Apartemen kumuh",
+ 	 	 	 	 	"eng": "slum apartment"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"T2": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Apartemen",
+ 	 	 	 	 	"eng": "apartment"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"T3": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Apartemen mewah",
+ 	 	 	 	 	"eng": "luxury apartment"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"T4": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Penthouse",
+ 	 	 	 	 	"eng": "penthouse"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	}
+ 	},
  	"iapCurrency": {
  	 	"currency1": {
  	 	 	"name": {
@@ -4163,6 +4498,13 @@
  	 	 	"trans": "Menerima",
  	 	 	"eng": "Receive"
  	 	},
+ 	 	"bonusReward": {
+ 	 	 	"vars": [
+ 	 	 	 	"eventName"
+ 	 	 	],
+ 	 	 	"trans": "${eventName} bonus:",
+ 	 	 	"eng": "${eventName} bonus:"
+ 	 	},
  	 	"purchasing": {
  	 	 	"trans": "Pembelian",
  	 	 	"eng": "Purchasing"
@@ -4170,6 +4512,28 @@
  	 	"total": {
  	 	 	"trans": "total",
  	 	 	"eng": "total"
+ 	 	}
+ 	},
+ 	"bulkCraftingSubtype": {
+ 	 	"recycle": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Daur ulang",
+ 	 	 	 	"eng": "Recycle"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Tambahkan item untuk mendaur ulang lebih efisien",
+ 	 	 	 	"eng": "Add items to recycle them more efficiently"
+ 	 	 	}
+ 	 	},
+ 	 	"printSell": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Cetak & Jual",
+ 	 	 	 	"eng": "Print & Sell"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Mencetak barang dan menjualnya untuk uang",
+ 	 	 	 	"eng": "Print items and sell them for money"
+ 	 	 	}
  	 	}
  	},
  	"donationType": {
@@ -4248,6 +4612,46 @@
  	 	"donation18": {
  	 	 	"trans": "Prestise",
  	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation20": {
+ 	 	 	"trans": "Prestise",
+ 	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation21": {
+ 	 	 	"trans": "Prestise",
+ 	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation22": {
+ 	 	 	"trans": "Prestise",
+ 	 	 	"eng": "Prestige"
+ 	 	},
+ 	 	"donation23": {
+ 	 	 	"trans": "Halloween",
+ 	 	 	"eng": "Halloween"
+ 	 	},
+ 	 	"donation24": {
+ 	 	 	"trans": "Pengiriman",
+ 	 	 	"eng": "SkipSage"
+ 	 	},
+ 	 	"donation25": {
+ 	 	 	"trans": "Waktu Natal",
+ 	 	 	"eng": "Christmastime"
+ 	 	},
+ 	 	"donation26": {
+ 	 	 	"trans": "Cyberdragon",
+ 	 	 	"eng": "CyberDragon"
+ 	 	},
+ 	 	"donation27": {
+ 	 	 	"trans": "Lewati Tuhan",
+ 	 	 	"eng": "Skip Lord"
+ 	 	},
+ 	 	"donation28": {
+ 	 	 	"trans": "Sakura",
+ 	 	 	"eng": "Sakura"
+ 	 	},
+ 	 	"donation29": {
+ 	 	 	"trans": "Netrunner",
+ 	 	 	"eng": "Netrunner"
  	 	},
  	 	"moderator": {
  	 	 	"trans": "Moderator",
@@ -4990,6 +5394,406 @@
  	 	 	 	 	"eng": "More coming in future update"
  	 	 	 	}
  	 	 	}
+ 	 	},
+ 	 	"donation20": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Judul Donasi \"Prestige\"",
+ 	 	 	 	 	"eng": "\"Prestige\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Buka kunci Kustomisasi Gambar Profil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Bingkai putih (dengan animasi)",
+ 	 	 	 	 	"eng": "White frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Profil Putih (dengan animasi)",
+ 	 	 	 	 	"eng": "White Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Buka Kunci Bio Kustom",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Dekorasi barcode pada profil",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Kustomisasi moto geng",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Kustomisasi gambar geng",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Lebih banyak datang dalam pembaruan mendatang",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation21": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Judul Donasi \"Prestige\"",
+ 	 	 	 	 	"eng": "\"Prestige\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Buka kunci Kustomisasi Gambar Profil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Bingkai merah (dengan animasi)",
+ 	 	 	 	 	"eng": "Red frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Profil Merah (dengan animasi)",
+ 	 	 	 	 	"eng": "Red Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Buka Kunci Bio Kustom",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Dekorasi barcode pada profil",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Kustomisasi moto geng",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Kustomisasi gambar geng",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Lebih banyak datang dalam pembaruan mendatang",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation22": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Judul Donasi \"Prestige\"",
+ 	 	 	 	 	"eng": "\"Prestige\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Buka kunci Kustomisasi Gambar Profil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Bingkai tanda neon (dengan animasi)",
+ 	 	 	 	 	"eng": "Neon Sign frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Profil Ungu (dengan animasi)",
+ 	 	 	 	 	"eng": "Purple Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Buka Kunci Bio Kustom",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Dekorasi barcode pada profil",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Kustomisasi moto geng",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Kustomisasi gambar geng",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Lebih banyak datang dalam pembaruan mendatang",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation23": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Judul Donasi \"Halloween\"",
+ 	 	 	 	 	"eng": "\"Halloween\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Buka kunci Kustomisasi Gambar Profil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Bingkai Halloween (dengan animasi)",
+ 	 	 	 	 	"eng": "Halloween frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Profil Halloween (dengan animasi)",
+ 	 	 	 	 	"eng": "Halloween Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Buka Kunci Bio Kustom",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Dekorasi barcode pada profil",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Kustomisasi moto geng",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Kustomisasi gambar geng",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Lebih banyak datang dalam pembaruan mendatang",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation24": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Judul Donasi \"Skipgod\"",
+ 	 	 	 	 	"eng": "\"SkipSage\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Buka kunci Kustomisasi Gambar Profil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Bingkai skipgod (dengan animasi)",
+ 	 	 	 	 	"eng": "SkipSage frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Profil Skipgod (dengan animasi)",
+ 	 	 	 	 	"eng": "SkipSage Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Buka Kunci Bio Kustom",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Dekorasi barcode pada profil",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Kustomisasi moto geng",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Kustomisasi gambar geng",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Lebih banyak datang dalam pembaruan mendatang",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation25": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Judul donasi \"Christmastime\"",
+ 	 	 	 	 	"eng": "\"Christmastime\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Buka kunci Kustomisasi Gambar Profil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Bingkai christmastime (dengan animasi)",
+ 	 	 	 	 	"eng": "Christmastime frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Profil Christmastime (dengan animasi)",
+ 	 	 	 	 	"eng": "Christmastime Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Buka Kunci Bio Kustom",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Dekorasi barcode pada profil",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Kustomisasi moto geng",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Kustomisasi gambar geng",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Lebih banyak datang dalam pembaruan mendatang",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation26": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Judul Donasi \"Cyberdragon\"",
+ 	 	 	 	 	"eng": "\"CyberDragon\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Buka kunci Kustomisasi Gambar Profil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Bingkai cyberdragon (dengan animasi)",
+ 	 	 	 	 	"eng": "CyberDragon frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Profil Cyberdragon (dengan animasi)",
+ 	 	 	 	 	"eng": "CyberDragon Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Buka bio kustom",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Buka Kunci Bio Kustom",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Kustomisasi moto geng",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Kustomisasi gambar geng",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Lebih banyak datang dalam pembaruan mendatang",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation27": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Judul Donasi \"Lewati Lord\"",
+ 	 	 	 	 	"eng": "\"Skip Lord\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Buka kunci Kustomisasi Gambar Profil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Lewati bingkai Lord (dengan animasi)",
+ 	 	 	 	 	"eng": "Skip Lord frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Lewati Profil Lord (dengan animasi)",
+ 	 	 	 	 	"eng": "Skip Lord Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Buka bio kustom",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Buka Kunci Bio Kustom",
+ 	 	 	 	 	"eng": "Barcode decoration on profile"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Kustomisasi moto geng",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Kustomisasi gambar geng",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Lebih banyak datang dalam pembaruan mendatang",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation28": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "Judul Donasi \"Sakura\"",
+ 	 	 	 	 	"eng": "\"Sakura\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Buka opsi kustomisasi foto profil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Bingkai Sakura (dengan animasi)",
+ 	 	 	 	 	"eng": "Sakura frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Profil Sakura (dengan animasi)",
+ 	 	 	 	 	"eng": "Sakura Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Buka bio kustom",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Buka bio kustom",
+ 	 	 	 	 	"eng": "Sakura profile decoration"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Sesuaikan motto gengmu",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Sesuaikan gambar geng",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Akan ada lebih banyak konten di update mendatang",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
+ 	 	},
+ 	 	"donation29": {
+ 	 	 	"benefits": {
+ 	 	 	 	"1": {
+ 	 	 	 	 	"trans": "\"Netrunner\" - Judul Donasi",
+ 	 	 	 	 	"eng": "\"Netrunner\" donation title"
+ 	 	 	 	},
+ 	 	 	 	"2": {
+ 	 	 	 	 	"trans": "Buka opsi kustomisasi gambar profil",
+ 	 	 	 	 	"eng": "Unlock profile picture customization"
+ 	 	 	 	},
+ 	 	 	 	"3": {
+ 	 	 	 	 	"trans": "Frame Netrunner (dengan animasi)",
+ 	 	 	 	 	"eng": "Netrunner frame (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"4": {
+ 	 	 	 	 	"trans": "Profil Netrunner (dengan animasi)",
+ 	 	 	 	 	"eng": "Netrunner Profile (with animation)"
+ 	 	 	 	},
+ 	 	 	 	"5": {
+ 	 	 	 	 	"trans": "Buka bio kustom",
+ 	 	 	 	 	"eng": "Unlock custom bio"
+ 	 	 	 	},
+ 	 	 	 	"6": {
+ 	 	 	 	 	"trans": "Hiasan Profil Netrunner",
+ 	 	 	 	 	"eng": "Netrunner profile decoration"
+ 	 	 	 	},
+ 	 	 	 	"7": {
+ 	 	 	 	 	"trans": "Sesuaikan motto gengmu",
+ 	 	 	 	 	"eng": "Customize gang motto"
+ 	 	 	 	},
+ 	 	 	 	"8": {
+ 	 	 	 	 	"trans": "Sesuaikan gambar gengmu",
+ 	 	 	 	 	"eng": "Customize gang image"
+ 	 	 	 	},
+ 	 	 	 	"9": {
+ 	 	 	 	 	"trans": "Bakal ada tambahan di update mendatang nih bosku",
+ 	 	 	 	 	"eng": "More coming in future update"
+ 	 	 	 	}
+ 	 	 	}
  	 	}
  	},
  	"equipmentMarks": {
@@ -5058,6 +5862,33 @@
  	 	 	"eng": "backpack"
  	 	}
  	},
+ 	"gameEvent": {
+ 	 	"lunarNewYear": {
+ 	 	 	"trans": "Tahun Baru Imlek",
+ 	 	 	"eng": "Lunar New Year"
+ 	 	},
+ 	 	"halloween": {
+ 	 	 	"trans": "Halloween",
+ 	 	 	"eng": "Halloween"
+ 	 	},
+ 	 	"thanksgiving": {
+ 	 	 	"trans": "Thanksgiving",
+ 	 	 	"eng": "Thanksgiving"
+ 	 	},
+ 	 	"christmas": {
+ 	 	 	"trans": "Natal",
+ 	 	 	"eng": "Christmas"
+ 	 	},
+ 	 	"sakura": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Maret",
+ 	 	 	 	"eng": "${percent}% off during event",
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	]
+ 	 	 	}
+ 	 	}
+ 	},
  	"itemFilterType": {
  	 	"shopSell": {
  	 	 	"description": {
@@ -5071,6 +5902,12 @@
  	 	 	"name": {
  	 	 	 	"trans": "Peralatan yang tidak diketahui",
  	 	 	 	"eng": "Unknown Equipment"
+ 	 	 	}
+ 	 	},
+ 	 	"unknownCache": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Cache yang tidak diketahui",
+ 	 	 	 	"eng": "Unknown Cache"
  	 	 	}
  	 	},
  	 	"aiCore": {
@@ -5738,6 +6575,16 @@
  	 	 	 	"eng": "You get some love, and you get some love! everyone gets some love!.\r\n        When used everyone loves each other\r\n        This effects all players fow 10 minutes"
  	 	 	}
  	 	},
+ 	 	"chatExploitPosh": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Transmitter eksploit chat [Posh]",
+ 	 	 	 	"eng": "Chat exploit transmitter [Posh]"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Setelah diaktifkan, semua pesan yang disampaikan oleh warga chat realm kita akan mengalami metamorfosis yang menyenangkan, menghiasi dirinya dengan pakaian terhormat dari bahasa Inggris khas pria selama tepat 10 menit. trik ini hanya akan berfungsi dengan baik dengan bahasa Inggris",
+ 	 	 	 	"eng": "Upon activation, all correspondence proffered by the denizens of our chat realm shall undergo a delightful metamorphosis, adorning itself in the distinguished garb of gentlemanly English for a duration of precisely 10 minutes. this exploit will only work well with English"
+ 	 	 	}
+ 	 	},
  	 	"upgradeResetShard": {
  	 	 	"name": {
  	 	 	 	"trans": "Pecahan Pengaturan Ulang Pabrik.",
@@ -5786,6 +6633,16 @@
  	 	 	"description": {
  	 	 	 	"trans": "Kontainer terenkripsi dengan dekorasi merah, hijau dan logo 'Cybersanta ™' di sisi itu.",
  	 	 	 	"eng": "An encrypted container with red, green decoration and a 'CyberSanta™' logo on the side of it."
+ 	 	 	}
+ 	 	},
+ 	 	"christmasGift2": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Wadah beku",
+ 	 	 	 	"eng": "Frosty Container"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Sebuah hadiah misteri yang dibungkus dengan kemasan bertema kepingan salju yang berkilau. Anda hanya dapat membukanya di [terminal] selama bulan Desember.",
+ 	 	 	 	"eng": "A mystery gift wrapped in sparkling, snowflake-themed packaging. You can only unlock it at the [Terminal] during December."
  	 	 	}
  	 	},
  	 	"rngInterferer": {
@@ -5875,6 +6732,19 @@
  	 	 	 	"eng": "These dumplings are unlike any other. Made with love and care by Yen, these delicious pockets of goodness are filled with the finest ingredients and cooked to perfection.\\n recover ${percent}% health upon consumption"
  	 	 	}
  	 	},
+ 	 	"pumpkinPie": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Pai labu",
+ 	 	 	 	"eng": "Pumpkin Pie"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Pie labu yang lezat. Pie ini memiliki banyak krim vanilla tebal di atasnya, lezat! \\ nrecover ${percent}% kesehatan setelah konsumsi",
+ 	 	 	 	"eng": "A delicious pumpkin pie. this pie has big load of thick vanilla cream over it, delicious!\\nrecover ${percent}% health upon consumption"
+ 	 	 	}
+ 	 	},
  	 	"riceCake": {
  	 	 	"name": {
  	 	 	 	"trans": "Kue beras",
@@ -5926,6 +6796,153 @@
  	 	 	"description": {
  	 	 	 	"trans": "Token yang dapat digunakan untuk bertukar item",
  	 	 	 	"eng": "A token that can be used to exchange items"
+ 	 	 	}
+ 	 	},
+ 	 	"techScrapCluster": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Cluster memo teknologi",
+ 	 	 	 	"eng": "Tech Scrap Cluster"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Cluster memo teknologi berisi 1000 memo teknologi, dapat digunakan untuk dengan mudah menyimpan dan berdagang",
+ 	 	 	 	"eng": "A Tech Scrap Cluster contains 1000 Tech Scraps, can be used to easily store and trade"
+ 	 	 	}
+ 	 	},
+ 	 	"rareEquipmentCrate": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Peti Peralatan Langka",
+ 	 	 	 	"eng": "Rare Equipment Crate"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Peti yang berisi peralatan acak atau jarahan lainnya",
+ 	 	 	 	"eng": "A crate that contains a random equipments or other loots"
+ 	 	 	}
+ 	 	},
+ 	 	"globalPartyBuff": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Deployer Partai Global",
+ 	 	 	 	"eng": "Global Party Deployer"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"afkPercent",
+ 	 	 	 	 	"btcPercent",
+ 	 	 	 	 	"expPercent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Saat dikerahkan, kurangi waktu AFK sebesar ${afkPercent}%, peningkatan BTC diperoleh sebesar ${btcPercent}%, tambah exp diperoleh sebesar ${expPercent}%\\ nand spanduk akan ditampilkan di layar obrolan dengan nama Anda menunjukkan bahwa Anda telah digunakan buff",
+ 	 	 	 	"eng": "When deployed, reduce AFK time by ${afkPercent}%, increased BTC gained by ${btcPercent}%, increase EXP gained by ${expPercent}%\\nAnd a banner will be shown in chat screen with your name indicating that you have deployed the buff"
+ 	 	 	},
+ 	 	 	"announcement": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"afkPercent",
+ 	 	 	 	 	"btcPercent",
+ 	 	 	 	 	"expPercent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "🎉IT WAKTU PIHAK! 🥳, kurangi waktu AFK sebesar ${afkPercent}%, peningkatan BTC diperoleh dengan ${btcPercent}%, Tingkatkan exp diperoleh sebesar ${expPercent}%",
+ 	 	 	 	"eng": "🎉Its Party Time!🥳, reduce AFK time by ${afkPercent}%, increased BTC gained by ${btcPercent}%, increase EXP gained by ${expPercent}%"
+ 	 	 	}
+ 	 	},
+ 	 	"turkey": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Kalkun panggang",
+ 	 	 	 	"eng": "Roasted Turkey"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Kalkun panggang yang lezat, ketika dikonsumsi peningkatan exp yang diterima dalam tugas AFK sebesar ${percent}%",
+ 	 	 	 	"eng": "A delicious roasted turkey, when consumed increases EXP received in AFK tasks by ${percent}%"
+ 	 	 	}
+ 	 	},
+ 	 	"pudding": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Puding Natal",
+ 	 	 	 	"eng": "Christmas Pudding"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"percent"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Puding yang padat dan kukus dengan buah -buahan kering, kacang -kacangan, dan sering dicampur dengan alkohol, ketika peningkatan yang dikonsumsi exp yang diterima dalam tugas AFK sebesar ${percent}%",
+ 	 	 	 	"eng": "A dense, steamed pudding with dried fruits, nuts, and often laced with alcohol, when consumed increases EXP received in AFK tasks by ${percent}%.\\nThis item can only be used during December"
+ 	 	 	},
+ 	 	 	"error": {
+ 	 	 	 	"trans": "Item ini hanya tersedia selama acara Natal",
+ 	 	 	 	"eng": "This item is only available during Christmas Event"
+ 	 	 	}
+ 	 	},
+ 	 	"pawCredit": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Kredit Kuku",
+ 	 	 	 	"eng": "Paw Credit"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Kredit yang bisa digunakan untuk menukarkan barang-barang hewan peliharaan di Neon Paw Sanctuary",
+ 	 	 	 	"eng": "A credit that can be used to exchange pet items at Neon Paw Sanctuary"
+ 	 	 	}
+ 	 	},
+ 	 	"petTokenShard": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Medali Jasa Sukarelawan",
+ 	 	 	 	"eng": "Volunteer Service Medallion"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Gabungkan ${amount} ini untuk mendapatkan Sanctuary Adoption Pass, dan bisa digunakan untuk mengadopsi hewan peliharaan baru",
+ 	 	 	 	"eng": "Combine ${amount} of this to get a Sanctuary Adoption Pass, and it can be used to adopt a new pet"
+ 	 	 	}
+ 	 	},
+ 	 	"petToken": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Medali Jasa Sukarelawan",
+ 	 	 	 	"eng": "Sanctuary Adoption Pass"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Gabungin ${amount} ini buat dapetin Sanctuary Adoption Pass, nih. Bisa dipake buat adopsi hewan peliharaan baru, loh",
+ 	 	 	 	"eng": "A pass that can be used to adopt a pet from Neon Paw Sanctuary"
+ 	 	 	}
+ 	 	},
+ 	 	"petFood": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Serat Elektro Gigitan",
+ 	 	 	 	"eng": "ElectroFiber Bites"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "\"ElectroFiber Bites™ mengandung campuran serat kompleks yang menghantarkan dan menyimpan energi, meningkatkan stamina dan kekuatan hewan peliharaan Anda untuk petualangan lebih lama di padang gurun cyber.\"",
+ 	 	 	 	"eng": "\"ElectroFiber Bites™ contain a complex blend of fibers that conduct and store energy, boosting your pet's stamina and power for longer expeditions in the cyber wilderness.\""
+ 	 	 	}
+ 	 	},
+ 	 	"petToy": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Bola NanoNibble",
+ 	 	 	 	"eng": "NanoNibble Ball"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "\"Perkenalkan NanoNibble Ball - keajaiban teknologi bermain yang dirancang untuk kesenangan semata. Setiap bola menyala dengan pola yang memikat saat disentuh sedikit saja, memastikan hewan peliharaan Anda terhibur sepenuhnya. Setelah sesi kesenangan tak terduga, bola dengan cerdas terurai menjadi partikel ramah lingkungan, tidak meninggalkan kekacauan. Sempurna untuk petualangan tunggal yang tak terlupakan dalam kebersamaan digital, ini adalah pengalaman bermain yang mutlak yang hilang dengan rapi, menghemat Anda dari kerja bersih-bersih.\"",
+ 	 	 	 	"eng": "\"Introducing the NanoNibble Ball – a marvel of playtime technology designed for sheer joy. Each ball lights up with mesmerizing patterns at the slightest touch, ensuring your pet is thoroughly entertained. After a session of unprecedented fun, the ball smartly deconstructs into harmless, eco-friendly particles, leaving no mess behind. Perfect for a single, unforgettable adventure in digital companionship, it’s the ultimate playtime experience that neatly disappears, sparing you the cleanup.\""
+ 	 	 	}
+ 	 	},
+ 	 	"petCleaner": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Semprot BuluBersih",
+ 	 	 	 	"eng": "FurFlush Spray"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Semprotan FurFlush: Canister keren bertuliskan 'Bersih Instan, Hilang Instan.' Semprotan cepat membuat hewan peliharaan kotor Anda berkilauan—tanpa perlu dibilas, tanpa kotoran, langsung kinclong! Cocok untuk saat-saat 'ups' sebelum pertemuan cyber. Awas: Bisa membuat hewan peliharaan tampil lebih percaya diri. Sihir sekali pakai untuk teman penjelajah perkotaan. Menghilang setelah digunakan, tak meninggalkan jejak kecuali hewan peliharaan yang mempesona.",
+ 	 	 	 	"eng": "FurFlush Spray: The sleek canister reads 'Instant Clean, Instant Gone.' A quick spritz turns your grimy pet gleaming—no rinse, no mess, just poof! Perfect for those 'oops' moments before a cyber meet-up. Caution: May lead to unexpected pet swagger. Single-use magic for the urban explorer's companion. Disappears after use, leaving no evidence except a dazzling pet."
+ 	 	 	}
+ 	 	},
+ 	 	"petMedicine": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "PawfectCure",
+ 	 	 	 	"eng": "PawfectCure"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Ketika hewan peliharaanmu merasa kurang sehat, atau hanya merasa aneh, ini solusinya. Mengatasi segala hal mulai dari pilek hingga 'aku makan sesuatu aneh' blues. Hati-hati dengan efek samping: bisa menyebabkan apresiasi tiba-tiba terhadap masakanmu dan peningkatan serangan peluk. Karena terkadang, obat terbaik adalah sedikit tawa... dan PawfectCure.",
+ 	 	 	 	"eng": "When your pet's feeling under the weather, or just plain off, this is the go-to. It tackles everything from the sniffles to the 'I ate something weird' blues. Beware of side effects: may cause a sudden appreciation for your cooking and an increase in snuggle attacks. Because sometimes, the best remedy is a little laughter... and PawfectCure."
  	 	 	}
  	 	},
  	 	"experienceShard": {
@@ -6066,6 +7083,12 @@
  	 	 	 	 	"trans": "Pergi ke markas geng",
  	 	 	 	 	"eng": "Go to gang headquarters"
  	 	 	 	}
+ 	 	 	},
+ 	 	 	"toApartment": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Pergi ke apartemenmu",
+ 	 	 	 	 	"eng": "Go to your apartment"
+ 	 	 	 	}
  	 	 	}
  	 	},
  	 	"job": {
@@ -6122,6 +7145,29 @@
  	 	 	"cantEnterError": {
  	 	 	 	"trans": "Kamu perlu bergabung dengan geng untuk memasuki area ini",
  	 	 	 	"eng": "You need to join a gang to enter this area"
+ 	 	 	}
+ 	 	},
+ 	 	"apartment": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Apartemen Saya",
+ 	 	 	 	"eng": "My Apartment"
+ 	 	 	},
+ 	 	 	"toMainHub": {
+ 	 	 	 	"name": {
+ 	 	 	 	 	"trans": "Kembali ke Pusat Kota Shangri-La",
+ 	 	 	 	 	"eng": "Return to Shangri-La City Center"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "[Apartemen]\r\n        Apartemen nyamanmu di kota. Hewan peliharamu sedang menunggumu pulang.",
+ 	 	 	 	"eng": "[Apartment]\r\n        Your cozy apartment in the city. your pets are waiting for you to come home."
+ 	 	 	},
+ 	 	 	"cantEnterError": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"level"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Kamu harus setidaknya mencapai level ${level} untuk bisa menyewa apartemen",
+ 	 	 	 	"eng": "You need to be at least level ${level} to rent an apartment"
  	 	 	}
  	 	},
  	 	"zone": {
@@ -6455,6 +7501,56 @@
  	 	 	 	"eng": "B3llial"
  	 	 	}
  	 	},
+ 	 	"halloween": {
+ 	 	 	"defaultLines": {
+ 	 	 	 	"trans": [
+ 	 	 	 	 	"Pumpkin is my source of power!",
+ 	 	 	 	 	"Check out my pumpkin costume!",
+ 	 	 	 	 	"Hmmmm, I wonder what's inside this pumpkin...",
+ 	 	 	 	 	"Give me your pumpkin, and I'll give you a treat!"
+ 	 	 	 	],
+ 	 	 	 	"eng": [
+ 	 	 	 	 	"Pumpkin is my source of power!",
+ 	 	 	 	 	"Check out my pumpkin costume!",
+ 	 	 	 	 	"Hmmmm, I wonder what's inside this pumpkin...",
+ 	 	 	 	 	"Give me your pumpkin, and I'll give you a treat!"
+ 	 	 	 	]
+ 	 	 	},
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Gang",
+ 	 	 	 	"eng": "Alleyway"
+ 	 	 	},
+ 	 	 	"npcName": {
+ 	 	 	 	"trans": "Labu aneh",
+ 	 	 	 	"eng": "pumpkin weirdo"
+ 	 	 	}
+ 	 	},
+ 	 	"petShop": {
+ 	 	 	"defaultLines": {
+ 	 	 	 	"trans": [
+ 	 	 	 	 	"Hey, choom! Neon Paws is for the brave. These sprites need your daily grind. Ready to dive in?",
+ 	 	 	 	 	"Lookin' sharp, netrunner! Here, pets are more than code, they need your daily hack to thrive.",
+ 	 	 	 	 	"What's up, street samurai? Partner with a survivor. Without your daily deeds, they're zeroed.",
+ 	 	 	 	 	"Edge runner, eh? This is where tech meets heart. Ignore them, and they vanish into the net. Daily care, got it?",
+ 	 	 	 	 	"Cyberdeck in hand, heart on sleeve? Our critters need that daily touch or they'll fade into the static."
+ 	 	 	 	],
+ 	 	 	 	"eng": [
+ 	 	 	 	 	"Hey, choom! Neon Paws is for the brave. These sprites need your daily grind. Ready to dive in?",
+ 	 	 	 	 	"Lookin' sharp, netrunner! Here, pets are more than code, they need your daily hack to thrive.",
+ 	 	 	 	 	"What's up, street samurai? Partner with a survivor. Without your daily deeds, they're zeroed.",
+ 	 	 	 	 	"Edge runner, eh? This is where tech meets heart. Ignore them, and they vanish into the net. Daily care, got it?",
+ 	 	 	 	 	"Cyberdeck in hand, heart on sleeve? Our critters need that daily touch or they'll fade into the static."
+ 	 	 	 	]
+ 	 	 	},
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Santai Neon Paws",
+ 	 	 	 	"eng": "Neon Paws Sanctuary"
+ 	 	 	},
+ 	 	 	"npcName": {
+ 	 	 	 	"trans": "Jin",
+ 	 	 	 	"eng": "Jin"
+ 	 	 	}
+ 	 	},
  	 	"recycleMachine": {
  	 	 	"name": {
  	 	 	 	"trans": "Pendaur Ulang Otomatis",
@@ -6484,6 +7580,58 @@
  	 	 	 	"trans": "Pemulung",
  	 	 	 	"eng": "Scavengers"
  	 	 	}
+ 	 	}
+ 	},
+ 	"petType": {
+ 	 	"dog": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Anjing",
+ 	 	 	 	"eng": "Dog"
+ 	 	 	}
+ 	 	},
+ 	 	"cat": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Kucing",
+ 	 	 	 	"eng": "Cat"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"petStatus": {
+ 	 	"sick": {
+ 	 	 	"trans": "Sakit",
+ 	 	 	"eng": "Sick"
+ 	 	},
+ 	 	"hungry": {
+ 	 	 	"trans": "Lapar",
+ 	 	 	"eng": "Hungry"
+ 	 	},
+ 	 	"starving": {
+ 	 	 	"trans": "Kelaparan",
+ 	 	 	"eng": "Starving"
+ 	 	},
+ 	 	"wellFed": {
+ 	 	 	"trans": "Kenyang",
+ 	 	 	"eng": "Well Fed"
+ 	 	},
+ 	 	"dirty": {
+ 	 	 	"trans": "Kotor",
+ 	 	 	"eng": "Dirty"
+ 	 	},
+ 	 	"filthy": {
+ 	 	 	"trans": "Kotor",
+ 	 	 	"eng": "Filthy"
+ 	 	},
+ 	 	"dead": {
+ 	 	 	"trans": "Meninggal",
+ 	 	 	"eng": "Deceased"
+ 	 	},
+ 	 	"unhappy": {
+ 	 	 	"trans": "Tidak senang",
+ 	 	 	"eng": "Unhappy"
+ 	 	},
+ 	 	"depressed": {
+ 	 	 	"trans": "Merasa down",
+ 	 	 	"eng": "Depressed"
  	 	}
  	},
  	"action": {
@@ -6613,6 +7761,22 @@
  	 	 	 	"eng": "Trade"
  	 	 	}
  	 	},
+ 	 	"bulkCrafting": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Kerajinan massal",
+ 	 	 	 	"eng": "Bulk Crafting"
+ 	 	 	}
+ 	 	},
+ 	 	"petAFK": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Jadwal Jaga Sukarelawan Panti Hewan",
+ 	 	 	 	"eng": "Pet Shelter Volunteer Shift"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Jadi relawan di tempat penampungan hewan lokal untuk membantu merawat hewan-hewan tersebut.",
+ 	 	 	 	"eng": "Volunteer at the local pet shelter to help take care of the animals."
+ 	 	 	}
+ 	 	},
  	 	"autoFarm": {
  	 	 	"name": {
  	 	 	 	"trans": "Terjunkan Bot Untuk Farm",
@@ -6642,6 +7806,59 @@
  	 	 	 	"trans": "[AFK Resource Gather]\r\n                    Cari di sekitar ${zoneName} dan ambil barang yang berguna.\r\n                    siapa tahu, kamu mungkin beruntung!",
  	 	 	 	"eng": "[AFK Resource Gather]\r\n                    Search around in ${zoneName} and scavenge for useful items.\r\n                    Who knows, maybe you'll get lucky!"
  	 	 	}
+ 	 	}
+ 	},
+ 	"leaderboard": {
+ 	 	"skip": {
+ 	 	 	"trans": "Lewati poin",
+ 	 	 	"eng": "Skip Points"
+ 	 	},
+ 	 	"level": {
+ 	 	 	"trans": "Tingkat",
+ 	 	 	"eng": "Level"
+ 	 	},
+ 	 	"epicPrint": {
+ 	 	 	"trans": "Peralatan epik dicetak",
+ 	 	 	"eng": "Epic Equipment Printed"
+ 	 	},
+ 	 	"epicBagPrint": {
+ 	 	 	"trans": "Tas epik dibuat",
+ 	 	 	"eng": "Epic Bag Crafted"
+ 	 	},
+ 	 	"mining": {
+ 	 	 	"trans": "Level pertambangan",
+ 	 	 	"eng": "Mining Level"
+ 	 	},
+ 	 	"ammo": {
+ 	 	 	"trans": "Dan levelvel",
+ 	 	 	"eng": "Ammo Level"
+ 	 	},
+ 	 	"medical": {
+ 	 	 	"trans": "Tingkat medis",
+ 	 	 	"eng": "Medical Level"
+ 	 	},
+ 	 	"scavenge": {
+ 	 	 	"trans": "Level scavenge",
+ 	 	 	"eng": "Scavenge Level"
+ 	 	},
+ 	 	"molecular": {
+ 	 	 	"trans": "Level cetak molekuler",
+ 	 	 	"eng": "Molecular Print Level"
+ 	 	},
+ 	 	"streetcred": {
+ 	 	 	"trans": "Kredo Jalanan",
+ 	 	 	"eng": "Street Cred"
+ 	 	},
+ 	 	"description": {
+ 	 	 	"vars": [
+ 	 	 	 	"minutes"
+ 	 	 	],
+ 	 	 	"trans": "Daftar peringkat pembaruan setiap ${minutes} menit",
+ 	 	 	"eng": "Leaderboard listing updates every ${minutes} minutes"
+ 	 	},
+ 	 	"noPlayers": {
+ 	 	 	"trans": "Saat ini tidak ada pemain di papan peringkat ini",
+ 	 	 	"eng": "Currently No Players in this Leaderboard"
  	 	}
  	},
  	"Quest": {
@@ -6837,6 +8054,12 @@
  	 	 	 	"eng": "Unlock Mysterious Container"
  	 	 	}
  	 	},
+ 	 	"christmasGift2": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Buka kunci wadah beku",
+ 	 	 	 	"eng": "Unlock Frosty Container"
+ 	 	 	}
+ 	 	},
  	 	"backpack1": {
  	 	 	"name": {
  	 	 	 	"trans": "Kantong tua",
@@ -6877,12 +8100,6 @@
  	 	 	 	"eng": "AI Core Cluster"
  	 	 	}
  	 	},
- 	 	"halloween": {
- 	 	 	"name": {
- 	 	 	 	"trans": "Jack O Lantern",
- 	 	 	 	"eng": "Jack O Lantern"
- 	 	 	}
- 	 	},
  	 	"christmasToBox": {
  	 	 	"name": {
  	 	 	 	"trans": "Wadah Legendaris Terkunci",
@@ -6900,6 +8117,40 @@
  	 	 	 	"trans": "Cluster teknologi medis",
  	 	 	 	"eng": "Medical Tech Cluster"
  	 	 	}
+ 	 	},
+ 	 	"medicalTechClusterRevers": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Memo teknologi medis",
+ 	 	 	 	"eng": "Medical Tech Scrap"
+ 	 	 	}
+ 	 	},
+ 	 	"techScrapCluster": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Cluster memo teknologi",
+ 	 	 	 	"eng": "Tech Scrap Cluster"
+ 	 	 	}
+ 	 	},
+ 	 	"techScrapClusterReverse": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Memo teknologi",
+ 	 	 	 	"eng": "Tech Scrap"
+ 	 	 	}
+ 	 	},
+ 	 	"unlockRareEquipmentCrate": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Buka kunci peti peralatan langka",
+ 	 	 	 	"eng": "Unlock Rare Equipment Crate"
+ 	 	 	}
+ 	 	},
+ 	 	"craftPetToken": {
+ 	 	 	"name": {
+ 	 	 	 	"trans": "Buat Pas Adoption Sanctuary",
+ 	 	 	 	"eng": "Craft Sanctuary Adoption Pass"
+ 	 	 	}
+ 	 	},
+ 	 	"craft": {
+ 	 	 	"trans": "Buat",
+ 	 	 	"eng": "Craft"
  	 	},
  	 	"ammo1": {
  	 	 	"vars": [
@@ -6991,6 +8242,10 @@
  	 	 	"trans": "Obrolan Eksploitasi [Cinta]",
  	 	 	"eng": "Chat Exploit [LOVE]"
  	 	},
+ 	 	"posh": {
+ 	 	 	"trans": "Eksploitasi Obrolan [POSH]",
+ 	 	 	"eng": "Chat Exploit [POSH]"
+ 	 	},
  	 	"chatExploitProtect": {
  	 	 	"trans": "Enkripsi obrolan",
  	 	 	"eng": "Chat Encryption"
@@ -7006,6 +8261,30 @@
  	 	"aiConnect": {
  	 	 	"trans": "Koneksi Cyberspace",
  	 	 	"eng": "Cyberspace Connection"
+ 	 	},
+ 	 	"globalParty": {
+ 	 	 	"trans": "Partai Global",
+ 	 	 	"eng": "Global Party"
+ 	 	},
+ 	 	"afkExp": {
+ 	 	 	"trans": "AFK Exp Boost",
+ 	 	 	"eng": "AFK EXP Boost"
+ 	 	},
+ 	 	"petRevive": {
+ 	 	 	"trans": "Bangkitkan Hewan Peliharaan",
+ 	 	 	"eng": "Pet Revive"
+ 	 	},
+ 	 	"petReviveDesc": {
+ 	 	 	"trans": "Revival hewan peliharaan kini tersedia selama durasi buff ini.",
+ 	 	 	"eng": "Pet revival is now available during this buff duration."
+ 	 	},
+ 	 	"petDraw": {
+ 	 	 	"trans": "Adopsi Hewan Peliharaan Dimulai",
+ 	 	 	"eng": "Pet Adoption Activated"
+ 	 	},
+ 	 	"petDrawDesc": {
+ 	 	 	"trans": "Adopsi hewan peliharaan sekarang bisa dilakukan selama durasi buff ini, nih.",
+ 	 	 	"eng": "Pet adoption is now available during this buff duration."
  	 	}
  	},
  	"combat": {
@@ -7066,6 +8345,52 @@
  	 	 	],
  	 	 	"trans": "Kamu mendapatkan ${amount} ${itemName}",
  	 	 	"eng": "You received ${amount} ${itemName}"
+ 	 	}
+ 	},
+ 	"chatExploit": {
+ 	 	"loveWords": {
+ 	 	 	"trans": [
+ 	 	 	 	"Love you",
+ 	 	 	 	"You guys are great",
+ 	 	 	 	"You guys are the best",
+ 	 	 	 	"love yall",
+ 	 	 	 	"You are amazing",
+ 	 	 	 	"we are best friend",
+ 	 	 	 	"Love you all",
+ 	 	 	 	"you are great",
+ 	 	 	 	"you the best",
+ 	 	 	 	"we are awesome",
+ 	 	 	 	"you are awesome",
+ 	 	 	 	"have a nice day",
+ 	 	 	 	"miss you",
+ 	 	 	 	"miss you guys",
+ 	 	 	 	"KYAAAAAAAAA",
+ 	 	 	 	"wish you have nice day",
+ 	 	 	 	"I love you",
+ 	 	 	 	"can we hug?",
+ 	 	 	 	"how much you love me?"
+ 	 	 	],
+ 	 	 	"eng": [
+ 	 	 	 	"Love you",
+ 	 	 	 	"You guys are great",
+ 	 	 	 	"You guys are the best",
+ 	 	 	 	"love yall",
+ 	 	 	 	"You are amazing",
+ 	 	 	 	"we are best friend",
+ 	 	 	 	"Love you all",
+ 	 	 	 	"you are great",
+ 	 	 	 	"you the best",
+ 	 	 	 	"we are awesome",
+ 	 	 	 	"you are awesome",
+ 	 	 	 	"have a nice day",
+ 	 	 	 	"miss you",
+ 	 	 	 	"miss you guys",
+ 	 	 	 	"KYAAAAAAAAA",
+ 	 	 	 	"wish you have nice day",
+ 	 	 	 	"I love you",
+ 	 	 	 	"can we hug?",
+ 	 	 	 	"how much you love me?"
+ 	 	 	]
  	 	}
  	},
  	"chatServer": {
@@ -7355,55 +8680,13 @@
  	 	"upgradePocketed": {
  	 	 	"trans": "ekspansi",
  	 	 	"eng": "of Expansion"
+ 	 	},
+ 	 	"upgradeHealing": {
+ 	 	 	"trans": "penyembuhan",
+ 	 	 	"eng": "of Healing"
  	 	}
  	},
  	"market": {
- 	 	"amountSelectModal": {
- 	 	 	"title": {
- 	 	 	 	"trans": "Berapa banyak yang ingin Kamu beli?",
- 	 	 	 	"eng": "How many would you like to purchase?"
- 	 	 	},
- 	 	 	"totalPrice": {
- 	 	 	 	"vars": [
- 	 	 	 	 	"total"
- 	 	 	 	],
- 	 	 	 	"trans": "Ini akan dikenakan biaya ${total} total bitcoin",
- 	 	 	 	"eng": "it will cost ${total} Bitcoin total"
- 	 	 	}
- 	 	},
- 	 	"notEnoughMoney": {
- 	 	 	"trans": "Bitcoin tidak mencukupi",
- 	 	 	"eng": "Insufficient bitcoin"
- 	 	},
- 	 	"priceSelectModal": {
- 	 	 	"title2": {
- 	 	 	 	"vars": [
- 	 	 	 	 	"itemName"
- 	 	 	 	],
- 	 	 	 	"trans": "Harga untuk ${itemName}",
- 	 	 	 	"eng": "Price for ${itemName}"
- 	 	 	}
- 	 	},
- 	 	"priceConfirm": {
- 	 	 	"vars": [
- 	 	 	 	"amountStr",
- 	 	 	 	"priceStr",
- 	 	 	 	"itemName"
- 	 	 	],
- 	 	 	"trans": "Kamu menjual ${amountStr} ${itemName}(s), seharga ${priceStr} tiap barang",
- 	 	 	"eng": "You are selling ${amountStr} ${itemName}(s), at the price of ${priceStr} Per Item"
- 	 	},
- 	 	"totalConfirm": {
- 	 	 	"vars": [
- 	 	 	 	"total"
- 	 	 	],
- 	 	 	"trans": "Jika semuanya terjual, kamu akan mendapatkan ${total} BitCoin",
- 	 	 	"eng": "If all items are sold, you will earn ${total} BitCoins"
- 	 	},
- 	 	"sellAmountModalTitle": {
- 	 	 	"trans": "Berapa banyak yang akan kamu jual?",
- 	 	 	"eng": "How many would you like to sell?"
- 	 	},
  	 	"upgradeSlot": {
  	 	 	"trans": "Meningkatkan",
  	 	 	"eng": "Upgrade"
@@ -7422,12 +8705,161 @@
  	 	 	],
  	 	 	"trans": "Anda dapat meningkatkan slot pasar Anda menjadi ${slot} dengan membayar ${price} Bitcoin",
  	 	 	"eng": "You can increase your market slot to ${slot} by paying ${price} BitCoins"
+ 	 	},
+ 	 	"purchaseModal": {
+ 	 	 	"purchase": {
+ 	 	 	 	"trans": "Pembelian",
+ 	 	 	 	"eng": "Purchase"
+ 	 	 	}
  	 	}
  	},
  	"mobile": {
  	 	"returnToAppMessage": {
  	 	 	"trans": "Menyinkronkan dengan server ..",
  	 	 	"eng": "Syncing with server.."
+ 	 	}
+ 	},
+ 	"petDetailsPage": {
+ 	 	"dispose": {
+ 	 	 	"trans": "Buang",
+ 	 	 	"eng": "dispose"
+ 	 	},
+ 	 	"disposeConfirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Buang",
+ 	 	 	 	"eng": "dispose"
+ 	 	 	},
+ 	 	 	"message": {
+ 	 	 	 	"trans": "Lu yakin mau membuang peliharaan ini? tindakan ini nggak bisa dibatalkan, loh",
+ 	 	 	 	"eng": "Are you sure you want to dispose of this pet? this cannot be undone"
+ 	 	 	}
+ 	 	},
+ 	 	"rerollImage": {
+ 	 	 	"trans": "Gulir Ulang Gambar",
+ 	 	 	"eng": "re-roll Image"
+ 	 	},
+ 	 	"rerollImageConfirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Gulir Ulang Gambar",
+ 	 	 	 	"eng": "re-roll Image"
+ 	 	 	},
+ 	 	 	"message": {
+ 	 	 	 	"trans": "Kamu yakin mau nge-roll gambar hewan peliharaan ini lagi?",
+ 	 	 	 	"eng": "Are you sure you want to re-roll this pets image?"
+ 	 	 	}
+ 	 	},
+ 	 	"petNotFound": {
+ 	 	 	"trans": "Hewan peliharaan tidak ditemukan",
+ 	 	 	"eng": "Pet not found"
+ 	 	},
+ 	 	"name": {
+ 	 	 	"trans": "Nama",
+ 	 	 	"eng": "name"
+ 	 	},
+ 	 	"age": {
+ 	 	 	"trans": "Usia",
+ 	 	 	"eng": "age"
+ 	 	},
+ 	 	"status": {
+ 	 	 	"trans": "Status: Kondisi",
+ 	 	 	"eng": "status"
+ 	 	},
+ 	 	"noStatus": {
+ 	 	 	"trans": "Sehat",
+ 	 	 	"eng": "healthy"
+ 	 	},
+ 	 	"deadRemoveMessage": {
+ 	 	 	"vars": [
+ 	 	 	 	"date"
+ 	 	 	],
+ 	 	 	"trans": "akan dihapus pada ${date}",
+ 	 	 	"eng": "will be removed at ${date}"
+ 	 	},
+ 	 	"hunger": {
+ 	 	 	"trans": "Kelaparan",
+ 	 	 	"eng": "Hunger"
+ 	 	},
+ 	 	"feed": {
+ 	 	 	"trans": "Makanan",
+ 	 	 	"eng": "Feed"
+ 	 	},
+ 	 	"noFood": {
+ 	 	 	"vars": [
+ 	 	 	 	"item"
+ 	 	 	],
+ 	 	 	"trans": "Kamu nggak punya ${item} buat kasih makan hewan peliharamu",
+ 	 	 	"eng": "You don't have ${item} to feed your pet"
+ 	 	},
+ 	 	"happiness": {
+ 	 	 	"trans": "Kebahagiaan",
+ 	 	 	"eng": "Happiness"
+ 	 	},
+ 	 	"play": {
+ 	 	 	"trans": "Mainkan",
+ 	 	 	"eng": "Play"
+ 	 	},
+ 	 	"noToy": {
+ 	 	 	"vars": [
+ 	 	 	 	"item"
+ 	 	 	],
+ 	 	 	"trans": "Kamu nggak punya ${item} untuk main sama hewan peliharaanmu",
+ 	 	 	"eng": "You don't have ${item} to play with your pet"
+ 	 	},
+ 	 	"cleanliness": {
+ 	 	 	"trans": "Kebersihan",
+ 	 	 	"eng": "Cleanliness"
+ 	 	},
+ 	 	"clean": {
+ 	 	 	"trans": "Bersih",
+ 	 	 	"eng": "Clean"
+ 	 	},
+ 	 	"noCleaner": {
+ 	 	 	"vars": [
+ 	 	 	 	"item"
+ 	 	 	],
+ 	 	 	"trans": "Kamu nggak punya ${item} buat bersihin hewan peliharamu",
+ 	 	 	"eng": "You don't have ${item} to clean your pet"
+ 	 	},
+ 	 	"giveMedicine": {
+ 	 	 	"trans": "Beri Obat",
+ 	 	 	"eng": "Give Medicine"
+ 	 	},
+ 	 	"reviveButton": {
+ 	 	 	"trans": "Bangkit",
+ 	 	 	"eng": "Revive"
+ 	 	}
+ 	},
+ 	"sendStreetCred": {
+ 	 	"error": {
+ 	 	 	"giveSelf": {
+ 	 	 	 	"trans": "Anda tidak dapat mengirim kredibilitas jalanan untuk diri sendiri",
+ 	 	 	 	"eng": "you can't send street cred to yourself"
+ 	 	 	}
+ 	 	},
+ 	 	"title": {
+ 	 	 	"trans": "Kirim Kredo Jalan",
+ 	 	 	"eng": "Send street cred"
+ 	 	},
+ 	 	"description": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "Anda yakin ingin mengirim kredo jalanan ke ${playerName}? Anda dapat mengirim satu kredibilitas jalanan kepada siapa pun setiap hari.",
+ 	 	 	"eng": "Are you sure you want to send street cred to ${playerName}? you can send one street cred to anyone everyday."
+ 	 	}
+ 	},
+ 	"sendStreetCredError": {
+ 	 	"title": {
+ 	 	 	"trans": "Tidak dapat mengirim kredibilitas jalanan sekarang",
+ 	 	 	"eng": "Can't send street cred now"
+ 	 	},
+ 	 	"description2": {
+ 	 	 	"trans": "Anda hanya dapat mengirim satu kredo jalan per hari. dan Anda harus level 10 atau lebih.",
+ 	 	 	"eng": "You can only send one street cred per day. and you must be level 10 or above."
+ 	 	},
+ 	 	"confirmText": {
+ 	 	 	"trans": "OKE",
+ 	 	 	"eng": "OK"
  	 	}
  	},
  	"secretKey": {
@@ -7542,52 +8974,27 @@
  	 	 	 	"trans": "Total: ${amount} ${itemName}",
  	 	 	 	"eng": "Total: ${amount} ${itemName}"
  	 	 	}
- 	 	}
- 	},
- 	"chatExploit": {
- 	 	"loveWords": {
- 	 	 	"trans": [
- 	 	 	 	"Love you",
- 	 	 	 	"You guys are great",
- 	 	 	 	"You guys are the best",
- 	 	 	 	"love yall",
- 	 	 	 	"You are amazing",
- 	 	 	 	"we are best friend",
- 	 	 	 	"Love you all",
- 	 	 	 	"you are great",
- 	 	 	 	"you the best",
- 	 	 	 	"we are awesome",
- 	 	 	 	"you are awesome",
- 	 	 	 	"have a nice day",
- 	 	 	 	"miss you",
- 	 	 	 	"miss you guys",
- 	 	 	 	"KYAAAAAAAAA",
- 	 	 	 	"wish you have nice day",
- 	 	 	 	"I love you",
- 	 	 	 	"can we hug?",
- 	 	 	 	"how much you love me?"
+ 	 	},
+ 	 	"npcNotAvailable": {
+ 	 	 	"trans": "Toko ini tidak tersedia saat ini",
+ 	 	 	"eng": "This shop is not available at the moment"
+ 	 	},
+ 	 	"purchasedMessage": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"item"
  	 	 	],
- 	 	 	"eng": [
- 	 	 	 	"Love you",
- 	 	 	 	"You guys are great",
- 	 	 	 	"You guys are the best",
- 	 	 	 	"love yall",
- 	 	 	 	"You are amazing",
- 	 	 	 	"we are best friend",
- 	 	 	 	"Love you all",
- 	 	 	 	"you are great",
- 	 	 	 	"you the best",
- 	 	 	 	"we are awesome",
- 	 	 	 	"you are awesome",
- 	 	 	 	"have a nice day",
- 	 	 	 	"miss you",
- 	 	 	 	"miss you guys",
- 	 	 	 	"KYAAAAAAAAA",
- 	 	 	 	"wish you have nice day",
- 	 	 	 	"I love you",
- 	 	 	 	"can we hug?",
- 	 	 	 	"how much you love me?"
- 	 	 	]
+ 	 	 	"trans": "Anda telah membeli ${amount} ${item}",
+ 	 	 	"eng": "You have purchased ${amount} ${item}"
+ 	 	},
+ 	 	"exchangedMessage": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"item",
+ 	 	 	 	"item2"
+ 	 	 	],
+ 	 	 	"trans": "Anda telah menukar ${amount} ${item} untuk ${item2}",
+ 	 	 	"eng": "You have exchanged ${amount} ${item} for ${item2}"
  	 	}
  	},
  	"bundleDetailsModal": {
@@ -7617,6 +9024,16 @@
  	 	 	 	"trans": "Pembelian",
  	 	 	 	"eng": "Purchase"
  	 	 	}
+ 	 	}
+ 	},
+ 	"clanNoticeModal": {
+ 	 	"title": {
+ 	 	 	"trans": "Masukkan pemberitahuan baru",
+ 	 	 	"eng": "enter new notice"
+ 	 	},
+ 	 	"submit": {
+ 	 	 	"trans": "mengirim",
+ 	 	 	"eng": "send"
  	 	}
  	},
  	"createClanModal": {
@@ -7685,26 +9102,57 @@
  	 	 	"eng": "Accept"
  	 	}
  	},
- 	"christmasPromo": {
+ 	"petReviveModal": {
+ 	 	"reviveButton": {
+ 	 	 	"error": {
+ 	 	 	 	"trans": "Kamu baru saja menghidupkan kembali seekor hewan peliharaan",
+ 	 	 	 	"eng": "You have revived a pet recently"
+ 	 	 	},
+ 	 	 	"trans": "Bangkit",
+ 	 	 	"eng": "Revive"
+ 	 	},
+ 	 	"activateButton": {
+ 	 	 	"error": {
+ 	 	 	 	"trans": "Kamu perlu mengaktifkan penyembuhan hewan peliharaan terlebih dahulu",
+ 	 	 	 	"eng": "You need to activate pet revive first"
+ 	 	 	},
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Aktifkan penyembuhan hewan peliharaan",
+ 	 	 	 	"eng": "Activate"
+ 	 	 	},
+ 	 	 	"desc": {
+ 	 	 	 	"trans": "Aktifkan penyembuhan hewan peliharaan",
+ 	 	 	 	"eng": "Activate pet revive"
+ 	 	 	},
+ 	 	 	"loading": {
+ 	 	 	 	"trans": "Mengaktifkan...",
+ 	 	 	 	"eng": "Activating..."
+ 	 	 	}
+ 	 	},
  	 	"title": {
- 	 	 	"trans": "Selamat liburan musim dingin!",
- 	 	 	"eng": "Happy Winter Holiday!"
+ 	 	 	"trans": "Bangkitkan hewan peliharaan",
+ 	 	 	"eng": "Revive pet"
+ 	 	},
+ 	 	"reviveDescription": {
+ 	 	 	"vars": [
+ 	 	 	 	"buffName"
+ 	 	 	],
+ 	 	 	"trans": "Kamu bisa menghidupkan kembali hewan peliharamu saat buff ${buffName} aktif",
+ 	 	 	"eng": "You may revive your pet when ${buffName} buff is active"
+ 	 	}
+ 	},
+ 	"artPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Kompetisi seni karakter seram!",
+ 	 	 	"eng": "Spooky Character Art Competition!"
  	 	},
  	 	"desc1": {
- 	 	 	"trans": "Ini adalah waktu yang paling indah tahun ini lagi! Di Shangri-La kami merayakan liburan musim dingin dengan acara khusus!",
- 	 	 	"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!"
+ 	 	 	"trans": "Kami memberikan cache epik, ransel penjelajah, koper karyawan dan emblem kepada 5 pemenang teratas!",
+ 	 	 	"eng": "We are giving out Epic Caches, Explorer Backpack, Employee Suitcase and Emblems to the top 5 winners!"
  	 	},
  	 	"desc2": {
- 	 	 	"vars": [
- 	 	 	 	"itemName",
- 	 	 	 	"craftItem"
- 	 	 	],
- 	 	 	"trans": "Musuh dan AI Core Auto Farm akan memiliki kesempatan untuk menjatuhkan ${itemName}, Anda dapat menggunakan ini untuk membuat ${craftItem} atau membukanya secara langsung!",
- 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop ${itemName}, you can use this to craft ${craftItem} or open it directly!"
- 	 	},
- 	 	"desc3": {
- 	 	 	"trans": "Selama musim liburan, dua kali bingkai obrolan terbatas dan lambang akan tersedia!",
- 	 	 	"eng": "During the holiday season, two time limited chat frame and emblem will be available!"
+ 	 	 	"trans": "Lihat saluran #Event di Discord untuk detail lebih lanjut!",
+ 	 	 	"eng": "Check out the #event channel on Discord for more details!"
  	 	}
  	},
  	"halloweenPromo": {
@@ -7716,13 +9164,56 @@
  	 	 	"trans": "Ini adalah waktu seram tahun ini lagi! Shang-ri-la merayakan Halloween dengan event khusus!",
  	 	 	"eng": "Its the spooky time of the year again! Shang-ri-la is celebrating Halloween with a special event!"
  	 	},
- 	 	"desc2": {
- 	 	 	"trans": "Musuh dan AI Core Auto Farm akan memiliki kesempatan untuk menjatuhkan Jack-O-Lanterns! Kamu dapat menggunakannya untuk membuat kotak terkunci legendaris!",
- 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop Jack-o-lanterns! you can use these to craft Locked Legendary Containers!"
+ 	 	"desc2v2": {
+ 	 	 	"trans": "Musuh dan peternakan mobil inti AI akan memiliki kesempatan untuk menjatuhkan jack-o-lantern!",
+ 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop Jack-o-lanterns!"
  	 	},
- 	 	"desc3": {
- 	 	 	"trans": "Selama Halloween, tier donasi obrolan cyber-bat yang terbatas akan tersedia!",
- 	 	 	"eng": "During Halloween, a time limited cyber-bat chat donation tier will be available!"
+ 	 	"desc3v2": {
+ 	 	 	"vars": [
+ 	 	 	 	"npc",
+ 	 	 	 	"location"
+ 	 	 	],
+ 	 	 	"trans": "Anda dapat menemukan ${npc} di ${location} selama Halloween, ia akan menukar jack-o-lantern Anda dengan hadiah!",
+ 	 	 	"eng": "You can find ${npc} at ${location} during Halloween, he will exchange your Jack-o-lanterns for rewards!"
+ 	 	},
+ 	 	"desc4v2": {
+ 	 	 	"trans": "Selama Halloween, Halloween terbatas waktu, tier donasi obrolan cyber-bat dan lambang bertema akan tersedia!",
+ 	 	 	"eng": "During Halloween, a time limited halloween, cyber-bat chat donation tier and themed emblems will be available!"
+ 	 	}
+ 	},
+ 	"christmasPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Selamat liburan musim dingin!",
+ 	 	 	"eng": "Happy Winter Holiday!"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"trans": "Ini adalah waktu yang paling indah tahun ini lagi! Di Shangri-La kami merayakan liburan musim dingin dengan acara khusus!",
+ 	 	 	"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!"
+ 	 	},
+ 	 	"v2": {
+ 	 	 	"desc2": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Musuh dan AI Core Auto Farm akan memiliki kesempatan untuk menjatuhkan ${itemName}, Anda dapat membuka kunci untuk menerima hadiah!",
+ 	 	 	 	"eng": "Enemies and AI Core auto farm will have chance to drop ${itemName}, you can unlock it to receive prizes!"
+ 	 	 	}
+ 	 	},
+ 	 	"v3": {
+ 	 	 	"desc3": {
+ 	 	 	 	"trans": "Selama musim liburan, bingkai obrolan Natal dan lambang akan tersedia!",
+ 	 	 	 	"eng": "During the holiday season, Christmas chat frame and emblem will be available!"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"christmasPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Acara Natal!",
+ 	 	 	"eng": "Christmas Event!"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"trans": "Lampiran terbatas waktu dan bingkai obrolan!",
+ 	 	 	"eng": "Time limited loot and chat frame!"
  	 	}
  	},
  	"lunarPromo": {
@@ -7734,15 +9225,14 @@
  	 	 	"trans": "Tahun Baru Imlek ada di sini, dan kami merayakan di Shang-ri-La dengan acara khusus. Bergabunglah dengan kami saat kami merangkul awal tahun baru, dipenuhi dengan tradisi, kegembiraan, dan kebersamaan.",
  	 	 	"eng": "The lunar new year is here, and we're celebrating in Shang-ri-la with a special event. Join us as we embrace the start of a new year, filled with traditions, joy, and togetherness."
  	 	},
- 	 	"desc2": {
+ 	 	"desc2-v2": {
  	 	 	"vars": [
  	 	 	 	"npcShopName",
  	 	 	 	"coinItem",
- 	 	 	 	"llcName",
  	 	 	 	"npcName"
  	 	 	],
- 	 	 	"trans": "${npcShopName} sekarang terbuka untuk bisnis! Anda dapat menggunakan ${coinItem} untuk membeli berbagai masakan khusus dan ${llcName} dari ${npcName}!",
- 	 	 	"eng": "${npcShopName} is now open for business! You can use ${coinItem} to purchase various special cuisines and ${llcName} from ${npcName}!"
+ 	 	 	"trans": "${npcShopName} sekarang terbuka untuk bisnis! Anda dapat menggunakan ${coinItem} untuk membeli berbagai masakan khusus dari ${npcName}!",
+ 	 	 	"eng": "${npcShopName} is now open for business! You can use ${coinItem} to purchase various special cuisines from ${npcName}!"
  	 	},
  	 	"desc3": {
  	 	 	"vars": [
@@ -7751,18 +9241,39 @@
  	 	 	],
  	 	 	"trans": "Ini bukan tahun baru jika ${envelopItem} tidak terlibat! Musuh dan AI Core Auto Farm akan turun ${envelopItem}, buka mereka untuk menerima jumlah acak ${coinItem}!",
  	 	 	"eng": "It's not new year if ${envelopItem} is not involved! Enemies and AI Core auto farm will drop ${envelopItem}, open them to receive random amount of ${coinItem}!"
- 	 	},
+ 	 	}
+ 	},
+ 	"lunarPromo1": {
  	 	"desc4": {
  	 	 	"vars": [
- 	 	 	 	"envelopItem",
- 	 	 	 	"npcShop"
+ 	 	 	 	"itemName"
  	 	 	],
- 	 	 	"trans": "Anda sekarang dapat menerima 3 gratis ${envelopItem} di ${npcShop} setiap hari!",
- 	 	 	"eng": "You can now receive 3 free ${envelopItem} in ${npcShop} every day!"
+ 	 	 	"trans": "Dapatkan Basis ${itemName} gratis di paket top up!",
+ 	 	 	"eng": "Get free ${itemName} base on top up package!"
  	 	},
  	 	"desc5": {
- 	 	 	"trans": "Menambahkan dua bingkai obrolan terbatas waktu baru dan lambang, hanya dibeli selama periode acara.",
- 	 	 	"eng": "Added two new time limited chat frame and emblems, only purchasable during event period."
+ 	 	 	"trans": "Menambahkan bingkai obrolan dan lambang terbatas waktu baru, hanya dapat dibeli selama periode acara.",
+ 	 	 	"eng": "Added new time limited chat frame and emblems, only purchasable during event period."
+ 	 	}
+ 	},
+ 	"lunarNewYearPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Selamat Tahun Baru Imlek!",
+ 	 	 	"eng": "Happy Lunar New Year!"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"item1",
+ 	 	 	 	"item2"
+ 	 	 	],
+ 	 	 	"trans": "Menerima ${item1} dan ${item2} gratis selama Tahun Baru Imlek 🥳",
+ 	 	 	"eng": "Receive free ${item1} and ${item2} during the lunar new year 🥳"
+ 	 	}
+ 	},
+ 	"promotionModal": {
+ 	 	"title": {
+ 	 	 	"trans": "Manfaat khusus",
+ 	 	 	"eng": "Special Benefits"
  	 	}
  	},
  	"referralPromo": {
@@ -7805,6 +9316,195 @@
  	 	 	"eng": "*You will receive the items in your item inbox when your friend reaches level 20"
  	 	}
  	},
+ 	"referralPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Hadiah Rujukan",
+ 	 	 	"eng": "Referral rewards"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"trans": "Unit gratis*, wadah terkunci langka, paket fanny",
+ 	 	 	"eng": "Free Unit*, Rare Locked Container, Fanny Pack"
+ 	 	},
+ 	 	"details": {
+ 	 	 	"trans": "Detail",
+ 	 	 	"eng": "details"
+ 	 	}
+ 	},
+ 	"sakuraPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Festival Sakura",
+ 	 	 	"eng": "Sakura Festival"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"trans": "Festival Musim Semi sudah tiba! Kelopak sakura beterbangan, dan udara dipenuhi dengan aroma bunga",
+ 	 	 	"eng": "The Spring Festival is here! Sakura petals are falling, and the air is filled with the fragrance of flowers. "
+ 	 	},
+ 	 	"desc2": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "Semua loncatan selama periode acara mendapatkan diskon ${percent}% untuk unit yang diperlukan",
+ 	 	 	"eng": "All skips during the event period gets ${percent}% off discount on unit required"
+ 	 	},
+ 	 	"desc3": {
+ 	 	 	"trans": "Frame obrolan eksklusif Sakura dan emblem tersedia selama periode acara",
+ 	 	 	"eng": "Exclusive Sakura chat frame and emblem is available during event period"
+ 	 	},
+ 	 	"chatMessage1": {
+ 	 	 	"trans": "Musim semi sudah tiba",
+ 	 	 	"eng": "Spring is here"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "Semua loncatan selama periode acara mendapatkan diskon ${percent}% untuk unit yang diperlukan 🥳",
+ 	 	 	"eng": "All skips during the event period gets ${percent}% off discount on unit required 🥳"
+ 	 	}
+ 	},
+ 	"skipDiscountPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Lewati diskon",
+ 	 	 	"eng": "Skip Discount"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "${percent}% diskon pada 105 menit dan lompatan lebih tinggi!",
+ 	 	 	"eng": "${percent}% discount on 105 minutes and higher skips!"
+ 	 	}
+ 	},
+ 	"skipPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Dapatkan kosmetik eksklusif gratis dengan melewatkan",
+ 	 	 	"eng": "Earn free exclusive cosmetics by skipping"
+ 	 	},
+ 	 	"subtitle": {
+ 	 	 	"trans": "Pamerkan betapa Anda telah membantu komunitas dengan melewatkan! ❤️",
+ 	 	 	"eng": "Show off how much you have helped the community by skipping!❤️"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"emblem"
+ 	 	 	],
+ 	 	 	"trans": "Lakukan ${amount} Lewati untuk mendapatkan \"${emblem}\" Emblem",
+ 	 	 	"eng": "Collect ${amount} skip points to get \"${emblem}\" emblem"
+ 	 	},
+ 	 	"desc2": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"emblem"
+ 	 	 	],
+ 	 	 	"trans": "Lakukan ${amount} Lewati untuk mendapatkan \"${emblem}\" Emblem",
+ 	 	 	"eng": "Collect ${amount} skip points to get \"${emblem}\" emblem"
+ 	 	},
+ 	 	"desc3": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"emblem"
+ 	 	 	],
+ 	 	 	"trans": "Lakukan ${amount} Lewati untuk mendapatkan \"${frameName}\" Emblem",
+ 	 	 	"eng": "Collect ${amount} skip points to get \"${emblem}\" emblem"
+ 	 	},
+ 	 	"desc4": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"frameName"
+ 	 	 	],
+ 	 	 	"trans": "Lakukan ${amount} lewati untuk menerima bingkai obrolan donasi \"${frameName}\" permanen \"",
+ 	 	 	"eng": "Collect ${amount} skip points to receive permanent \"${frameName}\" donation chat frame"
+ 	 	},
+ 	 	"chatMessage1": {
+ 	 	 	"vars": [
+ 	 	 	 	"points"
+ 	 	 	],
+ 	 	 	"trans": "Menerima di ${points} lewati titik",
+ 	 	 	"eng": "Receive at ${points} skip points"
+ 	 	},
+ 	 	"desc5": {
+ 	 	 	"vars": [
+ 	 	 	 	"amount",
+ 	 	 	 	"frameName"
+ 	 	 	],
+ 	 	 	"trans": "Kumpulkan ${amount} Lewati poin untuk menerima bingkai obrolan donasi permanen \"${frameName}\"",
+ 	 	 	"eng": "Collect ${amount} skip points to receive permanent \"${frameName}\" donation chat frame"
+ 	 	},
+ 	 	"instructions1": {
+ 	 	 	"trans": "Skip Point You Earn adalah dasar pada durasi lewati:",
+ 	 	 	"eng": "Skip point you earn is base on skip duration:"
+ 	 	},
+ 	 	"instructions2": {
+ 	 	 	"trans": "- 15 hingga 150 menit = 1 poin per 15 menit",
+ 	 	 	"eng": "- 15 to 150 minutes = 1 point per 15 minutes"
+ 	 	},
+ 	 	"instructions3": {
+ 	 	 	"trans": "- 150 menit ke atas = 10 poin",
+ 	 	 	"eng": "- 150 minutes and above = 10 points"
+ 	 	},
+ 	 	"footnote2": {
+ 	 	 	"trans": "Di atas 150 menit ditetapkan ke 10 poin adalah untuk mendorong beberapa lompatan daripada satu lompatan besar untuk memaksimalkan manfaat bagi sebagian besar pemain",
+ 	 	 	"eng": "Above 150 minutes is fixed to 10 points is to encourage multiple skips rather than one huge skip to maximize benefit for most players"
+ 	 	},
+ 	 	"footnote1": {
+ 	 	 	"trans": "Statistik Skip akan mulai menghitung dari awal fitur ini untuk semua orang.",
+ 	 	 	"eng": "The skip point statistic will start counting from the start of this feature for everyone."
+ 	 	}
+ 	},
+ 	"skipPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Lewati kosmetik eksklusif",
+ 	 	 	"eng": "Skip for exclusive cosmetics"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"trans": "Menerima berbagai kosmetik eksklusif dengan melewatkan",
+ 	 	 	"eng": "Receive various exclusive cosmetics by skipping"
+ 	 	},
+ 	 	"chatMessage1": {
+ 	 	 	"vars": [
+ 	 	 	 	"skinName",
+ 	 	 	 	"playerName"
+ 	 	 	],
+ 	 	 	"trans": "Menjadi ${skinName}, ${playerName}",
+ 	 	 	"eng": "Be a ${skinName}, ${playerName}"
+ 	 	}
+ 	},
+ 	"thanksgivingPromo": {
+ 	 	"title": {
+ 	 	 	"trans": "Selamat Hari Thanksgiving!",
+ 	 	 	"eng": "Happy Thanksgiving!"
+ 	 	},
+ 	 	"desc1": {
+ 	 	 	"trans": "Selama periode acara, kalkun panggang akan jarang turun dari pemulungan dan AKF bot di semua tingkatan",
+ 	 	 	"eng": "During event period, Roasted Turkey will drop rarely from scavenging and AKF Bot on all levels"
+ 	 	},
+ 	 	"desc2": {
+ 	 	 	"trans": "Saat kalkun panggang dikonsumsi, Anda akan mendapatkan +20% exp pada tugas AFK selama 20 menit",
+ 	 	 	"eng": "When a Roasted Turkey is consumed, you will get +20% EXP on AFK tasks for 20 minutes"
+ 	 	},
+ 	 	"footnote1": {
+ 	 	 	"trans": "Harap dicatat bahwa pemeriksaan bonus EXP ada pada waktu penyelesaian AFK, jadi Anda harus memiliki buff kalkun panggang yang aktif pada saat penyelesaian untuk menerima bonus.",
+ 	 	 	"eng": "Please note that the EXP bonus check is at AFK completion time, so you must have the Roasted Turkey buff active at the time of completion to receive the bonus."
+ 	 	},
+ 	 	"footnote2": {
+ 	 	 	"trans": "Efek ini akan ditumpuk dengan bonus EXP lainnya, dan hanya akan mempengaruhi tugas AFK; Tugas yang tidak memiliki timer AFK tidak akan terpengaruh.",
+ 	 	 	"eng": "This effect will stack with other EXP bonus, and will only affect AFK tasks; tasks that does not have AFK timers will not be affected."
+ 	 	}
+ 	},
+ 	"thanksgivingPromoSmall": {
+ 	 	"title": {
+ 	 	 	"trans": "Acara Thanksgiving",
+ 	 	 	"eng": "Thanksgiving event"
+ 	 	},
+ 	 	"desc": {
+ 	 	 	"vars": [
+ 	 	 	 	"percent"
+ 	 	 	],
+ 	 	 	"trans": "Konsumsi kalkun lezat untuk mendapatkan +${percent}% exp pada tugas AFK",
+ 	 	 	"eng": "Consume delicious turkey to get +${percent}% EXP on AFK tasks"
+ 	 	}
+ 	},
  	"retroPromo": {
  	 	"title": {
  	 	 	"trans": "Pembaruan Synthwave",
@@ -7845,6 +9545,24 @@
  	 	"desc2": {
  	 	 	"trans": "Dungeon geng akan memiliki kesempatan untuk menelurkan pencarian geng, yang melibatkan membunuh musuh geng NPC tertentu",
  	 	 	"eng": "Two new donator frames added"
+ 	 	}
+ 	},
+ 	"renamePetModal": {
+ 	 	"title": {
+ 	 	 	"trans": "Ganti Nama Hewan Peliharaan",
+ 	 	 	"eng": "Rename Pet"
+ 	 	},
+ 	 	"newName": {
+ 	 	 	"trans": "Nama Baru",
+ 	 	 	"eng": "New Name"
+ 	 	},
+ 	 	"description": {
+ 	 	 	"trans": "Masukkan nama baru untuk hewan peliharaanmu",
+ 	 	 	"eng": "Enter new name for your pet"
+ 	 	},
+ 	 	"rename": {
+ 	 	 	"trans": "Ganti Nama",
+ 	 	 	"eng": "Rename"
  	 	}
  	},
  	"reportPlayerModal": {
@@ -7920,9 +9638,24 @@
  	 	 	 	 	"trans": "Izinkan pemain ini untuk mengelola izin dari pemain lain",
  	 	 	 	 	"eng": "Allow this player to manage permission of other players"
  	 	 	 	}
+ 	 	 	},
+ 	 	 	"send_notice": {
+ 	 	 	 	"trans": "Kirim Pemberitahuan",
+ 	 	 	 	"eng": "Send Notice",
+ 	 	 	 	"description": {
+ 	 	 	 	 	"trans": "Izinkan pemain ini untuk mengirim pemberitahuan ke semua anggota geng",
+ 	 	 	 	 	"eng": "Allow this player to send notice to all gang members"
+ 	 	 	 	}
  	 	 	}
  	 	},
  	 	"error": {
+ 	 	 	"insufficientBitcoin": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Anda memiliki bitcoin yang tidak mencukupi, diperlukan: ${amount}",
+ 	 	 	 	"eng": "You have insufficient Bitcoin, required: ${amount}"
+ 	 	 	},
  	 	 	"inviteCooldown": {
  	 	 	 	"trans": "Anda telah mengundang pemain ini baru -baru ini",
  	 	 	 	"eng": "You have already invited this player recently"
@@ -8061,6 +9794,17 @@
  	 	 	],
  	 	 	"trans": "${price} USD per bulan",
  	 	 	"eng": "${price} USD Per Month"
+ 	 	},
+ 	 	"inAppPurchaseDescription": {
+ 	 	 	"trans": "Langganan donasi berbasis langganan, bisa dibatalkan kapan saja dari toko Anda.",
+ 	 	 	"eng": "Subscription based donation, you can cancel it at anytime from your store."
+ 	 	},
+ 	 	"monthlyPrice": {
+ 	 	 	"vars": [
+ 	 	 	 	"price"
+ 	 	 	],
+ 	 	 	"trans": "${price} per Bulan",
+ 	 	 	"eng": "${price} per Month"
  	 	}
  	},
  	"cosmetic": {
@@ -8095,6 +9839,150 @@
  	 	"checkEmail": {
  	 	 	"trans": "Silakan periksa email Anda dan ikuti instruksi untuk mengatur ulang kata sandi",
  	 	 	"eng": "Please check your email and follow the instructions to reset the password"
+ 	 	}
+ 	},
+ 	"leaderboardTypePage": {
+ 	 	"gameplay": {
+ 	 	 	"trans": "Gameplay Leadeboards",
+ 	 	 	"eng": "Gameplay Leaderboards"
+ 	 	},
+ 	 	"gameplayDesc": {
+ 	 	 	"trans": "Papan peringkat ini menunjukkan statistik gameplay pemain.💪",
+ 	 	 	"eng": "These leaderboards shows player's gameplay statistics.💪"
+ 	 	},
+ 	 	"gang": {
+ 	 	 	"trans": "Geng top",
+ 	 	 	"eng": "Top Gangs"
+ 	 	},
+ 	 	"control": {
+ 	 	 	"trans": "Kontrol Pekerjaan",
+ 	 	 	"eng": "Occupation Control"
+ 	 	},
+ 	 	"contribution": {
+ 	 	 	"trans": "Kontribusi Komunitas",
+ 	 	 	"eng": "Community Contribution"
+ 	 	},
+ 	 	"contributionDesc": {
+ 	 	 	"trans": "Dewan ini menunjukkan rasa hormat dan kredit kepada para legenda yang telah berkontribusi kepada masyarakat. ❤️",
+ 	 	 	"eng": "These boards shows respect and credits to the legends who have contributed to the community.❤️"
+ 	 	}
+ 	},
+ 	"playerDetailsPage": {
+ 	 	"tabs": {
+ 	 	 	"stats": {
+ 	 	 	 	"trans": "statistik",
+ 	 	 	 	"eng": "stats"
+ 	 	 	},
+ 	 	 	"equipment": {
+ 	 	 	 	"trans": "Persediaan",
+ 	 	 	 	"eng": "inventory"
+ 	 	 	},
+ 	 	 	"assets": {
+ 	 	 	 	"trans": "aset",
+ 	 	 	 	"eng": "assets"
+ 	 	 	}
+ 	 	}
+ 	},
+ 	"petListPage": {
+ 	 	"exceedSlot": {
+ 	 	 	"vars": [
+ 	 	 	 	"petName"
+ 	 	 	],
+ 	 	 	"trans": "${petName} saat ini tinggal di jalanan karena tidak ada ruang di apartemenmu",
+ 	 	 	"eng": "${petName} is currently living on the street due to lack of space in your apartment"
+ 	 	},
+ 	 	"noPet": {
+ 	 	 	"trans": "Kamu belum punya hewan peliharaan nih",
+ 	 	 	"eng": "You have no pet yet"
+ 	 	},
+ 	 	"acquirePets": {
+ 	 	 	"trans": "Dapatkan Hewan Peliharaan",
+ 	 	 	"eng": "Acquire Pets"
+ 	 	}
+ 	},
+ 	"petAdoption": {
+ 	 	"error": {
+ 	 	 	"noBuff": {
+ 	 	 	 	"trans": "Buff belum diaktifkan",
+ 	 	 	 	"eng": "Buff is not activated"
+ 	 	 	},
+ 	 	 	"cooldown": {
+ 	 	 	 	"trans": "Adopsi hewan peliharaan lagi di cooldown nih, bro/sis",
+ 	 	 	 	"eng": "Pet adoption is on cooldown"
+ 	 	 	},
+ 	 	 	"noSlot": {
+ 	 	 	 	"trans": "Diperlukan apartemen untuk mengadopsi hewan peliharaan",
+ 	 	 	 	"eng": "You need to rent a bigger apartment to accommodate more pets"
+ 	 	 	},
+ 	 	 	"noItem": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Kamu butuh ${itemName} untuk mengadopsi hewan peliharaan",
+ 	 	 	 	"eng": "You need a ${itemName} to adopt a pet"
+ 	 	 	}
+ 	 	},
+ 	 	"petSlot": {
+ 	 	 	"trans": "Kapasitas hewan peliharaan apartemen",
+ 	 	 	"eng": "Apartment pet capacity"
+ 	 	},
+ 	 	"cooldownTitle": {
+ 	 	 	"trans": "Waktu Tunggu Adopsi",
+ 	 	 	"eng": "Adoption Available"
+ 	 	},
+ 	 	"buffActivationButton": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Aktifkan Bonus Adopsi",
+ 	 	 	 	"eng": "Activate Adoption Buff"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"trans": "Aktifkan untuk memungkinkan semua pemain mengadopsi hewan peliharaan saat buff aktif",
+ 	 	 	 	"eng": "Activate to allow all players to adopt a pet while buff is active"
+ 	 	 	},
+ 	 	 	"buttonText": {
+ 	 	 	 	"activated": {
+ 	 	 	 	 	"trans": "Diaktifkan",
+ 	 	 	 	 	"eng": "Activated"
+ 	 	 	 	},
+ 	 	 	 	"notActivated": {
+ 	 	 	 	 	"trans": "Aktifkan Buff",
+ 	 	 	 	 	"eng": "Activate Buff"
+ 	 	 	 	}
+ 	 	 	},
+ 	 	 	"confirmTitle": {
+ 	 	 	 	"trans": "Aktifkan Bonus Adopsi",
+ 	 	 	 	"eng": "Activate Adoption Buff"
+ 	 	 	},
+ 	 	 	"confirmDescription": {
+ 	 	 	 	"trans": "Kamu yakin mau aktifin Adoption Buff?",
+ 	 	 	 	"eng": "Are you sure you want to activate the Adoption Buff?"
+ 	 	 	}
+ 	 	},
+ 	 	"noItemConfirmModal": {
+ 	 	 	"title": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Tidak ada ${itemName} di inventaris",
+ 	 	 	 	"eng": "No ${itemName} in inventory"
+ 	 	 	},
+ 	 	 	"description": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"itemName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Kamu tidak punya ${itemName} di inventaris kamu, kamu masih bisa mengaktifkan buff untuk manfaat pemain lain, namun tanpa ${itemName} kamu tidak akan bisa mengadopsi hewan peliharaan",
+ 	 	 	 	"eng": "You do not have an ${itemName} in your inventory, you still can activate the buff for other players to benefit, however without ${itemName} you will not be able to adopt pets"
+ 	 	 	},
+ 	 	 	"confirmText": {
+ 	 	 	 	"trans": "Aktifkan Buff",
+ 	 	 	 	"eng": "Activate Buff"
+ 	 	 	}
+ 	 	},
+ 	 	"adoptButton": {
+ 	 	 	"title": {
+ 	 	 	 	"trans": "Adopsi hewan peliharaan baru",
+ 	 	 	 	"eng": "Adopt a new pet"
+ 	 	 	}
  	 	}
  	},
  	"sendCosmeticPage": {
@@ -8204,16 +10092,63 @@
  	 	 	"eng": "You have successfully sent an emblem to player \"${playerName}\""
  	 	}
  	},
+ 	"bulkCrafting": {
+ 	 	"cannotCraft": {
+ 	 	 	"trans": "Anda tidak dapat membuat saat tidak menganggur",
+ 	 	 	"eng": "You cannot craft while not idle"
+ 	 	}
+ 	},
+ 	"captcha": {
+ 	 	"success": {
+ 	 	 	"trans": "Kode pin diterima",
+ 	 	 	"eng": "Pin code accepted"
+ 	 	},
+ 	 	"invalid": {
+ 	 	 	"trans": "Kode pin tidak valid",
+ 	 	 	"eng": "Invalid Pin Code"
+ 	 	}
+ 	},
  	"chatModuleHelper": {
  	 	"aiConnectNotAvailable": {
  	 	 	"trans": "Izin ditolak. Slanc tidak terhubung ke obrolan",
  	 	 	"eng": "Permission Denied. SLANC not connected to chat"
  	 	}
  	},
+ 	"server": {
+ 	 	"announcement": {
+ 	 	 	"receiveItem": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"player",
+ 	 	 	 	 	"item"
+ 	 	 	 	],
+ 	 	 	 	"trans": "🎉Congratulation! ${player} menerima ${item}!",
+ 	 	 	 	"eng": "🎉Congratulation! ${player} received ${item}!"
+ 	 	 	}
+ 	 	}
+ 	},
  	"gifting": {
  	 	"cannotSend": {
  	 	 	"trans": "Pemain ini tidak dapat menerima hadiah sekarang",
  	 	 	"eng": "This player cannot receive gift now"
+ 	 	}
+ 	},
+ 	"topUpReward": {
+ 	 	"mail": {
+ 	 	 	"vars": [
+ 	 	 	 	"event",
+ 	 	 	 	"items"
+ 	 	 	],
+ 	 	 	"trans": "${event} Hadiah top up ${items} telah dikirim ke kotak masuk Anda",
+ 	 	 	"eng": " ${event} top up reward ${items} has been sent to your inbox"
+ 	 	}
+ 	},
+ 	"error": {
+ 	 	"cannotUseItemInStatus": {
+ 	 	 	"vars": [
+ 	 	 	 	"minutes"
+ 	 	 	],
+ 	 	 	"trans": "Anda tidak dapat menggunakan item ini karena ada efek status yang bertentangan dengannya",
+ 	 	 	"eng": "You cannot use this item because there is a status effect that conflicts with it"
  	 	}
  	},
  	"player": {
@@ -8241,6 +10176,10 @@
  	 	 	"invalidTravelLink": {
  	 	 	 	"trans": "Tautan perjalanan yang tidak valid, jika bertahan, silakan muat ulang",
  	 	 	 	"eng": "Invalid Travel Link, if persist please reload"
+ 	 	 	},
+ 	 	 	"recipeDisabled": {
+ 	 	 	 	"trans": "Resep ini saat ini tidak tersedia",
+ 	 	 	 	"eng": "This recipe is currently not available"
  	 	 	}
  	 	},
  	 	"escape": {
@@ -8268,6 +10207,13 @@
  	 	 	"eng": "Your level is too high to perform this action here, try to do it in the next zone."
  	 	},
  	 	"giveCred": {
+ 	 	 	"mail": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"playerName"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Anda telah menerima kredo jalanan dari ${playerName}",
+ 	 	 	 	"eng": "You have received a street cred from ${playerName}"
+ 	 	 	},
  	 	 	"success": {
  	 	 	 	"trans": "Anda telah memberikan kredibilitas jalanan harian.",
  	 	 	 	"eng": "You have given daily street cred."
@@ -8287,9 +10233,9 @@
  	 	 	"trans": "Nama ini digunakan oleh pemain lain, silakan gunakan nama lain",
  	 	 	"eng": "this name is used by other player, please use other name"
  	 	},
- 	 	"nameIllegal": {
- 	 	 	"trans": "Nama ilegal, silakan gunakan nama lain",
- 	 	 	"eng": "Illegal name, please use other name"
+ 	 	"reservedKeyword": {
+ 	 	 	"trans": "Nama ini berisi kata -kata yang dipesan, silakan gunakan nama lain",
+ 	 	 	"eng": "This name contains reserved wordings, please use other name"
  	 	},
  	 	"nameProfane": {
  	 	 	"trans": "Nama ini berisi kata -kata yang tidak diizinkan, silakan gunakan nama lain",
@@ -8298,6 +10244,49 @@
  	 	"nameInvalid": {
  	 	 	"trans": "Panjang nama harus lebih besar dari 4, kurang dari atau sama dengan 16 dan hanya berisi karakter bahasa Inggris, angka atau \\ '_ \\'",
  	 	 	"eng": "name length must be greater then 4, less then or equal to 16 and only contains English characters, numbers or \\'_\\'"
+ 	 	}
+ 	},
+ 	"skip": {
+ 	 	"skipRewardMail": {
+ 	 	 	"1": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Anda telah menerima \"Skip Emblem 1\" karena memiliki ${amount} lewati titik",
+ 	 	 	 	"eng": "You have received \"Skip Emblem 1\" for having ${amount} skip points"
+ 	 	 	},
+ 	 	 	"2": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Anda telah menerima \"Skip Emblem 2\" karena memiliki ${amount} lewati titik",
+ 	 	 	 	"eng": "You have received \"Skip Emblem 2\" for having ${amount} skip points"
+ 	 	 	},
+ 	 	 	"3": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Anda telah menerima \"Skip Emblem 3\" karena memiliki ${amount} lewati titik",
+ 	 	 	 	"eng": "You have received \"Skip Emblem 3\" for having ${amount} skip points"
+ 	 	 	},
+ 	 	 	"4": {
+ 	 	 	 	"vars": [
+ 	 	 	 	 	"frameName",
+ 	 	 	 	 	"amount"
+ 	 	 	 	],
+ 	 	 	 	"trans": "Anda telah menerima bingkai obrolan donator \"${frameName}\" karena memiliki ${amount} lewati poin",
+ 	 	 	 	"eng": "You have received \"${frameName}\" donator chat frame for having ${amount} skip points"
+ 	 	 	}
+ 	 	},
+ 	 	"announcement": {
+ 	 	 	"vars": [
+ 	 	 	 	"playerName",
+ 	 	 	 	"playerCount",
+ 	 	 	 	"skipTime",
+ 	 	 	 	"credButton"
+ 	 	 	],
+ 	 	 	"trans": "${playerName} telah menggunakan Global Time Skip, semua pemain online saat ini melakukan tugas AFK (${playerCount} pemain) akan secara otomatis waktu melompati ${skipTime} menit. Berikan legenda beberapa kredibilitas? ${credButton}",
+ 	 	 	"eng": "${playerName} has used Global Time Skip, all online players currently performing AFK task (${playerCount} players) will automatically time skip by ${skipTime} minutes. Give the legend some creds? ${credButton}"
  	 	}
  	}
 }
